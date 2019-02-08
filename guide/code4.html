@@ -1,0 +1,49 @@
+<link href="../static/css/frontend/com.css" rel="stylesheet" type="text/css">
+<div class="wrap-code">
+		<div class="code-area">
+			<h2 class="tit">BUTTON</h2>
+
+
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">BUTTON </h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view" style="position:relative">
+<!-- code -->
+<a href="#" class="btn-txt1">버튼명</a>
+<a href="#" class="btn-txt2">버튼명</a>
+<a href="#" class="btn-txt3">버튼명</a>
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">BUTTON </h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view" style="position:relative; background:#000">
+<!-- code -->
+<a href="#" class="btn-type1"><span>버튼명</span></a>
+<button type="button" class="btn-type1"><span>버튼명</span></button>
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
+		</div>
+</div>
+<script>
+$(".code-box").each(function(){
+	$(this).find(".code-view").after("<div class='code-html'></div>");
+	var $copy = $(this).find(".code-view").clone().html().replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g,"&quot;").replace(/\n/g,"<br />").replace(/\t/g,"&nbsp;&nbsp;&nbsp;&nbsp;");
+
+	$(this).find(".code-html").html($copy);
+});
+</script>

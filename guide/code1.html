@@ -1,0 +1,32 @@
+<link href="../static/css/frontend/com.css" rel="stylesheet" type="text/css">
+<div class="wrap-code">
+		<div class="code-area">
+			<h2 class="tit">Title Guide</h2>
+
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">서브페이지 타이틀 영역</h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view">
+<!-- code -->
+<div class="title-zone">
+	<h2 class="page-title"></h2>
+</div>
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
+		</div>
+</div>
+<script>
+$(".code-box").each(function(){
+	$(this).find(".code-view").after("<div class='code-html'></div>");
+	var $copy = $(this).find(".code-view").clone().html().replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g,"&quot;").replace(/\n/g,"<br />").replace(/\t/g,"&nbsp;&nbsp;&nbsp;&nbsp;");
+
+	$(this).find(".code-html").html($copy);
+});
+</script>

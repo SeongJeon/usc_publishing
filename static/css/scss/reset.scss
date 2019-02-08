@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+@import 'base';
+
+/* FONT STYLE */
+// GothamBook
+@font-face {
+    font-family: "GothamBook";
+    src: url("../../fonts/GothamBook.eot");
+    src: url("../../fonts/GothamBook.eot?#iefix") format("embedded-opentype"),
+        url("../../fonts/GothamBook.woff") format("woff"),
+        url("../../fonts/GothamBook.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NotoKr-Light";
+    src: url("../../fonts/NotoKr-Light.eot");
+    src: url("../../fonts/NotoKr-Light.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/NotoKr-Light.woff") format("woff"),
+    url("../../fonts/NotoKr-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NotoKr-DemiLight";
+    src: url("../../fonts/NotoKr-DemiLight.eot");
+    src: url("../../fonts/NotoKr-DemiLight.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/NotoKr-DemiLight.woff") format("woff"),
+    url("../../fonts/NotoKr-DemiLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NotoKr-Regular";
+    src: url("../../fonts/NotoKr-Regular.eot");
+    src: url("../../fontst/NotoKr-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/NotoKr-Regular.woff") format("woff"),
+    url("../../fonts/NotoKr-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NotoKr-Medium";
+    src: url("../../fonts/NotoKr-Medium.eot");
+    src: url("../../fonts/NotoKr-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/NotoKr-Medium.woff") format("woff"),
+    url("../../fonts/NotoKr-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NotoKr-Bold";
+    src: url("../../fonts/NotoKr-Bold.eot");
+    src: url("../../fonts/NotoKr-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/NotoKr-Bold.woff") format("woff"),
+    url("../../fonts/NotoKr-Bold.ttf") format("truetype");
+}
+
+
+
+/* RESET */
+* {outline:none}
+html {font-family:$font1; color:$color3; -webkit-text-size-adjust:none; font-size:16px;  letter-spacing:-0.25px; font-weight:normal; -webkit-overflow-scrolling:touch; }
+html body {min-width:320px;}
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, span, form, fieldset, input, select, label, textarea, table, caption, thead, tfoot, tbody, tr, th, td {margin:0;padding:0;-webkit-text-size-adjust:none; font-weight:normal;}
+address {font-stretch:normal;}
+b, span, strong, input, a, button{font-size:inherit;font-family:inherit;color:inherit;  line-height:inherit;}
+article, aside, dialog, footer, header, section, footer, nav, figure, hgroup, details, summary, figure, figcaption {display: block;}
+cite{display:inline}
+html, body {height:100%;}
+html{-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;}
+body {overflow-y:scroll; margin:0px; background-attachment: fixed;}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+img{border:0;max-width:100%}
+label, input, textarea, select{vertical-align:middle; border:0; border-radius:0;  }
+label, input, textarea {-webkit-appearance: none; -webkit-border-radius: 0;}
+ol, ul{list-style:none; margin:0; padding:0;}
+li {list-style:none;}
+table{border-collapse:collapse; table-layout:fixed; width:100%;}
+fieldset{border:none}
+hr, legend{position:absolute;left:-1000%;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden;}
+caption{font-size:0;height:0;opacity:0}
+button{margin:0;padding:0;border:none; background:none; cursor:pointer; display:inline-block;}
+em, address {font-style:normal; }
+strong {font-weight:normal;}
+select {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+a, button, input {outline:none;}
+input {
+    &::-webkit-input-placeholder { color: #fff; }
+    &::-moz-placeholder { color: #fff; }
+    &:-ms-input-placeholder { color: #fff; }
+    &:-moz-placeholder { color: #fff; }
+}
+caption {overflow:hidden; visibility:hidden; height:0; text-indent:-9999em;}
+
+/* COMMON */
+#skipnavi {
+    a {display:block; position:absolute; top:0px; left:-202px; width:200px; height:40px; padding:0; border:1px solid #dcdcdc; color:#555; font-size:15px; background:#fff; text-align:center; line-height:40px; font-weight:700; z-index:10000; -ms-transition:all 0.3s ease; -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; transition:all 0.3s ease;}
+    a:focus {top:0; left:0;}
+}
+.hidden {
+    //방법1
+    // position:absolute; overflow:hidden; top:0; left:0; width:1px; height:1px; text-indent:-9999em;
+    //방법2 
+    overflow:hidden; white-space: nowrap; text-indent: 100%;
+}
+
+
+
+
+@media (max-width: 1025px) { html {font-size:10px;}}
+@media (max-width: 900px) { html {font-size:9px;}}
+@media (max-width: 850px) { html {font-size:8.5px;}}
+@media (max-width: 800px) { html {font-size:8px;}}
+@media (max-width: 767px) { html {font-size:13px;}}
+@media (max-width: 430px) { html {font-size:11px;}}
+@media (max-width: 375px) { html {font-size:10px;}}
+@media (max-width: 321px) { html {font-size:9px;}}

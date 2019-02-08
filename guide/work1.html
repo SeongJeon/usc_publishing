@@ -44,8 +44,8 @@
 					<td>Main</td><!-- 2depth -->
 					<td></td><!-- 3depth -->
 					<td></td><!-- 1depth -->
-	 				<td>usc/</td><!-- 경로 -->
-	 				<td><a href="#" target="_blank">index.html</a></td><!-- 파일명 -->
+	 				<td></td><!-- 경로 -->
+	 				<td><a href="#" target="_blank">index_test.html</a></td><!-- 파일명 -->
 	 				<td></td><!-- 완료 날짜 -->
 	 				<td>0</td><!-- 작업 전 0 / 작업 중 1 / 완료 2  -->
 	 				<td></td><!-- 비고  -->
@@ -72,7 +72,7 @@ $("table tbody tr").each(function(){
 		case 2: $("td:nth-child(7)",this).text("완료"); $(this).addClass("complete"); break;
 	}
 
-	$("a",this).attr("href", "/usc-publishing/templates/"+$("td:nth-child(4)",this).text()+$("a",this).text());
+	$("a",this).attr("href", "/usc_publishing/templates/"+$("td:nth-child(4)",this).text()+$("a",this).text());
 })
 
 per = Math.ceil(c * (100 / $("table tbody tr").length));

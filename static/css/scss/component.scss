@@ -11,8 +11,9 @@
 05. BUTTON
 06. TITLE
 07. LIST
-08. UI
-
+08. TABLE
+09. UI
+10. LAYER
 
 Z-INDEX 
 
@@ -36,7 +37,13 @@ Z-INDEX
 	from {top:-100%; }
 	to {top:5px; opacity:1}
 }
- 
+
+@keyframes gnbMoAnimation {
+	from {opacity:0; -ms-transform:translateY(50px); -webkit-transform:translateY(50px); -moz-transform:translateY(50px); transform:translateY(50px);}
+	to {opacity:1; -ms-transform:translateY(0px); -webkit-transform:translateY(0px); -moz-transform:translateY(0px);transform:translateY(0px);}
+}
+
+
 
 
 
@@ -87,19 +94,15 @@ br.m {display:none}
 /* LIST */
 *[class^=comp-lst] {
 	*[class$=_dotted] {
-
 	}
 
 	*[class$=_important] {
-
 	}
 
 	*[class$=_hyphen] {
-
 	}
 
 	*[class$=_star] {
-
 	}
 }
 
@@ -108,8 +111,6 @@ br.m {display:none}
 
 /* TABLE */
 table[class^=comp-tbl] {
-
-
 }
 
 
@@ -118,7 +119,7 @@ table[class^=comp-tbl] {
 
 
 /* UI - PAGING */
-.paging {
+*[class^=comp-paging] {
 	margin-top:60px; text-align:center; font-size:0;
 	& > div {display:inline-block; position:relative; padding:0 105px;}
 	.number {
@@ -155,10 +156,8 @@ table[class^=comp-tbl] {
 		a {display:block; overflow:hidden; position:relative; width:36px; height:36px; border-radius:100px; border:1px solid $border1;text-indent:-9999em; box-sizing:border-box; }
 	}
 }
-
 /* UI - TAB */
-.tab {
-	
+*[class^=comp-tab] {
 }
 
 
@@ -198,17 +197,27 @@ table[class^=comp-tbl] {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (-webkit-min-device-pixel-ratio:0){ } // webkit hack
 @-moz-document url-prefix() { } // firefox hack
 
 @media (max-width:1025px){}
 @media (max-width:767px){}
 @media (max-width:321px){}
-
-
-/* keyframe */
-@keyframes gnbMoAnimation {
-	from {opacity:0; -ms-transform:translateY(50px); -webkit-transform:translateY(50px); -moz-transform:translateY(50px); transform:translateY(50px);}
-	to {opacity:1; -ms-transform:translateY(0px); -webkit-transform:translateY(0px); -moz-transform:translateY(0px);transform:translateY(0px);}
-}
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ------------------------------------------------------
 01. LAYOUT (HEADER, FOOTER, CONTINAER..)
 02. KEYFRAMES & ANIMATION 
@@ -10,11 +11,17 @@
 09. UI
 10. LAYER
 
-Z-INDEX 
+
+Z-INDEX 순서
+
 
 ------------------------------------------------------ */
 /* LAYOUT */
 #wrap { position: relative; min-width: 320px; }
+
+.view-pc { display: inherit; }
+
+.view-m { display: none; }
 
 /* KEYFRAMES & ANIMATION */
 @keyframes searchAnimation { from { top: -100%; }
@@ -65,3 +72,5 @@ br.t, br.m { display: none; }
 #layer.open .btn { position: absolute; top: 0; right: 0; }
 
 @-moz-document url-prefix() {}
+@media (max-width: 768px) { .view-m { display: inherit; }
+  .view-pc { display: none; } }

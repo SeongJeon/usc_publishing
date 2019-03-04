@@ -15,6 +15,7 @@
 09. UI
 10. LAYER
 
+
 Z-INDEX 순서
 
 
@@ -28,6 +29,10 @@ Z-INDEX 순서
 #footer {}
 #container {} 
 .breadcrumb {}
+
+
+.view-pc {display: inherit;}
+.view-m {display: none;}
 
 
 
@@ -219,6 +224,11 @@ table[class^=comp-tbl] {
 @-moz-document url-prefix() { } // firefox hack
 
 @media (max-width:1025px){}
-@media (max-width:767px){}
+@media (max-width:768px){
+.view-m {display: inherit;}
+.view-pc {display: none;}
+
+
+}
 @media (max-width:321px){}
 

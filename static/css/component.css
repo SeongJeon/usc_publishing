@@ -30,8 +30,6 @@
 
 #footer { height: 270px; }
 
-#container { min-height: 940px; }
-
 .view-pc { display: inherit; }
 
 .view-m { display: none; }
@@ -62,13 +60,13 @@ br.t, br.m { display: none; }
 *[class^=comp-paging] .number .current a { color: #47c3ef; }
 *[class^=comp-paging] p { position: absolute; top: 0; }
 *[class^=comp-paging] p.allprev { left: 0; }
-*[class^=comp-paging] p.allprev a { background: url("../../images/frontend/button/btn-allprev.png") no-repeat 45% 50%; }
+*[class^=comp-paging] p.allprev a { background: url("../../static/images/frontend/button/btn-allprev.png") no-repeat 45% 50%; }
 *[class^=comp-paging] p.prev { left: 41px; }
-*[class^=comp-paging] p.prev a { background: url("../../images/frontend/button/btn-prev.png") no-repeat 50% 50%; }
+*[class^=comp-paging] p.prev a { background: url("../../static/images/frontend/button/btn-prev.png") no-repeat 50% 50%; }
 *[class^=comp-paging] p.allnext { right: 0; }
-*[class^=comp-paging] p.allnext a { background: url("../../images/frontend/button/btn-allnext.png") no-repeat 55% 50%; }
+*[class^=comp-paging] p.allnext a { background: url("../../static/images/frontend/button/btn-allnext.png") no-repeat 55% 50%; }
 *[class^=comp-paging] p.next { right: 41px; }
-*[class^=comp-paging] p.next a { background: url("../../images/frontend/button/btn-next.png") no-repeat 50% 50%; }
+*[class^=comp-paging] p.next a { background: url("../../static/images/frontend/button/btn-next.png") no-repeat 50% 50%; }
 *[class^=comp-paging] p a { display: block; overflow: hidden; position: relative; width: 36px; height: 36px; border-radius: 100px; border: 1px solid #dadada; text-indent: -9999em; box-sizing: border-box; }
 
 /* UI - TAB */

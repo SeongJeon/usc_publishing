@@ -6,16 +6,128 @@
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
-#container.usc {
+#wrap.usc #container.main {
+	position: relative;
+	.inner {
+		max-width: 1320px; margin:0 auto;
+		&:after {display:block; clear:both; content:""}
+	}
+
 	// 상단 텍스트 및 탭 메뉴
 	.main-top-zone {
-		
+		position: absolute; left:0; top:0; width: 100%;
+		.inner {display: table; height: 145px; width: 100%;}
+		// 텍스트
+		.top-txt {display: table-cell; font-size: 18px; color:#555; font-weight: 700; vertical-align: middle; }
+		// 날씨 및 탭 메뉴
+		.top-menu {
+			display: table-cell; width:445px;
+			.weather-zone {
+				overflow:hidden; position: relative; height: 42px; margin-top: 15px;
+				&:after {display:block; clear:both; content:""}
+				.today-icon {overflow: hidden; position: absolute; left:0; top:0;  width: 42px; height: 42px; border-radius: 100px; background:#fff;}
+				.today-txt {
+					overflow:hidden; color:$color1; font-size: 14px; border-radius: 100px; margin-top: 5px; padding-left: 50px; box-sizing: border-box; line-height: 32px; background:#ffe76a;
+					&:after {display:block; clear:both; content:""}
+					.day {float: left; margin-right: 3px;}
+					.detail {
+						position: relative;
+						ul{
+							&:after {display:block; clear:both; content:""}
+							li {float: left; }
+							li + li:before {display: inline-block; content: "/"; margin:0 4px 0 4px;}
+							span {font-family: $font3;}
+						}
+						.lnk {display: inline-block; overflow: hidden; position: absolute; right: 6px; top:6px; width: 21px; height: 20px; @include background("usc/icon_link.png", no-repeat 50% 50%); text-indent: -999em; }
+					}
+				}
+			}
+			.tab-zone {
+				margin-top: 10px;
+				&:after {display:block; clear:both; content:""}
+				li {float: left;}
+				li + li {margin-left: 12px;}
+				a {
+					display: block; position: relative; height: 45px; width: 140px; 
+					font-size: 18px; font-weight: 700; color:$color1; font-family: $font3; line-height: 38px; 
+					text-align: center; background:#fff; border-radius: 100px; box-sizing: border-box;
+					border-width: 3px; border-style: solid;
+					&:after {
+						display: block; content: ""; position: absolute; left: 50%; top:100%; margin-left: -10px;
+						width: 0; height: 0; border-top-width:11px; border-top-style: solid; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 11px solid transparent;
+						opacity: 0; -ms-transform: rotate(-90deg) translateX(18px); -webkit-transform: rotate(-90deg) translateX(18px); -moz-transform: rotate(-90deg) translateX(18px); transform: rotate(-90deg) translateX(18px);
+					}
+					span {
+						display: block; position: relative; overflow: hidden; z-index: 1; width: 100%; height:39px; border-radius: 16px; 
+						-ms-transition:0.3s 0.1s ease; -webkit-transition:0.3s 0.1s ease;-moz-transition:0.3s 0.1s ease;transition:0.3s 0.1s ease;
+						&:before {display: inline-block; position: relative; content: ""; height: 21px; margin-right: 12px; @include background("usc/sp_main.png", no-repeat 0 0); vertical-align: middle; z-index: 1}
+						&:after {
+							display:block; position: absolute; left: 0; top: 0; content: ""; width: 0; height: 100%; border-radius: 16px; z-index: -1;
+							-ms-transition:0.3s ease-out; -webkit-transition:0.3s ease-out; -moz-transition:0.3s ease-out; transition:0.3s ease-out;
+						}
+					}
+
+					// 버튼 각각
+					&[aria-controls=bigtabcont1] {
+						border-color:#ff8926;
+						&:after {border-top-color:#ff8926;}
+						span {
+							&:before {width:21px; background-position: 0px 0;}
+							&:after {background:#ff8926;}
+						}
+					}
+					&[aria-controls=bigtabcont2] {
+						border-color:#0775bc;
+						&:after {border-top-color:#0775bc;}
+						span {
+							&:before {width:28px; background-position: -50px 0;}
+							&:after {background:#0775bc;}
+						}
+					}
+					&[aria-controls=bigtabcont3] {
+						border-color:#08a46b;
+						&:after {border-top-color:#08a46b;}
+						span {
+							&:before {width:28px; margin-right: 8px; background-position: -100px 0;}
+							&:after {background:#08a46b;}
+						}
+					}
+
+
+					// 선택시 -
+					&[aria-selected=true], &:hover {
+						color:#fff;
+						&:after {
+							opacity:1; 
+							-ms-transform: rotate(0deg) translateX(0); -moz-transform: rotate(0deg) translateX(0); -webkit-transform: rotate(0deg) translateX(0); transform: rotate(0deg) translateX(0);
+							-ms-transition:0.3s 0.2s ease-out; -webkit-transition:0.3s 0.2s ease-out; -moz-transition:0.3s 0.2s ease-out; transition:0.3s 0.2s ease-out;
+						}
+						span:after {width: 100%;}
+						&[aria-controls=bigtabcont1] span:before {background-position: 0 -50px}
+						&[aria-controls=bigtabcont2] span:before {background-position: -50px -50px}
+						&[aria-controls=bigtabcont3] span:before {background-position: -100px -50px}
+					}
+				}
+			}			
+		}
 	}
 	
 	// 탭 컨텐츠
-	.main-tabcontent {}
-
-
+	.main-tabcontent {
+		div[class^=tab-] {display: none; padding-top: 145px; min-height: 940px;}
+		// 탭 - 소식
+		.tab-news {
+			@include background("usc/bg_maintab1.jpg", no-repeat 50% 0); background-size: cover;
+		}
+		// 탭 - 민원
+		.tab-complaint {
+			@include background("usc/bg_maintab2.jpg", no-repeat 50% 0); background-size: cover;
+		}
+		// 탭 - 관광
+		.tab-sightseeing {
+			@include background("usc/bg_maintab3.jpg", no-repeat 50% 0); background-size: cover;
+		}
+	}
 }
 
 

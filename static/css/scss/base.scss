@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 // mixin
-@mixin background($path,$repeat) {background:url("../../images/"+$path) $repeat; }
+@mixin background($path,$repeat) {background:url("../../static/images/"+$path) $repeat; }
 
 // color
-$color1 : #58ccf5;
+$color1 : #525252;
 $color2 : #454545;
 $color3 : #797979;
 $color4 : #47c3ef;
@@ -15,10 +15,8 @@ $border2 : #efefef;
 $bcolor : #fcfcfc;
 
 // font
-$font1: 'NanumSquare','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
-// $font2: 'NotoKr-Regular','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
-// $font3: 'NotoKr-Medium','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
-// $font4: 'NotoKr-Bold','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
-// $font5: 'NotoKr-DemiLight','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
-// $font6: 'GothamBook','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font0: 'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font1: 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font2: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+$font3: 'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
 $font-ios: 'Helvetica Neue', "Apple SD Gothic Neo";

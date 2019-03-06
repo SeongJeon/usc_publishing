@@ -100,21 +100,32 @@
 					<div class="inner">
 						<!-- 좌측 텍스트 -->
 						<p class="top-txt">
-							군민과 함께하는 창조적인 희망군정
-							<span class="imgtxt">활력넘치는 희망의성! 살기좋은 의성으로 오세요~!</span>
+							<img src="../../static/images/usc/img_maintxt.png" alt="군민과 함께하는 창조적인 희망군정 활력넘치는 희망의성! 살기좋은 의성으로 오세요~!">
 						</p>
 						<!--// 좌측 텍스트 -->
 						<!-- 우측 날씨 및 탭 메뉴 -->
 						<div class="top-menu">
 							<!-- 날씨 개발 영역 -->
 							<div class="weather-zone">
-								
+								<p class="today-icon"><img src="../../static/images/usc/icon_weather_sun.png" alt="맑음"></p>
+								<!-- D : 날씨 아이콘의 경우 42*42 사이즈로 넣어 줄 것 -->
+								<dl class="today-txt">
+									<dt class="day">12월 00일(월) :</dt>
+									<dd class="detail">
+										<ul>
+											<li>기온 <span>-3.0℃</span></li>
+											<li>미세먼지 <span>보통</span></li>
+											<li>강수량 <span>0.0mm</span></li>
+										</ul>
+										<a href="#" target="_blank" title="새창으로 열림" class="lnk"><span>날씨 자세히 보기</span></a>
+									</dd>
+								</dl>
 							</div>
 							<!-- 탭 메뉴 -->
-							<ul class="tab-zone">
-								<li><a href="#"><span>소식</span></a></li>
-								<li><a href="#"><span>민원</span></a></li>
-								<li><a href="#"><span>관광</span></a></li>
+							<ul class="tab-zone" role="tablist" aria-label="의성군청 메인 컨텐츠 분류">
+								<li role="presentation"><a href="#bigtabcont1" role="tab" aria-controls="bigtabcont1" aria-selected="true"><span>소 식</span></a></li>
+								<li role="presentation"><a href="#bigtabcont2" role="tab" aria-controls="bigtabcont2"><span>민 원</span></a></li>
+								<li role="presentation"><a href="#bigtabcont3" role="tab" aria-controls="bigtabcont3"><span>관 광</span></a></li>
 							</ul>
 						</div>
 						<!-- //우측 날씨 및 탭 메뉴 -->
@@ -125,14 +136,16 @@
 				<!-- 탭 컨텐츠 -->
 				<div class="main-tabcontent">
 					<!-- 소식 탭  -->
-					<div class="tab-news">
-						
+					<div id="bigtabcont1" role="tabpanel" class="tab-news" style="display:block;">
+						<div class="inner"> </div>
 					</div>
 					<!-- 민원 탭  -->
-					<div class="tab-complaint"> 
+					<div id="bigtabcont2" role="tabpanel" class="tab-complaint"> 
+						<div class="inner"></div>
 					</div>
 					<!-- 관광 탭  -->
-					<div class="tab-sightseeing"> 
+					<div id="bigtabcont3" role="tabpanel" class="tab-sightseeing"> 
+						<div class="inner"></div>
 					</div>
 				</div>
 				<!--// 탭 컨텐츠 -->

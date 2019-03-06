@@ -61,14 +61,15 @@ footer {height:211px; position:static; bottom:0;}
 .main_notice {position:absolute; bottom:0; left:0; right:0; width:1320px; height:55px; margin:0 auto; padding:11px 0 0 16px; background:rgba(0,0,0,0.4); box-sizing:border-box; -webkit-box-sizing:border-box;}
 .main_notice .list {}
 .main_notice .list li {}
-.main_notice .list li a {overflow:hidden; font-size:17px; color:#fff; font-weight:bold;}
+.main_notice .list li a {overflow:hidden; display:block; width:1145px; font-size:17px; color:#fff; font-weight:bold;}
 .main_notice .list li a > * {float:left; line-height:35px; }
 .main_notice .list li a .ico {display:block; width:62px; height:35px; line-height:35px; background:rgba(242,94,61,0.5); text-align:center;}
 .main_notice .list li a .subject {margin:0 0 0 14px;}
-.main_notice .list li a .date {font-size:15px; color:#c7c7c7;}
-.main_notice .control {}
-.main_notice .control .main_notice_prev {}
-.main_notice .control .main_notice_next {}
+.main_notice .list li a .date {float:right; font-size:15px; color:#c7c7c7;}
+.main_notice .control {position:absolute; right:77px; top:18px; }
+.main_notice .control > * {width:20px; height:40px; text-indent:-9999em;}
+.main_notice .control .main_notice_prev {background:url(../../images/ebooksys/main/sp_notice_control.png) no-repeat left top;}
+.main_notice .control .main_notice_next {background:url(../../images/ebooksys/main/sp_notice_control.png) no-repeat right top;}
 .main_notice .btn_link {position:absolute; right:0; top:0;}
 .main_notice .btn_link a {position:relative; display:block; width:55px; height:55px; background:rgba(0,0,0,0.5); text-indent:-9999em;}
 .main_notice .btn_link a:after {position:absolute; left:0; right:0; top:0; bottom:0;display:block; width:1px; height:15px; content:""; margin:auto; background:#aac1c3;}

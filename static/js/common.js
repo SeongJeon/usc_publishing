@@ -58,9 +58,10 @@ $(document).ready(function(){
 		})
 	
 	})();
+
+	
 	// MAIN GNB
 	// usc.gnbEvent();
-	// MAIN TAB
 })
 
 

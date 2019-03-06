@@ -51,7 +51,8 @@ MAIN
 					display: block; position: relative; height: 45px; width: 140px; 
 					font-size: 18px; font-weight: 700; color:$color1; font-family: $font3; line-height: 38px; 
 					text-align: center; background:#fff; border-radius: 100px; box-sizing: border-box;
-					border-width: 3px; border-style: solid;
+					border-width: 3px; border-style: solid; 
+					-ms-transition:background 0.3s 0.1s ease; -moz-transition:background 0.3s 0.1s ease; -webkit-transition:background 0.3s 0.1s ease; transition:background 0.3s 0.1s ease;
 					&:after {
 						display: block; content: ""; position: absolute; left: 50%; top:100%; margin-left: -10px;
 						width: 0; height: 0; border-top-width:11px; border-top-style: solid; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 11px solid transparent;

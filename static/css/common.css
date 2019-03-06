@@ -7,4 +7,23 @@
 @import url("slick.css");
 
 /* EACH STYLE */
-@import url("test.css");
+/* 의성군청 */
+@import url("usc.css");
+/* 의성군립도서관 */
+@import url("usclib.css");
+/* 도서과전자책 */
+@import url("ebooksys.css");
+/* 사회복지 */
+@import url("welfare.css");
+/* 열린군수실 */
+@import url("openleader.css");
+/* 상하수도사업소 */
+@import url("sewagebusiness.css");
+/* 평생학습 */
+@import url("lifeedu.css");
+/* 읍면 */
+@import url("village.css");
+/* 농업기술센터 */
+@import url("farmingtech.css");
+/* 조문국박물관 */
+@import url("uscmuseum.css");

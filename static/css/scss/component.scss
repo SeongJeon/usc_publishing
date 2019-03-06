@@ -31,10 +31,16 @@
 
 /* LAYOUT */       
 #wrap {position:relative; min-width:320px;}
-#header {}
+#header {
+	overflow:hidden; height: 180px;
+}
 #gnb {}
-#footer {}
-#container {} 
+#footer {
+	height: 270px;
+}
+#container {
+	min-height: 940px;
+} 
 .breadcrumb {}
 
 

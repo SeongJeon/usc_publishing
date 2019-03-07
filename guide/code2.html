@@ -1,4 +1,4 @@
-<link href="../static/css/frontend/com.css" rel="stylesheet" type="text/css">
+<link href="../static/css/common.css" rel="stylesheet" type="text/css">
 <div class="wrap-code">
 		<div class="code-area">
 			<h2 class="tit">Ui Guide</h2>
@@ -7,92 +7,36 @@
 			<!-- start -->
 			<div class="code-box">
 				<div class="tit-area">
-					<h3 class="subtit">Breadcrumb</h3>
+					<h3 class="subtit">Tab 기본 구조 (css 자유)</h3>
 					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
 				</div>
 				<div class="code-view" style="position:relative">
 <!-- code -->
-<div class="breadcrumb">
-	<ol>
-		<li><a href="#">HOME</a></li>
-		<li><a href="#">다우니 제조 공정</a></li>
-		<li>다우니를 만드는 사람들</li>
-	</ol>
-</div>
-<!-- //code -->
-				</div>
-			</div>
-			<!-- //end -->
-
-
-			<!-- start -->
-			<div class="code-box">
-				<div class="tit-area">
-					<h3 class="subtit">Tab</h3>
-					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
-				</div>
-				<div class="code-view" style="position:relative">
-<!-- code -->
-<div class="tab">
-	<ul>
-		<li class="current"><a href="#">제목1 <span class="hidden">현재 선택 메뉴</span></a></li>
-		<li><a href="#">제목2</a></li>
-		<li><a href="#">제목3</a></li>
-	</ul>
-</div>
-<!-- //code -->
-				</div>
-			</div>
-			<!-- //end -->
-
-
-			<!-- start -->
-			<div class="code-box">
-				<div class="tit-area">
-					<h3 class="subtit">Dotted list</h3>
-					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
-				</div>
-				<div class="code-view" style="position:relative">
-<!-- code -->
-<ul class="lst-dotted">
-	<li>내용</li>
-	<li>내용</li>
+<ul role="tablist" data-animation="fade" aria-label="탭 제목">
+	<li role="presentation"><a href="#tabId1" role="tab" aria-controls="tabId1" aria-selected="true">제목1</a></li>
+	<li role="presentation"><a href="#tabId2" role="tab" aria-controls="tabId2">제목2</a></li>
+	<li role="presentation"><a href="#tabId3" role="tab" aria-controls="tabId3">제목3</a></li>
 </ul>
-<!-- //code -->
-				</div>
-			</div>
-			<!-- //end -->
 
-
-
-			<!-- start -->
-			<div class="code-box">
-				<div class="tit-area">
-					<h3 class="subtit">Paging</h3>
-					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
-				</div>
-				<div class="code-view" style="position:relative">
-<!-- code -->
-<div class="paging">
-	<div>
-		<p class="allprev"><a href="#">처음으로 이동</a></p>
-		<p class="prev"><a href="#">이전으로 이동</a></p>
-		<ol class="number">
-			<li class="current"><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li><a href="#">6</a></li>
-			<li><a href="#">7</a></li>
-			<li><a href="#">8</a></li>
-			<li><a href="#">9</a></li>
-			<li><a href="#">10</a></li>
-		</ol>
-		<p class="next"><a href="#">다음으로 이동</a></p>
-		<p class="allnext"><a href="#">마지막으로 이동</a></p>
+<div class="탭들 감싸는 div명">
+	<div id="tabId1" role="tabpanel" style="display: block">
+		탭 내용1
+	</div>
+	<div id="tabId2" role="tabpanel" style="display: none">
+		탭 내용2
+	</div>
+	<div id="tabId3" role="tabpanel" style="display: none">
+		탭 내용3
 	</div>
 </div>
+
+<!-- 
+* aria 속성으로 작동함. 
+* 해당 구조만 동일하면 작동함으로 css는 자유
+* animation은 Show/Hide와 fadeIn/Out를 선택가능. 
+fadeIn/Out일 경우 data-animation='fade'를 넣어주고,
+Show/Hide 의 경우는 해당 속성 기입하지 말 것. 
+-->
 <!-- //code -->
 				</div>
 			</div>
@@ -103,6 +47,7 @@
 
 		</div>
 </div>
+<script src="/usc_publishing/static/js/common.js"></script>
 <script>
 $(".code-box").each(function(){
 	$(this).find(".code-view").after("<div class='code-html'></div>");

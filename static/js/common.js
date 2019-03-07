@@ -48,9 +48,17 @@ $(document).ready(function(){
 	// TAB 
 	var compTab = (function(){
 		$('*[role=tab]').on("click", function(){
-			var $this = $(this), gototab = "#"+$this.attr("aria-controls"), spd=300;
+			var $this = $(this), gototab = "#"+$this.attr("aria-controls"), spd=300, motion;
 
-			$(gototab).show().siblings("*[role=tabpanel]").hide();
+			$this.closest("*[role=tablist]").attr('data-animation') == 'fade' ? motion = 'fade' : motion = 'show'; 
+
+			if(motion == 'fade'){
+				$(gototab).fadeIn(spd).siblings("*[role=tabpanel]").fadeOut(spd);
+			}else{
+				$(gototab).show().siblings("*[role=tabpanel]").hide();
+			}
+
+
 			$this.closest("*[role=presentation]").siblings("*[role=presentation]").find("*[role=tab]").removeAttr("aria-selected");
 			$this.attr("aria-selected", true);
 

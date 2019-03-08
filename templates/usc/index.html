@@ -122,11 +122,11 @@
 								</dl>
 							</div>
 							<!-- 탭 메뉴 -->
-							<ul class="tab-zone" role="tablist" data-js="false" aria-label="의성군청 메인 컨텐츠 분류">
-								<li role="presentation"><a href="#bigtabcont1" role="tab" aria-controls="bigtabcont1" aria-selected="true"><span>소 식</span></a></li>
-								<li role="presentation"><a href="#bigtabcont2" role="tab" aria-controls="bigtabcont2"><span>민 원</span></a></li>
-								<li role="presentation"><a href="#bigtabcont3" role="tab" aria-controls="bigtabcont3"><span>관 광</span></a></li>
-							</ul>
+							<div class="tab-zone" aria-label="의성군청 메인 컨텐츠 분류">
+								<div class="li"><h2 class="bigtabcont1"><span>소 식</span></h2></div>
+								<div class="li"><h2 class="bigtabcont2"><span>민 원</span></h2></div>
+								<div class="li"><h2 class="bigtabcont3"><span>관 광</span></h2></div>
+							</div>
 						</div>
 						<!-- //우측 날씨 및 탭 메뉴 -->
 					</div>
@@ -136,9 +136,8 @@
 				<!-- 탭 컨텐츠 -->
 				<div class="main-tabcontent">
 					<!-- 소식 탭  -->
-					<div id="bigtabcont1" role="tabpanel" class="tab-news" style="display:block;">
+					<div id="bigtabcont1" class="tab-news">
 						<h2 class="hidden">소식관련 메인 내용</h2>
-
 						<div class="inner">
 							<div class="l-left">
 								<!-- 배너슬라이드 -->
@@ -165,17 +164,19 @@
 											<h2 class="hidden">공지사항</h2>
 											<!-- 중요 게시글  -->
 											<div class="board-important">
-												<p class="todays">
-													<span class="year">2019</span>
-													<span class="day">12.25</span>
-												</p>
-												<dl class="today-cont">
-													<dt class="tit">임대농기계 불용물품 [온비드] 입찰 재공고 안내</dt>
-													<dd>
-														매각대상 물품 내역, 자격 : 의성군 거주 농업인,매각방법 : 온비드 제한
-														경쟁입찰 공고일 : 2018년 12월 26일 (수요일) 입찰기간 : 2019. 1. 7
-													</dd>
-												</dl>
+												<a href="#">
+													<p class="todays">
+														<span class="year">2019</span>
+														<span class="day">12.25</span>
+													</p>
+													<dl class="today-cont">
+														<dt class="tit">임대농기계 불용물품 [온비드] 입찰 재공고 안내</dt>
+														<dd>
+															매각대상 물품 내역, 자격 : 의성군 거주 농업인,매각방법 : 온비드 제한
+															경쟁입찰 공고일 : 2018년 12월 26일 (수요일) 입찰기간 : 2019. 1. 7
+														</dd>
+													</dl>
+												</a>
 											</div>
 											<!--// 중요 게시글  -->
 											<!-- 그외 게시글 : 최대 4개까지 -->
@@ -438,14 +439,18 @@
 					<!--// 소식 탭  -->
 
 					<!-- 민원 탭  -->
-					<div id="bigtabcont2" role="tabpanel" class="tab-complaint"> 
-						<div class="inner">민원</div>
+					<div id="bigtabcont2" class="tab-complaint"> 
+						<h2 class="hidden">민원관련 메인 내용</h2>
+						<div class="inner">
+						</div>
 					</div>
 					<!--// 민원 탭  -->
 					
 					<!-- 관광 탭  -->
-					<div id="bigtabcont3" role="tabpanel" class="tab-sightseeing"> 
-						<div class="inner">관광</div>
+					<div id="bigtabcont3" class="tab-sightseeing"> 
+						<h2 class="hidden">관광관련 메인 내용</h2>
+						<div class="inner">
+						</div>
 					</div>
 					<!--// 관광 탭  -->
 				</div>
@@ -511,6 +516,23 @@
 <script type="text/javascript" src="../../static/js/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="../../static/js/common.js"></script>
 <script>
+	// 메인 탭 (소식/민원/관공)
+	$('.main-tabcontent').slick({
+		speed: 400,
+		ltr: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		swipe: false,
+		arrows: false,
+		asNavFor: $(".top-menu .tab-zone")
+	});
+	$(".top-menu .tab-zone").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerMode: false,
+		focusOnSelect: true,
+		asNavFor: $(".main-tabcontent")
+	});
 
 	// 배너
 	$('.js-news-banner > .slider').slick({
@@ -541,8 +563,8 @@
 		autoplay: false,
 		autoplaySpeed: 1000,
 		cssEase: 'linear',
-		nextArrow : '.js-news-favoritmenu .btn-up',
-		prevArrow : '.js-news-favoritmenu .btn-down'
+		nextArrow : $('.js-news-favoritmenu .btn-up'),
+		prevArrow : $('.js-news-favoritmenu .btn-down')
 	});
 	// 팝업존
 	$(".js-news-popupzone > .slider").slick({
@@ -556,8 +578,9 @@
 		autoplay: false,
 		autoplaySpeed: 3000,
 		cssEase: 'linear',
-		nextArrow : '.js-news-popupzone .btn-next',
-		prevArrow : '.js-news-popupzone .btn-prev',
+		// arrows: true,
+		nextArrow : $('.js-news-popupzone .btn-next'),
+		prevArrow : $('.js-news-popupzone .btn-prev'),
 		customPaging :  function(slick,index) {
 			var i = index + 1
          return '<em class="current">' + i + '</em><span class="division">/</span>' + slick.slideCount;

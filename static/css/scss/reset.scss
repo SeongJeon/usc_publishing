@@ -132,9 +132,9 @@ caption {overflow:hidden; visibility:hidden; height:0; text-indent:-9999em;}
 }
 .hidden {
     //방법1
-    // position:absolute; overflow:hidden; top:0; left:0; width:1px; height:1px; text-indent:-9999em;
+    position:absolute; overflow:hidden; top:0; left:0; width:1px; height:1px; text-indent:-9999em;
     //방법2 
-    overflow:hidden; white-space: nowrap; text-indent: 100%;
+    // overflow:hidden; white-space: nowrap; text-indent: 100%;
 }
 
 

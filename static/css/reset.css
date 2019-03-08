@@ -66,7 +66,7 @@ caption { overflow: hidden; visibility: hidden; height: 0; text-indent: -9999em;
 #skipnavi a { display: block; position: absolute; top: 0px; left: -202px; width: 200px; height: 40px; padding: 0; border: 1px solid #dcdcdc; color: #555; font-size: 15px; background: #fff; text-align: center; line-height: 40px; font-weight: 700; z-index: 10000; -ms-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease; }
 #skipnavi a:focus { top: 0; left: 0; }
 
-.hidden { overflow: hidden; white-space: nowrap; text-indent: 100%; }
+.hidden { position: absolute; overflow: hidden; top: 0; left: 0; width: 1px; height: 1px; text-indent: -9999em; }
 
 @media (max-width: 1025px) { html { font-size: 10px; } }
 @media (max-width: 900px) { html { font-size: 9px; } }

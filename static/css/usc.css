@@ -55,6 +55,22 @@ MAIN
 #wrap.usc #container.main .main-tabcontent .tab-news { background: url("../../static/images/usc/bg_maintab1.jpg") no-repeat 50% 0; background-size: cover; }
 #wrap.usc #container.main .main-tabcontent .tab-complaint { background: url("../../static/images/usc/bg_maintab2.jpg") no-repeat 50% 0; background-size: cover; }
 #wrap.usc #container.main .main-tabcontent .tab-sightseeing { background: url("../../static/images/usc/bg_maintab3.jpg") no-repeat 50% 0; background-size: cover; }
+#wrap.usc #container.main .tab-news .l-left { float: left; width: 670px; }
+#wrap.usc #container.main .tab-news .l-right { float: right; width: 650px; }
+#wrap.usc #container.main .tab-news .news-banner { position: relative; }
+#wrap.usc #container.main .tab-news .news-banner .slick-dots { position: absolute; right: 0; bottom: 0; z-index: 1; width: 200px; height: 50px; background: rgba(0, 0, 0, 0.6); font-size: 18px; color: #fff; }
+#wrap.usc #container.main .tab-news .news-banner .slick-dots li { display: none; position: absolute; left: 19px; top: 14px; }
+#wrap.usc #container.main .tab-news .news-banner .slick-dots li.slick-active { display: block; }
+#wrap.usc #container.main .tab-news .news-banner .slick-dots .current { display: inline-block; height: 23px; width: 23px; color: #000; background: #fff; border-radius: 100px; line-height: 22px; text-align: center; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usc #container.main .tab-news .news-banner .slick-dots .division { margin: 0 3px 0 2px; }
+#wrap.usc #container.main .tab-news .news-banner .slick-arrow { position: absolute; bottom: 0; right: 0; z-index: 111; width: 32px; height: 50px; text-indent: -999em; }
+#wrap.usc #container.main .tab-news .news-banner .slick-arrow:after { display: block; content: ""; position: absolute; left: 50%; top: 50%; width: 12px; height: 20px; margin: -10px 0 0 -6px; background: url("../../static/images/usc/sp_main.png") no-repeat 0 0; }
+#wrap.usc #container.main .tab-news .news-banner .slick-arrow.slick-prev { right: 89px; }
+#wrap.usc #container.main .tab-news .news-banner .slick-arrow.slick-prev:after { background-position: 0px -100px; }
+#wrap.usc #container.main .tab-news .news-banner .slick-arrow.slick-next { right: 10px; }
+#wrap.usc #container.main .tab-news .news-banner .slick-arrow.slick-next:after { background-position: -100px -100px; }
+#wrap.usc #container.main .tab-news .news-banner .btn-slickPause { position: absolute; bottom: 0; right: 50px; width: 32px; height: 50px; text-indent: -999em; z-index: 1; }
+#wrap.usc #container.main .tab-news .news-banner .btn-slickPause:after { display: block; content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 20px; margin: -10px 0 0 -5px; background: url("../../static/images/usc/sp_main.png") no-repeat -50px -100px; }
 
 /* ------------------------------------------------------
 SUB PAGE

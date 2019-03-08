@@ -138,6 +138,53 @@ MAIN
 			@include background("usc/bg_maintab3.jpg", no-repeat 50% 0); background-size: cover;
 		}
 	}
+	
+
+	// 소식 탭
+	.tab-news {
+		// 탭 LAYOUT
+		.l-left {float: left; width: 670px}
+		.l-right {float: right; width:650px;}
+
+		// 배너1
+		.news-banner {
+			position: relative; 
+			.slick-dots {
+				position: absolute; right: 0; bottom: 0; z-index: 1; 
+				width: 200px; height:50px; background:rgba(0,0,0,0.6); font-size: 18px; color:#fff;
+				li {display: none; position: absolute; left:19px; top:14px;}
+				li.slick-active {display: block;}
+				.current {display: inline-block; height: 23px; width:23px; color:#000; background:#fff; border-radius: 100px; line-height: 22px; text-align: center; font-family: $font2;}	
+				.division {margin:0 3px 0 2px;}
+			}
+			.slick-arrow {
+				position: absolute; bottom:0; right: 0; z-index: 111; 
+				width:32px; height:50px; text-indent: -999em; 
+				&:after{display:block; content: ""; position: absolute; left:50%; top:50%; width:12px; height: 20px; margin:-10px 0 0 -6px; @include background("usc/sp_main.png", no-repeat 0 0);}
+				&.slick-prev{
+					right:89px;
+					&:after {background-position: 0px -100px;}
+				}
+				&.slick-next {
+					right:10px;
+					&:after {background-position: -100px -100px;}
+				}
+			}
+			.btn-slickPause {
+				position: absolute; bottom:0; right: 50px; 
+				width:32px; height: 50px; text-indent: -999em; z-index: 1;
+				&:after {
+					display: block; content: ""; position: absolute; left:50%; top:50%; 
+					width:11px; height: 20px; margin:-10px 0 0 -5px;
+					@include background("usc/sp_main.png", no-repeat -50px -100px)
+				}
+			}
+		}
+		// 게시판
+		.news-board {
+
+		}
+	}
 }
 
 

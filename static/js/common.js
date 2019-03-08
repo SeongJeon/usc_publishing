@@ -18,7 +18,7 @@ var usc = {
 		
 	},
 
-	// slick
+	// SLICK 예시
 	slickEvent : function(){
 		$('.product-lst').slick({
 			dots: false,
@@ -40,6 +40,20 @@ var usc = {
 		    }
 			]
 		});
+	},
+	// SLICK Pause
+	slickPause : function (slickName, el) {
+		var slickName = $(slickName), $this = $(el);
+
+		if($this.hasClass('js-pause')){
+			slickName.slick('slickPlay');
+			$this.text("Pause");
+		} else{
+			slickName.slick('slickPause');
+			$this.text("Play");
+		}
+
+		$this.toggleClass("js-pause");
 	}
 }
 

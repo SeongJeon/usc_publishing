@@ -137,16 +137,51 @@
 				<div class="main-tabcontent">
 					<!-- 소식 탭  -->
 					<div id="bigtabcont1" role="tabpanel" class="tab-news" style="display:block;">
-						<div class="inner">소식 </div>
+						<div class="inner">
+							<div class="l-left">
+								<!-- 배너슬라이드 -->
+								<div class="news-banner js-news-banner">
+									<div class="slider">
+										<div class="slide"><a href="#"><img src="../../static/images/usc/temp/@mainbanner1.png" alt="배너명"></a></div>
+										<div class="slide"><a href="#"><img src="../../static/images/usc/temp/@mainbanner1.png" alt="배너명"></a></div>
+										<div class="slide"><a href="#"><img src="../../static/images/usc/temp/@mainbanner1.png" alt="배너명"></a></div>
+									</div>
+									<button type="button" onclick="usc.slickPause('.js-news-banner > .slider', this)" class="btn-slickPause"><span>Pause</span></button>
+								</div>
+								<!-- //배너슬라이드 -->
+								<!-- 게시판 -->
+								<div class="news-board">
+									
+								</div>
+								<!-- //게시판 -->
+							</div> 
+
+							<div class="l-right">
+								<div class="menugroup">
+									
+								</div>
+								<!-- 자주찾는 메뉴 -->
+								<div class="new-favoritmenu">
+									
+									
+								</div>
+								<!-- //자주찾는 메뉴 -->
+							</div>
+						</div>
 					</div>
+					<!--// 소식 탭  -->
+
 					<!-- 민원 탭  -->
 					<div id="bigtabcont2" role="tabpanel" class="tab-complaint"> 
 						<div class="inner">민원</div>
 					</div>
+					<!--// 민원 탭  -->
+					
 					<!-- 관광 탭  -->
 					<div id="bigtabcont3" role="tabpanel" class="tab-sightseeing"> 
 						<div class="inner">관광</div>
 					</div>
+					<!--// 관광 탭  -->
 				</div>
 				<!--// 탭 컨텐츠 -->
 			</div>
@@ -210,6 +245,23 @@
 <script type="text/javascript" src="../../static/js/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="../../static/js/common.js"></script>
 <script>
+
+	// 배너
+	$('.js-news-banner > .slider').slick({
+		dots: true,
+		infinite: true,
+		speed: 400,
+		ltr: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		cssEase: 'linear',
+		customPaging :  function(slick,index) {
+			var i = index + 1
+         return '<em class="current">' + i + '</em><span class="division">/</span>' + slick.slideCount;
+      }
+	});
 
 </script>
 </body>

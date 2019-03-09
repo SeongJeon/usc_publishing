@@ -17,7 +17,7 @@
 .ebooksys .section {position:relative; width: 100%; background:url(../images/ebooksys/main/bg_main_visual.jpg);}
 .ebooksys .section > div {}
 .ebooksys h2 {height:180px; margin-top:180px;background:url(../images/ebooksys/main/txt_visual.png) no-repeat 50% 50%; text-align:center; text-indent:-9999em;}
-.ebooksys .main-slide {position:relative; width:1320px; margin:90px auto 90px auto;}
+.ebooksys .main-slide {position:relative; width:1320px; margin:90px auto 45px auto;}
 .ebooksys .main-slide .list {}
 .ebooksys .main-slide .list [class^='togo'] {text-align:center; color:#fff;}
 .ebooksys .main-slide .list [class^='togo'] a {position:relative; display:block;}

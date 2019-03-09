@@ -138,7 +138,7 @@
 								<h3 class="tit">문화관광 바로가기 메뉴</h3>
 								<div class="gotolnk-zone">
 									<ul class="gotolnk">
-										<li><a href="#"><span>스토리텔링 여행</span></a></li>									
+										<li class="on"><a href="#"><span>스토리텔링 여행</span></a></li>									
 										<li><a href="#"><span>일정별 코스여행</span></a></li>									
 										<li><a href="#"><span>계절별 여행</span></a></li>									
 										<li><a href="#"><span>축제 &middot; 체험</span></a></li>									
@@ -907,13 +907,30 @@
 
 
 	// 관광 - 슬라이드
-	$(".sightseeing-slider .js-bigslider").slick({
-		speed: 400,
-		ltr: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		swipe: false
-	});
+	var sightseeingSlider = (function(){
+		var idx;
+		$(".sightseeing-slider .js-bigslider").slick({
+			speed: 400,
+			ltr: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			swipe: false
+		});
+		$(".js-thumb-slider button").on("click", function(){
+			idx = $(this).closest("li").index();
+			var curr = $(this).closest("li");  
+
+			if(curr.hasClass("current")) return false; 
+
+			curr.addClass("current").siblings("li").removeClass("current");
+			$(".sightseeing-slider .js-bigslider").slick('slickGoTo', idx);
+			return false;
+		});
+
+		$(".sightseeing-slider .js-bigslider").on("afterChange", function(event, slick, currentSlide, nextSlide){
+			$(".js-thumb-slider li").eq(currentSlide).addClass("current").siblings().removeClass("current");
+		})
+	})();
 	// 관광 - 메뉴
 	// $('.sightseeing-gotolnk .gotolnk');
 	

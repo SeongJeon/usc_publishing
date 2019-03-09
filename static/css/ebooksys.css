@@ -94,11 +94,12 @@ footer {}
 .ebooksys .main-tab .tab-contents .dep2 ul > li.on a,
 .ebooksys .main-tab .tab-contents .dep2 ul > li a:hover,
 .ebooksys .main-tab .tab-contents .dep2 ul > li a:focus {background:#f28f63; border-radius:10px; font-weight:bold;}
-.ebooksys .main-tab .tab-contents .book-list {margin:30px 0 0;}
-.ebooksys .main-tab .tab-contents .book-list > ul {margin:0 0 -19px -19px;}
+.ebooksys .main-tab .tab-contents .book-list {margin:30px 0 0; width:1320px;}
+.ebooksys .main-tab .tab-contents .book-list .slick-track {width:1320px;}
+.ebooksys .main-tab .tab-contents .book-list > ul {margin:0 0 -19px -19px; width:1320px;}
 .ebooksys .main-tab .tab-contents .book-list > ul:after {display:block; content:""; clear:both;}
-.ebooksys .main-tab .tab-contents .book-list > ul li {float:left; margin:0 0 19px 19px;}
-.ebooksys .main-tab .tab-contents .book-list .before {text-align:center;}
+.ebooksys .main-tab .tab-contents .book-list > ul li {float:left; width:172px; margin:0 0 19px 19px;}
+.ebooksys .main-tab .tab-contents .book-list .before {width:172px; text-align:center;}
 .ebooksys .main-tab .tab-contents .book-list .before a {display:block; width:172px; height:264px; background:#fff; border:1px solid #d6d5d5; box-sizing:border-box; -webkit-box-sizing:border-box;}
 .ebooksys .main-tab .tab-contents .book-list .before a .tit {display:block; min-height:40px; margin:10px 0; color:#383838; line-height:22px; font-weight:bold;}
 .ebooksys .main-tab .tab-contents .book-list .before a img{}

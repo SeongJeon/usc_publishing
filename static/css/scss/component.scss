@@ -39,7 +39,75 @@
 }
 #gnb {}
 #footer {
-	height: 270px;
+	position:relative; height: 270px; background:#fff;
+	.inner {
+		position: relative; width:1320px; margin:0 auto;
+		&:after {display:block; clear:both; content:""}
+	}
+
+	.footer-banner {
+		height: 60px; border-bottom:1px solid #e1e1e1;
+	}
+	.footer-selectgroup {
+		padding-top: 20px; 
+		&:after {display:block; clear:both; content:""}
+		.footer-comp-select {
+			float:left; position: relative;
+			dt button { 
+				width:250px; height: 40px; padding:0 45px 0 15px; border:1px solid #cbcaca; font-size: 15px; color:#666; background:#fff url("../../static/images/common/form_select1.png") no-repeat 100% 50%; text-align: left;
+			}
+			dd {
+				display:none; position: absolute; left:0; bottom:100%; margin-bottom: -1px;
+				background:#fff; border:1px solid #cbcaca; 
+				ul{
+					padding:11px 0 8px;
+					&:after {display:block; clear:both; content:""}
+					
+				}
+				li {
+					float: left; width:50%; padding-left: 18px; box-sizing: border-box; text-align: left; line-height: 26px;
+					&:before{display: inline-block; content: "·"; margin-right: 2px; vertical-align: middle;}
+					&:nth-child(even) {padding-left: 10px;}
+				}
+				a {
+					font-size: 15px; color:#666;
+					&:hover {font-family: $font2;}
+				}	
+			}
+			& + .footer-comp-select {margin-left: 17px;}
+
+			&.open {
+				dt button {color:#fff; background:#b5b4b5 url('../../static/images/common/form_select1_on.png') no-repeat 100% 50%;}
+			}
+		}
+	}
+	.footer-utilegroup {
+		padding:0 130px 0 120px; margin-top: 25px; text-align: left;font-size: 13px; color:#666; line-height: 20px;
+		.footer-utile {
+			&:after {display:block; clear:both; content:""}
+			li {
+				float: left;
+				&+li:before {display: inline-block; position: relative; top:-2px; content: ""; width:1px; height: 12px; vertical-align: middle; margin:0 20px; background:#b7b7b7;}
+			}
+			a {
+				font-size: 15px; color:#666; 
+				strong {font-family: $font2;}
+			}
+		}
+		.footer-addr {
+			margin-top: 16px;
+			&:after {display:block; clear:both; content:""}
+			li {
+				float: left;
+				&+li:before {display: inline-block; position: relative; top:-1px; content: ""; width:1px; height: 10px; vertical-align: middle; margin:0 15px; background:#b7b7b7;}
+			}
+		}
+		.footer-txt {color:#c0c0c0;}
+	}
+	.footer-markgroup {
+		.footer-qrcode {position: absolute; left:0; top: 86px;}		
+		.footer-acmark {position: absolute; right:4px;top:92px;}		
+	}
 }
 #container {
 	
@@ -147,6 +215,13 @@ br.m {display:none}
 
 /* TABLE */
 table[class^=comp-tbl] {
+}
+
+
+
+/* INPUT */
+.comp-select {
+
 }
 
 

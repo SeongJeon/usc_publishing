@@ -13,9 +13,26 @@ var usc = {
 	gnbEvent: function(){
 	},
 
+	// FOOTER
+	footerEvent:function(el){
+		var $this = $(el), 
+			 $box = $(el).closest(".footer-comp-select"),
+			 spd=300;
+
+		if($this.attr("aria-expended") == 'true') {
+			$box.removeClass("open").find("dd").slideUp(spd);
+			$this.attr("aria-expended", "false");
+		}else{
+			$box.addClass("open").find("dd").slideDown(spd);
+			$this.attr("aria-expended", "true");
+		}
+
+		$box.siblings('.open').find('button').attr("aria-expended", "false");
+		$box.siblings('.open').removeClass("open").find("dd").slideUp(spd);
+	},
+
 	// TAB SHOW / HIDE
 	tabEvent : function(tabName, hasClassName, contName, liName){
-		
 	},
 
 	// SLICK 예시
@@ -80,12 +97,17 @@ $(document).ready(function(){
 
 			return false;
 		})
-	
 	})();
+})
 
-	
-	// MAIN GNB
-	// usc.gnbEvent();
+
+$(document).on("click", "body", function(e){
+	if($(".footer-comp-select").hasClass("open")){ 
+		if(!$(".footer-comp-select").has(e.target).length){ 
+			$(".footer-comp-select").removeClass("open").find('button').attr("aria-expended", false);
+			$(".footer-comp-select").find("dd").slideUp(300);
+		}
+	}
 })
 
 

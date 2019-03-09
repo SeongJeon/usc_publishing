@@ -1,9 +1,12 @@
 @charset "UTF-8";
 /* ------------------------------------------------------
+LAYOUT
+------------------------------------------------------ */
+/* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
 #wrap.usc #container.main { position: relative; }
-#wrap.usc #container.main .inner { max-width: 1320px; margin: 0 auto; }
+#wrap.usc #container.main .inner { width: 1320px; margin: 0 auto; }
 #wrap.usc #container.main .inner:after { display: block; clear: both; content: ""; }
 #wrap.usc #container.main .main-top-zone { position: absolute; left: 0; top: 0; width: 100%; z-index: 100; }
 #wrap.usc #container.main .main-top-zone .inner { display: table; height: 145px; width: 100%; }

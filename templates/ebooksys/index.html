@@ -35,7 +35,7 @@
 						<div class="">
 							<h2>Uiseong County Library 책으로 소통하는 행복한 의성전자책시스템</h2>
 							<div class="main-slide js-main-slide">
-								<button class="main-slide-prev">이전</button> 
+								<button type="button" class="main-slide-prev view-m">이전</button> 
 								<div class="list">
 									<div class="togo1"><a href="#">내 서재</a></div>
 									<div class="togo2"><a href="#">대출/예약</a></div>
@@ -48,11 +48,11 @@
 									<div class="togo4"><a href="#">FAQ_1</a></div>
 									<div class="togo5"><a href="#">알림_1</a></div>
 								</div>
-								<button class="main-slide-next">다음</button> 
+								<button type="button" class="main-slide-next view-m">다음</button> 
 							</div>
-							<div class="main_search_zone">
+							<div class="main-search-zone">
 								<h3 class="blind">통합검색</h3>
-								<div class="form_search">
+								<div class="form-search">
 									<div class="select">
 										<select title="카테고리 선택">
 											<option>통합검색</option>
@@ -61,7 +61,7 @@
 									<div class="input">
 										<input type="text" id="" name="서명, 저자, 키워드 등 검색어를 입력" title="" placeholder="서명, 저자, 키워드 등 검색어를 입력해주세요">
 									</div>
-									<button class="btn">검색</button>
+									<button type="button" class="btn">검색</button>
 								</div>
 								<div class="popularity js-popularity">
 									<span class="tit">인기검색어</span>
@@ -82,70 +82,76 @@
 										<li><a href="#">1_미녀와 야수</a></li>
 									</ul>
 								</div>
-								<div class="detail_search">
-									<button>도서 상세검색</button>
+								<div class="detail-search">
+									<button type="button" class="btn"><span>도서 상세검색</span></button>
 									<div class="layer" style="display:none;">
 										<h4 class="tit">상세검색</h4>
-										<div class="form_list">
-											<h5>검색어 입력</h5>
+										<div class="form-list">
+											<h5 class="tit_sub">검색어 입력</h5>
 											<ul class="list">
 												<li>
-													<label for="form_list01" class="sub_tit">서명</label>
-													<input type="text" id="form_list01" name="form_list01" title="서명 입력" placeholder="서명을 입력하세요">
+													<label for="form-list01" class="label">서명</label>
+													<input type="text" id="form-list01" name="form-list01" title="서명 입력" placeholder="서명을 입력하세요">
 												</li>
 												<li>
-													<label for="form_list02" class="sub_tit">저자</label>
-													<input type="text" id="form_list02" name="form_list02" title="저자 입력" placeholder="저자를 입력하세요">
+													<label for="form-list02" class="label">저자</label>
+													<input type="text" id="form-list02" name="form-list02" title="저자 입력" placeholder="저자를 입력하세요">
 												</li>
 												<li>
-													<label for="form_list03" class="sub_tit">출판사</label>
-													<input type="text" id="form_list03" name="form_list03" title="출판사 입력" placeholder="출판사를 입력하세요">
+													<label for="form-list03" class="label">출판사</label>
+													<input type="text" id="form-list03" name="form-list03" title="출판사 입력" placeholder="출판사를 입력하세요">
 												</li>
 											</ul>
-											<h5>검색옵션</h5>
+											<h5 class="tit_sub">검색옵션</h5>
 											<ul class="list">
 												<li>
-													<span class="sub_tit">검색방법</span>
+													<span class="label">검색방법</span>
 													<ul class="radio">
 														<li>
-															<label for="form_list04">
-																<input type="radio" id="form_list04" name="radio_option01">
-															</label>AND
+															<div class="radio-type1">
+																<input type="radio" id="form-list04" name="radio-option01" checked="checked">
+																<label for="form-list04"><span>AND</span></label>
+															</div>
 														</li>
 														<li>
-															<label for="form_list05">
-																<input type="radio" id="form_list05" name="radio_option01">
-															</label>OR
+															<div class="radio-type1">
+																<input type="radio" id="form-list05" name="radio-option01">
+																<label for="form-list05"><span>OR</span></label>
+															</div>
 														</li>
 														<li>
-															<label for="form_list04">
-																<input type="radio" id="form_list04" name="radio_option01">
-															</label>전방일치
+															<div class="radio-type1">
+																<input type="radio" id="form-list06" name="radio-option01">
+																<label for="form-list06"><span>전방일치</span></label>
+															</div>
 														</li>
 													</ul>
 												</li>
 												<li>
-													<span class="sub_tit">지원기기</span>
+													<span class="label">지원기기</span>
 													<ul class="radio">
 														<li>
-															<label for="form_list05">
-																<input type="radio" id="form_list05" name="radio_option02">
-															</label>전체
+															<div class="radio-type1">
+																<input type="radio" id="form-list07" name="radio-option02" checked="checked">
+																<label for="form-list07"><span>전체</span></label>
+															</div>
 														</li>
 														<li>
-															<label for="form_list06">
-																<input type="radio" id="form_list06" name="radio_option02">
-															</label>전용단말기
+															<div class="radio-type1">
+																<input type="radio" id="form-list08" name="radio-option02">
+																<label for="form-list08"><span>전용단말기</span></label>
+															</div>
 														</li>
 														<li>
-															<label for="form_list07">
-																<input type="radio" id="form_list07" name="radio_option02">
-															</label>스마트기기
+															<div class="radio-type1">
+																<input type="radio" id="form-list09" name="radio-option02">
+																<label for="form-list09"><span>스마트기기</span></label>
+															</div>
 														</li>
 													</ul>
 												</li>
 											</ul>
-											<button type="submit">검색</button>
+											<button type="submit" class="btn">검색</button>
 										</div>
 										<button class="close">닫기</button>
 									</div>
@@ -1680,8 +1686,10 @@
 									</div>
 								</div>
 							</div>
-							
 						</div>
+					</div>
+					<div class="mouse-control">
+						<span>scroll down</span>
 					</div>
 				</div>
 			</div>
@@ -1704,7 +1712,6 @@
 	window.onload = function(){
 		var win_h = $(window).height(),
 			header_h = $('#header').height();
-		console.log(header_h);
         $('.main .section').each(function(i){
             $(this).attr('data-index',(win_h - header_h) * i);
             $(this).css('height', win_h - header_h + 'px')
@@ -1721,6 +1728,17 @@
                 return false;
             }
         });
+        $(window).scroll(function() {
+			var scrollHeight = $(document).height();
+			var scrollPosition = $(window).height() + $(window).scrollTop();
+			if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+				$(".mouse-control").addClass('on')
+				$(".mouse-control span").text('scroll up')
+			} else {
+				$(".mouse-control").removeClass('on')
+				$(".mouse-control span").text('scroll down')
+			}
+		});
 	}
 	$(document).ready(function(){
 		

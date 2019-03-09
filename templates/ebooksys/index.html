@@ -1720,11 +1720,10 @@
 			header_h = $('#header').height();
 		$('.main .section').each(function(i){
 			$(this).attr('data-index',(win_h - header_h) * i);
-			$(this).css('height', win_h - header_h + 'px')
+			// $(this).css('height', win_h - header_h + 'px')
 
 		});
 		$('.main .section').on('mousewheel', function(e){
-
 			var sectionPos = parseInt($(this).attr('data-index'));
 			if(e.originalEvent.wheelDelta >= 0){
 				$('html,body').stop().animate({scrollTop:sectionPos - (win_h - header_h)});

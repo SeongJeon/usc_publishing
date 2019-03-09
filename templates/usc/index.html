@@ -944,7 +944,7 @@
 		};
 
 		$("a", $this).on("mouseenter", function(){
-			clearInterval(interval);
+			// clearInterval(interval);
 			$(this).closest("li").addClass("on").siblings().removeClass("on");
 			curidx = $(this).closest("li").index();
 		});

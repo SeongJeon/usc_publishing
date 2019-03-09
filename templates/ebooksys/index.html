@@ -24,7 +24,7 @@
 	</div>
 	<div id="wrap" class="ebooksys">
 		<!-- HEADER -->
-		<header id="header">
+		<header>
 			헤더
 		</header>
 		<!-- //HEADER -->
@@ -36,8 +36,8 @@
 					<div class="section">
 						<div class="">
 							<h2>Uiseong County Library 책으로 소통하는 행복한 의성전자책시스템</h2>
-							<div class="main_slide">
-								<button class="main_slide_prev">이전</button> 
+							<div class="main-slide js-main-slide">
+								<button class="main-slide-prev">이전</button> 
 								<div class="list">
 									<div class="togo1"><a href="#">내 서재</a></div>
 									<div class="togo2"><a href="#">대출/예약</a></div>
@@ -50,7 +50,7 @@
 									<div class="togo4"><a href="#">FAQ_1</a></div>
 									<div class="togo5"><a href="#">알림_1</a></div>
 								</div>
-								<button class="main_slide_next">다음</button> 
+								<button class="main-slide-next">다음</button> 
 							</div>
 							<div class="main_search_zone">
 								<h3 class="blind">통합검색</h3>
@@ -65,7 +65,7 @@
 									</div>
 									<button class="btn">검색</button>
 								</div>
-								<div class="popularity">
+								<div class="popularity js-popularity">
 									<span class="tit">인기검색어</span>
 									<ul class="list">
 										<li><a href="#">의성군립도서관</a></li>
@@ -153,7 +153,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="main_notice">
+							<div class="main-notice js-main-notice">
 								<h3 class="blind">공지사항</h3>
 								<ul class="list">
 									<li>
@@ -182,1028 +182,1031 @@
 									<button class="main_notice_prev">이전</button>
 									<button class="main_notice_next">다음</button>
 								</div>
-								<div class="btn_link"><a href="#">공지사항 더보기</a></div>
+								<div class="btn-link"><a href="#">공지사항 더보기</a></div>
 							</div>
 						</div>
 						
 					</div>
 					<div class="section">
-						<div class="main_tab">
-							<ul class="tab js-tab">
-								<li class="current"><a href="#">신착도서</a></li>
-								<li><a href="#">인기도서</a></li>
-								<li><a href="#">오디오북</a></li>
+						<div class="main-tab">
+							<ul class="tab"  role="tablist" data-animation="fade" aria-label="탭 제목">
+								<li role="presentation" class="current"><a href="#tabId1" role="tab" aria-controls="tabId1" aria-selected="true">신착도서</a></li>
+								<li role="presentation"><a href="#tabId2" role="tab" aria-controls="tabId2" >인기도서</a></li>
+								<li role="presentation"><a href="#tabId3" role="tab" aria-controls="tabId3" >오디오북</a></li>
 							</ul>
-							<div class="tab_contents">
-								<div class="dep2">
-									<ul>
-										<li class="on"><a href="#">전체</a></li>
-										<li><a href="#">문학</a></li>
-										<li><a href="#">인문</a></li>
-										<li><a href="#">사회</a></li>
-										<li><a href="#">경제/비즈니스</a></li>
-										<li><a href="#">자연/과학</a></li>
-										<li><a href="#">외국어</a></li>
-										<li><a href="#">취미/여행</a></li>
-										<li><a href="#">가정/생활</a></li>
-									</ul>
+							<div class="tab-contents">
+								<div id="tabId1" role="tabpanel" style="display: block">
+									<div class="dep2">
+										<ul>
+											<li class="on"><a href="#">전체</a></li>
+											<li><a href="#">문학</a></li>
+											<li><a href="#">인문</a></li>
+											<li><a href="#">사회</a></li>
+											<li><a href="#">경제/비즈니스</a></li>
+											<li><a href="#">자연/과학</a></li>
+											<li><a href="#">외국어</a></li>
+											<li><a href="#">취미/여행</a></li>
+											<li><a href="#">가정/생활</a></li>
+										</ul>
+									</div>
+									
+									<div class="book-list js-book01">
+										<ul>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">연애의행방</span>
+														<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
+														<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">엄마 반성문</span>
+														<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">알고리즘, <br>인생을 계산하다</span>
+														<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
+														<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">연애의행방</span>
+														<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
+														<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">엄마 반성문</span>
+														<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">알고리즘, <br>인생을 계산하다</span>
+														<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
+														<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</div>
-								
-								<div class="book_list js-book01">
-									<ul>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">연애의행방</span>
-													<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
-													<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">엄마 반성문</span>
-													<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">알고리즘, <br>인생을 계산하다</span>
-													<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
-													<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">연애의행방</span>
-													<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
-													<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">엄마 반성문</span>
-													<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">알고리즘, <br>인생을 계산하다</span>
-													<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
-													<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-									</ul>
+								<div id="tabId2" role="tabpanel" style="display: none">
+									<div class="dep2">
+										<ul>
+											<li class="on"><a href="#">1_전체</a></li>
+											<li><a href="#">1_문학</a></li>
+											<li><a href="#">1_인문</a></li>
+											<li><a href="#">1_사회</a></li>
+											<li><a href="#">1_경제/비즈니스</a></li>
+											<li><a href="#">1_자연/과학</a></li>
+											<li><a href="#">1_외국어</a></li>
+											<li><a href="#">1_취미/여행</a></li>
+											<li><a href="#">1_가정/생활</a></li>
+										</ul>
+									</div>
+									<div class="book-list js-book02">
+										<ul>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">연애의행방</span>
+														<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
+														<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">엄마 반성문</span>
+														<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">알고리즘, <br>인생을 계산하다</span>
+														<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
+														<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">연애의행방</span>
+														<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
+														<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">엄마 반성문</span>
+														<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">알고리즘, <br>인생을 계산하다</span>
+														<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
+														<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div id="tabId3" role="tabpanel" style="display: none">
+									<div class="dep2">
+										<ul>
+											<li class="on"><a href="#">2_전체</a></li>
+											<li><a href="#">2_문학</a></li>
+											<li><a href="#">2_인문</a></li>
+											<li><a href="#">2_사회</a></li>
+											<li><a href="#">2_경제/비즈니스</a></li>
+											<li><a href="#">2_자연/과학</a></li>
+											<li><a href="#">2_외국어</a></li>
+											<li><a href="#">2_취미/여행</a></li>
+											<li><a href="#">2_가정/생활</a></li>
+										</ul>
+									</div>
+									<div class="book-list js-book03">
+										<ul>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">연애의행방</span>
+														<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
+														<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">엄마 반성문</span>
+														<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">알고리즘, <br>인생을 계산하다</span>
+														<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
+														<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">연애의행방</span>
+														<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
+														<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">엄마 반성문</span>
+														<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">알고리즘, <br>인생을 계산하다</span>
+														<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
+														<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">연애의행방</span>
+														<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
+														<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">엄마 반성문</span>
+														<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">알고리즘, <br>인생을 계산하다</span>
+														<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
+														<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">연애의행방</span>
+														<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
+														<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">엄마 반성문</span>
+														<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">알고리즘, <br>인생을 계산하다</span>
+														<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
+														<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+											<li>
+												<div class="before">
+													<a href="#">
+														<span class="tit">어디서 살 것인가</span>
+														<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
+													</a>
+												</div>
+												<div class="after">
+													<ul>
+														<li>저자 : 김유남</li>
+														<li>출판사 : denstory</li>
+														<li>발행년도 : 2018.02.23</li>
+														<li>듣기기능 : TTS지원</li>
+													</ul>
+													<a href="#" class="btn">책 상세보기</a>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-							<div class="tab_contents">
-								<div class="dep2">
-									<ul>
-										<li class="on"><a href="#">1_전체</a></li>
-										<li><a href="#">1_문학</a></li>
-										<li><a href="#">1_인문</a></li>
-										<li><a href="#">1_사회</a></li>
-										<li><a href="#">1_경제/비즈니스</a></li>
-										<li><a href="#">1_자연/과학</a></li>
-										<li><a href="#">1_외국어</a></li>
-										<li><a href="#">1_취미/여행</a></li>
-										<li><a href="#">1_가정/생활</a></li>
-									</ul>
-								</div>
-								<div class="book_list js-book02">
-									<ul>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">연애의행방</span>
-													<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
-													<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">엄마 반성문</span>
-													<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">알고리즘, <br>인생을 계산하다</span>
-													<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
-													<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">연애의행방</span>
-													<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
-													<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">엄마 반성문</span>
-													<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">알고리즘, <br>인생을 계산하다</span>
-													<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
-													<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="tab_contents">
-								<div class="dep2">
-									<ul>
-										<li class="on"><a href="#">2_전체</a></li>
-										<li><a href="#">2_문학</a></li>
-										<li><a href="#">2_인문</a></li>
-										<li><a href="#">2_사회</a></li>
-										<li><a href="#">2_경제/비즈니스</a></li>
-										<li><a href="#">2_자연/과학</a></li>
-										<li><a href="#">2_외국어</a></li>
-										<li><a href="#">2_취미/여행</a></li>
-										<li><a href="#">2_가정/생활</a></li>
-									</ul>
-								</div>
-								<div class="book_list js-book03">
-									<ul>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">연애의행방</span>
-													<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
-													<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">엄마 반성문</span>
-													<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">알고리즘, <br>인생을 계산하다</span>
-													<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
-													<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">연애의행방</span>
-													<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
-													<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">엄마 반성문</span>
-													<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">알고리즘, <br>인생을 계산하다</span>
-													<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
-													<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">연애의행방</span>
-													<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
-													<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">엄마 반성문</span>
-													<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">알고리즘, <br>인생을 계산하다</span>
-													<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
-													<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">연애의행방</span>
-													<img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">사람들 앞에서 기죽지<br>않고 말 잘하는 법</span>
-													<img src="../../static/images/ebooksys/temp/main_book02.jpg" alt="사람들 앞에서 기죽지 않고 말 잘하는 법 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">엄마 반성문</span>
-													<img src="../../static/images/ebooksys/temp/main_book03.jpg" alt="엄마 반 성문 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">알고리즘, <br>인생을 계산하다</span>
-													<img src="../../static/images/ebooksys/temp/main_book04.jpg" alt="알고리즘, 인생을 계산하다 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">클라우스 슈밥의 제4차 <br>산업혁명 더넥스트</span>
-													<img src="../../static/images/ebooksys/temp/main_book05.jpg" alt="클라우스 슈밥의 제4차 산업혁명 더넥스트 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-										<li>
-											<div class="before">
-												<a href="#">
-													<span class="tit">어디서 살 것인가</span>
-													<img src="../../static/images/ebooksys/temp/main_book06.jpg" alt="어디서 살 것인가 표지" >	
-												</a>
-											</div>
-											<div class="after">
-												<ul>
-													<li>저자 : 김유남</li>
-													<li>출판사 : denstory</li>
-													<li>발행년도 : 2018.02.23</li>
-													<li>듣기기능 : TTS지원</li>
-												</ul>
-												<a href="#" class="btn">책 상세보기</a>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -1212,7 +1215,7 @@
 		<!-- //CONTAINER -->
 
 		<!-- FOOTER -->
-		<footer id="footer">
+		<footer>
 			푸터
 		</footer>
 		<!-- //FOOTER -->
@@ -1241,11 +1244,11 @@
                 return false;
             }
         });
-		$('.main_slide .list').slick({
+		$('.js-main-slide .list').slick({
 			dots: true,
 			arrows: true,
-			prevArrow : $('.main_slide_prev'),
-			nextArrow : $('.main_slide_next'),
+			prevArrow : $('.main-slide-prev'),
+			nextArrow : $('.main-slide-next'),
 			slidesToShow: 5,
 			slidesToScroll: 5,
 			dotsClass: 'custom-paging',
@@ -1253,31 +1256,35 @@
 				return '<em>' + (i + 1) + '</em>' + "/" + slider.slideCount / 5;
 			}
 		});
-		$('.popularity .list').slick({
+		$('.js-popularity .list').slick({
 			arrows: false,
 			slidesToShow: 7,
 			slidesToScroll: 1,
 			autoplay: true,
-  			variableWidth: true,
   			infinite: true,
-  			autoplaySpeed: 1000,
+			autoplaySpeed: 0,
+			speed: 3000,
+			variableWidth: true,
+			cssEase: "linear"
 		});
-		$('.main_notice .list').slick({
+		$('.js-main-notice .list').slick({
 			arrows: true,
-			prevArrow : $('.main_notice_prev'),
-			nextArrow : $('.main_notice_next'),
+			prevArrow : $('.main-notice-prev'),
+			nextArrow : $('.main-notice-next'),
 		});
-
-		usc.tabEvent('.js-tab', 'current', '.tab_contents');
 
 		$('.js-book01 ul, .js-book02 ul, .js-book03 ul').slick({
 			dots: true,
 			arrows: true,
+			slidesToShow: 14,
+			slidesToScroll: 14,
+			rows: 2,
 			dotsClass: 'custom-paging',
 			customPaging: function(slider, i) {
 				return '<em>' + (i + 1) + '</em>' + "/" + slider.slideCount / 5;
 			}
 		});
+		
 	});
 
 </script>

@@ -585,7 +585,7 @@ MAIN
 		.inner {position: relative;}
 		// 슬라이드
 		.sightseeing-slider {
-			float: left; width:1005px; height: 600px;
+			float: left; position: relative; width:1005px; height: 600px;
 
 			.bigslider {
 				position: relative; height: 600px;
@@ -611,19 +611,46 @@ MAIN
 						@include background("usc/sp_main.png",no-repeat 0 0);}
 					&.slick-next {
 						right:0;
-						&:after {background-position: 0 0;}
+						&:after {background-position: -350px -100px;}
 					}
 					&.slick-prev {
 						left:0;
-						&:after {background-position: 0 0;}
+						&:after {background-position: -300px -100px;}
 					}
 				}
 				.slide {position: relative;}
 			}
-
+			.thumb-slider {
+				position: absolute; left:0; bottom:150px; z-index: 10; width: 100%; text-align: center;
+				ul {
+					display: inline-block;
+					&:after {display:block; clear:both; content:""}
+					li {float: left;}
+					li + li {margin-left:16px}
+				}
+				button {
+					overflow:hidden; position:relative; width:35px; height: 35px; border-radius: 100px; 
+					img {width: 100%; height: 100%}
+					&:before {display: block; position: absolute; left:0; top:0; width: 100%; height: 100%; content: ""; border-radius: 100px; border:1px solid #fff; box-sizing: border-box; border-radius: 100px; z-index: 1}
+					&:after {display: block; position: absolute; left:0; top:0; width: 100%; height: 100%; content: ""; background:rgba(0,0,0,0.4); z-index: 2}
+				}
+				.current button {
+					width:66px; height: 66px; top:-13px;
+					&:before {border-width:5px;}
+					&:after {display: none}
+				}
+			}
 		}
 		// 바로가기메뉴
-		.sightseeing-gotolnk {float: right; width: 305px; height: 745px; background:#03a596;}
+		.sightseeing-gotolnk {
+			float: right; width: 305px; height: 745px; background:#03a596; text-align: center;
+			.tit {padding-top: 37px; font-size: 20px; color:#fff; font-family: $font2;}
+			.gotolnk-zone {
+				position: relative; padding-top: 226px; margin-top: 17px; @include background("usc/bg_sightseeing_goto.png", no-repeat 50% 0);
+
+				
+			}
+		}
 		// 알려드립니다.
 		.sightseeing-attention {position: absolute; bottom:0; left:0; width: 1005px; height: 138px; background:#0d8559;}
 

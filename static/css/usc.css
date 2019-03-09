@@ -266,7 +266,7 @@ MAIN
 #wrap.usc #container.main .tab-complaint .complaint-menu .complaint-tab-contents #complainttab3 .lst-menu a:hover .icon { background: #0c6dac; }
 #wrap.usc #container.main .tab-complaint .complaint-menu .complaint-tab-contents #complainttab3 .lst-menu a:hover .icon:after { border-color: #0c6dac; }
 #wrap.usc #container.main .tab-sightseeing .inner { position: relative; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-slider { float: left; width: 1005px; height: 600px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider { float: left; position: relative; width: 1005px; height: 600px; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider { position: relative; height: 600px; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .detailzone { position: absolute; left: 0; bottom: 0; width: 100%; padding: 19px 25px; background: rgba(0, 0, 0, 0.7); }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .detailzone .detail-txt { color: #fff; }
@@ -277,11 +277,25 @@ MAIN
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow { position: absolute; top: 205px; width: 80px; height: 130px; background: rgba(0, 0, 0, 0.5); text-indent: -999em; z-index: 1; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow:after { display: block; position: absolute; left: 50%; top: 50%; content: ""; width: 34px; height: 57px; margin-top: -29px; margin-left: -17px; background: url("../../static/images/usc/sp_main.png") no-repeat 0 0; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.slick-next { right: 0; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.slick-next:after { background-position: 0 0; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.slick-next:after { background-position: -350px -100px; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.slick-prev { left: 0; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.slick-prev:after { background-position: 0 0; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.slick-prev:after { background-position: -300px -100px; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slide { position: relative; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk { float: right; width: 305px; height: 745px; background: #03a596; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider { position: absolute; left: 0; bottom: 150px; z-index: 10; width: 100%; text-align: center; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider ul { display: inline-block; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider ul:after { display: block; clear: both; content: ""; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider ul li { float: left; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider ul li + li { margin-left: 16px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider button { overflow: hidden; position: relative; width: 35px; height: 35px; border-radius: 100px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider button img { width: 100%; height: 100%; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider button:before { display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ""; border-radius: 100px; border: 1px solid #fff; box-sizing: border-box; border-radius: 100px; z-index: 1; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider button:after { display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ""; background: rgba(0, 0, 0, 0.4); z-index: 2; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider .current button { width: 66px; height: 66px; top: -13px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider .current button:before { border-width: 5px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider .current button:after { display: none; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk { float: right; width: 305px; height: 745px; background: #03a596; text-align: center; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .tit { padding-top: 37px; font-size: 20px; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone { padding-top: 226px; margin-top: 17px; background: url("../../static/images/usc/bg_sightseeing_goto.png") no-repeat 50% 0; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-attention { position: absolute; bottom: 0; left: 0; width: 1005px; height: 138px; background: #0d8559; }
 
 /* ------------------------------------------------------

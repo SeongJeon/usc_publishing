@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {overflow-x:hidden;}
 header, footer {display:block; width:100%; background:#eee; z-index:10; text-align:center; }
-header {position:fixed; top:0; }
+/*header {position:fixed; top:0; }*/
 footer {}
 .blind {position:absolute; left:-9999em; top:-9999em; overflow: hidden; white-space: nowrap; text-indent: 100%; }
 .ebooksys .section {position:relative; width: 100%; background:url(../images/ebooksys/main/bg_main_visual.jpg) no-repeat left;}

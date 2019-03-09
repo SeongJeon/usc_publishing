@@ -518,36 +518,117 @@ MAIN
  		}
  		// 민원관련 메뉴 
  		.complaint-menu {
- 			overflow:hidden; height: 300px;
+ 			overflow:hidden; position: relative; height: 300px;
 			.tab {
-				width:248px; padding:0 12px; background:#fff;	
+				position: absolute; left:0; top:0; width:248px; padding:0 12px; background:#fff;
 				li + li {border-top: 1px dashed #e3e3e3;}
 				a {
 					position: relative; display: block; height: 99px; padding-top: 32px; padding-left: 84px; margin:0 -12px;
-					font-size: 13px; color:#303030;
-					em {display: block; font-size: 18px; font-family: $font2; margin-bottom: 8px;}
-					&:before {display: block; position: absolute; left:0; top:0; width: 57px; height: 57px;@include background("usc/sp_main.png",no-repeat 0 0);}
-					&[aria-controls=complainttab1]:before {background-position: 0 0;}
-					&[aria-controls=complainttab2]:before {background-position: 0 0;}
-					&[aria-controls=complainttab3]:before {background-position: 0 0;}
+					font-size: 13px; color:rgba(48,48,48,0.7); box-sizing: border-box;
+					em {display: block; font-size: 18px; font-family: $font2; margin-bottom: 6px; color:#303030;}
+					&:before {display: block; position: absolute; left:16px; top:22px; width: 57px; height: 57px;@include background("usc/sp_main.png",no-repeat 0 0); content: ""}
+					&[aria-controls=complainttab1]:before {background-position: 0 -250px;}
+					&[aria-controls=complainttab2]:before {background-position: -100px -250px;}
+					&[aria-controls=complainttab3]:before {background-position: -200px -250px;}
 				}
-
-
 				a[aria-selected=true] {
+					&:after {display: block; position: absolute; left:100%; top:0; content: ""; width: 0; height: 0; border-left: 21px solid #ff8000; border-radius: 21px solid transparent; border-top: 50px solid transparent; border-bottom: 50px solid transparent;}
 					&[aria-controls=complainttab1] {background:#ff8000;}
 					&[aria-controls=complainttab2] {background:#03a596;}
 					&[aria-controls=complainttab3] {background:#0c6dac;}
+					&[aria-controls=complainttab1]:before {background-position: 0 -350px;}
+					&[aria-controls=complainttab2]:before {background-position: -100px -350px;}
+					&[aria-controls=complainttab3]:before {background-position: -200px -350px;}
+					&[aria-controls=complainttab1]:after {border-left-color:#ff8000}
+					&[aria-controls=complainttab2]:after {border-left-color:#03a596}
+					&[aria-controls=complainttab3]:after {border-left-color:#0c6dac}
 				}
 			}
-
 			.complaint-tab-contents {
-				div[id^=complainttab] {display: none; background:#e2e1e1;}
+				div[id^=complainttab] {display: none; height:300px; background:#e2e1e1; padding-left: 315px;}
+				.lst-menu {
+					&:after {display:block; clear:both; content:""}
+					.icon {
+						display: block; position: relative; margin:0 auto; width: 90px; height: 90px;background:#b4b4b4; box-sizing:border-box;  border-radius: 100px; 
+						-ms-transition:0.2s ease; -webkit-transition:0.2s ease; -moz-transition:0.2s ease; transition:0.2s ease;
+						&:after {position: absolute; left:0; top:0; display: block; content: ""; width:100%; height: 100%; box-sizing: border-box; border-width:5px; border-style:solid; border-color:#fff; border-radius: 100px;  border-radius: 100px; -ms-transition:0.2s ease; -webkit-transition:0.2s ease; -moz-transition:0.2s ease; transition:0.2s ease;}
+					}
+					.name {display: block; margin-top: 11px; font-size: 15px; color:#303030; text-align: center;}
+					li {float: left; margin-left: 60px; margin-top: 20px;}
+					li:nth-child(4n+1) {clear:both; margin-left: 0;}
+					a:hover .name {font-family: $font2; }
+				}
+				#complainttab1 {
+					.lst-menu a:hover .icon {
+						background:#ff8000;
+						&:after {border-color:#ff8000;}
+					}
+				}
+				#complainttab2 {
+					.lst-menu a:hover .icon {
+						background:#03a596;
+						&:after {border-color:#03a596;}
+					}
+				}
+				#complainttab3 {
+					.lst-menu a:hover .icon {
+						background:#0c6dac;
+						&:after {border-color:#0c6dac;}
+					}
+				}
 			}
-
  		}
 	}
 
 	// 관광 탭
+	.tab-sightseeing {
+		.inner {position: relative;}
+		// 슬라이드
+		.sightseeing-slider {
+			float: left; width:1005px; height: 600px;
+
+			.bigslider {
+				position: relative; height: 600px;
+				.detailzone {
+					position: absolute; left:0; bottom: 0; width: 100%; padding:19px 25px; background:rgba(0,0,0,0.7);
+					.detail-txt {
+						color:#fff;
+						dt {font-family: $font2; font-size: 20px;}
+						dd {margin-top: 15px; font-size: 15px; line-height: 22px;}
+					}
+					.btn-more {
+						position: absolute; right:10px; top:10px; display: block;
+						height: 38px; width:138px; line-height: 38px; border:1px solid rgba(256,256,256,0.5); 
+						text-align: center; font-size: 15px; color:#fff; 
+						&:after {display: inline-block; content: ">"; margin-left: 5px; vertical-align: middle;}
+					}
+				}
+				.slick-arrow {
+					position: absolute; top:205px; width:80px; height: 130px; 
+					background:rgba(0,0,0,0.5); text-indent: -999em; z-index: 1;
+					&:after {display: block; position: absolute; left:50%; top:50%; content: ""; width:34px; height: 57px; 
+						margin-top: -29px; margin-left: -17px;
+						@include background("usc/sp_main.png",no-repeat 0 0);}
+					&.slick-next {
+						right:0;
+						&:after {background-position: 0 0;}
+					}
+					&.slick-prev {
+						left:0;
+						&:after {background-position: 0 0;}
+					}
+				}
+				.slide {position: relative;}
+			}
+
+		}
+		// 바로가기메뉴
+		.sightseeing-gotolnk {float: right; width: 305px; height: 745px; background:#03a596;}
+		// 알려드립니다.
+		.sightseeing-attention {position: absolute; bottom:0; left:0; width: 1005px; height: 138px; background:#0d8559;}
+
+
+	}
 }
 
 

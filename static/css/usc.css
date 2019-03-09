@@ -295,7 +295,7 @@ MAIN
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider .current button:after { display: none; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk { float: right; width: 305px; height: 745px; background: #03a596; text-align: center; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .tit { padding-top: 37px; font-size: 20px; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone { padding-top: 226px; margin-top: 17px; background: url("../../static/images/usc/bg_sightseeing_goto.png") no-repeat 50% 0; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone { position: relative; padding-top: 226px; margin-top: 17px; background: url("../../static/images/usc/bg_sightseeing_goto.png") no-repeat 50% 0; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-attention { position: absolute; bottom: 0; left: 0; width: 1005px; height: 138px; background: #0d8559; }
 
 /* ------------------------------------------------------

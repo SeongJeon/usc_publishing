@@ -34,6 +34,18 @@
 #footer .inner { position: relative; width: 1320px; margin: 0 auto; }
 #footer .inner:after { display: block; clear: both; content: ""; }
 #footer .footer-banner { height: 60px; border-bottom: 1px solid #e1e1e1; }
+#footer .footer-banner .tit { position: absolute; left: 0; top: 0; font-size: 18px; color: #000; line-height: 59px; }
+#footer .footer-banner .indicator { position: absolute; overflow: hidden; left: 79px; top: 19px; width: 85px; }
+#footer .footer-banner .indicator p[class^=btn-] { float: left; }
+#footer .footer-banner .indicator p[class^=btn-] > * { display: block; width: 23px; height: 23px; background: url("../../static/images/common/sp_icon.png") no-repeat 0 0; text-indent: -999em; }
+#footer .footer-banner .indicator p[class^=btn-].btn-prev button { background-position: 0 -100px; }
+#footer .footer-banner .indicator p[class^=btn-].btn-next button { background-position: -50px -100px; }
+#footer .footer-banner .indicator p[class^=btn-].btn-more a { background-position: -100px -100px; }
+#footer .footer-banner .indicator p[class^=btn-] + p { margin-left: 7px; }
+#footer .footer-banner .banner-slider { padding-left: 170px; }
+#footer .footer-banner .banner-slider li { position: relative; line-height: 59px; padding: 0 25px; }
+#footer .footer-banner .banner-slider li + li:before { display: inline-block; position: absolute; left: 0; top: 50%; width: 4px; height: 4px; margin-top: -2px; border-radius: 10px; content: ""; background: #c2c0bf; }
+#footer .footer-banner .banner-slider .slick-current:before { display: none; }
 #footer .footer-selectgroup { padding-top: 20px; }
 #footer .footer-selectgroup:after { display: block; clear: both; content: ""; }
 #footer .footer-selectgroup .footer-comp-select { float: left; position: relative; }

@@ -1,11 +1,31 @@
 <div id="footer">
 	<div class="footer-banner">
 		<div class="inner">
-			<strong>배너모음</strong>
+			<strong class="tit">배너모음</strong>
 			<div class="indicator">
 				<p class="btn-prev"><button type="button"><span>prev</span></button></p>
 				<p class="btn-next"><button type="button"><span>next</span></button></p>
 				<p class="btn-more"><a href="#"><span>더보기</span></a></p>
+			</div>
+			<div class="banner-slider js-slider">
+				<ul class="slider">
+					<li><a href="#"><span>귀농귀촌종합센터</span></a></li>
+					<li><a href="#"><span>RDA농촌진흥청</span></a></li>
+					<li><a href="#"><span>농업인력포털</span></a></li>
+					<li><a href="#"><span>의성군농업기술센터</span></a></li>
+					<li><a href="#"><span>의성을찾는사람들</span></a></li>
+					<li><a href="#"><span>의성군</span></a></li>
+					<li><a href="#"><span>국민권익위원회</span></a></li>
+					<li><a href="#"><span>건강보험관리</span></a></li>
+					<li><a href="#"><span>귀농귀촌종합센터</span></a></li>
+					<li><a href="#"><span>RDA농촌진흥청</span></a></li>
+					<li><a href="#"><span>농업인력포털</span></a></li>
+					<li><a href="#"><span>의성군농업기술센터</span></a></li>
+					<li><a href="#"><span>의성을찾는사람들</span></a></li>
+					<li><a href="#"><span>의성군</span></a></li>
+					<li><a href="#"><span>국민권익위원회</span></a></li>
+					<li><a href="#"><span>건강보험관리</span></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -196,3 +216,16 @@
 		</div>
 	</div>
 </div>
+<script>
+	$('.footer-banner .js-slider > .slider').slick({
+		dots: false,
+		infinite: true,
+		speed: 3000,
+		ltr: true,
+		slidesToShow: 8,
+		slidesToScroll: 8,
+		variableWidth: true,
+		nextArrow : $('.footer-banner .btn-next'),
+		prevArrow : $('.footer-banner .btn-prev')
+	});
+</script>

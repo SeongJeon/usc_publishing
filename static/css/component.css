@@ -60,7 +60,7 @@
 #header .header-middle .comp-search .form { overflow: hidden; width: 100%; border: 3px solid #ffb00d; border-radius: 100px; background: #fff; }
 #header .header-middle .comp-search .form:after { display: block; clear: both; content: ""; }
 #header .header-middle .comp-search .form select { float: left; width: 85px; height: 38px; padding-left: 20px; text-align: right; background: url("../../static/images/common/form_select2.png") no-repeat 100% 50%; box-sizing: border-box; font-size: 13px; color: #222; line-height: 28px; }
-#header .header-middle .comp-search .form input { float: left; width: 353px; height: 38px; padding: 0 70px 0 20px; box-sizing: border-box; }
+#header .header-middle .comp-search .form input { float: left; width: 353px; height: 38px; padding: 0 70px 0 20px; box-sizing: border-box; font-size: 13px; color: #222; }
 #header .header-middle .comp-search button { width: 52px; height: 52px; position: absolute; right: 17px; top: -5px; border-radius: 100px; background: #ffb00d; }
 #header .header-middle .comp-search button span { display: inline-block; vertical-align: middle; width: 25px; height: 25px; text-indent: -999em; background: url("../../static/images/common/sp_icon.png") no-repeat -100px -50px; }
 #header .header-bottom { background: #d59f2b; min-height: 50px; }

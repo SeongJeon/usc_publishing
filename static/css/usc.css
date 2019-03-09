@@ -9,7 +9,7 @@ MAIN
 #wrap.usc #container.main .inner { width: 1320px; margin: 0 auto; }
 #wrap.usc #container.main .inner:after { display: block; clear: both; content: ""; }
 #wrap.usc #container.main .main-top-zone { position: absolute; left: 0; top: 0; width: 100%; z-index: 100; }
-#wrap.usc #container.main .main-top-zone .inner { display: table; height: 145px; width: 100%; }
+#wrap.usc #container.main .main-top-zone .inner { display: table; height: 145px; width: 1320px; margin: 0 auto; }
 #wrap.usc #container.main .main-top-zone .top-txt { display: table-cell; font-size: 18px; color: #555; font-weight: 700; vertical-align: middle; }
 #wrap.usc #container.main .main-top-zone .top-menu { display: table-cell; width: 445px; }
 #wrap.usc #container.main .main-top-zone .top-menu .weather-zone { overflow: hidden; position: relative; height: 42px; margin-top: 15px; }
@@ -277,14 +277,15 @@ MAIN
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .detailzone .detail-txt dd { margin-top: 15px; font-size: 15px; line-height: 22px; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .detailzone .btn-more { position: absolute; right: 10px; top: 10px; display: block; height: 38px; width: 138px; line-height: 38px; border: 1px solid rgba(255, 255, 255, 0.5); text-align: center; font-size: 15px; color: #fff; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .detailzone .btn-more:after { display: inline-block; content: ">"; margin-left: 5px; vertical-align: middle; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow { position: absolute; top: 205px; width: 80px; height: 130px; background: rgba(0, 0, 0, 0.5); text-indent: -999em; z-index: 1; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow { position: absolute; top: 205px; width: 80px; height: 130px; opacity: 0; background: rgba(0, 0, 0, 0.5); text-indent: -999em; z-index: 1; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow:after { display: block; position: absolute; left: 50%; top: 50%; content: ""; width: 34px; height: 57px; margin-top: -29px; margin-left: -17px; background: url("../../static/images/usc/sp_main.png") no-repeat 0 0; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.slick-next { right: 0; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.slick-next:after { background-position: -350px -100px; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.slick-prev { left: 0; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.slick-prev:after { background-position: -300px -100px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slick-arrow.on { opacity: 1; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .bigslider .slide { position: relative; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider { position: absolute; left: 0; bottom: 150px; z-index: 10; width: 100%; text-align: center; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider { position: absolute; left: 0; bottom: 120px; z-index: 10; width: 100%; text-align: center; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider ul { display: inline-block; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider ul:after { display: block; clear: both; content: ""; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider ul li { float: left; }
@@ -298,7 +299,14 @@ MAIN
 #wrap.usc #container.main .tab-sightseeing .sightseeing-slider .thumb-slider .current button:after { display: none; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk { float: right; width: 305px; height: 745px; background: #03a596; text-align: center; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .tit { padding-top: 37px; font-size: 20px; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone { position: relative; padding-top: 226px; margin-top: 17px; background: url("../../static/images/usc/bg_sightseeing_goto.png") no-repeat 50% 0; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone { position: relative; padding: 226px 28px 0; margin-top: 17px; background: url("../../static/images/usc/bg_sightseeing_goto.png") no-repeat 50% 0; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li { border-bottom: 1px solid rgba(255, 255, 255, 0.2); margin-top: 10px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li:first-child { margin-top: 0; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li a { display: block; position: relative; height: 40px; font-size: 16px; color: #fff; line-height: 40px; padding-left: 72px; text-align: left; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li a:before { display: inline-block; position: absolute; left: 48px; top: 50%; width: 5px; height: 5px; background: #fff; content: ""; margin-top: -2.5px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on { border-bottom-color: #fff; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on a { background: #fff; color: #0c9687; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on a:before { width: 23px; height: 23px; left: 39px; background: #0c9687 url("../../static/images/usc/icon_arrow.png") no-repeat 50% 50%; border-radius: 100px; margin-top: -12px; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-attention { position: absolute; bottom: 0; left: 0; width: 1005px; height: 138px; background: #0d8559; }
 
 /* ------------------------------------------------------

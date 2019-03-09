@@ -90,7 +90,7 @@
 			.form {overflow:hidden; width: 100%; border:3px solid #ffb00d; border-radius: 100px; background:#fff; 
 				&:after {display:block; clear:both; content:""}
 				select {float: left; width: 85px; height: 38px; padding-left: 20px; text-align: right; @include background("common/form_select2.png",no-repeat 100% 50%); box-sizing: border-box; font-size: 13px; color:#222; line-height: 28px}
-				input {float: left; width: 353px; height: 38px; padding:0 70px 0 20px; box-sizing: border-box}
+				input {float: left; width: 353px; height: 38px; padding:0 70px 0 20px; box-sizing: border-box; font-size: 13px;color:#222;}
 			}
 			button {
 				width: 52px; height: 52px; position: absolute; right: 17px; top:-5px; border-radius: 100px; background:#ffb00d;

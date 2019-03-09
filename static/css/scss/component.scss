@@ -36,7 +36,72 @@
 #wrap {position:relative; min-width:320px;}
 #header {
 	overflow:hidden; height: 180px;
-}
+	.inner {
+		width:1320px; position: relative; margin:0 auto; 
+		&:after {display:block; clear:both; content:""}
+	}
+
+	.header-top {
+		height: 40px; background:#383b3b;
+		.header-site {
+			float: left; 
+			&:after {display:block; clear:both; content:""}
+			li {
+				float: left; border-right:1px solid rgba(256,256,256,0.2); 
+				&:nth-child(1) a:before {display: inline-block; content: ""; width: 22px; height: 21px; @include background("common/sp_icon.png", no-repeat 0 -50px); margin-right: 10px; vertical-align: middle;}
+				a {display:block;width:120px;  font-size: 12px; color:#fff; line-height: 40px; text-align: center;}
+			}
+
+			.current a {color:#f15a22; background:#fff; }
+			li:nth-child(1).current a:before {background-position: -50px -50px;} 
+		}
+		.header-utilegroup {float: right; padding-top: 7px;}
+		.header-utile {
+			display: inline-block; font-size: 11px; color:#e1e1e1;
+			&:after {display:block; clear:both; content:""}
+			li {float: left; line-height: 23px;}
+			li+li:before {display: inline-block; content: ""; margin:0 12px; width: 1px; height: 9px; background:rgba(173,174,174,0.2);}
+		}
+		.haeder-lang {
+			display: inline-block; margin-left: 22px;
+			li {float: left;}
+			li + li {margin-left: 7px;}
+			a {display: inline-block; width: 34px; height: 23px; text-indent: -999em;}
+		}
+	}
+	.header-middle {
+		position:relative; height: 90px; 
+		.title {
+			position: absolute; left:0; top:17px; 
+			a {display:block; width: 139px; height: 60px; text-indent: -999em; @include background("usc/img_logo.png",no-repeat 50% 50%);}
+		}
+		.usc-snsgroup {
+			position: absolute; right: 0; top:0; height: 90px; padding-top: 20px; padding-right: 89px; 
+			@include background("usc/bg_header.png",no-repeat 100% 100%);
+			.txt {font-size: 15px; font-family: $font2; color:#2d2d2d; text-align: right;}
+			.sns { 
+				overflow: hidden; margin-top: 10px;
+				li {float: left; margin-left: 8px; }
+				a {display: block; width: 34px; height: 34px; text-indent: -999em; }
+			}
+		}
+		.comp-search {
+			position: relative; top:25px; width:444px; height:44px;margin:0 auto; text-align: center;
+			.form {overflow:hidden; width: 100%; border:3px solid #ffb00d; border-radius: 100px; background:#fff; 
+				&:after {display:block; clear:both; content:""}
+				select {float: left; width: 85px; height: 38px; padding-left: 20px; text-align: right; @include background("common/form_select2.png",no-repeat 100% 50%); box-sizing: border-box; font-size: 13px; color:#222; line-height: 28px}
+				input {float: left; width: 353px; height: 38px; padding:0 70px 0 20px; box-sizing: border-box}
+			}
+			button {
+				width: 52px; height: 52px; position: absolute; right: 17px; top:-5px; border-radius: 100px; background:#ffb00d;
+				span {display: inline-block; vertical-align: middle; width: 25px; height: 25px; text-indent: -999em; @include background("common/sp_icon.png",no-repeat -100px -50px);}
+			}
+		}
+	}
+	.header-bottom {
+		background:#d59f2b; min-height: 50px;
+	}
+} 
 #gnb {}
 #footer {
 	position:relative; height: 270px; background:#fff;
@@ -184,6 +249,13 @@ br.m {display:none}
 	&[class$=_kakao] {background-position:-300px 0;}
 	&[class$=_instar] {background-position:-400px 0;}
 
+	&[class$=_country_korea] {background-position:0 -150px;}
+	&[class$=_country_japan] {background-position:-50px -150px;}
+	&[class$=_country_china] {background-position:-100px -150px;}
+	&[class$=_country_en] {background-position:-150px -150px;}
+	&[class$=_country_japan]:hover {background-position:-50px -200px;}
+	&[class$=_country_china]:hover {background-position:-100px -200px;}
+	&[class$=_country_en]:hover {background-position:-150px -200px;}
 
 }
 
@@ -350,10 +422,10 @@ table[class^=comp-tbl] {
 @media screen and (-webkit-min-device-pixel-ratio:0){ } // webkit hack
 @-moz-document url-prefix() { } // firefox hack
 
-@media (max-width:1025px){}
+@media (max-width:1024px){}
 @media (max-width:768px){
-.view-m {display: inherit;}
-.view-pc {display: none;}
+	.view-m {display: inherit;}
+	.view-pc {display: none;}
 
 
 }

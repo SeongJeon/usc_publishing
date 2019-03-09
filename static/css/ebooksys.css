@@ -1,9 +1,19 @@
 @charset "UTF-8";
 body {overflow-x:hidden;}
-header, footer {display:block; width:100%; background:#eee; z-index:10; text-align:center; }
-header {position:fixed; top:0; }
-footer {}
-.blind {position:absolute; left:-9999em; top:-9999em; overflow: hidden; white-space: nowrap; text-indent: 100%; }
+.ebooksys header, footer {display:block; width:100%; background:#eee; z-index:10; text-align:center; }
+.ebooksys header {position:fixed; top:0; }
+.ebooksys footer {}
+.ebooksys input::placeholder {color:#b8b8b8;}
+.ebooksys .blind {position:absolute; left:-9999em; top:-9999em; overflow: hidden; white-space: nowrap; text-indent: 100%; }
+
+.ebooksys .radio-type1 { position: relative; display: inline-block; overflow: hidden; }
+.ebooksys .radio-type1 input { position: absolute; overflow: hidden; left: 3px; top: 50%; width: 1px; height: 1px; visibility: hidden; }
+.ebooksys .radio-type1 label { display: inline-block; position: relative; font-size: 14px; color: #777; cursor: pointer; line-height: 18px; letter-spacing: -0.5px; }
+.ebooksys .radio-type1 label:before { display: inline-block; content: ""; width: 20px; height: 20px; background: url("../images/ebooksys/main/ipt_radio.png") no-repeat 0 0; vertical-align: middle; }
+.ebooksys .radio-type1 label span { margin-left: 6px; font-size:16px; color:#363636;}
+.ebooksys .radio-type1 input:checked + label:before { background: url("../images/ebooksys/main/ipt_radio_checked.png") no-repeat 0 0; }
+
+
 .ebooksys .section {position:relative; width: 100%; background:url(../images/ebooksys/main/bg_main_visual.jpg) no-repeat left;}
 .ebooksys .section > div {}
 .ebooksys h2 {height:180px; margin-top:180px; background:url(../images/ebooksys/main/txt_visual.png) no-repeat 50% 50%; text-align:center; text-indent:-9999em;}
@@ -39,16 +49,39 @@ footer {}
 .ebooksys .main-slide .custom-paging > li.slick-active {display:block;}
 
 /*통합검색*/
-.ebooksys .main-search-zone {width:1320px; height:150px; margin:0 auto; padding:0 0 0 217px; background:#d7aa93 url(../images/ebooksys/main/bg_main_search_zone.png) no-repeat 96px 26px; border-radius:73px; box-sizing:border-box; -webkit-box-sizing:border-box;}
-.ebooksys .main-search-zone .form-search {overflow:hidden; width:824px; height:55px; margin:0 0 14px; background:#fff; border-radius:25px;}
-.ebooksys .main-search-zone .form-search > * {float:left; }
-.ebooksys .main-search-zone .form-search .select {}
-.ebooksys .main-search-zone .form-search .select select {}
-.ebooksys .main-search-zone .form-search .input {background:url(../images/ebooksys/main/bg_form_search_input.png) no-repeat left 50%;}
-.ebooksys .main-search-zone .form-search .input input {}
+.ebooksys .main-search-zone {position:relative; width:1320px; height:150px; margin:0 auto; padding:34px 0 0 217px; background:#d7aa93 url(../images/ebooksys/main/bg_main_search_zone.png) no-repeat 96px 26px; border-radius:73px; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.ebooksys .main-search-zone .form-search {position:relative; width:824px; height:55px; margin:0 0 14px; padding:0 0 0 30px; background:#fff; border-radius:25px; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.ebooksys .main-search-zone .form-search:after {display:block; content:""; clear:both;}
+.ebooksys .main-search-zone .form-search > * {float:left; box-sizing:border-box; -webkit-box-sizing:border-box; }
+.ebooksys .main-search-zone .form-search .select {width:96px; }
+.ebooksys .main-search-zone .form-search .select select {width:96px; height:55px; line-height:55px; background:url(../images/ebooksys/main/bg_form_search_select.png) no-repeat right 50%; font-size:17px; color:#343434;}
+.ebooksys .main-search-zone .form-search .input {width:560px; margin:0 0 0 15px; padding:0 0 0 13px; background:url(../images/ebooksys/main/bg_form_search_input.png) no-repeat left 50%;}
+.ebooksys .main-search-zone .form-search .input input {width:100%; height:55px; padding:0 10px; line-height:55px; }
 .ebooksys .main-search-zone .form-search .btn {}
-.ebooksys .main-search-zone .form-search .btn button {}
-.ebooksys .main-search-zone .popularity {overflow:hidden;}
+.ebooksys .main-search-zone .form-search button {position:absolute; right:18px; top:-8px; width:70px; height:70px; background:url(../images/ebooksys/main/btn_form_search.png) no-repeat; text-indent:-9999em;}
+.ebooksys .main-search-zone .detail-search {position:absolute; right:88px; top:34px; }
+.ebooksys .main-search-zone .detail-search .btn {width:178px; height:55px; line-height:55px; background:#fff; border-radius:25px;}
+.ebooksys .main-search-zone .detail-search .btn span {display:block; width:160px; height:39px; line-height:39px; margin:0 auto; padding:0 0 0 48px; background:#ffdaa2 url(../images/ebooksys/main/btn_detail_search.png) no-repeat 20px 12px; font-size:16px; color:#303030; border-radius:18px; box-sizing:border-box; -webkit-box-sizing:border-box;}
+
+.ebooksys .main-search-zone .detail-search .layer {position:fixed; left:0; top:0; z-index:100; width:500px; padding:0 2px 2px; background:#ff6942; border-radius:10px; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.ebooksys .main-search-zone .detail-search .layer .tit{padding:20px 0; font-size:24px; color:#fff; font-weight:bold; text-align:center;}
+.ebooksys .main-search-zone .detail-search .layer .form-list {padding:20px 20px 30px; background:#fff; border-radius:0 0 10px 10px;}
+.ebooksys .main-search-zone .detail-search .layer .form-list .tit_sub {margin:26px 0 12px; font-size:20px; color:#535353; font-weight:bold;}
+.ebooksys .main-search-zone .detail-search .layer .form-list .tit_sub:first-child {margin-top:0;}
+.ebooksys .main-search-zone .detail-search .layer .form-list .list {padding:11px; background:#f1f3f4; border:1px solid #d6d5d5; border-radius:10px;} 
+.ebooksys .main-search-zone .detail-search .layer .form-list .list > li {position:relative; width:100%; margin-top:5px; border:1px solid #dddbdb; background:#fff; border-radius:5px; box-sizing:border-box; -webkit-box-sizing:border-box;} 
+.ebooksys .main-search-zone .detail-search .layer .form-list .list > li:after {display:block; content:""; clear:both;}
+.ebooksys .main-search-zone .detail-search .layer .form-list .list > li:first-child {margin-top:0;}
+.ebooksys .main-search-zone .detail-search .layer .form-list .list > li > * {float:left;}
+.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .label {padding:13px 30px 13px 15px; background:url(../images/ebooksys/main/bg_detail-search_label.png) no-repeat right 50%; font-size:17px; color:#535353;}
+.ebooksys .main-search-zone .detail-search .layer .form-list .list > li input[type="text"] {width:300px; height:43px; line-height:43px; margin:0 0 0 10px; padding:0 0 0 10px; font-size:16px; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .radio {padding:13px 0 13px 10px;}
+.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .radio:after {display:block; content:""; clear:both;}
+.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .radio > li {float:left; width:100px;}
+.ebooksys .main-search-zone .detail-search .layer .btn {width:100%; margin:18px 0 0; background:#ffa13d; border:1px solid #dddbdb; border-radius:5px; font-size:18px; font-weight:bold; color:#fff;}
+.ebooksys .main-search-zone .detail-search .layer .close {position:absolute; right:18px; top:18px; width:23px; height:23px; background:url(../images/ebooksys/main/btn_layer_close.png) no-repeat; text-indent:-9999em;}
+
+.ebooksys .main-search-zone .popularity {overflow:hidden; margin:0 0 0 18px;}
 .ebooksys .main-search-zone .popularity .tit {display:block; float:left; width:100px; height:28px; line-height:28px; background:#c09078; font-size:14px; color:#fff; text-align:center;}
 .ebooksys .main-search-zone .popularity .list {float:left; margin-left:16px;}
 .ebooksys .main-search-zone .popularity .list .slick-list {width:640px; padding:0 !important;}
@@ -127,3 +160,6 @@ footer {}
 .ebooksys .main-tab .custom-paging > li {display:none; width:auto !important; margin:0 !important; font-size:18px; color:#fff; font-style: italic;}
 .ebooksys .main-tab .custom-paging > li em {font-size: 20px; font-weight: bold; font-style: italic;} 
 .ebooksys .main-tab .custom-paging > li.slick-active {display:block;}
+.ebooksys .mouse-control {position:fixed; right:50px; bottom:20px; padding:0 0 104px 0; background: url(../images/ebooksys/main/bg_mouse_control.png) no-repeat center 25px; font-size:14px; text-align:center; color:#fff; z-index:10;}
+.ebooksys .mouse-control.on {bottom:300px;}
+.ebooksys .mouse-control.on {padding:95px 0 0; background: url(../images/ebooksys/main/bg_mouse_control_on.png) no-repeat center top;}

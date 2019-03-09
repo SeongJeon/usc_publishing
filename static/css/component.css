@@ -47,7 +47,17 @@ br.pc.m, br.pc { display: inherit; }
 br.t, br.m { display: none; }
 
 /* ICON */
+*[class^=icon_] { background: url("../../static/images/common/sp_icon.png") no-repeat 0 0; }
+*[class^=icon_][class$=_facebook] { background-position: 0 0; }
+*[class^=icon_][class$=_twitter] { background-position: -100px 0; }
+*[class^=icon_][class$=_blog] { background-position: -200px 0; }
+*[class^=icon_][class$=_kakao] { background-position: -300px 0; }
+*[class^=icon_][class$=_instar] { background-position: -400px 0; }
+
 /* BUTTON */
+*[class^=btn-txt][class$=_more] { display: inline-block; width: 90px; height: 30px; line-height: 30px; font-size: 14px; color: #b4b4b4; text-align: center; border: 1px solid #ddd; background: #fff; box-sizing: border-box; }
+*[class^=btn-txt][class$=_more]:after { display: inline-block; content: "+"; margin-left: 3px; }
+
 /* TITLE */
 /* LIST */
 /* TABLE */

@@ -371,7 +371,7 @@ MAIN
 					.desc {margin-top: 16px; font-size: 13px; color:rgba(256,256,256,0.7);}
 					.indicator {
 						position: absolute; right: 12px; top:12px;
-						overflow:hidden; width:113px; border:1px solid rgba(256,256,256,0.25);
+						overflow:hidden; width:115px; border:1px solid rgba(256,256,256,0.25);
 						p {
 							float: left;
 							& + p {border-left:1px solid rgba(256,256,256,0.25); }
@@ -402,6 +402,152 @@ MAIN
 			}
 		}
 	}
+
+	// 민원 탭
+	.tab-complaint {
+		// 탭 LAYOUT
+		.l-left {overflow:hidden; float: left; width: 915px}
+		.l-right {overflow:hidden; float: right; width:405px; padding-left:10px; box-sizing: border-box;}
+ 
+ 		// 의성 sns
+ 		.complaint-sns {
+ 			height: 745px; 
+ 			background:#fff url("../../static/images/usc/bg_complaint_sns.png") no-repeat 100% 0;
+ 			box-sizing: border-box; text-align: center;
+ 			.tit {padding-top: 30px; color:#292929; font-size: 20px; font-family: $font2;}
+			.tab-sns {
+				display: inline-block; overflow: hidden; margin-top: 21px;
+				li {
+					float: left; 
+					&+li {margin-left: 8px;}
+				}
+				button {
+					width:35px; height: 35px; text-indent: -999em;
+					&.icon_all {font-size: 14px; text-indent: 0; color:#fff; background:#555; border-radius: 5px;}
+				}
+			}
+			.lst-sns-zone {
+				overflow:hidden; position: relative; margin-top: 20px; height: 615px;
+				.lst-sns {
+					padding:0 19px 10px; 
+					li {position: relative; overflow:hidden; height: 138px; padding:9px 0; border: 1px solid #d5d5d5; box-sizing: border-box; margin-bottom: 10px;}
+				}
+				.sns {position: absolute; left:-1px; top:-1px; z-index: 1}
+				.thumb {
+					position: absolute; left:0; top:0; width:134px; border-right:  1px solid #d5d5d5; box-sizing: border-box;
+					img {width:100%;}
+				}
+				.cont {
+					display:-webkit-box; overflow:hidden; max-height: 88px; padding-left: 140px; padding-right: 5px;
+					font-size: 15px; line-height: 22px; color:#222; text-align: left; 
+					-webkit-line-clamp:4; -webkit-box-orient:vertical; text-overflow:ellipsis;
+				}
+				.btn {position: absolute; bottom:6px; right: 6px;}
+			}
+ 		}
+ 		// 민원서비스
+ 		.complaint-bottom {overflow:hidden; margin-top: 9px;}
+ 		.complaint-service {
+ 			overflow:hidden; float: left; width: 295px; height: 436px; padding:0 12px; background: #0c6dac;
+ 			.notice-number {
+ 				padding:9px 20px; text-align: center; background:#fff;
+ 				.number {font-family: $font3; color:#fd7400; font-size: 34px; }
+ 				.txt {margin-top: 2px; font-size: 14px; color:#333; line-height: 18px;}
+ 			}
+ 			.tit {margin: 19px 0 17px; height: 68px; @include background("usc/img_main_service.png",no-repeat 50% 0); text-indent: -999em;}
+ 			.notice-service {
+ 				padding:12px 0 0 17px;	
+ 				li {color:#fff; font-size: 15px; line-height: 27px}
+ 				li:before {display: inline-block; content: ""; width: 4px;height: 4px; margin-right: 10px; background:#fff; vertical-align: middle;}
+ 			}
+ 		}
+ 		// 정보화 마을
+ 		.complaint-invil {
+ 			float: left; width: 305px; height: 436px; padding:20px 0 0; 
+ 			background:#344362; margin-left: 9px; text-align: center;
+ 			.tit {
+ 				color:#fff; font-size: 14px; 
+ 				strong {display: block; margin-top: 7px; font-family: $font2; font-size: 20px;}
+ 			}
+ 			.invil {
+ 				height: 118px; padding-top: 26px; @include background("usc/bg_main_invil.png", no-repeat 50% 0); text-align: center; box-sizing: border-box;
+ 				img {display: inline;}
+ 			}
+ 			.lnk-group {
+ 				margin-top: 10px; padding:0 38px;
+ 				li + li {margin-top: 10px;}
+ 				a {
+ 					display: block; padding:0 15px 0 12px; border:1px solid rgba(256,256,256,0.4);
+ 					font-size: 15px; color:#fff; line-height: 43px; text-align: left;
+ 					em {
+ 						font-size: 12px; float: right;
+ 						&:after {display: inline-block; content: ">"; margin-left: 3px; vertical-align: middle;}
+ 					}
+ 					&:hover {border-color:#fff; @include background("usc/bg_main_invilbtn.png", repeat 0 0); }
+ 				}
+ 			}
+ 		}
+ 		// 복지 
+ 		.complaint-welfare {
+ 			float: left; height: 436px; width: 295px; margin-left: 9px; text-align: center; background:#d5e9f2;
+ 			.tit {height:100px; font-size: 20px; color:#fff; font-family: $font2;  text-shadow: 0px 2px 10px rgba(23,23,24,0.7); line-height: 100px; @include background("usc/bg_welfare.png",no-repeat 50% 50%);}
+ 			.welfare-slider {
+ 				margin-top: 40px;
+ 				a {
+ 					display: block;
+	 				.name {display: block; margin-top: 17px; font-size: 18px; text-align: center; color:#333;}
+	 				.img {
+	 					display: block;
+	 					img {display: inline;}
+	 				}
+ 				}
+ 				.slick-dots {
+ 					display: inline-block; margin-top: 29px;
+ 					&:after {display:block; clear:both; content:""}
+ 					li {
+ 						float: left;
+	 					& + li {margin-left:10px;}
+ 					}
+ 					button {
+ 						width:10px; height: 10px; border-radius: 100px; background:#aeb2b5; text-indent: -999em; 
+ 						transition:0.2s ease;
+ 					}
+ 					.slick-active button {background:#0c6dac; width:27px;}
+ 				}
+ 			}
+ 		}
+ 		// 민원관련 메뉴 
+ 		.complaint-menu {
+ 			overflow:hidden; height: 300px;
+			.tab {
+				width:248px; padding:0 12px; background:#fff;	
+				li + li {border-top: 1px dashed #e3e3e3;}
+				a {
+					position: relative; display: block; height: 99px; padding-top: 32px; padding-left: 84px; margin:0 -12px;
+					font-size: 13px; color:#303030;
+					em {display: block; font-size: 18px; font-family: $font2; margin-bottom: 8px;}
+					&:before {display: block; position: absolute; left:0; top:0; width: 57px; height: 57px;@include background("usc/sp_main.png",no-repeat 0 0);}
+					&[aria-controls=complainttab1]:before {background-position: 0 0;}
+					&[aria-controls=complainttab2]:before {background-position: 0 0;}
+					&[aria-controls=complainttab3]:before {background-position: 0 0;}
+				}
+
+
+				a[aria-selected=true] {
+					&[aria-controls=complainttab1] {background:#ff8000;}
+					&[aria-controls=complainttab2] {background:#03a596;}
+					&[aria-controls=complainttab3] {background:#0c6dac;}
+				}
+			}
+
+			.complaint-tab-contents {
+				div[id^=complainttab] {display: none; background:#e2e1e1;}
+			}
+
+ 		}
+	}
+
+	// 관광 탭
 }
 
 

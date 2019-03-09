@@ -104,6 +104,7 @@ body {overflow-y:scroll; margin:0px; background-attachment: fixed;}
 a:link {text-decoration:none;}
 a:visited {text-decoration:none;}
 img{border:0;max-width:100%}
+div {box-sizing: border-box}
 label, input, textarea, select{vertical-align:middle; border:0; border-radius:0;  }
 label, input, textarea {-webkit-appearance: none; -webkit-border-radius: 0;}
 ol, ul{list-style:none; margin:0; padding:0;}

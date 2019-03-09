@@ -226,7 +226,12 @@
 	.ebooksys .main-tab .tab-contents .book-list .slick-list {margin-left:0rem;}
 	.ebooksys .main-tab .tab-contents .book-list > ul {width:100%;}
 	.ebooksys .main-tab .tab-contents .book-list > ul li {margin:0 0 1rem 0rem;}
+	.ebooksys .main-tab .tab-contents .dep2 {} 
+	.ebooksys .main-tab .tab-contents .dep2 ul {display:block;} 
+	.ebooksys .main-tab .tab-contents .dep2 ul > li {float:none; display:inline-block;} 
 	.ebooksys .main-tab .tab-contents .dep2 ul > li a {margin:2rem 0 1rem; font-size:1rem;}
+
+
 	
 	
 	.ebooksys .main-tab .tab-contents .book-list .before a,

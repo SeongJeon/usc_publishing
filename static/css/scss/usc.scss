@@ -664,25 +664,36 @@ MAIN
 						border-bottom: 1px solid rgba(256,256,256,0.2); margin-top: 10px;
 						&:first-child {margin-top: 0;}
 						a {
-							display: block; position:relative; height: 40px; font-size: 16px; color:#fff; line-height: 40px; padding-left:72px;
+							display: block; height: 40px; font-size: 16px; color:#fff; line-height: 40px; padding-left:48px;
 							text-align: left;
-							&:before {display: inline-block; position: absolute; left:48px; top:50%; width:5px; height: 5px; background:#fff; content: ""; margin-top: -2.5px;}
+							&:before {display: inline-block; width:5px; height: 5px; background:#fff; content: ""; vertical-align: middle; margin-right: 20px;}
 						}
 
 						&.on {
 							border-bottom-color:#fff;
-							&:after {display:block; position: absolute; left:0; top:0; width:147px; height: 147px; content: ""; }
 							a {
-								background:#fff;color:#0c9687; font-family: $font3;
-								&:before {width:23px; height: 23px; left:39px; background:#0c9687 url("../../static/images/usc/icon_arrow.png") no-repeat 50% 50%; border-radius: 100px; margin-top: -12px;}
+								background:#fff;color:#0c9687; font-family: $font3;padding-left: 39px;
+								&:before {width:23px; height: 23px; background:#0c9687 url("../../static/images/usc/icon_arrow.png") no-repeat 50% 50%; border-radius: 100px;}
+								&:after {display:block; position: absolute; left:79px; top:34px; width:147px; height: 147px; content: ""; }
 							}
+							.icon-gotolnk1:after {@include background("usc/icon_gotolnk1.png",no-repeat 50% 50%);}
+							.icon-gotolnk2:after {@include background("usc/icon_gotolnk2.png",no-repeat 50% 50%);}
+							.icon-gotolnk3:after {@include background("usc/icon_gotolnk3.png",no-repeat 50% 50%);}
+							.icon-gotolnk4:after {@include background("usc/icon_gotolnk4.png",no-repeat 50% 50%);}
+							.icon-gotolnk5:after {@include background("usc/icon_gotolnk5.png",no-repeat 50% 50%);}
+							.icon-gotolnk6:after {@include background("usc/icon_gotolnk6.png",no-repeat 50% 50%);}
+							.icon-gotolnk7:after {@include background("usc/icon_gotolnk7.png",no-repeat 50% 50%);}
+							.icon-gotolnk8:after {@include background("usc/icon_gotolnk8.png",no-repeat 50% 50%);}
 						}
 					}
 				}
 			}
 		}
 		// 알려드립니다.
-		.sightseeing-attention {position: absolute; bottom:0; left:0; width: 1005px; height: 138px; background:#0d8559;}
+		.sightseeing-attention {
+			position: absolute; bottom:0; left:0; width: 1005px; height: 138px; background:#0d8559;
+			
+		}
 	}
 }
 

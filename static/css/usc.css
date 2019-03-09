@@ -302,12 +302,20 @@ MAIN
 #wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone { position: relative; padding: 226px 28px 0; margin-top: 17px; background: url("../../static/images/usc/bg_sightseeing_goto.png") no-repeat 50% 0; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li { border-bottom: 1px solid rgba(255, 255, 255, 0.2); margin-top: 10px; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li:first-child { margin-top: 0; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li a { display: block; position: relative; height: 40px; font-size: 16px; color: #fff; line-height: 40px; padding-left: 72px; text-align: left; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li a:before { display: inline-block; position: absolute; left: 48px; top: 50%; width: 5px; height: 5px; background: #fff; content: ""; margin-top: -2.5px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li a { display: block; height: 40px; font-size: 16px; color: #fff; line-height: 40px; padding-left: 48px; text-align: left; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li a:before { display: inline-block; width: 5px; height: 5px; background: #fff; content: ""; vertical-align: middle; margin-right: 20px; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on { border-bottom-color: #fff; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on:after { display: block; position: absolute; left: 0; top: 0; width: 147px; height: 147px; content: ""; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on a { background: #fff; color: #0c9687; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on a:before { width: 23px; height: 23px; left: 39px; background: #0c9687 url("../../static/images/usc/icon_arrow.png") no-repeat 50% 50%; border-radius: 100px; margin-top: -12px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on a { background: #fff; color: #0c9687; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-left: 39px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on a:before { width: 23px; height: 23px; background: #0c9687 url("../../static/images/usc/icon_arrow.png") no-repeat 50% 50%; border-radius: 100px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on a:after { display: block; position: absolute; left: 79px; top: 34px; width: 147px; height: 147px; content: ""; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on .icon-gotolnk1:after { background: url("../../static/images/usc/icon_gotolnk1.png") no-repeat 50% 50%; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on .icon-gotolnk2:after { background: url("../../static/images/usc/icon_gotolnk2.png") no-repeat 50% 50%; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on .icon-gotolnk3:after { background: url("../../static/images/usc/icon_gotolnk3.png") no-repeat 50% 50%; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on .icon-gotolnk4:after { background: url("../../static/images/usc/icon_gotolnk4.png") no-repeat 50% 50%; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on .icon-gotolnk5:after { background: url("../../static/images/usc/icon_gotolnk5.png") no-repeat 50% 50%; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on .icon-gotolnk6:after { background: url("../../static/images/usc/icon_gotolnk6.png") no-repeat 50% 50%; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on .icon-gotolnk7:after { background: url("../../static/images/usc/icon_gotolnk7.png") no-repeat 50% 50%; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on .icon-gotolnk8:after { background: url("../../static/images/usc/icon_gotolnk8.png") no-repeat 50% 50%; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-attention { position: absolute; bottom: 0; left: 0; width: 1005px; height: 138px; background: #0d8559; }
 
 /* ------------------------------------------------------

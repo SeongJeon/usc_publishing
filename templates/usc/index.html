@@ -138,14 +138,14 @@
 								<h3 class="tit">문화관광 바로가기 메뉴</h3>
 								<div class="gotolnk-zone">
 									<ul class="gotolnk">
-										<li class="on"><a href="#"><span>스토리텔링 여행</span></a></li>									
-										<li><a href="#"><span>일정별 코스여행</span></a></li>									
-										<li><a href="#"><span>계절별 여행</span></a></li>									
-										<li><a href="#"><span>축제 &middot; 체험</span></a></li>									
-										<li><a href="#"><span>포토갤러리</span></a></li>									
-										<li><a href="#"><span>문화관광해설사</span></a></li>									
-										<li><a href="#"><span>관광안내지도신청</span></a></li>									
-										<li><a href="#"><span>의성 문화재 현황</span></a></li>									
+										<li class="on"><a href="#" class="icon-gotolnk1"><span>스토리텔링 여행</span></a></li>
+										<li><a href="#" class="icon-gotolnk2"><span>일정별 코스여행</span></a></li>
+										<li><a href="#" class="icon-gotolnk3"><span>계절별 여행</span></a></li>					
+										<li><a href="#" class="icon-gotolnk4"><span>축제 &middot; 체험</span></a></li>			
+										<li><a href="#" class="icon-gotolnk5"><span>포토갤러리</span></a></li>					
+										<li><a href="#" class="icon-gotolnk6"><span>문화관광해설사</span></a></li>				
+										<li><a href="#" class="icon-gotolnk7"><span>관광안내지도신청</span></a></li>				
+										<li><a href="#" class="icon-gotolnk8"><span>의성 문화재 현황</span></a></li>				
 									</ul>
 								</div>
 							</div>
@@ -932,7 +932,27 @@
 		})
 	})();
 	// 관광 - 메뉴
-	// $('.sightseeing-gotolnk .gotolnk');
+	var gotoEvent = (function(){
+		var curidx = $('.gotolnk li.on').index(), 
+			 $this = $('.gotolnk li');
+		// var interval = setInterval(gotolnkEvent, 1000); 
+
+		function gotolnkEvent(){
+			curidx++;		
+			if(curidx == 8) curidx = 0;
+			$this.eq(curidx).addClass("on").siblings("li").removeClass("on");
+		};
+
+		$("a", $this).on("mouseenter", function(){
+			clearInterval(interval);
+			$(this).closest("li").addClass("on").siblings().removeClass("on");
+			curidx = $(this).closest("li").index();
+		});
+		$(".gotolnk").on("mouseleave", function(){
+			// interval = setInterval(gotolnkEvent, 1000); 
+		})
+	})();
+
 	
 
 

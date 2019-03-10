@@ -1721,11 +1721,10 @@
 			// $(this).css('height', win_h - header_h + 'px')
 			$("html, body").animate({ scrollTop:0},10);
 		});
-		$('.main').on('mousewheel touchmove', function(e){
-			$(document).trigger('mousewheel');
-			var sectionPos = parseInt($(this).attr('data-index'));
-			if(e.originalEvent.wheelDelta >= 0){
-				// console.log(11)
+		$('.main').on('mousewheel', function(e){
+			// var sectionPos = parseInt($(this).attr('data-index'));
+
+			if(e.originalEvent.wheelDelta >= 0 ){
 				$(".mouse-control").removeClass('on')
 				$(".mouse-control span").text('scroll down')
 				$("html, body").stop().animate({ scrollTop:0},10);
@@ -1744,6 +1743,9 @@
 				return false;
 			}
 			return false;
+		});
+		$('.main').on('touchmove', function() {
+		  $(this).trigger('mousewheel');
 		});
 		/*$(window).scroll(function() {
 			var scrollHeight = $(document).height();
@@ -1828,20 +1830,17 @@
 			},
 			responsive: [
 				 {
-               	breakpoint: 1024,
-               	settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3
-               }
-            }
+				breakpoint: 1024,
+				settings: {
+				  slidesToShow: 3,
+				  slidesToScroll: 3
+			   }
+			}
 		  ]
 		});
 		$('.js-main-tab .tab a').on('click', function(){
 			$('.book-list .slick-slider').slick("setPosition");
 		});
-		/*$(document).on('touchmove', function() {
-		  $(document).trigger('mousewheel');
-		});*/
 	});
 
 </script>

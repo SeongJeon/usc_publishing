@@ -358,8 +358,8 @@ MEDIA QUERY
   #wrap.usc #container.main .main-top-zone .top-menu .tab-zone h2 { font-size: 13px; height: 3.3rem; width: 8rem; line-height: 3.3rem; box-sizing: content-box; }
   #wrap.usc #container.main .main-top-zone .top-menu .tab-zone h2 span { height: 3.2rem; }
   #wrap.usc #container.main .main-top-zone .top-menu .tab-zone h2 span:before { margin-right: 0.8rem; }
-  #wrap.usc #container.main .main-tabcontent { height: 140rem; }
-  #wrap.usc #container.main .main-tabcontent div[class^=tab-] { height: 140rem; padding: 14rem 0 4.2rem; }
+  #wrap.usc #container.main .main-tabcontent { height: 135rem; }
+  #wrap.usc #container.main .main-tabcontent div[class^=tab-] { height: 135rem; padding: 14rem 0 4.2rem; }
   #wrap.usc #container.main .main-tabcontent .tab-news .l-left { float: none; width: 100%; }
   #wrap.usc #container.main .main-tabcontent .tab-news .l-right { float: none; width: 100%; padding-left: 0; }
   #wrap.usc #container.main .main-tabcontent .tab-news .news-banner { height: auto; }

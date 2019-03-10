@@ -1,5 +1,5 @@
 <div id="footer">
-	<p class="btn-gototop"><a href="#container" onclick="usc.gototopEvent(this)"><span>TOP</span></a></p>
+	<p class="btn-gototop"><a href="#container" onclick="usc.gototopEvent(this); return false;"><span>TOP</span></a></p>
 	<div class="footer-banner">
 		<div class="inner">
 			<strong class="tit">배너모음</strong>
@@ -222,12 +222,21 @@
 	$('.footer-banner .js-slider > .slider').slick({
 		dots: false,
 		infinite: true,
-		speed: 3000,
+		speed: 2000,
 		ltr: true,
 		slidesToShow: 8,
 		slidesToScroll: 8,
 		variableWidth: true,
 		nextArrow : $('.footer-banner .btn-next'),
-		prevArrow : $('.footer-banner .btn-prev')
+		prevArrow : $('.footer-banner .btn-prev'),
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+			      slidesToShow: 3,
+			      slidesToScroll: 3
+			   }
+			}
+		]
 	});
 </script>

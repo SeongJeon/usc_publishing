@@ -204,7 +204,7 @@ MEDIA QUERY
 }
 
 @media (max-width: 1024px) { 
-	.ebooksys #footer .footer-utilegroup {padding:0 5vw 10vw;}
+	.ebooksys #footer .footer-utilegroup {padding:0 2rem 4rem;}
 
 	.ebooksys .radio-type1 label {font-size:1rem;}
 	.ebooksys .radio-type1 label span {font-size:1rem;}

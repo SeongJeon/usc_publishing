@@ -37,8 +37,11 @@ var usc = {
 
 	// GOTO THE TOP 
 	gototopEvent : function(el){
-		$('html').animate({'scrollTop': 0}, 300, 'swing');
-		$('html').find($(el).attr('href')).foucs();
+		$this = $(el);
+		$('html').animate({'scrollTop': 0}, 300, 'swing', function(){
+			$('html').find($this.attr('href')).focus();
+		});
+		return false;
 	},
 
 	// SLICK 예시

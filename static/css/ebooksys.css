@@ -25,8 +25,9 @@ COMMON
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
-.ebooksys .main {overflow:hidden; height: 100vh;}
-.ebooksys .section {position:relative; width: 100%; height: 100vh; background:url(../images/ebooksys/main/bg_main_visual.jpg); -webkit-background-size: cover; background-size: cover;}
+.ebooksys .main {overflow:hidden; height: 100vh; background:url(../images/ebooksys/main/bg_main_visual.jpg); -webkit-background-size:cover; background-size:cover;}
+.ebooksys .main .inner {}
+.ebooksys .section {position:relative; width: 100%; height: 100vh; }
 .ebooksys .section > div {}
 .ebooksys h2 {height:180px; padding-top:180px;background:url(../images/ebooksys/main/txt_visual.png) no-repeat 50% 50%; text-align:center; text-indent:-9999em;}
 .ebooksys .main-slide {position:relative; width:1320px; margin:90px auto 90px auto;}
@@ -121,7 +122,7 @@ MAIN
 .ebooksys .main-notice .btn-link a:before {position:absolute; left:0; right:0; top:0; bottom:0;display:block; width:15px; height:1px; content:""; margin:auto; background:#aac1c3;}
 
 /*메인 텝*/
-.ebooksys .main-tab {width:1320px; margin:0 auto;}
+.ebooksys .main-tab {width:1320px; margin:150px auto 0 auto;}
 .ebooksys .main-tab .tab {overflow:hidden; margin:0 0 30px; padding:30px 0 0;}
 .ebooksys .main-tab .tab > li {position:relative; float:left; width:33.3%;}
 .ebooksys .main-tab .tab > li:after {position:absolute; left:-1px; top:20px; display:block; content:""; width:1px; height:30px; background:rgba(255,255,255,0.3 );}
@@ -205,13 +206,10 @@ MEDIA QUERY
 @media (max-width: 1024px) { 
 	.ebooksys #footer .footer-utilegroup {padding:0 5vw 10vw;}
 
-
 	.ebooksys .radio-type1 label {font-size:1rem;}
 	.ebooksys .radio-type1 label span {font-size:1rem;}
 	.ebooksys .radio-type1 label:before {width:1.5rem; height:1.5rem; background-size:1.5rem;}
 	.ebooksys .radio-type1 input:checked + label:before {background-size:1.5rem;}
-
-
 	.ebooksys .table {display:table; width:100%; height:100%; margin-top:115px;}
 	.ebooksys .table-cell {display:table-cell; vertical-align:middle;}
 	.ebooksys .view-pc { display: none !important; }  
@@ -263,9 +261,6 @@ MEDIA QUERY
 	.ebooksys .main-tab .tab-contents .dep2 ul > li {float:none; display:inline-block;} 
 	.ebooksys .main-tab .tab-contents .dep2 ul > li a {margin:2rem 0 1rem; font-size:1rem;}
 
-
-	
-	
 	.ebooksys .main-tab .tab-contents .book-list .before a,
 	.ebooksys .main-tab .tab-contents .book-list .after a {width:85%; margin:0 auto;}
 	.ebooksys .main-tab .tab-contents .book-list .before a {height:auto; padding:0 0.5rem 0.5rem;}

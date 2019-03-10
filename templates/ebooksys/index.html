@@ -1716,22 +1716,32 @@
 <script type="text/javascript" src="../../static/js/common.js"></script>
 <script type="text/javascript">
 	window.onload = function(){
+		
 		var win_h = $(window).height(),
 			header_h = $('#header').height();
 		$('.main .section').each(function(i){
 			$(this).attr('data-index',(win_h - header_h) * i);
 			// $(this).css('height', win_h - header_h + 'px')
-
+			$("html, body").animate({ scrollTop:0},10);
 		});
-		$('.main .section').on('mousewheel', function(e){
+		$('.main').on('mousewheel', function(e){
 			var sectionPos = parseInt($(this).attr('data-index'));
 			if(e.originalEvent.wheelDelta >= 0){
-				$('html,body').stop().animate({scrollTop:sectionPos - (win_h - header_h)});
+				// console.log(11)
+				$("html, body").stop().animate({ scrollTop:0},10);
+				$(this).find('.inner').stop().animate({'margin-top': 0});
+				
+				//$('html,body').stop().animate({scrollTop:sectionPos - (win_h - header_h)});
 				return false;
 			}else if(e.originalEvent.wheelDelta < 0){
-				$('html,body').stop().animate({scrollTop:sectionPos + (win_h - header_h)});
+				$("html, body").stop().animate({ scrollTop:0},10);
+				$(this).find('.inner').stop().animate({'margin-top': '-' + (win_h)},300 , function(){
+					
+				});
+				//$('html,body').stop().animate({scrollTop:sectionPos + (win_h - header_h)});
 				return false;
 			}
+			return false;
 		});
 		$(window).scroll(function() {
 			var scrollHeight = $(document).height();

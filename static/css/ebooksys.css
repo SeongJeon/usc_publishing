@@ -278,7 +278,7 @@ MEDIA QUERY
 	.ebooksys .main-search-zone .detail-search .layer .form-list .tit_sub {margin:1rem 0 0.5rem; font-size:1.1rem;}
 	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .label {padding:1rem 1.5rem 1rem 1rem; background-size:1rem; font-size:1rem;}
 	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li input[type="text"] {width:20rem; height:3rem; line-height:3rem; margin:0; padding:0 0 0 0.5rem; font-size:1rem;}
-	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .radio {padding:1rem 0 1rem 0.5rem; text-align:left; }
+	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .radio {padding:0.8rem 0 1rem 0.5rem; text-align:left; }
 	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .radio > li {width:7.5rem;}
 	.ebooksys .main-search-zone .detail-search .layer .btn {font-size:1rem;}
 	.ebooksys .main-search-zone .detail-search .layer .close {right:0.5rem; top:1.5rem; background-size:1.5rem;}

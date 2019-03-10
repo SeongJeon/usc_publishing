@@ -81,6 +81,27 @@ var usc = {
 
 		$this.toggleClass("js-pause");
 		return false;
+	},
+
+	popupOpenEvent : function(popupId, el){
+		var popupName = $('#'+popupId), $this = $(el), dim = '<div class="dimd"></div>';
+
+		if(popupName.hasClass('dim')) $("#wrap").prepend(dim);
+		
+		$this.attr({'aria-expanded': true});
+		popupName.show().css({
+			'margin-left': -popupName.width()/2,
+			'margin-top': -popupName.height()/2
+		});
+		return false;
+	},
+	popupCloseEvent : function(popupId, el){
+		var $this = $(el);
+
+		$this.closest("*[role='dialog']").hide();
+		$("#wrap .dimd").remove();
+		$("*[aria-controls="+popupId+"]").attr("aria-expanded", false).focus();
+		return false;
 	}
 }
 

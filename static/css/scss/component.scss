@@ -389,7 +389,9 @@ table[class^=comp-tbl] {
 
 /* LAYER */
 #layer {
-	display:block; position:fixed; top:50%; left:50%; width:620px; z-index:100;  margin:-240px 0 0 -310px;
+	display:block; position:fixed; top:50%; left:50%; z-index:1001;
+	// width:620px; 
+	// margin:-240px 0 0 -310px;
 	&.dim {background:rgba(0,0,0,0.7);}
 	&.open {
 		.layer-inner {position:static; top:50%; left:50%; min-height:480px; text-align:center; border:6px solid #0d265e; border-top: 0; background:#fff; box-sizing:border-box;}
@@ -404,7 +406,7 @@ table[class^=comp-tbl] {
 		.btn {position:absolute; top:0; right:0; }
 	}
 }
-
+.dimd {position: fixed; left:0; top:0; background:rgba(0,0,0,0.5); width: 100%; height: 100%; z-index: 1000}
 
 
 

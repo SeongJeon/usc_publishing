@@ -68,6 +68,8 @@ MAIN
 #wrap.usc #container.main .tab-news .news-banner .slick-dots li.slick-active { display: block; }
 #wrap.usc #container.main .tab-news .news-banner .slick-dots .current { display: inline-block; height: 23px; width: 23px; color: #000; background: #fff; border-radius: 100px; line-height: 22px; text-align: center; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 #wrap.usc #container.main .tab-news .news-banner .slick-dots .division { margin: 0 3px 0 2px; }
+#wrap.usc #container.main .tab-news .news-banner .slick-track { font-size: 0; }
+#wrap.usc #container.main .tab-news .news-banner .slick-list { font-size: 0; }
 #wrap.usc #container.main .tab-news .news-banner .slick-arrow { position: absolute; bottom: 0; right: 0; z-index: 111; width: 32px; height: 50px; text-indent: -999em; }
 #wrap.usc #container.main .tab-news .news-banner .slick-arrow:after { display: block; content: ""; position: absolute; left: 50%; top: 50%; width: 12px; height: 20px; margin: -10px 0 0 -6px; background: url("../../static/images/usc/sp_main.png") no-repeat 0 0; }
 #wrap.usc #container.main .tab-news .news-banner .slick-arrow.slick-prev { right: 89px; }

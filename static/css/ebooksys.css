@@ -174,7 +174,7 @@ MAIN
 .ebooksys .main-tab .custom-paging > li em {font-size: 20px; font-weight: bold; font-style: italic;} 
 .ebooksys .main-tab .custom-paging > li.slick-active {display:block;}
 .ebooksys .mouse-control {position:fixed; right:50px; bottom:20px; padding:0 0 104px 0; background: url(../images/ebooksys/main/bg_mouse_control.png) no-repeat center 25px; font-size:14px; text-align:center; color:#fff; z-index:10;}
-.ebooksys .mouse-control.bottom { bottom:300px; }
+.ebooksys .mouse-control.bottom { bottom:220px; }
 .ebooksys .mouse-control.on {padding:95px 0 0; background: url(../images/ebooksys/main/bg_mouse_control_on.png) no-repeat center top;}
 
 
@@ -288,12 +288,11 @@ MEDIA QUERY
 	.ebooksys .main-slide .list [class^='togo'] a:after {width:6rem; height:6rem; border-radius:6rem; margin-left:-3rem;}
 	.ebooksys .main-search-zone {height:8rem; padding:1.5rem 2rem; border-radius:4rem;}
 	.ebooksys .main-search-zone .popularity .list .slick-list {width:15rem;}
-	.ebooksys .main-search-zone .form-search .input {width: 16rem; margin-left:0.5rem; padding-left:0.5rem; background-size: 0.8rem; background-position:left 1rem;}
+	.ebooksys .main-search-zone .form-search .input {width: 16rem; margin-left:0.5rem; padding-left:0.5rem; background-size: 0.8rem; background-position:left 0.9rem;}
 	.ebooksys .main-search-zone .form-search .btn {top:-5px; width:4rem; height:4rem; background-size:4rem;}
-	.ebooksys .main-notice .list .slick-list {width:38rem;}
-	.ebooksys .main-notice .list li a .subject {width:26rem;}
+	.ebooksys .main-notice .list .slick-list {width:35rem;}
+	.ebooksys .main-notice .list li a .subject {width:25rem;}
 	.ebooksys .main-tab {margin-top:120px;}
-	.ebooksys .main-tab .tab-contents .book-list {max-width:75%;}
 	.ebooksys .main-search-zone .detail-search {margin-top:1.5rem;}
 }
 @media (max-width:414px) {
@@ -302,7 +301,7 @@ MEDIA QUERY
 	.ebooksys .main-search-zone .detail-search {margin-top:1rem;} 
 }
 @media (max-width:360px) {
-	
+	.ebooksys .main-tab .tab-contents .book-list {max-width:75%;}
 }
 @media (max-width:320px) {
 

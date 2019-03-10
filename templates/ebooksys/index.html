@@ -1753,12 +1753,18 @@
 		
 		
 		$(window).scroll(function() {
-			var scrollHeight = $(document).height();
-			var scrollPosition = $(window).height() + $(window).scrollTop();
+			var scrollHeight = $(document).height(),
+				scrollPosition = $(window).height() + $(window).scrollTop(),
+				footer = $('footer').height();
 			if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-				$(".mouse-control").addClass('bottom')
-			} else {
-				$(".mouse-control").removeClass('bottom');
+				$(".mouse-control span").text('scroll up')
+				$(".mouse-control").addClass('bottom on');
+			}else if($(window).scrollTop() + $(window).height() > $(document).height() - footer){
+				$(".mouse-control span").text('scroll up')
+				$(".mouse-control").addClass('bottom on');
+			}else{
+				$(".mouse-control span").text('scroll down')
+				$(".mouse-control").removeClass('bottom on');
 			}
 		});
 	}

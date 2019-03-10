@@ -280,7 +280,6 @@ MEDIA QUERY
 	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li input[type="text"] {width:20rem; height:3rem; line-height:3rem; margin:0; padding:0 0 0 0.5rem; font-size:1rem;}
 	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .radio {padding:1rem 0 1rem 0.5rem; text-align:left; }
 	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .radio > li {width:7.5rem;}
-	.pc .ebooksys .main-tab .tab-contents .book-list {max-width:75%;}
 }
 @media (max-width: 640px) {
 	.ebooksys h2 {margin:0 0 2rem 0; padding:0;}
@@ -295,10 +294,10 @@ MEDIA QUERY
 	.ebooksys .main-notice .list li a .subject {width:21rem;}
 	.ebooksys .main-tab {margin-top:120px;}
 	.ebooksys .main-search-zone .detail-search {margin-top:1.5rem;}
-	.pc .ebooksys .main-tab .tab-contents .book-list {max-width:inherit;}
 }
-@media (max-width:600px) {
-
+@media (max-width:550px) {
+	.ebooksys .main-notice .list .slick-list {width:25rem;}
+	.ebooksys .main-notice .list li a .subject {width:15rem;}
 }
 @media (max-width:414px) {
 	.ebooksys .main-notice .list .slick-list {width:25rem;}

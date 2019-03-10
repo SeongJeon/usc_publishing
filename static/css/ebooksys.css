@@ -233,8 +233,8 @@ MEDIA QUERY
 	.ebooksys .main-search-zone .popularity .list .slick-list {width:30rem;}
 	.ebooksys .main-search-zone .popularity .tit {width:6rem; height:2.5rem; line-height:2.5rem; font-size:1rem;}
 	.ebooksys .main-search-zone .detail-search {position:static; margin-top:3rem; text-align:center;}
-	.ebooksys .main-search-zone .detail-search .btn {width:13rem; height:4rem; line-height:4rem;}
-	.ebooksys .main-search-zone .detail-search .btn span {width:10rem; height:4rem; line-height:4rem; padding-left:3rem; background-color:#fff; background-size:1.5rem; background-position:1rem; font-size:1rem;}
+	.ebooksys .main-search-zone .detail-search .btn {width:13rem; height:3rem; line-height:3rem;}
+	.ebooksys .main-search-zone .detail-search .btn span {width:10rem; height:3rem; line-height:3rem; padding-left:3rem; background-color:#fff; background-size:1.5rem; background-position:1rem; font-size:1rem;}
 	.ebooksys .main-notice {width:auto; height:4rem; padding:1rem 0 0 1rem;}
 	.ebooksys .main-notice .list .slick-list {width:33rem;}
 	.ebooksys .main-notice .list li a > * {font-size:1rem; line-height:2.5rem;}
@@ -244,10 +244,10 @@ MEDIA QUERY
 	.mouse-control {display:none;}
 	.ebooksys .main-notice .list li a .date {font-size:1rem;}
 	.ebooksys .main-notice .btn-link a {width:4rem; height:4rem;}
-	.ebooksys .main-notice .control > * {width:1.2rem; height:2rem;}
+	.ebooksys .main-notice .control > * {width:1.7rem; height:2rem;}
 	.ebooksys .main-notice .control .main-notice-prev {background-size:3rem;}
 	.ebooksys .main-notice .control .main-notice-next {background-size:3rem;}
-	.ebooksys .main-notice .control {top:1.2rem; right:4.5rem;}
+	.ebooksys .main-notice .control {top:1.2rem; right:5rem;}
 	
 	.ebooksys .main-tab .custom-paging {display:none !important;}
 	.ebooksys .main-tab .slick-prev {display:none !important;}
@@ -292,12 +292,14 @@ MEDIA QUERY
 	.ebooksys .main-search-zone .form-search .btn {top:-5px; width:4rem; height:4rem; background-size:4rem;}
 	.ebooksys .main-notice .list .slick-list {width:38rem;}
 	.ebooksys .main-notice .list li a .subject {width:26rem;}
-	.ebooksys .main-tab .tab-contents .book-list {max-width:auto;}
-	.ebooksys .main-search-zone .detail-search {margin-top:2rem;}
+	.ebooksys .main-tab {margin-top:120px;}
+	.ebooksys .main-tab .tab-contents .book-list {max-width:75%;}
+	.ebooksys .main-search-zone .detail-search {margin-top:1.5rem;}
 }
 @media (max-width:414px) {
 	.ebooksys .main-notice .list .slick-list {width:25rem;}
 	.ebooksys .main-notice .list li a .subject {width:15rem;}
+	.ebooksys .main-search-zone .detail-search {margin-top:1rem;} 
 }
 @media (max-width:360px) {
 	

@@ -1691,11 +1691,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="mouse-control">
-						<span>scroll down</span>
-					</div>
+					
 				</div>
 			</div>
+			<div class="mouse-control">
+						<span>scroll down</span>
+					</div>
 		</main>
 		<!-- //CONTAINER -->
 
@@ -1713,40 +1714,44 @@
 <script type="text/javascript" src="../../static/js/common.js"></script>
 <script type="text/javascript">
 	window.onload = function(){
-		
-		var win_h = $(window).height(),
-			header_h = $('#header').height();
-		$('.main .section').each(function(i){
-			$(this).attr('data-index',(win_h - header_h) * i);
-			// $(this).css('height', win_h - header_h + 'px')
-			$("html, body").animate({ scrollTop:0},10);
-		});
-		$('.main').on('mousewheel', function(e){
-			// var sectionPos = parseInt($(this).attr('data-index'));
+		$('.main .inner').each(function(){
 
-			if(e.originalEvent.wheelDelta >= 0 ){
-				$(".mouse-control").removeClass('on')
-				$(".mouse-control span").text('scroll down')
-				$("html, body").stop().animate({ scrollTop:0},10);
-				$(this).find('.inner').stop().animate({'margin-top': 0});
-				
-				//$('html,body').stop().animate({scrollTop:sectionPos - (win_h - header_h)});
-				return false;
-			}else if(e.originalEvent.wheelDelta < 0){
-				$(".mouse-control").addClass('on')
-				$(".mouse-control span").text('scroll up')
-				$("html, body").stop().animate({ scrollTop:0},10);
-				$(this).find('.inner').stop().animate({'margin-top': '-' + (win_h)},300 , function(){
-					
+			if($(window).width() < 1024){
+				$('.main .inner').slick({
+					infinite: false,
+					arrows: false,
+					vertical: true,
+		  			verticalSwiping: true,
+		  		});
+			}else{
+				var win_h = $(window).height(),
+					header_h = $('#header').height();
+				$('.main .section').each(function(i){
+					$(this).attr('data-index',(win_h - header_h) * i);
 				});
-				//$('html,body').stop().animate({scrollTop:sectionPos + (win_h - header_h)});
-				return false;
+					$('.main').on('mousewheel', function(e){
+						// var sectionPos = parseInt($(this).attr('data-index'));
+
+						if(e.originalEvent.wheelDelta >= 0 ){
+							$(".mouse-control").removeClass('on')
+							$(".mouse-control span").text('scroll down')
+							$(this).find('.inner').stop().animate({'margin-top': 0});
+							
+							//$('html,body').stop().animate({scrollTop:sectionPos - (win_h - header_h)});
+							return false;
+						}else if(e.originalEvent.wheelDelta < 0){
+							$(".mouse-control").addClass('on')
+							$(".mouse-control span").text('scroll up')
+							$(this).find('.inner').stop().animate({'margin-top': '-' + (win_h)});
+							//$('html,body').stop().animate({scrollTop:sectionPos + (win_h - header_h)});
+							return false;
+						}
+						return false;
+					});
 			}
-			return false;
 		});
-		$('.main').on('touchmove', function() {
-		  $(this).trigger('mousewheel');
-		});
+		
+		
 		/*$(window).scroll(function() {
 			var scrollHeight = $(document).height();
 			var scrollPosition = $(window).height() + $(window).scrollTop();
@@ -1760,6 +1765,7 @@
 		});*/
 	}
 	$(document).ready(function(){
+
 		$(window).on('load resize orientationchange', function() {
 			//
 			$('.js-main-slide .list').each(function(){

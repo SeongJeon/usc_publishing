@@ -290,10 +290,13 @@ MEDIA QUERY
 	.ebooksys .main-search-zone .popularity .list .slick-list {width:15rem;}
 	.ebooksys .main-search-zone .form-search .input {width: 16rem; margin-left:0.5rem; padding-left:0.5rem; background-size: 0.8rem; background-position:left 0.9rem;}
 	.ebooksys .main-search-zone .form-search .btn {top:-5px; width:4rem; height:4rem; background-size:4rem;}
-	.ebooksys .main-notice .list .slick-list {width:35rem;}
-	.ebooksys .main-notice .list li a .subject {width:25rem;}
+	.ebooksys .main-notice .list .slick-list {width:31rem;}
+	.ebooksys .main-notice .list li a .subject {width:21rem;}
 	.ebooksys .main-tab {margin-top:120px;}
 	.ebooksys .main-search-zone .detail-search {margin-top:1.5rem;}
+}
+@media (max-width:600px) {
+
 }
 @media (max-width:414px) {
 	.ebooksys .main-notice .list .slick-list {width:25rem;}

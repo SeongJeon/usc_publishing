@@ -39,9 +39,9 @@
 						</p>
 						<!--// 좌측 텍스트 -->
 						<!-- 우측 날씨 및 탭 메뉴 -->
-						<div class="top-menu ">
+						<div class="top-menu">
 							<!-- 날씨 개발 영역 -->
-							<div class="weather-zone view-pc">
+							<div class="weather-zone">
 								<p class="today-icon"><img src="../../static/images/usc/icon_weather_sun.png" alt="맑음"></p>
 								<!-- D : 날씨 아이콘의 경우 42*42 사이즈로 넣어 줄 것 -->
 								<dl class="today-txt">
@@ -57,11 +57,11 @@
 								</dl>
 							</div>
 							<!-- 탭 메뉴 -->
-							<div class="tab-zone" aria-label="의성군청 메인 컨텐츠 분류">
-								<div class="li"><h2 class="bigtabcont1"><span>소 식</span></h2></div>
-								<div class="li"><h2 class="bigtabcont2"><span>민 원</span></h2></div>
-								<div class="li"><h2 class="bigtabcont3"><span>관 광</span></h2></div>
-							</div>
+							<ul class="tab-zone" aria-label="의성군청 메인 컨텐츠 분류">
+								<li class="li current"><h2 class="bigtabcont1"><span>소 식</span></h2></li>
+								<li class="li"><h2 class="bigtabcont2"><span>민 원</span></h2></li>
+								<li class="li"><h2 class="bigtabcont3"><span>관 광</span></h2></li>
+							</ul>
 						</div>
 						<!-- //우측 날씨 및 탭 메뉴 -->
 					</div>
@@ -348,6 +348,7 @@
 										<div class="slide-indicator" aria-label="자주찾는 메뉴 슬라이드 제어 메뉴">
 											<p><button type="button" class="btn-up"><span>자주찾는 메뉴 위로 이동</span></button></p>
 											<p><button type="button" onclick="usc.slickPause('.js-news-favoritmenu > .slider', this)" class="btn-pause"><span>자주찾는 메뉴 일시정지 및 재생</span></button></p>
+											<!-- <p><button type="button"  class="btn-pause"><span>자주찾는 메뉴 일시정지 및 재생</span></button></p> -->
 											<p><button type="button" class="btn-down"><span>자주찾는 메뉴 아래로 이동</span></button></p>
 										</div>
 										<div class="slider" aria-label="자주찾는 메뉴 슬라이드">
@@ -382,9 +383,9 @@
 								<div class="complaint-menu">
 									<!-- 탭메뉴 -->
 									<ul class="tab" role="tablist">
-										<li role="presentation"><a href="#complainttab1" role="tab" aria-controls="complainttab1" aria-selected="true"><span><em>의성군민</em>의성군민들이 자주찾는 서비스</span></a></li>
-										<li role="presentation"><a href="#complainttab2" role="tab" aria-controls="complainttab2" ><span><em>사업자</em>사업자를 위한 관련 서비스</span></a></li>
-										<li role="presentation"><a href="#complainttab3" role="tab" aria-controls="complainttab3" ><span><em>관광객</em>관광객을 위한 편리한 서비스</span></a></li>
+										<li role="presentation"><a href="#complainttab1" role="tab" aria-controls="complainttab1" aria-selected="true"><span><em>의성군민</em><span class="view-pc">의성군민들이 자주찾는 서비스</span></span></a></li>
+										<li role="presentation"><a href="#complainttab2" role="tab" aria-controls="complainttab2" ><span><em>사업자</em><span class="view-pc">사업자를 위한 관련 서비스</span></span></a></li>
+										<li role="presentation"><a href="#complainttab3" role="tab" aria-controls="complainttab3" ><span><em>관광객</em><span class="view-pc">관광객을 위한 편리한 서비스</span></span></a></li>
 									</ul>
 									<!--// 탭메뉴 -->
 									<!-- 탭관련 메뉴 컨텐츠 -->
@@ -562,7 +563,7 @@
 										<h3 class="tit">언제나 신속한 의성민원서비스</h3>
 										<div class="notice-number">
 											<p class="number">1588 - 1369</p>
-											<p class="txt">우리군청과 관련된 각종 궁금증을 한번에 <br>빠르고 정확하게 해결해 드리는 <br>군민의 도우미!!</p>
+											<p class="txt">우리군청과 관련된 각종 궁금증을 한번에 <br class="pc">빠르고 정확하게 <br class="m">해결해 드리는 <br class="pc">군민의 도우미!!</p>
 										</div>
 										<ul class="notice-service">
 											<li>무인민원발급기</li>
@@ -587,9 +588,8 @@
 									</div>
 									<!-- 복지 -->
 									<div class="complaint-welfare">
-										<h3 class="tit">연령별 복지정보</h3>
+										<h3 class="tit">연령별 <br class="m">복지정보</h3>
 										<div class="welfare-slider js-welfare-slider">
-
 											<div class="slide">
 												<a href="#">
 													<span class="img"><img src="../../static/images/usc/img_welfare1.png" alt=""></span>
@@ -624,7 +624,6 @@
 													<span class="name">아동복지</span>
 												</a>
 											</div>
-
 										</div>
 									</div>
 								</div>
@@ -634,7 +633,7 @@
 								<!-- 의성 sns -->
 								<div class="complaint-sns">
 									<h3 class="tit">의성군과 소통하는 SNS</h3>
-									<ul class="tab-sns">
+									<ul class="tab-sns view-pc">
 										<li><button type="button" class="icon_all"><span>전체</span></button></li>
 										<li><button type="button" class="icon_facebook"><span>페이스북</span></button></li>
 										<li><button type="button" class="icon_twitter"><span>트위터</span></button></li>
@@ -651,7 +650,7 @@
 													<img src="../../static/images/usc/temp/@mainsns.png" alt="썸네일명">
 												</div>
 												<div class="cont">유명한 농업CEO? 성공한 자두농부? 꿈 많은 의성 농부, 의성농업대학이 도와Dream! 의성농업대학에 입학하고 싶다면~ </div>
-												<div class="btn"> <a class="btn-txt_more" href="#"><span>더보기</span></a> </div>
+												<div class="btn"> <a class="btn-txt_more" href="#" target="_blank" title="새창으로 열림"><span>더보기</span></a> </div>
 											</li>
 
 											<li class="instar">
@@ -660,7 +659,7 @@
 													<img src="../../static/images/usc/temp/@mainsns.png" alt="썸네일명">
 												</div>
 												<div class="cont">유명한 농업CEO? 성공한 자두농부? 꿈 많은 의성 농부, 의성농업대학이 도와Dream! 의성농업대학에 입학하고 싶다면~ </div>
-												<div class="btn"> <a class="btn-txt_more" href="#"><span>더보기</span></a> </div>
+												<div class="btn"> <a class="btn-txt_more" href="#" target="_blank" title="새창으로 열림"><span>더보기</span></a> </div>
 											</li>
 
 											<li class="kakao">
@@ -669,7 +668,7 @@
 													<img src="../../static/images/usc/temp/@mainsns.png" alt="썸네일명">
 												</div>
 												<div class="cont">유명한 농업CEO? 성공한 자두농부? 꿈 많은 의성 농부, 의성농업대학이 도와Dream! 의성농업대학에 입학하고 싶다면~ </div>
-												<div class="btn"> <a class="btn-txt_more" href="#"><span>더보기</span></a> </div>
+												<div class="btn"> <a class="btn-txt_more" href="#" target="_blank" title="새창으로 열림"><span>더보기</span></a> </div>
 											</li>
 
 											<li class="twitter">
@@ -678,7 +677,7 @@
 													<img src="../../static/images/usc/temp/@mainsns.png" alt="썸네일명">
 												</div>
 												<div class="cont">유명한 농업CEO? 성공한 자두농부? 꿈 많은 의성 농부, 의성농업대학이 도와Dream! 의성농업대학에 입학하고 싶다면~ </div>
-												<div class="btn"> <a class="btn-txt_more" href="#"><span>더보기</span></a> </div>
+												<div class="btn"> <a class="btn-txt_more" href="#" target="_blank" title="새창으로 열림"><span>더보기</span></a> </div>
 											</li>
 
 											<li class="twitter">
@@ -687,7 +686,7 @@
 													<img src="../../static/images/usc/temp/@mainsns.png" alt="썸네일명">
 												</div>
 												<div class="cont">유명한 농업CEO? 성공한 자두농부? 꿈 많은 의성 농부, 의성농업대학이 도와Dream! 의성농업대학에 입학하고 싶다면~ </div>
-												<div class="btn"> <a class="btn-txt_more" href="#"><span>더보기</span></a> </div>
+												<div class="btn"> <a class="btn-txt_more" href="#" target="_blank" title="새창으로 열림"><span>더보기</span></a> </div>
 											</li>
 
 											<li class="twitter">
@@ -696,7 +695,7 @@
 													<img src="../../static/images/usc/temp/@mainsns.png" alt="썸네일명">
 												</div>
 												<div class="cont">유명한 농업CEO? 성공한 자두농부? 꿈 많은 의성 농부, 의성농업대학이 도와Dream! 의성농업대학에 입학하고 싶다면~ </div>
-												<div class="btn"> <a class="btn-txt_more" href="#"><span>더보기</span></a> </div>
+												<div class="btn"> <a class="btn-txt_more" href="#" target="_blank" title="새창으로 열림"><span>더보기</span></a> </div>
 											</li>
 
 											<li class="blog">
@@ -705,7 +704,7 @@
 													<img src="../../static/images/usc/temp/@mainsns.png" alt="썸네일명">
 												</div>
 												<div class="cont">유명한 농업CEO? 성공한 자두농부? 꿈 많은 의성 농부, 의성농업대학이 도와Dream! 의성농업대학에 입학하고 싶다면~ </div>
-												<div class="btn"> <a class="btn-txt_more" href="#"><span>더보기</span></a> </div>
+												<div class="btn"> <a class="btn-txt_more" href="#" target="_blank" title="새창으로 열림"><span>더보기</span></a> </div>
 											</li>
 										</ul>
 									</div>
@@ -799,7 +798,7 @@
 							
 							<!-- 알려드립니다. -->
 							<div class="sightseeing-attention">
-								<h3 class="tit">관광의성 <br>알려드립니다.</h3>
+								<h3 class="tit">관광의성 <br class="pc">알려드립니다.</h3>
 								<div class="attention-menu-zone">
 									<ul class="attention-menu">
 										<li><a href="#" target="_blank" title="새창으로 열림" class="icon-attention1"><span>맛집</span></a></li>
@@ -848,31 +847,6 @@
          return '<em class="current">' + i + '</em><span class="division">/</span>' + slick.slideCount;
       }
 	});
-	// 소식 - 자주찾는 메뉴
-	$('.js-news-favoritmenu > .slider').slick({
-		dots: false,
-		infinite: true,
-		speed: 400,
-		vertical: true,
-		slidesToShow: 8,
-		slidesToScroll: 1,
-		// autoplay: true,
-		autoplay: false,
-		autoplaySpeed: 1000,
-		nextArrow : $('.js-news-favoritmenu .btn-up'),
-		prevArrow : $('.js-news-favoritmenu .btn-down')
-		// ,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 1024,
-		// 		settings: {
-		// 	      slidesToShow: 9,
-		// 	      slidesToScroll: 9,
-		// 	      rows: 2
-		// 	   }
-		// 	}
-		// ]
-	});
 	// 소식 - 팝업존
 	$(".js-news-popupzone > .slider").slick({
 		dots: true,
@@ -893,6 +867,32 @@
       }
 	});
 
+	// 소식 - 자주찾는 메뉴
+	$('.js-news-favoritmenu > .slider').slick({
+		dots: false,
+		infinite: true,
+		speed: 400,
+		vertical: true,
+		slidesToShow: 8,
+		slidesToScroll: 1,
+		autoplay: true,
+		// autoplay: false,
+		autoplaySpeed: 1000,
+		nextArrow : $('.js-news-favoritmenu .btn-up'),
+		prevArrow : $('.js-news-favoritmenu .btn-down') ,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+			      slidesToShow: 3,
+			      slidesToScroll: 1,
+			      rows: 3,
+			      slidesPerRow: 1
+			   }
+			}
+		]
+	});
+	
 
 	// 민원 - sns iscroll
 	var myScroll1 = new IScroll('.complaint-sns .lst-sns-zone', { 
@@ -918,6 +918,9 @@
 	});
 
 
+
+
+
 	// 관광 - 슬라이드
 	var sightseeingSlider = (function(){
 		var idx;
@@ -933,6 +936,7 @@
 			var curr = $(this).closest("li");  
 
 			if(curr.hasClass("current")) return false; 
+			console.log(idx);
 
 			curr.addClass("current").siblings("li").removeClass("current");
 			$(".sightseeing-slider .js-bigslider").slick('slickGoTo', idx);
@@ -965,26 +969,35 @@
 		})
 	})();
 
-	
+
+	var sightseeingSlider2 = (function(){ 
+		var idx;
+		// 메인 탭 (소식/민원/관공)
+		$('.main-tabcontent').slick({
+			speed: 400,
+			ltr: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			swipe: false,
+			arrows: false
+		});
+		
+		$(".main-top-zone .tab-zone .li").on("click", function(){
+			idx = $(this).closest("li").index();
+			var curr = $(this).closest("li");  
+
+			if(curr.hasClass("current")) return false; 
+
+			curr.addClass("current").siblings("li").removeClass("current");
+			$(".main-tabcontent").slick('slickGoTo', idx);
+			return false;
+		});
+	})();
 
 
-	// 메인 탭 (소식/민원/관공)
-	$('.main-tabcontent').slick({
-		speed: 400,
-		ltr: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		swipe: false,
-		arrows: false,
-		asNavFor: $(".top-menu .tab-zone")
-	});
-	$(".top-menu .tab-zone").slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		centerMode: false,
-		focusOnSelect: true,
-		asNavFor: $(".main-tabcontent")
-	});
+
+
+
 </script>
 </body>
 </html>

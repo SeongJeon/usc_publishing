@@ -30,7 +30,7 @@ MAIN
 		.top-menu {
 			display: table-cell; width:445px;
 			.weather-zone {
-				overflow:hidden; position: relative; height: 42px; margin-top: 15px;
+				display:block; overflow:hidden; position: relative; height: 42px; margin-top: 15px;
 				&:after {display:block; clear:both; content:""}
 				.today-icon {overflow: hidden; position: absolute; left:0; top:0;  width: 42px; height: 42px; border-radius: 100px; background:#fff;}
 				.today-txt {
@@ -52,7 +52,8 @@ MAIN
 			.tab-zone {
 				margin-top: 10px; height: 56px;
 				&:after {display:block; clear:both; content:""}
-				// .li + .li {margin-left: 12px;}
+				.li {float: left; }
+				.li + .li {margin-left: 12px;}
 				.slick-slide {height: 56px; cursor: pointer;}
 				h2 {
 					display: block; position: relative; height: 45px; width: 140px; 
@@ -80,7 +81,7 @@ MAIN
 						border-color:#ff8926;
 						&:after {border-top-color:#ff8926;}
 						span {
-							&:before {width:21px; background-position: 0px 0;}
+							&:before {width:21px; @include background("usc/icon_maintab1.png",no-repeat 50% 50%);}
 							&:after {background:#ff8926;}
 						}
 					}
@@ -88,7 +89,7 @@ MAIN
 						border-color:#0775bc;
 						&:after {border-top-color:#0775bc;}
 						span {
-							&:before {width:28px; background-position: -50px 0;}
+							&:before {width:28px; @include background("usc/icon_maintab2.png",no-repeat 50% 50%);}
 							&:after {background:#0775bc;}
 						}
 					}
@@ -96,13 +97,13 @@ MAIN
 						border-color:#08a46b;
 						&:after {border-top-color:#08a46b;}
 						span {
-							&:before {width:28px; margin-right: 8px; background-position: -100px 0;}
+							&:before {width:28px; margin-right: 8px;  @include background("usc/icon_maintab3.png",no-repeat 50% 50%);}
 							&:after {background:#08a46b;}
 						}
 					}
 				}
 				// 선택시 -
-				.slick-current, .li:hover {
+				.slick-current, .li:hover, .li.current {
 					h2{
 						color:#fff;
 						&:after {
@@ -113,15 +114,15 @@ MAIN
 						span:after {width: 100%;}
 						&[class*=bigtabcont1]{
 							 background:#ff8926;
-							span:before {background-position: 0 -50px}
+							span:before {@include background("usc/icon_maintab1_on.png",no-repeat 50% 50%);}
 						}
 						&[class*=bigtabcont2] {
 							 background:#0775bc;
-							span:before {background-position: -50px -50px}
+							span:before {@include background("usc/icon_maintab2_on.png",no-repeat 50% 50%);}
 						}
 						&[class*=bigtabcont3] {
 							background:#08a46b; 
-							span:before {background-position: -100px -50px}
+							span:before {@include background("usc/icon_maintab3_on.png",no-repeat 50% 50%);}
 						}
 					}
 				}
@@ -156,7 +157,7 @@ MAIN
 
 		// 배너1
 		.news-banner {
-			position: relative; 
+			position: relative;  height: 400px;
 			.slick-dots {
 				position: absolute; right: 0; bottom: 0; z-index: 1; 
 				width: 200px; height:50px; background:rgba(0,0,0,0.6); font-size: 18px; color:#fff;
@@ -534,19 +535,19 @@ MAIN
 					position: relative; display: block; height: 99px; padding-top: 32px; padding-left: 84px; margin:0 -12px;
 					font-size: 13px; color:rgba(48,48,48,0.7); box-sizing: border-box;
 					em {display: block; font-size: 18px; font-family: $font2; margin-bottom: 6px; color:#303030;}
-					&:before {display: block; position: absolute; left:16px; top:22px; width: 57px; height: 57px;@include background("usc/sp_main.png",no-repeat 0 0); content: ""}
-					&[aria-controls=complainttab1]:before {background-position: 0 -250px;}
-					&[aria-controls=complainttab2]:before {background-position: -100px -250px;}
-					&[aria-controls=complainttab3]:before {background-position: -200px -250px;}
+					&:before {display: block; position: absolute; left:16px; top:22px; width: 57px; height: 57px; content: ""}
+					&[aria-controls=complainttab1]:before {@include background("usc/icon_complainttab1_on.png",no-repeat 0 0);}
+					&[aria-controls=complainttab2]:before {@include background("usc/icon_complainttab2_on.png",no-repeat 0 0);}
+					&[aria-controls=complainttab3]:before {@include background("usc/icon_complainttab3_on.png",no-repeat 0 0);}
 				}
 				a[aria-selected=true] {
-					&:after {display: block; position: absolute; left:100%; top:0; content: ""; width: 0; height: 0; border-left: 21px solid #ff8000; border-radius: 21px solid transparent; border-top: 50px solid transparent; border-bottom: 50px solid transparent;}
+					&:after {display: block; position: absolute; left:100%; top:0; content: ""; width: 0; height: 0; border-left: 21px solid #ff8000; border-right: 21px solid transparent; border-top: 50px solid transparent; border-bottom: 50px solid transparent;}
 					&[aria-controls=complainttab1] {background:#ff8000;}
 					&[aria-controls=complainttab2] {background:#03a596;}
 					&[aria-controls=complainttab3] {background:#0c6dac;}
-					&[aria-controls=complainttab1]:before {background-position: 0 -350px;}
-					&[aria-controls=complainttab2]:before {background-position: -100px -350px;}
-					&[aria-controls=complainttab3]:before {background-position: -200px -350px;}
+					&[aria-controls=complainttab1]:before {@include background("usc/icon_complainttab1.png",no-repeat 0 0);}
+					&[aria-controls=complainttab2]:before {@include background("usc/icon_complainttab2.png",no-repeat 0 0);}
+					&[aria-controls=complainttab3]:before {@include background("usc/icon_complainttab3.png",no-repeat 0 0);}
 					&[aria-controls=complainttab1]:after {border-left-color:#ff8000}
 					&[aria-controls=complainttab2]:after {border-left-color:#03a596}
 					&[aria-controls=complainttab3]:after {border-left-color:#0c6dac}
@@ -753,20 +754,26 @@ MEDIA QUERY
 			img {width: 80%; margin:0 auto;}
 		}
 		.top-menu {
-			display: block; width: 100%; margin:0 auto; 
+			display: block; width: 100%; margin:1.5rem auto; 
+			.weather-zone {display: none}
 			.tab-zone {
-				height: 4.5rem;
+				height: 4.5rem; text-align: center;
+				.li {float: none; display: inline-block;}
+				.li + .li {margin-left: 0.6rem;}
 				h2 {
-					font-size: 13px; height: 34px; width: 100px; line-height:34px;
-					span {height: 3.4rem; }
+					font-size: 13px; height: 3.3rem; width: 8rem; line-height:3.3rem; box-sizing: content-box;
+					span {
+						height: 3.2rem; 
+						&:before {margin-right: 0.8rem; }
+					}
 				}
 			}
 
 		}
 	}
 	.main-tabcontent {
-		height: auto;
-		div[class^=tab-] {height:auto; padding:14rem 0 4.2rem;}
+		height: 140rem;
+		div[class^=tab-] {height: 140rem; padding:14rem 0 4.2rem;}
 
 		// 소식
 		.tab-news {
@@ -774,6 +781,7 @@ MEDIA QUERY
 			.l-right {float: none; width:100%; padding-left: 0;}
 			// 상단배너
 			.news-banner {
+				height: auto;
 				.slick-slide {
 					img {width:100%}
 				}
@@ -881,7 +889,7 @@ MEDIA QUERY
 			}
 			// 자주찾는메뉴
 			.news-favoritmenu {
-				position:relative; float: none; width: 100%; height: auto; margin-top: 1rem; padding:1.6rem 1rem 1rem;
+				position:relative; float: none; width: 100%; height: auto; margin-top: 1rem; padding:1.6rem 0 1rem;
 				.tit {font-size: 1.3rem; text-align: center; padding-top: 0;}
 				.slide-indicator {
 					width: 8rem; position:absolute; right: 1rem; top: 1rem; margin-bottom: 0;
@@ -892,8 +900,43 @@ MEDIA QUERY
 				}
 				.news-favoritmenu-slider {
 					.slider {
-						padding:1rem; 
-						a {height:2.6rem; line-height:2.6rem; font-size: 1rem;}
+						padding:0; 
+						.slide {padding:0.8rem 0.3rem; }
+						a {
+							height:2.6rem; line-height:2.6rem; font-size: 1rem;padding-left: 3.1rem;
+							&:before {width: 2.6rem; height: 2.6rem;}
+							&.icon-favorit1:before {background:url("../../static/images/usc/icon_favorit1.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit2:before {background:url("../../static/images/usc/icon_favorit2.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit3:before {background:url("../../static/images/usc/icon_favorit3.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit4:before {background:url("../../static/images/usc/icon_favorit4.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit5:before {background:url("../../static/images/usc/icon_favorit5.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit6:before {background:url("../../static/images/usc/icon_favorit6.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit7:before {background:url("../../static/images/usc/icon_favorit7.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit8:before {background:url("../../static/images/usc/icon_favorit8.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit9:before {background:url("../../static/images/usc/icon_favorit9.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit10:before {background:url("../../static/images/usc/icon_favorit10.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit11:before {background:url("../../static/images/usc/icon_favorit11.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit12:before {background:url("../../static/images/usc/icon_favorit12.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit13:before {background:url("../../static/images/usc/icon_favorit13.png") no-repeat 50% 50%; background-size: 100% 100%;}
+
+							&.icon-favorit1:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit1.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit2:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit2.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit3:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit3.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit4:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit4.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit5:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit5.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit6:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit6.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit7:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit7.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit8:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit8.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit9:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit9.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit10:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit10.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit11:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit11.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit12:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit12.png") no-repeat 50% 50%; background-size: 100% 100%;}
+							&.icon-favorit13:hover:before {background:#ff6826 url("../../static/images/usc/icon_favorit13.png") no-repeat 50% 50%; background-size: 100% 100%;}
+						}
+					}
+					.slick-slide {
+						&:after {display:block; clear:both; content:""}
+						& > div {float:left; width: 33%; padding:0 1rem; }
 					}
 				}
 			}
@@ -904,35 +947,194 @@ MEDIA QUERY
 			// 민원서비스
 			.complaint-bottom {margin-top: 1rem; }
 			.complaint-service {
-				float: none; width: 100%; 
+				float: none; width: 100%; height: auto; padding:0 1rem 1.8rem;
+				.tit {width:28.7rem; height: 5.9rem; margin:0 auto; @include background("usc/img_main_service_m.png",no-repeat 50% 50%); background-size: 100% auto; max-width: 88%;}
+				.notice-number {
+					.number {font-size: 2.5rem;}
+					.txt {font-size: 1rem; line-height: 1.3rem}
+				}
+				.notice-service {
+					margin-top: 1.8rem; padding-top: 0; padding-left: 0;
+					&:after {display:block; clear:both; content:""}
+					li {float: left;  width: 50%; padding-left: 1.3rem; box-sizing: border-box; font-size: 1.1rem; line-height: 2rem;}
+				}
 			}
 			//정보화마을
 			.complaint-invil{
-				float: none; width: 100%; margin-left: 0; margin-top: 1rem;
+				float: none; height: auto; width: 100%; margin-left: 0; margin-top: 1rem; padding-bottom:1.4rem ;
+				.tit {
+					font-size: 1rem; 
+					strong {display: inline; font-size: 1.4rem; vertical-align: -0.2rem;}
+				}
+				.invil {
+					margin-top: 0.8rem; height:22vw; padding-top: 7vw; @include background("usc/bg_main_invil_m.png",no-repeat 50% 0); background-size: 100% auto;
+					img {height: 4rem;}
+				}
+				.lnk-group{
+					padding:0 1rem; margin-top: 1rem;
+					&:after {display:block; clear:both; content:""}
+					li {float:left; width: 50%; margin-bottom: 0.8rem; margin-top: 0; box-sizing: border-box;}
+					li:nth-child(even) {padding-left: 0.4rem;}
+					li:nth-child(odd) {padding-right: 0.4rem;}
+					a {
+						padding:0 1.5rem 0 1rem; font-size: 1rem; line-height: 3.1rem;
+						em {font-size: 0.8rem;}
+					}
+				}
 			}
 			//연령별 복지정보 
 			.complaint-welfare {
-				float: none; width: 100%; margin-left: 0; margin-top: 1rem;
+				position: relative; 
+				float: none; width: 100%; height: auto; margin-left: 0; margin-top: 1rem;
+				// display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+				.tit {width: 32vw; height:100%; position: absolute; left:0; top:0; padding-top: 8.5rem; @include background("usc/bg_welfare_m.png", no-repeat 0 0); background-size: 100% 100%; line-height: 2rem; box-sizing: border-box; font-size: 1.4rem;}
+				.welfare-slider {
+					padding:1.5rem 0 0.8rem 32vw; margin-top: 0;
+					a {
+						width: 50%; margin:0 auto;
+						.name {font-size: 1.2rem; margin-top: 0.7rem;}
+					}
+					.slick-dots {
+						margin-top: 0.9rem;
+						button {width:0.7rem; height: 0.7rem;}
+						.slick-active button {width: 1.9rem;}
+					}
+				}
+			}
+			// sns
+			.complaint-sns {
+				margin-top: 1rem; height: auto; background-size: 40% auto;
+				.lst-sns-zone {height: 18rem}
+				.tit {font-size: 1.3rem; padding-top: 2rem; }
+				.tab-sns {display: none}
+				.lst-sns {
+					padding:0 1rem 0 2.5rem; 
+					li {
+						overflow:visible; height: auto; border-width:0 0 0 1px; padding:0 0 1rem; margin-bottom: 0;
+					}					
+					.thumb {display: none;}
+					.cont {padding-left:1.8rem; font-size: 1rem; -webkit-line-clamp:2; line-height: 1.4rem; max-height: 2.8rem;}
+					.sns {overflow:hidden; left:-1.1rem; width:2.3rem; height: 2.3rem; border-radius: 5px; }
+					.btn {text-align: left; margin-top: 1rem; position: static; padding-left: 1.8rem;}
+				}
+			}
+			// 메뉴
+			.complaint-menu {
+				height:  auto;
+				.tab {
+					position: relative; width: 100%; padding:0.5rem 0;
+					display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+					li {-webkit-flex:1; flex:1; border-top: 0; }
+					li + li {border-left: 1px dashed #e3e3e3;}
+					a {
+						height: 4.8rem; padding-left: 0; text-align: center; padding-top:1rem; margin:0; box-sizing: content-box;
+						em {display: inline;font-size: 1.2rem;}
+						&:before {position: relative; display: inline-block; left:0; top:0; margin-right: 5px; vertical-align: middle; width: 4rem; height: 4rem; background-size: 100% 100%;}
+					}
+					a[aria-selected=true] {
+						padding:1.5rem 0 0.5rem; margin:-0.5rem 0;
+						&:after {top:100%; left:0; border:none; width: 100%; height: 1.5rem; }
+						&[aria-controls=complainttab1]:after {@include background("usc/bg_complainttab1.png",no-repeat 50% 50%); background-size: 100% 100%;}
+						&[aria-controls=complainttab2]:after {@include background("usc/bg_complainttab2.png",no-repeat 50% 50%); background-size: 100% 100%;}
+						&[aria-controls=complainttab3]:after {@include background("usc/bg_complainttab3.png",no-repeat 50% 50%); background-size: 100% 100%;}
+						&[aria-controls=complainttab1]:before {background-size: 100% 100%;}
+						&[aria-controls=complainttab2]:before {background-size: 100% 100%;}
+						&[aria-controls=complainttab3]:before {background-size: 100% 100%;}
+					}
+				}
+				.complaint-tab-contents {
+					div[id^=complainttab] {height: auto; padding:1.7rem 0 2.6rem;}
+					.lst-menu {
+						li {margin-top: 1.3rem; margin-left: 0; width:25%; text-align: center; }
+						.icon {
+							width: 15vw; height: 15vw; 
+							img {width: 100%;}
+						}
+						.name {font-size: 1rem;}
+					}
+				}
 			}
 		}
 		// 관광
 		.tab-sightseeing {
 			// 배너
 			.sightseeing-slider {
-				float: none; width: 100%; 
+				float: none; width: 100%;  height: auto;
+				.bigslider {
+					// height: 29.2rem;
+					height:auto;
+					.slick-arrow { 
+						top:30%; opacity: 1 !important; width: 32px; height: 5.3rem; 
+						&:after {transform:scale(0.4);}
+					}
+					.detailzone {
+						padding:1rem;
+						.detail-txt {
+							dt {font-size: 1.1rem;}
+							dd {overflow:hidden; margin-top: 1.4rem; font-size: 0.9rem; line-height: 1.2rem; max-height: 2.4rem; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; }
+						}
+						.btn-more {right: 1rem; top: 1rem; width:7.1rem; font-size: 0.8rem; line-height: 1.8rem; height: auto; }
+					} 
+				}
+				.thumb-slider {
+					bottom:8rem;
+					ul li + li {margin-left:0.7rem}
+					button {width: 1.5rem; height: 1.5rem;}
+					.current {
+						button {width: 2.6rem; height: 2.6rem; top:-0.5rem;}
+						button:before {border-width:2px;}
+					}
+				}
 			}
 			// 바로가기
 			.sightseeing-gotolnk {
-				float: none; width: 100%; margin-top: 1rem;
+				float: none; width: 100%; margin-top: 1rem; padding-bottom: 2.6rem; height: auto;
+				.tit {font-size: 1.3rem; }
+				.gotolnk-zone {padding-left:1.2rem; padding-right: 1.2rem;}
+				.gotolnk {
+					&:after {display:block; clear:both; content:""}
+					li {
+						width: 50%; float: left; padding:0 1.5rem; border-bottom:none; box-sizing: border-box; margin-top: 0.4rem;
+						a {font-size: 1rem;height:2.6rem; padding-left: 2.3rem;border-bottom: 1px solid rgba(256,256,256,0.2); line-height: 2.6rem; box-sizing: border-box;}
+						a:before {margin-right: 1rem;width: 2px; height: 2px;}
+						&.on a {padding-left: 1.8rem;}
+						&.on a:before {width: 1.5rem; height: 1.5rem; background-size: 30% 30%; margin-right:0.6rem;}
+						&.on a:after {left:50%; margin-left: -73px;}
+					}
+					li:first-child {margin-top: 0.4rem;}
+				}				
 			}
 			// 알려드립니다
 			.sightseeing-attention {
-				position: relative; left: 0; top:0; width: 100%; margin-top: 1rem;
+				position: relative; left: 0; top:0; width: 100%; margin-top: 1rem; height: auto;
+				&:before {left:-2.2rem; bottom:-4px; width: 10rem; height: 7.1rem; @include background("usc/bg_attention1_m.png",no-repeat 50% 50%); background-size: 100% auto;}
+				&:after {right:-0.7rem; bottom:-1px; width:6.3rem; height:5rem; @include background("usc/bg_attention2_m.png",no-repeat 50% 50%); background-size: 100% auto;}
+				.tit {
+					width: 100%; height: 6rem; font-size: 1.5rem; text-align: center; line-height:6rem; background:#176141;padding:0;
+					&:after {display: inline-block; position: static; margin-left: 10px; vertical-align: middle; width: 3.3rem; background-size: 100% auto;}
+				}
+				.attention-menu-zone {padding:2.5rem 0 0.8rem; text-align: center;}
+				.attention-menu {
+					position: static;text-align: center;
+					display: inline-block;
+					li {margin-bottom: 2rem;}
+					li+li {margin-left: 2.5rem;}
+					li:nth-child(4) {clear:both; margin-left:5rem;}
+					a {width: 7rem; height: 7rem; }
+					.icon-attention1 {@include background("usc/icon_attention1.png",no-repeat 50% 50%); background-size: 100% 100%;}
+					.icon-attention2 {@include background("usc/icon_attention2.png",no-repeat 50% 50%); background-size: 100% 100%;}
+					.icon-attention3 {@include background("usc/icon_attention3.png",no-repeat 50% 50%); background-size: 100% 100%;}
+					.icon-attention4 {@include background("usc/icon_attention4.png",no-repeat 50% 50%); background-size: 100% 100%;}
+					.icon-attention5 {@include background("usc/icon_attention5.png",no-repeat 50% 50%); background-size: 100% 100%;}
+
+				}
 			}
 		}
 	}
 }
 .mobile #wrap.usc #container.main {
+	.main-tabcontent .tab-complaint .complaint-welfare .tit {padding-top: 6.5rem;}
+	.main-tabcontent .tab-complaint .complaint-invil .invil {padding-top: 1.5rem;}
 	.main-tabcontent .tab-news .menugroup .news-popupzone .slick-dots {top:0.3rem; right: 8rem;}
 }
 //-------------------------------------------------------------------------------
@@ -940,6 +1142,14 @@ MEDIA QUERY
 @media (max-width:768px){
 //-------------------------------------------------------//
 
+
+//-------------------------------------------------------//
+}
+@media (max-width:600px){
+//-------------------------------------------------------//
+#wrap.usc #container.main .main-tabcontent  {
+	// .tab-sightseeing .sightseeing-attention .attention-menu-zone {padding:2.5rem 5rem 0.8rem;}
+}
 
 //-------------------------------------------------------//
 }

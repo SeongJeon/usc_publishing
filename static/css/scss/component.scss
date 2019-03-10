@@ -529,8 +529,8 @@ table[class^=comp-tbl] {
 	}
 	.footer-markgroup {
 		margin:5rem 0 0;text-align: center;
-		.footer-qrcode {display: inline-block; position: static; margin-left:3.6vw;}
-		.footer-acmark {display: inline-block; position: static;}
+		.footer-qrcode {display: inline-block; position: static; margin-left:3.6vw; width: 6rem; padding:1rem 0.5rem 1rem 1rem; border:1px solid #ddd; border-radius: 5px;}
+		.footer-acmark {display: inline-block; position: static; width: 8rem;}
 		& + .footer-utilegroup {margin-top: 2.5vw;}
 	}
 }
@@ -543,6 +543,24 @@ br.m {display:inherit}
 
 .view-m {display: inherit;}
 .view-pc {display: none;}
+
+
+/* BUTTON */
+*[class^=btn-txt] { // TEXT BUTTON
+	&[class$=_more] {
+		width: 6rem; height: auto;
+		line-height: 1.9rem; font-size:0.9rem;
+		&:after {margin-left:2px;}
+	}	
+
+	// &[class$=_type1] {}	
+	// &[class$=_type2] {}	
+}
+
+*[class^=comm-btn] { // COMMON BUTTON
+
+}
+
 
 //-------------------------------------------------------------------------------
 }

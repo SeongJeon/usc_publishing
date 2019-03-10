@@ -236,11 +236,14 @@ br.t, br.m { display: none; }
   #footer .footer-utilegroup .footer-copy { text-align: center; }
   #footer .footer-utilegroup .footer-txt { text-align: center; }
   #footer .footer-markgroup { margin: 5rem 0 0; text-align: center; }
-  #footer .footer-markgroup .footer-qrcode { display: inline-block; position: static; margin-left: 3.6vw; }
-  #footer .footer-markgroup .footer-acmark { display: inline-block; position: static; }
+  #footer .footer-markgroup .footer-qrcode { display: inline-block; position: static; margin-left: 3.6vw; width: 6rem; padding: 1rem 0.5rem 1rem 1rem; border: 1px solid #ddd; border-radius: 5px; }
+  #footer .footer-markgroup .footer-acmark { display: inline-block; position: static; width: 8rem; }
   #footer .footer-markgroup + .footer-utilegroup { margin-top: 2.5vw; }
   br.t, br.pc { display: none; }
   br.m { display: inherit; }
   .view-m { display: inherit; }
-  .view-pc { display: none; } }
+  .view-pc { display: none; }
+  /* BUTTON */
+  *[class^=btn-txt][class$=_more] { width: 6rem; height: auto; line-height: 1.9rem; font-size: 0.9rem; }
+  *[class^=btn-txt][class$=_more]:after { margin-left: 2px; } }
 @media (max-width: 768px) { #footer .footer-notice .number .call { -ms-transform: scale(0.6); -webkit-transform: scale(0.6); -moz-transform: scale(0.6); transform: scale(0.6); margin-right: -1vw; } }

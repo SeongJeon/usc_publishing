@@ -64,6 +64,10 @@ input:-moz-placeholder { color: #fff; }
 
 caption { overflow: hidden; visibility: hidden; height: 0; text-indent: -9999em; }
 
+.slick-track { font-size: 0; }
+
+.slick-list { font-size: 0; }
+
 /* COMMON */
 #skipnavi a { display: block; position: absolute; top: 0px; left: -202px; width: 200px; height: 40px; padding: 0; border: 1px solid #dcdcdc; color: #555; font-size: 15px; background: #fff; text-align: center; line-height: 40px; font-weight: 700; z-index: 10000; -ms-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; transition: all 0.3s ease; }
 #skipnavi a:focus { top: 0; left: 0; }

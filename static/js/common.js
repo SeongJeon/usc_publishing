@@ -70,16 +70,17 @@ var usc = {
 	// SLICK Pause
 	slickPause : function (slickName, el) {
 		var slickName = $(slickName), $this = $(el);
-
+		console.log("Hi");
 		if($this.hasClass('js-pause')){
-			slickName.slick('slickPlay');
 			$('span', $this).text("Pause");
-		} else{
-			slickName.slick('slickPause');
+			$(slickName).slick('slickPlay');
+		}else{
 			$('span', $this).text("Play");
+			$(slickName).slick('slickPause');
 		}
 
 		$this.toggleClass("js-pause");
+		return false;
 	}
 }
 
@@ -117,6 +118,22 @@ $(document).on("click", "body", function(e){
 			$(".footer-comp-select").find("dd").slideUp(300);
 		}
 	}
+})
+
+
+$(document).on("click", ".js-btn-pause", function(e){
+	var slickName = $(this).attr("data-slick"); //, $this = $(el);
+	console.log(slickName);
+	// if($this.hasClass('js-pause')){
+	// 	$('span', $this).text("Pause");
+	// 	$(slickName).slick('slickPlay');
+	// }else{
+	// 	$('span', $this).text("Play");
+		$("."+slickName).slick('slickPause');
+	// }
+
+	// $this.toggleClass("js-pause");
+	return false;
 })
 
 

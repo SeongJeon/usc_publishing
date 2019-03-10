@@ -125,6 +125,8 @@ input {
     &:-moz-placeholder { color: #fff; }
 }
 caption {overflow:hidden; visibility:hidden; height:0; text-indent:-9999em;}
+.slick-track {font-size: 0;}
+.slick-list {font-size: 0;}
 
 /* COMMON */
 #skipnavi {

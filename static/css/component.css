@@ -191,6 +191,7 @@ br.t, br.m { display: none; }
 
 @-moz-document url-prefix() {}
 @media (max-width: 1024px) { #header, #footer, #container { min-width: inherit; }
+  #header { height: auto; }
   #header .inner { width: auto; }
   #header .header-top { height: auto; }
   #header .header-top .header-site { float: none; }
@@ -198,6 +199,14 @@ br.t, br.m { display: none; }
   #header .header-top .header-site li a { width: 100%; line-height: 4.2rem; height: 4.2rem; font-size: 1.3rem; }
   #header .header-top .header-site li:nth-child(1), #header .header-top .header-site li:nth-child(6) { display: none; }
   #header .header-top .header-utilegroup { display: none; }
+  #header .header-middle { height: 7.4rem; }
+  #header .header-middle .title { position: static; text-align: center; }
+  #header .header-middle .title a { width: 13.5rem; height: 7.4rem; margin: 0 auto; background: url("../../static/images/usc/img_logo_m.png") no-repeat 50% 50%; background-size: 100% auto; }
+  #header .header-middle .btn-search-open { position: absolute; left: 0; top: 0; }
+  #header .header-middle .btn-search-open a { display: block; height: 7.4rem; width: 7.4rem; background: #ffb00d; }
+  #header .header-middle .btn-menu-open { position: absolute; right: 0; top: 0; }
+  #header .header-middle .btn-menu-open a { display: block; height: 7.4rem; width: 7.4rem; background: #785719; }
+  #header .header-bottom { display: none; }
   #footer { height: auto; }
   #footer .inner { width: 100%; }
   #footer .footer-selectgroup { padding: 4.4vw 5vw 0; }
@@ -226,8 +235,12 @@ br.t, br.m { display: none; }
   #footer .footer-utilegroup .footer-addr li strong { font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #333; }
   #footer .footer-utilegroup .footer-copy { text-align: center; }
   #footer .footer-utilegroup .footer-txt { text-align: center; }
+  #footer .footer-markgroup { margin: 5rem 0 0; text-align: center; }
+  #footer .footer-markgroup .footer-qrcode { display: inline-block; position: static; margin-left: 3.6vw; }
+  #footer .footer-markgroup .footer-acmark { display: inline-block; position: static; }
+  #footer .footer-markgroup + .footer-utilegroup { margin-top: 2.5vw; }
   br.t, br.pc { display: none; }
-  br.m { display: inherit; } }
-@media (max-width: 768px) { .view-m { display: inherit; }
-  .view-pc { display: none; }
-  #footer .footer-notice .number .call { -ms-transform: scale(0.6); -webkit-transform: scale(0.6); -moz-transform: scale(0.6); transform: scale(0.6); margin-right: -1vw; } }
+  br.m { display: inherit; }
+  .view-m { display: inherit; }
+  .view-pc { display: none; } }
+@media (max-width: 768px) { #footer .footer-notice .number .call { -ms-transform: scale(0.6); -webkit-transform: scale(0.6); -moz-transform: scale(0.6); transform: scale(0.6); margin-right: -1vw; } }

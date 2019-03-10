@@ -35,6 +35,12 @@ var usc = {
 	tabEvent : function(tabName, hasClassName, contName, liName){
 	},
 
+	// GOTO THE TOP 
+	gototopEvent : function(el){
+		$('html').animate({'scrollTop': 0}, 300, 'swing');
+		$('html').find($(el).attr('href')).foucs();
+	},
+
 	// SLICK 예시
 	slickEvent : function(){
 		$('.product-lst').slick({

@@ -110,6 +110,11 @@
 		&:after {display:block; clear:both; content:""}
 	}
 
+	.btn-gototop {
+		position: absolute; right: 0; top:0;
+		a {display: block; width: 120px; height: 59px; line-height: 59px; color:#fff; font-size: 18px; text-align: center; color:#fff; background:#37424c;}
+		a:after {display: inline-block; content: "^"; vertical-align: middle; margin-left: 10px;}
+	}
 	.footer-banner {
 		height: 60px; border-bottom:1px solid #e1e1e1;
 

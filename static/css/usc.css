@@ -53,6 +53,7 @@ MAIN
 #wrap.usc #container.main .main-top-zone .top-menu .tab-zone .slick-current h2[class*=bigtabcont2] span:before, #wrap.usc #container.main .main-top-zone .top-menu .tab-zone .li:hover h2[class*=bigtabcont2] span:before { background-position: -50px -50px; }
 #wrap.usc #container.main .main-top-zone .top-menu .tab-zone .slick-current h2[class*=bigtabcont3], #wrap.usc #container.main .main-top-zone .top-menu .tab-zone .li:hover h2[class*=bigtabcont3] { background: #08a46b; }
 #wrap.usc #container.main .main-top-zone .top-menu .tab-zone .slick-current h2[class*=bigtabcont3] span:before, #wrap.usc #container.main .main-top-zone .top-menu .tab-zone .li:hover h2[class*=bigtabcont3] span:before { background-position: -100px -50px; }
+#wrap.usc #container.main .main-tabcontent { height: 940px; }
 #wrap.usc #container.main .main-tabcontent div[class^=tab-] { padding-top: 145px; height: 940px; box-sizing: border-box; outline: none; }
 #wrap.usc #container.main .main-tabcontent .tab-news { background: url("../../static/images/usc/bg_maintab1.jpg") no-repeat 50% 0; background-size: cover; }
 #wrap.usc #container.main .main-tabcontent .tab-complaint { background: url("../../static/images/usc/bg_maintab2.jpg") no-repeat 50% 0; background-size: cover; }
@@ -317,6 +318,21 @@ MAIN
 #wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on .icon-gotolnk7:after { background: url("../../static/images/usc/icon_gotolnk7.png") no-repeat 50% 50%; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-gotolnk .gotolnk-zone .gotolnk li.on .icon-gotolnk8:after { background: url("../../static/images/usc/icon_gotolnk8.png") no-repeat 50% 50%; }
 #wrap.usc #container.main .tab-sightseeing .sightseeing-attention { position: absolute; bottom: 0; left: 0; width: 1005px; height: 138px; background: #0d8559; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .tit { position: relative; height: 138px; width: 253px; padding: 22px 0 0 27px; color: #fff; font-size: 20px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; box-sizing: border-box; background: url("../../static/images/usc/bg_attention.png") no-repeat 50% 50%; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .tit:after { display: block; position: absolute; left: 150px; top: 29px; content: ""; background: url("../../static/images/usc/icon_notice.png") no-repeat 50% 50%; width: 44px; height: 36px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention:before { display: block; position: absolute; left: -100px; bottom: 0; width: 188px; height: 98px; content: ""; background: url("../../static/images/usc/bg_attention1.png") no-repeat 50% 50%; z-index: 1; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention:after { display: block; position: absolute; right: -22px; bottom: 0; width: 84px; height: 66px; content: ""; background: url("../../static/images/usc/bg_attention2.png") no-repeat 50% 50%; z-index: 1; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu { position: absolute; right: 85px; top: 23px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu:after { display: block; clear: both; content: ""; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu li { float: left; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu li + li { margin-left: 35px; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu a { display: block; position: relative; width: 93px; height: 93px; background: url("../../static/images/usc/sp_main.png") no-repeat 0 0; text-indent: -999em; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu a:hover:after { display: block; position: absolute; left: -5px; top: -5px; width: 100%; height: 100%; border: 5px solid #6cd319; border-radius: 20px; content: ""; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu a.icon-attention1 { background-position: -500px 0; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu a.icon-attention2 { background-position: -600px 0; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu a.icon-attention3 { background-position: -700px 0; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu a.icon-attention4 { background-position: -800px 0; }
+#wrap.usc #container.main .tab-sightseeing .sightseeing-attention .attention-menu a.icon-attention5 { background-position: -900px 0; }
 
 /* ------------------------------------------------------
 SUB PAGE

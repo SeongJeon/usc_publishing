@@ -133,6 +133,7 @@ MAIN
 	
 	// 탭 컨텐츠
 	.main-tabcontent {
+		height: 940px;
 		div[class^=tab-] {padding-top: 145px; height: 940px; box-sizing: border-box; outline: none;}
 		// 탭 - 소식
 		.tab-news {
@@ -692,6 +693,29 @@ MAIN
 		// 알려드립니다.
 		.sightseeing-attention {
 			position: absolute; bottom:0; left:0; width: 1005px; height: 138px; background:#0d8559;
+			.tit {
+				position:relative; height: 138px; width:253px; padding:22px 0 0 27px; color:#fff; font-size: 20px; font-family: $font2; box-sizing: border-box; @include background("usc/bg_attention.png",no-repeat 50% 50%); 
+				&:after {display: block; position: absolute; left:150px; top:29px; content: ""; @include background("usc/icon_notice.png",no-repeat 50% 50%);width: 44px; height: 36px;}
+			}
+			&:before {display: block; position: absolute; left:-100px; bottom:0; width: 188px; height:98px; content: ""; @include background("usc/bg_attention1.png",no-repeat 50% 50%); z-index: 1}
+			&:after {display: block; position: absolute; right:-22px; bottom:0; width:84px; height:66px; content: ""; @include background("usc/bg_attention2.png",no-repeat 50% 50%); z-index: 1}
+			.attention-menu {
+				position: absolute;right: 85px; top:23px;
+				&:after {display:block; clear:both; content:""}
+				li {
+					float: left;
+					&+li {margin-left: 35px;}
+				}
+				a {
+					display: block; position: relative; width: 93px; height: 93px; @include background("usc/sp_main.png",no-repeat 0 0); text-indent:-999em;
+					&:hover:after {display: block; position: absolute; left:-5px; top:-5px; width: 100%; height: 100%; border:5px solid #6cd319; border-radius: 20px; content: "";}
+					&.icon-attention1 {background-position: -500px 0;}
+					&.icon-attention2 {background-position: -600px 0;}
+					&.icon-attention3 {background-position: -700px 0;}
+					&.icon-attention4 {background-position: -800px 0;}
+					&.icon-attention5 {background-position: -900px 0;}
+				}
+			}
 			
 		}
 	}

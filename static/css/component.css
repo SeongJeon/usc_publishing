@@ -68,6 +68,9 @@
 #footer { position: relative; height: 270px; min-width: 1320px; background: #fff; }
 #footer .inner { position: relative; width: 1320px; margin: 0 auto; }
 #footer .inner:after { display: block; clear: both; content: ""; }
+#footer .btn-gototop { position: absolute; right: 0; top: 0; }
+#footer .btn-gototop a { display: block; width: 120px; height: 59px; line-height: 59px; color: #fff; font-size: 18px; text-align: center; color: #fff; background: #37424c; }
+#footer .btn-gototop a:after { display: inline-block; content: "^"; vertical-align: middle; margin-left: 10px; }
 #footer .footer-banner { height: 60px; border-bottom: 1px solid #e1e1e1; }
 #footer .footer-banner .tit { position: absolute; left: 0; top: 0; font-size: 18px; color: #000; line-height: 59px; }
 #footer .footer-banner .indicator { position: absolute; overflow: hidden; left: 79px; top: 19px; width: 85px; }

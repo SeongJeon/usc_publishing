@@ -314,8 +314,8 @@ MEDIA QUERY
 	.ebooksys .main-tab {margin-top:110px;}
 	.ebooksys .main-tab .tab-contents .book-list {margin-top:0.2rem;}
 	.ebooksys .main-notice .list .slick-list {}
-	.ebooksys .main-notice .list .slick-list {width:23rem;} 
-	.ebooksys .main-notice .list li a .subject {width:13rem;}
+	.ebooksys .main-notice .list .slick-list {width:21rem;} 
+	.ebooksys .main-notice .list li a .subject {width:10rem;}
 
 }
 

@@ -55,7 +55,9 @@
 			.current a {color:#f15a22; background:#fff; }
 			li:nth-child(1).current a:before {background-position: -50px -50px;} 
 		}
-		.header-utilegroup {float: right; padding-top: 7px;}
+	}
+	.header-utilegroup {
+		float: right; padding-top: 7px;
 		.header-utile {
 			display: inline-block; font-size: 11px; color:#e1e1e1;
 			&:after {display:block; clear:both; content:""}
@@ -100,6 +102,8 @@
 	}
 	.header-bottom {
 		background:#d59f2b; min-height: 50px;
+
+		
 	}
 } 
 #gnb {}
@@ -438,6 +442,21 @@ table[class^=comp-tbl] {
 //-------------------------------------------------------------------------------
 #header, #footer, #container {min-width: inherit;}
 
+#header {
+	.inner {width:auto;}
+	.header-top {
+		height: auto;
+		.header-site {
+			float: none;
+			li {
+				width:25%; box-sizing: border-box;
+				a {width: 100%; line-height: 4.2rem; height: 4.2rem; font-size: 1.3rem;}
+			}
+			li:nth-child(1), li:nth-child(6) {display: none;}
+		}
+		.header-utilegroup {display: none}
+	}
+}
 #footer {
 	height: auto;
 	.inner {width: 100%;}
@@ -490,6 +509,7 @@ table[class^=comp-tbl] {
 		.footer-txt {text-align: center;}
 	}
 }
+
 
 
 br.t, 

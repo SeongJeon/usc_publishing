@@ -164,7 +164,7 @@
 										<li>
 											<a href="#">
 												<span class="ico">공지</span>
-												<span class="subject">1_Windows xp에서는 북플레이어를 실행 할 수 없습니다. (2015년 12월 29일부터)</span>
+												<span class="subject">1_Windows xp에서는 북플레이어를 실행 할 수 없습니다. (2015년 12월 29일부터)1_Windows xp에서는 북플레이어를 실행 할 수 없습니다. (2015년 12월 29일부터)1_Windows xp에서는 북플레이어를 실행 할 수 없습니다. (2015년 12월 29일부터)</span>
 												<span class="date">2019-01-01</span>
 											</a>
 										</li>
@@ -1728,12 +1728,16 @@
 			var sectionPos = parseInt($(this).attr('data-index'));
 			if(e.originalEvent.wheelDelta >= 0){
 				// console.log(11)
+				$(".mouse-control").removeClass('on')
+				$(".mouse-control span").text('scroll down')
 				$("html, body").stop().animate({ scrollTop:0},10);
 				$(this).find('.inner').stop().animate({'margin-top': 0});
 				
 				//$('html,body').stop().animate({scrollTop:sectionPos - (win_h - header_h)});
 				return false;
 			}else if(e.originalEvent.wheelDelta < 0){
+				$(".mouse-control").addClass('on')
+				$(".mouse-control span").text('scroll up')
 				$("html, body").stop().animate({ scrollTop:0},10);
 				$(this).find('.inner').stop().animate({'margin-top': '-' + (win_h)},300 , function(){
 					
@@ -1743,7 +1747,7 @@
 			}
 			return false;
 		});
-		$(window).scroll(function() {
+		/*$(window).scroll(function() {
 			var scrollHeight = $(document).height();
 			var scrollPosition = $(window).height() + $(window).scrollTop();
 			if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
@@ -1753,7 +1757,7 @@
 				$(".mouse-control").removeClass('on')
 				$(".mouse-control span").text('scroll down')
 			}
-		});
+		});*/
 	}
 	$(document).ready(function(){
 		$(window).on('load resize orientationchange', function() {

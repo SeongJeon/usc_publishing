@@ -29,8 +29,8 @@ MAIN
 .ebooksys .main .inner {}
 .ebooksys .section {position:relative; width: 100%; height: 100vh; }
 .ebooksys .section > div {}
-.ebooksys h2 {height:180px; padding-top:180px;background:url(../images/ebooksys/main/txt_visual.png) no-repeat 50% 50%; text-align:center; text-indent:-9999em;}
-.ebooksys .main-slide {position:relative; width:1320px; margin:90px auto 90px auto;}
+.ebooksys h2 {height:108px; padding-top:228px;background:url(../images/ebooksys/main/txt_visual.png) no-repeat center bottom; text-align:center; text-indent:-9999em;}
+.ebooksys .main-slide {position:relative; width:1320px; margin:90px auto 100px auto;}
 .ebooksys .main-slide .list {}
 .ebooksys .main-slide .list [class^='togo'] {text-align:center; color:#fff;}
 .ebooksys .main-slide .list [class^='togo'] a {position:relative; display:block;}
@@ -56,7 +56,7 @@ MAIN
 .ebooksys .main-slide .slick-arrow {position:absolute; top:24px; width:51px; height:102px; text-indent:-9999em;}
 .ebooksys .main-slide .slick-arrow.main-slide-prev {left:-90px; background:url(../images/ebooksys/main/bg_main_slide_prev.png) no-repeat;}
 .ebooksys .main-slide .slick-arrow.main-slide-next {right:-90px; background:url(../images/ebooksys/main/bg_main_slide_next.png) no-repeat;}
-.ebooksys .main-slide .custom-paging {position:absolute; right:-52px; top:145px;}
+.ebooksys .main-slide .custom-paging {position:absolute; right:-79px; top:145px;}
 .ebooksys .main-slide .custom-paging > li {display:none; font-size:18px; color:#fff;font-style: italic;}
 .ebooksys .main-slide .custom-paging > li em {font-size:20px; font-weight:bold; font-style: italic;}
 .ebooksys .main-slide .custom-paging > li.slick-active {display:block;}
@@ -74,7 +74,7 @@ MAIN
 .ebooksys .main-search-zone .form-search button {position:absolute; right:18px; top:-8px; width:70px; height:70px; background:url(../images/ebooksys/main/btn_form_search.png) no-repeat; text-indent:-9999em;}
 .ebooksys .main-search-zone .detail-search {position:absolute; right:88px; top:34px; }
 .ebooksys .main-search-zone .detail-search .btn {width:178px; height:55px; line-height:55px; background:#fff; border-radius:25px;}
-.ebooksys .main-search-zone .detail-search .btn span {display:block; width:160px; height:39px; line-height:39px; margin:0 auto; padding:0 0 0 48px; background:#ffdaa2 url(../images/ebooksys/main/btn_detail_search.png) no-repeat 20px 12px; font-size:16px; color:#303030; border-radius:18px; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.ebooksys .main-search-zone .detail-search .btn span {display:block; width:160px; height:39px; line-height:39px; margin:0 auto; padding:0 0 0 48px; background:#ffdaa2 url(../images/ebooksys/main/btn_detail_search.png) no-repeat 20px 12px; font-size:16px; color:#303030; border-radius:18px; box-sizing:border-box; -webkit-box-sizing:border-box; text-align:left;}
 
 .ebooksys .main-search-zone .detail-search .layer {position:fixed; left:0; top:0; z-index:100; width:500px; padding:0 2px 2px; background:#ff6942; border-radius:10px; box-sizing:border-box; -webkit-box-sizing:border-box;}
 .ebooksys .main-search-zone .detail-search .layer .tit{padding:20px 0; font-size:24px; color:#fff; font-weight:bold; text-align:center;}
@@ -110,7 +110,7 @@ MAIN
 .ebooksys .main-notice .list li a {overflow:hidden; display:block; width:auto; font-size:17px; color:#fff; font-weight:bold;}
 .ebooksys .main-notice .list li a > * {float:left; line-height:35px; }
 .ebooksys .main-notice .list li a .ico {display:block; width:62px; height:35px; line-height:35px; background:rgba(242,94,61,0.5); text-align:center;}
-.ebooksys .main-notice .list li a .subject {margin:0 0 0 14px;}
+.ebooksys .main-notice .list li a .subject {width:900px; margin:0 0 0 14px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal;  overflow:hidden;}
 .ebooksys .main-notice .list li a .date {float:right; font-size:15px; color:#c7c7c7;}
 .ebooksys .main-notice .control {position:absolute; right:77px; top:18px; }
 .ebooksys .main-notice .control > * {width:20px; height:40px; text-indent:-9999em;}
@@ -169,12 +169,12 @@ MAIN
 .ebooksys .main-tab .slick-arrow {width:51px; height:102px; text-indent:-9999em;}
 .ebooksys .main-tab .slick-prev {position:absolute; left:-90px; top:223px; background: url(../images/ebooksys/main/bg_main_slide_prev.png) no-repeat;}
 .ebooksys .main-tab .slick-next {position:absolute; right:-90px; top:223px; background:url(../images/ebooksys/main/bg_main_slide_next.png) no-repeat;}
-.ebooksys .main-tab .custom-paging {position:absolute; right:-62px; top:345px; float:none; width:auto;}
+.ebooksys .main-tab .custom-paging {position:absolute; right:-79px; top:345px; float:none; width:auto;}
 .ebooksys .main-tab .custom-paging > li {display:none; width:auto !important; margin:0 !important; font-size:18px; color:#fff; font-style: italic;}
 .ebooksys .main-tab .custom-paging > li em {font-size: 20px; font-weight: bold; font-style: italic;} 
 .ebooksys .main-tab .custom-paging > li.slick-active {display:block;}
 .ebooksys .mouse-control {position:fixed; right:50px; bottom:20px; padding:0 0 104px 0; background: url(../images/ebooksys/main/bg_mouse_control.png) no-repeat center 25px; font-size:14px; text-align:center; color:#fff; z-index:10;}
-.ebooksys .mouse-control.on {bottom:300px;}
+.ebooksys .mouse-control.on {/* bottom:300px; */}
 .ebooksys .mouse-control.on {padding:95px 0 0; background: url(../images/ebooksys/main/bg_mouse_control_on.png) no-repeat center top;}
 
 
@@ -210,7 +210,7 @@ MEDIA QUERY
 	.ebooksys .radio-type1 label span {font-size:1rem;}
 	.ebooksys .radio-type1 label:before {width:1.5rem; height:1.5rem; background-size:1.5rem;}
 	.ebooksys .radio-type1 input:checked + label:before {background-size:1.5rem;}
-	.ebooksys .table {display:table; width:100%; height:100%; margin-top:115px;}
+	.ebooksys .table {display:table; width:100%; height:100%;}
 	.ebooksys .table-cell {display:table-cell; vertical-align:middle;}
 	.ebooksys .view-pc { display: none !important; }  
 	.ebooksys h2 {height:5rem; margin-top:-4rem; background-size:30rem;}
@@ -248,7 +248,7 @@ MEDIA QUERY
 	.ebooksys .main-tab .custom-paging {display:none !important;}
 	.ebooksys .main-tab .slick-prev {display:none !important;}
 	.ebooksys .main-tab .slick-next {display:none !important;}
-	.ebooksys .main-tab {width:auto; margin:0 1rem; padding:1rem 0 0; /* transform: translate(0,10%); */}
+	.ebooksys .main-tab {width:auto; margin:130px 1rem 0; padding:1rem 0 0; /* transform: translate(0,10%); */}
 	.ebooksys .main-tab .tab {margin:0 0 1rem; padding:0 0 0;}
 	.ebooksys .main-tab .tab > li:after {top:0.8rem;}
 	.ebooksys .main-tab .tab > li a {height:4rem; line-height:4rem; font-size:1.5rem;}
@@ -280,7 +280,7 @@ MEDIA QUERY
 	.ebooksys .btn_top a {display:block; width:50px; height:50px; background: url(../images/ebooksys/main/btn_top.png) no-repeat; background-size:100%; text-indent:-9999em;}
 }
 @media (max-width: 640px) {
-	.ebooksys h2 {margin-top:-8rem;}
+	.ebooksys h2 {margin:0 0 2rem 0; padding:0;}
 	.ebooksys .main-slide .list [class^='togo']{display:inline-block; margin-left:3rem;}
 	.ebooksys .main-slide .list [class^='togo'] a:before {width:6rem; height:6rem; margin-bottom:0.4rem; background-size:100%; border-radius:6rem;}
 	.ebooksys .main-slide .list [class^='togo'] a:after {width:6rem; height:6rem; border-radius:6rem; margin-left:-3rem;}

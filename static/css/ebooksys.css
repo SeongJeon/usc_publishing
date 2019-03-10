@@ -237,8 +237,8 @@ MEDIA QUERY
 	.ebooksys .main-search-zone .detail-search .btn span {width:10rem; height:3rem; line-height:3rem; padding-left:3rem; background-color:#fff; background-size:1.5rem; background-position:1rem; font-size:1rem;}
 	.ebooksys .main-notice {width:auto; height:4rem; padding:1rem 0 0 1rem;}
 	.ebooksys .main-notice .list .slick-list {width:33rem;}
-	.ebooksys .main-notice .list li a > * {font-size:1rem; line-height:2.5rem;}
-	.ebooksys .main-notice .list li a .ico {width:3.5rem; height:2.5rem; line-height:2.5rem;}
+	.ebooksys .main-notice .list li a > * {font-size:1rem; line-height:2rem;}
+	.ebooksys .main-notice .list li a .ico {width:3.5rem; height:2rem; line-height:2rem;}
 	.ebooksys .main-notice .list li a .subject {margin:0 0 0 0.5rem; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; width:20rem; overflow: hidden;}
 
 	.mouse-control {display:none;}

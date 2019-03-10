@@ -82,7 +82,7 @@
 										<div class="slide"><a href="#"><img src="../../static/images/usc/temp/@mainbanner1.png" alt="배너명"></a></div>
 										<div class="slide"><a href="#"><img src="../../static/images/usc/temp/@mainbanner1.png" alt="배너명"></a></div>
 									</div>
-									<button type="button" onclick="usc.slickPause('.js-news-banner > .slider', this)" class="btn-slickPause"><span>Pause</span></button>
+									<button type="button" onclick="usc.slickPause('.js-news-banner','.slider', this)" class="btn-slickPause"><span>Pause</span></button>
 								</div>
 								<!-- //배너슬라이드 -->
 								<!-- 게시판 -->
@@ -329,7 +329,7 @@
 											<div class="indicator" aria-label="팝업존 슬라이드 제어 메뉴">
 												<p><button class="btn-prev" type="button"><span>슬라이드 이전으로 이동</span></button></p>	
 												<p><button class="btn-next" type="button"><span>슬라이드 다음으로 이동</span></button></p>	
-												<p><button class="btn-pause" type="button" onclick="usc.slickPause('.js-news-banner > .slider', this)" ><span>슬라이드 일시정지 및 재생</span></button></p>	
+												<p><button class="btn-pause" type="button" onclick="usc.slickPause('.js-news-popupzone','.slider', this)" ><span>슬라이드 일시정지 및 재생</span></button></p>	
 											</div>
 										</div>
 										<div class="slider" aria-label="팝업존 슬라이드">
@@ -347,7 +347,7 @@
 									<div class="news-favoritmenu-slider js-news-favoritmenu">
 										<div class="slide-indicator" aria-label="자주찾는 메뉴 슬라이드 제어 메뉴">
 											<p><button type="button" class="btn-up"><span>자주찾는 메뉴 위로 이동</span></button></p>
-											<p><button type="button" onclick="usc.slickPause('.js-news-favoritmenu > .slider', this)" class="btn-pause"><span>자주찾는 메뉴 일시정지 및 재생</span></button></p>
+											<p><button type="button" onclick="usc.slickPause('.js-news-favoritmenu','.slider', this)" class="btn-pause"><span>자주찾는 메뉴 일시정지 및 재생</span></button></p>
 											<!-- <p><button type="button"  class="btn-pause"><span>자주찾는 메뉴 일시정지 및 재생</span></button></p> -->
 											<p><button type="button" class="btn-down"><span>자주찾는 메뉴 아래로 이동</span></button></p>
 										</div>
@@ -839,8 +839,8 @@
 		ltr: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// autoplay: true,
-		autoplay: false,
+		autoplay: true,
+		// autoplay: false,
 		swipe:false,
 		autoplaySpeed: 3000,
 		customPaging :  function(slick,index) {
@@ -856,9 +856,8 @@
 		ltr: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// arrows: true,
-		// autoplay: true,
-		autoplay: false,
+		autoplay: true,
+		// autoplay: false,
 		swipe:false,
 		autoplaySpeed: 3000,
 		nextArrow : $('.js-news-popupzone .btn-next'),
@@ -877,8 +876,8 @@
 		vertical: true,
 		slidesToShow: 8,
 		slidesToScroll: 1,
-		// autoplay: true,
-		autoplay: false,
+		autoplay: true,
+		// autoplay: false,
 		autoplaySpeed: 1000,
 		nextArrow : $('.js-news-favoritmenu .btn-up'),
 		prevArrow : $('.js-news-favoritmenu .btn-down') ,
@@ -918,43 +917,11 @@
 		// autoplaySpeed: 3000,
 		arrows:false
 	});
-
-
-
-
-
-	// 관광 - 슬라이드
-	var sightseeingSlider = (function(){
-		var idx;
-		$(".sightseeing-slider .js-bigslider").slick({
-			speed: 400,
-			ltr: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			swipe: false
-		});
-		$(".js-thumb-slider button").on("click", function(){
-			idx = $(this).closest("li").index();
-			var curr = $(this).closest("li");  
-
-			if(curr.hasClass("current")) return false; 
-			console.log(idx);
-
-			curr.addClass("current").siblings("li").removeClass("current");
-			$(".sightseeing-slider .js-bigslider").slick('slickGoTo', idx);
-			return false;
-		});
-
-		$(".sightseeing-slider .js-bigslider").on("afterChange", function(event, slick, currentSlide, nextSlide){
-			$(".js-thumb-slider li").eq(currentSlide).addClass("current").siblings().removeClass("current");
-		})
-	})();
 	// 관광 - 메뉴
 	var gotoEvent = (function(){
 		var curidx = $('.gotolnk li.on').index(), 
 			 $this = $('.gotolnk li');
-		// var interval = setInterval(gotolnkEvent, 1000); 
-
+		var interval = setInterval(gotolnkEvent, 2000); 
 		function gotolnkEvent(){
 			curidx++;		
 			if(curidx == 8) curidx = 0;
@@ -962,14 +929,17 @@
 		};
 
 		$("a", $this).on("mouseenter", function(){
-			// clearInterval(interval);
+			clearInterval(interval);
 			$(this).closest("li").addClass("on").siblings().removeClass("on");
 			curidx = $(this).closest("li").index();
 		});
 		$(".gotolnk").on("mouseleave", function(){
-			// interval = setInterval(gotolnkEvent, 1000); 
+			interval = setInterval(gotolnkEvent, 2000); 
 		})
 	})();
+
+
+
 
 
 	var sightseeingSlider2 = (function(){ 
@@ -995,6 +965,36 @@
 			return false;
 		});
 	})();
+
+
+	// 관광 - 슬라이드
+	var sightseeingSlider = (function(){
+		var idx;
+		$(".sightseeing-slider .js-bigslider").slick({
+			speed: 400,
+			ltr: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			swipe: false
+		});
+		$(".js-thumb-slider button").on("click", function(){
+			idx = $(this).closest("li").index();
+			var curr = $(this).closest("li");  
+
+			if(curr.hasClass("current")) return false; 
+			// console.log(idx);
+
+			curr.addClass("current").siblings("li").removeClass("current");
+			$(".sightseeing-slider .js-bigslider").slick('slickGoTo', idx);
+			return false;
+		});
+
+		$(".sightseeing-slider .js-bigslider").on("afterChange", function(event, slick, currentSlide, nextSlide){
+			$(".slick-current .js-thumb-slider li").eq(currentSlide).addClass("current").siblings().removeClass("current");
+		})
+	})();
+
+
 
 </script>
 </body>

@@ -45,32 +45,32 @@ var usc = {
 	},
 
 	// SLICK 예시
-	slickEvent : function(){
-		$('.product-lst').slick({
-			dots: false,
-			infinite: true,
-			speed: 400,
-			ltr: true,
-			slidesToShow: 7,
-			slidesToScroll: 1,
-			cssEase: 'linear',
-			responsive: [
-		    {
-		      breakpoint: 767,
-		      settings: {
-		        slidesToShow: 4,
-		        slidesToScroll: 1,
-		        infinite: true,
-		        dots: false
-		      }
-		    }
-			]
-		});
-	},
+	// slickEvent : function(){
+	// 	$('.product-lst').slick({
+	// 		dots: false,
+	// 		infinite: true,
+	// 		speed: 400,
+	// 		ltr: true,
+	// 		slidesToShow: 7,
+	// 		slidesToScroll: 1,
+	// 		cssEase: 'linear',
+	// 		responsive: [
+	// 	    {
+	// 	      breakpoint: 767,
+	// 	      settings: {
+	// 	        slidesToShow: 4,
+	// 	        slidesToScroll: 1,
+	// 	        infinite: true,
+	// 	        dots: false
+	// 	      }
+	// 	    }
+	// 		]
+	// 	});
+	// },
 	// SLICK Pause
-	slickPause : function (slickName, el) {
-		var slickName = $(slickName), $this = $(el);
-		console.log("Hi");
+	slickPause : function (parentsName, sliderName, el) {
+		var $this = $(el), slickName = $this.closest(parentsName).find(sliderName);
+
 		if($this.hasClass('js-pause')){
 			$('span', $this).text("Pause");
 			$(slickName).slick('slickPlay');

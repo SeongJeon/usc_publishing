@@ -174,7 +174,7 @@ MAIN
 .ebooksys .main-tab .custom-paging > li em {font-size: 20px; font-weight: bold; font-style: italic;} 
 .ebooksys .main-tab .custom-paging > li.slick-active {display:block;}
 .ebooksys .mouse-control {position:fixed; right:50px; bottom:20px; padding:0 0 104px 0; background: url(../images/ebooksys/main/bg_mouse_control.png) no-repeat center 25px; font-size:14px; text-align:center; color:#fff; z-index:10;}
-.ebooksys .mouse-control.on {/* bottom:300px; */}
+.ebooksys .mouse-control.bottom { bottom:300px; }
 .ebooksys .mouse-control.on {padding:95px 0 0; background: url(../images/ebooksys/main/bg_mouse_control_on.png) no-repeat center top;}
 
 

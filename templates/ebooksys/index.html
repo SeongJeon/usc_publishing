@@ -1752,17 +1752,15 @@
 		});
 		
 		
-		/*$(window).scroll(function() {
+		$(window).scroll(function() {
 			var scrollHeight = $(document).height();
 			var scrollPosition = $(window).height() + $(window).scrollTop();
 			if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-				$(".mouse-control").addClass('on')
-				$(".mouse-control span").text('scroll up')
+				$(".mouse-control").addClass('bottom')
 			} else {
-				$(".mouse-control").removeClass('on')
-				$(".mouse-control span").text('scroll down')
+				$(".mouse-control").removeClass('bottom');
 			}
-		});*/
+		});
 	}
 	$(document).ready(function(){
 

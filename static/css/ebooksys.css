@@ -280,6 +280,7 @@ MEDIA QUERY
 	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li input[type="text"] {width:20rem; height:3rem; line-height:3rem; margin:0; padding:0 0 0 0.5rem; font-size:1rem;}
 	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .radio {padding:1rem 0 1rem 0.5rem; text-align:left; }
 	.ebooksys .main-search-zone .detail-search .layer .form-list .list > li .radio > li {width:7.5rem;}
+	.pc .ebooksys .main-tab .tab-contents .book-list {max-width:75%;}
 }
 @media (max-width: 640px) {
 	.ebooksys h2 {margin:0 0 2rem 0; padding:0;}
@@ -288,13 +289,13 @@ MEDIA QUERY
 	.ebooksys .main-slide .list [class^='togo'] a:after {width:6rem; height:6rem; border-radius:6rem; margin-left:-3rem;}
 	.ebooksys .main-search-zone {height:8rem; padding:1.5rem 2rem; border-radius:4rem;}
 	.ebooksys .main-search-zone .popularity .list .slick-list {width:15rem;}
-	.ebooksys .main-search-zone .form-search .input {width: 16rem; margin-left:0.5rem; padding-left:0.5rem; background-size: 0.8rem; background-position:left 1rem;}
+	.ebooksys .main-search-zone .form-search .input {width: 16rem; margin-left:0.5rem; padding-left:0.5rem; background-size:1rem; background-position:left 35%;}
 	.ebooksys .main-search-zone .form-search .btn {top:-5px; width:4rem; height:4rem; background-size:4rem;}
 	.ebooksys .main-notice .list .slick-list {width:38rem;}
 	.ebooksys .main-notice .list li a .subject {width:26rem;}
 	.ebooksys .main-tab {margin-top:120px;}
-	.ebooksys .main-tab .tab-contents .book-list {max-width:75%;}
 	.ebooksys .main-search-zone .detail-search {margin-top:1.5rem;}
+	.pc .ebooksys .main-tab .tab-contents .book-list {max-width:inherit;}
 }
 @media (max-width:414px) {
 	.ebooksys .main-notice .list .slick-list {width:25rem;}

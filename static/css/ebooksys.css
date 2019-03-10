@@ -230,7 +230,7 @@ MEDIA QUERY
 	.ebooksys .main-search-zone .popularity {margin-left:1rem;}
 	.ebooksys .main-search-zone .popularity .list li {line-height:2.5rem;}
  	.ebooksys .main-search-zone .popularity .list li a {font-size:1rem;}
-	.ebooksys .main-search-zone .popularity .list .slick-list {width:30rem;}
+	.ebooksys .main-search-zone .popularity .list .slick-list {width:40rem;}
 	.ebooksys .main-search-zone .popularity .tit {width:6rem; height:2.5rem; line-height:2.5rem; font-size:1rem;}
 	.ebooksys .main-search-zone .detail-search {position:static; margin-top:3rem; text-align:center;}
 	.ebooksys .main-search-zone .detail-search .btn {width:13rem; height:3rem; line-height:3rem;}
@@ -286,6 +286,7 @@ MEDIA QUERY
 }
 @media (max-width: 800px) {
 	.ebooksys .main-slide .list {padding: 0 9rem;}
+	.ebooksys .main-search-zone .popularity .list .slick-list {width:30rem;} 
 }
 @media (max-width: 670px) {
 	.ebooksys .main-slide .list {padding: 0 8rem;}
@@ -296,7 +297,7 @@ MEDIA QUERY
 	.ebooksys .main-slide .list [class^='togo'] a:before {width:6rem; height:6rem; margin-bottom:0.4rem; background-size:100%; border-radius:6rem;}
 	.ebooksys .main-slide .list [class^='togo'] a:after {width:6rem; height:6rem; border-radius:6rem; margin-left:-3rem;}
 	.ebooksys .main-search-zone {height:8rem; padding:1.5rem 2rem; border-radius:4rem;}
-	.ebooksys .main-search-zone .popularity .list .slick-list {width:15rem;}
+	.ebooksys .main-search-zone .popularity .list .slick-list {width:20rem;}
 	.ebooksys .main-search-zone .form-search .input {width: 16rem; margin-left:0.5rem; padding-left:0.5rem; background-size: 0.8rem; background-position:left 0.9rem;}
 	.ebooksys .main-search-zone .form-search .btn {top:-5px; width:4rem; height:4rem; background-size:4rem;}
 	.ebooksys .main-notice .list .slick-list {width:31rem;}
@@ -309,6 +310,7 @@ MEDIA QUERY
 	.ebooksys .main-slide .list {padding:0 8rem;}
 	.ebooksys .main-notice .list .slick-list {width:25rem;}
 	.ebooksys .main-notice .list li a .subject {width:15rem;}
+	.ebooksys .main-search-zone .popularity .list .slick-list {width:15rem;}
 }
 @media (max-width:530px) {
 	.ebooksys .main-slide .list {padding:0 4rem;}

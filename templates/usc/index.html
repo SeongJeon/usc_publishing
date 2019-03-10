@@ -34,13 +34,14 @@
 					<div class="inner">
 						<!-- 좌측 텍스트 -->
 						<p class="top-txt">
-							<img src="../../static/images/usc/img_maintxt.png" alt="군민과 함께하는 창조적인 희망군정 활력넘치는 희망의성! 살기좋은 의성으로 오세요~!">
+							<img src="../../static/images/usc/img_maintxt.png" class="view-pc" alt="군민과 함께하는 창조적인 희망군정 활력넘치는 희망의성! 살기좋은 의성으로 오세요~!">
+							<img src="../../static/images/usc/img_maintxt_m.png" class="view-m" alt="군민과 함께하는 창조적인 희망군정 활력넘치는 희망의성! 살기좋은 의성으로 오세요~!">
 						</p>
 						<!--// 좌측 텍스트 -->
 						<!-- 우측 날씨 및 탭 메뉴 -->
-						<div class="top-menu">
+						<div class="top-menu ">
 							<!-- 날씨 개발 영역 -->
-							<div class="weather-zone">
+							<div class="weather-zone view-pc">
 								<p class="today-icon"><img src="../../static/images/usc/icon_weather_sun.png" alt="맑음"></p>
 								<!-- D : 날씨 아이콘의 경우 42*42 사이즈로 넣어 줄 것 -->
 								<dl class="today-txt">
@@ -314,7 +315,7 @@
 									<div class="news-bookingsys">
 										<a href="#" target="_blank" title="새창으로 열림">
 											<h3 class="tit">통합예약시스템</h3>
-											<p class="txt">모든 온라인예약을 ‘의성통합예약시스템’으로 <br>쉽고 편리하게 예약하세요!</p>
+											<p class="txt">모든 온라인예약을 ‘의성통합예약시스템’으로 <br class="pc">쉽고 편리하게 예약하세요!</p>
 										</a>
 									</div>
 									<!--// 통합예약시스템 -->
@@ -343,7 +344,7 @@
 								<!-- 자주찾는 메뉴 -->
 								<div class="news-favoritmenu">
 									<h3 class="tit">자주찾는 메뉴</h3>
-									<div class="news-favoritmenu js-news-favoritmenu">
+									<div class="news-favoritmenu-slider js-news-favoritmenu">
 										<div class="slide-indicator" aria-label="자주찾는 메뉴 슬라이드 제어 메뉴">
 											<p><button type="button" class="btn-up"><span>자주찾는 메뉴 위로 이동</span></button></p>
 											<p><button type="button" onclick="usc.slickPause('.js-news-favoritmenu > .slider', this)" class="btn-pause"><span>자주찾는 메뉴 일시정지 및 재생</span></button></p>
@@ -860,6 +861,17 @@
 		autoplaySpeed: 1000,
 		nextArrow : $('.js-news-favoritmenu .btn-up'),
 		prevArrow : $('.js-news-favoritmenu .btn-down')
+		// ,
+		// responsive: [
+		// 	{
+		// 		breakpoint: 1024,
+		// 		settings: {
+		// 	      slidesToShow: 9,
+		// 	      slidesToScroll: 9,
+		// 	      rows: 2
+		// 	   }
+		// 	}
+		// ]
 	});
 	// 소식 - 팝업존
 	$(".js-news-popupzone > .slider").slick({

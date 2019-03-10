@@ -25,7 +25,7 @@ MAIN
 		position: absolute; left:0; top:0; width: 100%; z-index: 100;
 		.inner {display: table; height: 145px; width: 1320px; margin:0 auto;}
 		// 텍스트
-		.top-txt {display: table-cell; font-size: 18px; color:#555; font-weight: 700; vertical-align: middle; }
+		.top-txt {display: table-cell; vertical-align: middle; }
 		// 날씨 및 탭 메뉴
 		.top-menu {
 			display: table-cell; width:445px;
@@ -258,7 +258,7 @@ MAIN
 		.news-favoritmenu {
 			float: left; width: 220px; height: 745px; background:#eb9d35; color:#fff; text-align: center;
 			.tit {padding-top:35px; font-size: 20px; font-family: $font2;}
-			.news-favoritmenu {
+			.news-favoritmenu-slider {
 				margin-top: 13px; 
 				.slide-indicator {
 					display: inline-block; overflow:hidden;
@@ -743,13 +743,199 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
-//-------------------------------------------------------//
+//-------------------------------------------------------------------------------
 #wrap.usc #container.main {
-	
+	.inner {width:auto; padding:0 2.2rem;}
+	.main-top-zone {
+		.inner {display: block; width: auto; height: auto;}
+		.top-txt {
+			display: block; text-align: center; padding-top: 2rem;
+			img {width: 80%; margin:0 auto;}
+		}
+		.top-menu {
+			display: block; width: 100%; margin:0 auto; 
+			.tab-zone {
+				height: 4.5rem;
+				h2 {
+					font-size: 13px; height: 34px; width: 100px; line-height:34px;
+					span {height: 3.4rem; }
+				}
+			}
 
+		}
+	}
+	.main-tabcontent {
+		height: auto;
+		div[class^=tab-] {height:auto; padding:14rem 0 4.2rem;}
 
+		// 소식
+		.tab-news {
+			.l-left {float: none; width: 100%} 
+			.l-right {float: none; width:100%; padding-left: 0;}
+			// 상단배너
+			.news-banner {
+				.slick-slide {
+					img {width:100%}
+				}
+				.slick-dots {
+					height: 3.1rem; width:12.4rem; font-size: 1.1rem;
+					li {top:0.8rem;}
+					.current {height: 1.4rem; width:1.4rem; line-height: 1.4rem;}
+				}
+				.slick-arrow {
+					height: 3.1rem; width: 2rem;
+					&.slick-prev {right: 5rem;}
+					&:after {transform:scale(0.6);}
+				}
+				.btn-slickPause {
+					height: 3.1rem; right: 3rem; width: 2rem;
+					&:after {transform:scale(0.6);}
+				}
+			}
+			// 게시판
+			.news-board {
+				height: auto; margin-top: 1rem; padding:0 1rem 1.4rem;
+				.board-tabmenu {
+					li {width: 6rem;}
+					a {font-size: 1.2rem; line-height: 3.3rem;}
+				}
+				.boardtab-content  {
+					.btn-more {
+						top:1rem; right: 1rem;
+						a {
+							width:1.4rem; height: 1.4rem; border-radius: 100px; 
+							span {-ms-transform:scale(0.5);-webkit-transform:scale(0.5);-moz-transform:scale(0.5);transform:scale(0.5); margin-top: -0.9rem;}
+						}
+					}
+					.board-important {
+						padding-top: 1rem;
+						.today-cont {padding:0.6rem 0 1rem 6.6rem;}
+						.todays {
+							width: 5.5rem; height: 5.5rem; padding-top: 1.1rem;
+							.year {font-size: 1rem;}
+							.day {font-size: 1.7rem;}
+						}
+						.today-cont {
+							.tit {font-size: 1.1rem;}
+							dd {margin-top: 1rem;padding-right: 0; font-size: 1rem; line-height: 1.3rem; max-height: 2.6rem;}
+						}
+					}
+					.board-lst {
+						li {
+							line-height: 1.2rem;
+							&+li {margin-top: 0.6rem;}
+							&:before {width: 2px; height: 2px; margin-right: 3px;}
+						}
+						.cont {font-size: 1rem; max-width: 74%}
+						.date {font-size: 1rem;}
+						.new {height: 1.2rem; width: 1.2rem; font-size: 1rem; line-height: 1.2rem; margin-right: 2px;}
+						.new + .cont {max-width: 70%}
+					}
+				}
+			}
+			// 군수메뉴, 통합예약시스템, 팝업존
+			.menugroup {
+				float: none; width: 100%;
+				// 군수메뉴
+				.news-leadermenu {
+					height: 15.4rem; padding:2rem 1rem 0; margin-top: 1rem; background-size: auto 100%;
+					.txt {width: 18rem; height: 4.3rem; background-size: 100% auto;}
+					.menu {
+						margin-top: 1rem;
+						li {float: left; margin-top:0; margin-bottom: 0.8rem; margin-right: 0.8rem;}
+						li:nth-child(3) {clear:both;}
+						a {width: 9.5rem; height: 2.6rem; font-size: 1rem; line-height: 2.6rem;}
+					}
+				}
+				// 통합예약시스템
+				.news-bookingsys {
+					margin-top: 1rem;
+					a {height: 6.3rem; padding:1.4rem 1rem 0; background-size:auto 100%;}
+					.tit {font-size: 1.2rem;}
+					.txt {margin-top: 1.1rem; font-size: 0.8rem; line-height: 1.1}
+				}
+				// 팝업존
+				.news-popupzone {
+					margin-top: 1rem;
+					.popupzone-titlezone {
+						height: 7rem; padding:1rem 1rem 0;
+						.tit {font-size: 1.3rem; line-height:2.5rem;}
+						.hotnews {left:6rem; top:1.3rem; width:5rem; height:auto; line-height: 1.6rem; font-size: 0.8rem; }
+						.desc {font-size: 0.8rem; margin-top:1rem;}
+					}
+					.slider {padding-top: 7rem;}
+					.slick-slide img {width: 100%}
+					.slick-dots {
+						right: 9rem; top:0.5rem;
+						li {font-size: 1rem;}
+						.current {width: 1.3rem; height: 1.3rem; line-height: 1.3rem;}
+					}
+					.indicator{
+						width: 8rem; top:1rem; right: 1rem;
+						button[class^=btn-] {
+							width: 2.5rem; height: 2.5rem;
+							span {transform:scale(0.6);}
+						}
+					}
+				}
+			}
+			// 자주찾는메뉴
+			.news-favoritmenu {
+				position:relative; float: none; width: 100%; height: auto; margin-top: 1rem; padding:1.6rem 1rem 1rem;
+				.tit {font-size: 1.3rem; text-align: center; padding-top: 0;}
+				.slide-indicator {
+					width: 8rem; position:absolute; right: 1rem; top: 1rem; margin-bottom: 0;
+					button[class^=btn-] {
+						width: 2.5rem; height: 2.5rem;
+						span {transform:scale(0.6);}
+					}
+				}
+				.news-favoritmenu-slider {
+					.slider {
+						padding:1rem; 
+						a {height:2.6rem; line-height:2.6rem; font-size: 1rem;}
+					}
+				}
+			}
+		}
+		// 민원
+		.tab-complaint {
+			.l-left, .l-right {float: none; width: 100%; padding:0;}
+			// 민원서비스
+			.complaint-bottom {margin-top: 1rem; }
+			.complaint-service {
+				float: none; width: 100%; 
+			}
+			//정보화마을
+			.complaint-invil{
+				float: none; width: 100%; margin-left: 0; margin-top: 1rem;
+			}
+			//연령별 복지정보 
+			.complaint-welfare {
+				float: none; width: 100%; margin-left: 0; margin-top: 1rem;
+			}
+		}
+		// 관광
+		.tab-sightseeing {
+			// 배너
+			.sightseeing-slider {
+				float: none; width: 100%; 
+			}
+			// 바로가기
+			.sightseeing-gotolnk {
+				float: none; width: 100%; margin-top: 1rem;
+			}
+			// 알려드립니다
+			.sightseeing-attention {
+				position: relative; left: 0; top:0; width: 100%; margin-top: 1rem;
+			}
+		}
+	}
 }
-//-------------------------------------------------------//
+.mobile #wrap.usc #container.main {
+	.main-tabcontent .tab-news .menugroup .news-popupzone .slick-dots {top:0.3rem; right: 8rem;}
+}
+//-------------------------------------------------------------------------------
 }
 @media (max-width:768px){
 //-------------------------------------------------------//

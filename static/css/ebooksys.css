@@ -295,8 +295,9 @@ MEDIA QUERY
 	.ebooksys .main-tab {margin-top:120px;}
 	.ebooksys .main-search-zone .detail-search {margin-top:1.5rem;}
 }
-@media (max-width:600px) {
-
+@media (max-width:550px) {
+	.ebooksys .main-notice .list .slick-list {width:25rem;}
+	.ebooksys .main-notice .list li a .subject {width:15rem;}
 }
 @media (max-width:414px) {
 	.ebooksys .main-notice .list .slick-list {width:25rem;}

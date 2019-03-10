@@ -1694,9 +1694,6 @@
 					<div class="mouse-control">
 						<span>scroll down</span>
 					</div>
-					<div class="btn_top view-m">
-						<a href="#">top</a>
-					</div>
 				</div>
 			</div>
 		</main>
@@ -1840,6 +1837,9 @@
 		});
 		$('.js-main-tab .tab a').on('click', function(){
 			$('.book-list .slick-slider').slick("setPosition");
+		});
+		$(document).on('touchmove', function() {
+		  $(document).trigger('mousewheel');
 		});
 	});
 

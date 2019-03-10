@@ -219,6 +219,8 @@ MEDIA QUERY
 	.ebooksys .main-slide .list [class^='togo']{display:inline-block; margin-left:5rem; margin-top:1.5rem;}
 	.ebooksys .main-slide .list [class^='togo'] a:before {width:10rem; height:10rem; background-size:100%; border-radius:10rem;}
 	.ebooksys .main-slide .list [class^='togo'] a:after {width:10rem; height:10rem; border-radius:10rem; margin-left:-5rem;}
+	.ebooksys .main-slide .list [class^='togo'] a:hover:after,
+	.ebooksys .main-slide .list [class^='togo'] a:focus:after {border-width:0.2rem;}
 	.ebooksys .main-search-zone {width:auto; height:10rem; margin:2.5rem 1rem; padding:2rem 2rem; background-image:none; border-radius:5rem;}
 	.ebooksys .main-search-zone .form-search {width:100%; height:3rem; margin:0 0 0.5rem; padding-left:1.5rem;}
 	.ebooksys .main-search-zone .form-search .input {width:20rem;}
@@ -255,7 +257,7 @@ MEDIA QUERY
 	.ebooksys .main-tab .tab > li:after {top:0.8rem;}
 	.ebooksys .main-tab .tab > li a {height:4rem; line-height:4rem; font-size:1.5rem;}
 	.pc .ebooksys .main-tab .tab-contents .book-list {max-width:650px;}
-	.ebooksys .main-tab .tab-contents .book-list {width:100%; margin:0.5rem auto 0 auto;}
+	.ebooksys .main-tab .tab-contents .book-list {width:100%; margin:1rem auto 0 auto;}
 	.ebooksys .main-tab .tab-contents .book-list .slick-list {margin-left:0rem;}
 	.ebooksys .main-tab .tab-contents .book-list > ul {width:100%;}
 	.ebooksys .main-tab .tab-contents .book-list > ul li {margin:0 0 1rem 0rem;}
@@ -286,7 +288,7 @@ MEDIA QUERY
 	.ebooksys .main-slide .list [class^='togo'] a:after {width:6rem; height:6rem; border-radius:6rem; margin-left:-3rem;}
 	.ebooksys .main-search-zone {height:8rem; padding:1.5rem 2rem; border-radius:4rem;}
 	.ebooksys .main-search-zone .popularity .list .slick-list {width:15rem;}
-	.ebooksys .main-search-zone .form-search .input {width: 16rem; margin-left:0.5rem; padding-left:0.5rem; background-size: 0.8rem;}
+	.ebooksys .main-search-zone .form-search .input {width: 16rem; margin-left:0.5rem; padding-left:0.5rem; background-size: 0.8rem; background-position:left 1rem;}
 	.ebooksys .main-search-zone .form-search .btn {top:-5px; width:4rem; height:4rem; background-size:4rem;}
 	.ebooksys .main-notice .list .slick-list {width:38rem;}
 	.ebooksys .main-notice .list li a .subject {width:26rem;}

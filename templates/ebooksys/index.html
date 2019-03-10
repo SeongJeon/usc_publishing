@@ -1721,7 +1721,8 @@
 			// $(this).css('height', win_h - header_h + 'px')
 			$("html, body").animate({ scrollTop:0},10);
 		});
-		$('.main').on('mousewheel', function(e){
+		$('.main').on('mousewheel touchmove', function(e){
+			$(document).trigger('mousewheel');
 			var sectionPos = parseInt($(this).attr('data-index'));
 			if(e.originalEvent.wheelDelta >= 0){
 				// console.log(11)
@@ -1838,9 +1839,9 @@
 		$('.js-main-tab .tab a').on('click', function(){
 			$('.book-list .slick-slider').slick("setPosition");
 		});
-		$(document).on('touchmove', function() {
+		/*$(document).on('touchmove', function() {
 		  $(document).trigger('mousewheel');
-		});
+		});*/
 	});
 
 </script>

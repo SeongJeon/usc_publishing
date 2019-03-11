@@ -72,10 +72,10 @@ var usc = {
 		var $this = $(el), slickName = $this.closest(parentsName).find(sliderName);
 
 		if($this.hasClass('js-pause')){
-			$('span', $this).text("Pause");
+			$this.removeClass("play").find('span').text("Pause");
 			$(slickName).slick('slickPlay');
 		}else{
-			$('span', $this).text("Play");
+			$this.addClass("play").find('span').text("Play");
 			$(slickName).slick('slickPause');
 		}
 

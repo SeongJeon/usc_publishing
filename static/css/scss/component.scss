@@ -436,6 +436,7 @@ br.m {display:none}
 		line-height: 30px; font-size: 14px; color:#b4b4b4; text-align: center;
 		border: 1px solid #ddd; background:#fff; box-sizing: border-box;
 		&:after {display: inline-block; content: "+"; margin-left: 3px;}
+		&:hover {background:#525252; color:#fff; border-color:#525252;}
 	}	
 
 	// &[class$=_type1] {}	
@@ -796,7 +797,7 @@ input.w_password {width:135px;}
 	.inner {width: 100%;}
 	
 	.btn-gototop {
-		top: -90px;
+		top:inherit;bottom:90px; position: fixed;
 		a {width: 5rem; height:5rem; font-size: 1.3rem; background:#4f4f4f; line-height: 1.1; box-sizing: border-box; padding-top: 1.3rem;}
 		a:after {display: none}
 		a:before {display: block; content: "^"; }

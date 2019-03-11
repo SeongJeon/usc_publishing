@@ -189,6 +189,7 @@ MAIN
 					width:11px; height: 20px; margin:-10px 0 0 -5px;
 					@include background("usc/sp_main.png", no-repeat -50px -100px)
 				}
+				&.play:after {background-position: -200px -200px;}
 			}
 		}
 		// 게시판
@@ -276,6 +277,7 @@ MAIN
 						&.btn-up span {width:17px; height: 10px; background-position: 0 -150px;}
 						&.btn-down span {width:17px; height: 10px; background-position: -50px -150px;}
 						&.btn-pause span {width:10px; height: 18px; background-position: -100px -150px;}
+						&.btn-pause.play span {width:11px; height:21px; background-position: -200px -200px;}
 					}
 				}
 				.slider {
@@ -396,6 +398,7 @@ MAIN
 							&.btn-prev span {background-position: 0 -200px;}
 							&.btn-next span {background-position: -50px -200px;}
 							&.btn-pause span {background-position: -100px -200px;}
+							&.btn-pause.play span {width:11px; height: 21px; background-position: -200px -200px;}
 						}
 					}
 					.hotnews {position: absolute; left:78px; top:15px; width:68px; font-size: 12px; text-align: center; height: 26px; line-height: 24px; border:1px solid #fff; border-radius:6px; box-sizing: border-box; color:#fff; }
@@ -543,7 +546,9 @@ MAIN
 					&[aria-controls=complainttab3]:before {@include background("usc/icon_complainttab3_on.png",no-repeat 0 0);}
 				}
 				a[aria-selected=true] {
-					&:after {display: block; position: absolute; left:100%; top:0; content: ""; width: 0; height: 0; border-left: 21px solid #ff8000; border-right: 21px solid transparent; border-top: 50px solid transparent; border-bottom: 50px solid transparent;}
+					color:rgba(256,256,256,0.7);
+					em {color:#fff;}
+					&:after {display: block; position: absolute; left:100%; top:0; content: ""; width: 0; height: 0; border-left: 21px solid #ff8000; border-right: 21px solid transparent; border-top: 50px solid transparent; border-bottom: 50px solid transparent; }
 					&[aria-controls=complainttab1] {background:#ff8000;}
 					&[aria-controls=complainttab2] {background:#03a596;}
 					&[aria-controls=complainttab3] {background:#0c6dac;}
@@ -567,7 +572,7 @@ MAIN
 					.name {display: block; margin-top: 11px; font-size: 15px; color:#303030; text-align: center;}
 					li {float: left; margin-left: 60px; margin-top: 20px;}
 					li:nth-child(4n+1) {clear:both; margin-left: 0;}
-					a:hover .name {font-family: $font2; }
+					a:hover .name {font-family: $font3; }
 				}
 				#complainttab1 {
 					.lst-menu a:hover .icon {

@@ -46,7 +46,7 @@ p {margin:0;}
 #worksheet-content {padding:50px 80px 100px 320px;}
 
 /* CODE CSS */
-.wrap-code .tit {font-size:30px; margin:0; color:#333;}
+.wrap-code > div >  .tit {font-size:30px; margin:0; color:#333;}
 .wrap-code .code-box .tit-area {position:relative; margin:0; padding:12px 15px 15px; border-bottom:1px solid #e5e5e5;}
 .wrap-code .code-box .subtit {margin:0;}
 .wrap-code .code-box .date {position:absolute; right:15px; top:15px; margin:0; color:#666;}

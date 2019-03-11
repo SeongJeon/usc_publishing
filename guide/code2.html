@@ -44,6 +44,156 @@ Show/Hide 의 경우는 해당 속성 기입하지 말 것.
 			<!-- //end -->
 
 
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">Tab1</h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view" style="position:relative">
+<!-- code -->
+<ul class="comp-tab" role="tablist" data-js="false">
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-selected="true"><span>제목</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent"><span>제목</span></a></li>
+</ul>
+
+<div id="tabcontent"><!-- id값은 자유, 다만 탭에 aria-contros속성의 값으로 넣어줄 것 -->
+	ajax 컨텐츠 일경우
+</div>
+
+<!-- 
+* tab js 안쓸경우, ul에 data-js="false" 속성 추가
+* ajax 탭일 경우, a 에 aria-controls="탭컨텐츠 id값" 하나로 통일 (현재 예시 형태)
+* 보여지는 탭일 경우, 가이드 상단처럼 만들 것.
+-->
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
+
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">Table (data type)</h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view" style="position:relative">
+<!-- code -->
+<table class="comp-tbl_datatype">
+	<caption>표 제목</caption>
+	<colgroup>
+		<col>
+		<col>
+		<col>
+		<col>
+		<col>
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">제목</th>
+			<th scope="colgroup" colspan="4">제목그룹</th>
+		</tr>
+		<tr>
+			<th scope="col">제목</th>
+			<th scope="col">제목</th>
+			<th scope="col">제목</th>
+			<th scope="col">제목</th>
+			<th scope="col">제목</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>내용</td>
+			<td>내용</td>
+			<td>내용</td>
+			<td>내용</td>
+			<td>내용</td>
+		</tr>
+	</tbody>
+</table>
+<!-- 
+	* 반응형 이슈로 col에 width값 넣을시 %(퍼센트)로 넣기 바랍니다.
+-->
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
+
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">Table (form type)</h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view" style="position:relative">
+<!-- code -->
+<table class="comp-tbl_formtype">
+	<caption>표 제목</caption>
+	<colgroup>
+		<col>
+		<col>
+	</colgroup>
+	<tbody>
+		<tr>
+			<th scope="col">제목 <strong class="important">*</strong></th>
+			<td>내용</td>
+		</tr>
+	</tbody>
+</table>
+<!-- 
+	* form형 테이블은 col에 width을 넣지 않습니다.
+-->
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
+
+
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">페이지 상단 icon box</h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view" style="position:relative">
+<!-- code -->
+<div class="comp-iconbox">
+	<div class="icon"><img src="" alt=""></div>
+	<div class="cont">
+		<h3 class="tit">행정정보/개방 - 지방소득세</h3>
+		<ul class="comp-lst_dotted_grey">
+			<li><em class="bold">[비회원글쓰기]</em>z 신고하기 클릭 → “비회원 로그인” → 민원등록</li>
+			<li>처리 내용을 확인하기 위해서는 비회원 실명인증 로그인을 한 후 해당 민원창구로 이동하여 <br>“내가 신고한 글목록 보기”를 클릭하시면 신고하신 목록을 보실 수 있습니다.</li>
+			<li>회원은 <em class="line">“마이페이지”</em>를 통하여 확인하실 수 있습니다.</li>
+		</ul>
+	</div>
+</div>
+<!-- 
+	* icon image 에는 alt 값 빈 채로 두기바랍니다.
+-->
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
 
 
 		</div>

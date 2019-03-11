@@ -37,6 +37,8 @@ label, input, textarea, select { vertical-align: middle; border: 0; border-radiu
 
 label, input, textarea { -webkit-appearance: none; -webkit-border-radius: 0; }
 
+input[type=password] { font-family: sans-serif; }
+
 ol, ul { list-style: none; margin: 0; padding: 0; }
 
 li { list-style: none; }
@@ -57,10 +59,12 @@ strong { font-weight: normal; }
 
 select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
-input::-webkit-input-placeholder { color: #fff; }
-input::-moz-placeholder { color: #fff; }
-input:-ms-input-placeholder { color: #fff; }
-input:-moz-placeholder { color: #fff; }
+select::-ms-expand { display: none; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #c0c0c0; }
+input::-moz-placeholder, textarea::-moz-placeholder { color: #c0c0c0; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #c0c0c0; }
+input:-moz-placeholder, textarea:-moz-placeholder { color: #c0c0c0; }
 
 caption { overflow: hidden; visibility: hidden; height: 0; text-indent: -9999em; }
 

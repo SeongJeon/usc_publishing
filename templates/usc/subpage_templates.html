@@ -238,10 +238,30 @@
 							<div class="title-zone">
 								<h2 class="page-title">행정정보/개방</h2>
 								<ul class="page-utile">
-									<li><a href="#"><span>공유</span></a></li>
-									<li><a href="#"><span>공유</span></a></li>
-									<li><a href="#"><span>공유</span></a></li>
-									<li><a href="#"><span>QR코드</span></a></li>
+									<li>
+										<button type="button" aria-haspopup="true" aria-controls="area-sns" aria-expanded="false" class="icon-sns"><span>SNS 공유 레이어 열기</span></button>
+										<div id="area-sns" class="area-sns" role="dialog">
+											<h2 class="hidden">SNS 공유</h2>
+											<ul>
+												<li><a href="#" target="_blank" title="새창으로 열림" class="icon-instar"><span>인스타그램</span></a></li>
+												<li><a href="#" target="_blank" title="새창으로 열림" class="icon-twitter"><span>트위터</span></a></li>
+												<li><a href="#" target="_blank" title="새창으로 열림" class="icon-kakao"><span>카카오스토리</span></a></li>
+												<li><a href="#" target="_blank" title="새창으로 열림" class="icon-facebook"><span>페이스북</span></a></li>
+											</ul>
+											<span class="btn"><button type="button" class="btn-close"><span>SNS 공유 레이어 닫기</span></button></span>
+										</div>
+									</li>
+									<li><button type="button" class="icon-share"><span>공유</span></button></li>
+									<li><button type="button" class="icon-download"><span>다운로드</span></button></li>
+									<li>
+										<button type="button" aria-haspopup="true" aria-controls="area-qrcode" aria-expanded="false" class="icon-qrcode"><span>QR코드</span></button>
+										<div class="area-qrcode" id="area-qrcode" role="dialog">
+											<h2 class="hidden">QR코드</h2>
+											<span class="img"><img src="../../static/images/common/img_qrcode.png" alt="살기좋은 의성군 QR코드"></span>
+											<span class="txt">모바일로 QR코드를 <br>스캔하면 이 페이지로 <br>바로 접속 할 수 있습니다.</span>
+											<span class="btn"><button type="button" class="btn-close"><span>QR코드 레이어 닫기</span></button></span>
+										</div> 
+									</li>
 								</ul>
 							</div>
 							<!-- //페이지 타이틀영역 -->

@@ -19,15 +19,15 @@ var usc = {
 			 $box = $(el).closest(".footer-comp-select"),
 			 spd=300;
 
-		if($this.attr("aria-expended") == 'true') {
+		if($this.attr("aria-expanded") == 'true') {
 			$box.removeClass("open").find("dd").slideUp(spd);
-			$this.attr("aria-expended", "false");
+			$this.attr("aria-expanded", "false");
 		}else{
 			$box.addClass("open").find("dd").slideDown(spd);
-			$this.attr("aria-expended", "true");
+			$this.attr("aria-expanded", "true");
 		}
 
-		$box.siblings('.open').find('button').attr("aria-expended", "false");
+		$box.siblings('.open').find('button').attr("aria-expanded", "false");
 		$box.siblings('.open').removeClass("open").find("dd").slideUp(spd);
 	},
 
@@ -190,7 +190,7 @@ $(document).ready(function(){
 
 			if($(".page-utile").hasClass('none')) return false;
 
-			$this.addClass('open').attr("aria-expended", true);		
+			$this.addClass('open').attr("aria-expanded", true);		
 			$this.closest(".page-utile").addClass("none");
 
 			if($this.hasClass('icon-qrcode')) {
@@ -206,7 +206,7 @@ $(document).ready(function(){
 			$(".title-zone .page-utile").removeClass("none");
 
 			$(this).closest("div[role='dialog']").hide().removeAttr("style");
-			$(this).closest("div[role='dialog']").prev().attr("aria-expended", false).removeClass("open");
+			$(this).closest("div[role='dialog']").prev().attr("aria-expanded", false).removeClass("open");
 		});
 
 		$(document).on("click", "body", function(e){
@@ -214,7 +214,7 @@ $(document).ready(function(){
 				if(!$(".title-zone .page-utile").has(e.target).length){ 
 					$(".title-zone .page-utile").removeClass("none");
 					$(".title-zone div[role='dialog']").hide().removeAttr("style");
-					$(".icon-sns, .icon-qrcode").removeClass("open").attr({'aria-expended': false});
+					$(".icon-sns, .icon-qrcode").removeClass("open").attr({'aria-expanded': false});
 				}
 			}
 		})
@@ -226,7 +226,7 @@ $(document).ready(function(){
 $(document).on("click", "body", function(e){
 	if($(".footer-comp-select").hasClass("open")){ 
 		if(!$(".footer-comp-select").has(e.target).length){ 
-			$(".footer-comp-select").removeClass("open").find('button').attr("aria-expended", false);
+			$(".footer-comp-select").removeClass("open").find('button').attr("aria-expanded", false);
 			$(".footer-comp-select").find("dd").slideUp(300);
 		}
 	}

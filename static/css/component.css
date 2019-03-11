@@ -118,7 +118,60 @@
 #footer .footer-notice .number .call { display: inline-block; overflow: hidden; width: 35px; height: 35px; background: url("../../static/images/common/icon_footer_call.png") no-repeat 50% 50%; text-indent: 9999em; vertical-align: middle; }
 #footer .footer-notice .txt { margin-top: 6px; font-size: 17px; line-height: 26px; color: #888; }
 
-#container { min-width: 1320px; }
+#container { position: relative; min-width: 1320px; border-bottom: 1px solid #d1d1d1; }
+#container > .inner { width: 1320px; margin: 0 auto; }
+#container:before { display: block; height: 50px; width: 50%; position: absolute; top: 0; left: 50%; content: ""; background: #383b3b; }
+#container #lnb { position: relative; width: 270px; float: left; margin-top: -50px; }
+#container #contents { position: relative; padding-left: 310px; }
+#container .breadcrumb-zone { position: relative; height: 50px; background: #383b3b; padding-left: 270px; }
+#container .breadcrumb-zone .breadcrumb:after { display: block; clear: both; content: ""; }
+#container .breadcrumb-zone .breadcrumb a { display: block; box-sizing: border-box; color: #fff; }
+#container .breadcrumb-zone .breadcrumb a:after { background: url("../../static/images/common/sp_icon.png") no-repeat -200px -100px; }
+#container .breadcrumb-zone .breadcrumb > li { float: left; position: relative; border-right: 1px solid #606262; }
+#container .breadcrumb-zone .breadcrumb > li:first-child > a { width: 50px; padding: 0; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
+#container .breadcrumb-zone .breadcrumb > li:first-child > a:after { display: none; }
+#container .breadcrumb-zone .breadcrumb > li > a { width: 235px; position: relative; padding: 0 35px 0 15px; line-height: 50px; color: #fff; font-size: 14px; }
+#container .breadcrumb-zone .breadcrumb > li > a:after { display: inline-block; position: absolute; right: 15px; top: 50%; margin-top: -5px; content: ""; width: 17px; height: 9px; }
+#container .breadcrumb-zone .breadcrumb > li > a.open:after { background-position: -250px -100px; }
+#container .breadcrumb-zone .breadcrumb .menu { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: #383b3b; z-index: 1; }
+#container .breadcrumb-zone .breadcrumb .menu li { padding: 0 9px; }
+#container .breadcrumb-zone .breadcrumb .menu a { position: relative; padding: 0 25px 0 10px; line-height: 50px; border-top: 1px solid rgba(255, 255, 255, 0.2); color: #fff; }
+#container .breadcrumb-zone .breadcrumb .menu a:after { display: inline-block; position: absolute; right: 11px; top: 50%; margin-top: -9px; content: ""; width: 9px; height: 17px; background-position: -300px -100px; }
+#container .breadcrumb-zone .page-zoom { position: absolute; right: 2px; top: 14px; overflow: hidden; }
+#container .breadcrumb-zone .page-zoom dt { float: left; font-size: 14px; color: rgba(255, 255, 255, 0.4); line-height: 22px; }
+#container .breadcrumb-zone .page-zoom dd { float: left; margin-left: 8px; }
+#container .breadcrumb-zone .page-zoom button[class^=btn-] { width: 22px; height: 22px; text-indent: -999em; background: url("../../static/images/common/sp_icon.png") no-repeat 0 0; }
+#container .breadcrumb-zone .page-zoom button[class^=btn-].btn-zoomup { background-position: -200px -150px; }
+#container .breadcrumb-zone .page-zoom button[class^=btn-].btn-zoomdown { background-position: -250px -150px; }
+#container .title-zone { position: relative; height: 120px; padding-top: 50px; border-bottom: 1px solid #d1d1d1; }
+#container .title-zone:after { display: block; position: absolute; bottom: 3px; left: 0; content: ""; width: 100%; height: 1px; background: #d1d1d1; }
+#container .title-zone .page-title { color: #111; font-size: 34px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#container .title-zone .page-utile { position: absolute; right: 0; top: 53px; border: 1px solid #d6d5d5; }
+#container .title-zone .page-utile:after { display: block; clear: both; content: ""; }
+#container .title-zone .page-utile li { float: left; }
+#container .title-zone .page-utile li + li { border-left: 1px solid #d6d5d5; }
+#container .title-zone .page-utile a { display: block; width: 37px; height: 37px; text-indent: -999em; }
+#container .contents-zone { padding-top: 25px; min-height: 1000px; }
+
+#lnb { border-top: 6px solid #383b3b; }
+#lnb .title-depth h2 { line-height: 114px; background: #fe970e; text-align: center; color: #fff; font-size: 14px; font-size: 24px; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#lnb .menu { position: relative; z-index: 1; border: 1px solid #cfd3d5; }
+#lnb .menu > li { border-top: 1px solid #cfd3d5; }
+#lnb .menu > li:first-child { border-top: 0; }
+#lnb .menu h2 a { display: block; position: relative; padding: 0 35px 0 15px; font-size: 17px; line-height: 53px; color: #000; box-sizing: border-box; letter-spacing: -1px; }
+#lnb .menu h2 a:after { display: block; position: absolute; right: 0; top: 0; width: 54px; height: 100%; background: url("../../static/images/common/icon_lnb_off.png") no-repeat 50% 50%; content: ""; }
+#lnb .menu h2 a span { position: relative; z-index: 1; }
+#lnb .menu h2 a.open, #lnb .menu h2 a:hover { background: #f27405; color: #fff; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; margin: -1px -1px 0; padding: 1px 35px 0 16px; }
+#lnb .menu h2 a.open:after, #lnb .menu h2 a:hover:after { background: #b64926 url("../../static/images/common/icon_lnb_on.png") no-repeat 50% 50%; }
+#lnb .menu h2 a.outlnk:after { background: url("../../static/images/common/icon_lnb_outlnk.png") no-repeat 50% 50%; }
+#lnb .menu h2 a.outlnk:hover:after { right: 1px; }
+#lnb .menu .smallmenu { display: none; }
+#lnb .menu .smallmenu ul { padding: 15px 18px 18px; background: #fcfcee; }
+#lnb .menu .smallmenu ul li + li { margin-top: 7px; }
+#lnb .menu .smallmenu ul a { font-size: 15px; color: #000; }
+#lnb .menu .smallmenu ul a:before { display: inline-block; content: "-"; margin-right: 10px; }
+#lnb .menu .smallmenu ul a[aria-current=page] span, #lnb .menu .smallmenu ul a:hover span { text-decoration: underline; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#lnb .menu .smallmenu ul a[aria-current=page]:before, #lnb .menu .smallmenu ul a:hover:before { content: ""; position: relative; top: -1px; width: 14px; height: 14px; margin-right: 5px; margin-left: -4px; background: url("../../static/images/common/sp_icon.png") no-repeat -200px -200px; vertical-align: middle; }
 
 .view-pc { display: inherit; }
 
@@ -175,11 +228,11 @@ br.t, br.m { display: none; }
 *[class^=comp-paging] p.allnext a { background: url("../../static/images/frontend/button/btn-allnext.png") no-repeat 55% 50%; }
 *[class^=comp-paging] p.next { right: 41px; }
 *[class^=comp-paging] p.next a { background: url("../../static/images/frontend/button/btn-next.png") no-repeat 50% 50%; }
-*[class^=comp-paging] p a { display: block; overflow: hidden; position: relative; width: 36px; height: 36px; border-radius: 100px; border: 1px solid #dadada; text-indent: -9999em; box-sizing: border-box; }
+*[class^=comp-paging] p a { display: block; overflow: hidden; position: relative; width: 36px; height: 36px; border-radius: 100px; border: 1px solid #d1d1d1; text-indent: -9999em; box-sizing: border-box; }
 
 /* UI - TAB */
 /* LAYER */
-#layer { display: block; position: fixed; top: 50%; left: 50%; z-index: 1001; width: 620px; margin: -240px 0 0 -310px; }
+#layer { display: block; position: fixed; top: 50%; left: 50%; z-index: 1001; }
 #layer.dim { background: rgba(0, 0, 0, 0.7); }
 #layer.open .layer-inner { position: static; top: 50%; left: 50%; min-height: 480px; text-align: center; border: 6px solid #0d265e; border-top: 0; background: #fff; box-sizing: border-box; }
 #layer.open .title { height: 60px; padding-left: 24px; line-height: 60px; color: #fff; text-align: left; background: #0d265e; font-size: 22px; font-weight: bold; }

@@ -122,7 +122,7 @@
 #container > .inner { width: 1320px; margin: 0 auto; }
 #container:before { display: block; height: 50px; width: 50%; position: absolute; top: 0; left: 50%; content: ""; background: #383b3b; }
 #container #lnb { position: relative; width: 270px; float: left; margin-top: -50px; }
-#container #contents { position: relative; padding-left: 310px; }
+#container #contents { position: relative; padding-left: 310px; padding-bottom: 50px; }
 #container .breadcrumb-zone { position: relative; height: 50px; background: #383b3b; padding-left: 270px; }
 #container .breadcrumb-zone .breadcrumb:after { display: block; clear: both; content: ""; }
 #container .breadcrumb-zone .breadcrumb a { display: block; box-sizing: border-box; color: #fff; }
@@ -368,6 +368,36 @@ input.w_password { width: 135px; }
 *[class^=comp-iconbox] .icon { overflow: hidden; position: absolute; left: 34px; top: 29px; overflow: hidden; width: 100px; height: 100px; border-radius: 100px; background: #cfcfcf; }
 *[class^=comp-iconbox] .cont { padding-left: 164px; }
 *[class^=comp-iconbox] .cont .tit { margin-bottom: 13px; color: #1c1c1c; font-size: 20px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+
+/* UI - customer */
+.customer-zone { border: 1px solid #cfcfcf; }
+.customer-zone .customer-top { position: relative; overflow: hidden; height: 45px; padding: 0 15px; border-bottom: 1px solid #cfcfcf; line-height: 44px; }
+.customer-zone .customer-top .addr { float: left; }
+.customer-zone .customer-top .addr:after { display: block; clear: both; content: ""; }
+.customer-zone .customer-top .addr li { float: left; position: relative; padding-left: 30px; margin-left: 35px; font-size: 14px; color: #7f7f7f; }
+.customer-zone .customer-top .addr li:first-child { margin-left: 0; }
+.customer-zone .customer-top .addr li:before { display: inline-block; position: absolute; left: 0; top: 50%; margin-top: -11px; width: 22px; height: 22px; content: ""; }
+.customer-zone .customer-top .addr .icon-part:before { background: url("../../static/images/common/icon_customerzone1.png") no-repeat 50% 50%; }
+.customer-zone .customer-top .addr .icon-person:before { background: url("../../static/images/common/icon_customerzone2.png") no-repeat 50% 50%; }
+.customer-zone .customer-top .addr .icon-number:before { background: url("../../static/images/common/icon_customerzone3.png") no-repeat 50% 50%; }
+.customer-zone .customer-top .date { float: right; font-size: 14px; color: #7f7f7f; position: relative; padding-left: 30px; }
+.customer-zone .customer-top .date:before { display: inline-block; position: absolute; left: 0; top: 50%; margin-top: -11px; width: 22px; height: 22px; background: url("../../static/images/common/icon_customerzone4.png") no-repeat 50% 50%; content: ""; }
+.customer-zone .customer-bottom { background: #eff0f1; padding-top: 14px; }
+.customer-zone .customer-bottom .agreebox { padding: 0 13px; }
+.customer-zone .customer-bottom .agreebox:after { display: block; clear: both; content: ""; }
+.customer-zone .customer-bottom .agreebox .txt { float: left; font-size: 14px; color: #1c1c1c; position: relative; padding-left: 40px; line-height: 27px; }
+.customer-zone .customer-bottom .agreebox .txt:before { display: inline-block; position: absolute; left: 0; top: 0; width: 27px; height: 27px; content: ""; background: url("../../static/images/common/icon_customerzone_txt.png") no-repeat 50% 50%; }
+.customer-zone .customer-bottom .agreebox .radio-lst { float: left; margin-left: 28px; margin-top: 5px; }
+.customer-zone .customer-bottom .agreebox .radio-lst:after { display: block; clear: both; content: ""; }
+.customer-zone .customer-bottom .agreebox .radio-lst li { float: left; margin-left: 20px; }
+.customer-zone .customer-bottom .agreebox .radio-lst li:first-child { margin-left: 0; }
+.customer-zone .customer-bottom .agreebox .radio-lst label { display: inline-block; font-size: 14px; color: #7f7f7f; padding-left: 20px; position: relative; }
+.customer-zone .customer-bottom .agreebox .radio-lst label:before { display: block; position: absolute; left: 0; top: 0; width: 14px; height: 14px; content: ""; background: url("../../static/images/common/form_radio2_off.png") no-repeat 50% 50%; }
+.customer-zone .customer-bottom .agreebox .radio-lst input:checked + label:before { background: url("../../static/images/common/form_radio2_on.png") no-repeat 50% 50%; }
+.customer-zone .customer-bottom .form { padding: 15px 30px 20px; }
+.customer-zone .customer-bottom .form:after { display: block; clear: both; content: ""; }
+.customer-zone .customer-bottom .form input { float: left; width: 808px; padding: 0 10px; height: 30px; font-size: 13px; background: #fff; }
+.customer-zone .customer-bottom .form button { float: left; width: 120px; height: 30px; color: #fff; font-size: 13px; background: #b88527; }
 
 /* LAYER */
 #layer { display: block; position: fixed; top: 50%; left: 50%; z-index: 1001; }

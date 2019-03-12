@@ -6,7 +6,7 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
-#wrap.usc #header {
+body.pc #wrap.usc #header {
 	#gnb {
 		.gnb {
 			& > li {float:left; }
@@ -858,6 +858,9 @@ MEDIA QUERY
 @media (max-width:1024px){
 //-------------------------------------------------------------------------------
 #wrap.usc #header {
+	.header-bottom {
+		
+	}
 	#gnb {
 		.category {display: none}
 		

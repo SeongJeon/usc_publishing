@@ -39,16 +39,26 @@ var usc = {
 
 		var moGnb = (function(){
 			$('.btn-menu-open a').on("click", function(){
-
+				
 				return false;
 			});
 
-			$('.btn-search-open a').on("click", function(){
-				
+			// 검색영역 열기
+			$('.btn-search-open button').on("click", function(){
+				$(this).attr({"aria-expanded": true});
+				$("#gnb-search").show().animate({"left": 0}, spd, function(){
+					$(this).find("input[type=text]").focus();
+				});
 				return false;
 			})
-
-
+			// 검색영역 닫기
+			$("#gnb-search .btn-close").on("click", function(){
+				$("#gnb-search").animate({"left": -100+'%'}, spd, function(){
+					$(this).hide();
+				});
+				$(".btn-search-open button").attr({"aria-expanded": false}).focus();
+				return false;
+			})
 		})();
 	},
 

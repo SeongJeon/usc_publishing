@@ -6,6 +6,8 @@ LAYOUT
 .ebooksys #header {position:absolute; top:0; width: 100%; height: 109px; background: rgba(0,0,0,0.6); z-index: 100;}
 .ebooksys #footer {height: 210px}
 .ebooksys #footer .footer-utilegroup {padding:0;}
+.ebooksys #container.main {padding-top: 0}
+.ebooksys #container.main:before {display: none}
 .mobile .ebooksys #header {height:115px;}
 
 
@@ -205,6 +207,7 @@ MEDIA QUERY
 
 @media (max-width: 1024px) { 
 	.ebooksys #footer .footer-utilegroup {padding:0 2rem 4rem;}
+	.ebooksys #container > .inner {width: 100%}
 
 	.ebooksys .radio-type1 label {font-size:1rem;}
 	.ebooksys .radio-type1 label span {font-size:1rem;}

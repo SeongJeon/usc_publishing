@@ -891,6 +891,27 @@ input.w_password {width:135px;}
 	}
 	.header-bottom {
 		display: none;
+		position: absolute; right:0; top:0; max-width: 300px; width:72vw;
+		
+		.gnb-mo-title {font-size: 2rem; line-height: 6rem; background:#785719;font-family: $font2; padding-left: 1.6rem; box-sizing: border-box; color:#fff;}
+		.header-utilegroup {
+			float: none; padding-top: 0; background:#fff5e4;
+			.header-utile {
+				display: block; border-bottom: 1px solid #fed4a0;
+				li {
+					width: 50%;
+					& + li:before {display: none; }
+					& + li {border-left: 1px solid #fed4a0; box-sizing: border-box;}
+				}
+				a {display: block; font-size: 1.2rem; line-height: 4.3rem; color:#555; text-align: center;}
+			}
+			.haeder-lang {
+				padding:1.4rem 0; text-align: center; margin-left: 0; display: block;
+				li {float: none; display: inline-block;}
+				a {width: 4.3rem; height: 3rem;background-size: 100% 100% !important; }
+			}
+		}
+
 	}
 }
 #footer {
@@ -991,6 +1012,19 @@ br.m {display:inherit}
 
 .view-m {display: inherit;}
 .view-pc {display: none;}
+
+
+/* ICON */
+*[class^=icon_] {
+	&[class$=_country_korea] {@include background("common/icon_lang_ko.png",no-repeat 50% 50%); background-size: 100% 100%;}
+	&[class$=_country_japan] {@include background("common/icon_lang_ja.png",no-repeat 50% 50%); background-size: 100% 100%;}
+	&[class$=_country_china] {@include background("common/icon_lang_ch.png",no-repeat 50% 50%); background-size: 100% 100%;}
+	&[class$=_country_en] {@include background("common/icon_lang_en.png",no-repeat 50% 50%); background-size: 100% 100%;}
+	&[class$=_country_japan]:hover {@include background("common/icon_lang_ja_on.png",no-repeat 50% 50%); background-size: 100% 100%;}
+	&[class$=_country_china]:hover {@include background("common/icon_lang_ch_on.png",no-repeat 50% 50%); background-size: 100% 100%;}
+	&[class$=_country_en]:hover {@include background("common/icon_lang_en_on.png",no-repeat 50% 50%); background-size: 100% 100%;}
+
+}
 
 
 /* BUTTON */

@@ -38,7 +38,7 @@ SUB PAGE
 .service-monitor .heading-h3 + .heading-h4 {margin:20px 0 0 30px;}
 .service-monitor .heading-h4 {margin:30px 0 0 30px;}
 .service-monitor .comp-lst_dotted {margin:6px 0 0 50px;}
-.service-monitor .comp-lst_hyphen {margin:5px 0 35 px 68px;}
+.service-monitor .comp-lst_hyphen {margin:5px 0 35px 68px;}
 .service-monitor .comp-tbl_datatype {margin:15px 0 0 0;}
 .service-monitor .flow-chart {overflow:hidden; margin:15px 0 0 -15px;}
 .service-monitor .flow-chart > li {position:relative; float:left; width:182px; height:181px; margin:0 0 0 114px; padding:53px 0 0; background:url(../images/usc/bg_flow_chart.png) no-repeat; text-align:center; -webkit-box-sizing:border-box; box-sizing:border-box; }

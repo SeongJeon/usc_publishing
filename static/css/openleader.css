@@ -30,9 +30,46 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+*[class^=comp-lst][class*=_dotted][class*=_small] {margin-left:5px;}
+*[class^=comp-lst][class*=_dotted][class*=_small] > li {padding-left:10px; font-family: "NanumSquareR", Sans-serif;}
+*[class^=comp-lst][class*=_dotted][class*=_small] > li:before {width:1px; height:1px; background:#7f7f7f;}
 
+/* 민원모니터이해 */
+.service-monitor .heading-h3 + .heading-h4 {margin:20px 0 0 30px;}
+.service-monitor .heading-h4 {margin:30px 0 0 30px;}
+.service-monitor .comp-lst_dotted {margin:6px 0 0 50px;}
+.service-monitor .comp-lst_hyphen {margin:5px 0 35 px 68px;}
+.service-monitor .comp-tbl_datatype {margin:15px 0 0 0;}
+.service-monitor .flow-chart {overflow:hidden; margin:15px 0 0 -15px;}
+.service-monitor .flow-chart > li {position:relative; float:left; width:182px; height:181px; margin:0 0 0 114px; padding:53px 0 0; background:url(../images/usc/bg_flow_chart.png) no-repeat; text-align:center; -webkit-box-sizing:border-box; box-sizing:border-box; }
+.service-monitor .flow-chart > li:before {position:absolute; left:182px; top:50%; display:block; width:115px; height:1px; background:#d6d3d2;}
+.service-monitor .flow-chart > li:after {position:absolute; left:-68px; top:50%; display:block; content:""; width:24px; height:24px; margin-top:-12px; background:url(../images/usc/bg_flow_chart_arrow.png) no-repeat}
+.service-monitor .flow-chart > li:first-child {margin-left:0;}
+.service-monitor .flow-chart > li:first-child:after,
+.service-monitor .flow-chart > li:last-child:before {display:none;}
+.service-monitor .flow-chart > li strong {display:block; width:123px; margin:10px auto 0 auto; padding:10px 0 0; border-top:1px solid #d6d3d2; font-size:17px; font-weight:bold; color:#fe970e;}
 
-
+/* 민원실이용안내 */
+.guide-use .tablist {overflow:hidden; margin-bottom:30px; }
+.guide-use .tablist > li {float:left; width:33.3%}
+.guide-use .tablist > li a {display:block; height:45px; line-height:45px; background:#f4f4f4; margin-left:-1px; border:1px solid #d1d1d1; text-align:center; color:#1c1c1c; -webkit-box-sizing:border-box; box-sizing:border-box; }
+.guide-use .tablist > li a[aria-selected*=true] {background:#f27405; border-left:none; border-right:none; color:#fff;}
+.guide-use .tablist > li:first-child a {margin-left:0;}
+.guide-use .tab-contents {}
+.guide-use .tab-contents .heading-h3 {}
+.guide-use .tab-contents .floor-plan {margin:15px 0 0; padding:15px 0 40px; background:#efeeed;}
+.guide-use .tab-contents .floor-plan .img {text-align:center;}
+.guide-use .tab-contents .floor-plan .img img {}
+.guide-use .tab-contents .floor-plan .list {}
+.guide-use .tab-contents .floor-plan .list {overflow:hidden; padding:30px 35px 0;}
+.guide-use .tab-contents .floor-plan .list ul {float:left; width:50%; }
+.guide-use .tab-contents .floor-plan .list ul > li {margin-top:12px; color:#4b4b4b;}
+.guide-use .tab-contents .floor-plan .list ul > li:first-child {margin-top:0;}
+.guide-use .tab-contents .floor-plan .list ul > li .num {display:inline-block; width:30px; height:30px; line-height:30px; margin-right:10px; background:#4b4b4b; border-radius:30px; text-align:center; color:#fff;}
+.guide-use .tab-contents .floor-plan .list ul > li .tel {display:inline-block; margin-left:2px; padding:2px; background:#f1e300;}
+.guide-use .tab-contents .comp-tbl_formtype {margin-top:15px;}
+.guide-use .tab-contents .comp-tbl_formtype th,
+.guide-use .tab-contents .comp-tbl_formtype td {text-align:center;}
 
 
 

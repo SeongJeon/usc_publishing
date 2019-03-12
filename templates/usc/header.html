@@ -38,14 +38,15 @@
 		<div class="inner">
 			<h1 class="title"><a href="#">활력넘치는 희망의성, 의성군</a></h1>
 			<p class="currentlanguage">한국어사이트</p>
-			<p class="btn-search-open view-m"><a href="#"><span>통합검색 열기</span></a></p>
-			<p class="btn-menu-open view-m"><a href="#"><span>전체메뉴 열기</span></a></p>
-			<div class="comp-search" role="search">
+			<p class="btn-search-open view-m"><button type="button" aria-haspopup="true" aria-expanded="false" aria-controls="gnb-search"><span>통합검색 열기</span></button></p>
+			<p class="btn-menu-open view-m"><button type="button" aria-haspoup="true" aria-controls="gnb-mo" aria-expanded="false"><span>전체메뉴 열기</span></button></p>
+			<div class="comp-search" role="search" id="gnb-search" role="dialog">
 				<div class="form">
+					<p class="btn"><button type="button" class="btn-close"><span>검색 레이어 닫기</span></button></p>
 					<select name="" id="" title="검색어 분류 선택">
 						<option value="">통합검색</option>
 					</select>
-					<input type="text" title="검색어 입력">
+					<input type="text" title="검색어 입력" placeholder="검색어를 입력하세요">
 				</div>
 				<button type="submit"><span>검색</span></button>
 			</div>
@@ -63,7 +64,7 @@
 	</div>
 	<!--// header middle -->
 	<!-- header gnb -->
-	<div class="header-bottom">
+	<div class="header-bottom" id="gnb-mo">
 		<div class="inner">
 			<div class="header-utilegroup view-m">
 				<ul class="header-utile">
@@ -79,25 +80,448 @@
 			</div>
 			<nav>
 				<div id="gnb">
-					<ul class="gnb">
-						<li>
+					<ul class="gnb" role="tree">
+						<li role="treeitem">
 							<h2> <a href="#"><span>전자민원</span></a> </h2>
+							<div class="depth2menu">
+								<div class="part-introduce">
+									<dl>
+										<dt>전자민원</dt>
+										<dd>군민과 함께하는 창조적인 희망군정</dd>
+									</dl>
+									<ul class="gotolnk">
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성읍면 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성장날 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성마늘목장 바로가기 <em>GO</em></span></a></li>
+									</ul>
+								</div>
+								<div class="menu" role="group">
+									<div class="menugroup">
+										<div class="group"><h3><a href="#"><span>민원실 이용안내</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>민원 편람</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>도로명주소안내</span></a></h3></div>
+										<div class="group">
+											<h3><a href="#"><span>전자민원</span></a></h3>
+											<ul class="depth3menu">
+												<li><h4> <a href="#"><span>민원상담</span></a> </h4></li>
+												<li><h4> <a href="#"><span>민원24</span></a> </h4></li>
+												<li><h4> <a href="#"><span>110정부민원안내콜센터</span></a> </h4></li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>방문민원 상담예약</span></a></h3>
+											<ul class="depth3menu">
+												<li><h4> <a href="#"><span>방문민원상담예약 안내</span></a> </h4></li>
+												<li><h4> <a href="#"><span>방문민원상담예약 신청</span></a> </h4></li>
+												<li><h4> <a href="#"><span>예약확인</span></a> </h4></li>
+											</ul>
+										</div>
+									</div>
+									<div class="menugroup">
+										<div class="group">
+											<h3><a href="#"><span>민원편의시책</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>민원1회방문처리</span></a></h4> </li>
+												<li> <h4><a href="#"><span>지적&middot;건축현장민원처리</span></a></h4> </li>
+												<li> <h4><a href="#"><span>어디서나민원처리</span></a></h4> </li>
+												<li> <h4><a href="#"><span>(팩스민원)</span></a></h4> </li>
+												<li> <h4><a href="#"><span>사전심사청구제</span></a></h4> </li>
+												<li> <h4><a href="#"><span>무인민원발급기</span></a></h4> </li>
+												<li> <h4><a href="#"><span>여권발급안내</span></a></h4> </li>
+												<li> <h4><a href="#"><span>구술, 전화가능민원안내</span></a></h4> </li>
+												<li> <h4><a href="#"><span>민원수수료안내</span></a></h4> </li>
+												<li> <h4><a href="#"><span>행정정보공동이용제도</span></a></h4> </li>
+												<li> <h4><a href="#"><span>국제운전면허증발급</span></a></h4> </li>
+												<li> <h4><a href="#"><span>다문화가족전입신고</span></a></h4> </li>
+												<li> <h4><a href="#"><span>체류지변경신고</span></a></h4> </li>
+												<li> <h4><a href="#"><span>운전면허증&middot;주민등록증</span></a></h4> </li>
+												<li> <h4><a href="#"><span>재발급통합처리</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>신고센터</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>공직자부조리신고</span></a></h4> </li>
+												<li> <h4><a href="#"><span>갑질피해신고</span></a></h4> </li>
+												<li> <h4><a href="#"><span>환경오염신고</span></a></h4> </li>
+												<li> <h4><a href="#"><span>식품영업위법행위신고</span></a></h4> </li>
+												<li> <h4><a href="#"><span>식품안전소비자신고</span></a></h4> </li>
+												<li> <h4><a href="#"><span>예산낭비신고</span></a></h4> </li>
+												<li> <h4><a href="#"><span>부동산불법거래 신고센터</span></a></h4> </li>
+												<li> <h4><a href="#"><span>유기동물신고</span></a></h4> </li>
+												<li> <h4><a href="#"><span>사전컨설팅감사창구</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>민원모니터</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>민원모니터 이해</span></a></h4> </li>
+												<li> <h4><a href="#"><span>주민불편사항 제보</span></a></h4> </li>
+												<li> <h4><a href="#"><span>민원제도 개선사항 제안</span></a></h4> </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 						</li>
-						<li>
+						<li role="treeitem">
 							<h2> <a href="#"><span>정보공개</span></a> </h2>
+							<div class="depth2menu depth2-1">
+								<div class="part-introduce">
+									<dl>
+										<dt>정보공개</dt>
+										<dd>군민과 함께하는 창조적인 희망군정</dd>
+									</dl>
+									<ul class="gotolnk">
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성읍면 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성장날 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성마늘목장 바로가기 <em>GO</em></span></a></li>
+									</ul>
+								</div>
+								<div class="menu" role="group">
+									<div class="menugroup">
+										<div class="group"><h3><a href="#"><span>행정정보</span></a></h3></div>
+										<div class="group">
+											<h3><a href="#" class="current"><span>정보공개제도안내</span></a></h3><!-- D :현재 메뉴 나타낼시 current 클래스 추가 -->
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>제도안내/청구권자</span></a></h4> </li>
+												<li> <h4><a href="#" class="current"><span>정보공개대상공공기관</span></a></h4> </li><!-- D :현재 메뉴 나타낼시 current 클래스 추가 -->
+												<li> <h4><a href="#"><span>공개대상/비공개대상</span></a></h4> </li>
+												<li> <h4><a href="#"><span>정보공개청구/처리절차</span></a></h4> </li>
+												<li> <h4><a href="#"><span>불복구제절차</span></a></h4> </li>
+												<li> <h4><a href="#"><span>정보공개책임관</span></a></h4> </li>
+												<li> <h4><a href="#"><span>수수료</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group"><h3><a href="#"><span>정보공개청구</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>정보공개소재안내</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>비공개대상정보세부기준</span></a></h3></div>
+									</div>
+									<div class="menugroup">
+										<div class="group"><h3><a href="#"><span>행정정보목록리스트</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>사전정보공표목록</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>개별공시지가열람</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>개별주택가격열람</span></a></h3></div>
+										<div class="group"><h3><a href="#" class="small"><span>농림축산식품사업지원시설현황</span></a></h3></div>
+									</div>
+									<div class="menugroup">
+										<div class="group">
+											<h3><a href="#"><span>자치법규/관보</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>입법예고</span></a></h4> </li>
+												<li> <h4><a href="#"><span>자치법규</span></a></h4> </li>
+												<li> <h4><a href="#"><span>전자관보</span></a></h4> </li>
+												<li> <h4><a href="#"><span>의성군보</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>행정처분공개</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>식품위생분야</span></a></h4> </li>
+												<li> <h4><a href="#"><span>환경분야</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>정책실명제</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>정책실명제</span></a></h4> </li>
+												<li> <h4><a href="#"><span>정책실명공개과제</span></a></h4> </li>
+												<li> <h4><a href="#"><span>국민신청실명제</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>공공데이터개방</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>공공데이터정보</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group"> <h3><a href="#"><span>계약정보공개시스템</span></a></h3> </div>
+									</div>
+									<div class="menugroup">
+										<div class="group">
+											<h3><a href="#"><span>재정/백서</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>예산서공개</span></a></h4> </li>
+												<li> <h4><a href="#"><span>재정정보공개</span></a></h4> </li>
+												<li> <h4><a href="#"><span>재정공시</span></a></h4> </li>
+												<li> <h4><a href="#"><span>업무추진비공개</span></a></h4> </li>
+												<li> <h4><a href="#"><span>지방공기업</span></a></h4> </li>
+												<li> <h4><a href="#"><span>중기지방재정계획</span></a></h4> </li>
+												<li> <h4><a href="#"><span>성인지예산</span></a></h4> </li>
+												<li> <h4><a href="#"><span>군정백서</span></a></h4> </li>
+												<li> <h4><a href="#"><span>공공시설운영현황</span></a></h4> </li>
+												<li> <h4><a href="#"><span>주민참여예산의견제출</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>통계</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>의성의오늘</span></a></h4> </li>
+												<li> <h4><a href="#"><span>월간경기동향</span></a></h4> </li>
+												<li> <h4><a href="#"><span>통계연보(2004 ~ 현재)</span></a></h4> </li>
+												<li> <h4><a href="#"><span>사회조사(2012 ~ 현재)</span></a></h4> </li>
+												<li> <h4><a href="#"><span>경북통계</span></a></h4> </li>
+												<li> <h4><a href="#"><span>살고싶은우리동네</span></a></h4> </li>
+												<li> <h4><a href="#"><span>정책통계지도</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>조직운영 정보공개</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>개요</span></a></h4> </li>
+												<li> <h4><a href="#"><span>5대지표정보공개</span></a></h4> </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 						</li>
-						<li>
+						<li role="treeitem">
 							<h2> <a href="#"><span>열린군정</span></a> </h2>
+							<div class="depth2menu">
+								<div class="part-introduce">
+									<dl>
+										<dt>열린군정</dt>
+										<dd>군민과 함께하는 창조적인 희망군정</dd>
+									</dl>
+									<ul class="gotolnk">
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성읍면 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성장날 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성마늘목장 바로가기 <em>GO</em></span></a></li>
+									</ul>
+								</div>
+								<div class="menu" role="group">
+									<div class="menugroup">
+										<div class="group">
+											<h3><a href="#"><span>의성군정</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>군정방향</span></a></h4> </li>
+												<li> <h4><a href="#"><span>군정 및 종합발전계획</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group"><h3><a href="#"><span>공지사항</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>행사안내</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>통합신공항</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>메아리</span></a></h3></div>
+									</div>
+									<div class="menugroup">
+										<div class="group"><h3><a href="#"><span>고시/공고</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>시험정보</span></a></h3></div>
+										<div class="group">
+											<h3><a href="#"><span>홍보/보도자료/해명</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>정책실명제</span></a></h4> </li>
+												<li> <h4><a href="#"><span>정책실명공개과제</span></a></h4> </li>
+												<li> <h4><a href="#"><span>국민신청실명제</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>행정서비스</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>문화고나광행정서비스헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>재무행정서비스헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>민원행정서비스헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>지역경제행정서비스헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>환경행정서비스헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>산림행정서비스헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>사회복지행정서비스헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>재난관리행정서비스헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>교통행정행정서비스헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>보건의료행정서비스헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>상하수도행정서비스헌장</span></a></h4> </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 						</li>
-						<li>
+						<li role="treeitem">
 							<h2> <a href="#"><span>소통참여</span></a> </h2>
+							<div class="depth2menu">
+								<div class="part-introduce">
+									<dl>
+										<dt>소통참여</dt>
+										<dd>군민과 함께하는 창조적인 희망군정</dd>
+									</dl>
+									<ul class="gotolnk">
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성읍면 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성장날 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성마늘목장 바로가기 <em>GO</em></span></a></li>
+									</ul>
+								</div>
+								<div class="menu" role="group">
+									<div class="menugroup">
+										<div class="group">
+											<h3><a href="#"><span>군민제안</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>제도소개</span></a></h4> </li>
+												<li> <h4><a href="#"><span>제안하기</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>정책토론방</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>정자공청회</span></a></h4> </li>
+												<li> <h4><a href="#"><span>정책포럼</span></a></h4> </li>
+												<li> <h4><a href="#"><span>설문조사</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group"><h3><a href="#"><span>안전신문고</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>자유게시판</span></a></h3></div>
+										<div class="group">
+											<h3><a href="#"><span>설문조사</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>진행중인설문조사</span></a></h4> </li>
+												<li> <h4><a href="#"><span>지난설문조사</span></a></h4> </li>
+											</ul>
+										</div>
+									</div>
+									<div class="menugroup">
+										<div class="group"><h3><a href="#"><span>칭찬합니다</span></a></h3> </div>
+										<div class="group"><h3><a href="#"><span>구인/구직</span></a></h3> </div>
+										<div class="group"><h3><a href="#"><span>삽니다/팝니다</span></a></h3> </div>
+									</div>
+								</div>
+							</div>
 						</li>
-						<li>
+						<li role="treeitem">
 							<h2> <a href="#"><span>의성안내</span></a> </h2>
+							<div class="depth2menu">
+								<div class="part-introduce">
+									<dl>
+										<dt>의성안내</dt>
+										<dd>군민과 함께하는 창조적인 희망군정 <img src="../../static/images/usc/img_gnbtxt.png" alt="활기넘치는 희망의성! 살기좋은 의성으로 오세요~!"</dd>
+									</dl>
+									<ul class="gotolnk">
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성읍면 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성장날 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성마늘목장 바로가기 <em>GO</em></span></a></li>
+									</ul>
+								</div>
+								<div class="menu other" role="group">
+									<div class="menugroup">
+										<div class="group">
+											<h3><a href="#"><span>의성군소개</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>연혁</span></a></h4> </li>
+												<li> <h4><a href="#"><span>일반현황</span></a></h4> </li>
+												<li> <h4><a href="#"><span>위치자연환경</span></a></h4> </li>
+												<li> <h4><a href="#"><span>상징</span></a></h4> </li>
+												<li> <h4><a href="#"><span>군민헌장</span></a></h4> </li>
+												<li> <h4><a href="#"><span>군민의노래</span></a></h4> </li>
+												<li> <h4><a href="#"><span>의성군행정지도</span></a></h4> </li>
+												<li> <h4><a href="#"><span>열린군수실</span></a></h4> </li>
+												<li> <h4><a href="#"><span>명예읍면장</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>위치/시설정보</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>청사안내</span></a></h4> </li>
+												<li> <h4><a href="#"><span>찾아오시는길</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>행정조직/전화번호</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>행정조직도</span></a></h4> </li>
+												<li> <h4><a href="#"><span>전화번호안내</span></a></h4> </li>
+												<li> <h4><a href="#"><span>직원검색</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>관내주요기관안내</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>기관현황</span></a></h4> </li>
+												<li> <h4><a href="#"><span>학교현황</span></a></h4> </li>
+												<li> <h4><a href="#"><span>병/의원현황</span></a></h4> </li>
+											</ul>
+										</div>
+									</div>
+									<div class="menugroup">
+										<h3><a href="#"><span>부서소개</span></a></h3>
+										<ul class="depth3menu">
+											<li> <h4><a href="#"><span>부군수</span></a></h4> </li>
+											<li> <h4><a href="#"><span>홍보소통담당관</span></a></h4> </li>
+											<li> <h4><a href="#"><span>기획담당관</span></a></h4> </li>
+											<li> <h4><a href="#"><span>자치행정국</span></a></h4> </li>
+											<li> <h4><a href="#"><span>총무과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>재무과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>민원과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>복지관광경제국</span></a></h4> </li>
+											<li> <h4><a href="#"><span>관광문화과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>일자리창출과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>경제투자과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>농축산과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>원예과수과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>도시환경국</span></a></h4> </li>
+											<li> <h4><a href="#"><span>안전건설과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>지역재생과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>시범마을조성과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>환경과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>산림과</span></a></h4> </li>
+											<li> <h4><a href="#"><span>보건소</span></a></h4> </li>
+											<li> <h4><a href="#"><span>농업기술센터</span></a></h4> </li>
+											<li> <h4><a href="#"><span>시설관리사업소</span></a></h4> </li>
+											<li> <h4><a href="#"><span>의성조문국박물관</span></a></h4> </li>
+											<li> <h4><a href="#"><span>상하수도사업소</span></a></h4> </li>
+										</ul>
+									</div>
+									<div class="menugroup">
+										<div class="group">
+											<h3><a href="#"><span>미디어의성</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>동영상</span></a></h4> </li>
+												<li> <h4><a href="#"><span>포토갤러리</span></a></h4> </li>
+												<li> <h4><a href="#"><span>의성노래</span></a></h4> </li>
+											</ul>
+										</div>
+										<div class="group">
+											<h3><a href="#"><span>자매결연</span></a></h3>
+											<ul class="depth3menu">
+												<li> <h4><a href="#"><span>국제</span></a></h4> </li>
+												<li> <h4><a href="#"><span>국내</span></a></h4> </li>
+												<li> <h4><a href="#"><span>산/관/학</span></a></h4> </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 						</li>
 					</ul>
 					<div class="category">
-						분야별정보? 
+						<h2 class="btn"> <a href="#" class="btn-category"><span>분야별 정보</span></a> </h2>
+						<div class="depth2menu">
+							<div class="part-introduce">
+								<dl>
+									<dt>분야별정보</dt>
+									<dd>군민과 함께하는 창조적인 희망군정</dd>
+								</dl>
+								<ul class="gotolnk">
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성읍면 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성장날 바로가기 <em>GO</em></span></a></li>
+										<li><a href="#" target="_blank" title="새창으로 열림"><span>의성마늘목장 바로가기 <em>GO</em></span></a></li>
+									</ul>
+							</div>
+							<div class="category-menu">
+								<ul>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate1.png" alt=""></span><span class="name">보건/복지</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate2.png" alt=""></span><span class="name">시설안내</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate3.png" alt=""></span><span class="name">지역경제</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate4.png" alt=""></span><span class="name">부동산</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate5.png" alt=""></span><span class="name">교육</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate6.png" alt=""></span><span class="name">교통정보</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate7.png" alt=""></span><span class="name">환경/위생</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate8.png" alt=""></span><span class="name">청소/재활용</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate9.png" alt=""></span><span class="name">체육문화시설</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate10.png" alt=""></span><span class="name">재난안전</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate11.png" alt=""></span><span class="name">체험&middot;정보화마을</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate12.png" alt=""></span><span class="name">수도</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate13.png" alt=""></span><span class="name">세금</span></a></li>
+									<li> <a href="#"><span class="img"><img src="../../static/images/usc/icon_cate14.png" alt=""></span><span class="name">농축산정보</span></a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -105,3 +529,6 @@
 	</div>
 	<!--// header gnb -->
 </div>
+<script>
+usc.gnbEvent();
+</script>

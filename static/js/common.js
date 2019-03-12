@@ -107,6 +107,16 @@ var usc = {
 
 
 $(document).ready(function(){
+	// SUBPAGE TOP VISUAL
+	var compTopbg = (function(){
+		if($(".top-visual-zone").length < 1) return false;
+
+		var vz = $(".top-visual-zone"),
+			 bg = vz.find(".bgimg").attr("src");
+
+		vz.css({"background": "url("+bg+") no-repeat 50% 50%", "background-size": "cover"});
+	})();
+
 	// TAB 
 	var compTab = (function(){
 		$('*[role=tab]').on("click", function(){

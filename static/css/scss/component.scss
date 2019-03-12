@@ -110,6 +110,7 @@
 				span {display: inline-block; vertical-align: middle; width: 25px; height: 25px; text-indent: -999em; @include background("common/sp_icon.png",no-repeat -100px -50px);}
 			}
 		}
+		.currentlanguage {position: absolute; left:155px; top:25px; float: left; width: 43px; height: 43px; @include background("common/icon_language.png",no-repeat 50% 50%); text-indent: -999em; }
 	}
 	.header-bottom {
 		background:#d59f2b; min-height: 50px;
@@ -225,10 +226,15 @@
 #container {
 	position: relative; min-width: 1320px; border-bottom: 1px solid $bd1;
 	& > .inner {width: 1320px; margin:0 auto; }
-	&:before {display: block; height: 50px; width: 50%; position: absolute;top:0; left:50%; content: ""; background:#383b3b;}
+	&:before {display: block; height: 50px; width: 50%; position: absolute;top:185px; left:50%; content: ""; background:#383b3b;}
 	#lnb {position: relative; width: 270px; float: left; margin-top: -50px;}
 	#contents {position: relative; padding-left:310px; padding-bottom: 50px;}
 
+	.top-visual-zone {
+		height: 185px; background:#fff;
+		p {width: 577px; height:185px; margin:0 auto; @include background("commonbg/img_usctxt.png",no-repeat 50% 50%); text-indent:-999em;}
+		.bgimg {display: none;}
+	}
 	.breadcrumb-zone {
 		position: relative; height: 50px; background:#383b3b; padding-left: 270px;
 		.breadcrumb {
@@ -836,6 +842,7 @@ input.w_password {width:135px;}
 			}
 			li:nth-child(1), li:nth-child(6) {display: none;}
 		}
+		.header-zoom,
 		.header-utilegroup {display: none}
 	}
 	.header-middle {
@@ -851,6 +858,11 @@ input.w_password {width:135px;}
 		.btn-menu-open {
 			position: absolute; right:0; top:0; 
 			a {display:block; height: 7.4rem; width:7.4rem; background:#785719;}
+		}
+		.usc-snsgroup,
+		.currentlanguage {display: none}
+		.comp-search {
+			width: 100%; 
 		}
 	}
 	.header-bottom {
@@ -937,6 +949,13 @@ input.w_password {width:135px;}
 		.footer-acmark {display: inline-block; position: static; width: 8rem;}
 		& + .footer-utilegroup {margin-top: 2.5vw;}
 	}
+}
+#container {
+	&:before {display: none;}
+	min-height: 500px;
+	#lnb,
+	.breadcrumb-zone,
+	#contents {display: none;}
 }
 
 

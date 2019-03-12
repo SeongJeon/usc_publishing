@@ -39,6 +39,13 @@
 #header .header-top .header-site li a { display: block; width: 120px; font-size: 12px; color: #fff; line-height: 40px; text-align: center; }
 #header .header-top .header-site .current a { color: #f15a22; background: #fff; }
 #header .header-top .header-site li:nth-child(1).current a:before { background-position: -50px -50px; }
+#header .header-top .header-zoom { float: left; margin-left: 15px; margin-top: 7px; overflow: hidden; }
+#header .header-top .header-zoom dt { float: left; font-size: 12px; color: rgba(255, 255, 255, 0.6); line-height: 24px; }
+#header .header-top .header-zoom dd { float: left; margin-left: 10px; }
+#header .header-top .header-zoom button { width: 24px; height: 24px; background: url("../../static/images/common/sp_icon.png") no-repeat 0 0; text-indent: -999em; }
+#header .header-top .header-zoom button.btn-zoomup { background-position: -300px -150px; }
+#header .header-top .header-zoom button.btn-zoomdown { background-position: -350px -150px; }
+#header .header-top .header-zoom button.btn-zoom100 { background-position: -400px -150px; }
 #header .header-utilegroup { float: right; padding-top: 7px; }
 #header .header-utilegroup .header-utile { display: inline-block; font-size: 11px; color: #e1e1e1; }
 #header .header-utilegroup .header-utile:after { display: block; clear: both; content: ""; }

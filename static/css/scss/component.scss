@@ -55,6 +55,17 @@
 			.current a {color:#f15a22; background:#fff; }
 			li:nth-child(1).current a:before {background-position: -50px -50px;} 
 		}
+		.header-zoom {
+			float: left; margin-left: 15px; margin-top: 7px; overflow: hidden;
+			dt {float: left;font-size: 12px; color:rgba(256,256,256,0.6); line-height: 24px;}
+			dd {float: left;margin-left: 10px;}
+			button {
+				width: 24px; height: 24px; @include background("common/sp_icon.png",no-repeat 0 0); text-indent: -999em;
+				&.btn-zoomup {background-position: -300px -150px;}
+				&.btn-zoomdown {background-position:-350px -150px;}
+				&.btn-zoom100 {background-position:-400px -150px;}
+			}
+		}
 	}
 	.header-utilegroup {
 		float: right; padding-top: 7px;

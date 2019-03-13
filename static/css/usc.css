@@ -405,9 +405,8 @@ BROWSER HACK
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width: 1024px) { #wrap.usc #header .header-bottom .header-utilegroup .header-utile a:before { display: inline-block; content: ""; vertical-align: middle; }
-  #wrap.usc #header .header-bottom .header-utilegroup .header-utile .icon-login:before { height: 1.5rem; width: 1.1rem; margin-right: 0.7rem; background: url("../../static/images/usc/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
-  #wrap.usc #header .header-bottom .header-utilegroup .header-utile .icon-join:before { height: 1.4rem; width: 1.5rem; margin-right: 0.6rem; background: url("../../static/images/usc/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
+@media (max-width: 1024px) { #wrap.usc #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/usc/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.usc #header .header-bottom .header-utilegroup .header-utile .icon-join:before { background: url("../../static/images/usc/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
   #wrap.usc #header #gnb .category { display: none; }
   #wrap.usc #gnb .gnb h2 a { line-height: 1.1; overflow: hidden; }
   #wrap.usc #gnb .gnb h2 a:before { display: block; content: ""; width: 100%; margin-top: 1.8rem; }

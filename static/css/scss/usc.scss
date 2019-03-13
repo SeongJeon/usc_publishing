@@ -863,15 +863,11 @@ MEDIA QUERY
 #wrap.usc #header {
 	.header-bottom {
 		.header-utilegroup .header-utile {
-			a:before {display: inline-block; content: ""; vertical-align: middle; }
-			.icon-login:before {height: 1.5rem; width: 1.1rem; margin-right: 0.7rem; @include background("usc/icon_gnb_login.png",no-repeat 50% 50%); background-size:auto 100%;}				
-			.icon-join:before {height: 1.4rem; width: 1.5rem; margin-right: 0.6rem; @include background("usc/icon_gnb_join.png",no-repeat 50% 50%); background-size:auto 100%;}				
+			.icon-login:before {@include background("usc/icon_gnb_login.png",no-repeat 50% 50%); background-size:auto 100%;}		
+			.icon-join:before {@include background("usc/icon_gnb_join.png",no-repeat 50% 50%); background-size:auto 100%;}
 		}
 	}
-	#gnb {
-		.category {display: none}
-
-	}
+	#gnb .category {display: none}
 }
 #wrap.usc #gnb {
 	.gnb {

@@ -10,10 +10,13 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 
 var usc = {
 	// GNB
-	gnbEvent: function(){
+	gnbEvent: function(num){
+
+
 		var spd = 300,  pc=0, mo=0,
-		 	header = $("#header"), gnb = $("#gnb"), _idx,
-		 	ary = ['630', '807', '500', '365', '735', '365'],
+		 	header = $("#header"), gnb = $("#gnb"), _idx, 
+		 	v = num
+		 	ary = num.split(",");
 		 	dim = "<span class='dimd'></span>";
 
 

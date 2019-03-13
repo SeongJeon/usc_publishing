@@ -837,17 +837,17 @@ input.w_password {width:135px;}
 	position: static; height: auto;
 	.inner {width:auto;}
 	.header-top {
-		height: auto;
-		.header-site {
-			float: none;
-			li {
-				width:25%; box-sizing: border-box;
-				a {width: 100%; line-height: 4.2rem; height: 4.2rem; font-size: 1.3rem;}
-			}
-			li:nth-child(1), li:nth-child(6) {display: none;}
-		}
-		.header-zoom,
-		.header-utilegroup {display: none}
+		height: auto; display: none;
+		// .header-site {
+		// 	float: none;
+		// 	li {
+		// 		width:25%; box-sizing: border-box;
+		// 		a {width: 100%; line-height: 4.2rem; height: 4.2rem; font-size: 1.3rem;}
+		// 	}
+		// 	li:nth-child(1), li:nth-child(6) {display: none;}
+		// }
+		// .header-zoom,
+		// .header-utilegroup {display: none}
 	}
 	.header-middle {
 		height: 7.4rem;
@@ -901,7 +901,7 @@ input.w_password {width:135px;}
 		& > .btn {
 			display: block; position: absolute; right: 0; top:0;
 			button {
-				position: relative; height: 6rem; width: 6rem; background: #3c2b0c;
+				position: relative; height: 6rem; width: 6rem; background: rgba(0,0,0,0.5);
 				&:before {display: block; content: ""; position: absolute; left:50%; top:50%; width: 3rem; height: 2px; background:rgba(256,256,256,0.6); transform: rotate(45deg); margin-left: -1.5rem;}
 				&:after {display: block; content: ""; position: absolute; left:50%; top:50%; width: 3rem; height: 2px; background:rgba(256,256,256,0.6); transform: rotate(-45deg); margin-left: -1.5rem;}
 				span {display: inline-block; text-indent: -999em;}
@@ -916,7 +916,12 @@ input.w_password {width:135px;}
 					& + li:before {display: none; }
 					& + li {border-left: 1px solid #fed4a0; box-sizing: border-box;}
 				}
-				a {display: block; font-size: 1.2rem; line-height: 4.3rem; color:#555; text-align: center;}
+				a {
+					display: block; font-size: 1.2rem; line-height: 4.3rem; color:#555; text-align: center;
+					&:before {display: inline-block; content: ""; vertical-align: middle; }
+					&.icon-login:before {height: 1.5rem; width: 1.1rem; margin-right: 0.7rem;}				
+					&.icon-join:before {height: 1.4rem; width: 1.5rem; margin-right: 0.6rem;}				
+				}
 			}
 			.haeder-lang {
 				padding:1.4rem 0; text-align: center; margin-left: 0; display: block;

@@ -73,6 +73,9 @@
 #header .header-middle .comp-search > button span { display: inline-block; vertical-align: middle; width: 25px; height: 25px; text-indent: -999em; background: url("../../static/images/common/sp_icon.png") no-repeat -100px -50px; }
 #header .header-middle .currentlanguage { position: absolute; left: 155px; top: 25px; float: left; width: 43px; height: 43px; background: url("../../static/images/common/icon_language.png") no-repeat 50% 50%; text-indent: -999em; }
 #header .header-bottom { background: #d59f2b; min-height: 50px; }
+#header .header-bottom .gnb-mo-title { display: none; }
+#header .header-bottom > .btn { display: none; }
+#header.open { z-index: 1001; }
 
 #footer { position: relative; height: 270px; min-width: 1320px; background: #fff; }
 #footer .inner { position: relative; width: 1320px; margin: 0 auto; }
@@ -427,7 +430,7 @@ input.w_password { width: 135px; }
 
 @-moz-document url-prefix() {}
 @media (max-width: 1024px) { #header, #footer, #container { min-width: inherit; }
-  #header { height: auto; }
+  #header { position: static; height: auto; }
   #header .inner { width: auto; }
   #header .header-top { height: auto; }
   #header .header-top .header-site { float: none; }
@@ -453,9 +456,14 @@ input.w_password { width: 135px; }
   #header .header-middle .comp-search .form .btn button:after { display: block; content: ""; position: absolute; top: 3.5rem; left: 1.5rem; width: 4rem; height: 2px; background: #fff; -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
   #header .header-middle .comp-search .form .btn button span { display: inline-block; text-indent: -999em; }
   #header .header-middle .comp-search > button { display: none; right: 0; top: 0; height: 4.7rem; }
-  #header .header-bottom { display: none; position: absolute; right: 0; top: 0; max-width: 300px; width: 72vw; }
-  #header .header-bottom .gnb-mo-title { font-size: 2rem; line-height: 6rem; background: #785719; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-left: 1.6rem; box-sizing: border-box; color: #fff; }
-  #header .header-bottom .header-utilegroup { float: none; padding-top: 0; background: #fff5e4; }
+  #header .header-bottom { display: none; position: fixed; right: -100%; top: 0; max-width: 30rem; width: 72vw; height: 100vh; background: #fff; z-index: 1001; }
+  #header .header-bottom .gnb-mo-title { display: block; font-size: 2rem; line-height: 6rem; background: #785719; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-left: 1.6rem; box-sizing: border-box; color: #fff; }
+  #header .header-bottom > .btn { display: block; position: absolute; right: 0; top: 0; }
+  #header .header-bottom > .btn button { position: relative; height: 6rem; width: 6rem; background: #3c2b0c; }
+  #header .header-bottom > .btn button:before { display: block; content: ""; position: absolute; left: 50%; top: 50%; width: 3rem; height: 2px; background: rgba(255, 255, 255, 0.6); transform: rotate(45deg); margin-left: -1.5rem; }
+  #header .header-bottom > .btn button:after { display: block; content: ""; position: absolute; left: 50%; top: 50%; width: 3rem; height: 2px; background: rgba(255, 255, 255, 0.6); transform: rotate(-45deg); margin-left: -1.5rem; }
+  #header .header-bottom > .btn button span { display: inline-block; text-indent: -999em; }
+  #header .header-bottom .header-utilegroup { float: none; height: 10.1rem; padding-top: 0; background: #fff5e4; }
   #header .header-bottom .header-utilegroup .header-utile { display: block; border-bottom: 1px solid #fed4a0; }
   #header .header-bottom .header-utilegroup .header-utile li { width: 50%; }
   #header .header-bottom .header-utilegroup .header-utile li + li:before { display: none; }
@@ -510,9 +518,31 @@ input.w_password { width: 135px; }
   #footer .footer-markgroup .footer-qrcode { display: inline-block; position: static; margin-left: 3.6vw; width: 6rem; padding: 1rem 0.5rem 1rem 1rem; border: 1px solid #ddd; border-radius: 5px; }
   #footer .footer-markgroup .footer-acmark { display: inline-block; position: static; width: 8rem; }
   #footer .footer-markgroup + .footer-utilegroup { margin-top: 2.5vw; }
-  #container { min-height: 500px; }
+  #container { padding-top: 0; }
   #container:before { display: none; }
   #container .top-visual-zone, #container #lnb, #container .breadcrumb-zone, #container #contents { display: none; }
+  #gnb .gnb { position: relative; }
+  #gnb .gnb h2 a { display: block; height: 7.2rem; width: 7.2rem; font-size: 1.2rem; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #393939; text-align: center; border-bottom: 1px solid #c5c5c5; line-height: 7.2rem; }
+  #gnb .gnb h3 a { display: block; position: relative; padding: 0 2rem 0 0.3rem; font-size: 1.3rem; color: #383838; line-height: 3.1rem; border-bottom: 1px solid #d6d5d5; }
+  #gnb .gnb h3 a:before { display: block; position: absolute; right: 0.7rem; top: 50%; margin-top: -0.5px; content: ""; width: 1.2rem; height: 1px; background: #3b3b3b; }
+  #gnb .gnb h3 a:after { display: block; position: absolute; right: 0.7rem; top: 50%; margin-top: -0.5px; content: ""; width: 1.2rem; height: 1px; background: #3b3b3b; transform: rotate(90deg); }
+  #gnb .gnb h4 a { color: #818181; font-size: 1rem; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+  #gnb .gnb h4 a:before { display: inline-block; content: ""; vertical-align: middle; margin-right: 0.6rem; width: 0.3rem; height: 0.3rem; background: #818181; border-radius: 100px; }
+  #gnb .gnb h4 a:hover:before { background: #ff6826; }
+  #gnb .gnb .part-introduce { display: none; }
+  #gnb .gnb .menu { padding-top: 0.3rem; }
+  #gnb .gnb .depth2menu { display: none; overflow-y: auto; position: absolute; left: 7.2rem; top: 0; width: calc(100% - 7.2rem); height: calc(100vh - 16.1rem); border-left: 1px solid #c5c5c5; }
+  #gnb .gnb .depth2menu .group { padding: 0 1.4rem; }
+  #gnb .gnb .depth2menu .group + .gropu { margin-top: 0.7rem; }
+  #gnb .gnb .depth2menu .group h3:only-child a { padding-right: 0; }
+  #gnb .gnb .depth2menu .group h3:only-child a:before { display: none; }
+  #gnb .gnb .depth2menu .group h3:only-child a:after { display: none; }
+  #gnb .gnb .depth2menu .menu { padding-bottom: 10rem; }
+  #gnb .gnb .depth3menu { display: none; }
+  #gnb .gnb .depth3menu li { line-height: 2.6rem; padding-left: 0.6rem; box-sizing: border-box; }
+  #gnb .gnb .depth3menu li:first-child { padding-top: 0.8rem; }
+  #gnb .gnb .clicked, #gnb .gnb .current, #gnb .gnb .clicked h3 a, #gnb .gnb h2 a:hover, #gnb .gnb h3 a:hover, #gnb .gnb h4 a:hover { color: #ff6826; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
+  #gnb .gnb > li:first-child .depth2menu { display: block; }
   br.t, br.pc { display: none; }
   br.m { display: inherit; }
   .view-m { display: inherit; }
@@ -528,3 +558,5 @@ input.w_password { width: 135px; }
   /* BUTTON */
   *[class^=btn-txt][class$=_more] { width: 6rem; height: auto; line-height: 1.9rem; font-size: 0.9rem; }
   *[class^=btn-txt][class$=_more]:after { margin-left: 2px; } }
+@media (max-width: 360px) { #gnb .gnb h3 a { font-size: 1.2rem; } }
+@media (max-width: 321px) { #gnb .gnb h3 a { font-size: 1.1rem; } }

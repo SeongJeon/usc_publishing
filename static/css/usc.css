@@ -2,58 +2,57 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
-body.pc #wrap.usc #header #gnb .gnb > li { float: left; }
-body.pc #wrap.usc #header #gnb .gnb h2 { position: relative; }
-body.pc #wrap.usc #header #gnb .gnb h2:before { display: inline-block; position: absolute; left: 0; top: 50%; margin-top: -10px; content: ""; width: 1px; height: 20px; background: #e0c58b; vertical-align: middle; }
-body.pc #wrap.usc #header #gnb .gnb h2 a { display: block; position: relative; width: 210px; line-height: 50px; font-size: 20px; color: #fff; text-align: center; }
-body.pc #wrap.usc #header #gnb .gnb h2.over a, body.pc #wrap.usc #header #gnb .gnb h2 a:hover { font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-body.pc #wrap.usc #header #gnb .gnb h2.over a:before, body.pc #wrap.usc #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: 0; left: 0; width: 100%; content: ""; background: #f0412c; height: 6px; z-index: 1000; }
-body.pc #wrap.usc #header #gnb .gnb h2.over a:after, body.pc #wrap.usc #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -9px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #f0412c; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
-body.pc #wrap.usc #header #gnb .category .btn { position: absolute; right: 0; top: 5px; }
-body.pc #wrap.usc #header #gnb .category .btn a { display: block; overflow: hidden; position: relative; width: 260px; height: 39px; padding-right: 38px; font-size: 20px; color: #fff; line-height: 40px; text-align: center; box-sizing: border-box; background: #785719; }
-body.pc #wrap.usc #header #gnb .category .btn a:before { display: block; position: absolute; right: 0; top: 0; width: 38px; height: 39px; background: url("../../static/images/usc/sp_main.png") no-repeat -300px -250px; content: ""; }
-body.pc #wrap.usc #header #gnb .category .btn a:after { display: block; position: absolute; right: 75px; top: 50%; margin-top: -5px; width: 14px; height: 10px; background: url("../../static/images/usc/sp_main.png") no-repeat -200px -200px; content: ""; }
-body.pc #wrap.usc #header .depth2menu { display: none; overflow: hidden; position: absolute; top: 100%; left: 0; background: #fff; z-index: 100; }
-body.pc #wrap.usc #header .depth2menu .part-introduce { float: left; width: 305px; }
-body.pc #wrap.usc #header .depth2menu .part-introduce dl { padding-left: 68px; margin-top: 20px; padding-top: 24px; background: url("../../static/images/usc/img_gnb.png") no-repeat 0 0; }
-body.pc #wrap.usc #header .depth2menu .part-introduce dt { font-size: 26px; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #2a2a2a; }
-body.pc #wrap.usc #header .depth2menu .part-introduce dd { margin-top: 11px; font-size: 15px; color: #525252; }
-body.pc #wrap.usc #header .depth2menu .part-introduce dd img { margin-top: 15px; }
-body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk { margin-top: 20px; padding: 0 26px; }
-body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk li + li { margin-top: 10px; }
-body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk a { display: block; position: relative; padding: 0 19px; font-size: 15px; color: #666; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; border: 1px solid #d6d5d5; line-height: 43px; }
-body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk a em { float: right; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 12px; }
-body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk a em:after { display: inline-block; content: ">"; margin-left: 3px; vertical-align: middle; }
-body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk a:hover { border-color: #f27405; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk a:hover:after { display: block; position: absolute; left: 0; top: 0; content: ""; border: 1px solid #f27405; width: 100%; height: 100%; box-sizing: border-box; }
-body.pc #wrap.usc #header .depth2menu .menu { float: left; overflow: hidden; min-height: 365px; width: 1015px; padding: 34px 0 30px 15px; border-left: 1px solid #e2e1e1; }
-body.pc #wrap.usc #header .depth2menu .menu h3 a { display: block; font-size: 17px; color: #525252; line-height: 35px; background: #ffeda9; text-align: center; }
-body.pc #wrap.usc #header .depth2menu .menu h3 a:hover, body.pc #wrap.usc #header .depth2menu .menu h3 a.current { background: #f27405; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; }
-body.pc #wrap.usc #header .depth2menu .menu h3 a.small { font-size: 15px; }
-body.pc #wrap.usc #header .depth2menu .menu h4 a { font-size: 15px; color: #525252; line-height: 26px; }
-body.pc #wrap.usc #header .depth2menu .menu h4 a:before { display: inline-block; content: ""; width: 4px; height: 4px; background: #1e4363; margin-right: 7px; vertical-align: middle; }
-body.pc #wrap.usc #header .depth2menu .menu h4 a:hover, body.pc #wrap.usc #header .depth2menu .menu h4 a.current { color: #f27405; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-body.pc #wrap.usc #header .depth2menu .menu h4 a:hover:before, body.pc #wrap.usc #header .depth2menu .menu h4 a.current:before { background: #f27405; }
-body.pc #wrap.usc #header .depth2menu .menu .depth3menu { padding: 9px 0 0 10px; }
-body.pc #wrap.usc #header .depth2menu .menu .menugroup:after { display: block; clear: both; content: ""; }
-body.pc #wrap.usc #header .depth2menu .menu .menugroup .group { float: left; width: 20%; padding-left: 10px; box-sizing: border-box; }
-body.pc #wrap.usc #header .depth2menu .menu .menugroup + .menugroup { margin-top: 10px; }
-body.pc #wrap.usc #header .depth2menu .menu .menugroup.other { margin-top: -200px; }
-body.pc #wrap.usc #header .depth2menu .menu.other .menugroup { float: left; width: 80%; }
-body.pc #wrap.usc #header .depth2menu .menu.other .menugroup .group { width: 25%; }
-body.pc #wrap.usc #header .depth2menu .menu.other .menugroup:nth-of-type(2) { width: 20%; float: right; margin-top: 0; padding-left: 10px; box-sizing: border-box; }
-body.pc #wrap.usc #header .depth2menu .category-menu { float: left; width: 1015px; padding: 42px 50px 48px; border-left: 1px solid #e2e1e1; }
-body.pc #wrap.usc #header .depth2menu .category-menu ul:after { display: block; clear: both; content: ""; }
-body.pc #wrap.usc #header .depth2menu .category-menu li { float: left; width: 14%; text-align: center; }
-body.pc #wrap.usc #header .depth2menu .category-menu li:nth-child(7) ~ li { margin-top: 30px; }
-body.pc #wrap.usc #header .depth2menu .category-menu a { display: block; }
-body.pc #wrap.usc #header .depth2menu .category-menu a .img { display: block; position: relative; overflow: hidden; width: 90px; height: 90px; border-radius: 100px; margin: 0 auto; }
-body.pc #wrap.usc #header .depth2menu .category-menu a .img img { position: absolute; left: 0; top: 0; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; }
-body.pc #wrap.usc #header .depth2menu .category-menu a .name { display: block; margin-top: 11px; font-size: 17px; color: #525252; }
-body.pc #wrap.usc #header .depth2menu .category-menu a:hover .img img { top: -100%; }
-body.pc #wrap.usc #header .depth2menu .category-menu a:hover .name { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-decoration: underline; }
-body.pc #wrap.usc #header.open { border-bottom: 6px solid #f27405; }
-
+@media (min-width: 1025px) { body.pc #wrap.usc #header #gnb .gnb > li { float: left; }
+  body.pc #wrap.usc #header #gnb .gnb h2 { position: relative; }
+  body.pc #wrap.usc #header #gnb .gnb h2:before { display: inline-block; position: absolute; left: 0; top: 50%; margin-top: -10px; content: ""; width: 1px; height: 20px; background: #e0c58b; vertical-align: middle; }
+  body.pc #wrap.usc #header #gnb .gnb h2 a { display: block; position: relative; width: 210px; line-height: 50px; font-size: 20px; color: #fff; text-align: center; }
+  body.pc #wrap.usc #header #gnb .gnb h2.over a, body.pc #wrap.usc #header #gnb .gnb h2 a:hover { font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+  body.pc #wrap.usc #header #gnb .gnb h2.over a:before, body.pc #wrap.usc #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: 0; left: 0; width: 100%; content: ""; background: #f0412c; height: 6px; z-index: 1000; }
+  body.pc #wrap.usc #header #gnb .gnb h2.over a:after, body.pc #wrap.usc #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -9px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #f0412c; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
+  body.pc #wrap.usc #header #gnb .category .btn { position: absolute; right: 0; top: 5px; }
+  body.pc #wrap.usc #header #gnb .category .btn a { display: block; overflow: hidden; position: relative; width: 260px; height: 39px; padding-right: 38px; font-size: 20px; color: #fff; line-height: 40px; text-align: center; box-sizing: border-box; background: #785719; }
+  body.pc #wrap.usc #header #gnb .category .btn a:before { display: block; position: absolute; right: 0; top: 0; width: 38px; height: 39px; background: url("../../static/images/usc/sp_main.png") no-repeat -300px -250px; content: ""; }
+  body.pc #wrap.usc #header #gnb .category .btn a:after { display: block; position: absolute; right: 75px; top: 50%; margin-top: -5px; width: 14px; height: 10px; background: url("../../static/images/usc/sp_main.png") no-repeat -200px -200px; content: ""; }
+  body.pc #wrap.usc #header .depth2menu { display: none; overflow: hidden; position: absolute; top: 100%; left: 0; background: #fff; z-index: 100; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce { float: left; width: 305px; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce dl { padding-left: 68px; margin-top: 20px; padding-top: 24px; background: url("../../static/images/usc/img_gnb.png") no-repeat 0 0; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce dt { font-size: 26px; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #2a2a2a; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce dd { margin-top: 11px; font-size: 15px; color: #525252; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce dd img { margin-top: 15px; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk { margin-top: 20px; padding: 0 26px; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk li + li { margin-top: 10px; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk a { display: block; position: relative; padding: 0 19px; font-size: 15px; color: #666; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; border: 1px solid #d6d5d5; line-height: 43px; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk a em { float: right; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 12px; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk a em:after { display: inline-block; content: ">"; margin-left: 3px; vertical-align: middle; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk a:hover { border-color: #f27405; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+  body.pc #wrap.usc #header .depth2menu .part-introduce .gotolnk a:hover:after { display: block; position: absolute; left: 0; top: 0; content: ""; border: 1px solid #f27405; width: 100%; height: 100%; box-sizing: border-box; }
+  body.pc #wrap.usc #header .depth2menu .menu { float: left; overflow: hidden; min-height: 365px; width: 1015px; padding: 34px 0 30px 15px; border-left: 1px solid #e2e1e1; }
+  body.pc #wrap.usc #header .depth2menu .menu h3 a { display: block; font-size: 17px; color: #525252; line-height: 35px; background: #ffeda9; text-align: center; }
+  body.pc #wrap.usc #header .depth2menu .menu h3 a:hover, body.pc #wrap.usc #header .depth2menu .menu h3 a.current { background: #f27405; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; }
+  body.pc #wrap.usc #header .depth2menu .menu h3 a.small { font-size: 15px; }
+  body.pc #wrap.usc #header .depth2menu .menu h4 a { font-size: 15px; color: #525252; line-height: 26px; }
+  body.pc #wrap.usc #header .depth2menu .menu h4 a:before { display: inline-block; content: ""; width: 4px; height: 4px; background: #1e4363; margin-right: 7px; vertical-align: middle; }
+  body.pc #wrap.usc #header .depth2menu .menu h4 a:hover, body.pc #wrap.usc #header .depth2menu .menu h4 a.current { color: #f27405; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+  body.pc #wrap.usc #header .depth2menu .menu h4 a:hover:before, body.pc #wrap.usc #header .depth2menu .menu h4 a.current:before { background: #f27405; }
+  body.pc #wrap.usc #header .depth2menu .menu .depth3menu { padding: 9px 0 0 10px; }
+  body.pc #wrap.usc #header .depth2menu .menu .menugroup:after { display: block; clear: both; content: ""; }
+  body.pc #wrap.usc #header .depth2menu .menu .menugroup .group { float: left; width: 20%; padding-left: 10px; box-sizing: border-box; }
+  body.pc #wrap.usc #header .depth2menu .menu .menugroup + .menugroup { margin-top: 10px; }
+  body.pc #wrap.usc #header .depth2menu .menu .menugroup.other { margin-top: -200px; }
+  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup { float: left; width: 80%; }
+  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup .group { width: 25%; }
+  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup:nth-of-type(2) { width: 20%; float: right; margin-top: 0; padding-left: 10px; box-sizing: border-box; }
+  body.pc #wrap.usc #header .depth2menu .category-menu { float: left; width: 1015px; padding: 42px 50px 48px; border-left: 1px solid #e2e1e1; }
+  body.pc #wrap.usc #header .depth2menu .category-menu ul:after { display: block; clear: both; content: ""; }
+  body.pc #wrap.usc #header .depth2menu .category-menu li { float: left; width: 14%; text-align: center; }
+  body.pc #wrap.usc #header .depth2menu .category-menu li:nth-child(7) ~ li { margin-top: 30px; }
+  body.pc #wrap.usc #header .depth2menu .category-menu a { display: block; }
+  body.pc #wrap.usc #header .depth2menu .category-menu a .img { display: block; position: relative; overflow: hidden; width: 90px; height: 90px; border-radius: 100px; margin: 0 auto; }
+  body.pc #wrap.usc #header .depth2menu .category-menu a .img img { position: absolute; left: 0; top: 0; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; }
+  body.pc #wrap.usc #header .depth2menu .category-menu a .name { display: block; margin-top: 11px; font-size: 17px; color: #525252; }
+  body.pc #wrap.usc #header .depth2menu .category-menu a:hover .img img { top: -100%; }
+  body.pc #wrap.usc #header .depth2menu .category-menu a:hover .name { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-decoration: underline; }
+  body.pc #wrap.usc #header.open { border-bottom: 6px solid #f27405; } }
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -61,7 +60,7 @@ MAIN
 #wrap.usc #container.main:before { display: none; }
 #wrap.usc #container.main .inner { width: 1320px; margin: 0 auto; }
 #wrap.usc #container.main .inner:after { display: block; clear: both; content: ""; }
-#wrap.usc #container.main .main-top-zone { position: absolute; left: 0; top: 0; width: 100%; z-index: 100; }
+#wrap.usc #container.main .main-top-zone { position: absolute; left: 0; top: 180px; width: 100%; z-index: 100; }
 #wrap.usc #container.main .main-top-zone .inner { display: table; height: 145px; width: 1320px; margin: 0 auto; }
 #wrap.usc #container.main .main-top-zone .top-txt { display: table-cell; vertical-align: middle; }
 #wrap.usc #container.main .main-top-zone .top-menu { display: table-cell; width: 445px; }
@@ -406,8 +405,24 @@ BROWSER HACK
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width: 1024px) { #wrap.usc #header #gnb .category { display: none; }
+@media (max-width: 1024px) { #wrap.usc #header .header-bottom .header-utilegroup .header-utile a:before { display: inline-block; content: ""; vertical-align: middle; }
+  #wrap.usc #header .header-bottom .header-utilegroup .header-utile .icon-login:before { height: 1.5rem; width: 1.1rem; margin-right: 0.7rem; background: url("../../static/images/usc/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.usc #header .header-bottom .header-utilegroup .header-utile .icon-join:before { height: 1.4rem; width: 1.5rem; margin-right: 0.6rem; background: url("../../static/images/usc/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.usc #header #gnb .category { display: none; }
+  #wrap.usc #gnb .gnb h2 a { line-height: 1.1; overflow: hidden; }
+  #wrap.usc #gnb .gnb h2 a:before { display: block; content: ""; width: 100%; margin-top: 1.8rem; }
+  #wrap.usc #gnb .gnb > li:nth-child(1) h2 a:before { background: url("../../static/images/usc/icon_gnb_m1.png") no-repeat 50% 0; background-size: auto 2.1rem; height: 2.1rem; margin-bottom: 0.8rem; }
+  #wrap.usc #gnb .gnb > li:nth-child(2) h2 a:before { background: url("../../static/images/usc/icon_gnb_m2.png") no-repeat 50% 0; background-size: auto 2.3rem; height: 2.3rem; margin-bottom: 0.8rem; }
+  #wrap.usc #gnb .gnb > li:nth-child(3) h2 a:before { background: url("../../static/images/usc/icon_gnb_m3.png") no-repeat 50% 0; background-size: auto 2rem; height: 2rem; margin-bottom: 0.9rem; }
+  #wrap.usc #gnb .gnb > li:nth-child(4) h2 a:before { background: url("../../static/images/usc/icon_gnb_m4.png") no-repeat 50% 0; background-size: auto 1.8rem; height: 1.8rem; margin-bottom: 0.9rem; }
+  #wrap.usc #gnb .gnb > li:nth-child(5) h2 a:before { background: url("../../static/images/usc/icon_gnb_m5.png") no-repeat 50% 0; background-size: auto 1.6rem; height: 1.6rem; margin-bottom: 1rem; }
+  #wrap.usc #gnb .gnb > li:nth-child(1) h2 a:hover:before, #wrap.usc #gnb .gnb > li:nth-child(1) h2 a.clicked:before, #wrap.usc #gnb .gnb > li:nth-child(1) h2 a.current:before { background: url("../../static/images/usc/icon_gnb_m1_over.png") no-repeat 50% 0; background-size: auto 2.1rem; height: 2.1rem; margin-bottom: 0.8rem; }
+  #wrap.usc #gnb .gnb > li:nth-child(2) h2 a:hover:before, #wrap.usc #gnb .gnb > li:nth-child(2) h2 a.clicked:before, #wrap.usc #gnb .gnb > li:nth-child(2) h2 a.current:before { background: url("../../static/images/usc/icon_gnb_m2_over.png") no-repeat 50% 0; background-size: auto 2.3rem; height: 2.3rem; margin-bottom: 0.8rem; }
+  #wrap.usc #gnb .gnb > li:nth-child(3) h2 a:hover:before, #wrap.usc #gnb .gnb > li:nth-child(3) h2 a.clicked:before, #wrap.usc #gnb .gnb > li:nth-child(3) h2 a.current:before { background: url("../../static/images/usc/icon_gnb_m3_over.png") no-repeat 50% 0; background-size: auto 2rem; height: 2rem; margin-bottom: 0.9rem; }
+  #wrap.usc #gnb .gnb > li:nth-child(4) h2 a:hover:before, #wrap.usc #gnb .gnb > li:nth-child(4) h2 a.clicked:before, #wrap.usc #gnb .gnb > li:nth-child(4) h2 a.current:before { background: url("../../static/images/usc/icon_gnb_m4_over.png") no-repeat 50% 0; background-size: auto 1.8rem; height: 1.8rem; margin-bottom: 0.9rem; }
+  #wrap.usc #gnb .gnb > li:nth-child(5) h2 a:hover:before, #wrap.usc #gnb .gnb > li:nth-child(5) h2 a.clicked:before, #wrap.usc #gnb .gnb > li:nth-child(5) h2 a.current:before { background: url("../../static/images/usc/icon_gnb_m5_over.png") no-repeat 50% 0; background-size: auto 1.6rem; height: 1.6rem; margin-bottom: 1rem; }
   #wrap.usc #container.main .inner { width: auto; padding: 0 2.2rem; }
+  #wrap.usc #container.main .main-top-zone { top: 0; }
   #wrap.usc #container.main .main-top-zone .inner { display: block; width: auto; height: auto; }
   #wrap.usc #container.main .main-top-zone .top-txt { display: block; text-align: center; padding-top: 2rem; }
   #wrap.usc #container.main .main-top-zone .top-txt img { width: 80%; margin: 0 auto; }

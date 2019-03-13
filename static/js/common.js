@@ -363,6 +363,15 @@ $(document).ready(function(){
 		})
 	})();
 
+	// DATEPICKER
+	var compDatepicker = (function(){
+		$( ".js-datepicker" ).datepicker({
+			selectOtherMonths: true,
+			showOtherMonths: true,
+			dateFormat: 'yy-mm-dd'
+		});
+	})();
+
 })
 
 

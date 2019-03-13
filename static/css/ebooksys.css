@@ -3,6 +3,8 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
+@media (min-width:1025px){
+/*-------------------------------------------------------------------------------*/
 body.pc .ebooksys #header .title a {overflow:hidden; display:block; width: 281px; height: 50px; background: url("../../static/images/ebooksys/img_logo.png") no-repeat 50% 50%; text-indent: -999em;}
 body.pc .ebooksys #header {position:absolute; top:0; width: 100%; height: 110px; background: rgba(0,0,0,0.6); z-index: 100;}
 body.pc .ebooksys #header .header-middle {height: 110px;}
@@ -24,7 +26,7 @@ body.pc .ebooksys #header .depth2menu .menugroup:after {display:block; clear:bot
 body.pc .ebooksys #header .depth2menu .menugroup .group {float: left; width: 11.1%;}
 body.pc .ebooksys #header .depth2menu .menugroup h3 a {display:block; text-align: center; font-size: 18px; color:#373737; line-height: 22px;}
 body.pc .ebooksys #header .depth2menu .menugroup h3 a .number {display: block; font-size: 15px; color:#f25e3d;}
-body.pc .ebooksys #header .depth2menu .menugroup + .menugroup {margin-top: 25px;} 
+body.pc .ebooksys #header .depth2menu .menugroup .group:nth-of-type(9) ~ .group {margin-top: 25px}
 body.pc .ebooksys #header .depth2menu.other .menu {padding:26px 0;}
 body.pc .ebooksys #header .depth2menu.other .menugroup .group {margin-left: 36px; width: auto;}
 body.pc .ebooksys #header .depth2menu.other .menugroup .group:first-of-type {margin-left: 0}
@@ -34,6 +36,15 @@ body.pc .ebooksys #header .depth2menu.other .menugroup h3 a:hover {color:#fff; b
 
 body.pc .ebooksys #header.open {z-index: 1000; background: #fff; border-bottom: 6px solid #f25e3d;}
 body.pc .ebooksys #header.open .header-bottom {background: #9e5433; }
+
+body.pc .ebooksys #header .header-utilegroup .header-utile li + li:before {margin:0 18px;}
+body.pc .ebooksys #header .header-utilegroup {position: absolute; right: 0; top:33px;}
+body.pc .ebooksys #header .header-utilegroup a {font-size: 14px; color:rgba(256,256,256,0.6);}
+body.pc .ebooksys #header .header-utilegroup a:before {display: inline-block; content: ""; vertical-align: middle; position:relative; top:-1px;}
+body.pc .ebooksys #header .header-utilegroup a.icon-login:before {width:14px; height: 19px; background: url("../../static/images/ebooksys/icon_gnb_login_pc.png") no-repeat 50% 50%;margin-right: 7px;}
+body.pc .ebooksys .header-utilegroup a.icon-join:before {width:18px; height: 17px; background: url("../../static/images/ebooksys/icon_gnb_join_pc.png") no-repeat 50% 50%; margin-right: 5px}
+/*-------------------------------------------------------------------------------*/
+}
 
 .ebooksys #header .depth2menu .menugroup h3 a[class^=icon-]:before {display:block; content: ""; width: 100px; height: 100px; margin:0 auto 10px; }
 .ebooksys #header a.icon-gnb1:before {background: url(../../static/images/ebooksys/icon_gnb1.png) no-repeat 50% 50%;}
@@ -74,24 +85,24 @@ body.pc .ebooksys #header.open .header-bottom {background: #9e5433; }
 .ebooksys #header a.icon-gnb17:hover:before {background: url(../../static/images/ebooksys/icon_gnb17_over.png) no-repeat 50% 50%;}
 .ebooksys #header a.icon-gnb18:hover:before {background: url(../../static/images/ebooksys/icon_gnb18_over.png) no-repeat 50% 50%;}
 
-.ebooksys #header a.icon-gnb1.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb1_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb2.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb2_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb3.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb3_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb4.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb4_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb5.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb5_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb6.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb6_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb7.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb7_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb8.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb8_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb9.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb9_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb10.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb10_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb11.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb11_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb12.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb12_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb13.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb13_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb14.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb14_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb15.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb15_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb16.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb16_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb17.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb17_over.png) no-repeat 50% 50%;}
-.ebooksys #header a.icon-gnb18.current:hover:before {background: url(../../static/images/ebooksys/icon_gnb18_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb1.current:before {background: url(../../static/images/ebooksys/icon_gnb1_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb2.current:before {background: url(../../static/images/ebooksys/icon_gnb2_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb3.current:before {background: url(../../static/images/ebooksys/icon_gnb3_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb4.current:before {background: url(../../static/images/ebooksys/icon_gnb4_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb5.current:before {background: url(../../static/images/ebooksys/icon_gnb5_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb6.current:before {background: url(../../static/images/ebooksys/icon_gnb6_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb7.current:before {background: url(../../static/images/ebooksys/icon_gnb7_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb8.current:before {background: url(../../static/images/ebooksys/icon_gnb8_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb9.current:before {background: url(../../static/images/ebooksys/icon_gnb9_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb10.current:before {background: url(../../static/images/ebooksys/icon_gnb10_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb11.current:before {background: url(../../static/images/ebooksys/icon_gnb11_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb12.current:before {background: url(../../static/images/ebooksys/icon_gnb12_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb13.current:before {background: url(../../static/images/ebooksys/icon_gnb13_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb14.current:before {background: url(../../static/images/ebooksys/icon_gnb14_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb15.current:before {background: url(../../static/images/ebooksys/icon_gnb15_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb16.current:before {background: url(../../static/images/ebooksys/icon_gnb16_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb17.current:before {background: url(../../static/images/ebooksys/icon_gnb17_over.png) no-repeat 50% 50%;}
+.ebooksys #header a.icon-gnb18.current:before {background: url(../../static/images/ebooksys/icon_gnb18_over.png) no-repeat 50% 50%;}
 
 .ebooksys #footer {height: 210px}
 .ebooksys #footer .footer-utilegroup {padding:0;}
@@ -317,9 +328,14 @@ LAYOUT
 	.ebooksys #header .header-bottom .header-utilegroup {height: 4.3rem;}
 	.ebooksys #gnb .gnb .depth2menu {height: calc(100vh - 4.3rem);}
 	.ebooksys #gnb .gnb .depth2menu .menu {}
-	.ebooksys #gnb .gnb .depth2menu .group {float: left;}
-	.ebooksys #gnb .gnb h3 a {border-bottom: 0; }
-
+	.ebooksys #gnb .gnb .depth2menu .group {float: left; width: 50%; padding:0; margin-top: 1.4rem}
+	.ebooksys #gnb .gnb .depth2menu .menugroup {padding:0.4rem 2rem 0 1.7rem;}
+	.ebooksys #gnb .gnb .depth2menu .menugroup:after {display:block; clear:both; content:""}
+	.ebooksys #header .depth2menu .menugroup h3 a[class^=icon-] {border-bottom: 0; line-height: 1.1; padding:0; font-size: 1.2rem; text-align: center;}
+	.ebooksys #header .depth2menu .menugroup h3 a[class^=icon-]:before {position: static; width: 6.6rem; height: 6.6rem; -webkit-background-size: 100% 100% !important; background-size: 100% 100% !important; margin-top: 0;}
+	.ebooksys #header .depth2menu .menugroup h3 a[class^=icon-] span {display: block;}
+	.ebooksys #header .depth2menu .menugroup h3 a[class^=icon-] .number {margin-top: 0.3rem; color:#f25e3d; font-size: 1rem; display: block; }
+	.ebooksys #header .depth2menu.other .group {float: none; width: 100%; margin-top: 0}
 
 	.ebooksys #footer .footer-utilegroup {padding:0 2rem 4rem;}
 	.ebooksys #container > .inner {width: 100%}
@@ -428,6 +444,7 @@ MAIN
 
 
 @media (max-width: 640px) {
+
 	.ebooksys .main .section .title {margin:0 0 2rem 0; padding:0;}
 	.ebooksys .main .main-slide .list [class^='togo']{display:inline-block; margin-left:3rem;}
 	.ebooksys .main .main-slide .list [class^='togo'] a:before {width:6rem; height:6rem; margin-bottom:0.4rem; background-size:100%; border-radius:6rem;}

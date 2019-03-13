@@ -23,11 +23,11 @@ var usc = {
 	 	function pcGnb(){
 	 		if(pc==1) return false;
 
-	 		console.log("pc");
-
 	 		$('.btn-search-open button').unbind("click");
 	 		$("#gnb-search .btn-close").unbind("click");
 	 		$('.btn-menu-open a').unbind("click");
+	 		$("#gnb h2 a,#gnb h3 a").unbind("click");
+	 		$(".header-bottom").show();
 
 			$("h2 a", gnb).on("mouseenter", function(){
 				var $this = $(this);
@@ -62,7 +62,6 @@ var usc = {
 
 		function moGnb(){
 			if(mo==1) return false;
-			console.log("mo");
 
 			gnb.unbind("mouseleave");
 			$("h2 a", gnb).unbind("mouseenter");
@@ -83,6 +82,7 @@ var usc = {
 					$(this).hide();
 					$(".btn-menu-open button").attr({"aria-expanded": false}).focus();
 					$("#wrap .dimd").remove();
+					header.removeClass("open");
 				});
 
 				$(".clicked", gnb).removeClass("clicked");
@@ -104,6 +104,8 @@ var usc = {
 			// 주메뉴 2depth
 			$("#gnb h3 a").on("click", function(){
 				var $this = $(this).closest(".group");
+
+				console.log("hi");
 
 				if($this.find(".depth3menu").length < 1) return;
 

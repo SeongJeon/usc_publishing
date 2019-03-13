@@ -23,6 +23,35 @@ LAYOUT
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
+.openleader #container > .inner {width:auto;}
+.openleader #container:before {display:none;}
+.openleader .main-visual .section-01 {background:url(../images/openleader/bg_main_visual01.png) no-repeat center top; background-size:cover;}
+.openleader .main-visual [class*=section-] > .inner {position:relative; width:1320px; margin:0 auto;}
+.openleader .main-visual [class*=section-] > .inner:after {display:block; content:""; clear:both;}
+.openleader .main-visual [class*=section-] h3.tit {display:inline-block; padding:22px 10px 0; border-bottom:3px solid #1058a8; font-size:22px; color:#000; font-weight:bold;}
+.openleader .main-visual .section-01 .inner > .tit {float:right; margin:50px 70px 28px 0;}
+.openleader .main-visual .section-01 .inner .name {position:absolute; left:110px; bottom:70px;}
+.openleader .main-visual .section-01 .inner .calendar {clear:both; position:relative; float:right; width:593px; background:#fff;}
+.openleader .main-visual .section-01 .inner .calendar .inner {height:189px; border-top:1px solid #dbdbdb; vertical-align:top;}
+.openleader .main-visual .section-01 .inner .calendar .inner .date {float:left; width:151px; height:100%; background:#eff0f1; font-size:19px; color:#b4b4b4; font-weight:bold; text-align:center; vertical-align:middle;}
+.openleader .main-visual .section-01 .inner .calendar .inner .date .day {display:block; font-family: "NanumSquareB"; font-size:70px;  color:#000;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list {float:left; overflow:hidden; height:190px;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul {position:relative; padding:0 16px;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li {position:relative; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; width:390px; overflow:hidden; padding:0 0 0 15px; line-height:40px;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:before {position:absolute; left:0; top:17px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .ico {display:inline-block; height:26px; line-height:26px; padding:0 13px; border:1px solid; border-radius:15px; -webkit-box-sizing:border-box; box-sizing:border-box; }
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color1 {}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color2 {}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color3 {}
+.openleader .main-visual .section-01 .inner .calendar .slick-arrow {position:absolute; right:0; top:0;}
+.openleader .main-visual .section-01 .inner .calendar .slick-prev {}
+.openleader .main-visual .section-01 .inner .calendar .slick-next {}
+.openleader .main-visual .section-01 .inner .list-quick {clear:both; float:right;}
+.openleader .main-visual .section-02 {}
+.openleader .main-visual > .slick-arrow {position:absolute; display:block; width:70px; height:70px; margin-left:-676px; text-indent:-9999px; z-index:100;}
+.openleader .main-visual > .slick-prev {left:50%; top:298px; background:url(../images/openleader/bg_main_visual_prev.png) no-repeat;}
+.openleader .main-visual > .slick-next {left:50%; top:375px; background:url(../images/openleader/bg_main_visual_next.png) no-repeat;}
+
 
 
 

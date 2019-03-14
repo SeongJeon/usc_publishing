@@ -162,6 +162,7 @@ MAIN
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service { padding-left: 120px; overflow: hidden; }
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service li { float: left; position: relative; width: 150px; }
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service li:after { display: block; content: ""; position: absolute; left: 0; top: 11px; width: 1px; height: 108px; background: #e2e1e1; }
+#wrap.usclib #container.main .main-favorit-zone .lst-favorit-service li:first-child:after { display: none; }
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service a { display: block; }
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service a .icon { display: block; position: relative; width: 90px; height: 90px; overflow: hidden; border-radius: 100px; margin: 0 auto; }
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service a .icon img { position: absolute; left: 0; top: 0; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; }

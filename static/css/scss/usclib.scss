@@ -330,6 +330,7 @@ MAIN
 			padding-left: 120px;  overflow:hidden;
 			li {float: left; position:relative; width: 150px;}
 			li:after {display: block; content: ""; position: absolute; left:0; top:11px; width: 1px; height: 108px; background:#e2e1e1;}
+			li:first-child:after {display: none;}
 			a {
 				display: block;
 				.icon {

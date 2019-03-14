@@ -116,7 +116,9 @@ body.pc #wrap.usclib #header {
 }
 //-------------------------------------------------------------------------------
 }
-
+#wrap.usclib #footer {
+	background:#364550;
+}
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -376,8 +378,20 @@ MAIN
 			.indicator {
 				position: absolute; right: 74px; top:23px;
 				.month {
-					font-size: 22px; font-family: $font3; color:#2b2b2b; 
+					font-size: 22px; font-family: $font3; color:#2b2b2b; padding:0 28px;
 					em {color:#ec560c;}
+				}
+				.btn-arrow {
+					position: absolute; top:0; 
+					button {width: 12px; height: 23px; text-indent: -999em;}
+					&.btn-prev{
+						left:0; top:0;
+						button {@include background("usclib/main/icon_prev1.png",no-repeat 50% 50%);}
+					}
+					&.btn-next {
+						right:0; top:0;
+						button {@include background("usclib/main/icon_next1.png",no-repeat 50% 50%);}
+					}
 				}
 			}
 			.calendar {
@@ -391,11 +405,12 @@ MAIN
 						td {font-size: 15px; color:#484848; text-align: center; padding:4px 0; height: 24px;}
 						a {display:inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; color:#fff; background:#136dc1; border-radius: 100px;}
 						.today {display:inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; color:#fff; background:#fb5706; border-radius: 100px;}
+						tr:first-child td {padding-top:11px;}
 					}
 				}
-				.txt {color:#787878; font-size: 15px; font-family: $font2; text-align: center;}
+				.txt {margin-top: 10px; color:#787878; font-size: 15px; font-family: $font2; text-align: center;}
 				.noti {
-					background: #eff0f1; text-align: center; height: 30px; line-height: 30px;
+					background: #eff0f1; text-align: center; height: 30px; line-height: 30px; margin-top: 8px;
 					p {display: inline-block; font-size: 16px; color:#484848; font-family: $font2;}
 					p + p {margin-left: 20px;}
 					.bullet {
@@ -428,7 +443,7 @@ MAIN
 				.name {display: block; overflow:hidden; text-align: center; font-size: 16px; color:#484848; margin-top: 12px; text-overflow:ellipsis; white-space: nowrap; }
 			}
 			.slick-dots {
-				text-align: center; margin-top: 19px;
+				text-align: center; margin-top: 9px;
 				li {display: inline-block; margin-left:4px;}
 				li:first-child {margin-left: 0;}
 				button {width: 14px; height: 14px; background:#c7c1bf; border-radius: 100px; text-indent: -999em;}

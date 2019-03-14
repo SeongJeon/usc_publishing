@@ -85,7 +85,7 @@ MAIN
 .openleader .main-visual .section-02 .inner .petition .write .tit .tail {font-style:italic;}
 .openleader .main-visual .section-02 .inner .petition .write .inner {padding:22px 25px 20px;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .txt { font-size:17px; line-height:22px;color:rgba(255,255,255,0.7);;}
-.openleader .main-visual .section-02 .inner .petition .write .inner .btn {position:relative; display:block; width:200px; height:50px; line-height:50px; padding:0 0 0 15px; background:#fff; font-size:17px; color:#212121;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn {position:relative; display:block; width:200px; height:50px; line-height:50px; margin:105px 0 0; padding:0 0 0 15px; background:#fff; font-size:17px; color:#212121;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:before {position:absolute; left:144px; top:25px; display:block; content:""; width:38px; height:1px; background:#3c3c3c;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:after {position:absolute; left:174px; top:22px; display:block; content:""; width:6px; height:6px; border-top:1px solid #3c3c3c; border-right:1px solid #3c3c3c; -webkit-transform:rotate(180deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
 .openleader .main-visual .section-02 .inner .petition .link {}
@@ -159,7 +159,7 @@ MEDIA QUERY
 @media (max-width: 1024px) {
 	/* 민원모니터 이해 */
 	.usc .service-monitor .heading-h3 + .heading-h4 {margin:1rem 0 0 2rem;}
-	.usc .service-monitor .heading-h4 {margin:1.2rem 0 0 2rem;}
+	.usc .service-monitor .heading-h4 {margin:1.2rem 0 0 1.5rem;}
 	.usc .service-monitor .comp-lst_dotted {margin:0.5rem 0 0 3.5rem;}
 	.usc .service-monitor .comp-lst_hyphen {margin:0.5rem 0 1.5rem 3.5rem;}
 	.usc .service-monitor .heading-h4 + .comp-lst_hyphen {margin:0.5rem 0 2px 3.5rem;}

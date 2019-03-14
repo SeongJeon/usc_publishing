@@ -40,7 +40,7 @@
 									<div class="js-calendar">
 										<div class="inner">
 											<div class="date">2019.03<span class="day">22</span></div>
-											<div class="list">
+											<div id="list01" class="list">
 												<ul>
 													<li>
 														<span class="ico color1">군청</span>
@@ -68,11 +68,10 @@
 													</li>
 												</ul>
 											</div>
-											
 										</div>
 										<div class="inner">
 											<div class="date">2019.03<span class="day">23</span></div>
-											<div class="list">
+											<div id="list02" class="list">
 												<ul>
 													<li>
 														<span class="ico color1">군청</span>
@@ -100,41 +99,40 @@
 													</li>
 												</ul>
 											</div>
-											
 										</div>
 									</div>
-									
+									<div class="btn-more"><a href="#">주요일정 더보기</a></div>
 								</div>
 								<div class="list-quick">
 									<ul class="list">
-										<li>
+										<li class="togo1">
 											<a href="#">
 												<span class="txt">취임사</span>
-												<span class="after">바로가기</span>
+												<span class="after"><em>바로가기</em></span>
 											</a>
 										</li>
-										<li>
+										<li class="togo2">
 											<a href="#">
 												<span class="txt">걸어온길</span>
-												<span class="after">바로가기</span>
+												<span class="after"><em>바로가기</em></span>
 											</a>
 										</li>
-										<li>
+										<li class="togo3">
 											<a href="#">
 												<span class="txt">국민과의<br>약속</span>
-												<span class="after">바로가기</span>
+												<span class="after"><em>바로가기</em></span>
 											</a>
 										</li>
-										<li>
+										<li class="togo4">
 											<a href="#">
 												<span class="txt">공지사항<br>추진관련</span>
-												<span class="after">바로가기</span>
+												<span class="after"><em>바로가기</em></span>
 											</a>
 										</li>
-										<li>
+										<li class="togo5">
 											<a href="#">
 												<span class="txt">의성군<br>역대군수</span>
-												<span class="after">바로가기</span>
+												<span class="after"><em>바로가기</em></span>
 											</a>
 										</li>
 									</ul>
@@ -143,6 +141,7 @@
 						</div>
 						<div class="section-02">
 							<div class="inner">
+								<h2 class="tit"><img src="../../static/images/openleader/img_main_visual_tit.png" alt="활력넘치는 희망의성 ! 군민과 함꼐 만들어가겠습니다."></h2>
 								<div class="list-banner">
 									<h3 class="tit">생생 현장속으로</h3>
 									<ul class="list">
@@ -283,20 +282,44 @@
 	$(document).ready(function(){
 		// 메인비쥬얼
 		$('.js-main-visual').slick({
+			dots: true,
+			dotsClass: 'custom-paging',
+			customPaging: function(slider, i) {
+				return '<em>' + (i + 1) + '</em>' + "/" + slider.slideCount;
+			}
+
 		});
 		//주요일정 슬릭
 		$('.js-calendar').slick({
 			swipe:false
 		});
 		//주요일정 스크롤
-		var myScroll1 = new IScroll('.calendar .inner .list', { 
-			scrollX: false, 
-			scrollY: true, 
-			mouseWheel: true,
-			scrollbars: true,
-			interactiveScrollbars: true,
-			fadeScrollbars: true
-		});
+		/*$('.calendar .inner .list').each(function() {
+			console.log($(this).attr('id'))
+			new IScroll("#"+$(this).attr('id'), {
+				scrollX: false, 
+				scrollY: true, 
+				mouseWheel: true,
+				scrollbars: true,
+				interactiveScrollbars: true,
+				fadeScrollbars: true
+			});
+		});*/
+
+		//메인비쥬얼 퀵메뉴
+		list_quick_motion(0);
+		function list_quick_motion(i){
+			var list_li = $('.list-quick .list li').size(),
+				li_w = $('.list-quick .list > li').outerWidth(),
+				current = i + 1;
+			if(current <= list_li){
+				setTimeout(function(){
+					$('.list-quick li:eq('+ i +')').stop().animate({'left' : li_w * i},500);
+					list_quick_motion(current);
+				},500);
+			}
+
+		}
 
 	});
 

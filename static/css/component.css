@@ -298,19 +298,19 @@ p[class^=comp-lst][class*=_important]:before { display: inline-block; position: 
 
 /* TABLE */
 table[class^=comp-tbl] { table-layout: fixed; }
-table[class^=comp-tbl][class$=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; }
-table[class^=comp-tbl][class$=_datatype] thead th { height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
-table[class^=comp-tbl][class$=_datatype] thead th:first-child { border-left: 0; }
-table[class^=comp-tbl][class$=_datatype] thead tr:first-child { border-top: 0; }
-table[class^=comp-tbl][class$=_datatype] tbody th { height: 50px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 15px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
-table[class^=comp-tbl][class$=_datatype] tbody td { height: 50px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center; }
-table[class^=comp-tbl][class$=_datatype] tbody td:first-child { border-left: 0; }
-table[class^=comp-tbl][class$=_datatype] tbody tr:first-child td { border-top: 1px solid #7a7a7a; }
-table[class^=comp-tbl][class$=_formtype] { border-top: 2px solid #7a7a7a; color: #4b4b4b; }
-table[class^=comp-tbl][class$=_formtype] tbody th { height: 50px; padding: 6px 13px 6px 23px; width: 180px; border-bottom: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px; }
-table[class^=comp-tbl][class$=_formtype] tbody td { height: 50px; padding: 6px 15px; font-size: 15px; border-bottom: 1px solid #d9d6d5; text-align: center; box-sizing: border-box; text-align: left; }
-table[class^=comp-tbl][class$=_formtype] .important { float: right; color: #ff4e00; }
-table[class^=comp-tbl][class$=_formtype] .txt { line-height: 35px; }
+table[class^=comp-tbl][class*=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; }
+table[class^=comp-tbl][class*=_datatype] thead th { height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
+table[class^=comp-tbl][class*=_datatype] thead th:first-child { border-left: 0; }
+table[class^=comp-tbl][class*=_datatype] thead tr:first-child { border-top: 0; }
+table[class^=comp-tbl][class*=_datatype] tbody th { height: 50px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 15px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
+table[class^=comp-tbl][class*=_datatype] tbody td { height: 50px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center; }
+table[class^=comp-tbl][class*=_datatype] tbody td:first-child { border-left: 0; }
+table[class^=comp-tbl][class*=_datatype] tbody tr:first-child td { border-top: 1px solid #7a7a7a; }
+table[class^=comp-tbl][class*=_formtype] { border-top: 2px solid #7a7a7a; color: #4b4b4b; }
+table[class^=comp-tbl][class*=_formtype] tbody th { height: 50px; padding: 6px 13px 6px 23px; width: 180px; border-bottom: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px; }
+table[class^=comp-tbl][class*=_formtype] tbody td { height: 50px; padding: 6px 15px; font-size: 15px; border-bottom: 1px solid #d9d6d5; text-align: center; box-sizing: border-box; text-align: left; }
+table[class^=comp-tbl][class*=_formtype] .important { float: right; color: #ff4e00; }
+table[class^=comp-tbl][class*=_formtype] .txt { line-height: 35px; }
 
 /* INPUT */
 select[class^=comp-select] { width: 100%; padding: 0 10px; height: 35px; border: 1px solid #d9d6d5; box-sizing: border-box; font-size: 15px; color: #787878; background: #fff url("../../static/images/common/form_select3.png") no-repeat 100% 50%; }

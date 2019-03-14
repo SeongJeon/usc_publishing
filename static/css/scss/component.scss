@@ -567,7 +567,7 @@ p[class^=comp-lst] {
 table[class^=comp-tbl] {
 	table-layout: fixed; 
 
-	&[class$=_datatype] {
+	&[class*=_datatype] {
 		border-top: 2px solid #7a7a7a; color:#787878;
 		thead {
 			th {height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2; text-align: center;}
@@ -582,7 +582,7 @@ table[class^=comp-tbl] {
 		}
 	}
 
-	&[class$=_formtype] {
+	&[class*=_formtype] {
 		border-top: 2px solid #7a7a7a; color:#4b4b4b;
 		tbody{
 			th {

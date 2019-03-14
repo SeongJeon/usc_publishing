@@ -193,6 +193,12 @@ MAIN
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl tbody a { display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; color: #fff; background: #136dc1; border-radius: 100px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl tbody .today { display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; color: #fff; background: #fb5706; border-radius: 100px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .txt { color: #787878; font-size: 15px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti { background: #eff0f1; text-align: center; height: 30px; line-height: 30px; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti p { display: inline-block; font-size: 16px; color: #484848; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti p + p { margin-left: 20px; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti .bullet { display: inline-block; width: 16px; height: 16px; border-radius: 100px; text-indent: -999em; margin-right: 6px; vertical-align: middle; position: relative; top: -2px; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti .bullet.today { background: #fb5706; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti .bullet.event { background: #136dc1; }
 #wrap.usclib #container.main .main-etc-zone .books-zone { position: relative; padding: 75px 20px 0; height: 330px; }
 #wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] { position: absolute; left: 20px; top: 22px; }
 #wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist]:after { display: block; clear: both; content: ""; }

@@ -394,6 +394,16 @@ MAIN
 					}
 				}
 				.txt {color:#787878; font-size: 15px; font-family: $font2; text-align: center;}
+				.noti {
+					background: #eff0f1; text-align: center; height: 30px; line-height: 30px;
+					p {display: inline-block; font-size: 16px; color:#484848; font-family: $font2;}
+					p + p {margin-left: 20px;}
+					.bullet {
+						display: inline-block; width: 16px; height: 16px; border-radius: 100px; text-indent: -999em; margin-right: 6px; vertical-align: middle; position: relative; top:-2px;
+						&.today {background: #fb5706}
+						&.event {background: #136dc1}
+					}
+				}
 			}
 		}
 		// 인기/신간도서

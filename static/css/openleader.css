@@ -83,12 +83,12 @@ MAIN
 .openleader .main-visual .section-02 .inner .petition .write {background:#3f4972;}
 .openleader .main-visual .section-02 .inner .petition .write .tit {display:block; height:60px; line-height:60px; font-size:22px; color:#fff; border-bottom:1px solid #8d92a7; margin:0; padding:0 0 0 25px;}
 .openleader .main-visual .section-02 .inner .petition .write .tit .tail {font-style:italic;}
-.openleader .main-visual .section-02 .inner .petition .write .inner {padding:22px 25px 20px;}
+.openleader .main-visual .section-02 .inner .petition .write .inner {padding:22px 25px 20px; background:url(../images/openleader/bg_petition.png) no-repeat left bottom;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .txt { font-size:17px; line-height:22px;color:rgba(255,255,255,0.7);;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn {position:relative; display:block; width:200px; height:50px; line-height:50px; margin:105px 0 0; padding:0 0 0 15px; background:#fff; font-size:17px; color:#212121;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:before {position:absolute; left:144px; top:25px; display:block; content:""; width:38px; height:1px; background:#3c3c3c;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:after {position:absolute; left:174px; top:22px; display:block; content:""; width:6px; height:6px; border-top:1px solid #3c3c3c; border-right:1px solid #3c3c3c; -webkit-transform:rotate(180deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
-.openleader .main-visual .section-02 .inner .petition .link {}
+.openleader .main-visual .section-02 .inner .petition .link {background:#2c2c43;}
 .openleader .main-visual .section-02 .inner .petition .link a {}
 .openleader .main-visual .section-02 .inner .petition .link a .tail{}
 

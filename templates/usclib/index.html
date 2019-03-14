@@ -34,13 +34,13 @@
 					<div class="slider">
 						<div class="slide">
 							<p class="hidden">책으로 소통하는 행복한 도서관 의성군립도서관 Uiseong County Library</p>
-							<img src="../../static/images/usclib/temp/@img_main1.png" alt="" class="pcbg"><!-- pc배경 -->
-							<img src="../../static/images/usclib/temp/@img_main1_m.png" alt="" class="mobg"><!-- mobile배경 -->
+							<div class="pcbg"><img src="../../static/images/usclib/temp/@img_main1.png" alt="" class="pcbg"><!-- pc배경 --></div>
+							<div class="mobg"><img src="../../static/images/usclib/temp/@img_main1_m.png" alt="" class="mobg"><!-- mobile배경 --></div>
 						</div>
 						<div class="slide">
 							<p class="hidden">책으로 소통하는 행복한 도서관 의성군립도서관 Uiseong County Library</p>
-							<img src="../../static/images/usclib/temp/@img_main1.png" alt="" class="pcbg"><!-- pc배경 -->
-							<img src="../../static/images/usclib/temp/@img_main1_m.png" alt="" class="mobg"><!-- mobile배경 -->
+							<div class="pcbg"><img src="../../static/images/usclib/temp/@img_main1.png" alt="" class="pcbg"><!-- pc배경 --></div>
+							<div class="mobg"><img src="../../static/images/usclib/temp/@img_main1_m.png" alt="" class="mobg"><!-- mobile배경 --></div>
 						</div>
 					</div>
 					<div class="search">
@@ -484,13 +484,9 @@
 <script>
 	// 메인 비주얼
 	var mainSlider = (function(){
-		var bg;
-
 		$(".js-main-visual-zone .slide").each(function(){
-			if($(window).width() < 1025) bg = $(this).find(".mobg").attr("src");
-			else bg = $(this).find(".pcbg").attr("src");
-
-			$(this).css({"background":"url("+bg+") no-repeat 50% 50%", "background-size": "cover"});
+			$(this).find(".pcbg").css({"background":"url("+$(this).find(".pcbg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
+			$(this).find(".mobg").css({"background":"url("+$(this).find(".mobg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
 		})
 
 		$('.js-main-visual-zone > .slider').slick({

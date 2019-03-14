@@ -489,7 +489,7 @@ input.w_password { width: 135px; }
   #footer .footer-notice { position: static; margin-top: 2.4rem; text-align: center; }
   #footer .footer-notice .txt { font-size: 1.1rem; line-height: 1.7rem; }
   #footer .footer-notice .number { font-size: 1.5rem; line-height: 2.3rem; }
-  #footer .footer-notice .number .call { text-indent: -999em; width: 2.3rem; height: 2.3rem; background-size: 100% 100%; }
+  #footer .footer-notice .number .call { text-indent: -999em; width: 2.3rem; height: 2.3rem; background-size: 100% 100%; border-radius: 100px; }
   #footer .footer-utilegroup { margin-top: 3rem; padding: 0 2rem 4rem; font-size: 1rem; line-height: 1.4rem; text-align: center; }
   #footer .footer-utilegroup .footer-utile { display: inline-block; }
   #footer .footer-utilegroup .footer-utile li + li:before { margin: 0 0.8rem; height: 0.9rem; top: -1px; }

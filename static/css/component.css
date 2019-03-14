@@ -299,13 +299,13 @@ p[class^=comp-lst][class*=_important]:before { display: inline-block; position: 
 /* TABLE */
 table[class^=comp-tbl] { table-layout: fixed; }
 table[class^=comp-tbl][class*=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; }
-table[class^=comp-tbl][class*=_datatype] thead th { height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
+table[class^=comp-tbl][class*=_datatype] thead th { height: 50px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
 table[class^=comp-tbl][class*=_datatype] thead th:first-child { border-left: 0; }
-table[class^=comp-tbl][class*=_datatype] thead tr:first-child { border-top: 0; }
-table[class^=comp-tbl][class*=_datatype] tbody th { height: 50px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 15px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
+table[class^=comp-tbl][class*=_datatype] thead tr:last-child th { border-bottom-color: #7a7a7a; }
+table[class^=comp-tbl][class*=_datatype] tbody th { height: 50px; padding: 0 0.5rem; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 15px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
 table[class^=comp-tbl][class*=_datatype] tbody td { height: 50px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center; }
+table[class^=comp-tbl][class*=_datatype] tbody th:first-of-type { border-left: 0; }
 table[class^=comp-tbl][class*=_datatype] tbody td:first-child { border-left: 0; }
-table[class^=comp-tbl][class*=_datatype] tbody tr:first-child td { border-top: 1px solid #7a7a7a; }
 table[class^=comp-tbl][class*=_formtype] { border-top: 2px solid #7a7a7a; color: #4b4b4b; }
 table[class^=comp-tbl][class*=_formtype] tbody th { height: 50px; padding: 6px 13px 6px 23px; width: 180px; border-bottom: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px; }
 table[class^=comp-tbl][class*=_formtype] tbody td { height: 50px; padding: 6px 15px; font-size: 15px; border-bottom: 1px solid #d9d6d5; text-align: center; box-sizing: border-box; text-align: left; }
@@ -546,7 +546,7 @@ input.w_password { width: 135px; }
   #container .title-zone .page-utile .area-sns *[class^=icon-].icon-kakao { background: url("../../static/images/common/icon_utile_kakao.png") no-repeat 50% 50%; }
   #container .title-zone .page-utile .area-sns *[class^=icon-].icon-twitter { background: url("../../static/images/common/icon_utile_twitter.png") no-repeat 50% 50%; }
   #container .title-zone .page-utile .area-sns *[class^=icon-].icon-facebook { background: url("../../static/images/common/icon_utile_facebook.png") no-repeat 50% 50%; }
-  #container .contents-zone { padding-bottom: 3rem; }
+  #container .contents-zone { padding-bottom: 3rem; min-height: inherit; }
   #gnb .gnb { position: relative; }
   #gnb .gnb h2 a { display: block; height: 7.2rem; width: 7.2rem; font-size: 1.2rem; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #393939; text-align: center; border-bottom: 1px solid #c5c5c5; line-height: 7.2rem; }
   #gnb .gnb h3 a { display: block; position: relative; padding: 0 2rem 0 0.3rem; font-size: 1.3rem; color: #383838; line-height: 3.1rem; border-bottom: 1px solid #d6d5d5; }
@@ -597,6 +597,7 @@ input.w_password { width: 135px; }
   /* TABLE */
   table[class^=comp-tbl][class$=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; }
   table[class^=comp-tbl][class$=_datatype] thead th { height: 3.3rem; font-size: 1.2rem; }
+  table[class^=comp-tbl][class$=_datatype] tbody th { font-size: 1.2rem; height: 3.3rem; }
   table[class^=comp-tbl][class$=_datatype] tbody td { height: 3.3rem; font-size: 1.2rem; }
   table[class^=comp-tbl][class$=_formtype] tbody th { height: 4.3rem; padding: 0.5rem 1rem 0.5rem 0.7rem; width: 25%; font-size: 1.2rem; line-height: 3.3rem; }
   table[class^=comp-tbl][class$=_formtype] tbody td { height: 4.3rem; padding: 0.5rem 0.7rem; font-size: 1.2rem; }

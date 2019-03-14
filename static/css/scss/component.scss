@@ -570,15 +570,15 @@ table[class^=comp-tbl] {
 	&[class*=_datatype] {
 		border-top: 2px solid #7a7a7a; color:#787878;
 		thead {
-			th {height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2; text-align: center;}
+			th {height: 50px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2; text-align: center;}
 			th:first-child {border-left: 0;}
-			tr:first-child {border-top:0;}
+			tr:last-child th {border-bottom-color:#7a7a7a;}
 		}
 		tbody{
-			th {height: 50px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 15px; font-family: $font2; text-align: center;}
+			th {height: 50px;padding:0 0.5rem; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 15px; font-family: $font2; text-align: center;}
 			td {height: 50px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center;}
+			th:first-of-type {border-left: 0;}
 			td:first-child {border-left: 0;}
-			tr:first-child td {border-top: 1px solid #7a7a7a;}
 		}
 	}
 
@@ -1100,7 +1100,7 @@ input.w_password {width:135px;}
 			}
 		}
 	}
-	.contents-zone {padding-bottom:3rem;}
+	.contents-zone {padding-bottom:3rem; min-height: inherit;}
 }
 #gnb {
 	.gnb {
@@ -1222,6 +1222,7 @@ table[class^=comp-tbl] {
 			th {height: 3.3rem; font-size: 1.2rem;}
 		}
 		tbody{
+			th {font-size: 1.2rem; height: 3.3rem;}
 			td {height: 3.3rem; font-size: 1.2rem;}
 		}
 	}

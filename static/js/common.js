@@ -326,12 +326,18 @@ $(document).ready(function(){
 	var compTopUtile = (function(){
 		if($(".page-utile").length < 1) return false;
 
-		var spd=300;
+		var spd=300, pc = true, _w = 156;
+
+		if($(window).width() < 1025) pc = false;
+		else pc = true;
 		
 		$(".icon-sns, .icon-qrcode").on("click", function(){
 			var $this = $(this);
 
 			if($(".page-utile").hasClass('none')) return false;
+
+			if(pc==true) _w = 156;
+			else _w = 115;
 
 			$this.addClass('open').attr("aria-expanded", true);		
 			$this.closest(".page-utile").addClass("none");
@@ -340,7 +346,8 @@ $(document).ready(function(){
 				$this.next("div[role='dialog']").stop().slideDown(spd);
 			}else {
 				$this.next("div[role='dialog']").stop().show(0,function(){
-					$(this).animate({"width": 156+'px'},spd);
+					$(this).animate({"width": _w+'px'},spd).focus();
+
 				});
 			}
 		});
@@ -360,6 +367,11 @@ $(document).ready(function(){
 					$(".icon-sns, .icon-qrcode").removeClass("open").attr({'aria-expanded': false});
 				}
 			}
+		})
+
+		$(window).on("resize", function(){
+			if($(window).width() < 1025) pc = false;
+			else pc = true;
 		})
 	})();
 

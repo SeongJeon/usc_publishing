@@ -54,13 +54,21 @@ LAYOUT
   body.pc #wrap.usclib #header .depth2menu .category-menu a:hover .name { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-decoration: underline; }
   body.pc #wrap.usclib #header.open { border-bottom: 6px solid #f27405; } }
 #wrap.usclib #footer { background: #364550; }
+#wrap.usclib #footer .btn-gototop a { background: #4f4f4f; }
+#wrap.usclib #footer .footer-selectgroup .footer-comp-select dt button { background: #263038 url("../../static/images/usclib/form_select.png") no-repeat 100% 50%; border-color: #263038; }
+#wrap.usclib #footer .footer-utilegroup { color: #a9a9a9; padding-left: 0; }
+#wrap.usclib #footer .footer-utilegroup .footer-utile a { color: rgba(255, 255, 255, 0.7); }
+#wrap.usclib #footer .footer-utilegroup .footer-addr strong { color: #fff; }
+#wrap.usclib #footer .footer-notice .number { color: #c0e6f1; }
+#wrap.usclib #footer .footer-notice .number .call { background: url("../../static/images/usclib/icon_footer_call.png") no-repeat 50% 50%; }
+#wrap.usclib #footer .footer-notice .txt { color: #bababa; }
 
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
 #wrap.usclib #container.main .inner { width: 1320px; margin: 0 auto; }
 #wrap.usclib #container.main .main-visual-zone { position: relative; }
-#wrap.usclib #container.main .main-visual-zone .slider { position: relative; height: 350px; overflow: hidden; }
+#wrap.usclib #container.main .main-visual-zone .slider { position: relative; height: 350px; overflow: hidden; min-width: 1320px; }
 #wrap.usclib #container.main .main-visual-zone .slider .slide { height: 350px; width: 100%; }
 #wrap.usclib #container.main .main-visual-zone .slider .slide img { display: none; }
 #wrap.usclib #container.main .main-visual-zone .slider .slick-arrow { position: absolute; right: 0; width: 70px; height: 74px; text-indent: -999em; z-index: 1; }

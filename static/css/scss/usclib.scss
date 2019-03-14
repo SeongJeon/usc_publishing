@@ -118,6 +118,30 @@ body.pc #wrap.usclib #header {
 }
 #wrap.usclib #footer {
 	background:#364550;
+	.btn-gototop a {background:#4f4f4f;}
+	.footer-selectgroup {
+		.footer-comp-select {
+			dt{
+				button {background:#263038 url("../../static/images/usclib/form_select.png") no-repeat 100% 50%; border-color:#263038;}
+			}
+		}
+	}
+	.footer-utilegroup {
+		color:#a9a9a9; padding-left:0;
+		.footer-utile {
+			a {color:rgba(256,256,256,0.7);}
+		}
+		.footer-addr {
+			strong {color:#fff;}
+		}
+	}
+	.footer-notice {
+		.number {
+			color:#c0e6f1;
+			.call {@include background("usclib/icon_footer_call.png",no-repeat 50% 50%);}
+		}
+		.txt {color:#bababa;}
+	}
 }
 /* ------------------------------------------------------
 MAIN
@@ -128,7 +152,7 @@ MAIN
 	.main-visual-zone {
 		position: relative; 
 		.slider {
-			position: relative; height: 350px; overflow:hidden; 
+			position: relative; height: 350px; overflow:hidden; min-width: 1320px;
 			.slide {
 				height: 350px; width: 100%; 
 				img {display: none;}

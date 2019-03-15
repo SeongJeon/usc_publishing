@@ -688,7 +688,7 @@ input.w_password { width: 135px; }
   *[class^=comp-tab] li:nth-child(5n+1) a { border-left: 0; }
   *[class^=comp-tab] li:nth-child(4n+1) a { border-left: 1px solid #d1d1d1; }
   /* UI - SUBPAGE TOP */
-  *[class^=comp-iconbox] { min-height: 160px; padding: 2rem 3rem 1.5rem 0; }
+  *[class^=comp-iconbox] { min-height: 160px; padding: 2rem 2rem 1.5rem 0; }
   *[class^=comp-iconbox]:before { height: 5px; }
   *[class^=comp-iconbox]:after { width: 5px; top: 3px; }
   *[class^=comp-iconbox] .icon { left: 1.5rem; top: 2rem; width: 7rem; height: 7rem; }

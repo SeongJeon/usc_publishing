@@ -7,9 +7,8 @@
 LAYOUT
 ------------------------------------------------------ */
 @media (min-width:1025px){
-body.pc .usblib {
-	#header {
-		.header-middle .title a {width: 224px; height: 52px; background:url("../../static/images/usblib/img_logo.png") no-repeat 50% 50%;}
+	body.pc .usclib #header {
+		.header-middle .title a {width: 224px; height: 52px; background:url("../../static/images/usclib/img_logo.png") no-repeat 50% 50%;}
 		.header-bottom .sitemap {background: #1058a8}
 		&.header-type2 #gnb {
 			h2.over a:before,
@@ -19,14 +18,14 @@ body.pc .usblib {
 			h3 a:hover {background: #3cb7cd;}
 			h4 a:before{background: #1e4363;}
 		}
-		
+
 		&.header-type2.open {border-bottom-color:#1058a8;}
 		&.header-type2.open .header-bottom {border-bottom-color: #54c2d8;}
 	}
-	#gnb {
+	body.pc .usclib #gnb {
 		margin-left: 345px;
-		.depth2menu {width: 272px; height: 275px; padding-left: 40px;}
 		h2 a {width: 180px}
+		.depth2menu {width: 272px; height: 275px; padding-left: 40px;}
 		.gnb > li:nth-child(1) .depth2menu {left:0;}
 		.gnb > li:nth-child(2) .depth2menu {left:232px;}
 		.gnb > li:nth-child(3) .depth2menu {left:504px}
@@ -34,11 +33,6 @@ body.pc .usblib {
 		.gnb > li:nth-child(5) .depth2menu {left:1048px}
 		.gnb > li:nth-child(1) .depth2menu {width:232px; padding-left: 0}
 	}
-}
-
-
-
-
 }
 #wrap.usclib #footer {
 	background:#364550;
@@ -67,6 +61,7 @@ body.pc .usblib {
 		.txt {color:#bababa;}
 	}
 }
+#wrap.usclib #container {padding-top: 130px}
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -428,7 +423,6 @@ MAIN
 				&.btn-more * {@include background("usclib/main/icon_more.png",no-repeat 50% 50%);}
 			} 
 		}
-
 	}
 }
 

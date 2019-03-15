@@ -46,8 +46,7 @@ MAIN
 .village em[class*='local-'][class*='18'] {background:#ac8547}
 
 .village .section-visual:after {display:block;clear:both;content:'';}
-.village .section-visual .banner-wrap {position:relative;float:left;width:1192px;height:430px;}
-.village .section-visual .plan-wrap {float:left;}
+.village .section-visual .banner-wrap {position:relative;float:left;width:62.6%;height:430px;}
 .village .section-visual button[class*='btn-main-'] {position:absolute;right:16px;display:inline-block;width:70px;height:71px;text-indent:-999em;z-index:1;}
 .village .section-visual .btn-main-prev {top:157px;background:url(../images/village/btn_main_prev.png) no-repeat left top;}
 .village .section-visual .btn-main-next {bottom:126px;background:url(../images/village/btn_main_next.png) no-repeat left top;}
@@ -56,7 +55,7 @@ MAIN
 .village .section-visual .custom-paging > li em {font-size:18px;font-family:'NanumSquareEB';}
 .village .section-visual .custom-paging > li.slick-active {display:block;}
 
-.village .plan-wrap {width:711px;height:430px;padding:26px 0 0 18px;;background:url(../images/village/bg_plan.png) no-repeat left top;border:30px solid #45bf55;border-right:0;box-sizing:border-box;}
+.village .plan-wrap {float:left;width:37.4%;height:430px;padding:26px 0 0 18px;;background:url(../images/village/bg_plan.png) no-repeat left top;border:30px solid #45bf55;border-right:0;box-sizing:border-box;}
 .village .plan-wrap .month-wrap {position:relative;width:364px;}
 .village .plan-wrap .month-wrap:after {position:absolute;top:43px;left:0;display:block;width:100%;height:57px;border:1px solid #d6d5d5;content:'';}
 .village .plan-wrap h2 {margin-bottom:17px;font-size:22px;font-family:'NanumSquareB';color:#000;text-align:center;}
@@ -69,12 +68,19 @@ MAIN
 .village .plan-wrap .btn-plan-prev {left:18px;background:url(../images/village/btn_plan_prev.png) no-repeat left top;}
 .village .plan-wrap .btn-plan-next {right:18px;background:url(../images/village/btn_plan_next.png) no-repeat left top;}
 
-.village .section-info {position:relative;}
+.village .section-info {position:relative;margin-bottom:20px;}
 .village .section-info:after {display:block;clear:both;content:'';}
 .village .phone-ballon {position:absolute;left:187px;top:0;background:#45bf55;width:80px;height:120px;padding-top:17px;font-size:17px;color:#fff;text-align:center;line-height:1.5;border-radius:0 0 50px 50px;box-sizing:border-box;}
-.village .phone-ballon span {display:block;padding-bottom:39px;background:url(../images/village/bg_phone_arrow_off.png) no-repeat center bottom;}
-.village .phone-ballon.on {height:318px;}
-.village .phone-ballon.on span {position:absolute;bottom:20px;left:10px;background:url(../images/village/bg_phone_arrow_on.png) no-repeat center bottom;}
+.village .phone-ballon span {display:block;padding-bottom:39px;background:url(../images/village/bg_phone_arrow_off.png) no-repeat center bottom;animation:ballon 1s infinite;}
+
+@keyframes ballon {
+  0% {bottom: 200px}
+  50% {bottom: 0px}
+  100% {bottom: 200px}
+}
+	
+.village .phone-ballon.on span {position:absolute;bottom:14px;left:10px;background:url(../images/village/bg_phone_arrow_on.png) no-repeat center bottom;}
+
 .village .phone-wrap {display:none;background:#044d29;}
 .village .phone-inner {position:relative;width:1437px;margin:0 auto;padding:20px 0 20px 116px;box-sizing:border-box;}
 .village .phone-inner h3 {margin-bottom:14px;font-family:'NanumSquareEB';font-size:22px;color:#fff;}
@@ -92,7 +98,7 @@ MAIN
 .village .phone-inner .number-area em {display:inline-block;margin-right:18px;color:#ecf3c1;font-size:16px;font-family:'NanumSquareEB';}
 
 .village .news-wrap {max-width:1320px;margin:0 auto;padding-top:22px;}
-.village .news-wrap .notice-wrap {width:648px;height:327px;padding:28px;border:1px solid #d6d5d5;background:url(../images/village/bg_notice.png) no-repeat left top;box-sizing:border-box;}
+.village .news-wrap .notice-wrap {position:relative;float:left;width:648px;height:328px;padding:28px;border:1px solid #d6d5d5;background:url(../images/village/bg_notice.png) no-repeat left top;box-sizing:border-box;}
 .village .news-wrap .notice-wrap h3 {margin-bottom:20px;font-family:'NanumSquareB';font-size:22px;color:#222;}
 .village .news-wrap .notice-wrap h3 span {padding-bottom:3px;border-bottom:3px solid #45bf55;}
 .village .news-wrap .notice-wrap .notice-preview {margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid #d6d5d5;}
@@ -102,6 +108,7 @@ MAIN
 .village .news-wrap .notice-wrap .notice-con dt {margin-bottom:18px;font-family:'NanumSquareB';font-size:20px;color:#222;}
 .village .news-wrap .notice-wrap .notice-con em {font-size:16px;}
 .village .news-wrap .notice-wrap .notice-con dd {line-height:1.5;}
+.village .news-wrap .notice-wrap .btn-view {position:absolute;top:23px;right:20px;display:inline-block;width:29px;height:29px;background:#fff url(../images/village/btn_plus.png) no-repeat center center;border:1px solid #ccc;text-indent:-999em;}
 .village .notice-link li {position:relative;padding-left:10px;margin-top:10px;}
 .village .notice-link li:first-child {margin-top:0;}
 .village .notice-link li:before {position:absolute;top:8px;left:0;display:inline-block;width:3px;height:3px;background:#000;content:'';}
@@ -109,8 +116,56 @@ MAIN
 .village .notice-link li .tit {overflow:hidden;display:inline-block;width:70%;vertical-align:middle;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;color:#222;}
 .village .notice-link li .date {float:right;vertical-align:middle;color:#666;}
 
+.village .popup-wrap {height:329px;}
+.village .popup-wrap:after {display:block;clear:both;content:'';}
+.village .popup-tit {position:relative;float:left;width:214px;height:100%;padding:18px 20px 0;box-sizing:border-box;}
+.village .popup-tit h3 {margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid #d8d8d8;font-size:22px;font-family:'NanumSquareB';color:#222;line-height:34px;}
+.village .popup-tit h3 span {display:block;color:#7ab66c;}
+.village .popup-tit .txt {color:#666;line-height:26px;}
+.village .popup-area {float:left;width:456px;}
+.village .popup-wrap .popup-controls {position:absolute;bottom:0;left:22px;}
+.village .popup-wrap button[class*='btn-popup-'] {float:left;width:42px;height:42px;border:1px solid #ccc;text-indent:-999em;}
+.village .popup-wrap button[class*='btn-popup-'] + button[class*='btn-popup-'] {margin-left:-1px;}
+.village .popup-wrap .btn-popup-prev {background:url(../images/village/btn_popup_prev.png) no-repeat center center;}
+.village .popup-wrap .btn-popup-next {background:url(../images/village/btn_popup_next.png) no-repeat center center;}
+.village .popup-wrap .btn-popup-stop {background:url(../images/village/btn_popup_stop.png) no-repeat center center;}
+.village .popup-wrap .custom-paging {position:absolute;bottom:0;left:-46px;}
+.village .popup-wrap .custom-paging > li {display:none;font-family:'NanumSquareL';font-size:16px;color:#666;}
+.village .popup-wrap .custom-paging > li em {font-size:18px;font-family:'NanumSquareEB';}
+.village .popup-wrap .custom-paging > li.slick-active {display:block;}
 
+.village .section-service {padding:30px 0;background:url(../images/village/bg_service.png) no-repeat left top;background-size:cover;}
+.village .service-inner {max-width:1320px;margin:0 auto;}
+.village .service-inner:after {display:block;clear:both;content:'';}
+.village .service-inner h3 {float:left;width:120px;padding:20px 0 32px;background:url(../images/village/bg_service_arrow.png) no-repeat bottom left;font-size:23px;line-height:30px;font-family:'NanumSquareB';color:#2b2b2b;}
+.village .service-inner .service-list {float:left;width:90%;}
+.village .service-inner .service-list li {float:left;width:10%;}
+.village .service-inner .service-list .service01 {width:9%;}
+.village .service-inner .service-list .service07 {width:11%;}
+.village .service-inner .service-list a {display:block;padding-top:103px;font-size:17px;color:#555;text-align:center;}
 
+/* 자주찾는 서비스 ico */
+.village .service-inner .service-list .service01 a {background:url(../images/village/ico_service01_off.png) no-repeat center top;}
+.village .service-inner .service-list .service02 a {background:url(../images/village/ico_service02_off.png) no-repeat center top;}
+.village .service-inner .service-list .service03 a {background:url(../images/village/ico_service03_off.png) no-repeat center top;}
+.village .service-inner .service-list .service04 a {background:url(../images/village/ico_service04_off.png) no-repeat center top;}
+.village .service-inner .service-list .service05 a {background:url(../images/village/ico_service05_off.png) no-repeat center top;}
+.village .service-inner .service-list .service06 a {background:url(../images/village/ico_service06_off.png) no-repeat center top;}
+.village .service-inner .service-list .service07 a {background:url(../images/village/ico_service07_off.png) no-repeat center top;}
+.village .service-inner .service-list .service08 a {background:url(../images/village/ico_service08_off.png) no-repeat center top;}
+.village .service-inner .service-list .service09 a {background:url(../images/village/ico_service09_off.png) no-repeat center top;}
+.village .service-inner .service-list .service10 a {background:url(../images/village/ico_service10_off.png) no-repeat center top;}
+.village .service-inner .service-list a:hover {-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease}
+.village .service-inner .service-list .service01 a:hover {background:url(../images/village/ico_service01_on.png) no-repeat center top;}
+.village .service-inner .service-list .service02 a:hover {background:url(../images/village/ico_service02_on.png) no-repeat center top;}
+.village .service-inner .service-list .service03 a:hover {background:url(../images/village/ico_service03_on.png) no-repeat center top;}
+.village .service-inner .service-list .service04 a:hover {background:url(../images/village/ico_service04_on.png) no-repeat center top;}
+.village .service-inner .service-list .service05 a:hover {background:url(../images/village/ico_service05_on.png) no-repeat center top;}
+.village .service-inner .service-list .service06 a:hover {background:url(../images/village/ico_service06_on.png) no-repeat center top;}
+.village .service-inner .service-list .service07 a:hover {background:url(../images/village/ico_service07_on.png) no-repeat center top;}
+.village .service-inner .service-list .service08 a:hover {background:url(../images/village/ico_service08_on.png) no-repeat center top;}
+.village .service-inner .service-list .service09 a:hover {background:url(../images/village/ico_service09_on.png) no-repeat center top;}
+.village .service-inner .service-list .service10 a:hover {background:url(../images/village/ico_service10_on.png) no-repeat center top;}
 
 
 

@@ -120,7 +120,7 @@ MAIN
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li.on {border:4px solid #3f4972;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject {position:relative; overflow:hidden; display:block; width:260px; margin:0 0 12px; padding:0 0 0 17px; font-size:17px; color:#525252; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject:before {position:absolute; left:0; top:5px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .date {display:block; margin:0 0 0 14px; padding:0 0 0 25px; background:url(../images/openleader/ico_date.png) no-repeat left center;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .date {display:block; margin:0 0 0 14px; padding:0 0 0 25px; background:url(../images/openleader/ico_date.png) no-repeat left center;} 
 
 .openleader .main-visual .section-02 .inner .list-banner .banner {float:left;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img {}

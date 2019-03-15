@@ -71,15 +71,27 @@ MAIN
 .village .section-info {position:relative;margin-bottom:20px;}
 .village .section-info:after {display:block;clear:both;content:'';}
 .village .phone-ballon {position:absolute;left:187px;top:0;background:#45bf55;width:80px;height:120px;padding-top:17px;font-size:17px;color:#fff;text-align:center;line-height:1.5;border-radius:0 0 50px 50px;box-sizing:border-box;}
-.village .phone-ballon span {display:block;padding-bottom:39px;background:url(../images/village/bg_phone_arrow_off.png) no-repeat center bottom;animation:ballon 1s infinite;}
+.village .phone-ballon.animation {-webkit-animation:ballon 1s alternate infinite linear;-moz-animation:ballon 1s alternate infinite linear;-o-animation:ballon 1s alternate infinite linear;animation:ballon 1s alternate infinite linear;}
+.village .phone-ballon a {display:block;padding-bottom:39px;background:url(../images/village/bg_phone_arrow_off.png) no-repeat center bottom;}
 
-@keyframes ballon {
-  0% {bottom: 200px}
-  50% {bottom: 0px}
-  100% {bottom: 200px}
+@-webkit-keyframes ballon {
+	from {height:120px;}
+	to {height:150px;padding-top:50px;}
 }
-	
-.village .phone-ballon.on span {position:absolute;bottom:14px;left:10px;background:url(../images/village/bg_phone_arrow_on.png) no-repeat center bottom;}
+@-moz-keyframes ballon {
+	from {height:120px;}
+	to {height:150px;padding-top:50px;}
+}
+@-o-keyframes ballon {
+	from {height:120px;}
+	to {height:150px;padding-top:50px;}
+}
+@keyframes ballon {
+	from {height:120px;}
+	to {height:150px;padding-top:50px;}
+}
+
+.village .phone-ballon.on a {position:absolute;bottom:14px;left:10px;background:url(../images/village/bg_phone_arrow_on.png) no-repeat center bottom;}
 
 .village .phone-wrap {display:none;background:#044d29;}
 .village .phone-inner {position:relative;width:1437px;margin:0 auto;padding:20px 0 20px 116px;box-sizing:border-box;}

@@ -3,22 +3,23 @@
 LAYOUT
 ------------------------------------------------------ */
 @media (min-width: 1025px) { body.pc .usclib #header .header-middle .title a { width: 224px; height: 52px; background: url("../../static/images/usclib/img_logo.png") no-repeat 50% 50%; }
-  body.pc .usclib #header .header-bottom .sitemap { background: #1058a8; }
+  body.pc .usclib #header .header-bottom .sitemap { background: #3f9a82; }
   body.pc .usclib #header.header-type2 #gnb h2.over a:before, body.pc .usclib #header.header-type2 #gnb h2 a:hover:before { background: #1058a8; }
   body.pc .usclib #header.header-type2 #gnb h2.over a:after, body.pc .usclib #header.header-type2 #gnb h2 a:hover:after { border-color: #1058a8; }
-  body.pc .usclib #header.header-type2 #gnb h3 a:hover { background: #3cb7cd; }
-  body.pc .usclib #header.header-type2 #gnb h4 a:before { background: #1e4363; }
+  body.pc .usclib #header.header-type2 #gnb p a:hover { background: #3cb7cd; }
+  body.pc .usclib #header.header-type2 #gnb h3 a:before { background: #1e4363; }
   body.pc .usclib #header.header-type2.open { border-bottom-color: #1058a8; }
   body.pc .usclib #header.header-type2.open .header-bottom { border-bottom-color: #54c2d8; }
-  body.pc .usclib #gnb { margin-left: 345px; }
-  body.pc .usclib #gnb h2 a { width: 180px; }
-  body.pc .usclib #gnb .depth2menu { width: 272px; height: 275px; padding-left: 40px; }
+  body.pc .usclib #gnb { margin-left: 330px; }
+  body.pc .usclib #gnb h2 a { width: 150px; }
+  body.pc .usclib #gnb .depth2menu { width: 226px; height: 420px; padding-left: 36px; }
   body.pc .usclib #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }
-  body.pc .usclib #gnb .gnb > li:nth-child(2) .depth2menu { left: 232px; }
-  body.pc .usclib #gnb .gnb > li:nth-child(3) .depth2menu { left: 504px; }
-  body.pc .usclib #gnb .gnb > li:nth-child(4) .depth2menu { left: 776px; }
-  body.pc .usclib #gnb .gnb > li:nth-child(5) .depth2menu { left: 1048px; }
-  body.pc .usclib #gnb .gnb > li:nth-child(1) .depth2menu { width: 232px; padding-left: 0; } }
+  body.pc .usclib #gnb .gnb > li:nth-child(2) .depth2menu { left: 190px; }
+  body.pc .usclib #gnb .gnb > li:nth-child(3) .depth2menu { left: 416px; }
+  body.pc .usclib #gnb .gnb > li:nth-child(4) .depth2menu { left: 642px; }
+  body.pc .usclib #gnb .gnb > li:nth-child(5) .depth2menu { left: 868px; }
+  body.pc .usclib #gnb .gnb > li:nth-child(6) .depth2menu { left: 1094px; }
+  body.pc .usclib #gnb .gnb > li:nth-child(1) .depth2menu { width: 190px; padding-left: 0; } }
 #wrap.usclib #footer { background: #364550; }
 #wrap.usclib #footer .btn-gototop a { background: #4f4f4f; }
 #wrap.usclib #footer .footer-selectgroup .footer-comp-select dt button { background: #263038 url("../../static/images/usclib/form_select.png") no-repeat 100% 50%; border-color: #263038; color: #fff; }
@@ -231,27 +232,22 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width: 1024px) { /* ------------------------------------------------------ LAYOUT ------------------------------------------------------ */
-  #wrap.usclib #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/usc/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
-  #wrap.usclib #header .header-bottom .header-utilegroup .header-utile .icon-join:before { background: url("../../static/images/usc/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
-  #wrap.usclib #header #gnb .category { display: none; }
-  #wrap.usclib #gnb .gnb h2 a { line-height: 1.1; overflow: hidden; }
-  #wrap.usclib #gnb .gnb h2 a:before { display: block; content: ""; width: 100%; margin-top: 1.8rem; }
-  #wrap.usclib #gnb .gnb > li:nth-child(1) h2 a:before { background: url("../../static/images/usc/icon_gnb_m1.png") no-repeat 50% 0; background-size: auto 2.1rem; height: 2.1rem; margin-bottom: 0.8rem; }
-  #wrap.usclib #gnb .gnb > li:nth-child(2) h2 a:before { background: url("../../static/images/usc/icon_gnb_m2.png") no-repeat 50% 0; background-size: auto 2.3rem; height: 2.3rem; margin-bottom: 0.8rem; }
-  #wrap.usclib #gnb .gnb > li:nth-child(3) h2 a:before { background: url("../../static/images/usc/icon_gnb_m3.png") no-repeat 50% 0; background-size: auto 2rem; height: 2rem; margin-bottom: 0.9rem; }
-  #wrap.usclib #gnb .gnb > li:nth-child(4) h2 a:before { background: url("../../static/images/usc/icon_gnb_m4.png") no-repeat 50% 0; background-size: auto 1.8rem; height: 1.8rem; margin-bottom: 0.9rem; }
-  #wrap.usclib #gnb .gnb > li:nth-child(5) h2 a:before { background: url("../../static/images/usc/icon_gnb_m5.png") no-repeat 50% 0; background-size: auto 1.6rem; height: 1.6rem; margin-bottom: 1rem; }
-  #wrap.usclib #gnb .gnb > li:nth-child(1) h2 a:hover:before, #wrap.usclib #gnb .gnb > li:nth-child(1) h2 a.clicked:before, #wrap.usclib #gnb .gnb > li:nth-child(1) h2 a.current:before { background: url("../../static/images/usc/icon_gnb_m1_over.png") no-repeat 50% 0; background-size: auto 2.1rem; height: 2.1rem; margin-bottom: 0.8rem; }
-  #wrap.usclib #gnb .gnb > li:nth-child(2) h2 a:hover:before, #wrap.usclib #gnb .gnb > li:nth-child(2) h2 a.clicked:before, #wrap.usclib #gnb .gnb > li:nth-child(2) h2 a.current:before { background: url("../../static/images/usc/icon_gnb_m2_over.png") no-repeat 50% 0; background-size: auto 2.3rem; height: 2.3rem; margin-bottom: 0.8rem; }
-  #wrap.usclib #gnb .gnb > li:nth-child(3) h2 a:hover:before, #wrap.usclib #gnb .gnb > li:nth-child(3) h2 a.clicked:before, #wrap.usclib #gnb .gnb > li:nth-child(3) h2 a.current:before { background: url("../../static/images/usc/icon_gnb_m3_over.png") no-repeat 50% 0; background-size: auto 2rem; height: 2rem; margin-bottom: 0.9rem; }
-  #wrap.usclib #gnb .gnb > li:nth-child(4) h2 a:hover:before, #wrap.usclib #gnb .gnb > li:nth-child(4) h2 a.clicked:before, #wrap.usclib #gnb .gnb > li:nth-child(4) h2 a.current:before { background: url("../../static/images/usc/icon_gnb_m4_over.png") no-repeat 50% 0; background-size: auto 1.8rem; height: 1.8rem; margin-bottom: 0.9rem; }
-  #wrap.usclib #gnb .gnb > li:nth-child(5) h2 a:hover:before, #wrap.usclib #gnb .gnb > li:nth-child(5) h2 a.clicked:before, #wrap.usclib #gnb .gnb > li:nth-child(5) h2 a.current:before { background: url("../../static/images/usc/icon_gnb_m5_over.png") no-repeat 50% 0; background-size: auto 1.6rem; height: 1.6rem; margin-bottom: 1rem; }
+  #wrap.usclib #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/usclib/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.usclib #header .header-bottom .header-utilegroup .header-utile .icon-join:before { background: url("../../static/images/usclib/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.usclib #header .header-bottom .gnb-mo-title { background: #016dae; }
+  #wrap.usclib #header .header-bottom .header-utilegroup { background: #d6eef0; }
+  #wrap.usclib #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #73cdc3; }
+  #wrap.usclib #header .header-middle .btn-menu-open button { background-color: #3f9a82; }
+  #wrap.usclib #header .header-middle .title a { width: 23.3rem; background: url("../../static/images/usclib/img_logo.png") no-repeat 50% 50%; }
+  #wrap.usclib #gnb .category { display: none; }
+  #wrap.usclib #gnb .gnb .clicked, #wrap.usclib #gnb .gnb .current, #wrap.usclib #gnb .gnb .clicked h3 a, #wrap.usclib #gnb .gnb h2 a:hover, #wrap.usclib #gnb .gnb h3 a:hover, #wrap.usclib #gnb .gnb h4 a:hover { color: #016dae; }
   #wrap.usclib #footer .footer-selectgroup .footer-comp-select dt button { background-size: auto 100%; }
   #wrap.usclib #footer .footer-notice .number .call { background-size: 100% 100%; }
   #wrap.usclib #footer .footer-utilegroup .footer-utile { color: #d5d5d5; }
   #wrap.usclib #footer .footer-utilegroup .footer-addr strong { color: #d5d5d5; }
   #wrap.usclib #footer .footer-utilegroup .footer-utile a { color: #d5d5d5; }
   #wrap.usclib #footer .footer-utilegroup .footer-utile a strong { color: #fff; }
+  #wrap.usclib #container { padding-top: 0; }
   /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
   #wrap.usclib #container.main .inner { width: 100%; }
   #wrap.usclib #container.main .main-visual-zone .slider { min-width: inherit; height: 50rem; }

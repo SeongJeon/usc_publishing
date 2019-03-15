@@ -387,7 +387,51 @@
 		}
 	}
 }
-#gnb {}
+
+@media (min-width:1025px){
+	body.pc #header.header-type2 {
+		height: 130px;
+		.header-middle .title {z-index: 11;}
+		.header-bottom {position: absolute; left:0; top:40px; width: 100%; min-height: inherit; background: none;}
+		.header-bottom .header-utilegroup {display: none;}
+		#gnb {
+			padding-top: 35px; height: 90px;
+			.gnb {padding-right: 50px}
+			.gnb:after {display:block; clear:both; content:""}
+			.gnb > li {float: left; }
+			.gnb > li:before {display: inline-block; vertical-align: top; width: 1px; height: 20px; background: #e0dfdf; content: ""; }
+			.depth2menu {display:none; position: absolute; top:100%; padding-top: 24px;background: #fff; margin-top: 2px; }
+			.depth3menu > li {line-height: 26px;}
+			.depth3menu {padding-left:15px; padding-top: 11px;}
+			.depth4menu {background: #f4f4f4; margin-left: -15px; padding:6px 0 5px 25px; margin-top: 5px;}
+			.depth4menu > li {line-height: 22px}
+			h2 {display: inline-block; vertical-align: top; }
+			h2 a {display: block; position: relative; font-size: 18px; color:#343434; text-align: center; }
+			h3 a {display: block; width:100%; font-size: 17px; color:#2d2d2d; text-align: center; line-height: 35px; background: #d6eef0}
+			h4 a {font-size: 15px; color:#525252; }
+			h4 a:before{display: inline-block;content: ""; vertical-align: middle; width: 4px; height: 4px; margin-right: 10px;}
+			h5 a {font-size: 14px; color:#525252; }
+			h5 a:before{display: inline-block;content: "-"; vertical-align: middle; margin-right: 3px;}
+		
+			h2.over a,
+			h2 a:hover {font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
+			h2.over a:before,
+			h2 a:hover:before {display: block; position: absolute; left:0; top:52px; content: ""; width: 100%; height: 5px;}
+			h2.over a:after,
+			h2 a:hover:after {display: block; position: absolute; left:50%; top:45px; content: ""; width:20px; height:20px; border-width:5px; border-style:solid; background: #fff; border-radius: 100px; margin-left: -10px; box-sizing: border-box;z-index: 11;}
+			h3 a:hover {font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#fff;}
+		}
+
+		&.open {
+			border-bottom-width: 6px; border-bottom-style:solid;
+			.header-bottom {border-bottom-width: 2px; border-bottom-style:solid;}
+		}
+	}
+}
+
+
+
+
 
 
 .view-pc {display: inherit;}

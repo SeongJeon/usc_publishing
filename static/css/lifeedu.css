@@ -37,8 +37,9 @@ SUB PAGE
 .btn-box a:first-child {margin:0 0 4px 0;}
 
 .btn-box *[class*=btnn] { width: 174px; height: 45px; line-height: 45px; vertical-align: middle; text-align: center; font-size: 17px; box-sizing: border-box;}
-.comm-btn_btnn1_orange span:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life1.png") no-repeat center center; width:16px; height:29px; vertical-align: middle; margin-right:10px;}
-.comm-btn_btnn2_orange span:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life2.png") no-repeat center center; width:27px; height:24px; vertical-align: middle; margin-right:10px;}
+.comm-btn_btnn1_orange {letter-spacing: 3px;}
+.comm-btn_btnn1_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life1.png") no-repeat center center; width:16px; height:29px; vertical-align: middle; margin-right:10px;}
+.comm-btn_btnn2_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life2.png") no-repeat center center; width:27px; height:24px; vertical-align: middle; margin-right:10px;}
 
 
 /* ------------------------------------------------------
@@ -51,10 +52,12 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
-
 }
 @media (max-width:768px){
 
+/*	 *[class^=comp-iconbox] { height:250px;}*/
+.btn-box {position: static;}
+.btn-box *[class*=btnn] {display: inline-block; font-size:1.5rem;}
 
 }
 @media (max-width:321px){}

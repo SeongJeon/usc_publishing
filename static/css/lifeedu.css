@@ -30,7 +30,6 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-.usc_part01_01 .comp-iconbox .icon {position: absolute; top:44px;}
 .usc_part01_01 .btn-box {position: absolute; top:72px; right: 39px;}
 .usc_part01_01 .btn-box a {display: block; position: relative;}
 .usc_part01_01 .btn-box a:first-child {margin:0 0 4px 0;}
@@ -52,7 +51,7 @@ MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
 .usc_part01_01 .btn-box {position: static; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; margin-top: 1rem;}
-.usc_part01_01 .btn-box *[class*=btnn] {-webkit-flex:1; flex:1;  display: inline-block; width:auto; font-size:1.2rem;}
+.usc_part01_01 .btn-box *[class*=btnn] {-webkit-flex:1; flex:1;  display: inline-block; width:auto; font-size:1.2rem; line-height: 3.5rem; height: 3.5rem;}
 .usc_part01_01 .btn-box *[class*=btnn] + * {margin-left: 0.5rem}
 .usc_part01_01 .btn-box a:first-child {margin-bottom: 0}
 .usc_part01_01 .comm-btn_btnn1_orange:before {width: 1.2rem; -webkit-background-size: 100% auto; background-size: 100% auto;}

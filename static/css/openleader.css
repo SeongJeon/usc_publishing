@@ -23,12 +23,13 @@ LAYOUT
 .openleader #footer .footer-utilegroup .footer-addr li strong {color:#fff;}
 
 @media (min-width:1025px){
-	body.pc .openleader #gnb .depth2menu {width: 272px; height: 275px; padding-left: 40px;}
-	body.pc .openleader #gnb h2 a {width: 180px}
-
-	body.pc .openleader #gnb {margin-left: 345px;}
 	body.pc .openleader #header .header-middle .title a {width: 224px; height: 52px; background:url("../../static/images/openleader/img_logo.png") no-repeat 50% 50%;}
 	body.pc .openleader #header .header-bottom .sitemap {background: #1058a8}
+	
+	body.pc .openleader #gnb {margin-left: 345px;}
+	body.pc .openleader #gnb h2 a {width: 180px}
+	body.pc .openleader #gnb .depth2menu {width: 272px; height: 275px; padding-left: 40px;}
+
 	body.pc .openleader #gnb .gnb > li:nth-child(1) .depth2menu {left:0;}
 	body.pc .openleader #gnb .gnb > li:nth-child(2) .depth2menu {left:232px;}
 	body.pc .openleader #gnb .gnb > li:nth-child(3) .depth2menu {left:504px}

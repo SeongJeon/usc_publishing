@@ -430,31 +430,6 @@
 	}
 }
 
-@media (min-width:1025px){
-	body.pc .openleader #header .header-middle .title a {width: 224px; height: 52px; background:url("../../static/images/openleader/img_logo.png") no-repeat 50% 50%;}
-	body.pc .openleader #header .header-bottom .sitemap {background: #1058a8}
-	
-	body.pc .openleader #gnb {margin-left: 345px;}
-	body.pc .openleader #gnb h2 a {width: 180px}
-	body.pc .openleader #gnb .depth2menu {width: 272px; height: 275px; padding-left: 40px;}
-
-	body.pc .openleader #gnb .gnb > li:nth-child(1) .depth2menu {left:0;}
-	body.pc .openleader #gnb .gnb > li:nth-child(2) .depth2menu {left:232px;}
-	body.pc .openleader #gnb .gnb > li:nth-child(3) .depth2menu {left:504px}
-	body.pc .openleader #gnb .gnb > li:nth-child(4) .depth2menu {left:776px}
-	body.pc .openleader #gnb .gnb > li:nth-child(5) .depth2menu {left:1048px}
-	body.pc .openleader #gnb .gnb > li:nth-child(1) .depth2menu {width:232px; padding-left: 0}
-
-	body.pc .openleader #header.header-type2 #gnb h2.over a:before,
-	body.pc .openleader #header.header-type2 #gnb h2 a:hover:before {background: #1058a8; }
-	body.pc .openleader #header.header-type2 #gnb h2.over a:after,
-	body.pc .openleader #header.header-type2 #gnb h2 a:hover:after {border-color:#1058a8;}
-	body.pc .openleader #header.header-type2 #gnb p a:hover {background: #3cb7cd;}
-	body.pc .openleader #header.header-type2 #gnb h3 a:before{background: #1e4363;}
-
-	body.pc .openleader #header.header-type2.open {border-bottom-color:#1058a8;}
-	body.pc .openleader #header.header-type2.open .header-bottom {border-bottom-color: #54c2d8;}
-}
 
 
 

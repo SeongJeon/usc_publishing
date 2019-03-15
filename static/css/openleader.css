@@ -133,44 +133,28 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-/* 민원모니터이해 */
-.usc .service-monitor .heading-h3 + .heading-h4 {margin:20px 0 0 30px;}
-.usc .service-monitor .heading-h4 {margin:30px 0 0 30px;}
-.usc .service-monitor .comp-lst_dotted {margin:6px 0 0 50px;}
-.usc .service-monitor .comp-lst_hyphen {margin:5px 0 35px 68px;}
-.usc .service-monitor .heading-h4 + .comp-lst_hyphen {margin:5px 0 35px 50px;}
-.usc .service-monitor .comp-tbl_datatype {margin:15px 0 0 0;}
-.usc .service-monitor *[class^=comp-lst][class*=_dotted][class*=_small] {margin-left:5px;}
-.usc .service-monitor .flow-chart {overflow:hidden; margin:15px 0 0 -15px;}
-.usc .service-monitor .flow-chart > li {position:relative; float:left; width:182px; height:181px; margin:0 0 0 114px; padding:53px 0 0; background:url(../images/usc/bg_flow_chart.png) no-repeat; text-align:center; -webkit-box-sizing:border-box; box-sizing:border-box; }
-.usc .service-monitor .flow-chart > li:before {position:absolute; left:182px; top:50%; display:block; content:""; width:115px; height:1px; margin-top:-1px; background:#d6d3d2;}
-.usc .service-monitor .flow-chart > li:after {position:absolute; left:-68px; top:50%; display:block; content:""; width:24px; height:24px; margin-top:-12px; background:url(../images/usc/bg_flow_chart_arrow.png) no-repeat}
-.usc .service-monitor .flow-chart > li:first-child {margin-left:0;}
-.usc .service-monitor .flow-chart > li:first-child:after,
-.usc .service-monitor .flow-chart > li:last-child:before {display:none;}
-.usc .service-monitor .flow-chart > li strong {display:block; width:123px; margin:10px auto 0 auto; padding:10px 0 0; border-top:1px solid #d6d3d2; font-size:17px; font-weight:bold; color:#fe970e;}
 
-/* 민원실이용안내 */
-.usc .guide-use .tablist {overflow:hidden; margin-bottom:30px; }
-.usc .guide-use .tablist > li {float:left; width:33.3%}
-.usc .guide-use .tablist > li a {display:block; height:45px; line-height:45px; background:#f4f4f4; margin-left:-1px; border:1px solid #d1d1d1; text-align:center; color:#1c1c1c; -webkit-box-sizing:border-box; box-sizing:border-box; }
-.usc .guide-use .tablist > li a[aria-selected*=true] {background:#f27405; border-left:none; border-right:none; color:#fff;}
-.usc .guide-use .tablist > li:first-child a {margin-left:0;}
-.usc .guide-use .tab-contents {}
-.usc .guide-use .tab-contents .heading-h3 {}
-.usc .guide-use .tab-contents .floor-plan {margin:15px 0 0; padding:15px 0 40px; background:#efeeed;}
-.usc .guide-use .tab-contents .floor-plan .img {text-align:center;}
-.usc .guide-use .tab-contents .floor-plan .img img {}
-.usc .guide-use .tab-contents .floor-plan .list {}
-.usc .guide-use .tab-contents .floor-plan .list {overflow:hidden; padding:30px 35px 0;}
-.usc .guide-use .tab-contents .floor-plan .list ul {float:left; width:50%; }
-.usc .guide-use .tab-contents .floor-plan .list ul:first-child {margin-left:-20px;}
-.usc .guide-use .tab-contents .floor-plan .list ul + ul {margin-left:20px; }
-.usc .guide-use .tab-contents .floor-plan .list ul > li {margin:12px 0 0; color:#4b4b4b;}
-.usc .guide-use .tab-contents .floor-plan .list ul > li:first-child {margin-top:0;}
-.usc .guide-use .tab-contents .floor-plan .list ul > li .num {display:inline-block; width:30px; height:30px; line-height:30px; margin-right:10px; background:#4b4b4b; border-radius:30px; text-align:center; color:#fff;}
-.usc .guide-use .tab-contents .floor-plan .list ul > li .tel {display:inline-block; margin-left:2px; padding:2px; background:#f1e300;}
-.usc .guide-use .tab-contents .comp-tbl_datatype {margin-top:15px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -187,38 +171,10 @@ MEDIA QUERY
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
-	.openleader #footer .footer-markgroup .footer-qrcode {border:0; padding:0; }
-	.openleader #footer .footer-utilegroup {padding-left: 2rem}
-
-
-	/* 민원모니터 이해 */
-	.usc .service-monitor .heading-h3 + .heading-h4 {margin:1rem 0 0 2rem;}
-	.usc .service-monitor .heading-h4 {margin:1.2rem 0 0 1.5rem;}
-	.usc .service-monitor .comp-lst_dotted {margin:0.5rem 0 0 3.5rem;}
-	.usc .service-monitor .comp-lst_hyphen {margin:0.5rem 0 1.5rem 3.5rem;}
-	.usc .service-monitor .heading-h4 + .comp-lst_hyphen {margin:0.5rem 0 2px 3.5rem;}
-	.usc .service-monitor .comp-tbl_datatype {margin:15px 0 0 0;}
-	.usc .service-monitor *[class^=comp-lst][class*=_dotted][class*=_small] {margin-left:5px;}
-	.usc .service-monitor .flow-chart {display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; margin-left:-4.5rem;}
-	.usc .service-monitor .flow-chart > li {flex: 1; width:auto; height:10rem; margin-left: 1.2rem; margin:0; padding:2rem 0 0; background-size:contain; background-position:center; text-align:left;}
-	.usc .service-monitor .flow-chart > li:before {display:none;}
-	.usc .service-monitor .flow-chart > li:after {left:0; width:1.6rem; height:1.6rem; background-size:100%; margin-left:-0.8rem;}
-	.usc .service-monitor .flow-chart > li span {display:block; text-align:center; font-size:1rem;}
-	.usc .service-monitor .flow-chart > li strong {width:6.5rem; margin:0.4rem auto 0 auto; padding:0.4rem 0 0; font-size:1.2rem;}
-
-	/* 민원실이용안내 */
-	.usc .guide-use .tablist {margin-bottom:1.5rem;}
-	.usc .guide-use .tab-contents .floor-plan {padding:15px 0 2rem;}
-	.usc .guide-use .tab-contents .floor-plan .list {padding:2rem 3rem 0;}
-	.usc .guide-use .tab-contents .floor-plan .list ul > li .num {width:2rem; height:2rem; line-height:2rem; border-radius:2rem;}
+.openleader #footer .footer-markgroup .footer-qrcode {border:0; padding:0; }
+.openleader #footer .footer-utilegroup {padding-left: 2rem}
 }
-@media (max-width:768px){
-	.usc .service-monitor .flow-chart > li:after {display:none;}
-	.usc .guide-use .tab-contents .floor-plan .list {padding:1.5rem;}
-	.usc .guide-use .tab-contents .floor-plan .list ul:first-child {margin-left:0;}
-	.usc .guide-use .tab-contents .floor-plan .list ul + ul {margin:12px 0 0;}
-	.usc .guide-use .tab-contents .floor-plan .list ul {float:none; width:100%;}
-}
+@media (max-width:768px){}
 @media (max-width:321px){}
 
 

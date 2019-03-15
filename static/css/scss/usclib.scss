@@ -328,11 +328,11 @@ MAIN
 		}
 		.lst-favorit-service {
 			padding-left: 120px;  overflow:hidden;
-			li {float: left; position:relative; width: 150px;}
-			li:after {display: block; content: ""; position: absolute; left:0; top:11px; width: 1px; height: 108px; background:#e2e1e1;}
-			li:first-child:after {display: none;}
+			li{float: left; position:relative; width: 150px;}
+			.slick-slide:last-of-type a:after {display: none;}
 			a {
-				display: block;
+				display: block; position: relative;
+				&:after {display: block; content: ""; position: absolute; right:0; top:11px; width: 1px; height: 108px; background:#e2e1e1;}
 				.icon {
 					display: block; position: relative; width: 90px; height: 90px; overflow: hidden; border-radius: 100px; margin:0 auto; 
 					img {position: absolute; left:0; top:0;-ms-transition:0.3s ease; -webkit-transition:0.3s ease; -moz-transition:0.3s ease; transition:0.3s ease;} 
@@ -362,9 +362,16 @@ MAIN
 					em {font-size: 30px;}
 				}
 				.btn-arrow {
-					position: absolute; top:50%; text-indent: -999em; width: 12px; height: 23px; margin-top: -12px;
-					&.btn-prev {left:0; @include background("usclib/main/icon_prev1.png",no-repeat 50% 50%);}
-					&.btn-next {right:0; @include background("usclib/main/icon_next1.png",no-repeat 50% 50%);}
+					position: absolute; top:50%; margin-top: -12px;
+					button {text-indent: -999em; width: 12px; height: 23px; }
+					&.btn-prev {
+						left:0;
+						button{ @include background("usclib/main/icon_prev1.png",no-repeat 50% 50%);}
+					}
+					&.btn-next{ 
+						right:0; 
+						button {@include background("usclib/main/icon_next1.png",no-repeat 50% 50%);}
+					}
 				}
 			}
 			.closeday {
@@ -512,9 +519,39 @@ MAIN
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -531,7 +568,9 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
-//-------------------------------------------------------------------------------
+/* ------------------------------------------------------
+LAYOUT
+------------------------------------------------------ */
 #wrap.usclib #header {
 	.header-bottom {
 		.header-utilegroup .header-utile {
@@ -579,16 +618,294 @@ MEDIA QUERY
 	.footer-utilegroup .footer-utile a strong {color:#fff;}
 }
 
+/* ------------------------------------------------------
+MAIN
+------------------------------------------------------ */
 #wrap.usclib #container.main {
-}
+	.inner {width: 100%;}
 
+	// 메인 비주얼
+	.main-visual-zone {
+		.slider {
+			min-width: inherit; height: 50rem;
+			.slide {
+				div[class$=bg] { height: 50rem;}
+				.pcbg {display: none;}
+				.mobg {display: block;}
+			}
+		}
+		.search {
+			bottom:inherit; top:15rem;padding:0 1.1rem;
+			.form {
+				display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; width: 100%; background:0; overflow:hidden; padding:0.6rem 0;
+				dt {
+					background:#fff; border-top-left-radius: 100px; border-bottom-left-radius: 100px; width: 8rem;
+					label {font-size: 1.4rem; line-height: 4.6rem; width: 7.4rem;}
+					&:after {line-height: 4.6rem; font-size: 1.4rem;}
+				}
+				dd {
+					-webkit-flex:1; flex:1; padding-right: 3rem; 
+					input {height: 4.6rem;background:#fff; font-size: 1.3rem; padding-left:1rem;}
+					button {width: 5.8rem; height: 5.8rem; background-size: 50% 50%; right: 0}
+				}
+			}
+			.btn-position {
+				margin-top: 1.2rem;
+				.btn-detailsearch {
+					font-size: 1.3rem; height: 3.3rem; line-height: 3.3rem; width: 13.3rem; background:#0a2738; 
+					&:before {width: 1.7rem; background-size: 100% auto; position: relative; top: -2px;}
+				}
+			}
+		}
+	}
+	// board
+	.main-board-zone {
+		&:before {display: none}
+		.tab {
+			a {font-size: 1.3rem; height: 3.6rem; line-height: 3.6rem;}
+		}
+		.tab-cont {height: 32rem;}
+
+		// 공지사항
+		#boardTab1 {
+			padding:1.6rem 1.4rem 0;
+			.l-left {
+				width: 100%; float: none; height: 13rem;
+				.thumb {width:9.6rem; height: 13rem;}
+				dl {
+					padding:0 0 0 11rem; height: 13rem;
+					&:after {display:none}
+					dt {
+						.flag {line-height: 2rem; font-size: 1.1rem; width: 5.2rem; vertical-align: top}
+						font-size: 1.3rem; line-height: 2rem; 
+					}
+					.txt {font-size: 1rem; line-height: 1.6rem; max-height: 6.4rem; margin-top: 1rem; padding-left: 0.4rem; -webkit-line-clamp: 4;}
+					.date {
+						font-size: 1rem; left:11rem; padding-left: 0.4rem;
+						&:before {width: 1.2rem; height: 1.2rem; margin-right: 0.5rem; background-size: 100% 100%;}
+					}
+				}
+			}
+			.l-right {
+				width: 100%; float: none; padding-left: 0; padding-top: 1.5rem; margin-top: 1.7rem; border-top: 1px solid #d6d5d5;
+				.cont {font-size: 1.1rem; line-height: 1.5rem; max-width: 60%;}
+				.date {font-size: 1.1rem; line-height: 1.5rem;}
+				.flag {font-size: 1rem; width: 4.4rem; line-height: 1.5rem;}
+				li + li {margin-top: 0.6rem;}
+				li:first-child {margin-top: 0}
+				li:before {margin-right: 0.8rem; width: 2px; height: 2px;}
+			}
+		}
+		// 문화강좌
+		#boardTab2 {
+			padding: 1rem 1rem 0.5rem; 
+			.lst-culture {
+				& > li {
+					width: 50%; height: 15.25rem;
+					&:nth-child(odd) {padding:1rem 0.9rem 1.3rem 0; border-left: 0;}
+					&:nth-child(even) {padding:1rem 0 1.3rem 0.9rem; border-left: 1px solid #d6d5d5;}
+					&:nth-child(2) ~ li {border-top: 1px solid #d6d5d5;}
+				}
+				h3.tit {font-size: 1.3rem; }
+				.lst {
+					font-size: 1rem; line-height:1.4rem; 
+					&:before {width: 2px; height: 2px; }
+					li {margin-top: 0.3rem; padding-left: 1rem; }
+				}
+				.btn {
+					width: 100%; margin-top: 0.6rem;
+					.soldout {font-size: 1.1rem; line-height: 2.2rem; }
+					a {font-size: 1.1rem; line-height: 2.2rem; border:1px solid #707070;}
+				}
+			}
+		}
+		// 자주하는 질문
+		#boardTab3 {
+			padding:2.5rem 1.5rem 0;
+			.l-left {
+				float: none; width: 100%; border-right:0; height: 13rem;
+				.tit {font-size: 1.3rem;}
+				.cont {font-size: 1.1rem; line-height: 1.6rem;margin-top: 1.3rem; padding-right: 0; max-height:9.6rem; }
+			}
+			.l-right {
+				float: none; width: 100%; height: auto; margin-top: 1.2rem;  padding-top: 1.4rem;
+				border-top: 1px solid #d6d5d5;
+				.lst {
+					li {
+						padding-left: 0.5rem;
+						&:before {width: 2px; height: 2px; margin-right: 1rem;}
+						a {font-size: 1.1rem; line-height: 2.1rem; max-width: 95%}
+					}
+				}
+			}
+		}
+		// 문의게시판
+		#boardTab4 {
+			padding:2.5rem 1.5rem 0;
+			.l-left {
+				float: none; width: 100%; border-right:0; height: 13rem;
+				.tit {font-size: 1.3rem;}
+				.cont {font-size: 1.1rem; line-height: 1.6rem;margin-top: 1.3rem; padding-right: 0; max-height:8rem; }
+				.date {
+					font-size: 1.1rem; line-height: 1.6rem;
+					&:before {width: 1.2rem; height: 1.2rem; margin-right: 0.5rem; background-size: 100% 100%;}
+				}
+			}
+			.l-right {
+				float: none; width: 100%; height: auto; margin-top: 1.2rem;  padding-top: 1.4rem;
+				border-top: 1px solid #d6d5d5;
+				.lst {
+					li {
+						padding-left: 0.5rem;
+						&:before {width: 2px; height: 2px; margin-right: 1rem;}
+						.cont {font-size: 1.1rem; line-height: 2.1rem; max-width: 75%}
+						.date {font-size: 1.1rem; line-height: 2.1rem; }
+
+					}
+				}
+			}
+		}
+	}
+	// 자주찾는 서비스
+	.main-favorit-zone {
+		padding:0.8rem 1rem 2rem;
+		.tit {
+			font-size: 1.5rem; line-height: 2rem;  padding-left: 0.9rem;
+			&:after {width: 5.4rem; height: 1.2rem; background-size: 100% auto; margin-top:0.5rem;}
+		}
+		.lst-favorit-service {
+			padding-left: 10rem;
+			a {
+				&:after {height: 7.2rem; top: 0.8rem;}
+				.icon {
+					width: 6rem; height: 6rem; 
+					background-size: 100% auto !important;
+				}
+				.name {font-size: 1.1rem; margin-top: 0.9rem;}
+				&:hover {
+					.icon img {top:-6rem;}
+				}
+			}
+		}
+
+	}
+	// 이달의 휴관일
+	.main-closedays-zone {
+		padding:0 1rem;height: 4.4rem;
+		.btn-librarian {display: none;} 
+		.closeday-zone  {
+			.tit {line-height: 4.4rem; font-size: 1.5rem;}
+			.indicator {
+				margin-left: 1rem; 
+				.month {
+					padding:0 1.5rem; line-height: 4.4rem; font-size: 1.7rem;  
+					em {font-size: 2rem;}
+				}
+				.btn-arrow {
+					top:0; margin-top: 0;
+					button {width: 0.8rem; height: 4.4rem; background-size: 100% auto !important;}
+					.btn-prev button {@include background("usclib/main/icon_prev1_m.png",no-repeat 50% 50%);}
+					.btn-next button {@include background("usclib/main/icon_next1_m.png",no-repeat 50% 50%);}
+				}
+			}		
+			.closeday {
+				margin-left: 0; float: right; margin-top: 0.8rem;
+				li {width: 2.8rem; height: 2.8rem; line-height: 2.8rem; font-size: 1.2rem; margin-left: 0.6rem;}
+			}
+		}
+	}
+	// etc
+	.main-etc-zone {
+		padding:2.3rem 2.3rem 3.3rem;
+		.inner > div {width: 100%; float: none;}
+		.inner > div + div {margin-left: 0; margin-top: 1.4rem;}
+
+		.popup-zone {
+			padding:4.5rem 1rem 1.1rem;height: auto;
+			.tit {font-size: 1.5rem; left:1.7rem; top:1.3rem;}
+		}
+		.books-zone {
+			padding:5rem 1rem 1.1rem; height: auto;
+			& > ul[role=tablist] {
+				left:1.7rem; top:1.3rem;
+				li + li:before {margin:0 0.9rem; width: 1.2rem; background-size: 100% auto;}
+				button {font-size: 1.5rem; }
+			}
+			.slick-dots {
+				margin-top: 1rem;
+				li + li {margin-left: 0.5rem;}
+				button {width: 1rem; height: 1rem;}
+			}
+		}
+		.books-zone .indicator, .popup-zone .indicator {
+			height: auto; right: 1rem; top:1.1rem; height: 2.3rem; box-sizing: content-box;
+			p[class^=btn-] * {width: 2.3rem; height: 2.3rem; background-size: 40% 40% !important;}
+		}
+		.calendar-zone {
+			padding:4.3rem 1rem 1rem;  height: auto;
+			.tit {font-size: 1.5rem; left:1.7rem; top:1.4rem; line-height:1.5rem;}
+			.btn-more {
+				right: 1rem; top:1.1rem;
+				a {width: 2.3rem; height: 2.3rem; background-size: 40% 40%;}
+			}
+			.indicator {
+				top:1.4rem; right:5rem;
+				.month {font-family: $font3; font-size: 1.4rem; padding:0 1.8rem;}
+				.btn-arrow {
+					button {width: 0.8rem; height: 1.5rem; background-size: 100% auto !important;}
+					&.btn-prev button {@include background("usclib/main/icon_prev1_m.png",no-repeat 50% 50%);}
+					&.btn-next button {@include background("usclib/main/icon_next1_m.png",no-repeat 50% 50%);}
+				}
+			}
+			.calendar {
+				.noti {
+					line-height: 2rem;height: 2rem; margin-top: 1rem;
+					p {font-size: 1.1rem; }
+					.bullet {width: 1.1rem; height: 1.1rem;}
+				}
+				.txt {font-size: 1rem; }
+				.tbl {
+					th {font-size: 1rem;}
+					td {font-size: 1rem; height: 1.6rem;}
+					a {width: 1.6rem; height: 1.6rem; line-height:1.6rem;}
+					.today {width: 1.6rem; height: 1.6rem; line-height:1.6rem;}
+
+				}
+			}
+		}
+	}
+}
 //-------------------------------------------------------------------------------
 }
 @media (max-width:768px){
-//-------------------------------------------------------//
-
-
-//-------------------------------------------------------//
+/* ------------------------------------------------------
+MAIN
+------------------------------------------------------ */
+#wrap.usclib #container.main {
+	// 이달의 휴관일
+	.main-closedays-zone {
+		height: 10.6vw;
+		.closeday-zone  {
+			.tit {line-height: 10.6vw; font-size:3.7vw;}
+			.indicator {
+				margin-left: 4.4vw; 
+				.month {
+					padding:0 1.5rem; line-height: 10.6vw; font-size: 4.1vw;
+					em {font-size: 4.8vw;}
+				}
+				.btn-arrow {
+					width: 1.9vw; height: 10.6vw; background-size: 100% auto;
+					button {height: 10.6vw;}
+				}
+			}		
+			.closeday {
+				margin-left: 0; float: right; margin-top: 2vw;
+				li {width: 6.7vw; height: 6.7vw; line-height:6.7vw; font-size: 2.9vw; margin-left: 2vw;}
+			}
+		}
+	}
+}
+//-------------------------------------------------------------------------------
 }
 @media (max-width:600px){}
 @media (max-width:321px){}

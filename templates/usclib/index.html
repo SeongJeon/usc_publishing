@@ -34,13 +34,13 @@
 					<div class="slider">
 						<div class="slide">
 							<p class="hidden">책으로 소통하는 행복한 도서관 의성군립도서관 Uiseong County Library</p>
-							<div class="pcbg"><img src="../../static/images/usclib/temp/@img_main1.png" alt="" class="pcbg"><!-- pc배경 --></div>
-							<div class="mobg"><img src="../../static/images/usclib/temp/@img_main1_m.png" alt="" class="mobg"><!-- mobile배경 --></div>
+							<div class="pcbg"><img src="../../static/images/usclib/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
+							<div class="mobg"><img src="../../static/images/usclib/temp/@img_main1_m.png" alt=""><!-- mobile배경 --></div>
 						</div>
 						<div class="slide">
 							<p class="hidden">책으로 소통하는 행복한 도서관 의성군립도서관 Uiseong County Library</p>
-							<div class="pcbg"><img src="../../static/images/usclib/temp/@img_main1.png" alt="" class="pcbg"><!-- pc배경 --></div>
-							<div class="mobg"><img src="../../static/images/usclib/temp/@img_main1_m.png" alt="" class="mobg"><!-- mobile배경 --></div>
+							<div class="pcbg"><img src="../../static/images/usclib/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
+							<div class="mobg"><img src="../../static/images/usclib/temp/@img_main1_m.png" alt=""><!-- mobile배경 --></div>
 						</div>
 					</div>
 					<div class="search">
@@ -250,7 +250,7 @@
 				<div class="main-favorit-zone">
 					<div class="inner">
 						<h2 class="tit">자주찾는<br>서비스</h2>
-						<ul class="lst-favorit-service">
+						<ul class="lst-favorit-service js-favorit-service">
 							<li><a href="#"><span class="icon"><img src="../../static/images/usclib/main/icon_favorit1.png" alt=""></span><span class="name">책나래</span></a></li>
 							<li><a href="#"><span class="icon"><img src="../../static/images/usclib/main/icon_favorit2.png" alt=""></span><span class="name">이용시간</span></a></li>
 							<li><a href="#"><span class="icon"><img src="../../static/images/usclib/main/icon_favorit3.png" alt=""></span><span class="name">문화봉사단</span></a></li>
@@ -496,7 +496,16 @@
 			ltr: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			swipe:false
+			swipe:false,
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						arrows:false,
+						swipe:true
+				   }
+				}
+			]
 		});
 	})();
 
@@ -513,7 +522,15 @@
 		swipe:false,
 		autoplaySpeed: 3000,
 		nextArrow : $('#bookstab1 .btn-next'),
-		prevArrow : $('#bookstab1 .btn-prev')
+		prevArrow : $('#bookstab1 .btn-prev'),
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					swipe:true
+			   }
+			}
+		]
 	});
 	$("#bookstab2 > .slider").slick({
 		dots: true,
@@ -527,7 +544,15 @@
 		swipe:false,
 		autoplaySpeed: 3000,
 		nextArrow : $('#bookstab2 .btn-next'),
-		prevArrow : $('#bookstab2 .btn-prev')
+		prevArrow : $('#bookstab2 .btn-prev'),
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					swipe:true
+			   }
+			}
+		]
 	});
 	// $(".")reInit
 	// 팝업존
@@ -543,7 +568,35 @@
 		swipe:false,
 		autoplaySpeed: 3000,
 		nextArrow : $('.js-popup-zone .btn-next'),
-		prevArrow : $('.js-popup-zone .btn-prev')
+		prevArrow : $('.js-popup-zone .btn-prev'),
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					swipe:true
+			   }
+			}
+		]
+	});
+	// 자주찾는 서비스
+	$(".js-favorit-service").slick({
+		dots: false,
+		infinite: true,
+		speed: 400,
+		ltr: true,
+		slidesToShow: 8,
+		slidesToScroll: 1,
+		swipe:false,
+		arrows:false,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					swipe:true,
+					slidesToShow: 3
+			   }
+			}
+		]
 	});
 
 

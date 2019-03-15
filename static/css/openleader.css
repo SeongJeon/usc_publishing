@@ -109,25 +109,32 @@ MAIN
 .openleader .main-visual .section-02 .inner > .tit {padding:50px 0 0;}
 .openleader .main-visual .section-02 .inner > .tit img {margin:0 auto;}
 
-.openleader .main-visual .section-02 .inner .list-banner {float:left; width:975px; height:440px; margin-top:28px;}
+.openleader .main-visual .section-02 .inner .list-banner {position:relative; float:left; width:975px; height:440px; margin-top:28px;}
 .openleader .main-visual .section-02 .inner .list-banner .tit {}
 .openleader .main-visual .section-02 .inner .list-banner .list {float:right; width:331px; height:100%; background:#fff;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul {margin-top:-2px; border-top:1px solid #dbdbdb;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul > li {display:table; width:100%;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul > li a {display:table-cell; height:80px; vertical-align:middle; border-top:1px solid #dbdbdb;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul > li:first-child a {border-top:none;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject {position:relative; padding:0 0 0 17px; font-size:17px; color:#525252;}
+.openleader .main-visual .section-02 .inner .list-banner .list .list-inner {overflow:hidden; height:382px; margin:-2px 0 0 1px; border-top:1px solid #dbdbdb; box-sizing:border-box;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul {}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li {display:table; width:100%; padding:0 17px; box-sizing:border-box;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li a {display:table-cell; height:80px; margin:0 17px; vertical-align:middle; border-top:1px solid #dbdbdb;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li:first-child a {padding-top:12px; border-top:none;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li.on {border:4px solid #3f4972;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject {position:relative; overflow:hidden; display:block; width:260px; margin:0 0 12px; padding:0 0 0 17px; font-size:17px; color:#525252; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject:before {position:absolute; left:0; top:5px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .date {display:block; padding:0 0 0 25px; background:url(../images/openleader/ico_date.png) no-repeat left center;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .date {display:block; margin:0 0 0 14px; padding:0 0 0 25px; background:url(../images/openleader/ico_date.png) no-repeat left center;}
 
 .openleader .main-visual .section-02 .inner .list-banner .banner {float:left;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img {}
-.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li {display:none;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li {position:relative; display:none;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li.on {display:block;}
-.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li img {width:644px; height:auto;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li img {width:644px; height:440px;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area {position:absolute; left:0; bottom:0; width:100%; padding:17px 0 12px 20px; background:rgba(14,14,14,0.7); box-sizing:border-box;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .tit {font-size:20px; font-weight:bold; color:#fff;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .txt {display:block; margin:11px 0 0 0; font-size:15px; color:rgba(255,255,255,0.8);}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .date {position:absolute; right:20px; top:18px; display:block; padding:2px 0 0 25px; background:url(../images/openleader/ico_date_01.png) no-repeat left center; font-size:15px; color:rgba(255,255,255,0.7);
+;}
 
-.openleader .main-visual .section-02 .inner .list-banner .btn_more {}
-.openleader .main-visual .section-02 .inner .list-banner .btn_more .btn {}
+.openleader .main-visual .section-02 .inner .list-banner .btn_more {position:absolute; right:0; top:0; width:60px; height:60px; border-left:1px solid #dbdbdb;}
+.openleader .main-visual .section-02 .inner .list-banner .btn_more .btn {display:block; height:100%; background:url(../images/openleader/btn_calendar_more.png) no-repeat 50% 50%; text-indent:-9999em;}
 
 .openleader .main-visual .section-02 .inner .petition {float:right; width:320px; margin-top:28px;}
 .openleader .main-visual .section-02 .inner .petition .write {background:#3f4972;}
@@ -138,8 +145,15 @@ MAIN
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn {position:relative; display:block; width:200px; height:50px; line-height:50px; margin:105px 0 0; padding:0 0 0 15px; background:#fff; font-size:17px; color:#212121;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:before {position:absolute; left:144px; top:25px; display:block; content:""; width:38px; height:1px; background:#3c3c3c;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:after {position:absolute; left:174px; top:22px; display:block; content:""; width:6px; height:6px; border-top:1px solid #3c3c3c; border-right:1px solid #3c3c3c; -webkit-transform:rotate(180deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
-.openleader .main-visual .section-02 .inner .petition .link {background:#2c2c43 url(../images/openleader/bg_petition_link.png) no-repeat 25px center;}
-.openleader .main-visual .section-02 .inner .petition .link a {position:relative; display:block; height:90px; padding:16px 0 0 98px; font-size:22px; font-weight:bold; color:#fff; box-sizing:border-box;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn:hover,
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn:focus {background:#f2ebc7; font-weight:bold; color:#272727;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn:focus:before {background:#272727;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn:focus:after {border-top:1px solid #272727; border-right:1px solid #272727;}
+
+.openleader .main-visual .section-02 .inner .petition .link {}
+.openleader .main-visual .section-02 .inner .petition .link a {position:relative; display:block; height:90px; padding:16px 0 0 98px; background:#2c2c43 url(../images/openleader/bg_petition_link.png) no-repeat 25px center; font-size:22px; font-weight:bold; color:#fff; box-sizing:border-box;}
+.openleader .main-visual .section-02 .inner .petition .link a:hover,
+.openleader .main-visual .section-02 .inner .petition .link a:focus {background-color:#962d3e;}
 .openleader .main-visual .section-02 .inner .petition .link a .tail {display:block; margin-top:11px; font-size:17px; color:rgba(255,255,255,0.7);}
 .openleader .main-visual .section-02 .inner .petition .link a .tail em {font-style:italic;}
 .openleader .main-visual .section-02 .inner .petition .link a:before {position:absolute; left:255px; top:62px; display:block; content:""; width:38px; height:1px; background:#d0d0d0;}

@@ -554,7 +554,12 @@
 			}
 		]
 	});
-	// $(".")reInit
+	$(".books-zone > ul[role=tablist] button").on("click", function(){
+		var _id = "#" + $(this).attr("aria-controls");
+		$(_id).find("> .slider").slick('resize');
+	})
+
+	// $(".")
 	// 팝업존
 	$(".js-popup-zone > .slider").slick({
 		dots: false,

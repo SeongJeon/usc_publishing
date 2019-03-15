@@ -94,6 +94,9 @@ var usc = {
 			// 주메뉴 1depth
 			$("#gnb h2 a").on("click", function(){
 				var $this = $(this);
+
+				if($this.closest("li").find('.group').length < 1) return;
+
 				if($this.hasClass("clicked")) return false;
 
 				$this.addClass("clicked");
@@ -101,12 +104,12 @@ var usc = {
 				$this.closest("li").siblings().find(".depth2menu").hide();
 				$this.closest("li").siblings().find(".clicked .depth3menu").hide();
 				$this.closest("li").siblings().find(".clicked").removeClass("clicked");
+
+				return false;
 			});
 			// 주메뉴 2depth
 			$("#gnb h3 a").on("click", function(){
 				var $this = $(this).closest(".group");
-
-				console.log("hi");
 
 				if($this.find(".depth3menu").length < 1) return;
 

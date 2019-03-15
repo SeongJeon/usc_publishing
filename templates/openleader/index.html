@@ -147,13 +147,13 @@
 										<h3 class="tit">생생 현장속으로</h3>
 										<div id="js-list-inner" class="list-inner">
 											<ul>
-												<li>
+												<li class="on">
 													<a href="#">
 														<span class="subject">2018 공공비축미곡 매입2018 공공비축미곡 매입2018 공공비축미곡 매입2018 공공비축미곡 매입</span>
 														<span class="date">2018-11-30</span>
 													</a>
 												</li>
-												<li class="on">
+												<li>
 													<a href="#">
 														<span class="subject">한 자녀 더 갖기 운동본부 발대식</span>
 														<span class="date">2018-11-30</span>
@@ -183,7 +183,7 @@
 									</div>
 									<div class="banner js-banner">
 										<ul class="list-img">
-											<li>
+											<li class="on">
 												<img src="../../static/images/openleader/temp/@img_list_banner.png" alt="한 자녀 더 갖기 운동본부 발대식 관련 이미지">
 												<div class="txt-area">
 													<span class="tit">1한 자녀 더 갖기 운동본부 발대식</span>
@@ -340,6 +340,16 @@
 			scrollbars: true,
 			interactiveScrollbars: true,
 			fadeScrollbars: true
+		});
+
+		//생생 현장속으로 리스트
+		$('#js-list-inner li a').bind('mouseover focus', function(){
+			$('#js-list-inner li').removeClass('on');
+			$(this).parent().addClass('on');
+			var index = $(this).parent().index();
+			console.log($('.js-banner .list-img').find('li'));
+			$('.js-banner .list-img').find('li').removeClass('on')
+			$('.js-banner .list-img').find('li').eq(index).addClass('on')
 		});
 
 

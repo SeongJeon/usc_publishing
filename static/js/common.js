@@ -10,14 +10,14 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 
 var usc = {
 	// GNB
-	gnbEvent: function(num){
-
-
-		var spd = 300,  pc=0, mo=0,
+	gnbEvent: function(num, vv){
+		var spd = 300,  pc=0, mo=0, ifval,
 		 	header = $("#header"), gnb = $("#gnb"), _idx, 
-		 	v = num
 		 	ary = num.split(",");
 		 	dim = "<span class='dimd'></span>";
+
+		 vv == false ? ifval=false : ifval=true;
+
 
 
 	 	function pcGnb(){
@@ -35,15 +35,16 @@ var usc = {
 				if($this.hasClass("btn-category")) _idx = 5;
 				else _idx = $this.closest("li").index();
 
-
 				if(!header.hasClass('open')) $("#wrap").prepend(dim);
 
 				$this.closest("h2").addClass("over");
 				$("h2", gnb).not($this.closest("h2")).removeClass("over");
-				$("h2", gnb).not("h2.over").next(".depth2menu").hide();
+
+				if(ifval==true) $("h2", gnb).not("h2.over").next(".depth2menu").hide();
 				
 				header.addClass("open").stop().animate({"padding-bottom": ary[_idx]+'px'}, spd, 'swing', function(){
-					$this.closest("h2").next(".depth2menu").fadeIn(100);
+					if(ifval==true) $this.closest("h2").next(".depth2menu").fadeIn(100);
+					else $('.depth2menu').fadeIn(100);
 				});
 			})
 			gnb.on("mouseleave", function(){

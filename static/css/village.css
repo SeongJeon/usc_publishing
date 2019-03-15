@@ -47,6 +47,7 @@ MAIN
 
 .village .section-visual:after {display:block;clear:both;content:'';}
 .village .section-visual .banner-wrap {position:relative;float:left;width:62.6%;height:430px;}
+.village .section-visual .img-area img {height:100%;}
 .village .section-visual button[class*='btn-main-'] {position:absolute;right:16px;display:inline-block;width:70px;height:71px;text-indent:-999em;z-index:1;}
 .village .section-visual .btn-main-prev {top:157px;background:url(../images/village/btn_main_prev.png) no-repeat left top;}
 .village .section-visual .btn-main-next {bottom:126px;background:url(../images/village/btn_main_next.png) no-repeat left top;}
@@ -70,7 +71,10 @@ MAIN
 
 .village .section-info {position:relative;margin-bottom:20px;}
 .village .section-info:after {display:block;clear:both;content:'';}
-.village .phone-ballon {position:absolute;left:187px;top:0;background:#45bf55;width:80px;height:120px;padding-top:17px;font-size:17px;color:#fff;text-align:center;line-height:1.5;border-radius:0 0 50px 50px;box-sizing:border-box;}
+.village .section-info .time-wrap {background:#044d29;}
+.village .section-info .time-inner {position:relative;max-width:1320px;margin:0 auto;}
+
+.village .phone-ballon {position:absolute;left:-116px;top:0;background:#45bf55;width:80px;height:120px;padding-top:17px;font-size:17px;color:#fff;text-align:center;line-height:1.5;border-radius:0 0 50px 50px;box-sizing:border-box;z-index:10;}
 .village .phone-ballon.animation {-webkit-animation:ballon 1s alternate infinite linear;-moz-animation:ballon 1s alternate infinite linear;-o-animation:ballon 1s alternate infinite linear;animation:ballon 1s alternate infinite linear;}
 .village .phone-ballon a {display:block;padding-bottom:39px;background:url(../images/village/bg_phone_arrow_off.png) no-repeat center bottom;}
 
@@ -92,9 +96,9 @@ MAIN
 }
 
 .village .phone-ballon.on a {position:absolute;bottom:14px;left:10px;background:url(../images/village/bg_phone_arrow_on.png) no-repeat center bottom;}
-
-.village .phone-wrap {display:none;background:#044d29;}
-.village .phone-inner {position:relative;width:1437px;margin:0 auto;padding:20px 0 20px 116px;box-sizing:border-box;}
+.village .phone-wrap {display:none;}
+.village .phone-wrap.on {display:block;}
+.village .phone-inner {position:relative;margin:0 auto;padding:20px 0;box-sizing:border-box;}
 .village .phone-inner h3 {margin-bottom:14px;font-family:'NanumSquareEB';font-size:22px;color:#fff;}
 .village .phone-inner h3 span {font-family:'NanumSquareB';font-size:16px;color:#d3e570;}
 .village .phone-inner .time-area {display:inline-block;width:353px;height:125px;padding:30px 14px 0 102px;background:#ecf3c1 url(../images/village/bg_phone.png) no-repeat left bottom;vertical-align:top;border-radius:20px;box-sizing:border-box;}
@@ -228,7 +232,9 @@ BROWSER HACK
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width:1024px){}
+@media (max-width:1024px){
+
+}
 @media (max-width:768px){}
 @media (max-width:321px){}
 

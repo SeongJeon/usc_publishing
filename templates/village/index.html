@@ -96,47 +96,52 @@
 						</div>
 
 						<div class="section-info">
-							<div class="js-hover-inner">
-								<p class="phone-ballon js-hover animation"><a href="#none">읍면동<br>전화번호</a></p>
-								<div class="phone-wrap">
-									<div class="phone-inner">
-										<h3>읍면사무소 이용시간 <span>(주말, 공휴일 휴무)</span></h3>
-										<div class="time-area">
-											<p class="time">오전 09:00 ~ 오후 18:00</p>
-											<p class="rest">점심시간 12:00 ~ 13:00</p>
-										</div>
-										<div class="number-area">
-											<ul>
-												<li><a href="#none"><em>의성읍</em>054-123-1234</a></li>
-												<li><a href="#none"><em>단촌면</em>054-123-1234</a></li>
-												<li><a href="#none"><em>점곡면</em>054-123-1234</a></li>
-												<li><a href="#none"><em>옥산면</em>054-123-1234</a></li>
-												<li><a href="#none"><em>사곡면</em>054-123-1234</a></li>
-											</ul>
-											<ul>
-												<li><a href="#"><em>춘산면</em>054-123-1234</a></li>
-												<li><a href="#"><em>가음면</em>054-123-1234</a></li>
-												<li><a href="#"><em>금성면</em>054-123-1234</a></li>
-												<li><a href="#"><em>봉양면</em>054-123-1234</a></li>
-												<li><a href="#"><em>비안면</em>054-123-1234</a></li>
-											</ul>
-											<ul>
-												<li><a href="#"><em>구천면</em>054-123-1234</a></li>
-												<li><a href="#"><em>단밀면</em>054-123-1234</a></li>
-												<li><a href="#"><em>단북면</em>054-123-1234</a></li>
-												<li><a href="#"><em>안계면</em>054-123-1234</a></li>
-												<li><a href="#"><em>다인면</em>054-123-1234</a></li>
-											</ul>
-											<ul class="last">
-												<li><a href="#"><em>신평면</em>054-123-1234</a></li>
-												<li><a href="#"><em>안평면</em>054-123-1234</a></li>
-												<li><a href="#"><em>안사면</em>054-123-1234</a></li>
-											</ul>
+							<div class="time-wrap">
+								<div class="time-inner">
+									<p class="phone-ballon js-hover animation">
+										<a href="#none">읍면동<br>전화번호</a>
+									</p>
+									<div class="phone-wrap">
+										<div class="phone-inner">
+											<h3>읍면사무소 이용시간 <span>(주말, 공휴일 휴무)</span></h3>
+											<div class="time-area">
+												<p class="time">오전 09:00 ~ 오후 18:00</p>
+												<p class="rest">점심시간 12:00 ~ 13:00</p>
+											</div>
+											<div class="number-area">
+												<ul>
+													<li><a href="#none"><em>의성읍</em>054-123-1234</a></li>
+													<li><a href="#none"><em>단촌면</em>054-123-1234</a></li>
+													<li><a href="#none"><em>점곡면</em>054-123-1234</a></li>
+													<li><a href="#none"><em>옥산면</em>054-123-1234</a></li>
+													<li><a href="#none"><em>사곡면</em>054-123-1234</a></li>
+												</ul>
+												<ul>
+													<li><a href="#"><em>춘산면</em>054-123-1234</a></li>
+													<li><a href="#"><em>가음면</em>054-123-1234</a></li>
+													<li><a href="#"><em>금성면</em>054-123-1234</a></li>
+													<li><a href="#"><em>봉양면</em>054-123-1234</a></li>
+													<li><a href="#"><em>비안면</em>054-123-1234</a></li>
+												</ul>
+												<ul>
+													<li><a href="#"><em>구천면</em>054-123-1234</a></li>
+													<li><a href="#"><em>단밀면</em>054-123-1234</a></li>
+													<li><a href="#"><em>단북면</em>054-123-1234</a></li>
+													<li><a href="#"><em>안계면</em>054-123-1234</a></li>
+													<li><a href="#"><em>다인면</em>054-123-1234</a></li>
+												</ul>
+												<ul class="last">
+													<li><a href="#"><em>신평면</em>054-123-1234</a></li>
+													<li><a href="#"><em>안평면</em>054-123-1234</a></li>
+													<li><a href="#"><em>안사면</em>054-123-1234</a></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 							
+					
 							<div class="news-wrap">
 								<div class="notice-wrap">
 									<h3><span>읍면동 공지사항</span> <img src="../../static/images/village/txt_notice.png" alt="Notification"></h3>
@@ -289,16 +294,16 @@
 		});
 
 		$('.section-info .js-hover a').on('mouseover focus', function () {
-			$(this).parent().removeClass('animation').addClass('on');
-			$(this).parent().stop().animate({height : 318 +'px'});
-			$('.phone-wrap').stop().slideDown();
-		});
-		$('.section-info .js-hover-inner').on('mouseleave focusout', function () {
-			$('.js-hover').stop().animate({height : 120 +'px'}, function () {
-				$(this).removeClass('on').addClass('animation');
-			});
-			$('.phone-wrap').stop().slideUp();
-		});
+         $(this).parent().removeClass('animation').addClass('on');
+         $(this).parent().stop().animate({height : 318 +'px'});
+         $('.phone-wrap').stop().slideDown();
+      });
+      $('.section-info .phone-wrap, .section-info .phone-wrap .number-area .last li:last a').on('mouseleave blur', function () {
+         $('.js-hover').stop().animate({height : 120 +'px'}, function () {
+            $(this).removeClass('on').addClass('animation');
+         });
+         $('.phone-wrap').stop().slideUp();
+      });
 	});
 </script>
 </body>

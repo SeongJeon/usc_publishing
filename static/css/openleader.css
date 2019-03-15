@@ -56,10 +56,11 @@ MAIN
 ------------------------------------------------------ */
 .openleader #container > .inner {width:auto;}
 .openleader #container:before {display:none;}
+.openleader .main-visual {font-size:0;}
 .openleader .main-visual .section-01 {background:url(../images/openleader/bg_main_visual01.png) no-repeat center top; background-size:cover;}
 .openleader .main-visual [class*=section-] > .inner {position:relative; width:1320px; height:750px; margin:0 auto;}
 .openleader .main-visual [class*=section-] > .inner:after {display:block; content:""; clear:both;}
-.openleader .main-visual [class*=section-] h3.tit {display:inline-block; margin:0 0 0 20px; padding:22px 10px 9px; border-bottom:3px solid #1058a8; font-size:22px; color:#000; font-weight:bold;}
+.openleader .main-visual [class*=section-] h3.tit {position:relative; display:inline-block; margin:0 0 0 20px; padding:22px 10px 9px; border-bottom:3px solid #1058a8; font-size:22px; color:#000; font-weight:bold; z-index:10;}
 .openleader .main-visual .section-01 .inner > .tit {float:right; margin:50px 70px 28px 0;}
 .openleader .main-visual .section-01 .inner .name {position:absolute; left:110px; bottom:70px;}
 .openleader .main-visual .section-01 .inner .calendar {clear:both; position:relative; float:right; width:593px; height:250px; background:#fff;}
@@ -67,14 +68,16 @@ MAIN
 .openleader .main-visual .section-01 .inner .calendar .inner {height:189px; border-top:1px solid #dbdbdb; vertical-align:top;}
 .openleader .main-visual .section-01 .inner .calendar .inner .date {float:left; width:151px; height:100%; padding-top:52px; background:#eff0f1; font-size:19px; color:#b4b4b4; font-weight:bold; text-align:center; vertical-align:middle;}
 .openleader .main-visual .section-01 .inner .calendar .inner .date .day {display:block; font-family: "NanumSquareB"; font-size:70px;  color:#000;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list {float:left; overflow:hidden; height:190px;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list ul {position:relative; padding:0 16px;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li {position:relative; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; width:390px; overflow:hidden; padding:0 0 0 15px; line-height:40px;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:before {position:absolute; left:0; top:17px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .ico {display:inline-block; height:26px; line-height:26px; padding:0 13px; border:1px solid; border-radius:15px; -webkit-box-sizing:border-box; box-sizing:border-box; }
+.openleader .main-visual .section-01 .inner .calendar .inner .list {float:left; overflow:hidden; width:440px; height:190px;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul {position:relative; margin-top:19px; padding:0 16px;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li {position:relative;  overflow:hidden; margin-top:14px; padding:0 0 0 15px; box-sizing: border-box;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:first-child {margin-top:0;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:before {position:absolute; left:0; top:11px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .ico {display:inline-block; height:26px; line-height:26px; padding:0 13px; border:1px solid; border-radius:15px; font-size:16px; -webkit-box-sizing:border-box; box-sizing:border-box;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color1 {border-color:#1058a8;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color2 {border-color:#348899;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color3 {border-color:#962d3e;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .subject {overflow:hidden; display:inline-block; width:320px; padding-left:6px; font-size:16px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; box-sizing:border-box;} 
 .openleader .main-visual .section-01 .inner .calendar .slick-arrow,
 .openleader .main-visual .section-01 .inner .calendar .btn-more {position:absolute; width:60px; height:60px; border-left:1px solid #dbdbdb; text-indent:-9999em;}
 .openleader .main-visual .section-01 .inner .calendar .slick-prev {right:60px; top:-60px; background:url(../images/openleader/btn_calendar_prev.png) no-repeat 50% 50%;}
@@ -85,7 +88,7 @@ MAIN
 .openleader .main-visual .section-01 .inner .list-quick .list {position:relative; width:593px; height:200px; margin-left:-6px;}
 .openleader .main-visual .section-01 .inner .list-quick .list:after {display:block; content:""; clear:both;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li {position:absolute; float:left; left:0; width:120px;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li:after {position:absolute; right:0; bottom:0; display:block; content:""; width:0; height:0px; border-top:48px solid transparent; border-right:48px solid #348899; z-index:101;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li:after {position:absolute; right:1px; bottom:0; display:block; content:""; width:0; height:0px; border-top:48px solid transparent; border-right:48px solid #348899; z-index:101;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a {position:relative; display:block; width:113px; height:200px; margin-left:6px; }
 .openleader .main-visual .section-01 .inner .list-quick .list > li a:before {position:absolute; right:12px; bottom:7px; display:block; content:""; width:2px; height:12px; background:#cfe3e7; z-index:102; -webkit-transition:all ease 0.2s; -moz-transition:all ease 0.2; -ms-transition:all ease 0.2; transition:all ease 0.2s;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a:after {position:absolute; right:7px; bottom:12px; display:block; content:""; width:12px; height:2px; background:#cfe3e7; z-index:102; -webkit-transition:all ease 0.2s; -moz-transition:all ease 0.2; -ms-transition:all ease 0.2; transition:all ease 0.2s;}
@@ -103,7 +106,7 @@ MAIN
 .openleader .main-visual .section-01 .inner .list-quick .list > li.togo4 a {background:url(../images/openleader/list_quick04.png) no-repeat;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li.togo5 a {background:url(../images/openleader/list_quick05.png) no-repeat;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a .txt {position:relative; display:block; padding:36px 0 0; font-size:20px; font-weight:bold; color:#fff; text-align:center; z-index:20;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li a .after {display:none; position:absolute; left:0; top:0; width:100%; height:100%; background:#2c2c43; border:6px solid #348899; box-sizing:border-box; text-align:center;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li a .after {display:none; position:absolute; left:0; top:0; width:100%; height:100%; background:#2c2c43; border:6px solid #348899; font-size:16px; box-sizing:border-box; text-align:center;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a .after em {display:inline-block; height:40px; line-height:40px; margin:96px auto 0 auto; padding:0 12px; border:1px solid #6c6c7c; color:#fff; box-sizing:border-box;}
 
 .openleader .main-visual .section-02 {background:url(../images/openleader/bg_main_visual02.png) no-repeat center top; background-size:cover;}
@@ -113,15 +116,15 @@ MAIN
 .openleader .main-visual .section-02 .inner .list-banner {position:relative; float:left; width:975px; height:440px; margin-top:28px;}
 .openleader .main-visual .section-02 .inner .list-banner .tit {}
 .openleader .main-visual .section-02 .inner .list-banner .list {float:right; width:331px; height:100%; background:#fff;}
-.openleader .main-visual .section-02 .inner .list-banner .list .list-inner {overflow:hidden; height:382px; margin:-2px 0 0 1px; border-top:1px solid #dbdbdb; box-sizing:border-box;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul {margin-top:10px;}
+.openleader .main-visual .section-02 .inner .list-banner .list .list-inner {overflow:hidden; position:relative; height:382px; margin:-2px 0 0 1px; border-top:1px solid #dbdbdb; box-sizing:border-box;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul {margin-top:10px; padding-bottom:10px;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li {position:relative;display:table; width:100%; padding:0 17px; box-sizing:border-box;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a {display:table-cell; height:80px; margin:0 17px; vertical-align:middle; border-top:1px solid #dbdbdb;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li:first-child a {border-top:none;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li.on:after {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:100%; border:4px solid #3f4972; box-sizing:border-box;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject {position:relative; overflow:hidden; display:block; width:260px; margin:0 0 12px; padding:0 0 0 17px; font-size:17px; color:#525252; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject:before {position:absolute; left:0; top:5px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .date {display:block; margin:0 0 0 14px; padding:0 0 0 25px; background:url(../images/openleader/ico_date.png) no-repeat left center;} 
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .date {display:block; margin:0 0 0 14px; padding:0 0 0 25px; background:url(../images/openleader/ico_date.png) no-repeat left center; font-size:16px;} 
 
 .openleader .main-visual .section-02 .inner .list-banner .banner {float:left;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img {}
@@ -148,7 +151,9 @@ MAIN
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:after {position:absolute; left:174px; top:22px; display:block; content:""; width:6px; height:6px; border-top:1px solid #3c3c3c; border-right:1px solid #3c3c3c; -webkit-transform:rotate(180deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:hover,
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:focus {background:#f2ebc7; font-weight:bold; color:#272727;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn:hover:before,
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:focus:before {background:#272727;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn:hover:after,
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:focus:after {border-top:1px solid #272727; border-right:1px solid #272727;}
 
 .openleader .main-visual .section-02 .inner .petition .link {}
@@ -159,18 +164,56 @@ MAIN
 .openleader .main-visual .section-02 .inner .petition .link a .tail em {font-style:italic;}
 .openleader .main-visual .section-02 .inner .petition .link a:before {position:absolute; left:255px; top:62px; display:block; content:""; width:38px; height:1px; background:#d0d0d0;}
 .openleader .main-visual .section-02 .inner .petition .link a:after {position:absolute; left:286px; top:59px; display:block; content:""; width:6px; height:6px; border-top:1px solid #d0d0d0; border-right:1px solid #d0d0d0; -webkit-transform:rotate(180deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
-
 .openleader .main-visual > .slick-arrow {position:absolute; display:block; width:70px; height:70px; margin-left:-747px; text-indent:-9999px; z-index:100;}
 .openleader .main-visual > .slick-prev {left:50%; top:298px; background:url(../images/openleader/btn_main_visual_prev.png) no-repeat;}
 .openleader .main-visual > .slick-next {left:50%; top:375px; background:url(../images/openleader/btn_main_visual_next.png) no-repeat;}
 .openleader .main-visual > .custom-paging {position:absolute; left:50%; top:454px; margin-left:-724px;}
 .openleader .main-visual > .custom-paging li {display:none; color:#fff; font-size:15px;}
 .openleader .main-visual > .custom-paging li.slick-active {display:block;}
-.openleader .main-visual > .custom-paging li.slick-active em {font-size:18px; font-family: "NanumSquareB";}
+.openleader .main-visual > .custom-paging li.slick-active em {font-size:18px; font-family:"NanumSquareB";}
 
+.openleader .inner .list-pledge {height:500px; background:url(../images/openleader/bg_list_pledge.png) no-repeat; background-size:cover;}
+.openleader .inner .list-pledge .inner {position:relative; width:1320px; margin:0 auto; text-align:center;}
+.openleader .inner .list-pledge .inner .tit {padding:53px 0 36px; text-align:center; font-size:30px; color:#212121; font-weight:bold;}
+.openleader .inner .list-pledge .inner .tit .tail {display:block; margin-top:15px; font-size:17px; font-weight:normal;}
+.openleader .inner .list-pledge .inner .tit .tail em {font-style: italic;}
+.openleader .inner .list-pledge .inner .list {display:inline-block;}
+/* .openleader .inner .list-pledge .inner .list:after {display:block; content:""; clear:both;} */
+.openleader .inner .list-pledge .inner .list > li {float:left; min-width:200px; margin-left:46px; padding-top:230px; text-align:center; font-size:22px; color:#212121;}
+.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:0;}
+.openleader .inner .list-pledge .inner .list > li.ico-01 {background:url(../images/openleader/bg_list_pledge01.png) no-repeat center top;}
+.openleader .inner .list-pledge .inner .list > li.ico-02 {background:url(../images/openleader/bg_list_pledge02.png) no-repeat center top;}
+.openleader .inner .list-pledge .inner .list > li.ico-03 {background:url(../images/openleader/bg_list_pledge03.png) no-repeat center top;}
+.openleader .inner .list-pledge .inner .list > li.ico-04 {background:url(../images/openleader/bg_list_pledge04.png) no-repeat center top;}
+.openleader .inner .list-pledge .inner .list > li.ico-05 {background:url(../images/openleader/bg_list_pledge05.png) no-repeat center top;}
+.openleader .inner .list-pledge .inner .list > li strong {display:block; font-family:"NanumSquareB"; font-size:30px; color:#1058a8;}
+.openleader .inner .list-pledge .inner .btn {}
+.openleader .inner .list-pledge .inner .btn {position:absolute; right:80px; top:67px; display:block; width:200px; height:50px; line-height:50px; background:#fff; border:1px solid #d6d5d5; font-size:17px; color:#212121; box-sizing:border-box;}
+.openleader .inner .list-pledge .inner .btn:before {position:absolute; left:144px; top:25px; display:block; content:""; width:38px; height:1px; background:#3c3c3c;}
+.openleader .inner .list-pledge .inner .btn:after {position:absolute; left:174px; top:22px; display:block; content:""; width:6px; height:6px; border-top:1px solid #3c3c3c; border-right:1px solid #3c3c3c; -webkit-transform:rotate(180deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
+.openleader .inner .list-pledge .inner .btn:hover,
+.openleader .inner .list-pledge .inner .btn:focus {font-family:"NanumSquareB"; color:#1058a8;}
+.openleader .inner .list-pledge .inner .btn:hover:before,
+.openleader .inner .list-pledge .inner .btn:focus:before {background:#1058a8;}
+.openleader .inner .list-pledge .inner .btn:hover:after,
+.openleader .inner .list-pledge .inner .btn:focus:after {border-top:1px solid #1058a8; border-right:1px solid #1058a8;}
 
+.openleader .inner .list-pledge .inner .btn span {display:block; height:100%; padding:0 0 0 15px; text-align:left;}
+.openleader .inner .list-pledge .inner .btn:hover span:before,
+.openleader .inner .list-pledge .inner .btn:focus span:before {position:absolute; left:-1px; top:-1px; display:block; content:""; width:200px; height:50px; border:3px solid #1058a8; box-sizing:border-box;}
 
-
+.openleader .inner .sns-area {position:relative; width:1320px; margin:0 auto 69px auto; text-align:center;}
+.openleader .inner .sns-area > .tit {padding:53px 0 36px; text-align:center; font-size:30px; color:#212121; font-weight:bold;}
+.openleader .inner .sns-area > .tit .tail {display:block; margin-top:15px; font-size:17px; font-weight:normal;}
+.openleader .inner .sns-area > .tit .tail em {font-style: italic;}
+.openleader .inner .sns-area .inner {overflow:hidden; width:1230px; margin:0 auto;}
+.openleader .inner .sns-area .sns-api {float:left; width:380px; margin-left:45px;}
+.openleader .inner .sns-area .sns-api.twitter {margin-left:0;}
+.openleader .inner .sns-area .sns-api .tit {height:50px; line-height:50px; font-size:18px; font-weight:bold; color:#fff;}
+.openleader .inner .sns-area .sns-api.twitter .tit{background:#33bdfd;}
+.openleader .inner .sns-area .sns-api.facebook .tit{background:#3b589e;}
+.openleader .inner .sns-area .sns-api.blog .tit{background:#36ac37;}
+.openleader .inner .sns-area .sns-api .api-area {height:450px; border:1px solid #d6d5d5;}
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */

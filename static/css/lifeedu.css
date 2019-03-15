@@ -31,6 +31,16 @@ MAIN
 SUB PAGE
 ------------------------------------------------------ */
 
+.comp-iconbox .icon {background-color: #eff0f1; top:56px;}
+.comp-iconbox .icon span{background:url("../../static/images/usc/icon_info2.png") no-repeat center center; width:17px; height: 37px;  position: absolute; top: 32px; left: 42px;text-indent: -9999em;}
+.btn-box {position: absolute; top:72px; right: 39px;}
+.btn-box a {display: block; position: relative;}
+.btn-box a:first-child {margin:0 0 4px 0;}
+
+.btn-box *[class*=btnn] { width: 174px; height: 45px; line-height: 45px; vertical-align: middle; text-align: center; font-size: 17px; box-sizing: border-box;}
+.comm-btn_btnn2_orange span{display: inline-block; margin-left:30px;}
+.comm-btn_btnn1_orange span:before {position: absolute; top:7px; left:17px; content:''; display:inline-block; background:url("../../static/images/usc/icon_life1.png") no-repeat center center; width:16px; height:29px; background-size:contain;}
+.comm-btn_btnn2_orange span:before {position: absolute; top:10px; left:17px; content:''; display:inline-block; background:url("../../static/images/usc/icon_life2.png") no-repeat center center; width:27px; height:24px; background-size:cover;}
 
 
 /* ------------------------------------------------------
@@ -42,7 +52,9 @@ BROWSER HACK
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width:1024px){}
+@media (max-width:1024px){
+
+}
 @media (max-width:768px){
 
 

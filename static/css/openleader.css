@@ -68,8 +68,8 @@ MAIN
 .openleader .main-visual .section-01 .inner .calendar .inner {height:189px; border-top:1px solid #dbdbdb; vertical-align:top;}
 .openleader .main-visual .section-01 .inner .calendar .inner .date {float:left; width:151px; height:100%; padding-top:52px; background:#eff0f1; font-size:19px; color:#b4b4b4; font-weight:bold; text-align:center; vertical-align:middle;}
 .openleader .main-visual .section-01 .inner .calendar .inner .date .day {display:block; font-family: "NanumSquareB"; font-size:70px;  color:#000;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list {float:left; overflow:hidden; width:440px; height:190px;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list ul {position:relative; margin-top:19px; padding:0 16px;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list {position:relative; float:left; overflow:hidden; width:440px; height:190px;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul {position:relative; padding:19px 16px;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li {position:relative;  overflow:hidden; margin-top:14px; padding:0 0 0 15px; box-sizing: border-box;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:first-child {margin-top:0;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:before {position:absolute; left:0; top:11px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
@@ -84,7 +84,7 @@ MAIN
 .openleader .main-visual .section-01 .inner .calendar .slick-next {right:0; top:-60px; background:url(../images/openleader/btn_calendar_next.png) no-repeat 50% 50%;}
 .openleader .main-visual .section-01 .inner .calendar .btn-more {right:120px; top:0; background:url(../images/openleader/btn_calendar_more.png) no-repeat 50% 50%;}
 .openleader .main-visual .section-01 .inner .calendar .btn-more a {display:block; height:100%;}
-.openleader .main-visual .section-01 .inner .list-quick {clear:both; float:right; width:593px; margin-top:20px;}
+.openleader .main-visual .section-01 .inner .list-quick {clear:both; float:right; width:593px; margin-top:20px; opacity:1;}
 .openleader .main-visual .section-01 .inner .list-quick .list {position:relative; width:593px; height:200px; margin-left:-6px;}
 .openleader .main-visual .section-01 .inner .list-quick .list:after {display:block; content:""; clear:both;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li {position:absolute; float:left; left:0; width:20%;}
@@ -117,7 +117,7 @@ MAIN
 .openleader .main-visual .section-02 .inner .list-banner .tit {}
 .openleader .main-visual .section-02 .inner .list-banner .list {float:right; width:331px; height:100%; background:#fff;}
 .openleader .main-visual .section-02 .inner .list-banner .list .list-inner {overflow:hidden; position:relative; height:382px; margin:-2px 0 0 1px; border-top:1px solid #dbdbdb; box-sizing:border-box;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul {margin-top:10px; padding-bottom:10px;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul {margin:10px 8px 0 0; padding-bottom:10px;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li {position:relative;width:100%; box-sizing:border-box;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a {display:block; margin:0 17px; padding:20px 0; border-top:1px solid #dbdbdb;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li:first-child a {border-top:none;}
@@ -144,9 +144,9 @@ MAIN
 .openleader .main-visual .section-02 .inner .petition .write {background:#3f4972;}
 .openleader .main-visual .section-02 .inner .petition .write .tit {display:block; height:60px; line-height:60px; font-size:22px; color:#fff; border-bottom:1px solid #8d92a7; margin:0; padding:0 0 0 25px;}
 .openleader .main-visual .section-02 .inner .petition .write .tit .tail {font-style:italic;}
-.openleader .main-visual .section-02 .inner .petition .write .inner {width:100%; height:289px; padding:22px 25px 20px; background:url(../images/openleader/bg_petition.png) no-repeat left bottom;}
+.openleader .main-visual .section-02 .inner .petition .write .inner {position:relative; width:100%; height:289px; padding:22px 25px 20px; background:url(../images/openleader/bg_petition.png) no-repeat left bottom;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .txt { font-size:17px; line-height:22px;color:rgba(255,255,255,0.7);;}
-.openleader .main-visual .section-02 .inner .petition .write .inner .btn {position:relative; display:block; width:200px; height:50px; line-height:50px; margin:105px 0 0; padding:0 0 0 15px; background:#fff; font-size:17px; color:#212121;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn {position:relative; display:block; width:200px; height:50px; line-height:50px; margin:153px 0 0; padding:0 0 0 15px; background:#fff; font-size:17px; color:#212121;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:before {position:absolute; left:144px; top:25px; display:block; content:""; width:38px; height:1px; background:#3c3c3c;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:after {position:absolute; left:174px; top:22px; display:block; content:""; width:6px; height:6px; border-top:1px solid #3c3c3c; border-right:1px solid #3c3c3c; -webkit-transform:rotate(180deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:hover,
@@ -210,9 +210,14 @@ MAIN
 .openleader .inner .sns-area .sns-api {float:left; width:380px; margin-left:45px;}
 .openleader .inner .sns-area .sns-api.twitter {margin-left:0;}
 .openleader .inner .sns-area .sns-api .tit {height:50px; line-height:50px; font-size:18px; font-weight:bold; color:#fff;}
+.openleader .inner .sns-area .sns-api .tit span {display:inline-block; height:33px; line-height:33px; padding-left:33px;}
 .openleader .inner .sns-area .sns-api.twitter .tit{background:#33bdfd;}
+
 .openleader .inner .sns-area .sns-api.facebook .tit{background:#3b589e;}
 .openleader .inner .sns-area .sns-api.blog .tit{background:#36ac37;}
+.openleader .inner .sns-area .sns-api.twitter .tit span {background:url(../images/openleader/bg_twitter.png) no-repeat}
+.openleader .inner .sns-area .sns-api.facebook .tit span {background:url(../images/openleader/bg_facebook.png) no-repeat}
+.openleader .inner .sns-area .sns-api.blog .tit span {background:url(../images/openleader/bg_blog.png) no-repeat}
 .openleader .inner .sns-area .sns-api .api-area {height:450px; border:1px solid #d6d5d5;}
 /* ------------------------------------------------------
 SUB PAGE
@@ -278,7 +283,7 @@ LAYOUT
 #gnb .gnb h4 a:hover {color:#016dae;}
 
 .openleader .main-visual [class*=section-] > .inner {width:auto; height:auto; padding:0 20px 2.5rem;}
-.openleader .main-visual [class*=section-] h3.tit {padding:1rem 10px; font-size:1.3rem;}
+.openleader .main-visual [class*=section-] h3.tit {margin-left:1rem; padding:1rem 10px; font-size:1.3rem;}
 .openleader .main-visual > .slick-prev {width:6rem; height:6rem; left:auto; right:8.2rem; top:5rem; margin:0; background-size:100%;}
 .openleader .main-visual > .slick-next {width:6rem; height:6rem; left:auto; right:20px; top:5rem; margin:0; background-size:100%;}
 .openleader .main-visual > .custom-paging {left:auto; right:30px; top:2.6rem; margin:0; }
@@ -286,16 +291,16 @@ LAYOUT
 .openleader .main-visual .section-01 .inner > .tit {float:none; margin:0; padding:31rem 3.8rem 1.4rem;}
 .openleader .main-visual .section-01 .inner > .tit img {margin:0 auto;}
 .openleader .main-visual .section-01 .inner .calendar {overflow:hidden; width:100%; height:auto;}
-.openleader .main-visual .section-01 .inner .calendar .tit {padding-top:1rem;}
+.openleader .main-visual .section-01 .inner .calendar .tit {width:23%; margin-left:1rem; padding-top:1rem;}
 .openleader .main-visual .section-01 .inner .calendar .inner {height:11rem;}
-.openleader .main-visual .section-01 .inner .calendar .inner .date {width:25%; padding-top:3rem; font-size:1.1rem;}
+.openleader .main-visual .section-01 .inner .calendar .inner .date {width:30%; padding-top:3rem; font-size:1.1rem;}
 .openleader .main-visual .section-01 .inner .calendar .inner .date .day {font-size:4.1rem;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list {width:75%;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list ul {margin-top:0.5rem; padding:0 1.2rem;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list {width:70%; height:11rem;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul {padding:1rem 1.2rem;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li {margin-top:8px; padding:0 0 0 7px;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:before {width:2px; height:2px;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .ico {height:2rem; line-height:2rem; padding:0 1rem; font-size:0.9rem; vertical-align:top;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .subject {width:70%; height:2rem; line-height:2rem; font-size:1rem;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .subject {width:80%; height:2rem; line-height:2rem; font-size:1rem;}
 .openleader .main-visual .section-01 .inner .name {left:36px; top:24rem; bottom:auto; width:7rem;}
 
 .openleader .main-visual .section-01 .inner .calendar .slick-arrow, 
@@ -330,7 +335,7 @@ LAYOUT
 
 .openleader .main-visual .section-02 .inner .list-banner .banner {float:none;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li img {width:100%; height:auto;}
-.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area {padding:1rem 0 0.8rem 20px;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area {padding:1rem 0 0.8rem 1rem;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .tit {font-size:1.2rem;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .txt {margin:0.5rem 0 0; font-size:1rem;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .date {top:1.1rem; padding:2px 0 0 1.7rem; background-size:contain; font-size:1rem;}
@@ -379,6 +384,7 @@ LAYOUT
 }
 @media (max-width:768px){
 	.openleader .inner .list-pledge .inner .list {padding:0 5rem;}
+	.openleader .main-visual .section-01 .inner .calendar .tit {width:20%;}
 }
 @media (max-width:734px){
 	.openleader .inner .list-pledge .inner .list {padding:0 1rem;}
@@ -388,17 +394,30 @@ LAYOUT
 	.openleader .inner .list-pledge .inner .list > li strong {font-size:1.3rem;}
 }
 @media (max-width:540px){
-	.openleader .inner .list-pledge .inner .list {margin-left:-1rem;}
-	.openleader .inner .list-pledge .inner .list > li {width:8rem; margin-left:1rem; padding-top:10rem; font-size:1rem;}
-	.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:1rem;}
+	.openleader .inner .list-pledge .inner .list {margin-left:-2rem;}
+	.openleader .inner .list-pledge .inner .list > li {width:8rem; margin-left:2rem; padding-top:10rem; font-size:1rem;}
+	.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:2rem;}
 	.openleader .inner .list-pledge .inner .list > li strong {font-size:1.1rem;}
 }
 @media (max-width:447px){
-	.openleader .inner .list-pledge .inner .list {margin-left:-0.4rem;}
-	.openleader .inner .list-pledge .inner .list > li {margin-left:0.4rem;}
-	.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:0.4rem;}
+	.openleader .inner .list-pledge .inner .list {margin-left:-2rem;}
+	.openleader .inner .list-pledge .inner .list > li {margin-left:2rem;}
+	.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:2rem;}
 }
-@media (max-width:321px){}
+@media (max-width:414px){
+	.openleader .main-visual .section-01 .inner .calendar .tit {width:15%;}
+}
+@media (max-width:345px){
+	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .subject {width:70%;}
+	.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .tit {width:60%;}
+	.openleader .inner .list-pledge .inner .list {margin-left:-1rem; padding:0;}
+	.openleader .inner .list-pledge .inner .list > li {margin-left:1rem;}
+	.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:1rem;}
+}
+@media (max-width:321px){
+	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .subject {width:70%;}
+	.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .tit {width:60%;}
+}
 
 
 

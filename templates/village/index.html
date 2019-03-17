@@ -59,26 +59,38 @@
 											<div id="wrapper1" class="js-scroll"><!-- 개발시 id값을 넣어주시기 바랍니다. -->
 												<ul class="month-list">
 													<li>
-														<em class="local-01">의성</em> 
-														<span class="tit">2019년도 신년인사회</span>
+														<a href="#">
+															<em class="local-01">의성</em> 
+															<span class="tit">2019년도 신년인사회</span>
+														</a>
 													</li>
 													<li>
-														<em class="local-01">의성</em> 
-														<span class="tit">2019년도 신년인사회</span>
+														<a href="#">
+															<em class="local-01">의성</em> 
+															<span class="tit">2019년도 신년인사회</span>
+														</a>
 													</li>
 													<li>
-														<em class="local-01">의성</em> 
-														<span class="tit">2019년도 신년인사회</span>
+														<a href="#">
+															<em class="local-01">의성</em> 
+															<span class="tit">2019년도 신년인사회</span>
+														</a>
 													</li>
 													<li>
-														<em class="local-01">의성</em> 
-														<span class="tit">2019년도 신년인사회</span>
+														<a href="#">
+															<em class="local-01">의성</em> 
+															<span class="tit">2019년도 신년인사회</span>
+														</a>
 													</li>
 													<li>
-														<em class="local-01">의성</em> <span class="tit">2019년도 신년인사회</span>
+														<a href="#">
+															<em class="local-01">의성</em> <span class="tit">2019년도 신년인사회</span>
+														</a>
 													</li>
 													<li>
-														<em class="local-01">의성</em> <span class="tit">2019년도 신년인사회</span>
+														<a href="#">
+															<em class="local-01">의성</em> <span class="tit">2019년도 신년인사회</span>
+														</a>
 													</li>
 												</ul>
 											</div>
@@ -199,7 +211,7 @@
 											2019<em>06.28</em>
 										</div>
 										<dl class="notice-con">
-											<dt><em class="local-02">옥산</em> 2019년 주민등록 사실조사 실시</dt>
+											<dt><em class="local-02">옥산</em> <span class="tit">2019년 주민등록 사실조사 실시</span></dt>
 											<dd>의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의 집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임 의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의 집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임</dd>
 										</dl>
 									</div>
@@ -253,38 +265,38 @@
 						<div class="section-service">
 							<div class="service-inner">
 								<h3>자주찾는<br>서비스</h3>
-								<ul class="service-list js-service">
-									<li class="service01">
+								<div class="service-list js-service">
+									<div class="service01">
 										<a href="#">전자민원</a>
-									</li>
-									<li class="service02">
+									</div>
+									<div class="service02">
 										<a href="#">농업기술센터</a>
-									</li>
-									<li class="service03">
+									</div>
+									<div class="service03">
 										<a href="#">관광지도</a>
-									</li>
-									<li class="service04">
+									</div>
+									<div class="service04">
 										<a href="#">문화재</a>
-									</li>
-									<li class="service05">
+									</div>
+									<div class="service05">
 										<a href="#">금봉자연휴양림</a>
-									</li>
-									<li class="service06">
+									</div>
+									<div class="service06">
 										<a href="#">의성장날</a>
-									</li>
-									<li class="service07">
+									</div>
+									<div class="service07">
 										<a href="#">의성토종마늘마을</a>
-									</li>
-									<li class="service08">
+									</div>
+									<div class="service08">
 										<a href="#">모흥황토마을</a>
-									</li>
-									<li class="service09">
+									</div>
+									<div class="service09">
 										<a href="#">안평자두마을</a>
-									</li>
-									<li class="service10">
+									</div>
+									<div class="service10">
 										<a href="#">의성청학마을</a>
-									</li>
-								</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -331,20 +343,20 @@
 			slidesToShow: 1,
 			slidesToScroll: 1
 		});
-
+		
 		$('.plan-wrap .js-scroll').each(function() {
 			if($(this).attr('id') == '') return;
-
+			
 			new IScroll("#"+$(this).attr('id'), {
-			   scrollX: false, 
-			   scrollY: true, 
-			   mouseWheel: true,
-			   scrollbars: true,
-			   interactiveScrollbars: true,
-			   fadeScrollbars: true
+				scrollX: false, 
+				scrollY: true, 
+				mouseWheel: true,
+				scrollbars: true,
+				interactiveScrollbars: true,
+				fadeScrollbars: true
 			});
 		});
-
+		
 		// 읍면행사
 		$('.popup-wrap .js-popup').slick({
 			dots: true,
@@ -363,20 +375,32 @@
 		
 		// 읍면동 전화번호
 		$('.section-info .js-hover a').on('click', function () {
-			var _height = $('.phone-wrap').height() + 110;
-			$(this).parent().removeClass('animation').addClass('on');
-			$(this).parent().stop().animate({height : _height +'px'});
-			$('.phone-wrap').stop().slideDown();
+			var _height = $('.phone-wrap').height(),
+			_height02 = $('.js-hover').height() + _height + 10;
+			
+			if($(this).parent().hasClass('on')) {
+				if($('.section-info .js-hover').hasClass('on') == false) return false;
+			
+				$('.js-hover').stop().animate({height : 120 +'px'}, function () {
+					$(this).removeClass('on').addClass('animation');
+				});
+				$('.phone-wrap').stop().slideUp();
+			} else {
+				$(this).parent().removeClass('animation').addClass('on');
+				$(this).parent().stop().animate({height : _height02 +'px'});
+				$('.phone-wrap').stop().slideDown();
+			}
 		});
 		
 		$('.time-wrap').on('mouseleave', function () {
 			if($('.section-info .js-hover').hasClass('on') == false) return false;
-
+			
 			$('.js-hover').stop().animate({height : 120 +'px'}, function () {
 				$(this).removeClass('on').addClass('animation');
 			});
 			$('.phone-wrap').stop().slideUp();
 		});
+		
 		$('.number-area .last li:last a').on('blur', function () {
 			$('.js-hover').stop().animate({height : 120 +'px'}, function () {
 				$(this).removeClass('on').addClass('animation');
@@ -384,33 +408,28 @@
 			$('.phone-wrap').stop().slideUp();
 			$('.section-info .js-hover a').focus();
 		});
-
-		(function($) {
-			$.fn.multiLine = function() {
-				return this.each(function(){
-					var el = $(this);
-					if(el.css("overflow") == "hidden") {
-						var text = el.html();
-						var t = $(this.cloneNode(true)).hide().css({'position' : 'absolute', 'overflow' : 'visible', 'width' : el.width(), 'height' : 'auto'});
-						el.after(t);
-						while (text.length > 0 && t.height() >= el.height()) {
-							text = text.substr(0, text.length - 1);
-							t.html(text + "...");
-						}
-						el.html(t.html());
-						t.remove();
-					}
-				});
-			};
-		})(jQuery);
-		$(".notice-con dd").multiLine();
-
+		
 		//자주찾는 서비스
-		$('.js-service').slick({
-			autoplaySpeed: 2000,
-			slidesToScroll: 1,
-			slidesToShow: 4,
-			arrows: false
+		$(window).on('load resize orientationchange', function() {
+			$('.js-service').each(function(){
+				var $carousel = $(this);
+				if ($(window).width() > 1024) {
+					if ($carousel.hasClass('slick-initialized')) {
+						$carousel.slick('unslick');
+					}
+				}
+				else{
+					if (!$carousel.hasClass('slick-initialized')) {
+						$carousel.slick({
+							slidesToShow: 4,
+							slidesToScroll: 1,
+							mobileFirst: true,
+							arrows: false,
+							variableWidth: true
+						});
+					}
+				}
+			});
 		});
 	</script>
 </body>

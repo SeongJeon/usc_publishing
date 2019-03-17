@@ -73,11 +73,11 @@ MAIN
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li {position:relative;  overflow:hidden; margin-top:14px; padding:0 0 0 15px; box-sizing: border-box;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:first-child {margin-top:0;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:before {position:absolute; left:0; top:11px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .ico {display:inline-block; height:26px; line-height:26px; padding:0 13px; border:1px solid; border-radius:15px; font-size:16px; -webkit-box-sizing:border-box; box-sizing:border-box;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .ico {display:inline-block; height:26px; line-height:26px; padding:0 13px; vertical-align:top; border:1px solid; border-radius:15px; font-size:16px; -webkit-box-sizing:border-box; box-sizing:border-box;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color1 {border-color:#1058a8;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color2 {border-color:#348899;}
 .openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color3 {border-color:#962d3e;}
-.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .subject {overflow:hidden; display:inline-block; width:320px; padding-left:6px; font-size:16px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; box-sizing:border-box;} 
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .subject {overflow:hidden; display:inline-block; width:320px; height:26px; line-height:26px; padding-left:6px; font-size:16px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; box-sizing:border-box;} 
 .openleader .main-visual .section-01 .inner .calendar .slick-arrow,
 .openleader .main-visual .section-01 .inner .calendar .btn-more {position:absolute; width:60px; height:60px; border-left:1px solid #dbdbdb; text-indent:-9999em;}
 .openleader .main-visual .section-01 .inner .calendar .slick-prev {right:60px; top:-60px; background:url(../images/openleader/btn_calendar_prev.png) no-repeat 50% 50%;}

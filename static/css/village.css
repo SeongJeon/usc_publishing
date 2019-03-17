@@ -98,7 +98,7 @@ MAIN
 	to {height:150px;padding-top:50px;}
 }
 
-.village .phone-wrap {margin-top:-210px;}
+.village .phone-wrap {display: none}
 .village .phone-inner {position:relative;margin:0 auto;padding:20px 0;box-sizing:border-box;}
 .village .phone-inner h3 {margin-bottom:14px;font-family:'NanumSquareEB';font-size:22px;color:#fff;}
 .village .phone-inner h3 span {font-family:'NanumSquareB';font-size:16px;color:#d3e570;}
@@ -236,7 +236,7 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1554px) {
-	.village .phone-wrap {margin-top:-39.9rem;}
+	/*.village .phone-wrap {margin-top:-39.9rem;}*/
 	.village .phone-inner h3 {text-align:center;}
 	.village .phone-ballon {left:0;}
 	.village .phone-inner .time-area {display:block;margin:0 auto 50px;}

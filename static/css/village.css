@@ -355,8 +355,8 @@ MEDIA QUERY
 	.village .section-visual .custom-paging {right:2.5rem;}
 	.village .news-wrap .notice-wrap .notice-con dt {overflow:hidden;width:100%;white-space:nowrap;word-wrap:normal;text-overflow:ellipsis;}
 	.village .notice-link li .tit {width:60%;}
-	.village .service-inner .service-list div {width:19%;}
-	.village .service-inner .service-list .service02 {width:26%;}
+	/* .village .service-inner .service-list div {width:19%;} */
+	/* .village .service-inner .service-list .service02 {width:26%;} */
 	.village .service-inner .service-list a {padding-top:5.5rem;background-size:4.3rem !important;}
 }
 

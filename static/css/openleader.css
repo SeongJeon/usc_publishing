@@ -264,23 +264,23 @@ LAYOUT
 .openleader #footer .footer-utilegroup {padding-left: 2rem}
 .openleader #container {padding-top: 0}
 
-#header .header-bottom .gnb-mo-title {background: #016dae}
-#header .header-bottom .header-utilegroup .header-utile {border-bottom: 0;}
-#header .header-bottom .header-utilegroup .header-utile li + li {border-color:#73cdc3;}
-#header .header-bottom .header-utilegroup {background: #d6eef0; height: 4.3rem;}
-#header .header-bottom .header-utilegroup .header-utile a.icon-login:before {background: url("../../static/images/openleader/icon_gnb_login.png") no-repeat 50% 50%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-#header .header-bottom .header-utilegroup .header-utile a.icon-join:before {background: url("../../static/images/openleader/icon_gnb_join.png") no-repeat 50% 50%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-#header .header-middle .btn-menu-open button {background-color: #1058a8}
-#header .header-middle .title a {margin:0 auto 0 1.4rem; width: 16.8rem; background: url("../../static/images/openleader/img_logo_m.png") no-repeat 50% 50%; -webkit-background-size: 100% auto; background-size: 100% auto; }
+.openleader #header .header-bottom .gnb-mo-title {background: #016dae}
+.openleader #header .header-bottom .header-utilegroup .header-utile {border-bottom: 0;}
+.openleader #header .header-bottom .header-utilegroup .header-utile li + li {border-color:#73cdc3;}
+.openleader #header .header-bottom .header-utilegroup {background: #d6eef0; height: 4.3rem;}
+.openleader #header .header-bottom .header-utilegroup .header-utile a.icon-login:before {background: url("../../static/images/openleader/icon_gnb_login.png") no-repeat 50% 50%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.openleader #header .header-bottom .header-utilegroup .header-utile a.icon-join:before {background: url("../../static/images/openleader/icon_gnb_join.png") no-repeat 50% 50%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.openleader #header .header-middle .btn-menu-open button {background-color: #1058a8}
+.openleader #header .header-middle .title a {margin:0 auto 0 1.4rem; width: 16.8rem; background: url("../../static/images/openleader/img_logo_m.png") no-repeat 50% 50%; -webkit-background-size: 100% auto; background-size: 100% auto; }
 
-#gnb .gnb > li:first-child .depth2menu {height: calc(100vh - 4.3rem)}
+.openleader #gnb .gnb > li:first-child .depth2menu {height: calc(100vh - 4.3rem)}
 
-#gnb .gnb .clicked, 
-#gnb .gnb .current, 
-#gnb .gnb .clicked h3 a, 
-#gnb .gnb h2 a:hover, 
-#gnb .gnb h3 a:hover, 
-#gnb .gnb h4 a:hover {color:#016dae;}
+.openleader #gnb .gnb .clicked, 
+.openleader #gnb .gnb .current, 
+.openleader #gnb .gnb .clicked h3 a, 
+.openleader #gnb .gnb h2 a:hover, 
+.openleader #gnb .gnb h3 a:hover, 
+.openleader #gnb .gnb h4 a:hover {color:#016dae;}
 
 .openleader .main-visual [class*=section-] > .inner {width:auto; height:100%; padding:0 2rem 3rem;}
 .openleader .main-visual [class*=section-] h3.tit {margin-left:1rem; padding:1rem 10px; font-size:1.3rem;}

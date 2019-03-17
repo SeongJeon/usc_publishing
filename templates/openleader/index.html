@@ -40,7 +40,7 @@
 									<div class="js-calendar">
 										<div class="inner">
 											<div class="date">2019.03<span class="day">22</span></div>
-											<div id="list01" class="list">
+											<div id="slide1" class="list">
 												<ul>
 													<li>
 														<span class="ico color1">군청</span>
@@ -71,7 +71,7 @@
 										</div>
 										<div class="inner">
 											<div class="date">2019.03<span class="day">23</span></div>
-											<div id="list02" class="list">
+											<div id="slide2" class="list">
 												<ul>
 													<li>
 														<span class="ico color1">군청</span>
@@ -328,19 +328,6 @@
 			swipe:false
 		});
 		//주요일정 스크롤
-		/*$('.js-calendar .inner .list').each(function (index) { 
-			
-		    $(this).attr('id', 'wrapper' + $(this).index());
-		    var id = $(this).attr("id");
-		    var myScroll = new IScroll(id,{
-		    	hideScrollbar:false,
-		    	snap:true,
-		    	momentum:false,
-		    	hScrollbar:false,
-		    	vScrollbar:true
-		    });
-
-		}); */
 		/*$('.js-calendar .inner .list').each(function() {
 			console.log("#"+$(this).attr('id'))
 
@@ -363,8 +350,8 @@
 		//메인 비쥬얼 높이
 		main_visual_h();
 		function main_visual_h(){
-			var main_visual_h = $('.section-02').height();
-			console.log(main_visual_h)
+			var main_visual_h = $('.section-02').outerHeight();
+			// console.log(main_visual_h)
 			$('.section-01').height(main_visual_h);
 		}
 		//메인비쥬얼 퀵메뉴

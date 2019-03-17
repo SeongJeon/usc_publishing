@@ -87,24 +87,24 @@ MAIN
 .openleader .main-visual .section-01 .inner .list-quick {clear:both; float:right; width:593px; margin-top:20px;}
 .openleader .main-visual .section-01 .inner .list-quick .list {position:relative; width:593px; height:200px; margin-left:-6px;}
 .openleader .main-visual .section-01 .inner .list-quick .list:after {display:block; content:""; clear:both;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li {position:absolute; float:left; left:0; width:120px;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li:after {position:absolute; right:1px; bottom:0; display:block; content:""; width:0; height:0px; border-top:48px solid transparent; border-right:48px solid #348899; z-index:101;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li {position:absolute; float:left; left:0; width:20%;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li:after {position:absolute; right:0; bottom:0; display:block; content:""; width:0; height:0px; border-top:48px solid transparent; border-right:48px solid #348899; z-index:101;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a {position:relative; display:block; width:113px; height:200px; margin-left:6px; }
 .openleader .main-visual .section-01 .inner .list-quick .list > li a:before {position:absolute; right:12px; bottom:7px; display:block; content:""; width:2px; height:12px; background:#cfe3e7; z-index:102; -webkit-transition:all ease 0.2s; -moz-transition:all ease 0.2; -ms-transition:all ease 0.2; transition:all ease 0.2s;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a:after {position:absolute; right:7px; bottom:12px; display:block; content:""; width:12px; height:2px; background:#cfe3e7; z-index:102; -webkit-transition:all ease 0.2s; -moz-transition:all ease 0.2; -ms-transition:all ease 0.2; transition:all ease 0.2s;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a:hover:before,
 .openleader .main-visual .section-01 .inner .list-quick .list > li a:hover:after {-webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); transform:rotate(180deg);}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a:hover .after {display:block;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo1 {z-index:10;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo2 {z-index:9;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo3 {z-index:8;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo4 {z-index:7;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo5 {z-index:6;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo1 a {background:url(../images/openleader/list_quick01.png) no-repeat;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo2 a {background:url(../images/openleader/list_quick02.png) no-repeat;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo3 a {background:url(../images/openleader/list_quick03.png) no-repeat;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo4 a {background:url(../images/openleader/list_quick04.png) no-repeat;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo5 a {background:url(../images/openleader/list_quick05.png) no-repeat;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-1 {z-index:10;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-2 {z-index:9;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-3 {z-index:8;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-4 {z-index:7;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-5 {z-index:6;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-1 a {background:url(../images/openleader/list_quick01.png) no-repeat;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-2 a {background:url(../images/openleader/list_quick02.png) no-repeat;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-3 a {background:url(../images/openleader/list_quick03.png) no-repeat;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-4 a {background:url(../images/openleader/list_quick04.png) no-repeat;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-5 a {background:url(../images/openleader/list_quick05.png) no-repeat;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a .txt {position:relative; display:block; padding:36px 0 0; font-size:20px; font-weight:bold; color:#fff; text-align:center; z-index:20;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a .after {display:none; position:absolute; left:0; top:0; width:100%; height:100%; background:#2c2c43; border:6px solid #348899; font-size:16px; box-sizing:border-box; text-align:center;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a .after em {display:inline-block; height:40px; line-height:40px; margin:96px auto 0 auto; padding:0 12px; border:1px solid #6c6c7c; color:#fff; box-sizing:border-box;}
@@ -118,8 +118,8 @@ MAIN
 .openleader .main-visual .section-02 .inner .list-banner .list {float:right; width:331px; height:100%; background:#fff;}
 .openleader .main-visual .section-02 .inner .list-banner .list .list-inner {overflow:hidden; position:relative; height:382px; margin:-2px 0 0 1px; border-top:1px solid #dbdbdb; box-sizing:border-box;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul {margin-top:10px; padding-bottom:10px;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul > li {position:relative;display:table; width:100%; padding:0 17px; box-sizing:border-box;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul > li a {display:table-cell; height:80px; margin:0 17px; vertical-align:middle; border-top:1px solid #dbdbdb;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li {position:relative;width:100%; box-sizing:border-box;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li a {display:block; margin:0 17px; padding:20px 0; border-top:1px solid #dbdbdb;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li:first-child a {border-top:none;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li.on:after {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:100%; border:4px solid #3f4972; box-sizing:border-box;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject {position:relative; overflow:hidden; display:block; width:260px; margin:0 0 12px; padding:0 0 0 17px; font-size:17px; color:#525252; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal;}
@@ -132,19 +132,19 @@ MAIN
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li.on {display:block;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li img {width:644px; height:440px;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area {position:absolute; left:0; bottom:0; width:100%; padding:17px 0 12px 20px; background:rgba(14,14,14,0.7); box-sizing:border-box;}
-.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .tit {font-size:20px; font-weight:bold; color:#fff;}
-.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .txt {display:block; margin:11px 0 0 0; font-size:15px; color:rgba(255,255,255,0.8);}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .tit {text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; width:70%; overflow:hidden; display:block; font-size:20px; font-weight:bold; color:#fff;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .txt {text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; width:60%; overflow:hidden;display:block; margin:11px 0 0 0; font-size:15px; color:rgba(255,255,255,0.8);}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .date {position:absolute; right:20px; top:18px; display:block; padding:2px 0 0 25px; background:url(../images/openleader/ico_date_01.png) no-repeat left center; font-size:15px; color:rgba(255,255,255,0.7);
 ;}
 
-.openleader .main-visual .section-02 .inner .list-banner .btn_more {position:absolute; right:0; top:0; width:60px; height:60px; border-left:1px solid #dbdbdb;}
+.openleader .main-visual .section-02 .inner .list-banner .btn_more {position:absolute; right:0; top:0; width:60px; height:59px; border-left:1px solid #dbdbdb;}
 .openleader .main-visual .section-02 .inner .list-banner .btn_more .btn {display:block; height:100%; background:url(../images/openleader/btn_calendar_more.png) no-repeat 50% 50%; text-indent:-9999em;}
 
 .openleader .main-visual .section-02 .inner .petition {float:right; width:320px; margin-top:28px;}
 .openleader .main-visual .section-02 .inner .petition .write {background:#3f4972;}
 .openleader .main-visual .section-02 .inner .petition .write .tit {display:block; height:60px; line-height:60px; font-size:22px; color:#fff; border-bottom:1px solid #8d92a7; margin:0; padding:0 0 0 25px;}
 .openleader .main-visual .section-02 .inner .petition .write .tit .tail {font-style:italic;}
-.openleader .main-visual .section-02 .inner .petition .write .inner {width:100%; padding:22px 25px 20px; background:url(../images/openleader/bg_petition.png) no-repeat left bottom;}
+.openleader .main-visual .section-02 .inner .petition .write .inner {width:100%; height:289px; padding:22px 25px 20px; background:url(../images/openleader/bg_petition.png) no-repeat left bottom;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .txt { font-size:17px; line-height:22px;color:rgba(255,255,255,0.7);;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn {position:relative; display:block; width:200px; height:50px; line-height:50px; margin:105px 0 0; padding:0 0 0 15px; background:#fff; font-size:17px; color:#212121;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:before {position:absolute; left:144px; top:25px; display:block; content:""; width:38px; height:1px; background:#3c3c3c;}
@@ -277,8 +277,121 @@ LAYOUT
 #gnb .gnb h3 a:hover, 
 #gnb .gnb h4 a:hover {color:#016dae;}
 
+.openleader .main-visual [class*=section-] > .inner {width:auto; height:auto; padding:0 20px;}
+.openleader .main-visual [class*=section-] h3.tit {padding:1rem 10px; font-size:1.3rem;}
+.openleader .main-visual > .slick-prev {width:6rem; height:6rem; left:auto; right:8.2rem; top:5rem; margin:0; background-size:100%;}
+.openleader .main-visual > .slick-next {width:6rem; height:6rem; left:auto; right:20px; top:5rem; margin:0; background-size:100%;}
+.openleader .main-visual > .custom-paging {left:auto; right:30px; top:2.6rem; margin:0; }
+.openleader .main-visual .section-01 {    background: url(../images/openleader/bg_main_visual01_m.png) no-repeat center top; background-size:cover;}
+.openleader .main-visual .section-01 .inner > .tit {float:none; margin:0; padding:31rem 3.8rem 1.4rem;}
+.openleader .main-visual .section-01 .inner > .tit img {margin:0 auto;}
+.openleader .main-visual .section-01 .inner .calendar {overflow:hidden; width:100%; height:auto;}
+.openleader .main-visual .section-01 .inner .calendar .tit {padding-top:1rem;}
+.openleader .main-visual .section-01 .inner .calendar .inner {height:11rem;}
+.openleader .main-visual .section-01 .inner .calendar .inner .date {width:25%; padding-top:3rem; font-size:1.1rem;}
+.openleader .main-visual .section-01 .inner .calendar .inner .date .day {font-size:4.1rem;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list {width:75%;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul {margin-top:1rem; padding:0 1.2rem;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li {margin-top:0.8rem; padding:0 0 0 7px;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:before {top:8px; width:2px; height:2px;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .ico {height:2rem; line-height:2rem; padding:0 1rem; font-size:0.9rem; vertical-align:top;}
+.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .subject {width:70%; height:2rem; line-height:2rem; font-size:1rem;}
+.openleader .main-visual .section-01 .inner .name {left:36px; top:24rem; bottom:auto; width:7rem;}
+
+.openleader .main-visual .section-01 .inner .calendar .slick-arrow, 
+.openleader .main-visual .section-01 .inner .calendar .btn-more {right:7.4rem; top:-1px; width:3.7rem; height:3.7rem; background-size:25%;}
+.openleader .main-visual .section-01 .inner .calendar .btn-more {background-size:35%;}
+.openleader .main-visual .section-01 .inner .calendar .slick-prev {right:3.7rem; top:-3.7rem;}
+.openleader .main-visual .section-01 .inner .calendar .slick-next {right:0; top:-3.7rem;}
+
+.openleader .main-visual .section-01 .inner .list-quick {width:100%; margin-top:1.5rem;}
+.openleader .main-visual .section-01 .inner .list-quick .list {width:100%;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li {}
+.openleader .main-visual .section-01 .inner .list-quick .list > li a {width:calc(100% - 6px); height:16rem;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li[class*=togo-] a {background-size:contain;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li a .txt {font-size:1.2rem;}
+
+.openleader .main-visual .section-02 .inner > .tit {padding:3.8rem 0 0;}
+.openleader .main-visual .section-02 .inner > .tit img {width:20rem; margin:0;}
+.openleader .main-visual .section-02 .inner .list-banner {overflow:hidden; float:none; width:100%; height:auto;}
+.openleader .main-visual .section-02 .inner .list-banner .list {overflow:hidden; position:relative; float:none; width:100%;}
+.openleader .main-visual .section-02 .inner .list-banner .list .list-inner {height:175px; }
+.openleader .main-visual .section-02 .inner .list-banner .list ul {margin:0 0.8rem;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li {padding:0; }
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li a {position:relative; margin:0; padding:1rem 8px; }
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject {display:inline-block; width:50%; margin:0; font-size:1rem;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .date {position:absolute; right:8px; display:inline-block; margin:0; padding:2px 0 0 1.7rem; background-size:contain; font-size:1rem;}
+
+.openleader .main-visual .section-02 .inner .list-banner .banner {float:none;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li img {width:100%; height:auto;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area {padding:1rem 0 0.8rem 20px;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .tit {font-size:1.2rem;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .txt {margin:0.5rem 0 0; font-size:1rem;}
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .date {top:1.1rem; padding:2px 0 0 1.7rem; background-size:contain; font-size:1rem;}
+.openleader .main-visual .section-02 .inner .petition {float:none; width:100%; margin-top:1.5rem;}
+.openleader .main-visual .section-02 .inner .list-banner .btn_more {top:-1px; width:3.7rem; height:3.7rem; z-index:50;}
+.openleader .main-visual .section-02 .inner .list-banner .btn_more a {background-size:35% !important; }
+
+
+.openleader .main-visual .section-02 .inner .petition .write {overflow:hidden; margin-bottom:2.5rem;}
+.openleader .main-visual .section-02 .inner .petition .write .tit {height:3.4rem; line-height:3.4rem; font-size:1.3rem; box-sizing:border-box;}
+.openleader .main-visual .section-02 .inner .petition .write .table {position:relative; display:table; width:100%;}
+.openleader .main-visual .section-02 .inner .petition .write .inner {display:table-cell; width:75%; height:auto; background:#3f4972 url(../images/openleader/bg_petition.png) no-repeat right bottom; background-size:contain;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .txt {font-size:1rem; line-height:1.4rem;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn {width:11rem; height:2.8rem; line-height:2.8rem; margin:2rem 0 0; font-size:1rem;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn:before {width:25px; left:auto; right:1.1rem; top:50%;}
+.openleader .main-visual .section-02 .inner .petition .write .inner .btn:after {left:auto; right:1.1rem; top:50%; margin-top:-3px;}
+.openleader .main-visual .section-02 .inner .petition .write .link {position:absolute; right:0; top:-3.4rem; display:table-cell; width:25%; height:calc(100% + 3.4rem); background: #2c2c43 url(../images/openleader/bg_petition_link.png) no-repeat center 1.2rem; z-index:10;}
+.openleader .main-visual .section-02 .inner .petition .write .link a {height:100%; background:none; padding:7rem 1rem 0; font-size:1rem; line-height:1.4rem; text-align:center;}
+.openleader .main-visual .section-02 .inner .petition .write .link a .tail {margin-top:0.5rem; font-size:1rem; line-height:1.4rem;}
+.openleader .main-visual .section-02 .inner .petition .link a:before {left:50%; top:auto; bottom:15px; margin-left:-19px;}
+.openleader .main-visual .section-02 .inner .petition .link a:after {left:auto; right:calc(50% - 19px); top:auto; bottom:12px}
+
+
+.openleader .inner .list-pledge {height:auto; background:url(../images/openleader/bg_list_pledge_m.png) no-repeat right bottom; background-size:cover;}
+.openleader .inner .list-pledge .inner {width:auto; margin:0 20px; padding-bottom:11rem;}
+.openleader .inner .list-pledge .inner .tit {font-size:1.6rem;}
+.openleader .inner .list-pledge .inner .tit .tail {font-size:1rem;}
+.openleader .inner .list-pledge .inner .list {overflow:hidden; display:block; margin:-1rem 0 0 -3rem; padding:0 13rem;}
+.openleader .inner .list-pledge .inner .list > li {float:none; display:inline-block; min-width:auto; width:10rem; margin:1rem 0 0 3rem; padding-top:13rem; font-size:1.2rem;}
+.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:3rem; }
+.openleader .inner .list-pledge .inner .list > li.ico-01 {background-size:100%;}
+.openleader .inner .list-pledge .inner .list > li.ico-02 {background-size:100%;}
+.openleader .inner .list-pledge .inner .list > li.ico-03 {background-size:100%;}
+.openleader .inner .list-pledge .inner .list > li.ico-04 {background-size:100%;}
+.openleader .inner .list-pledge .inner .list > li.ico-05 {background-size:100%;}
+.openleader .inner .list-pledge .inner .list > li strong {font-size:1.5rem;}
+.openleader .inner .list-pledge .inner .btn {left:50%; right:auto; top:auto; bottom:4rem; width:11rem; height:2.8rem; line-height:2.8rem; margin-left:-5.5rem; font-size:1rem;}
+.openleader .inner .list-pledge .inner .btn:before {width:25px; left:auto; right:1.1rem; top:50%;}
+.openleader .inner .list-pledge .inner .btn:after {left:auto; right:1.1rem; top:50%; margin-top:-3px;}
+.openleader .inner .list-pledge .inner .btn span {display:block; height:2.8rem; padding:0 0 0 15px; text-align:left;}
+.openleader .inner .list-pledge .inner .btn:hover span:before,
+.openleader .inner .list-pledge .inner .btn:focus span:before {position:absolute; left:-1px; top:-1px; display:block; content:""; width:11rem; height:2.8rem; border:3px solid #1058a8; box-sizing:border-box;}
 }
-@media (max-width:768px){}
+@media (max-width:895px){
+	.openleader .inner .list-pledge .inner .list {padding:0 7rem;}
+}
+@media (max-width:768px){
+	.openleader .inner .list-pledge .inner .list {padding:0 5rem;}
+}
+@media (max-width:734px){
+	.openleader .inner .list-pledge .inner .list {padding:0 1rem;}
+}
+@media (max-width:580px){
+	.openleader .inner .list-pledge .inner .list > li {width:9rem; padding-top:11.5rem;}
+	.openleader .inner .list-pledge .inner .list > li strong {font-size:1.3rem;}
+}
+@media (max-width:540px){
+	.openleader .inner .list-pledge .inner .list {margin-left:-1rem;}
+	.openleader .inner .list-pledge .inner .list > li {width:8rem; margin-left:1rem; padding-top:10rem; font-size:1rem;}
+	.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:1rem;}
+	.openleader .inner .list-pledge .inner .list > li strong {font-size:1.1rem;}
+}
+@media (max-width:447px){
+	.openleader .inner .list-pledge .inner .list {margin-left:-0.4rem; padding:0;}
+	.openleader .inner .list-pledge .inner .list > li {margin-left:0.4rem;}
+	.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:0.4rem;}
+}
 @media (max-width:321px){}
 
 

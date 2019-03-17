@@ -282,13 +282,13 @@ LAYOUT
 #gnb .gnb h3 a:hover, 
 #gnb .gnb h4 a:hover {color:#016dae;}
 
-.openleader .main-visual [class*=section-] > .inner {width:auto; height:auto; padding:0 20px 2.5rem;}
+.openleader .main-visual [class*=section-] > .inner {width:auto; height:100%; padding:0 2rem 3rem;}
 .openleader .main-visual [class*=section-] h3.tit {margin-left:1rem; padding:1rem 10px; font-size:1.3rem;}
 .openleader .main-visual > .slick-prev {width:6rem; height:6rem; left:auto; right:8.2rem; top:5rem; margin:0; background-size:100%;}
 .openleader .main-visual > .slick-next {width:6rem; height:6rem; left:auto; right:20px; top:5rem; margin:0; background-size:100%;}
 .openleader .main-visual > .custom-paging {left:auto; right:30px; top:2.6rem; margin:0; }
 .openleader .main-visual .section-01 {    background: url(../images/openleader/bg_main_visual01_m.png) no-repeat center top; background-size:cover;}
-.openleader .main-visual .section-01 .inner > .tit {float:none; margin:0; padding:31rem 3.8rem 1.4rem;}
+.openleader .main-visual .section-01 .inner > .tit {float:none; margin:0; padding:66vw 3.8rem 1.4rem;}
 .openleader .main-visual .section-01 .inner > .tit img {margin:0 auto;}
 .openleader .main-visual .section-01 .inner .calendar {overflow:hidden; width:100%; height:auto;}
 .openleader .main-visual .section-01 .inner .calendar .tit {width:23%; margin-left:1rem; padding-top:1rem;}
@@ -318,7 +318,7 @@ LAYOUT
 .openleader .main-visual .section-01 .inner .list-quick .list > li a:before {right:9px; bottom:5px;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a:after {right:4px; bottom:10px;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li[class*=togo-] a {background-size:cover;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li a .txt {font-size:1rem; line-height:1.4rem;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li a .txt {font-size:1.2rem; line-height:1.7rem;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a .after {font-size:1rem; border-width:3px;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a .after em {width:4.5rem; height:2rem; line-height:2rem; margin-top:7rem; padding:0; }
 
@@ -360,18 +360,19 @@ LAYOUT
 
 
 .openleader .inner .list-pledge {height:auto; background:url(../images/openleader/bg_list_pledge_m.png) no-repeat right bottom; background-size:cover;}
-.openleader .inner .list-pledge .inner {width:auto; margin:0 20px; padding-bottom:11rem;}
-.openleader .inner .list-pledge .inner .tit {font-size:1.6rem;}
-.openleader .inner .list-pledge .inner .tit .tail {font-size:1rem;}
-.openleader .inner .list-pledge .inner .list {overflow:hidden; display:block; margin:-1rem 0 0 -3rem; padding:0 13rem;}
-.openleader .inner .list-pledge .inner .list > li {float:none; display:inline-block; min-width:auto; width:10rem; margin:1rem 0 0 3rem; padding-top:13rem; font-size:1.2rem;}
-.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:3rem; }
+.openleader .inner .list-pledge .inner {width:auto; margin:0 2rem; padding-bottom:11rem;}
+.openleader .inner .list-pledge .inner .tit {font-size:1.65rem; padding:3rem 0 2.7rem;}
+.openleader .inner .list-pledge .inner .tit .tail {font-size:1rem; margin-top: 1rem}
+.openleader .inner .list-pledge .inner .list {overflow:hidden; display:block; margin:0}
+.openleader .inner .list-pledge .inner .list > li {float:none; display:inline-block; min-width:auto; width:10rem; margin:0 1rem 2rem; padding-top:13rem; font-size:1.2rem;}
+.openleader .inner .list-pledge .inner .list > li:nth-child(3) ~ li {margin-bottom: 0;}
+.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:1rem;}
 .openleader .inner .list-pledge .inner .list > li.ico-01 {background-size:100%;}
 .openleader .inner .list-pledge .inner .list > li.ico-02 {background-size:100%;}
 .openleader .inner .list-pledge .inner .list > li.ico-03 {background-size:100%;}
 .openleader .inner .list-pledge .inner .list > li.ico-04 {background-size:100%;}
 .openleader .inner .list-pledge .inner .list > li.ico-05 {background-size:100%;}
-.openleader .inner .list-pledge .inner .list > li strong {font-size:1.5rem;}
+.openleader .inner .list-pledge .inner .list > li strong {font-size:1.5rem; margin-top: 0.3rem;}
 .openleader .inner .list-pledge .inner .btn {left:50%; right:auto; top:auto; bottom:4rem; width:13rem; height:2.8rem; line-height:2.8rem; margin-left:-6.5rem; font-size:1rem;}
 .openleader .inner .list-pledge .inner .btn:before {width:25px; left:auto; right:1.1rem; top:50%;}
 .openleader .inner .list-pledge .inner .btn:after {left:auto; right:1.1rem; top:50%; margin-top:-3px;}
@@ -379,30 +380,13 @@ LAYOUT
 .openleader .inner .list-pledge .inner .btn:hover span:before,
 .openleader .inner .list-pledge .inner .btn:focus span:before {position:absolute; left:-1px; top:-1px; display:block; content:""; width:11rem; height:2.8rem; border:3px solid #1058a8; box-sizing:border-box;}
 }
-@media (max-width:895px){
-	.openleader .inner .list-pledge .inner .list {padding:0 7rem;}
-}
 @media (max-width:768px){
-	.openleader .inner .list-pledge .inner .list {padding:0 5rem;}
 	.openleader .main-visual .section-01 .inner .calendar .tit {width:20%;}
+	.openleader .inner .list-pledge .inner .list {margin:0 10%}
 }
-@media (max-width:734px){
-	.openleader .inner .list-pledge .inner .list {padding:0 1rem;}
-}
-@media (max-width:580px){
-	.openleader .inner .list-pledge .inner .list > li {width:9rem; padding-top:11.5rem;}
-	.openleader .inner .list-pledge .inner .list > li strong {font-size:1.3rem;}
-}
-@media (max-width:540px){
-	.openleader .inner .list-pledge .inner .list {margin-left:-2rem;}
-	.openleader .inner .list-pledge .inner .list > li {width:8rem; margin-left:2rem; padding-top:10rem; font-size:1rem;}
-	.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:2rem;}
-	.openleader .inner .list-pledge .inner .list > li strong {font-size:1.1rem;}
-}
-@media (max-width:447px){
-	.openleader .inner .list-pledge .inner .list {margin-left:-2rem;}
-	.openleader .inner .list-pledge .inner .list > li {margin-left:2rem;}
-	.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:2rem;}
+@media (max-width:600px){
+	.openleader .main-visual .section-01 .inner > .tit {padding-top: 31rem;}
+	.openleader .inner .list-pledge .inner .list {margin:0 -2rem}
 }
 @media (max-width:414px){
 	.openleader .main-visual .section-01 .inner .calendar .tit {width:15%;}

@@ -342,7 +342,6 @@ MEDIA QUERY
 @media (max-width:768px){
 	.village .phone-inner .number-area ul {margin-right:1rem;padding-right:1.7rem;}
 }
-
 @media (max-width:420px) {
 	.village .phone-inner .number-area li {font-size: 1.1rem;}
 }

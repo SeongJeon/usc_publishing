@@ -57,7 +57,7 @@ MAIN
 .openleader #container > .inner {width:auto;}
 .openleader #container:before {display:none;}
 .openleader .main-visual {font-size:0;}
-.openleader .main-visual .section-01 {background:url(../images/openleader/bg_main_visual01.png) no-repeat center top; background-size:cover;}
+.openleader .main-visual .section-01 {background:url(../images/openleader/main/bg_main_visual01.png) no-repeat center top; background-size:cover;}
 .openleader .main-visual [class*=section-] > .inner {position:relative; width:1320px; height:750px; margin:0 auto;}
 .openleader .main-visual [class*=section-] > .inner:after {display:block; content:""; clear:both;}
 .openleader .main-visual [class*=section-] h3.tit {position:relative; display:inline-block; margin:0 0 0 20px; padding:22px 10px 9px; border-bottom:3px solid #1058a8; font-size:22px; color:#000; font-weight:bold; z-index:10;}
@@ -100,16 +100,16 @@ MAIN
 .openleader .main-visual .section-01 .inner .list-quick .list > li.togo-3 {z-index:8;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li.togo-4 {z-index:7;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li.togo-5 {z-index:6;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-1 a {background:url(../images/openleader/list_quick01.png) no-repeat;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-2 a {background:url(../images/openleader/list_quick02.png) no-repeat;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-3 a {background:url(../images/openleader/list_quick03.png) no-repeat;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-4 a {background:url(../images/openleader/list_quick04.png) no-repeat;}
-.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-5 a {background:url(../images/openleader/list_quick05.png) no-repeat;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-1 a {background:url(../images/openleader/main/list_quick01.png) no-repeat;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-2 a {background:url(../images/openleader/main/list_quick02.png) no-repeat;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-3 a {background:url(../images/openleader/main/list_quick03.png) no-repeat;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-4 a {background:url(../images/openleader/main/list_quick04.png) no-repeat;}
+.openleader .main-visual .section-01 .inner .list-quick .list > li.togo-5 a {background:url(../images/openleader/main/list_quick05.png) no-repeat;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a .txt {position:relative; display:block; padding:36px 0 0; font-size:20px; font-weight:bold; color:#fff; text-align:center; z-index:20;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a .after {display:none; position:absolute; left:0; top:0; width:100%; height:100%; background:#2c2c43; border:6px solid #348899; font-size:16px; box-sizing:border-box; text-align:center;}
 .openleader .main-visual .section-01 .inner .list-quick .list > li a .after em {display:inline-block; height:40px; line-height:40px; margin:96px auto 0 auto; padding:0 12px; border:1px solid #6c6c7c; color:#fff; box-sizing:border-box;}
 
-.openleader .main-visual .section-02 {background:url(../images/openleader/bg_main_visual02.png) no-repeat center top; background-size:cover;}
+.openleader .main-visual .section-02 {background:url(../images/openleader/main/bg_main_visual02.png) no-repeat center top; background-size:cover;}
 .openleader .main-visual .section-02 .inner > .tit {padding:50px 0 0;}
 .openleader .main-visual .section-02 .inner > .tit img {margin:0 auto;}
 
@@ -124,7 +124,7 @@ MAIN
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li.on:after {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:100%; border:4px solid #3f4972; box-sizing:border-box;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject {position:relative; overflow:hidden; display:block; width:260px; margin:0 0 12px; padding:0 0 0 17px; font-size:17px; color:#525252; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject:before {position:absolute; left:0; top:5px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
-.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .date {display:block; margin:0 0 0 14px; padding:0 0 0 25px; background:url(../images/openleader/ico_date.png) no-repeat left center; font-size:16px;} 
+.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .date {display:block; margin:0 0 0 14px; padding:0 0 0 25px; background:url(../images/openleader/main/ico_date.png) no-repeat left center; font-size:16px;} 
 
 .openleader .main-visual .section-02 .inner .list-banner .banner {float:left;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img {}
@@ -134,7 +134,7 @@ MAIN
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area {position:absolute; left:0; bottom:0; width:100%; padding:17px 0 12px 20px; background:rgba(14,14,14,0.7); box-sizing:border-box;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .tit {text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; width:70%; overflow:hidden; display:block; font-size:20px; font-weight:bold; color:#fff;}
 .openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .txt {text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; width:60%; overflow:hidden;display:block; margin:11px 0 0 0; font-size:15px; color:rgba(255,255,255,0.8);}
-.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .date {position:absolute; right:20px; top:18px; display:block; padding:2px 0 0 25px; background:url(../images/openleader/ico_date_01.png) no-repeat left center; font-size:15px; color:rgba(255,255,255,0.7);
+.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .date {position:absolute; right:20px; top:18px; display:block; padding:2px 0 0 25px; background:url(../images/openleader/main/ico_date_01.png) no-repeat left center; font-size:15px; color:rgba(255,255,255,0.7);
 ;}
 
 .openleader .main-visual .section-02 .inner .list-banner .btn_more {position:absolute; right:0; top:0; width:60px; height:59px; border-left:1px solid #dbdbdb;}
@@ -144,7 +144,7 @@ MAIN
 .openleader .main-visual .section-02 .inner .petition .write {background:#3f4972;}
 .openleader .main-visual .section-02 .inner .petition .write .tit {display:block; height:60px; line-height:60px; font-size:22px; color:#fff; border-bottom:1px solid #8d92a7; margin:0; padding:0 0 0 25px;}
 .openleader .main-visual .section-02 .inner .petition .write .tit .tail {font-style:italic;}
-.openleader .main-visual .section-02 .inner .petition .write .inner {position:relative; width:100%; height:289px; padding:22px 25px 20px; background:url(../images/openleader/bg_petition.png) no-repeat left bottom;}
+.openleader .main-visual .section-02 .inner .petition .write .inner {position:relative; width:100%; height:289px; padding:22px 25px 20px; background:url(../images/openleader/main/bg_petition.png) no-repeat left bottom;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .txt { font-size:17px; line-height:22px;color:rgba(255,255,255,0.7);;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn {position:relative; display:block; width:200px; height:50px; line-height:50px; margin:153px 0 0; padding:0 0 0 15px; background:#fff; font-size:17px; color:#212121;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:before {position:absolute; left:144px; top:25px; display:block; content:""; width:38px; height:1px; background:#3c3c3c;}
@@ -157,7 +157,7 @@ MAIN
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:focus:after {border-top:1px solid #272727; border-right:1px solid #272727;}
 
 .openleader .main-visual .section-02 .inner .petition .link {}
-.openleader .main-visual .section-02 .inner .petition .link a {position:relative; display:block; height:90px; padding:16px 0 0 98px; background:#2c2c43 url(../images/openleader/bg_petition_link.png) no-repeat 25px center; font-size:22px; font-weight:bold; color:#fff; box-sizing:border-box;}
+.openleader .main-visual .section-02 .inner .petition .link a {position:relative; display:block; height:90px; padding:16px 0 0 98px; background:#2c2c43 url(../images/openleader/main/bg_petition_link.png) no-repeat 25px center; font-size:22px; font-weight:bold; color:#fff; box-sizing:border-box;}
 .openleader .main-visual .section-02 .inner .petition .link a:hover,
 .openleader .main-visual .section-02 .inner .petition .link a:focus {background-color:#962d3e;}
 .openleader .main-visual .section-02 .inner .petition .link a .tail {display:block; margin-top:11px; font-size:17px; color:rgba(255,255,255,0.7);}
@@ -172,7 +172,7 @@ MAIN
 .openleader .main-visual > .custom-paging li.slick-active {display:block;}
 .openleader .main-visual > .custom-paging li.slick-active em {font-size:18px; font-family:"NanumSquareB";}
 
-.openleader .inner .list-pledge {height:500px; background:url(../images/openleader/bg_list_pledge.png) no-repeat; background-size:cover;}
+.openleader .inner .list-pledge {height:500px; background:url(../images/openleader/main/bg_list_pledge.png) no-repeat; background-size:cover;}
 .openleader .inner .list-pledge .inner {position:relative; width:1320px; margin:0 auto; text-align:center;}
 .openleader .inner .list-pledge .inner .tit {padding:53px 0 36px; text-align:center; font-size:30px; color:#212121; font-weight:bold;}
 .openleader .inner .list-pledge .inner .tit .tail {display:block; margin-top:15px; font-size:17px; font-weight:normal;}
@@ -181,11 +181,11 @@ MAIN
 /* .openleader .inner .list-pledge .inner .list:after {display:block; content:""; clear:both;} */
 .openleader .inner .list-pledge .inner .list > li {float:left; min-width:200px; margin-left:46px; padding-top:230px; text-align:center; font-size:22px; color:#212121;}
 .openleader .inner .list-pledge .inner .list > li:first-child {margin-left:0;}
-.openleader .inner .list-pledge .inner .list > li.ico-01 {background:url(../images/openleader/bg_list_pledge01.png) no-repeat center top;}
-.openleader .inner .list-pledge .inner .list > li.ico-02 {background:url(../images/openleader/bg_list_pledge02.png) no-repeat center top;}
-.openleader .inner .list-pledge .inner .list > li.ico-03 {background:url(../images/openleader/bg_list_pledge03.png) no-repeat center top;}
-.openleader .inner .list-pledge .inner .list > li.ico-04 {background:url(../images/openleader/bg_list_pledge04.png) no-repeat center top;}
-.openleader .inner .list-pledge .inner .list > li.ico-05 {background:url(../images/openleader/bg_list_pledge05.png) no-repeat center top;}
+.openleader .inner .list-pledge .inner .list > li.ico-01 {background:url(../images/openleader/main/bg_list_pledge01.png) no-repeat center top;}
+.openleader .inner .list-pledge .inner .list > li.ico-02 {background:url(../images/openleader/main/bg_list_pledge02.png) no-repeat center top;}
+.openleader .inner .list-pledge .inner .list > li.ico-03 {background:url(../images/openleader/main/bg_list_pledge03.png) no-repeat center top;}
+.openleader .inner .list-pledge .inner .list > li.ico-04 {background:url(../images/openleader/main/bg_list_pledge04.png) no-repeat center top;}
+.openleader .inner .list-pledge .inner .list > li.ico-05 {background:url(../images/openleader/main/bg_list_pledge05.png) no-repeat center top;}
 .openleader .inner .list-pledge .inner .list > li strong {display:block; font-family:"NanumSquareB"; font-size:30px; color:#1058a8;}
 .openleader .inner .list-pledge .inner .btn {}
 .openleader .inner .list-pledge .inner .btn {position:absolute; right:80px; top:67px; display:block; width:200px; height:50px; line-height:50px; background:#fff; border:1px solid #d6d5d5; font-size:17px; color:#212121; box-sizing:border-box;}
@@ -215,9 +215,9 @@ MAIN
 
 .openleader .inner .sns-area .sns-api.facebook .tit{background:#3b589e;}
 .openleader .inner .sns-area .sns-api.blog .tit{background:#36ac37;}
-.openleader .inner .sns-area .sns-api.twitter .tit span {background:url(../images/openleader/bg_twitter.png) no-repeat}
-.openleader .inner .sns-area .sns-api.facebook .tit span {background:url(../images/openleader/bg_facebook.png) no-repeat}
-.openleader .inner .sns-area .sns-api.blog .tit span {background:url(../images/openleader/bg_blog.png) no-repeat}
+.openleader .inner .sns-area .sns-api.twitter .tit span {background:url(../images/openleader/main/bg_twitter.png) no-repeat}
+.openleader .inner .sns-area .sns-api.facebook .tit span {background:url(../images/openleader/main/bg_facebook.png) no-repeat}
+.openleader .inner .sns-area .sns-api.blog .tit span {background:url(../images/openleader/main/bg_blog.png) no-repeat}
 .openleader .inner .sns-area .sns-api .api-area {height:450px; border:1px solid #d6d5d5;}
 /* ------------------------------------------------------
 SUB PAGE
@@ -287,7 +287,7 @@ LAYOUT
 .openleader .main-visual > .slick-prev {width:6rem; height:6rem; left:auto; right:8.2rem; top:5rem; margin:0; background-size:100%;}
 .openleader .main-visual > .slick-next {width:6rem; height:6rem; left:auto; right:20px; top:5rem; margin:0; background-size:100%;}
 .openleader .main-visual > .custom-paging {left:auto; right:30px; top:2.6rem; margin:0; }
-.openleader .main-visual .section-01 {    background: url(../images/openleader/bg_main_visual01_m.png) no-repeat center top; background-size:cover;}
+.openleader .main-visual .section-01 {    background: url(../images/openleader/main/bg_main_visual01_m.png) no-repeat center top; background-size:cover;}
 .openleader .main-visual .section-01 .inner > .tit {float:none; margin:0; padding:66vw 3.8rem 1.4rem;}
 .openleader .main-visual .section-01 .inner > .tit img {margin:0 auto;}
 .openleader .main-visual .section-01 .inner .calendar {overflow:hidden; width:100%; height:auto;}
@@ -347,19 +347,19 @@ LAYOUT
 .openleader .main-visual .section-02 .inner .petition .write {overflow:hidden;}
 .openleader .main-visual .section-02 .inner .petition .write .tit {height:3.4rem; line-height:3.4rem; font-size:1.3rem; box-sizing:border-box;}
 .openleader .main-visual .section-02 .inner .petition .write .table {position:relative; display:table; width:100%;}
-.openleader .main-visual .section-02 .inner .petition .write .inner {display:table-cell; width:75%; height:auto; background:#3f4972 url(../images/openleader/bg_petition.png) no-repeat right bottom; background-size:contain;}
+.openleader .main-visual .section-02 .inner .petition .write .inner {display:table-cell; width:75%; height:auto; background:#3f4972 url(../images/openleader/main/bg_petition.png) no-repeat right bottom; background-size:contain;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .txt {font-size:1rem; line-height:1.4rem;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn {width:11rem; height:2.8rem; line-height:2.8rem; margin:2rem 0 0; font-size:1rem;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:before {width:25px; left:auto; right:1.1rem; top:50%;}
 .openleader .main-visual .section-02 .inner .petition .write .inner .btn:after {left:auto; right:1.1rem; top:50%; margin-top:-3px;}
-.openleader .main-visual .section-02 .inner .petition .write .link {position:absolute; right:0; top:-3.4rem; display:table-cell; width:25%; height:calc(100% + 3.4rem); background: #2c2c43 url(../images/openleader/bg_petition_link.png) no-repeat center 1.2rem; z-index:10;}
+.openleader .main-visual .section-02 .inner .petition .write .link {position:absolute; right:0; top:-3.4rem; display:table-cell; width:25%; height:calc(100% + 3.4rem); background: #2c2c43 url(../images/openleader/main/bg_petition_link.png) no-repeat center 1.2rem; z-index:10;}
 .openleader .main-visual .section-02 .inner .petition .write .link a {height:100%; background:none; padding:7rem 1rem 0; font-size:1rem; line-height:1.4rem; text-align:center;}
 .openleader .main-visual .section-02 .inner .petition .write .link a .tail {margin-top:0.5rem; font-size:1rem; line-height:1.4rem;}
 .openleader .main-visual .section-02 .inner .petition .link a:before {left:50%; top:auto; bottom:15px; margin-left:-19px;}
 .openleader .main-visual .section-02 .inner .petition .link a:after {left:auto; right:calc(50% - 19px); top:auto; bottom:12px}
 
 
-.openleader .inner .list-pledge {height:auto; background:url(../images/openleader/bg_list_pledge_m.png) no-repeat right bottom; background-size:cover;}
+.openleader .inner .list-pledge {height:auto; background:url(../images/openleader/main/bg_list_pledge_m.png) no-repeat right bottom; background-size:cover;}
 .openleader .inner .list-pledge .inner {width:auto; margin:0 2rem; padding-bottom:11rem;}
 .openleader .inner .list-pledge .inner .tit {font-size:1.65rem; padding:3rem 0 2.7rem;}
 .openleader .inner .list-pledge .inner .tit .tail {font-size:1rem; margin-top: 1rem}

@@ -414,8 +414,10 @@ LAYOUT
 	.openleader .inner .list-pledge .inner .list > li {margin-left:1rem;}
 	.openleader .inner .list-pledge .inner .list > li:first-child {margin-left:1rem;}
 }
-@media (max-width:321px){
+@media (max-width:360px){
 	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .subject {width:70%;}
+}
+@media (max-width:321px){
 	.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .tit {width:60%;}
 }
 

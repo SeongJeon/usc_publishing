@@ -327,7 +327,7 @@ LAYOUT
 .openleader .main-visual .section-02 .inner .list-banner {overflow:hidden; float:none; width:100%; height:auto;}
 .openleader .main-visual .section-02 .inner .list-banner .list {overflow:hidden; position:relative; float:none; width:100%;}
 .openleader .main-visual .section-02 .inner .list-banner .list .list-inner {height:13rem; }
-.openleader .main-visual .section-02 .inner .list-banner .list ul {margin:0 0.8rem; padding-top:0.3rem;}
+.openleader .main-visual .section-02 .inner .list-banner .list ul {margin:0 1.4rem 0 0.8rem; padding-top:0.3rem;}
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li {padding:0; }
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a {position:relative; margin:0; padding:1rem 8px; }
 .openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject {display:inline-block; width:50%; margin:0; font-size:1rem;}

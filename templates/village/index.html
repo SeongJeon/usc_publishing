@@ -61,7 +61,7 @@
 									<div class="js-plan">
 										<div class="month-area">
 											<em>2019.03</em>
-											<div class="js-scroll">
+											<div ic="wrapper1" class="js-scroll">
 												<ul class="month-list">
 													<li>
 														<em class="local-01">의성</em> 
@@ -90,16 +90,35 @@
 										</div>
 										<div class="month-area">
 											<em>2019.04</em>
-											<ul class="month-list">
-												<li>
-													<em class="local-01">의성</em>
-													<span class="tit">2019년도 신년인사회</span>
-												</li>
-												<li>
-													<em class="local-01">의성</em> 
-													<span class="tit">2019년도 신년인사회</span>
-												</li>
-											</ul>
+											<div id="wrapper2" class="js-scroll">
+												<ul class="month-list">
+													<li>
+														<em class="local-01">의성</em>
+														<span class="tit">2019년도 신년인사회</span>
+													</li>
+													<li>
+														<em class="local-01">의성</em> 
+														<span class="tit">2019년도 신년인사회</span>
+													</li>
+													<li>
+														<em class="local-01">의성</em> 
+														<span class="tit">2019년도 신년인사회</span>
+													</li>
+													<li>
+														<em class="local-01">의성</em> 
+														<span class="tit">2019년도 신년인사회</span>
+													</li>
+													<li>
+														<em class="local-01">의성</em> 
+														<span class="tit">2019년도 신년인사회</span>
+													</li>
+													<li>
+														<em class="local-01">의성</em> 
+														<span class="tit">2019년도 신년인사회</span>
+													</li>
+												</ul>
+											</div>
+											
 										</div>
 									</div>
 									<button type="button" class="btn-plan-next">다음</button>
@@ -148,7 +167,7 @@
 													<li><a href="#"><em>안사면</em>054-123-1234</a></li>
 												</ul>
 											</div>
-
+											
 											<div class="number-area view-m">
 												<ul>
 													<li><a href="#none"><em>의성읍</em>054-123-1234</a></li>
@@ -187,7 +206,7 @@
 										</div>
 										<dl class="notice-con">
 											<dt><em class="local-02">옥산</em> 2019년 주민등록 사실조사 실시</dt>
-											<dd>의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의 집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임</dd>
+											<dd>의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의 집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임 의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의 집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임</dd>
 										</dl>
 									</div>
 									<ul class="notice-link">
@@ -334,28 +353,82 @@
 				}
 			});
 
-			/* $('.section-info .js-hover a').on('mouseover focus', function () {
+			$('.section-info .js-hover a').on('mouseover focus', function () {
 				var _height = $('.phone-wrap').height() + 118;
 				$(this).parent().removeClass('animation').addClass('on');
 				$(this).parent().stop().animate({height : _height +'px'});
-				$('.phone-wrap').stop().animate({marginTop : 0});
+				$('.phone-wrap').stop().animate({
+					marginTop : 0
+				});
 			});
-
+			
 			$('.section-info .phone-wrap, .section-info .phone-wrap .number-area .last li:last a').on('mouseleave blur', function () {
 				$('.js-hover').stop().animate({height : 120 +'px'}, function () {
 					$(this).removeClass('on').addClass('animation');
 				});
 				$('.phone-wrap').stop().slideUp();
+			});
+			
+			$('.section-info .js-hover a').on('click', function () {
+				var _height = $('.phone-wrap').height() + 118;
+				$(this).parent().removeClass('animation').addClass('on');
+				$(this).parent().stop().animate({height : _height +'px'});
+				$('.phone-wrap').stop().animate({
+					marginTop : 0
+				});
+			});
+			
+			$('.section-info .phone-wrap, .section-info .phone-wrap .number-area .last li:last a').on('mouseleave blur', function () {
+				$('.js-hover').stop().animate({height : 120 +'px'}, function () {
+					$(this).removeClass('on').addClass('animation');
+				});
+				$('.phone-wrap').stop().slideUp();
+			});
+			
+			
+			
+			/* var myScroll = new Array();
+			$('.js-scroll').each(function () {
+				var id = $(this).attr('id');
+				console.log(id);
+				myScroll.push(new IScroll(id, {
+					scrollX: false, 
+					scrollY: true, 
+					mouseWheel: true,
+					scrollbars: true,
+					interactiveScrollbars: true,
+					fadeScrollbars: true
+				}))
 			}); */
 			
-			var myScroll = new IScroll('.js-scroll', {
+			/* var myScroll = new IScroll('.js-scroll', {
 				scrollX: false, 
 				scrollY: true, 
 				mouseWheel: true,
 				scrollbars: true,
 				interactiveScrollbars: true,
 				fadeScrollbars: true
-			});
+			}); */
+			
+			(function($) {
+				$.fn.multiLine = function() {
+					return this.each(function(){
+						var el = $(this);
+						if(el.css("overflow") == "hidden") {
+							var text = el.html();
+							var t = $(this.cloneNode(true)).hide().css({'position' : 'absolute', 'overflow' : 'visible', 'width' : el.width(), 'height' : 'auto'});
+							el.after(t);
+							while (text.length > 0 && t.height() >= el.height()) {
+								text = text.substr(0, text.length - 1);
+								t.html(text + "...");
+							}
+							el.html(t.html());
+							t.remove();
+						}
+					});
+				};
+			})(jQuery);
+			$(".notice-con dd").multiLine();
 		});
 	</script>
 </body>

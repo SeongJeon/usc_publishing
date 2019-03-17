@@ -19,8 +19,6 @@ LAYOUT
 
 
 
-
-
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -65,7 +63,7 @@ MAIN
 .village .plan-wrap h2 {margin-bottom:17px;font-size:22px;font-family:'NanumSquareB';color:#000;text-align:center;}
 .village .plan-wrap .month-area {text-align:center;}
 .village .plan-wrap .month-area > em {display:block;height:57px;margin-bottom:18px;line-height:59px;font-size:24px;color:#2c2c2c;font-family:'NanumSquareB';}
-.village .plan-wrap .month-area .js-scroll {overflow:hidden;position:relative;height:200px;}
+.village .plan-wrap .js-scroll {overflow:hidden;position:relative;height:200px;}
 .village .plan-wrap .month-area .month-list {text-align:left;color:#525252;}
 .village .plan-wrap .month-area .month-list li {overflow:hidden;width:90%;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
 .village .plan-wrap .month-area .month-list li + li {margin-top:13px;}
@@ -100,7 +98,7 @@ MAIN
 	to {height:150px;padding-top:50px;}
 }
 
-/* .village .phone-wrap {margin-top:-210px;} */
+.village .phone-wrap {margin-top:-210px;}
 .village .phone-inner {position:relative;margin:0 auto;padding:20px 0;box-sizing:border-box;}
 .village .phone-inner h3 {margin-bottom:14px;font-family:'NanumSquareEB';font-size:22px;color:#fff;}
 .village .phone-inner h3 span {font-family:'NanumSquareB';font-size:16px;color:#d3e570;}
@@ -128,7 +126,7 @@ MAIN
 .village .news-wrap .notice-wrap .notice-con {display:inline-block;width:480px;margin-left:5px;}
 .village .news-wrap .notice-wrap .notice-con dt {margin-bottom:18px;font-family:'NanumSquareB';font-size:20px;color:#222;}
 .village .news-wrap .notice-wrap .notice-con em {font-size:16px;}
-.village .news-wrap .notice-wrap .notice-con dd {line-height:1.5;}
+.village .news-wrap .notice-wrap .notice-con dd {overflow:hidden;width:100%;height:50px;white-space:normal;line-height:1.5;}
 .village .news-wrap .notice-wrap .btn-view {position:absolute;top:23px;right:20px;display:inline-block;width:29px;height:29px;background:#fff url(../images/village/btn_plus.png) no-repeat center center;border:1px solid #ccc;text-indent:-999em;}
 .village .notice-link li {position:relative;padding-left:10px;margin-top:10px;}
 .village .notice-link li:first-child {margin-top:0;}
@@ -232,13 +230,13 @@ SUB PAGE
 BROWSER HACK
 ------------------------------------------------------ */
 @media screen and (-webkit-min-device-pixel-ratio:0){ } /* webkit hack */
-@-moz-document url-prefix() { } /* firefox hack */
+@-moz-document url-prefix() {} /* firefox hack */
 
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1554px) {
-	/* .village .phone-wrap {margin-top:-385px;} */
+	.village .phone-wrap {margin-top:-39.9rem;}
 	.village .phone-inner h3 {text-align:center;}
 	.village .phone-ballon {left:0;}
 	.village .phone-inner .time-area {display:block;margin:0 auto 50px;}
@@ -269,6 +267,7 @@ MEDIA QUERY
 	
 	.village .section-info {margin-bottom:1.9rem;}
 	.village .phone-ballon {width:7rem;height:7.8rem;padding-top:.9rem;font-size:1.7rem;}
+	.village .phone-ballon.on a {left:.3rem;}
 	@-webkit-keyframes ballon {
 		from {height:11rem;}
 		to {height:14rem;padding-top:3rem;}
@@ -290,11 +289,11 @@ MEDIA QUERY
 	.village .phone-inner .time-area {width:24rem;height:8.4rem;margin-bottom:1.9rem;padding:2rem .9rem 0 6.8rem;background-size:5.9rem !important;}
 	.village .phone-inner .time-area .time {margin-bottom:.9rem;font-size:1.5rem;}
 	.village .phone-inner .time-area .rest {height:2.4rem;line-height:2.4rem;}
-	.village .phone-inner .number-area {margin:0;text-align:right;}
+	.village .phone-inner .number-area {margin:0;text-align:center;}
 	.village .phone-inner .number-area.view-pc {display:none !important;}
 	.village .phone-inner .number-area.view-m {display:block !important;}
-	.village .phone-inner .number-area ul {margin-right:2rem;padding-right:2rem;}
-	.village .phone-inner .number-area ul:last-child {margin:0;padding:0;}
+	.village .phone-inner .number-area ul {margin-right:1.5rem;padding-right:2rem;}
+	.village .phone-inner .number-area ul:last-child {margin:0;}
 	.village .phone-inner .number-area ul:last-child:after {display:none;}
 	.village .phone-inner .number-area li {font-size:1.2rem;}
 	.village .phone-inner .number-area em {margin-right:1.4rem;font-size:1.3rem;}
@@ -308,6 +307,7 @@ MEDIA QUERY
 	.village .news-wrap .notice-preview .date em {font-size:1.9rem;}
 	.village .news-wrap .notice-wrap .notice-con {width:-webkit-calc(100% - 7rem);width:-moz-calc(100% - 7rem);width:-o-calc(100% - 7rem);width:calc(100% - 7rem);}
 	.village .news-wrap .notice-wrap .notice-con dt {margin-bottom:1.2rem;font-size:1.4rem;}
+	.village .news-wrap .notice-wrap .notice-con dd {height:4rem;}
 	.village .news-wrap .notice-wrap .notice-con em {font-size:1.1rem;}
 	.village .notice-link li .tit {width:63%;vertical-align:-.9rem;}
 	.village .notice-link li .date {margin-top:.5rem;}
@@ -332,7 +332,14 @@ MEDIA QUERY
 	.village .service-inner .service-list .service02 {width:24%;}
 	.village .service-inner .service-list a {padding-top:7rem;font-size:1.2rem;background-size:5rem !important;}
 }
-@media (max-width:768px){}
+@media (max-width:768px){
+	.village .phone-inner .time-area {margin-left:8.5rem;}
+	.village .phone-inner .number-area ul {margin-right:1rem;padding-right:1rem;}
+}
+
+@media (max-width:420px) {
+	.village .phone-inner .number-area {text-align:right;}
+}
 @media (max-width:321px){
 	.village .section-visual button[class*='btn-main-'] {width:3rem;height:3rem;}
 	.village .section-visual .btn-main-next {top:10.8rem;}

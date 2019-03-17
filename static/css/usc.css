@@ -130,7 +130,7 @@ MAIN
 #wrap.usc #container.main .tab-news .news-banner .slick-arrow.slick-next:after { background-position: -100px -100px; }
 #wrap.usc #container.main .tab-news .news-banner .btn-slickPause { position: absolute; bottom: 0; right: 50px; width: 32px; height: 50px; text-indent: -999em; z-index: 1; }
 #wrap.usc #container.main .tab-news .news-banner .btn-slickPause:after { display: block; content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 20px; margin: -10px 0 0 -5px; background: url("../../static/images/usc/sp_main.png") no-repeat -50px -100px; }
-#wrap.usc #container.main .tab-news .news-banner .btn-slickPause.play:after { background-position: -200px -200px; }
+#wrap.usc #container.main .tab-news .news-banner .btn-slickPause.play:after { background: url("../../static/images/common/btn_play.png") no-repeat 50% 50%; }
 #wrap.usc #container.main .tab-news .news-board { position: relative; overflow: hidden; height: 335px; margin-top: 10px; background: #fff; padding: 0 27px; }
 #wrap.usc #container.main .tab-news .news-board .board-tabmenu { border-bottom: 1px solid #f27405; }
 #wrap.usc #container.main .tab-news .news-board .board-tabmenu:after { display: block; clear: both; content: ""; }
@@ -169,7 +169,7 @@ MAIN
 #wrap.usc #container.main .tab-news .news-favoritmenu .news-favoritmenu-slider .slide-indicator button[class^=btn-].btn-up span { width: 17px; height: 10px; background-position: 0 -150px; }
 #wrap.usc #container.main .tab-news .news-favoritmenu .news-favoritmenu-slider .slide-indicator button[class^=btn-].btn-down span { width: 17px; height: 10px; background-position: -50px -150px; }
 #wrap.usc #container.main .tab-news .news-favoritmenu .news-favoritmenu-slider .slide-indicator button[class^=btn-].btn-pause span { width: 10px; height: 18px; background-position: -100px -150px; }
-#wrap.usc #container.main .tab-news .news-favoritmenu .news-favoritmenu-slider .slide-indicator button[class^=btn-].btn-pause.play span { width: 11px; height: 21px; background-position: -200px -200px; }
+#wrap.usc #container.main .tab-news .news-favoritmenu .news-favoritmenu-slider .slide-indicator button[class^=btn-].btn-pause.play span { width: 11px; height: 21px; background: url("../../static/images/common/btn_play.png") no-repeat 50% 50%; }
 #wrap.usc #container.main .tab-news .news-favoritmenu .news-favoritmenu-slider .slider { padding: 0 20px; }
 #wrap.usc #container.main .tab-news .news-favoritmenu .news-favoritmenu-slider .slider .slide { padding: 16px 10px 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 #wrap.usc #container.main .tab-news .news-favoritmenu .news-favoritmenu-slider .slider a { display: block; position: relative; overflow: hidden; width: 100%; height: 42px; padding-left: 50px; border-radius: 100px; font-size: 16px; text-align: left; line-height: 42px; box-sizing: border-box; }
@@ -237,7 +237,7 @@ MAIN
 #wrap.usc #container.main .tab-news .menugroup .news-popupzone .popupzone-titlezone .indicator button[class^=btn-].btn-prev span { background-position: 0 -200px; }
 #wrap.usc #container.main .tab-news .menugroup .news-popupzone .popupzone-titlezone .indicator button[class^=btn-].btn-next span { background-position: -50px -200px; }
 #wrap.usc #container.main .tab-news .menugroup .news-popupzone .popupzone-titlezone .indicator button[class^=btn-].btn-pause span { background-position: -100px -200px; }
-#wrap.usc #container.main .tab-news .menugroup .news-popupzone .popupzone-titlezone .indicator button[class^=btn-].btn-pause.play span { width: 11px; height: 21px; background-position: -200px -200px; }
+#wrap.usc #container.main .tab-news .menugroup .news-popupzone .popupzone-titlezone .indicator button[class^=btn-].btn-pause.play span { width: 11px; height: 21px; background: url("../../static/images/common/btn_play.png") no-repeat 50% 50%; }
 #wrap.usc #container.main .tab-news .menugroup .news-popupzone .popupzone-titlezone .hotnews { position: absolute; left: 78px; top: 15px; width: 68px; font-size: 12px; text-align: center; height: 26px; line-height: 24px; border: 1px solid #fff; border-radius: 6px; box-sizing: border-box; color: #fff; }
 #wrap.usc #container.main .tab-news .menugroup .news-popupzone .slick-dots { position: absolute; right: 140px; top: 6px; z-index: 11; font-size: 16px; color: #fff; width: 65px; text-align: center; }
 #wrap.usc #container.main .tab-news .menugroup .news-popupzone .slick-dots li { display: none; position: absolute; left: 19px; top: 14px; }

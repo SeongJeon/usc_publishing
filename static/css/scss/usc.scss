@@ -297,7 +297,7 @@ MAIN
 					width:11px; height: 20px; margin:-10px 0 0 -5px;
 					@include background("usc/sp_main.png", no-repeat -50px -100px)
 				}
-				&.play:after {background-position: -200px -200px;}
+				&.play:after {@include background("common/btn_play.png",no-repeat 50% 50%);}
 			}
 		}
 		// 게시판
@@ -385,7 +385,7 @@ MAIN
 						&.btn-up span {width:17px; height: 10px; background-position: 0 -150px;}
 						&.btn-down span {width:17px; height: 10px; background-position: -50px -150px;}
 						&.btn-pause span {width:10px; height: 18px; background-position: -100px -150px;}
-						&.btn-pause.play span {width:11px; height:21px; background-position: -200px -200px;}
+						&.btn-pause.play span {width:11px; height:21px; @include background("common/btn_play.png",no-repeat 50% 50%);}
 					}
 				}
 				.slider {
@@ -506,7 +506,7 @@ MAIN
 							&.btn-prev span {background-position: 0 -200px;}
 							&.btn-next span {background-position: -50px -200px;}
 							&.btn-pause span {background-position: -100px -200px;}
-							&.btn-pause.play span {width:11px; height: 21px; background-position: -200px -200px;}
+							&.btn-pause.play span {width:11px; height: 21px; @include background("common/btn_play.png",no-repeat 50% 50%);}
 						}
 					}
 					.hotnews {position: absolute; left:78px; top:15px; width:68px; font-size: 12px; text-align: center; height: 26px; line-height: 24px; border:1px solid #fff; border-radius:6px; box-sizing: border-box; color:#fff; }

@@ -323,7 +323,6 @@
 			}
 		});
 		
-
 		// 월간행사계획
 		$('.plan-wrap .js-plan').slick({
 			arrows: true,
@@ -332,6 +331,7 @@
 			slidesToShow: 1,
 			slidesToScroll: 1
 		});
+
 		$('.plan-wrap .js-scroll').each(function() {
 			if($(this).attr('id') == '') return;
 
@@ -363,7 +363,7 @@
 		
 		// 읍면동 전화번호
 		$('.section-info .js-hover a').on('click', function () {
-			var _height = $('.phone-wrap').height() + 118;
+			var _height = $('.phone-wrap').height() + 110;
 			$(this).parent().removeClass('animation').addClass('on');
 			$(this).parent().stop().animate({height : _height +'px'});
 			$('.phone-wrap').stop().slideDown();
@@ -384,35 +384,6 @@
 			$('.phone-wrap').stop().slideUp();
 			$('.section-info .js-hover a').focus();
 		});
-			
-			
-		// $(document).ready(function () {
-			
-		// 	 var myScroll = new Array();
-		// 	$('.js-scroll').each(function () {
-		// 		var id = $(this).attr('id');
-		// 		console.log(id);
-		// 		myScroll.push(new IScroll(id, {
-		// 			scrollX: false, 
-		// 			scrollY: true, 
-		// 			mouseWheel: true,
-		// 			scrollbars: true,
-		// 			interactiveScrollbars: true,
-		// 			fadeScrollbars: true
-		// 		}))
-		// 	}); 
-			
-		// 	/* var myScroll = new IScroll('.js-scroll', {
-		// 		scrollX: false, 
-		// 		scrollY: true, 
-		// 		mouseWheel: true,
-		// 		scrollbars: true,
-		// 		interactiveScrollbars: true,
-		// 		fadeScrollbars: true
-		// 	}); */
-		// });
-
-
 
 		(function($) {
 			$.fn.multiLine = function() {
@@ -433,6 +404,14 @@
 			};
 		})(jQuery);
 		$(".notice-con dd").multiLine();
+
+		//자주찾는 서비스
+		$('.service-list').slick({
+			autoplaySpeed: 2000,
+			slidesToScroll: 1,
+			slidesToShow: 4,
+			arrows: false
+		});
 	</script>
 </body>
 </html>

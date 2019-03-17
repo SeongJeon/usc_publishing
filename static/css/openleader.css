@@ -64,7 +64,7 @@ MAIN
 .openleader .main-visual .section-01 .inner > .tit {float:right; margin:50px 70px 28px 0;}
 .openleader .main-visual .section-01 .inner .name {position:absolute; left:110px; bottom:70px;}
 .openleader .main-visual .section-01 .inner .calendar {clear:both; position:relative; float:right; width:593px; height:250px; background:#fff;}
-.openleader .main-visual .section-01 .inner .calendar .tit {position:relative; margin-bottom:-2px; padding-top:24px; z-index:10;}
+.openleader .main-visual .section-01 .inner .calendar .tit {position:relative; margin-bottom:-2px; padding-top:24px; text-align:center; z-index:10;}
 .openleader .main-visual .section-01 .inner .calendar .inner {height:189px; border-top:1px solid #dbdbdb; vertical-align:top;}
 .openleader .main-visual .section-01 .inner .calendar .inner .date {float:left; width:151px; height:100%; padding-top:52px; background:#eff0f1; font-size:19px; color:#b4b4b4; font-weight:bold; text-align:center; vertical-align:middle;}
 .openleader .main-visual .section-01 .inner .calendar .inner .date .day {display:block; font-family: "NanumSquareB"; font-size:70px;  color:#000;}
@@ -304,10 +304,10 @@ LAYOUT
 .openleader .main-visual .section-01 .inner .name {left:36px; top:24rem; bottom:auto; width:7rem;}
 
 .openleader .main-visual .section-01 .inner .calendar .slick-arrow, 
-.openleader .main-visual .section-01 .inner .calendar .btn-more {right:7.4rem; top:-1px; width:3.7rem; height:3.7rem; background-size:25%;}
-.openleader .main-visual .section-01 .inner .calendar .btn-more {background-size:35%;}
-.openleader .main-visual .section-01 .inner .calendar .slick-prev {right:3.7rem; top:-3.7rem;}
-.openleader .main-visual .section-01 .inner .calendar .slick-next {right:0; top:-3.7rem;}
+.openleader .main-visual .section-01 .inner .calendar .btn-more {right:7.4rem; top:-1px; width:3.7rem; height:3.7rem; background-size:23%;}
+.openleader .main-visual .section-01 .inner .calendar .btn-more {background-size:37%;}
+.openleader .main-visual .section-01 .inner .calendar .slick-prev {right:3.7rem; top:-3.5rem;}
+.openleader .main-visual .section-01 .inner .calendar .slick-next {right:0; top:-3.5rem;}
 
 .openleader .main-visual .section-01 .inner .list-quick {width:100%; margin-top:1.5rem;}
 .openleader .main-visual .section-01 .inner .list-quick .list {width:calc(100% + 6px); height:13rem;}

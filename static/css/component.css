@@ -419,6 +419,26 @@ input.w_password { width: 135px; }
 .w_email select { width: 170px; margin-left: 6px; }
 
 /* UI - PAGING */
+*[class^=comp-paging] { margin-top: 60px; text-align: center; }
+*[class^=comp-paging] > div { display: inline-block; position: relative; padding: 0 78px; }
+*[class^=comp-paging] .number { overflow: hidden; }
+*[class^=comp-paging] .number li { float: left; margin-left: -1px; }
+*[class^=comp-paging] .number li:first-child { margin-left: 0; }
+*[class^=comp-paging] .number a { display: block; width: 40px; font-size: 16px; line-height: 40px; color: #999999; border: 1px solid #cdcdcd; }
+*[class^=comp-paging] .number a span { position: relative; top: 1px; }
+*[class^=comp-paging] .number a:hover { color: #fff; background: #555; }
+*[class^=comp-paging] .number .current a { color: #47c3ef; }
+*[class^=comp-paging] p { position: absolute; top: 0; }
+*[class^=comp-paging] p.allprev { left: 0; }
+*[class^=comp-paging] p.allprev a { background: url("../../static/images/common/btn_allprev.png") no-repeat 45% 50%; }
+*[class^=comp-paging] p.prev { left: 39px; }
+*[class^=comp-paging] p.prev a { background: url("../../static/images/common/btn_prev.png") no-repeat 50% 50%; }
+*[class^=comp-paging] p.allnext { right: 0; }
+*[class^=comp-paging] p.allnext a { background: url("../../static/images/common/btn_allnext.png") no-repeat 55% 50%; }
+*[class^=comp-paging] p.next { right: 39px; }
+*[class^=comp-paging] p.next a { background: url("../../static/images/common/btn_next.png") no-repeat 50% 50%; }
+*[class^=comp-paging] p a { display: block; overflow: hidden; width: 40px; height: 40px; text-indent: -9999em; border: 1px solid #cdcdcd; }
+
 /* UI - TAB */
 *[class^=comp-tab] { overflow: hidden; }
 *[class^=comp-tab] li { float: left; width: 20%; box-sizing: border-box; border-top: 1px solid #d1d1d1; }
@@ -731,6 +751,17 @@ input.w_password { width: 135px; }
   .w_email input:nth-of-type(1) { width: 90%; }
   .w_email input:nth-of-type(2) { width: 100%; margin-top: 0.5rem; }
   .w_email select { width: 100%; margin-left: 0; margin-top: 0.5rem; }
+  /* UI - PAGING */
+  *[class^=comp-paging] { margin-top: 4rem; }
+  *[class^=comp-paging] > div { padding: 0 6rem; }
+  *[class^=comp-paging] .number a { width: 3rem; font-size: 1.2rem; line-height: 3rem; box-sizing: content-box; }
+  *[class^=comp-paging] p.allprev a { background-size: 100% auto; }
+  *[class^=comp-paging] p.prev { left: 3rem; }
+  *[class^=comp-paging] p.prev a { background-size: 100% auto; }
+  *[class^=comp-paging] p.allnext a { background-size: 100% auto; }
+  *[class^=comp-paging] p.next { right: 3rem; }
+  *[class^=comp-paging] p.next a { background-size: 100% auto; }
+  *[class^=comp-paging] p a { width: 3rem; height: 3rem; box-sizing: content-box; }
   /* UI - TAB */
   *[class^=comp-tab] li { width: 25%; }
   *[class^=comp-tab] a { line-height: 3.5rem; font-size: 1.2rem; }

@@ -766,43 +766,44 @@ input.w_password {width:135px;}
 
 
 /* UI - PAGING */
-// *[class^=comp-paging] {
-// 	margin-top:60px; text-align:center; font-size:0;
-// 	& > div {display:inline-block; position:relative; padding:0 105px;}
-// 	.number {
-// 		overflow:hidden;
-// 		li {
-// 			float:left; margin-left:25px;
-// 			&:first-child {margin-left:0}
-// 		}
-// 		a {
-// 			font-size:18px;line-height:35px;
-// 			&:hover {color:$color4;}
-// 		}
-// 		.current a {color:$color4}
-// 	}
-// 	p {
-// 		position:absolute; top:0;
-// 		&.allprev {
-// 			left:0;
-// 			a {@include background("frontend/button/btn-allprev.png",no-repeat 45% 50%)}
-// 		}
-// 		&.prev {
-// 			left:41px;
-// 			a {@include background("frontend/button/btn-prev.png",no-repeat 50% 50%)}
-// 		}
-// 		&.allnext {
-// 			right:0;
-// 			a {@include background("frontend/button/btn-allnext.png",no-repeat 55% 50%)}
-// 		}
-// 		&.next {
-// 			right:41px;
-// 			a {@include background("frontend/button/btn-next.png",no-repeat 50% 50%)}
-// 		}
+*[class^=comp-paging] {
+	margin-top:60px; text-align:center;
+	& > div {display:inline-block; position:relative; padding:0 78px;}
+	.number {
+		overflow:hidden;
+		li {
+			float:left; margin-left:-1px;
+			&:first-child {margin-left:0}
+		}
+		a {
+			display:block; width:40px; font-size:16px;line-height:40px;  color:#999999; border:1px solid #cdcdcd; 
+			span {position: relative; top:1px;}
+			&:hover {color:#fff; background:#555;}
+		}
+		.current a {color:$color4}
+	}
+	p {
+		position:absolute; top:0;
+		&.allprev {
+			left:0;
+			a {@include background("common/btn_allprev.png",no-repeat 45% 50%)}
+		}
+		&.prev {
+			left:39px;
+			a {@include background("common/btn_prev.png",no-repeat 50% 50%)}
+		}
+		&.allnext {
+			right:0;
+			a {@include background("common/btn_allnext.png",no-repeat 55% 50%)}
+		}
+		&.next {
+			right:39px;
+			a {@include background("common/btn_next.png",no-repeat 50% 50%)}
+		}
 
-// 		a {display:block; overflow:hidden; position:relative; width:36px; height:36px; border-radius:100px; border:1px solid $bd1;text-indent:-9999em; box-sizing:border-box; }
-// 	}
-// }
+		a {display:block; overflow:hidden; width:40px; height:40px; text-indent:-9999em; border:1px solid #cdcdcd; }
+	}
+}
 /* UI - TAB */
 *[class^=comp-tab] {
 	overflow:hidden; 
@@ -1467,7 +1468,32 @@ input.w_password {width:100%;}
 
 
 
+/* UI - PAGING */
+*[class^=comp-paging] {
+	margin-top:4rem;
+	& > div {padding:0 6rem;}
+	.number {
+		a {width:3rem; font-size:1.2rem;line-height:3rem; box-sizing: content-box;}
+	}
+	p {
+		&.allprev {
+			a {background-size: 100% auto}
+		}
+		&.prev {
+			left:3rem;
+			a {background-size: 100% auto}
+		}
+		&.allnext {
+			a {background-size: 100% auto}
+		}
+		&.next {
+			right:3rem;
+			a {background-size: 100% auto}
+		}
 
+		a {width:3rem; height:3rem;box-sizing: content-box;}
+	}
+}
 /* UI - TAB */
 *[class^=comp-tab] {
 	li {width:25%; }

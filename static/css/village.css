@@ -15,14 +15,15 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
-.village #footer .footer-utilegroup {padding-left: 0;}
 @media (min-width: 1025px) { 
 	body.pc #wrap.village #header { height: 245px; }
 	body.pc #wrap.village #header .header-middle .title a { width: 179px; height: 51px; background: url("../../static/images/village/img_logo.png") no-repeat 50% 50%; background-size: 100% auto; }
 	body.pc #wrap.village #header .header-middle .comp-search .form { border-color: #45bf55; }
 	body.pc #wrap.village #header .header-middle .comp-search > button { background: #45bf55; }
-	body.pc #wrap.village #header .header-bottom { background: #fff; border-top: 1px solid #c2c0bf; }
-	body.pc #wrap.village #header .depth2menu { display: none; overflow: hidden; position: absolute; top: 100%; left: 0; background: #fff; z-index: 100; }
+	body.pc #wrap.village #header .header-bottom {position: relative; background: #fff; border-top: 1px solid #c2c0bf; }
+	body.pc #wrap.village #header .header-bottom .inner {position: static}
+	body.pc #wrap.village #header .depth2menu { display: none; overflow: hidden; position: absolute; top: 100%; left: 0; background: #fff; z-index: 100; width: 100%; margin-top: -60px}
+	body.pc #wrap.village #header .depth2menu > div {width: 1320px; margin:0 auto;}
 	body.pc #wrap.village #header .depth2menu .part-introduce { float: left; width: 245px; }
 	body.pc #wrap.village #header .depth2menu .part-introduce dl { margin-top: 24px; }
 	body.pc #wrap.village #header .depth2menu .part-introduce dt { font-size: 26px; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #3a3a3a; }
@@ -34,15 +35,18 @@ LAYOUT
 	body.pc #wrap.village #header .depth2menu .menu h3 a.small { font-size: 15px; }
 	body.pc #wrap.village #header .depth2menu .menu h4 a { font-size: 15px; color: #525252; line-height: 26px; }
 	body.pc #wrap.village #header .depth2menu .menu h4 a:before { display: inline-block; content: ""; width: 4px; height: 4px; background: #1e4363; margin-right: 7px; vertical-align: middle; }
-	body.pc #wrap.village #header .depth2menu .menu h4 a:hover, body.pc #wrap.village #header .depth2menu .menu h4 a.current { color: #f27405; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-	body.pc #wrap.village #header .depth2menu .menu h4 a:hover:before, body.pc #wrap.village #header .depth2menu .menu h4 a.current:before { background: #f27405; }
+	body.pc #wrap.village #header .depth2menu .menu h4 a:hover, body.pc #wrap.village #header .depth2menu .menu h4 a.current { color: #168039; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+	body.pc #wrap.village #header .depth2menu .menu h4 a:hover:before, body.pc #wrap.village #header .depth2menu .menu h4 a.current:before { background: #168039; }
 	body.pc #wrap.village #header .depth2menu .menu h5 a { color: #525252; font-size: 14px; line-height: 22px; }
 	body.pc #wrap.village #header .depth2menu .menu h5 a:before { display: inline-block; content: "-"; margin-right: 3px; }
 	body.pc #wrap.village #header .depth2menu .menu .depth3menu { padding: 9px 0 0 20px; }
 	body.pc #wrap.village #header .depth2menu .menu .depth4menu { padding: 9px 0 9px 25px; background: #f4f4f4; margin-left: -20px; margin-top: 3px; }
 	body.pc #wrap.village #header .depth2menu .menu .menugroup:after { display: block; clear: both; content: ""; }
 	body.pc #wrap.village #header .depth2menu .menu .menugroup .group { float: left; width: 25%; padding-right: 35px; box-sizing: border-box; }
+
 	body.pc #wrap.village #header.open { border-bottom: 6px solid #2c6019; }
+	body.pc #wrap.village #header.open .depth2menu {border-top: 2px solid #45bf55}
+	
 	body.pc #wrap.village #gnb .gnb > li { float: left; width: 11.1%; }
 	body.pc #wrap.village #gnb .gnb > li:nth-child(9) ~ li h2 a { border-top: 1px solid #e0dfdf; }
 	body.pc #wrap.village #gnb .gnb h2 { position: relative; }
@@ -51,9 +55,12 @@ LAYOUT
 	body.pc #wrap.village #gnb .gnb h2.over a, body.pc #wrap.village #gnb .gnb h2 a:hover { font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; background: #45bf55; }
 	body.pc #wrap.village #gnb .gnb h2.over a:before, body.pc #wrap.village #gnb .gnb h2 a:hover:before { display: none; }
 	body.pc #wrap.village #gnb .gnb h2.over a:after, body.pc #wrap.village #gnb .gnb h2 a:hover:after { display: none; }
+	body.pc #wrap.village #gnb .gnb li:nth-child(9) ~ li h2.over + .depth2menu {margin-top:0;}
 
 	body.pc #wrap.village #container { padding-top: 245px; } 
 }
+
+.village #footer .footer-utilegroup {padding-left: 0;}
 
 
 /* ------------------------------------------------------

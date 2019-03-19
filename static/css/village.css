@@ -245,8 +245,23 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+.status .img-area {margin-bottom:70px;text-align:center;}
+.status .comp-tbl_datatype + .heading-h3 {margin-top:50px;}
 
+.staff .comp-iconbox_iconnone {padding:40px 30px 45px;}
+.staff *[class^=comp-iconbox] .cont .tit {font-size:15px;}
+.staff *[class^=comp-iconbox] .cont .tit span {color:#f27405;font-size:20px;font-family:'NanumSquareB';}
+.staff .comp-iconbox_iconnone .comp-select_h42 {width:258px;}
+.staff .comp-iconbox_iconnone .comp-input_h42 {width:298px;margin-left:2px;}
+.staff .comp-iconbox_iconnone .comm-btn_type3_deeporange {margin-left:2px;}
 
+.safe .comp-tab {margin-bottom:25px;}
+.safe .heading-h3 {margin-bottom:15px;}
+.safe .quote-wrap {position:relative;width:790px;margin:0 auto 32px;padding:50px 0;text-align:center;font-size:29px;line-height:40px;color:#39290c;}
+.safe .quote-wrap .point3 {color:#785719;font-family:'NanumSquareB';}
+.safe .quote-wrap:before {position:absolute;top:0;left:50%;display:inline-block;width:16px;height:13px;margin-left:-8px;background:url(../images/usc/subpage/bg_quote01.png) no-repeat center top;content:'';}
+.safe .quote-wrap:after {position:absolute;bottom:0;left:50%;display:inline-block;width:16px;height:13px;margin-left:-8px;background:url(../images/usc/subpage/bg_quote02.png) no-repeat center top;content:'';}
+.safe .safe-charter {padding-top:50px;border-top:1px solid #b2b2b2;text-align:center;}
 
 
 
@@ -410,6 +425,21 @@ MEDIA QUERY
 .village .service-inner .service-list .service01,
 .village .service-inner .service-list .service07 {width:100% !important}
 .village .service-inner .service-list a {padding-top:6rem;font-size:1.2rem;background-size:5rem !important;}
+
+/* ------------------------------------------------------
+- SUB PAGE
+------------------------------------------------------ */
+.status .img-area {margin-bottom:3.5rem;}
+.status .comp-tbl_datatype + .heading-h3 {margin-top:2.5rem;}
+
+.staff .comp-iconbox_iconnone {padding:2rem 1.5rem;}
+.staff .comp-iconbox_iconnone .comp-select_h42,
+.staff .comp-iconbox_iconnone .comp-input_h42 {width:100%;margin:0;}
+.staff .comp-iconbox_iconnone .comp-input_h42 {margin-top:.5rem;}
+.staff .comp-iconbox_iconnone .comm-btn_type3_deeporange {margin:.5rem 0 0 0;}
+.staff .cont {text-align:center;}
+.staff *[class^=comp-iconbox] .cont .tit {font-size:1.2rem;}
+.staff *[class^=comp-iconbox] .cont .tit span {font-size:1.5rem;}
 }
 
 

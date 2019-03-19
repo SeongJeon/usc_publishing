@@ -503,8 +503,9 @@ br.m {display:none}
 
 /* BUTTON */
 .comp-btn-zone {
-	margin-top: 40px; text-align: center;
+	overflow:hidden; margin-top: 40px; text-align: center;
 	* + * {margin-left: 5px}
+	.l-right {float: right}
 }
 *[class^=btn-txt] { // TEXT BUTTON
 	&[class$=_more] {
@@ -530,6 +531,7 @@ br.m {display:none}
 	&[class*=_lgrey] {background:#d7d7d7; color:#3e3e3e; border-color:#d7d7d7;}	
 	&[class*=_blue] {background:#f4f7f9; color:#787878; border-color:#d9d6d5;}	
 	&[class*=_gray] {background:#99a1a1; color:#fff; border-color:#99a1a1;}	
+	&[class*=_lightgray] {background:#b1b1b1; color:#fff; border-color:#b1b1b1;}	
 	&[class*=_orange] {background:#ff7200; color:#fff; border-color:#ff7200;}	
 	&[class*=_lightorange] {background:#fe970e; color:#fff; border-color:#fe970e;}	
 	&[class*=_deeporange] {background:#f27405; color:#fff; border-color:#f27405;}	
@@ -780,29 +782,31 @@ input.w_password {width:135px;}
 			span {position: relative; top:1px;}
 			&:hover {color:#fff; background:#555;}
 		}
-		.current a {color:$color4}
+		a[aria-current=page] {color:#fff; background:#555;}
 	}
 	p {
 		position:absolute; top:0;
 		&.allprev {
 			left:0;
-			a {@include background("common/btn_allprev.png",no-repeat 45% 50%)}
+			a {@include background("common/btn_allprev.png",no-repeat 45% 50%); background-color: #fff;}
 		}
 		&.prev {
 			left:39px;
-			a {@include background("common/btn_prev.png",no-repeat 50% 50%)}
+			a {@include background("common/btn_prev.png",no-repeat 50% 50%); background-color: #fff;}
 		}
 		&.allnext {
 			right:0;
-			a {@include background("common/btn_allnext.png",no-repeat 55% 50%)}
+			a {@include background("common/btn_allnext.png",no-repeat 55% 50%); background-color: #fff;}
 		}
 		&.next {
 			right:39px;
-			a {@include background("common/btn_next.png",no-repeat 50% 50%)}
+			a {@include background("common/btn_next.png",no-repeat 50% 50%); background-color: #fff;}
 		}
 
 		a {display:block; overflow:hidden; width:40px; height:40px; text-indent:-9999em; border:1px solid #cdcdcd; }
 	}
+
+	& + .comp-btn-zone {margin-top: -46px;}
 }
 /* UI - TAB */
 *[class^=comp-tab] {
@@ -1341,6 +1345,15 @@ p[class^=comp-lst] {
 
 /* TABLE */
 .scrollzone {width: 100%; overflow-x:auto; }
+.tbl-top-utile {
+	margin-bottom:0.6rem;
+	*[class^=heading] + .l-right {top:0.7rem;}
+	.l-right {font-size: 1rem;}
+}
+.tbl-bottom-utile {
+ margin-top: 0.6rem;
+	.l-right {font-size: 1rem;}
+}
 table[class^=comp-tbl] {
 	&[class$=_datatype] {
 		border-top: 2px solid #7a7a7a; color:#787878;
@@ -1398,6 +1411,7 @@ table[class^=comp-tbl] {
 	*:first-child:nth-last-of-type(2),
 	*:first-child:nth-last-of-type(2) ~ * {-webkit-flex:1; flex:1;}
 	* + * {margin-left: 0.5rem;}
+	.l-right {margin-top: 0;}
 }
 *[class^=btn-txt] { // TEXT BUTTON
 	&[class$=_more] {
@@ -1412,11 +1426,9 @@ table[class^=comp-tbl] {
 *[class^=comm-btn] { // COMMON BUTTON
 	&[class*=_type1] {width:100%; height: 3.5rem; line-height: 3.5rem; font-size: 1.3rem;}
 	&[class*=_type2] {width:auto; height: 3.3rem; line-height:3.3rem;  font-size: 1.2rem;}
+	&[class*=_type3] {width:auto; height: 3.3rem; line-height:3.3rem;  font-size: 1.2rem;}
+	&[class*=_type4] {width:auto; height: 3.3rem; line-height:3.3rem;  font-size: 1.2rem;}
 	
-
-	&[class*=_lgrey] {background:#d7d7d7; color:#3e3e3e;}	
-	&[class*=_orange] {background:#ff7200; color:#fff;}	
-	&[class*=_blue] {background:#f4f7f9; color:#787878; border-color:#d9d6d5;}	
 }
 
 
@@ -1426,11 +1438,22 @@ table[class^=comp-tbl] {
 select[class^=comp-select] {
 	padding:0 1rem; height: 3.3rem; font-size: 1.2rem; background-size: auto 100%;
 	&:focus {background-size: auto 100%}
+
+	&[class*=_h42] {height: 3.3rem}
 }
 input[class^=comp-input] {
 	padding:0 1rem; height:3.3rem; font-size: 1.2rem;
+
+	&[class*=_h42] {height: 3.3rem}
 }
 *[class^=comp-radio] {
+	label {
+		font-size: 1.2rem; 
+		&:before {width:1rem; height:1rem; margin-right: 0.5rem; background-size: auto 100%;}
+	}
+	input:checked ~ label:before {background-size: auto 100%;}
+}
+*[class^=comp-check] {
 	label {
 		font-size: 1.2rem; 
 		&:before {width:1rem; height:1rem; margin-right: 0.5rem; background-size: auto 100%;}
@@ -1493,6 +1516,8 @@ input.w_password {width:100%;}
 
 		a {width:3rem; height:3rem;box-sizing: content-box;}
 	}
+
+	& + .comp-btn-zone {display:block; margin-top:1rem;} 
 }
 /* UI - TAB */
 *[class^=comp-tab] {

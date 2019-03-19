@@ -463,6 +463,27 @@ SUB PAGE
 .usc .guide-use .tab-contents .floor-plan .list ul > li .tel { display: inline-block; margin-left: 2px; padding: 2px; background: #f1e300; }
 .usc .guide-use .tab-contents .comp-tbl_datatype { margin-top: 15px; }
 
+.banner-zone { margin-top: 20px; }
+.banner-zone ul { overflow: hidden; }
+.banner-zone ul li { float: left; width: 330px; height: 160px; border: 1px solid #cbc8c7; box-sizing: border-box; margin-left: 10px; }
+.banner-zone ul a { display: block; width: 100%; height: 160px; padding: 19px 5px 0; text-align: center; box-sizing: border-box; }
+.banner-zone ul li:nth-child(3n+1) { margin-left: 0; }
+.banner-zone ul li:nth-child(3) ~ li { margin-top: 10px; }
+.banner-zone ul .img { display: block; width: 234px; height: 60px; padding: 5px; margin: 0 auto; border: 1px solid #cbc6c5; box-sizing: border-box; }
+.banner-zone ul .img img { max-width: 222px; }
+.banner-zone ul .name { display: block; margin-top: 14px; font-size: 17px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #4b4b4b; }
+.banner-zone ul .date { display: block; margin-top: 9px; color: #7b7b7b; font-size: 14px; letter-spacing: -0.5px; }
+
+.top-search-zone { overflow: hidden; padding: 19px 24px; background: #eff0f1; border: 1px solid #e2e1e1; }
+.top-search-zone .total-length { float: left; position: relative; font-size: 16px; line-height: 42px; padding-left: 28px; color: #3e3e3e; }
+.top-search-zone .total-length:before { display: block; position: absolute; left: 0; top: 50%; content: ""; width: 16px; height: 19px; background: url("../../static/images/common/icon_file.png") no-repeat 50% 50%; background-size: 100% auto; margin-top: -10px; }
+.top-search-zone .form { float: right; }
+.top-search-zone .form:after { display: block; clear: both; content: ""; }
+.top-search-zone .form > * { float: left; }
+.top-search-zone .form input { width: 226px; margin-left: 2px; }
+.top-search-zone .form select { width: 116px; }
+.top-search-zone .form button { width: 80px; margin-left: -1px; }
+
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
@@ -731,7 +752,24 @@ MEDIA QUERY
   .usc .guide-use .tablist { margin-bottom: 1.5rem; }
   .usc .guide-use .tab-contents .floor-plan { padding: 15px 0 2rem; }
   .usc .guide-use .tab-contents .floor-plan .list { padding: 2rem 3rem 0; }
-  .usc .guide-use .tab-contents .floor-plan .list ul > li .num { width: 2rem; height: 2rem; line-height: 2rem; border-radius: 2rem; } }
+  .usc .guide-use .tab-contents .floor-plan .list ul > li .num { width: 2rem; height: 2rem; line-height: 2rem; border-radius: 2rem; }
+  .banner-zone { margin-top: 2rem; }
+  .banner-zone ul li { width: 49%; height: 14rem; margin-left: 0; }
+  .banner-zone ul li:nth-child(2) ~ li { margin-top: 1rem; }
+  .banner-zone ul li:nth-child(even) { margin-left: 2%; }
+  .banner-zone ul a { height: 160px; padding: 2rem 1rem 0; }
+  .banner-zone ul .img { width: 100%; height: auto; padding: 0.5rem; }
+  .banner-zone ul .img img { max-width: 100%; }
+  .banner-zone ul .name { margin-top: 1rem; font-size: 1.2rem; }
+  .banner-zone ul .date { margin-top: 0.5rem; font-size: 1rem; line-height: 1.4rem; }
+  .top-search-zone { padding: 1rem; }
+  .top-search-zone .total-length { float: none; font-size: 1.2rem; line-height: 1.6rem; padding-left: 2rem; }
+  .top-search-zone .total-length:before { width: 1.2rem; height: 1.6rem; margin-top: 0; top: 0; }
+  .top-search-zone .form { overflow: hidden; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; float: none; margin-top: 1rem; }
+  .top-search-zone .form > * { float: none; }
+  .top-search-zone .form input { -webkit-flex: 1; flex: 1; }
+  .top-search-zone .form select { width: 10rem; }
+  .top-search-zone .form button { width: 5rem; min-width: inherit; } }
 @media (max-width: 768px) { /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */
   .advice-app .w_time { display: block; }
   .advice-app .w_time .comp-input, .advice-app .w_time .comp-select { width: 100%; }

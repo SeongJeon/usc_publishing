@@ -246,7 +246,7 @@ MAIN
 SUB PAGE
 ------------------------------------------------------ */
 .status .img-area {margin-bottom:70px;text-align:center;}
-.status .comp-tbl_datatype + .heading-h3 {margin-top:50px;}
+.status .comp-tbl_datatype + .tbl-top-utile {margin-top:50px;}
 
 .staff .comp-iconbox_iconnone {padding:40px 30px 45px;}
 .staff *[class^=comp-iconbox] .cont .tit {font-size:15px;}
@@ -257,11 +257,14 @@ SUB PAGE
 
 .safe .comp-tab {margin-bottom:25px;}
 .safe .heading-h3 {margin-bottom:15px;}
-.safe .quote-wrap {position:relative;width:790px;margin:0 auto 32px;padding:50px 0;text-align:center;font-size:29px;line-height:40px;color:#39290c;}
+.safe .quote-wrap {position:relative;width:810px;margin:0 auto 32px;padding:45px 0;text-align:center;font-size:29px;line-height:40px;color:#39290c;}
+.safe .quote-wrap .txt {margin-bottom:15px;}
+.safe .quote-wrap .txt01 {font-size:18px;line-height:26px;color:#282828;}
 .safe .quote-wrap .point3 {color:#785719;font-family:'NanumSquareB';}
-.safe .quote-wrap:before {position:absolute;top:0;left:50%;display:inline-block;width:16px;height:13px;margin-left:-8px;background:url(../images/usc/subpage/bg_quote01.png) no-repeat center top;content:'';}
-.safe .quote-wrap:after {position:absolute;bottom:0;left:50%;display:inline-block;width:16px;height:13px;margin-left:-8px;background:url(../images/usc/subpage/bg_quote02.png) no-repeat center top;content:'';}
-.safe .safe-charter {padding-top:50px;border-top:1px solid #b2b2b2;text-align:center;}
+.safe .quote-wrap:before {position:absolute;top:0;left:50%;display:inline-block;width:16px;height:13px;margin-left:-8px;background:url(../images/usc/subpage/bg_safe_quote01.png) no-repeat center top;content:'';}
+.safe .quote-wrap:after {position:absolute;bottom:0;left:50%;display:inline-block;width:16px;height:13px;margin-left:-8px;background:url(../images/usc/subpage/bg_safe_quote02.png) no-repeat center top;content:'';}
+.safe .safe-charter {padding-top:50px;border-top:1px solid #b2b2b2;font-size:18px;text-align:center;color:#282828;line-height:30px;}
+.safe .safe-charter li + li {margin-top:30px;}
 
 
 
@@ -430,7 +433,7 @@ MEDIA QUERY
 - SUB PAGE
 ------------------------------------------------------ */
 .status .img-area {margin-bottom:3.5rem;}
-.status .comp-tbl_datatype + .heading-h3 {margin-top:2.5rem;}
+.status .comp-tbl_datatype + .tbl-top-utile {margin-top:2.5rem;}
 
 .staff .comp-iconbox_iconnone {padding:2rem 1.5rem;}
 .staff .comp-iconbox_iconnone .comp-select_h42,
@@ -440,6 +443,16 @@ MEDIA QUERY
 .staff .cont {text-align:center;}
 .staff *[class^=comp-iconbox] .cont .tit {font-size:1.2rem;}
 .staff *[class^=comp-iconbox] .cont .tit span {font-size:1.5rem;}
+
+.safe .comp-tab {margin-bottom:1.3rem;}
+.safe .heading-h3 {margin-bottom:.8rem;}
+.safe .quote-wrap {width:inherit;margin:0 0 1.6rem 0;padding:2.3rem 0;font-size:1.5rem;line-height:2rem;}
+.safe .quote-wrap:before {width:.8rem;height:.6rem;margin-left:-.4rem;background-size:100%;}
+.safe .quote-wrap:after {width:.8rem;height:.6rem;margin-left:-.4rem;background-size:100%;}
+.safe .quote-wrap .txt {margin-bottom:.8rem;}
+.safe .quote-wrap .txt01 {font-size:1.3rem;line-height:1.8rem;}
+.safe .safe-charter {padding-top:2.5rem;font-size:1.3rem;line-height:1.8rem;}
+.safe .safe-charter li + li {margin-top:1.5rem;}
 }
 
 

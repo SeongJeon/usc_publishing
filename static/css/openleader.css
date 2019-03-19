@@ -222,15 +222,52 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+/* 공장설립 - 공장설립지원센터 */
+
+.factory *[class^=comp-iconbox] {margin:40px 0 45px;}
+.factory *[class^=comp-txt][class*=_box] {margin-top:20px;}
+.factory .heading-h4 {margin-top:30px; }
+.factory .comp-lst_dotted {margin-top:6px; margin-bottom:30px;}
+.factory .comp-lst_dotted + .comp-lst_important {margin-top:-30px; margin-bottom:30px;}
+.factory .comp-lst_hyphen { margin-top:5px; margin-bottom:35px;}
+
+.factory .list-upport {margin-top:10px;}
+.factory .list-upport ol {}
+.factory .list-upport ol > li {position:relative; margin-top:85px; padding:20px 20px 24px; background:#f5f8f8; border:1px solid #dcdcdc;}
+.factory .list-upport ol > li:first-child {margin-top:0;}
+.factory .list-upport ol > li:last-child dl:before,
+.factory .list-upport ol > li:last-child dl:after {display:none;}
+.factory .list-upport ol > li dl { }
+.factory .list-upport ol > li dl:before {position:absolute; left:26px; bottom:-38px; display:block; content:""; width:12px; height:17px; background:#585858;}
+.factory .list-upport ol > li dl:after {position:absolute; left:20px; bottom:-70px; display:block; content:""; width:0; height:0; border-style:solid; border-top-width:16px; border-right-width:12px; border-bottom-width:16px; border-left-width:12px; border-color:#585858 transparent transparent transparent;}
+.factory .list-upport ol > li dl .tit {height:27px; line-height:27px; font-size:20px; color:#1c1c1c; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif;}
+.factory .list-upport ol > li dl .tit .num {display:inline-block; width:27px; height:27px; margin-right:5px; text-align:center; background:#785719; border-radius:100%; font-size:15px; color:#fff; }
+.factory .list-upport ol > li dl .tit .tail {display:inline-block; margin-left:5px; font-size:20px; color:#f27405; font-family:'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
+.factory .list-upport ol > li dl .comp-lst_hyphen {margin:8px 0 0 20px;}
 
 
 
 
 
+@media (max-width: 1024px) {
+/* 공장설립 - 공장설립지원센터 */
+.factory *[class^=comp-iconbox] {margin:1rem 0 1.5rem;}
+.factory *[class^=comp-txt][class*=_box] {margin-top:1rem;}
+.factory .heading-h4 {margin-top:1rem; }
+.factory .comp-lst_dotted {margin-top:0.5rem; margin-bottom:2.5rem;}
+.factory .comp-lst_dotted + .comp-lst_important {margin-top:-2.5rem; margin-bottom:2.5rem;}
+.factory .comp-lst_hyphen { margin-top:0.5rem; margin-bottom:2.5rem;}
+.factory .list-upport {margin-top:0.5rem;}
+.factory .list-upport ol > li {margin-top:3rem; padding:1rem;}
+.factory .list-upport ol > li dl:before {left:1rem; bottom:-1.5rem; width:0.8rem; height:1rem;}
+.factory .list-upport ol > li dl:after {left:0.62rem; bottom:-3.5rem; border-top-width:1rem; border-right-width:0.8rem; border-bottom-width:1rem; border-left-width:0.8rem;}
+.factory .list-upport ol > li dl .tit {height:1.5rem; line-height:1.5rem; font-size:1.2rem;}
+.factory .list-upport ol > li dl .tit .num {width:1.5rem; height:1.5rem; font-size:0.9rem; vertical-align:top;}
+.factory .list-upport ol > li dl .tit .tail {font-size:1.2rem;}
+.factory .list-upport ol > li dl .comp-lst_hyphen {margin:0.5rem 0 0 1rem;}
 
 
-
-
+}
 
 
 
@@ -379,6 +416,9 @@ LAYOUT
 .openleader .inner .list-pledge .inner .btn span {display:block; height:2.8rem; padding:0 0 0 15px; text-align:left;}
 .openleader .inner .list-pledge .inner .btn:hover span:before,
 .openleader .inner .list-pledge .inner .btn:focus span:before {position:absolute; left:-1px; top:-1px; display:block; content:""; width:11rem; height:2.8rem; border:3px solid #1058a8; box-sizing:border-box;}
+
+
+
 }
 @media (max-width:768px){
 	.openleader .main-visual .section-01 .inner .calendar .tit {width:20%;}

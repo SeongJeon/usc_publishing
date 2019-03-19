@@ -259,7 +259,7 @@ $(document).ready(function(){
 		$('*[role=tab]').on("click", function(){
 			var $this = $(this), gototab = "#"+$this.attr("aria-controls"), spd=300, motion;
 
-			if($this.closest("*[role=tablist]").attr('data-js') == 'false') return false;
+			if($this.closest("*[role=tablist]").attr('data-js') == 'false') return;
 
 
 			$this.closest("*[role=tablist]").attr('data-animation') == 'fade' ? motion = 'fade' : motion = 'show'; 

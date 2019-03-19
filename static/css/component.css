@@ -651,7 +651,7 @@ input.w_password { width: 135px; }
   #container .title-zone .page-utile .area-sns *[class^=icon-].icon-kakao { background: url("../../static/images/common/icon_utile_kakao.png") no-repeat 50% 50%; }
   #container .title-zone .page-utile .area-sns *[class^=icon-].icon-twitter { background: url("../../static/images/common/icon_utile_twitter.png") no-repeat 50% 50%; }
   #container .title-zone .page-utile .area-sns *[class^=icon-].icon-facebook { background: url("../../static/images/common/icon_utile_facebook.png") no-repeat 50% 50%; }
-  #container .contents-zone { padding-bottom: 3rem; min-height: inherit; }
+  #container .contents-zone { padding-bottom: 3rem; min-height: inherit; padding-top: 1.5rem; }
   #gnb .gnb { position: relative; }
   #gnb .gnb h2 a { display: block; height: 7.2rem; width: 7.2rem; font-size: 1.2rem; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #393939; text-align: center; border-bottom: 1px solid #c5c5c5; line-height: 7.2rem; }
   #gnb .gnb h3 a { display: block; position: relative; padding: 0 2rem 0 0.3rem; font-size: 1.3rem; color: #383838; line-height: 3.1rem; border-bottom: 1px solid #d6d5d5; }

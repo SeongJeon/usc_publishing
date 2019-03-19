@@ -446,11 +446,7 @@ SUB PAGE
 .usc .service-monitor .flow-chart > li:first-child:after, .usc .service-monitor .flow-chart > li:last-child:before { display: none; }
 .usc .service-monitor .flow-chart > li strong { display: block; width: 123px; margin: 10px auto 0 auto; padding: 10px 0 0; border-top: 1px solid #d6d3d2; font-size: 17px; font-weight: bold; color: #fe970e; }
 
-.usc .guide-use .tablist { overflow: hidden; margin-bottom: 30px; }
-.usc .guide-use .tablist > li { float: left; width: 33.3%; }
-.usc .guide-use .tablist > li a { display: block; height: 45px; line-height: 45px; background: #f4f4f4; margin-left: -1px; border: 1px solid #d1d1d1; text-align: center; color: #1c1c1c; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.usc .guide-use .tablist > li a[aria-selected*=true] { background: #f27405; border-left: none; border-right: none; color: #fff; }
-.usc .guide-use .tablist > li:first-child a { margin-left: 0; }
+.usc .guide-use .comp-tab { overflow: hidden; margin-bottom: 30px; }
 .usc .guide-use .tab-contents .floor-plan { margin: 15px 0 0; padding: 15px 0 40px; background: #efeeed; }
 .usc .guide-use .tab-contents .floor-plan .img { text-align: center; }
 .usc .guide-use .tab-contents .floor-plan .list { overflow: hidden; padding: 30px 35px 0; }
@@ -768,7 +764,7 @@ MEDIA QUERY
   .usc .service-monitor .flow-chart > li:after { left: 0; width: 1.6rem; height: 1.6rem; background-size: 100%; margin-left: -0.8rem; }
   .usc .service-monitor .flow-chart > li span { display: block; text-align: center; font-size: 1rem; }
   .usc .service-monitor .flow-chart > li strong { width: 6.5rem; margin: 0.4rem auto 0 auto; padding: 0.4rem 0 0; font-size: 1.2rem; }
-  .usc .guide-use .tablist { margin-bottom: 1.5rem; }
+  .usc .guide-use .comp-tab { margin-bottom: 1.5rem; }
   .usc .guide-use .tab-contents .floor-plan { padding: 15px 0 2rem; }
   .usc .guide-use .tab-contents .floor-plan .list { padding: 2rem 3rem 0; }
   .usc .guide-use .tab-contents .floor-plan .list ul > li .num { width: 2rem; height: 2rem; line-height: 2rem; border-radius: 2rem; }

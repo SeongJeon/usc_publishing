@@ -687,7 +687,7 @@ table[class^=comp-tbl] {
 		thead {
 			th {height: 50px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2; text-align: center; color:#1c1c1c;}
 			th:first-child {border-left: 0;}
-			tr:last-child th {border-bottom-color:#7a7a7a;}
+			tr:last-child th {border-bottom:0}
 		}
 		tbody{
 			th {height: 50px;padding:0 0.5rem; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 15px; font-family: $font2; text-align: center; color:#1c1c1c; line-height: 24px;}
@@ -695,6 +695,7 @@ table[class^=comp-tbl] {
 			th:first-of-type {border-left: 0;}
 			td:first-child {border-left: 0;}
 			tr:last-child > * {border-bottom: 0;}
+			tr:first-child > * {border-top:1px solid #7a7a7a;}
 		}
 		tfoot {
 			tr * {height: 50px; background:#f4f7f9; font-size: 16px; font-family: $font2; color:#1c1c1c; text-align: center; border-top: 1px solid #666;}
@@ -1320,6 +1321,9 @@ br.m {display:inherit}
 		&:before {width: 0.7rem; height: 1.2rem;background-size: 100% 100%;}
 	}
 
+	& + .scrollzone {margin-top: 1rem;}
+	& + *[class^=comp-tbl_] {margin-top: 1rem}
+
 }
 
 
@@ -1413,10 +1417,11 @@ table[class^=comp-tbl] {
 
 /* TEXT */
 *[class^=comp-txt] {
-	&[class$=_box] {
+	&[class*=_box] {
 		min-height: auto; padding:0.7rem 1rem; word-break: keep-all;
 		p {font-size:1.2rem; line-height:1.6rem; }
 	}
+	&[class*=_searchbox] {padding:1rem; }
 }
 
 

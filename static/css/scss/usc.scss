@@ -905,17 +905,9 @@ SUB PAGE
 } 
 // 민원실이용안내
 .usc .guide-use {
-	.tablist {overflow:hidden; margin-bottom:30px; }
-	.tablist > li {float:left; width:33.3%}
-	.tablist > li a {display:block; height:45px; line-height:45px; background:#f4f4f4; margin-left:-1px; border:1px solid #d1d1d1; text-align:center; color:#1c1c1c; -webkit-box-sizing:border-box; box-sizing:border-box; }
-	.tablist > li a[aria-selected*=true] {background:#f27405; border-left:none; border-right:none; color:#fff;}
-	.tablist > li:first-child a {margin-left:0;}
-	.tab-contents {}
-	.tab-contents .heading-h3 {}
+	.comp-tab {overflow:hidden; margin-bottom:30px; }
 	.tab-contents .floor-plan {margin:15px 0 0; padding:15px 0 40px; background:#efeeed;}
 	.tab-contents .floor-plan .img {text-align:center;}
-	.tab-contents .floor-plan .img img {}
-	.tab-contents .floor-plan .list {}
 	.tab-contents .floor-plan .list {overflow:hidden; padding:30px 35px 0;}
 	.tab-contents .floor-plan .list ul {float:left; width:50%; }
 	.tab-contents .floor-plan .list ul:first-child {margin-left:-20px;}
@@ -1516,7 +1508,7 @@ MEDIA QUERY
 }
 // 민원실이용안내 
 .usc .guide-use {
-	.tablist {margin-bottom:1.5rem;}
+	.comp-tab {margin-bottom:1.5rem;}
 	.tab-contents .floor-plan {padding:15px 0 2rem;}
 	.tab-contents .floor-plan .list {padding:2rem 3rem 0;}
 	.tab-contents .floor-plan .list ul > li .num {width:2rem; height:2rem; line-height:2rem; border-radius:2rem;}

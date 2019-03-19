@@ -484,6 +484,18 @@ SUB PAGE
 .top-search-zone .form select { width: 116px; }
 .top-search-zone .form button { width: 80px; margin-left: -1px; }
 
+div[class^=oftoday_][class*=_navigation] { position: relative; width: 275px; margin: 15px auto 0; }
+div[class^=oftoday_][class*=_navigation] .month { font-size: 28px; text-align: center; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding: 0 40px; line-height: 39px; color: #1c1c1c; }
+div[class^=oftoday_][class*=_navigation] *[class^=position-] { position: absolute; top: 0; }
+div[class^=oftoday_][class*=_navigation] *[class^=position-][class*=-prev] { left: 0; }
+div[class^=oftoday_][class*=_navigation] *[class^=position-][class*=-next] { right: 0; }
+div[class^=oftoday_][class*=_calendar] { margin-top: 30px; }
+div[class^=oftoday_][class*=_calendar] table { border-left: 1px solid #d9d6d5; border-right: 1px solid #d9d6d5; }
+div[class^=oftoday_][class*=_calendar] table tbody th { border-top: 2px solid #7b7b7d; }
+div[class^=oftoday_][class*=_calendar] table tbody td { height: 150px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #1c1c1c; }
+div[class^=oftoday_][class*=_calendar] table tbody .point1 { font-size: 18px; }
+div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margin: 0 auto 20px; line-height: 1; font-size: 1px; }
+
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
@@ -769,7 +781,13 @@ MEDIA QUERY
   .top-search-zone .form > * { float: none; }
   .top-search-zone .form input { -webkit-flex: 1; flex: 1; }
   .top-search-zone .form select { width: 10rem; }
-  .top-search-zone .form button { width: 5rem; min-width: inherit; } }
+  .top-search-zone .form button { width: 5rem; min-width: inherit; }
+  div[class^=oftoday_][class*=_navigation] { width: 100%; margin: 2rem auto 0; }
+  div[class^=oftoday_][class*=_navigation] .month { font-size: 2rem; padding: 0 3rem; line-height: 3rem; }
+  div[class^=oftoday_][class*=_calendar] { margin-top: 2rem; }
+  div[class^=oftoday_][class*=_calendar] table tbody td { height: 12rem; }
+  div[class^=oftoday_][class*=_calendar] table tbody .point1 { display: block; font-size: 1.3rem; margin-bottom: 0.3rem; }
+  div[class^=oftoday_][class*=_calendar] table tbody .icon { margin: 0 0.6rem 1rem; } }
 @media (max-width: 768px) { /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */
   .advice-app .w_time { display: block; }
   .advice-app .w_time .comp-input, .advice-app .w_time .comp-select { width: 100%; }

@@ -958,7 +958,30 @@ SUB PAGE
 		button {width:80px; margin-left: -1px;}
 	}
 }
-
+// 의성의 오늘
+div[class^=oftoday_] {
+	&[class*=_navigation] {
+		position: relative; width:275px; margin:15px auto 0;
+		.month {font-size: 28px; text-align: center; font-family: $font2; padding:0 40px;  line-height: 39px; color:#1c1c1c;}
+		*[class^=position-] {
+			position: absolute; top:0; 
+			&[class*=-prev] {left:0;}
+			&[class*=-next] {right:0;}
+		}
+	}
+	&[class*=_calendar] {
+		margin-top: 30px;
+		table {
+			border-left: 1px solid #d9d6d5; border-right: 1px solid #d9d6d5;
+			tbody {
+				th {border-top:2px solid #7b7b7d;}
+				td {height: 150px; font-family: $font2; color:#1c1c1c;}
+				.point1 {font-size: 18px; }
+				.icon {display: block; margin:0 auto 20px; line-height: 1; font-size: 1px;}
+			}
+		}
+	}
+}
 
 
 
@@ -1517,11 +1540,28 @@ MEDIA QUERY
 		button {width:5rem; min-width:inherit;}
 	}
 }
+// 의성의 오늘
+div[class^=oftoday_] {
+	&[class*=_navigation] {
+		width:100%; margin:2rem auto 0;
+		.month {font-size: 2rem; padding:0 3rem; line-height:3rem;}
+	}
+	&[class*=_calendar] {
+		margin-top: 2rem;
+		table {
+			tbody {
+				td {height:12rem; }
+				.point1 {display:block; font-size:1.3rem; margin-bottom: 0.3rem;}
+				.icon {margin:0 0.6rem 1rem; }
+			}
+		} 
+	}
+}
+// 예산서공개
+
 
 
  
-
-
 
 
 

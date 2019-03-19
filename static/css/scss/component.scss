@@ -546,8 +546,17 @@ br.m {display:none}
 	&[class*=_download1]:before {display: inline-block; vertical-align: middle; content: ""; width:25px; height: 25px; @include background("common/icon_download1.png",no-repeat 50% 50%); margin-right: 7px;}
 	&[class*=_download2]:after {display: inline-block; vertical-align: middle; content: ""; width:17px; height:16px; @include background("common/icon_download2.png",no-repeat 50% 50%); margin-left:14px; position: relative; top:-2px;}
 	&[class*=_outlink]:after {display: inline-block; vertical-align: middle; content: ""; width:19px; height: 19px; @include background("common/icon_outlnk.png",no-repeat 50% 50%); margin-left: 10px;}
+	&[class*=_pdfdownload]{
+		width:auto; padding:0 10px;
+		& em {display: inline-block; width:23px; height: 23px; @include background("common/icon_pdf.png",no-repeat 50% 50%); background-size: 100% auto;text-indent: -999em; margin-right: 7px; vertical-align: middle; position: relative; top:-1px;}
+	}
 
-}
+
+	// ETC BUTTON
+	&[class*=_prev] {width: 39px; height: 39px; border:1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; @include background("common/btn_prev1.png",no-repeat 50% 50%);}
+	&[class*=_next] {width: 39px; height: 39px; border:1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; @include background("common/btn_next1.png",no-repeat 50% 50%);}
+
+} 
 
 
 
@@ -562,6 +571,11 @@ br.m {display:none}
 		position: relative; padding-left: 18px; font-size: 18px;font-family: $font2; color:#111;
 		&:before {display: inline-block; position: absolute; left:0; top:0; content: ""; width: 12px; height: 19px;  @include background("common/bul_h4.png",no-repeat 50% 50%); }
 	}
+
+
+
+	& + *[class^=comp-tbl_] {margin-top: 15px;}
+
 }
 
 
@@ -638,9 +652,11 @@ p[class^=comp-lst] {
 /* TEXT */
 *[class^=comp-txt] {
 	&[class$=_box] {
-		min-height: 40px; padding:6px 20px 6px 12px; border:1px solid #f9e2b8; background:#fcf8e3;
+		position: relative; min-height: 40px; padding:6px 20px 6px 12px; border:1px solid #f9e2b8; background:#fcf8e3;
 		p {font-size: 16px; line-height: 26px; }
 	}
+
+	& + *[class^=heading-] {margin-top: 35px;}
 }
 
 
@@ -670,11 +686,11 @@ table[class^=comp-tbl] {
 			tr:last-child th {border-bottom-color:#7a7a7a;}
 		}
 		tbody{
-			th {height: 50px;padding:0 0.5rem; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 15px; font-family: $font2; text-align: center; color:#1c1c1c;}
-			td {height: 50px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center;}
+			th {height: 50px;padding:0 0.5rem; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 15px; font-family: $font2; text-align: center; color:#1c1c1c; line-height: 24px;}
+			td {height: 50px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center;line-height: 24px;}
 			th:first-of-type {border-left: 0;}
 			td:first-child {border-left: 0;}
-			tr:last-child * {border-bottom: 0;}
+			tr:last-child > * {border-bottom: 0;}
 		}
 		tfoot {
 			tr * {height: 50px; background:#f4f7f9; font-size: 16px; font-family: $font2; color:#1c1c1c; text-align: center; border-top: 1px solid #666;}
@@ -686,7 +702,7 @@ table[class^=comp-tbl] {
 		tbody{
 			th {
 				height: 50px; padding:6px 13px 6px 23px; width:180px; border-bottom: 1px solid #d9d6d5; background:#f4f7f9; 
-				font-size: 16px; font-family: $font2;text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px;
+				font-size: 16px; font-family: $font2;text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px; 
 			}
 			td {
 				height: 50px; padding:6px 15px; font-size: 15px; border-bottom: 1px solid #d9d6d5; text-align: center; box-sizing: border-box; text-align: left;
@@ -1296,6 +1312,7 @@ br.m {display:inherit}
 		padding-left: 1.3rem; font-size: 1.3rem;
 		&:before {width: 0.7rem; height: 1.2rem;background-size: 100% 100%;}
 	}
+
 }
 
 
@@ -1344,7 +1361,10 @@ p[class^=comp-lst] {
 
 
 /* TABLE */
-.scrollzone {width: 100%; overflow-x:auto; }
+.scrollzone {
+	width: 100%; overflow-x:auto; 
+	.scrollzoneinner {width:800px; }
+}
 .tbl-top-utile {
 	margin-bottom:0.6rem;
 	*[class^=heading] + .l-right {top:0.7rem;}
@@ -1361,8 +1381,8 @@ table[class^=comp-tbl] {
 			th {height: 3.3rem; font-size: 1.2rem;}
 		}
 		tbody{
-			th {font-size: 1.2rem; height: 3.3rem;}
-			td {height: 3.3rem; font-size: 1.2rem;}
+			th {font-size: 1.2rem; height: 3.3rem; line-height: 1.6rem;}
+			td {height: 3.3rem; font-size: 1.2rem; line-height: 1.6rem;}
 		}
 	}
 
@@ -1428,7 +1448,11 @@ table[class^=comp-tbl] {
 	&[class*=_type2] {width:auto; height: 3.3rem; line-height:3.3rem;  font-size: 1.2rem;}
 	&[class*=_type3] {width:auto; height: 3.3rem; line-height:3.3rem;  font-size: 1.2rem;}
 	&[class*=_type4] {width:auto; height: 3.3rem; line-height:3.3rem;  font-size: 1.2rem;}
-	
+
+
+	// ETC BUTTON
+	&[class*=_prev] {width:3rem; height:3rem; background-size: 30% auto;}
+	&[class*=_next] {width:3rem; height:3rem; background-size: 30% auto;}
 }
 
 

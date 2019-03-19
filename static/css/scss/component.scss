@@ -568,7 +568,7 @@ br.m {display:none}
 		&:before {display: inline-block; position: relative; top: -1px; content: ""; width: 24px; height: 26px; margin-right: 10px; @include background("common/bul_h3.png",no-repeat 50% 50%);vertical-align: middle;}
 	}
 	&[class$=-h4] {
-		position: relative; padding-left: 18px; font-size: 18px;font-family: $font2; color:#111;
+		position: relative; padding-left: 18px; font-size: 18px;font-family: $font2; color:#111; margin-left: 30px;
 		&:before {display: inline-block; position: absolute; left:0; top:0; content: ""; width: 12px; height: 19px;  @include background("common/bul_h4.png",no-repeat 50% 50%); }
 	}
 
@@ -685,8 +685,9 @@ table[class^=comp-tbl] {
 	&[class*=_datatype] {
 		border-top: 2px solid #7a7a7a; color:#787878; border-bottom: 1px solid #d9d6d5;
 		thead {
-			th {height: 50px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2; text-align: center; color:#1c1c1c;}
+			th {height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2; text-align: center; color:#1c1c1c;}
 			th:first-child {border-left: 0;}
+			tr:first-child th {border-top: 0;}
 			tr:last-child th {border-bottom:0}
 		}
 		tbody{
@@ -1317,7 +1318,7 @@ br.m {display:inherit}
 		&:before {width: 1.5rem; height: 1.5rem; margin-right: 0.6rem; background-size: 100% 100%;}
 	}
 	&[class$=-h4] {
-		padding-left: 1.3rem; font-size: 1.3rem;
+		padding-left: 1.3rem; font-size: 1.3rem; margin-left: 1.5rem;
 		&:before {width: 0.7rem; height: 1.2rem;background-size: 100% 100%;}
 	}
 

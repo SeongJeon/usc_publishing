@@ -318,7 +318,7 @@ br.t, br.m { display: none; }
 /* TITLE */
 *[class^=heading][class$=-h3] { font-size: 24px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #111; }
 *[class^=heading][class$=-h3]:before { display: inline-block; position: relative; top: -1px; content: ""; width: 24px; height: 26px; margin-right: 10px; background: url("../../static/images/common/bul_h3.png") no-repeat 50% 50%; vertical-align: middle; }
-*[class^=heading][class$=-h4] { position: relative; padding-left: 18px; font-size: 18px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #111; }
+*[class^=heading][class$=-h4] { position: relative; padding-left: 18px; font-size: 18px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #111; margin-left: 30px; }
 *[class^=heading][class$=-h4]:before { display: inline-block; position: absolute; left: 0; top: 0; content: ""; width: 12px; height: 19px; background: url("../../static/images/common/bul_h4.png") no-repeat 50% 50%; }
 *[class^=heading] + *[class^=comp-tbl_] { margin-top: 15px; }
 *[class^=heading] + .scrollzone { margin-top: 15px; }
@@ -369,8 +369,9 @@ p[class^=comp-lst][class*=_important]:before { display: inline-block; position: 
 
 table[class^=comp-tbl] { table-layout: fixed; }
 table[class^=comp-tbl][class*=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; border-bottom: 1px solid #d9d6d5; }
-table[class^=comp-tbl][class*=_datatype] thead th { height: 50px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #1c1c1c; }
+table[class^=comp-tbl][class*=_datatype] thead th { height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #1c1c1c; }
 table[class^=comp-tbl][class*=_datatype] thead th:first-child { border-left: 0; }
+table[class^=comp-tbl][class*=_datatype] thead tr:first-child th { border-top: 0; }
 table[class^=comp-tbl][class*=_datatype] thead tr:last-child th { border-bottom: 0; }
 table[class^=comp-tbl][class*=_datatype] tbody th { height: 50px; padding: 0 0.5rem; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 15px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #1c1c1c; line-height: 24px; }
 table[class^=comp-tbl][class*=_datatype] tbody td { height: 50px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center; line-height: 24px; }
@@ -693,7 +694,7 @@ input.w_password { width: 135px; }
   /* TITLE */
   *[class^=heading][class$=-h3] { font-size: 1.5rem; }
   *[class^=heading][class$=-h3]:before { width: 1.5rem; height: 1.5rem; margin-right: 0.6rem; background-size: 100% 100%; }
-  *[class^=heading][class$=-h4] { padding-left: 1.3rem; font-size: 1.3rem; }
+  *[class^=heading][class$=-h4] { padding-left: 1.3rem; font-size: 1.3rem; margin-left: 1.5rem; }
   *[class^=heading][class$=-h4]:before { width: 0.7rem; height: 1.2rem; background-size: 100% 100%; }
   *[class^=heading] + .scrollzone { margin-top: 1rem; }
   *[class^=heading] + *[class^=comp-tbl_] { margin-top: 1rem; }

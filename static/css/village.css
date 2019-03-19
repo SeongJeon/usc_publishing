@@ -265,7 +265,24 @@ SUB PAGE
 .safe .quote-wrap:after {position:absolute;bottom:0;left:50%;display:inline-block;width:16px;height:13px;margin-left:-8px;background:url(../images/usc/subpage/bg_safe_quote02.png) no-repeat center top;content:'';}
 .safe .safe-charter {padding-top:50px;border-top:1px solid #b2b2b2;font-size:18px;text-align:center;color:#282828;line-height:30px;}
 .safe .safe-charter li + li {margin-top:30px;}
+.safe .site-wrap + .heading-h3 {margin-top:50px;}
+.safe .site-wrap {padding:20px 30px;border:1px solid #dfdfdf;background:#f5f8f8;}
+.safe .site-wrap .img-area {display:inline-block;width:250px;height:110px;margin-right:65px;padding-top:36px;background:#fff;text-align:center;box-sizing:border-box;}
+.safe .site-wrap .img-area.type01 {background:#bbb;}
+.safe .site-wrap .comp-lst_hyphen {display:inline-block;}
+.safe .site-wrap .comp-lst_hyphen li {color:#1c1c1c;}
+.safe .site-wrap .comp-lst_hyphen.type01 {margin-top:27px;vertical-align:top;}
 
+.person .comp-tab {margin-bottom:50px;}
+.person .heading-h3 {margin-bottom:15px;}
+.person .comp-lst_dotted {margin:0 0 38px 20px;}
+.person .route-area {margin-left:20px;}
+.person .heading-h4 {margin:0 0 22px 0;}
+.person .comp-txt_box {margin-bottom:10px}
+.person .comp-lst_important + .comp-txt_box {margin-top:22px;}
+.person *[class^=comp-txt][class*=_box] {padding:20px;}
+.person .comp-txt_box .tit {margin-bottom:5px;color:#191919;font-size:18px;font-family:'NanumSquareB';}
+.person .comp-txt_box .txt {color:#4b4b4b;font-size:15px;}
 
 
 
@@ -453,6 +470,23 @@ MEDIA QUERY
 .safe .quote-wrap .txt01 {font-size:1.3rem;line-height:1.8rem;}
 .safe .safe-charter {padding-top:2.5rem;font-size:1.3rem;line-height:1.8rem;}
 .safe .safe-charter li + li {margin-top:1.5rem;}
+
+.safe .site-wrap + .heading-h3 {margin-top:2.5rem;}
+.safe .site-wrap {padding:1rem 1.5rem;}
+.safe .site-wrap .img-area {position:relative;display:block;width:18rem;height:8rem;margin:0 0 1rem 0;padding:0 1.5rem;}
+.safe .site-wrap .img-area img {position:absolute;top:50%;left:50%;max-width:90%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+.safe .site-wrap .comp-lst_hyphen {margin-top:0 !important;}
+
+.person .comp-tab {margin-bottom:2.5rem;}
+.person .heading-h3 {margin-bottom:.8rem;}
+.person .comp-lst_dotted {margin:0 0 2rem 0;}
+.person .route-area {margin-left:0;}
+.person .heading-h4 {margin-bottom:1rem;}
+.person *[class^=comp-txt][class*=_box] {padding:1rem;}
+.person .comp-txt_box .tit {font-size:1.3rem;}
+.person .comp-txt_box .txt {font-size:1.2rem;}
+.person .comp-lst_important + .comp-txt_box {margin-top:1rem;}
+
 }
 
 

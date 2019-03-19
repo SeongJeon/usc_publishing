@@ -257,7 +257,7 @@ SUB PAGE
 
 .safe .comp-tab {margin-bottom:25px;}
 .safe .heading-h3 {margin-bottom:15px;}
-.safe .quote-wrap {position:relative;width:810px;margin:0 auto 32px;padding:45px 0;text-align:center;font-size:29px;line-height:40px;color:#39290c;}
+.safe .quote-wrap {position:relative;margin-bottom:32px;padding:45px 0;text-align:center;font-size:29px;line-height:40px;color:#39290c;}
 .safe .quote-wrap .txt {margin-bottom:15px;}
 .safe .quote-wrap .txt01 {font-size:18px;line-height:26px;color:#282828;}
 .safe .quote-wrap .point3 {color:#785719;font-family:'NanumSquareB';}
@@ -446,7 +446,7 @@ MEDIA QUERY
 
 .safe .comp-tab {margin-bottom:1.3rem;}
 .safe .heading-h3 {margin-bottom:.8rem;}
-.safe .quote-wrap {width:inherit;margin:0 0 1.6rem 0;padding:2.3rem 0;font-size:1.5rem;line-height:2rem;}
+.safe .quote-wrap {margin-bottom:1.6rem;padding:2.3rem 0;font-size:1.5rem;line-height:2rem;}
 .safe .quote-wrap:before {width:.8rem;height:.6rem;margin-left:-.4rem;background-size:100%;}
 .safe .quote-wrap:after {width:.8rem;height:.6rem;margin-left:-.4rem;background-size:100%;}
 .safe .quote-wrap .txt {margin-bottom:.8rem;}

@@ -982,7 +982,19 @@ div[class^=oftoday_] {
 		}
 	}
 }
-
+// 예산서공개
+.budgeting-box {
+	overflow:hidden;
+	p{
+		float: left; font-size: 14px; color:#3e3e3e; line-height: 22px;
+		&:before {display:inline-block; content: "※"; margin-right: 4px;}
+	}
+	.form {
+		float: right;
+		select[class*=comp-select] {width: 172px;}
+		a[class*=comm-btn] {width: 172px;}
+	}
+}
 
 
 
@@ -1558,8 +1570,17 @@ div[class^=oftoday_] {
 	}
 }
 // 예산서공개
-
-
+.budgeting-box {
+	p{
+		float: none; font-size:1.2rem; line-height:1.6rem;
+		&:before { margin-right: 0.2rem;}
+	}
+	.form {
+		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; float: none; margin-top:0.5rem;
+		select[class*=comp-select] {width:auto; -webkit-flex:1; flex:1;}
+		a[class*=comm-btn] {width:8rem; margin-left: 0.5rem;}
+	}
+}
 
  
 

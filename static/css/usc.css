@@ -496,6 +496,13 @@ div[class^=oftoday_][class*=_calendar] table tbody td { height: 150px; font-fami
 div[class^=oftoday_][class*=_calendar] table tbody .point1 { font-size: 18px; }
 div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margin: 0 auto 20px; line-height: 1; font-size: 1px; }
 
+.budgeting-box { overflow: hidden; }
+.budgeting-box p { float: left; font-size: 14px; color: #3e3e3e; line-height: 22px; }
+.budgeting-box p:before { display: inline-block; content: "※"; margin-right: 4px; }
+.budgeting-box .form { float: right; }
+.budgeting-box .form select[class*=comp-select] { width: 172px; }
+.budgeting-box .form a[class*=comm-btn] { width: 172px; }
+
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
@@ -787,7 +794,12 @@ MEDIA QUERY
   div[class^=oftoday_][class*=_calendar] { margin-top: 2rem; }
   div[class^=oftoday_][class*=_calendar] table tbody td { height: 12rem; }
   div[class^=oftoday_][class*=_calendar] table tbody .point1 { display: block; font-size: 1.3rem; margin-bottom: 0.3rem; }
-  div[class^=oftoday_][class*=_calendar] table tbody .icon { margin: 0 0.6rem 1rem; } }
+  div[class^=oftoday_][class*=_calendar] table tbody .icon { margin: 0 0.6rem 1rem; }
+  .budgeting-box p { float: none; font-size: 1.2rem; line-height: 1.6rem; }
+  .budgeting-box p:before { margin-right: 0.2rem; }
+  .budgeting-box .form { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; float: none; margin-top: 0.5rem; }
+  .budgeting-box .form select[class*=comp-select] { width: auto; -webkit-flex: 1; flex: 1; }
+  .budgeting-box .form a[class*=comm-btn] { width: 8rem; margin-left: 0.5rem; } }
 @media (max-width: 768px) { /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */
   .advice-app .w_time { display: block; }
   .advice-app .w_time .comp-input, .advice-app .w_time .comp-select { width: 100%; }

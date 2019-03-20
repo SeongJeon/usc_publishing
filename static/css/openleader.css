@@ -222,19 +222,6 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-h5[class^=comp-lst][class*=_dotted] { position: relative; padding-left: 15px; font-size: 16px; color: #4b4b4b; line-height: 24px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-h5[class^=comp-lst][class*=_dotted]:before { display: inline-block; position: absolute; left: 0; top: 9px; content: ""; width: 5px; height: 5px; background: #656565; }
-h5[class^=comp-lst][class*=_dotted] .cont { font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-h5[class^=comp-lst][class*=_dotted][class*=_small] { color: #7f7f7f; font-size: 15px; padding-left: 10px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-h5[class^=comp-lst][class*=_dotted][class*=_small]:before { top: 10px; width: 1px; height: 1px; background: #7f7f7f; }
-h5[class^=comp-lst][class*=_dotted][class*=_grey] { color: #1c1c1c; }
-h5[class^=comp-lst][class*=_dotted][class*=_grey]:before { background: #cfcfcf; }
-h5[class^=comp-lst][class*=_hyphen] { position: relative; padding-left: 15px; font-size: 15px; color: #7f7f7f; line-height: 24px; }
-h5[class^=comp-lst][class*=_hyphen]:before { display: inline-block; position: absolute; left: 0; top: 10px; content: ""; width: 10px; height: 2px; background: #fe970e; }
-h5[class^=comp-lst][class*=_hyphen][class*=_txt]:before { content: "-"; margin-right: 7px; background: none; width: auto; height: auto; top: 0; }
-h5[class^=comp-lst][class*=_important] { position: relative; padding-left: 15px; color: #7f7f7f; font-size: 15px; line-height: 24px; }
-h5[class^=comp-lst][class*=_important]:before { display: inline-block; position: absolute; left: 0; top: 0; content: "※"; margin-right: 5px; }
-
 *[class^=comp-upport] {margin-top:10px;}
 *[class^=comp-upport] ol {}
 *[class^=comp-upport] ol > li {position:relative; margin-top:85px; padding:20px 20px 24px; background:#f5f8f8; border:1px solid #dcdcdc;}
@@ -246,8 +233,10 @@ h5[class^=comp-lst][class*=_important]:before { display: inline-block; position:
 *[class^=comp-upport] ol > li dl:after {position:absolute; left:20px; bottom:-70px; display:block; content:""; width:0; height:0; border-style:solid; border-top-width:16px; border-right-width:12px; border-bottom-width:16px; border-left-width:12px; border-color:#585858 transparent transparent transparent;}
 *[class^=comp-upport] ol > li dl .tit {height:27px; line-height:27px; font-size:20px; color:#1c1c1c; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif;}
 *[class^=comp-upport] ol > li dl .tit .num {display:inline-block; width:27px; height:27px; margin-right:5px; text-align:center; background:#785719; border-radius:100%; font-size:15px; color:#fff; }
-*[class^=comp-upport] ol > li dl .tit .tail {display:inline-block; margin-left:5px; font-size:20px; color:#f27405; font-family:'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
+*[class^=comp-upport] ol > li dl .tit .tail {display:inline-block; margin-left:5px; font-size:20px; color:#f27405; font-family:'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
 *[class^=comp-upport] ol > li dl .comp-lst_hyphen {margin:8px 0 0 20px;}
+
+*[class^=comp-txt] + *[class^=heading-] {margin-top: 2rem}
 
 /* 공장설립 - 공장설립지원센터 */
 .factory *[class^=comp-iconbox] {margin:40px 0 45px;}

@@ -279,7 +279,7 @@
 								<!-- D : 해당 부분에 서브페이지 작업 -->
 
 								<ul class="comp-tab" role="tablist" data-js="false">
-									<li role="presentation"><a href="#" role="tab" aria-selected="true"><span>보장절차</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
+									<li role="presentation"><a href="#" role="tab" aria-controls="tab-content" aria-selected="true"><span>보장절차</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
 									<li role="presentation"><a href="#" role="tab"><span>수급자선정기준</span></a></li>
 									<li role="presentation"><a href="#" role="tab"><span>조사내용</span></a></li>
 									<li role="presentation"><a href="#" role="tab"><span>급여수준</span></a></li>
@@ -288,7 +288,8 @@
 									<li role="presentation"><a href="#" role="tab"><span>각종감면제도안내</span></a></li>
 									<li role="presentation"><a href="#" role="tab"><span>최저생계비</span></a></li>
 								</ul>
-								<div class="comp-upport">
+								
+								<div id="tab-content" class="comp-upport" role="tabpanel">
 									<ol>
 										<li>
 											<dl>

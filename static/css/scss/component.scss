@@ -583,6 +583,7 @@ br.m {display:none}
 
 
 /* LIST */
+h5[class^=comp-lst], 
 p[class^=comp-lst] {
 	&[class*=_dotted] {
 		position: relative; padding-left: 15px; font-size: 16px; color:#4b4b4b; line-height: 24px; font-family: $font2;
@@ -610,6 +611,12 @@ p[class^=comp-lst] {
 		position: relative; padding-left: 15px; color:#7f7f7f; font-size: 15px; line-height: 24px;
 		&:before {display: inline-block; position: absolute; left:0; top:0; content: "※"; margin-right: 5px;}
 	}
+
+	// 간격관련
+	&.ml1 {margin-left: 5px;}
+	&.ml2 {margin-left: 30px;}
+	&.ml3 {margin-left: 40px;}
+	&.ml4 {margin-left: 50px;}
 }
 *[class^=comp-lst] {
 	&[class*=_dotted] {
@@ -646,6 +653,13 @@ p[class^=comp-lst] {
 		}
 	}
 	&[class*=_star] {}
+
+
+	// 간격관련
+	&.ml1 {margin-left: 5px;}
+	&.ml2 {margin-left: 30px;}
+	&.ml3 {margin-left: 40px;}
+	&.ml4 {margin-left: 50px;}
 }
 
 
@@ -860,7 +874,7 @@ input.w_password {width:135px;}
 	&:after {display: block; position: absolute; left:-1px; top:7px; content: ""; width: 10px; height: 70px; background:#adadad;}
 	.icon {
 		overflow:hidden; position: absolute; left:34px; top: 29px; overflow: hidden;
-		width: 100px; height: 100px; border-radius: 100px; background:#cfcfcf;
+		width: 100px; height: 100px; border-radius: 100px; background:#eff0f1;
 	}
 	.cont {
 		padding-left: 164px;
@@ -1347,6 +1361,13 @@ p[class^=comp-lst] {
 	&[class*=_important] {
 		padding-left:1.2rem; font-size:1.2rem; line-height: 1.4rem;
 	}
+
+
+	// 간격관련
+	&.ml1 {margin-left: 0.5rem;}
+	&.ml2 {margin-left: 1.5rem;}
+	&.ml3 {margin-left: 1.5rem;}
+	&.ml4 {margin-left: 2rem;}
 }
 *[class^=comp-lst] {
 	&[class*=_dotted] {
@@ -1369,6 +1390,13 @@ p[class^=comp-lst] {
 		& > li {padding-left:1.2rem; font-size:1.2rem; line-height: 1.4rem; }
 	}
 	&[class*=_star] {}
+
+
+	// 간격관련
+	&.ml1 {margin-left: 0.5rem;}
+	&.ml2 {margin-left: 1.5rem;}
+	&.ml3 {margin-left: 1.5rem;}
+	&.ml4 {margin-left: 2rem;}
 }
 
 
@@ -1562,7 +1590,10 @@ input.w_password {width:100%;}
 /* UI - TAB */
 *[class^=comp-tab] {
 	li {width:25%; }
-	a {line-height: 3.5rem; font-size: 1.2rem; }
+	a {
+		display:table; width: 100%; line-height: 1.2; font-size: 1.2rem; height: 3.5rem; box-sizing: border-box; 
+		span {display: table-cell; vertical-align: middle;}
+	}
 
 	li:nth-child(n+5) {border-top: 0;}
 	li:nth-child(5n+1) a {border-left: 0}

@@ -222,6 +222,14 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+/* 공통빼기 */
+.al-l {text-align:left !important;}
+.al-c {text-align:center !important;}
+.al-r {text-align:right !important;}
+h5[class^=comp-lst][class*=_dotted] .cont {font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif;}
+table[class^=comp-tbl][class*=_datatype] tbody th {padding:0.4rem 0.5rem;}
+table[class^=comp-tbl][class*=_datatype] tbody th.bg-none {background:none;}
+/* // 공통빼기 */
 *[class^=comp-upport] {margin-top:10px;}
 *[class^=comp-upport] ol {}
 *[class^=comp-upport] ol > li {position:relative; margin-top:85px; padding:20px 20px 24px; background:#f5f8f8; border:1px solid #dcdcdc;}
@@ -247,6 +255,20 @@ SUB PAGE
 
 /* 기초생활보장 - 보장절차 */
 .guarantee *[class^=comp-upport] {margin-top:50px;}
+
+/* 기초생활보장 - 수급자선정기준 */
+.criteria .ml1 {margin-left:40px !important;}
+.criteria *[class^=heading][class$=-h3] {margin-top:50px;}
+.criteria *[class^=heading][class$=-h4] {margin-top:16px; margin-bottom:9px;}
+.criteria *[class^=comp-lst][class*=_dotted] {margin:0 0 25px 40px;}
+.criteria p[class^=comp-lst][class*=_important] {margin:10px 0 0 15px;}
+.criteria h5[class^=comp-lst][class*=_dotted] {margin:0 0 7px 40px;}
+.criteria p[class^=comp-lst][class*=_hyphen] {margin-bottom:15px;}
+.criteria *[class^=comp-lst][class*=_hyphen] {margin:0 0 25px 40px;}
+.criteria .img-area {margin-left:40px; font-size:0;}
+.criteria .scrollzone + h5[class^=comp-lst][class*=_dotted] {margin-top:30px;}
+.criteria *[class^=comp-txt][class*=_box] {margin-left:40px;}
+
 
 
 
@@ -279,6 +301,19 @@ h5[class^=comp-lst][class*=_important] { padding-left: 1.2rem; font-size: 1.2rem
 
 /* 기초생활보장 - 보장절차 */
 .guarantee *[class^=comp-upport] {margin-top:2rem;}
+
+/* 기초생활보장 - 수급자선정기준 */
+.criteria .ml1 {margin-left:1.5rem !important;}
+.criteria *[class^=heading][class$=-h3] {margin-top:1.5rem;}
+.criteria *[class^=heading][class$=-h4] {margin-top:2rem; margin-bottom:0.5rem;}
+.criteria *[class^=comp-lst][class*=_dotted] {margin:0 0 2.5rem 1.5rem;}
+.criteria p[class^=comp-lst][class*=_important] {margin:0.5rem 0 0 1rem;}
+.criteria h5[class^=comp-lst][class*=_dotted] {margin:0 0 0.5rem 1.6rem;}
+.criteria p[class^=comp-lst][class*=_hyphen] {margin-bottom:1rem;}
+.criteria *[class^=comp-lst][class*=_hyphen] {margin:0 0 2.5rem 1.5rem;}
+.criteria .img-area {margin-left:1.5rem; font-size:0;}
+.criteria .scrollzone + h5[class^=comp-lst][class*=_dotted] {margin-top:1.5rem;}
+.criteria *[class^=comp-txt][class*=_box] {margin-left:1.5rem;}
 
 }
 

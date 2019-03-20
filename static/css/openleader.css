@@ -265,10 +265,11 @@ table[class^=comp-tbl][class*=_datatype] tbody th.bg-none {background:none;}
 .criteria h5[class^=comp-lst][class*=_dotted] {margin:0 0 7px 40px;}
 .criteria p[class^=comp-lst][class*=_hyphen] {margin-bottom:15px;}
 .criteria *[class^=comp-lst][class*=_hyphen] {margin:0 0 25px 40px;}
-.criteria .img-area {margin-left:40px; font-size:0;}
+.criteria .img-area {margin-left:40px; padding:40px 0; background:#f5f8f8; border:1px solid #dddbdb; font-size:0; text-align:center;}
 .criteria .scrollzone + h5[class^=comp-lst][class*=_dotted] {margin-top:30px;}
 .criteria *[class^=comp-txt][class*=_box] {margin-left:40px;}
 
+/* 납세자보호관 - 고충민원 */
 
 
 
@@ -311,7 +312,7 @@ h5[class^=comp-lst][class*=_important] { padding-left: 1.2rem; font-size: 1.2rem
 .criteria h5[class^=comp-lst][class*=_dotted] {margin:0 0 0.5rem 1.6rem;}
 .criteria p[class^=comp-lst][class*=_hyphen] {margin-bottom:1rem;}
 .criteria *[class^=comp-lst][class*=_hyphen] {margin:0 0 2.5rem 1.5rem;}
-.criteria .img-area {margin-left:1.5rem; font-size:0;}
+.criteria .img-area {margin-left:1.5rem; padding:2rem;}
 .criteria .scrollzone + h5[class^=comp-lst][class*=_dotted] {margin-top:1.5rem;}
 .criteria *[class^=comp-txt][class*=_box] {margin-left:1.5rem;}
 

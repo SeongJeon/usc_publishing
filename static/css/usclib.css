@@ -241,6 +241,7 @@ MEDIA QUERY
   #wrap.usclib #header .header-middle .title a { width: 23.3rem; background: url("../../static/images/usclib/img_logo.png") no-repeat 50% 50%; }
   #wrap.usclib #gnb .category { display: none; }
   #wrap.usclib #gnb .gnb .clicked, #wrap.usclib #gnb .gnb .current, #wrap.usclib #gnb .gnb .clicked h3 a, #wrap.usclib #gnb .gnb h2 a:hover, #wrap.usclib #gnb .gnb h3 a:hover, #wrap.usclib #gnb .gnb h4 a:hover { color: #016dae; }
+  #wrap.usclib #gnb .gnb h4 a:hover:before { background: #016dae; }
   #wrap.usclib #footer .footer-selectgroup .footer-comp-select dt button { background-size: auto 100%; }
   #wrap.usclib #footer .footer-notice .number .call { background-size: 100% 100%; }
   #wrap.usclib #footer .footer-utilegroup .footer-utile { color: #d5d5d5; }

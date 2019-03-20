@@ -513,6 +513,7 @@ LAYOUT
 	.gnb h2 a:hover, 
 	.gnb h3 a:hover, 
 	.gnb h4 a:hover {color:#016dae;}
+	.gnb h4 a:hover:before {background:#016dae;}
 }
 #wrap.usclib #footer {
 	.footer-selectgroup .footer-comp-select dt button {background-size: auto 100%;}

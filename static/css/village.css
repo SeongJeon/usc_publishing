@@ -346,6 +346,7 @@ MEDIA QUERY
 .village #gnb .gnb h2 a:hover, 
 .village #gnb .gnb h3 a:hover, 
 .village #gnb .gnb h4 a:hover {color:#168039;}
+.village #gnb .gnb h4 a:hover:before {background:#168039;}
 
 .village #header .header-middle .comp-search .form .btn button {background: #45bf55}
 .village #header .header-middle .comp-search .form input {border-color:#45bf55;}

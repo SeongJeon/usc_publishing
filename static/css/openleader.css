@@ -307,6 +307,14 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width: 1024px) {
+.openleader #gnb .gnb .clicked, 
+.openleader #gnb .gnb .current, 
+.openleader #gnb .gnb .clicked h3 a, 
+.openleader #gnb .gnb h2 a:hover, 
+.openleader #gnb .gnb h3 a:hover, 
+.openleader #gnb .gnb h4 a:hover, 
+.openleader #gnb .gnb h5 a:hover {color:#016dae}
+
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */

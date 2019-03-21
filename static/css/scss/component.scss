@@ -472,6 +472,8 @@ br.m {display:none}
 .line {text-decoration: underline !important;;}
 .point1 {color:#ff4000 !important;}
 .point2 {color:#ee1c25 !important;;}
+.point3 {color:#1c1c1c !important;;}
+.point4 {color:#f27405 !important;;}
 
 .al-l {text-align:left !important;}
 .al-c {text-align:center !important;}
@@ -711,6 +713,8 @@ table[class^=comp-tbl] {
 		border-top: 2px solid #7a7a7a; color:#787878; border-bottom: 1px solid #d9d6d5;
 		thead {
 			th {height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2; text-align: center; color:#1c1c1c;}
+			th[rowspan] {border-right:1px solid #d9d6d5;}
+			th:last-child {border-right:0;}
 			th:first-child {border-left: 0;}
 			tr:first-child th {border-top: 0;}
 			tr:last-child th {border-bottom:0}
@@ -727,8 +731,11 @@ table[class^=comp-tbl] {
 			tr:first-child > * {border-top:1px solid #7a7a7a;}
 		}
 		tfoot {
-			tr * {height: 50px; background:#f4f7f9; font-size: 16px; font-family: $font2; color:#1c1c1c; text-align: center; border-top: 1px solid #666;}
+			tr * {height: 50px; background:#f4f7f9; font-size: 16px; font-family: $font2; color:#1c1c1c; text-align: center; border-top: 1px solid #666; border-left: 1px solid #d7d7d9;} 
+			tr *:first-child {border-left: 0;}
 		}
+
+		&.border {border-bottom:2px solid #7a7a7a;}
 
 	}
 
@@ -1444,7 +1451,7 @@ p[class^=comp-lst] {
 	.l-right {font-size: 1rem;}
 }
 table[class^=comp-tbl] {
-	&[class$=_datatype] {
+	&[class*=_datatype] {
 		border-top: 2px solid #7a7a7a; color:#787878;
 		thead {
 			th {height: 3.3rem; font-size: 1.2rem;}
@@ -1453,9 +1460,12 @@ table[class^=comp-tbl] {
 			th {font-size: 1.2rem; height: 3.3rem; line-height: 1.6rem; padding:0.5rem;}
 			td {height: 3.3rem; font-size: 1.2rem; line-height: 1.6rem; padding:0.5rem;}
 		}
+		tfoot {
+			tr * {height:3.3rem; font-size: 1.2rem; line-height: 1.6rem; padding:0.5rem;}
+		}
 	}
 
-	&[class$=_formtype] {
+	&[class*=_formtype] {
 		tbody{
 			th {
 				height:4.3rem; padding:0.5rem 1rem 0.5rem 0.7rem; width:25%;
@@ -1471,6 +1481,10 @@ table[class^=comp-tbl] {
 	.pc {display: none;}
 	.m {display: inherit;}
 }
+
+
+
+
 
 
 /* TEXT */
@@ -1650,6 +1664,7 @@ input.w_password {width:100%;}
 	}
 
 	&[class*=_iconnone] {
+		padding:1.5rem;
 	}
 }
 /* UI - customer */

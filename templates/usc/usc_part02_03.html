@@ -278,9 +278,9 @@
 							<div class="contents-zone">
 								<!-- 탭 -->
 								<ul class="comp-tab" role="tablist" data-js="false">
-									<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent" aria-selected="true"><span>자금운용현황</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
+									<li role="presentation"><a href="#" role="tab"><span>자금운용현황</span></a></li>
 									<li role="presentation"><a href="#" role="tab"><span>세입현황</span></a></li>
-									<li role="presentation"><a href="#" role="tab"><span>세출현황</span></a></li>
+									<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent" aria-selected="true"><span>세출현황</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
 								</ul>
 								<!-- //탭 -->
 
@@ -288,23 +288,39 @@
 								<div id="tabcontent" role="tabpanel" >
 									<!-- 검색영역 -->
 									<div class="comp-iconbox_iconnone">
-										<dl class="cont inforopen-search1">
-											<dt>자금운용현황 검색</dt>
+										<dl class="cont inforopen-search3">
+											<dt>세출현황 검색 <span class="small">순서대로 선택하세요.</span></dt>
 											<dd>
 												<div class="block">
-													<span class="label">기간선택</span>
+													<div class="label">① 기간선택 <span class="sm">현재 시스템상 5일전까지의 자료만 검색이 가능합니다.</span></div>
 													<input type="text" title="시작 기간 입력 " class="comp-input_h42 js-datepicker">
 													<span class="txt">-</span>
-													<input type="text" title="마지막 기간 입력" class="comp-input_h42 js-datepicker">
+													<input type="text" title="마지막 기간 입력 " class="comp-input_h42 js-datepicker">
+												</div>
+												<div class="block">
+													<div class="label">② 회계구분명</div>
+													<select name="" id="" class="comp-select_h42" title="회계구분 선택">
+														<option value="">회계구분 선택</option>
+													</select>
+												</div>
+												<div class="block">
+													<div class="label">③ 부서명</div>
+													<select name="" id="" class="comp-select_h42" title="부서명 선택">
+														<option value="">부서명 선택</option>
+													</select>
+												</div>
+												<div class="block">
+													<div class="label">④ 세부사업명</div>
+													<input type="text" title="세부사업명 입력 " class="comp-input_h42">
 												</div>
 												<button type="submit" class="comm-btn_type3_orange"><span>검색</span></button>
 												<button type="button" class="comm-btn_type3_gray"><span>초기화</span></button>
 											</dd>
 										</dl>
 									</div>
-									<!-- 텍스트 영역 -->
+									<!-- 텍스트 -->
 									<div class="comp-txt_box mt30">
-										<p>군의 수입액, 지출액, 자금잔액 현황을 기간별로 검색하실 수 있습니다.</p>
+										<p>부서별, 세부사업별로 예산액과 현재까지의 지출총액을 보실 수 있습니다. 품의유형이 <strong class="point4 bold">일상경비교부</strong>에 해당하는 자료는 검색되지 않습니다.</p>
 									</div>
 									<!-- 데이터 테이블 -->
 									<div class="tbl-top-utile mt30">
@@ -312,56 +328,71 @@
 									</div>
 									<div class="scrollzone">
 										<div class="scrollzoneinner">
-											<table class="comp-tbl_datatype">
-												<caption>자금운용현황 - 기간, 예산현액, 총 수입액(기간중, 누계A), 총 지출액(기간중,누계A), 잔금잔액 합계</caption>
+											<table class="comp-tbl_datatype border">
+												<caption>세출현황 - 번호, 사업개요(적요), 회계구분, 부서명, 세부사업명, 통계목, 지급일자, 지출액</caption>
 												<colgroup>
+													<col style="width:55px;">
 													<col>
-													<col>
-													<col span="4" style="width:130px">
-													<col>
+													<col span="6" style="width:115px;">
 												</colgroup>
 												<thead>
 													<tr>
-														<th scope="col" rowspan="2">기간</th>
-														<th scope="col" rowspan="2">예산현액</th>
-														<th scope="colgroup" colspan="2">총 수입액</th>
-														<th scope="colgroup" colspan="2">총 지출액</th>
-														<th scope="col" rowspan="2">자금잔액 합계</th>
-													</tr>
-													<tr>
-														<th scope="col">기간중</th>
-														<th scope="col">누계(A)</th>
-														<th scope="col">기간중</th>
-														<th scope="col">누계(A)</th>
+														<th scope="col">번호</th>
+														<th scope="col">사업개요(적요)</th>
+														<th scope="col">회계구분</th>
+														<th scope="col">부서명</th>
+														<th scope="col">세부사업명</th>
+														<th scope="col">통계목</th>
+														<th scope="col">지급일자</th>
+														<th scope="col">지출액</th>
 													</tr>
 												</thead>
+												<tfoot>
+													<tr>
+														<th colspan="7" scope="row">합계(2019년 02월 20일)</th>
+														<td>123,456,789</td>
+													</tr>
+												</tfoot>
 												<tbody>
 													<tr>
-														<th scope="row" class="bg-none">2019년 02월 19일</th>
-														<td>0</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
+														<td>132</td>
+														<td class="point3 al-l">전기요금납부(2019.1월분)</td>
+														<td>일반회계</td>
+														<td>신평면</td>
+														<td>평생학습교육</td>
+														<td>사무관리비</td>
+														<td>0000-00-00</td>
+														<td>12,456,796</td>
 													</tr>
 													<tr>
-														<th scope="row" class="bg-none">2019년 02월 19일</th>
-														<td>0</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
+														<td>131</td>
+														<td class="point3 al-l">행복학습센터 개강식 물품구입</td>
+														<td>일반회계</td>
+														<td>신평면</td>
+														<td>평생학습교육</td>
+														<td>사무관리비</td>
+														<td>0000-00-00</td>
+														<td>12,456,796</td>
 													</tr>
 													<tr>
-														<th scope="row" class="bg-none">2019년 02월 19일</th>
-														<td>0</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
+														<td>130</td>
+														<td class="point3 al-l">2019년 군수신년 읍면방문 간담회 다과구입</td>
+														<td>일반회계</td>
+														<td>신평면</td>
+														<td>평생학습교육</td>
+														<td>사무관리비</td>
+														<td>0000-00-00</td>
+														<td>12,456,796</td>
+													</tr>
+													<tr>
+														<td>129</td>
+														<td class="point3 al-l">전기요금납부(2019.1월분)</td>
+														<td>일반회계</td>
+														<td>신평면</td>
+														<td>평생학습교육</td>
+														<td>사무관리비</td>
+														<td>0000-00-00</td>
+														<td>12,456,796</td>
 													</tr>
 												</tbody>
 											</table>

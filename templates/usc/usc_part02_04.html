@@ -278,8 +278,8 @@
 							<div class="contents-zone">
 								<!-- 탭 -->
 								<ul class="comp-tab" role="tablist" data-js="false">
-									<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent" aria-selected="true"><span>자금운용현황</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
-									<li role="presentation"><a href="#" role="tab"><span>세입현황</span></a></li>
+									<li role="presentation"><a href="#" role="tab" ><span>자금운용현황</span></a></li>
+									<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent" aria-selected="true"><span>세입현황</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
 									<li role="presentation"><a href="#" role="tab"><span>세출현황</span></a></li>
 								</ul>
 								<!-- //탭 -->
@@ -288,23 +288,23 @@
 								<div id="tabcontent" role="tabpanel" >
 									<!-- 검색영역 -->
 									<div class="comp-iconbox_iconnone">
-										<dl class="cont inforopen-search1">
-											<dt>자금운용현황 검색</dt>
+										<dl class="cont inforopen-search2">
+											<dt>세입현황 검색 <span class="small">순서대로 선택하세요.</span></dt>
 											<dd>
 												<div class="block">
-													<span class="label">기간선택</span>
-													<input type="text" title="시작 기간 입력 " class="comp-input_h42 js-datepicker">
-													<span class="txt">-</span>
-													<input type="text" title="마지막 기간 입력" class="comp-input_h42 js-datepicker">
+													<span class="label">① 일자선택</span>
+													<input type="text" title="일자 입력 " class="comp-input_h42 js-datepicker">
+												</div>
+												<div class="block">
+													<span class="label">② 회계구분명</span>
+													<select name="" id="" class="comp-select_h42" title="회계구분 선택">
+														<option value="">회계구분 선택</option>
+													</select>
 												</div>
 												<button type="submit" class="comm-btn_type3_orange"><span>검색</span></button>
 												<button type="button" class="comm-btn_type3_gray"><span>초기화</span></button>
 											</dd>
 										</dl>
-									</div>
-									<!-- 텍스트 영역 -->
-									<div class="comp-txt_box mt30">
-										<p>군의 수입액, 지출액, 자금잔액 현황을 기간별로 검색하실 수 있습니다.</p>
 									</div>
 									<!-- 데이터 테이블 -->
 									<div class="tbl-top-utile mt30">
@@ -313,41 +313,32 @@
 									<div class="scrollzone">
 										<div class="scrollzoneinner">
 											<table class="comp-tbl_datatype">
-												<caption>자금운용현황 - 기간, 예산현액, 총 수입액(기간중, 누계A), 총 지출액(기간중,누계A), 잔금잔액 합계</caption>
+												<caption>세입현황 - 기간, 회계구분, 전일누계, 기간 중 수입액(수입액, 과오납반환, 과목경정, 차액), 금일 누계</caption>
 												<colgroup>
 													<col>
 													<col>
-													<col span="4" style="width:130px">
-													<col>
+													<col span="6" style="width:112px">
 												</colgroup>
 												<thead>
 													<tr>
 														<th scope="col" rowspan="2">기간</th>
-														<th scope="col" rowspan="2">예산현액</th>
-														<th scope="colgroup" colspan="2">총 수입액</th>
-														<th scope="colgroup" colspan="2">총 지출액</th>
-														<th scope="col" rowspan="2">자금잔액 합계</th>
+														<th scope="col" rowspan="2">회계구분</th>
+														<th scope="col" rowspan="2">전일누계</th>
+														<th scope="colgroup" colspan="4">기간 중 수입액</th>
+														<th scope="col" rowspan="2">금일누계</th>
 													</tr>
 													<tr>
-														<th scope="col">기간중</th>
-														<th scope="col">누계(A)</th>
-														<th scope="col">기간중</th>
-														<th scope="col">누계(A)</th>
+														<th scope="col">수입액</th>
+														<th scope="col">과오납반환</th>
+														<th scope="col">과목경정</th>
+														<th scope="col">차액</th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
 														<th scope="row" class="bg-none">2019년 02월 19일</th>
-														<td>0</td>
+														<td>일반회계</td>
 														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-														<td>299,999,999</td>
-													</tr>
-													<tr>
-														<th scope="row" class="bg-none">2019년 02월 19일</th>
-														<td>0</td>
 														<td>299,999,999</td>
 														<td>299,999,999</td>
 														<td>299,999,999</td>
@@ -356,7 +347,28 @@
 													</tr>
 													<tr>
 														<th scope="row" class="bg-none">2019년 02월 19일</th>
-														<td>0</td>
+														<td>의료급여기금</td>
+														<td>299,999,999</td>
+														<td>299,999,999</td>
+														<td>299,999,999</td>
+														<td>299,999,999</td>
+														<td>299,999,999</td>
+														<td>299,999,999</td>
+													</tr>
+													<tr>
+														<th scope="row" class="bg-none">2019년 02월 19일</th>
+														<td>주택관리사업</td>
+														<td>299,999,999</td>
+														<td>299,999,999</td>
+														<td>299,999,999</td>
+														<td>299,999,999</td>
+														<td>299,999,999</td>
+														<td>299,999,999</td>
+													</tr>
+													<tr>
+														<th scope="row" class="bg-none">2019년 02월 19일</th>
+														<td>농공지구(단지)조성관리</td>
+														<td>299,999,999</td>
 														<td>299,999,999</td>
 														<td>299,999,999</td>
 														<td>299,999,999</td>

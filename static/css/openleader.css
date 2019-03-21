@@ -249,7 +249,7 @@ SUB PAGE
 
 /* 기초생활보장 - 수급자선정기준 */
 .criteria .ml1 {margin-left:40px !important;}
-.criteria *[class^=heading][class$=-h3] {margin-top:50px;}
+.criteria *[class^=heading][class$=-h3] {margin-top:30px;}
 .criteria *[class^=heading][class$=-h4] {margin-top:16px; margin-bottom:9px;}
 .criteria *[class^=comp-lst][class*=_dotted] {margin:0 0 25px 40px;}
 .criteria p[class^=comp-lst][class*=_important] {margin:10px 0 0 15px;}
@@ -261,14 +261,14 @@ SUB PAGE
 .criteria *[class^=comp-txt][class*=_box] {margin-left:40px;}
 
 /* 납세자보호관 - 고충민원 */
-.grievance *[class^=heading][class$=-h3] {margin-top:50px;}
+.grievance *[class^=heading][class$=-h3] {margin-top:30px;}
 .grievance *[class^=comp-txt][class*=_box] {margin-top:5px;}
 .grievance *[class^=comp-lst][class*=_dotted] {margin-top:10px;}
 .grievance .btn-down {display:block; width:250px; height:45px; line-height:45px; margin-top:11px; padding-left:62px; background:url(../images/usc/subpage/ico_btn_grievance.png) no-repeat 30px center;border:1px solid #fe970e; box-sizing:border-box; font-size:15px; font-family:'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
 .grievance .img-area {margin-top:10px; padding:30px 15px; background:#f5f8f8; border:1px solid #dfdfdf; text-align:center; font-size:0;}
 
 /* 노인복지 - 노인돌봄서비스사업 */
-.insurance *[class^=heading][class$=-h3] {margin-top:50px;}
+.insurance *[class^=heading][class$=-h3] {margin-top:30px;}
 .insurance *[class^=heading][class$=-h4] {margin-top:16px; margin-bottom:9px;}
 .insurance *[class^=comp-lst][class*=_dotted] {margin-top:10px; margin-bottom:7px; }
 .insurance *[class^=comp-lst][class*=_dotted] + *[class^=heading][class$=-h4]  {margin-top:35px;}
@@ -289,7 +289,42 @@ SUB PAGE
 .insurance .service-content .inner > li .list > li:before {position:absolute; left:50%; top:-15px; display:block; content:""; width:3px; height:13px; margin-left:-1px; background:#525252;}
 
 
+/* 노인복지 - 치매/노인실명예방관리 */
+.dementia *[class^=heading][class$=-h3] {margin-top:30px;}
+.dementia *[class^=heading][class$=-h4] {margin-top:16px; margin-bottom:9px;}
+.dementia *[class^=comp-lst][class*=_dotted] {margin-top:10px; margin-bottom:9px;}
+.dementia *[class^=comp-lst][class*=_dotted] *[class^=comp-lst][class*=_hyphen] {margin-left:-15px;}
+.dementia .scrollzone {margin-left:-15px;}
+.dementia .img-area {margin-left:30px;}
 
+/* 열린군청 - 군정방향 */
+.direction .tit {padding:75px 0 35px; text-align:center;}
+.direction .tit .en {position:relative; padding-top:45px; font-size:28px; color:#cbcbcb;}
+.direction .tit .en:before {position:absolute; display:block; content:""; left:50%; top:0; width:16px; height:13px; margin-left:-8px; background:url(../images/usc/subpage/bg_safe_quote01.png) no-repeat center top;}
+.direction .tit .big {margin:8px 0 25px; font-size:46px; color:#2f2f2f;}
+.direction .tit .big .point {color:#fe970e;}
+.direction .tit .tail {position:relative; margin-bottom:15px; padding-bottom:45px; font-size:21px; color:#666;}
+.direction .tit .tail:after {position:absolute; display:block; content:""; left:50%; bottom:0; width:16px; height:13px; margin-left:-8px; background:url(../images/usc/subpage/bg_safe_quote02.png) no-repeat center top;}
+.direction .tit h4 {display:inline-block; padding:30px 25px 0; background:url(../images/usc/subpage/bg_leaf.png) no-repeat right top; font-size:36px; color:#39290c;}
+.direction .tit h4 .point { color:#3b9b60;}
+.direction .tit .en,
+.direction .tit .point {font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
+.direction .list-img {overflow:hidden; margin:0 0 35px -15px; }
+.direction .list-img > li {float:left; width:25%; font-size:20px; color:#2e2e2e; text-align:center;}
+.direction .list-img > li .cont {margin-left:15px; padding:155px 0 40px;}
+.direction .list-img > li .tail {display:block; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:25px;}
+.direction .list-img > li.icon-01 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list01.png) no-repeat;}
+.direction .list-img > li.icon-02 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list02.png) no-repeat;}
+.direction .list-img > li.icon-03 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list03.png) no-repeat;}
+.direction .list-img > li.icon-04 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list04.png) no-repeat;}
+.direction .list-img > li[class^=icon-] .cont {background-position:center 28px;}
+.direction *[class^=heading][class$=-h4] {margin-top:20px; margin-bottom:9px;}
+.direction *[class^=comp-lst][class*=_dotted] {margin-bottom:25px;}
+
+
+/* ------------------------------------------------------
+MEDIA QUERY
+------------------------------------------------------ */
 @media (max-width: 1024px) {
 /* 공통빼기 */
 *[class^=comp-upport] {margin-top:0.5rem;}
@@ -347,7 +382,36 @@ SUB PAGE
 .insurance .service-content .inner > li .list > li {width:8rem; height:3rem; line-height:3rem; font-size:1rem;}
 .insurance .service-content .inner > li .list > li:before {width:2px; height:0.8rem;}
 
+/* 노인복지 - 치매/노인실명예방관리 */
+.dementia *[class^=heading][class$=-h3] {margin-top:1.5rem;}
+.dementia *[class^=heading][class$=-h4] {margin-top:2rem; margin-bottom:0.5rem;}
+.dementia *[class^=comp-lst][class*=_dotted] {margin-top:0.7rem; margin-bottom:0.5rem;}
+.dementia *[class^=comp-lst][class*=_dotted] *[class^=comp-lst][class*=_hyphen],
+.dementia .scrollzone {margin-left:-1rem;}
+.dementia .img-area {margin-left:1.3rem;}
 
+/* 열린군청 - 군정방향 */
+.direction .tit {padding:2rem 0 2rem; text-align:center;}
+.direction .tit .en {padding-top:3rem; font-size:1.5rem;}
+.direction .tit .en:before {width:0.8rem; height:0.6rem; margin-left:-0.4rem; background-size:100%;}
+.direction .tit .big {margin:0.5rem 0 1.5rem; font-size:2.5rem;}
+.direction .tit .big .point {color:#fe970e;}
+.direction .tit .tail {position:relative; margin-bottom:1.5rem; padding-bottom:3rem; font-size:1.5rem;}
+.direction .tit .tail:after {width:0.8rem; height:0.6rem; margin-left:-0.4rem; background-size:100%;}
+.direction .tit h4 {padding:1.8rem 1.8rem 0; background-size:2rem 2.2rem; font-size:1.8rem; color:#39290c;}
+.direction .tit h4 .point {color:#3b9b60;}
+
+.direction .list-img {overflow:hidden; margin:-1rem 0 3rem -1rem; }
+.direction .list-img > li {float:left; width:50%; font-size:2rem; color:#2e2e2e; text-align:center;}
+.direction .list-img > li .cont {margin:1rem 0 0 1rem; padding:15rem 0 3rem;}
+.direction .list-img > li .tail {display:block; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:2.5rem;}
+.direction .list-img > li.icon-01 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list01.png) no-repeat;}
+.direction .list-img > li.icon-02 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list02.png) no-repeat;}
+.direction .list-img > li.icon-03 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list03.png) no-repeat;}
+.direction .list-img > li.icon-04 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list04.png) no-repeat;}
+.direction .list-img > li[class^=icon-] .cont {background-position:center 3rem;}
+.direction *[class^=heading][class$=-h4] {margin-top:2rem; margin-bottom:0.5rem;}
+.direction *[class^=comp-lst][class*=_dotted] {margin-bottom:2.5rem;}
 }
 
 

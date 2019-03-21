@@ -268,6 +268,10 @@ br.t, br.m { display: none; }
 
 .point2 { color: #ee1c25 !important; }
 
+.point3 { color: #1c1c1c !important; }
+
+.point4 { color: #f27405 !important; }
+
 .al-l { text-align: left !important; }
 
 .al-c { text-align: center !important; }
@@ -395,6 +399,8 @@ h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 20px; }
 table[class^=comp-tbl] { table-layout: fixed; }
 table[class^=comp-tbl][class*=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; border-bottom: 1px solid #d9d6d5; }
 table[class^=comp-tbl][class*=_datatype] thead th { height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #1c1c1c; }
+table[class^=comp-tbl][class*=_datatype] thead th[rowspan] { border-right: 1px solid #d9d6d5; }
+table[class^=comp-tbl][class*=_datatype] thead th:last-child { border-right: 0; }
 table[class^=comp-tbl][class*=_datatype] thead th:first-child { border-left: 0; }
 table[class^=comp-tbl][class*=_datatype] thead tr:first-child th { border-top: 0; }
 table[class^=comp-tbl][class*=_datatype] thead tr:last-child th { border-bottom: 0; }
@@ -405,7 +411,9 @@ table[class^=comp-tbl][class*=_datatype] tbody th:first-of-type { border-left: 0
 table[class^=comp-tbl][class*=_datatype] tbody td:first-child { border-left: 0; }
 table[class^=comp-tbl][class*=_datatype] tbody tr:last-child > * { border-bottom: 0; }
 table[class^=comp-tbl][class*=_datatype] tbody tr:first-child > * { border-top: 1px solid #7a7a7a; }
-table[class^=comp-tbl][class*=_datatype] tfoot tr * { height: 50px; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #1c1c1c; text-align: center; border-top: 1px solid #666; }
+table[class^=comp-tbl][class*=_datatype] tfoot tr * { height: 50px; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #1c1c1c; text-align: center; border-top: 1px solid #666; border-left: 1px solid #d7d7d9; }
+table[class^=comp-tbl][class*=_datatype] tfoot tr *:first-child { border-left: 0; }
+table[class^=comp-tbl][class*=_datatype].border { border-bottom: 2px solid #7a7a7a; }
 table[class^=comp-tbl][class*=_formtype] { border-top: 2px solid #7a7a7a; color: #4b4b4b; }
 table[class^=comp-tbl][class*=_formtype] tbody th { height: 50px; padding: 6px 13px 6px 23px; width: 180px; border-bottom: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px; }
 table[class^=comp-tbl][class*=_formtype] tbody td { height: 50px; padding: 6px 15px; font-size: 15px; border-bottom: 1px solid #d9d6d5; text-align: center; box-sizing: border-box; text-align: left; }
@@ -767,13 +775,14 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .tbl-top-utile .l-right { font-size: 1rem; }
   .tbl-bottom-utile { margin-top: 0.6rem; }
   .tbl-bottom-utile .l-right { font-size: 1rem; }
-  table[class^=comp-tbl][class$=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; }
-  table[class^=comp-tbl][class$=_datatype] thead th { height: 3.3rem; font-size: 1.2rem; }
-  table[class^=comp-tbl][class$=_datatype] tbody th { font-size: 1.2rem; height: 3.3rem; line-height: 1.6rem; padding: 0.5rem; }
-  table[class^=comp-tbl][class$=_datatype] tbody td { height: 3.3rem; font-size: 1.2rem; line-height: 1.6rem; padding: 0.5rem; }
-  table[class^=comp-tbl][class$=_formtype] tbody th { height: 4.3rem; padding: 0.5rem 1rem 0.5rem 0.7rem; width: 25%; font-size: 1.2rem; line-height: 3.3rem; }
-  table[class^=comp-tbl][class$=_formtype] tbody td { height: 4.3rem; padding: 0.5rem 0.7rem; font-size: 1.2rem; }
-  table[class^=comp-tbl][class$=_formtype] .txt { line-height: 3.3rem; }
+  table[class^=comp-tbl][class*=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; }
+  table[class^=comp-tbl][class*=_datatype] thead th { height: 3.3rem; font-size: 1.2rem; }
+  table[class^=comp-tbl][class*=_datatype] tbody th { font-size: 1.2rem; height: 3.3rem; line-height: 1.6rem; padding: 0.5rem; }
+  table[class^=comp-tbl][class*=_datatype] tbody td { height: 3.3rem; font-size: 1.2rem; line-height: 1.6rem; padding: 0.5rem; }
+  table[class^=comp-tbl][class*=_datatype] tfoot tr * { height: 3.3rem; font-size: 1.2rem; line-height: 1.6rem; padding: 0.5rem; }
+  table[class^=comp-tbl][class*=_formtype] tbody th { height: 4.3rem; padding: 0.5rem 1rem 0.5rem 0.7rem; width: 25%; font-size: 1.2rem; line-height: 3.3rem; }
+  table[class^=comp-tbl][class*=_formtype] tbody td { height: 4.3rem; padding: 0.5rem 0.7rem; font-size: 1.2rem; }
+  table[class^=comp-tbl][class*=_formtype] .txt { line-height: 3.3rem; }
   table[class^=comp-tbl] .pc { display: none; }
   table[class^=comp-tbl] .m { display: inherit; }
   /* TEXT */
@@ -859,6 +868,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   *[class^=comp-iconbox] .icon img { width: 100%; height: 100%; }
   *[class^=comp-iconbox] .cont { padding-left: 10rem; }
   *[class^=comp-iconbox] .cont .tit { margin-bottom: 1rem; font-size: 1.5rem; }
+  *[class^=comp-iconbox][class*=_iconnone] { padding: 1.5rem; }
   /* UI - customer */
   .customer-zone { border: 1px solid #cfcfcf; }
   .customer-zone .customer-top { height: auto; padding: 1.5rem 1rem; line-height: 1.2; }

@@ -333,7 +333,7 @@ SUB PAGE
 .tax .intro-wrap .txt span {background:#ffe167;font-family:'NanumSquareEB';color:#353535;}
 .tax .btn-webtoon {display:inline-block;width:214px;height:48px;padding:0 14px;margin-bottom:20px;line-height:44px;border:3px solid #39290c;font-size:18px;color:#353535;box-sizing:border-box;}
 .tax .btn-webtoon span {padding-right:30px;background:url(../images/usc/subpage/bg_webtoon.png) no-repeat right center;}
-.tax .img-area span[class*="logo-"] {display:inline-block;}
+.tax .img-area span[class*="logo-"] {display:inline-block;vertical-align:middle;}
 .tax .logo-tax {padding-right:22px;}
 .tax .logo-gove {position:absolute;top:30px;right:30px;}
 .tax *[class^=comp-upport] ol > li {background:#f5f8f8;}
@@ -585,13 +585,13 @@ MEDIA QUERY
 .tax .intro-wrap {height:auto;margin-bottom:2.3rem;padding:1rem;}
 .tax .intro-wrap:after {width:22.6rem;background-size:80%;}
 .tax .intro-wrap .tit-img {width:10rem;margin:1rem;padding:1rem;box-sizing:border-box;}
-.tax .intro-wrap .txt-area {display:block;padding:0 1rem 1rem;}
+.tax .intro-wrap .txt-area {padding:0 1rem 1rem;}
 .tax .intro-wrap .sub-tit {margin:0 5rem .8rem 0;font-size:2.2rem;}
 .tax .intro-wrap .sub-txt {margin-bottom:1.3rem;padding:.6rem 1.1rem .5rem;font-size:1.3rem;}
 .tax .intro-wrap .txt {margin-bottom:.8rem;font-size:1.4rem;line-height:2rem;}
 .tax .btn-webtoon {width:13.5rem;height:3rem;margin-bottom:1rem;padding:0 .7rem;font-size:1.2rem;line-height:2.8rem;}
 .tax .btn-webtoon span {padding-right:1.5rem;background-size:1.1rem;}
-.tax .img-area span[class*="logo-"] {width:10rem;}
+.tax .img-area span[class*="logo-"] {width:8rem;}
 .tax .logo-tax {padding-right:1.1rem;}
 .tax .logo-gove {width:5rem !important;top:1rem;right:1rem;}
 .tax *[class^=comp-upport] ol > li dl {min-height:6rem;padding:0 0 0 11rem;background-size:10rem !important;background-position:left top !important;}
@@ -621,6 +621,10 @@ MEDIA QUERY
 	.village .news-wrap .notice-wrap .notice-con dt {overflow:hidden;width:100%;white-space:nowrap;word-wrap:normal;text-overflow:ellipsis;}
 	.village .notice-link li .tit {width:60%;}
 	.village .service-inner .service-list a {padding-top:5.5rem;background-size:4.3rem !important;}
+
+	.tax .logo-tax {padding:0 0 .5rem 0;}
+	.tax .intro-wrap .sub-txt {text-align:left;}
+	.tax .btn-webtoon {line-height:2.5rem;}
 }
 
 

@@ -594,7 +594,7 @@ MEDIA QUERY
 .tax .img-area span[class*="logo-"] {width:10rem;}
 .tax .logo-tax {padding-right:1.1rem;}
 .tax .logo-gove {width:7rem !important;top:1rem;right:1rem;}
-.tax *[class^=comp-upport] ol > li dl {min-height:auto;padding:8.5rem 0 0 0;background-size:14rem !important;background-position:left top !important;}
+.tax *[class^=comp-upport] ol > li dl {min-height:6rem;padding:0 0 0 11rem;background-size:10rem !important;background-position:left top !important;}
 .tax *[class^=comp-upport] ol > li dl .tit {margin-bottom:.6rem;}
 }
 

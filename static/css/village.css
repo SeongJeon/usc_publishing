@@ -324,8 +324,27 @@ SUB PAGE
 .bill .comp-iconbox_iconnone .comp-lst_important {margin-top:10px;color:#ee1c25;}
 .bill .img-area {padding:40px 0;border:1px solid #ddd;background:#f7f7f7;text-align:center;}
 
-.tax *[class^=comp-upport] {margin-top:0;}
-
+.tax .intro-wrap {display:table;position:relative;width:100%;height:430px;margin-bottom:45px;background:#fcfcee;box-sizing:border-box;}
+.tax .intro-wrap .tit-img {display:table-cell;width:413px;background:#f0ebd8;text-align:center;vertical-align:middle;}
+.tax .intro-wrap .txt-area {display:table-cell;padding:60px 0 0 40px;vertical-align:top;}
+.tax .intro-wrap .sub-tit {margin-bottom:15px;font-size:47px;color:#785719;font-family:'NanumSquareB';}
+.tax .intro-wrap .sub-txt {display:inline-block;margin-bottom:26px;padding:12px 22px 10px;background:#39290c;font-size:26px;border-radius:30px;text-align:center;color:#fff;}
+.tax .intro-wrap .txt {margin-bottom:15px;font-size:18px;line-height:27px;}
+.tax .intro-wrap .txt span {background:#ffe167;font-family:'NanumSquareEB';color:#353535;}
+.tax .btn-webtoon {display:inline-block;width:214px;height:48px;padding:0 14px;margin-bottom:20px;line-height:44px;border:3px solid #39290c;font-size:18px;color:#353535;box-sizing:border-box;}
+.tax .btn-webtoon span {padding-right:30px;background:url(../images/usc/subpage/bg_webtoon.png) no-repeat right center;}
+.tax .img-area span[class*="logo-"] {display:inline-block;}
+.tax .logo-tax {padding-right:22px;}
+.tax .logo-gove {position:absolute;top:30px;right:30px;}
+.tax *[class^=comp-upport] ol > li dl {min-height:143px;padding-left:308px;}
+.tax *[class^=comp-upport] ol > li dl .tit {margin-bottom:12px;}
+.tax *[class^=comp-upport] ol > li dl .txt {color:#1c1c1c;}
+.tax *[class^=comp-upport] ol > li dl .comp-lst_hyphen {margin-left:0;}
+.tax *[class^=comp-upport] ol > li.upport01 {background:url(../images/usc/subpage/bg_tax_step01.png) no-repeat 20px center;}
+.tax *[class^=comp-upport] ol > li.upport02 {background:url(../images/usc/subpage/bg_tax_step02.png) no-repeat 20px center;}
+.tax *[class^=comp-upport] ol > li.upport03 {background:url(../images/usc/subpage/bg_tax_step03.png) no-repeat 20px center;}
+.tax *[class^=comp-upport] ol > li.upport04 {background:url(../images/usc/subpage/bg_tax_step04.png) no-repeat 20px center;}
+.tax *[class^=comp-lst][class*=_hyphen] > li {color:#1c1c1c;}
 
 
 
@@ -561,6 +580,22 @@ MEDIA QUERY
 .bill .comp-iconbox_iconnone .comm-btn_type3_deeporange {margin:1rem 0;}
 .bill .comp-iconbox_iconnone .comp-lst_important {margin-top:.5rem;text-align:left;}
 .bill .img-area {padding:2rem;}
+
+.tax .intro-wrap {height:auto;margin-bottom:2.3rem;}
+.tax .intro-wrap:after {width:22.6rem;background-size:80%;}
+.tax .intro-wrap .tit-img {display:block;width:15rem;margin:1rem;padding:1rem;box-sizing:border-box;}
+.tax .intro-wrap .txt-area {display:block;padding:0 1rem 1rem;}
+.tax .intro-wrap .sub-tit {margin-bottom:.8rem;font-size:2.4rem;}
+.tax .intro-wrap .sub-txt {margin-bottom:1.3rem;padding:.6rem 1.1rem .5rem;font-size:1.3rem;}
+.tax .intro-wrap .txt {margin-bottom:.8rem;font-size:1.4rem;line-height:2rem;}
+.tax .btn-webtoon {width:13.5rem;height:3rem;margin-bottom:1rem;padding:0 .7rem;font-size:1.2rem;line-height:2.8rem;}
+.tax .btn-webtoon span {padding-right:1.5rem;background-size:1.1rem;}
+.tax .img-area span[class*="logo-"] {width:10rem;}
+.tax .logo-tax {padding-right:1.1rem;}
+.tax .logo-gove {width:7rem !important;top:1rem;right:1rem;}
+.tax *[class^=comp-upport] ol > li {background-size:14rem !important;background-position:1rem 1rem !important;}
+.tax *[class^=comp-upport] ol > li dl {min-height:auto;padding:8.5rem 0 0 0;}
+.tax *[class^=comp-upport] ol > li dl .tit {margin-bottom:.6rem;}
 }
 
 

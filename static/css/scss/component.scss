@@ -864,7 +864,7 @@ input.w_password {width:135px;}
 }
 /* UI - TAB */
 *[class^=comp-tab] {
-	overflow:hidden; 
+	overflow:hidden; margin-bottom: 30px;
 	li {float: left; width: 20%; box-sizing: border-box; border-top: 1px solid #d1d1d1; }
 	a {
 		display: block; position: relative; text-align: center; line-height: 50px; font-size: 17px; color:#111; background:#f4f4f4; border-right:1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1;
@@ -1624,6 +1624,7 @@ input.w_password {width:100%;}
 }
 /* UI - TAB */
 *[class^=comp-tab] {
+	margin-bottom: 2rem;
 	li {width:25%; }
 	a {
 		display:table; width: 100%; line-height: 1.2; font-size: 1.2rem; height: 3.5rem; box-sizing: border-box; 

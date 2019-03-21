@@ -473,7 +473,9 @@ br.m {display:none}
 .point1 {color:#ff4000 !important;}
 .point2 {color:#ee1c25 !important;;}
 
-
+.al-l {text-align:left !important;}
+.al-c {text-align:center !important;}
+.al-r {text-align:right !important;}
 
 
 
@@ -617,6 +619,7 @@ p[class^=comp-lst] {
 	&.ml2 {margin-left: 30px;}
 	&.ml3 {margin-left: 40px;}
 	&.ml4 {margin-left: 50px;}
+	&.ml5 {margin-left: 20px;}
 }
 *[class^=comp-lst] {
 	&[class*=_dotted] {
@@ -660,6 +663,7 @@ p[class^=comp-lst] {
 	&.ml2 {margin-left: 30px;}
 	&.ml3 {margin-left: 40px;}
 	&.ml4 {margin-left: 50px;}
+	&.ml5 {margin-left: 20px;}
 }
 
 
@@ -705,8 +709,11 @@ table[class^=comp-tbl] {
 			tr:last-child th {border-bottom:0}
 		}
 		tbody{
-			th {height: 50px;padding:0 0.5rem; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 15px; font-family: $font2; text-align: center; color:#1c1c1c; line-height: 24px;}
-			td {height: 50px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center;line-height: 24px;}
+			th {
+				height: 50px;padding:5px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 15px; font-family: $font2; text-align: center; color:#1c1c1c; line-height: 24px;
+				&.bg-none {background:none;}
+			}
+			td {height: 50px;padding:5px 10px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center;line-height: 24px;}
 			th:first-of-type {border-left: 0;}
 			td:first-child {border-left: 0;}
 			tr:last-child > * {border-bottom: 0;}
@@ -715,6 +722,7 @@ table[class^=comp-tbl] {
 		tfoot {
 			tr * {height: 50px; background:#f4f7f9; font-size: 16px; font-family: $font2; color:#1c1c1c; text-align: center; border-top: 1px solid #666;}
 		}
+
 	}
 
 	&[class*=_formtype] {
@@ -1344,6 +1352,7 @@ br.m {display:inherit}
 
 
 /* LIST */
+h5[class^=comp-lst],
 p[class^=comp-lst] {
 	&[class*=_dotted] {
 		padding-left: 1rem; font-size:1.2rem; line-height: 1.4rem;
@@ -1368,6 +1377,7 @@ p[class^=comp-lst] {
 	&.ml2 {margin-left: 1.5rem;}
 	&.ml3 {margin-left: 1.5rem;}
 	&.ml4 {margin-left: 2rem;}
+	&.ml5 {margin-left: 1rem;}
 }
 *[class^=comp-lst] {
 	&[class*=_dotted] {
@@ -1397,6 +1407,7 @@ p[class^=comp-lst] {
 	&.ml2 {margin-left: 1.5rem;}
 	&.ml3 {margin-left: 1.5rem;}
 	&.ml4 {margin-left: 2rem;}
+	&.ml5 {margin-left: 1rem;}
 }
 
 
@@ -1450,7 +1461,13 @@ table[class^=comp-tbl] {
 		min-height: auto; padding:0.7rem 1rem; word-break: keep-all;
 		p {font-size:1.2rem; line-height:1.6rem; }
 	}
-	&[class*=_searchbox] {padding:1rem; }
+	&[class*=_searchbox] {
+		padding:1rem; 
+	}
+
+
+	// 간격
+	& + *[class^=heading-] {margin-top: 2rem}
 }
 
 

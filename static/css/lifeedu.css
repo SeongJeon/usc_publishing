@@ -40,6 +40,25 @@ SUB PAGE
 .usc_part01_01 .comm-btn_btnn2_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life2.png") no-repeat center center; width:27px; height:24px; vertical-align: middle; margin-right:10px;}
 
 
+
+
+
+.usc_part02_01 .comp-lst_dotted {margin-top:6px; margin-bottom:30px;}
+/*.usc_part02_01 *[class^=heading][class$=-h4] {margin-top:30px;}*/
+
+
+
+
+
+.usc_part06_02
+
+
+
+
+
+.usc_part06_03 .comp-lst_dotted {margin-top:6px;}
+.usc_part06_03 .heading-h4 {margin-top:20px;}
+.usc_part06_03 .comp-lst_hyphen {margin-top:10px; margin-left:70px;}
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */

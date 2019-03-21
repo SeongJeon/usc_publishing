@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" >
 	<meta name="format-detection" content="telephone=no" >
-	<title>위치 &lt; 의성안내 &lt; 의성군청</title>
+	<title>행정정보/개방 &lt; 정보공개 &lt; 의성군청</title>
 	<meta name="Subject" content="의성군청" >
 	<meta name="title" content="의성군청" >
 	<meta name="keywords" content="의성군청" >
@@ -28,14 +28,14 @@
 
 		<!-- CONTAINER -->
 		<main>
-			<div id="container" class="location"><!-- D: 페이지 특정의 클래스 -->
+			<div id="container" class=""><!-- D: 페이지 특정의 클래스 -->
 				<!-- 상단 비주얼 -->
 				<div class="top-visual-zone">
 					<p>군민과 함께하는 창조적인 희망군정 활력넘치는 희망의성! 살기좋은 의성으로 오세요~!</p>
 					<img src="../../static/images/commonbg/bg_usc1.png" alt="" class="bgimg">
 				</div>
 				<!--// 상단 비주얼 -->
-
+				
 				<!-- 컨텐츠 -->
 				<div class="inner">
 					<!-- breadcrumb -->
@@ -244,7 +244,7 @@
 						<section>
 							<!-- 페이지 타이틀영역 -->
 							<div class="title-zone">
-								<h2 class="page-title">위치자연환경</h2>
+								<h2 class="page-title">행정정보/개방</h2>
 								<ul class="page-utile">
 									<li>
 										<button type="button" aria-haspopup="true" aria-controls="area-sns" aria-expanded="false" class="icon-sns"><span>SNS 공유 레이어 열기</span></button>
@@ -276,101 +276,92 @@
 							
 							<!-- 개별 컨텐츠 영역 -->
 							<div class="contents-zone">
-								<!-- D : 해당 부분에 서브페이지 작업 -->
+								<!-- 탭 -->
 								<ul class="comp-tab" role="tablist" data-js="false">
-									<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent" aria-selected="true"><span>위치</span></a></li> <!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
-									<li role="presentation"><a href="#" role="tab"><span>면적</span></a></li>
-									<li role="presentation"><a href="#" role="tab"><span>지역</span></a></li>
-									<li role="presentation"><a href="#" role="tab"><span>기후</span></a></li>
+									<li role="presentation"><a href="#" role="tab" aria-controls="tabcontent" aria-selected="true"><span>자금운용현황</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
+									<li role="presentation"><a href="#" role="tab"><span>세입현황</span></a></li>
+									<li role="presentation"><a href="#" role="tab"><span>세출현황</span></a></li>
 								</ul>
-								<h3 class="heading-h3">대한민국 지도와 경상북도 지도</h3>
-								<div class="img-area">
-									<img src="../../static/images/usc/subpage/img_location_map.png" alt="대한민국 지도 및 경상북도 지도">
+								<!-- //탭 -->
+
+								<!-- 탭 컨텐츠 -->
+								<div id="tabcontent" role="tabpanel">
+									<!-- 검색영역 -->
+									<div class="comp-iconbox_iconnone">
+										<div class="cont">
+											<h3 class="tit">행정정보/개방 - 지방소득세</h3>
+											<ul class="comp-lst_dotted_grey">
+												<li><em class="bold">[비회원글쓰기]</em>z 신고하기 클릭 → “비회원 로그인” → 민원등록</li>
+												<li>처리 내용을 확인하기 위해서는 비회원 실명인증 로그인을 한 후 해당 민원창구로 이동하여 <br>“내가 신고한 글목록 보기”를 클릭하시면 신고하신 목록을 보실 수 있습니다.</li>
+												<li>회원은 <em class="line">“마이페이지”</em>를 통하여 확인하실 수 있습니다.</li>
+											</ul>
+										</div>
+									</div>
+									<!-- 텍스트 영역 -->
+									<div class="comp-txt_box">
+										<p>군의 수입액, 지출액, 자금잔액 현황을 기간별로 검색하실 수 있습니다.</p>
+									</div>
+									<!-- 데이터 테이블 -->
+									<div class="tbl-top-utile">
+										<p class="l-right">(단위: 원)</p>
+									</div>
+									<table class="comp-tbl_datatype">
+										<caption>자금운용현황 - 기간, 예산현액, 총 수입액(기간중, 누계A), 총 지출액(기간중,누계A), 잔금잔액 합계</caption>
+										<colgroup>
+											<col>
+											<col>
+											<col span="4">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" rowspan="2">기간</th>
+												<th scope="col" rowspan="2">예산현액</th>
+												<th scope="colgroup" colspan="2">총 수입액</th>
+												<th scope="colgroup" colspan="2">총 지출액</th>
+												<th scope="col" rowspan="2">자금잔액 합계</th>
+											</tr>
+											<tr>
+												<th scope="col">기간중</th>
+												<th scope="col">누계(A)</th>
+												<th scope="col">기간중</th>
+												<th scope="col">누계(A)</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row" class="bg-none">2019년 02월 19일</th>
+												<td>0</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+											</tr>
+											<tr>
+												<th scope="row" class="bg-none">2019년 02월 19일</th>
+												<td>0</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+											</tr>
+											<tr>
+												<th scope="row" class="bg-none">2019년 02월 19일</th>
+												<td>0</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+												<td>299,999,999</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-
-								<ul class="comp-lst_dotted">
-									<li>의성군은 영남지방으로서 경상북도의 중앙에 위치하며, 조선시대 경상도가 좌&middot;우로 갈라졌을때는 경상좌도에 속했다.</li>
-									<li>북쪽은 안동시와 예천군에 접하고, 동쪽은 청송군, 남쪽은 군위군과 구미시, 서쪽은 상주시와 인접하고 있다.</li>
-									<li>군청소재지는 의성읍 군청길 31번지에 있어 동쪽지역에 치우쳐 있다.</li>
-									<li>의성군의 경&middot;위도상의 위치는 동극(<span class="chinese">東極</span>)이 춘산면 금오리, 서극(<span class="chinese">西極</span>)이 단밀면 낙정리, 남극(<span class="chinese">南極</span>)이 가음면 현리리며, 북의 극지점은 다인면 용곡리이다.</li>
-									<li>의성군과 위도상 비슷한 위치에 있는 지역은 동쪽으로 청송군과 영덕군이며, 서쪽으로는 상주시와 충북 보은, 옥천군, 대전광역시, 충남의 청양, 부여, 보령이다.</li>
-								</ul>
-
-								<h3 class="heading-h3">의성군의 경&middot;위도상의 위치 </h3>
-								<table class="comp-tbl_datatype">
-									<caption>의성군의 경&middot;위도상의 위치 - 방위, 지명, 경도와 위도(동경/ 북위)</caption>
-									<colgroup>
-										<col style="width:22%">
-										<col style="width:25%">
-										<col style="width:22%">
-										<col style="width:21%">
-									</colgroup>
-									<thead>
-										<tr>
-											<th scope="col" rowspan="2">방위</th>
-											<th scope="col" rowspan="2">지명</th>
-											<th scope="col" colspan="2">경도와 위도</th>
-										</tr>
-										<tr>
-											<th scope="col">동경</th>
-											<th scope="col">북위</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="bold">동극</td>
-											<td class="al-l">춘산면 금오리 산 50</td>
-											<td>128° 53" 56"</td>
-											<td>36° 11" 59"</td>
-										</tr>
-										<tr>
-											<td class="bold">서극</td>
-											<td class="al-l">단밀면 낙정리 807-65</td>
-											<td>128° 18" 11"</td>
-											<td>36° 21" 5"</td>
-										</tr>
-										<tr>
-											<td class="bold">남극</td>
-											<td class="al-l">가음면 현리리 산 71-1</td>
-											<td>128° 19" 45"</td>
-											<td>36° 11" 26"</td>
-										</tr>
-										<tr>
-											<td class="bold">북극</td>
-											<td class="al-l">다인면 용곡리 764</td>
-											<td>128° 19" 45"</td>
-											<td>36° 31" 36"</td>
-										</tr>
-										<tr>
-											<td class="bold">군청소재지</td>
-											<td class="al-l">의성읍 군청길 31</td>
-											<td>128° 19" 21"</td>
-											<td>36° 21"</td>
-										</tr>
-									</tbody>
-								</table>
-
-								<ul class="comp-lst_dotted">
-									<li>조선시대의 역도(<span class="chinese">驛道</span>)로는 안기도(<span class="chinese">安奇道</span>) 소속으로 철파역, 청로역이 있었고, 유곡도(<span class="chinese">幽谷道</span>) 소속으로 낙동역, 안계역, 쌍계역이 있었는데 낙동역에는 참(<span class="chinese">站</span>)이 설치되어 교통의 최대 요충지였다. 이 밖에 많은 원(<span class="chinese">院</span>)이 있는 것을 보면 그토록 교통이 발달된 것을 알수 있다. 또한 낙동강에서 도리원까지는 위천을 거슬러 수운(<span class="chinese">水運</span>)까지 이용되었다. 북쪽은 안동시와 예천군에 접하고, 동쪽은 청송군, 남쪽은 군위군과 구미시, 서쪽은 상주시와 인접하고 있다.</li>
-									<li>의성군이 도의 중앙에 위치하여 도내 시군과는 직선거리가 울진군을 제외하면 모두가 80km 이내의 거리에 위치하고 있으며 육로상의 거리도 도로망의 발달로	점차 단축되고 있다. 중앙선 철도가 금성면, 의성읍, 단촌면을 남북으로 관통하고 앙고속도로는 봉양면, 안평면을 통과하면서 봉양면 도원리에 의성 IC가 설치되어 있다. 대구-안동간 5번국도가 4차선으로 확장되고 의성-영천간, 봉양-다인간의 국도 등 총연장이 85km 이며 지방도가 211km, 군도가 140km에 달한다. </li>
-									<li>의성지방에는 예부터 비안현, 단밀현, 다인현이 있어서 이 현들이 조선후기까지도 상주, 예천에 영속되기도 하고 의성에 영속되기도 하여 그곳 문화의 영향이 많이 남아있는 곳이다. 신평면의 북부지역은 지리적인 관계로 안동 생활권에 근접해 있고, 과거에는 안동시의 길안면 일부와 청송군 현서면의 일부가 의성생활권에 근접했으나 교통의 발달로 멀어지는 경향이 있다. </li>
-									<li>군청소재지는 의성읍 군청길 31번지에 있어 동쪽지역에 치우쳐 있다. </li>
-								</ul>
-								
-								<!-- //D : 해당 부분에 서브페이지 작업 -->
+								<!--//탭 컨텐츠 -->
 							</div>
 							<!--// 개별 컨텐츠 영역 -->
-
-							<!-- 공공누리 영역 -->
-							<div class="comp-public-area">
-								<div class="img-area">
-									<img src="../../static/images/usc/subpage/img_public.png" alt="공공누리 : 공공저작물 자유이용허락 (출처표시)">
-								</div>
-								<p>
-									저작물은 "공공누리" 제1유형:출처표시 조건에 따라 이용 할 수 있습니다.
-								</p>
-							</div>
-							<!--// 공공누리 영역 -->
 
 							<!-- 고객 만족도 영역 -->
 							<div class="customer-zone">

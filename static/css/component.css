@@ -375,9 +375,9 @@ h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 20px; }
 /* TABLE */
 .tbl-top-utile { margin-bottom: 12px; }
 .tbl-top-utile:after { display: block; clear: both; content: ""; }
-.tbl-top-utile .l-right { float: right; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #1c1c1c; font-size: 15px; }
+.tbl-top-utile .l-right { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #1c1c1c; font-size: 15px; text-align: right; }
 .tbl-top-utile *[class^=heading] { float: left; }
-.tbl-top-utile *[class^=heading] + .l-right { position: relative; top: 12px; }
+.tbl-top-utile *[class^=heading] + .l-right { float: right; position: relative; top: 12px; }
 
 .tbl-bottom-utile { margin-top: 13px; }
 .tbl-bottom-utile:after { display: block; clear: both; content: ""; }
@@ -523,6 +523,11 @@ input.w_password { width: 135px; }
 .customer-zone .customer-bottom .form:after { display: block; clear: both; content: ""; }
 .customer-zone .customer-bottom .form input { float: left; width: 808px; padding: 0 10px; height: 30px; font-size: 13px; background: #fff; }
 .customer-zone .customer-bottom .form button { float: left; width: 120px; height: 30px; color: #fff; font-size: 13px; background: #b88527; }
+
+/* UI - 공공누리 */
+div[class^=comp-public-area] { margin-bottom: 18px; padding: 20px 28px; background: #f5f8f8; border: 1px solid #dfdfdf; }
+div[class^=comp-public-area] .img-area { display: inline-block; margin: 0 30px 0 0; text-align: left; }
+div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-size: 20px; vertical-align: top; color: #39290c; }
 
 /* LAYER */
 #layer { display: block; position: fixed; top: 50%; left: 50%; z-index: 1001; }
@@ -861,7 +866,12 @@ input.w_password { width: 135px; }
   .customer-zone .customer-bottom .agreebox .radio-lst input:checked + label:before { background-size: 100% 100%; }
   .customer-zone .customer-bottom .form { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; padding: 2rem 1rem; }
   .customer-zone .customer-bottom .form input { -webkit-flex: 1; flex: 1; width: auto; padding: 0 1rem; height: 2.5rem; font-size: 1rem; }
-  .customer-zone .customer-bottom .form button { width: 9.6rem; height: 2.5rem; font-size: 1rem; } }
+  .customer-zone .customer-bottom .form button { width: 9.6rem; height: 2.5rem; font-size: 1rem; }
+  /* UI - 공공누리 */
+  div[class^=comp-public-area] { margin-bottom: .9rem; padding: 1rem 1.4rem; height: 5rem; display: table; width: 100%; }
+  div[class^=comp-public-area] .img-area { display: table-cell; margin: 0; vertical-align: middle; width: 6rem; }
+  div[class^=comp-public-area] .img-area img { width: 100%; }
+  div[class^=comp-public-area] p { display: table-cell; margin: 0; padding-left: 1.5rem; font-size: 1.2rem; vertical-align: middle; } }
 @media (max-width: 360px) { #gnb .gnb h3 a { font-size: 1.2rem; } }
 @media (max-width: 321px) { #gnb .gnb h3 a { font-size: 1.1rem; }
   #container .breadcrumb-zone .breadcrumb > li > a { padding-right: 1.5rem; }

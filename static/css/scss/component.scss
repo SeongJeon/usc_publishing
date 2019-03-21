@@ -688,9 +688,9 @@ p[class^=comp-lst] {
 .tbl-top-utile {
 	margin-bottom: 12px; 
 	&:after {display:block; clear:both; content:""}
-	.l-right {float: right; font-family: $font2; color:#1c1c1c; font-size: 15px; }
+	.l-right {font-family: $font2; color:#1c1c1c; font-size: 15px; text-align: right;}
 	*[class^=heading] {float: left;}
-	*[class^=heading] + .l-right {position: relative; top:12px;}
+	*[class^=heading] + .l-right {float:right; position: relative; top:12px;}
 }
 .tbl-bottom-utile {
 	margin-top: 13px; 
@@ -945,7 +945,12 @@ input.w_password {width:135px;}
 		}
 	}
 }
-
+/* UI - 공공누리 */
+div[class^=comp-public-area] {
+	margin-bottom:18px;padding:20px 28px;background:#f5f8f8;border:1px solid #dfdfdf;
+	.img-area {display:inline-block;margin:0 30px 0 0;text-align:left;}
+	p {display:inline-block;margin-top:17px;font-size:20px;vertical-align:top;color:#39290c;}
+}
 
 
 
@@ -1679,6 +1684,15 @@ input.w_password {width:100%;}
 			button {width: 9.6rem; height: 2.5rem; font-size: 1rem;}
 		}
 	}
+}
+/* UI - 공공누리 */
+div[class^=comp-public-area] {
+	margin-bottom:.9rem;padding:1rem 1.4rem; height: 5rem; display: table; width: 100%;
+	.img-area {
+		display: table-cell; margin:0; vertical-align: middle; width: 6rem;
+		img {width: 100%;}
+	}
+	p {display:table-cell; margin:0; padding-left:1.5rem; font-size:1.2rem; vertical-align: middle;}
 }
 
 

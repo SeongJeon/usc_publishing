@@ -234,7 +234,8 @@ MAIN
 .village .service-inner .service-list .service09 a:hover {background:url(../images/village/main/ico_service09_on.png) no-repeat center top;}
 .village .service-inner .service-list .service10 a:hover {background:url(../images/village/main/ico_service10_on.png) no-repeat center top;}
 
-
+/* 공통 */
+.chinese {font-family:'Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
 
 
 
@@ -255,7 +256,6 @@ SUB PAGE
 .staff .comp-iconbox_iconnone .comp-input_h42 {width:298px;margin-left:2px;}
 .staff .comp-iconbox_iconnone .comm-btn_type3_deeporange {margin-left:2px;}
 
-.safe .comp-tab {margin-bottom:25px;}
 .safe .heading-h3 {margin-bottom:15px;}
 .safe .quote-wrap {position:relative;margin-bottom:32px;padding:45px 0;text-align:center;font-size:29px;line-height:40px;color:#39290c;}
 .safe .quote-wrap .txt {margin-bottom:15px;}
@@ -273,7 +273,6 @@ SUB PAGE
 .safe .site-wrap .comp-lst_hyphen li {color:#1c1c1c;}
 .safe .site-wrap .comp-lst_hyphen.type01 {margin-top:27px;vertical-align:top;}
 
-.person .comp-tab {margin-bottom:50px;}
 .person .heading-h3 {margin-bottom:15px;}
 .person .comp-lst_dotted {margin-bottom:38px;}
 .person .route-area {margin-left:20px;}
@@ -284,20 +283,16 @@ SUB PAGE
 .person .comp-txt_box .tit {margin-bottom:5px;color:#191919;font-size:18px;font-family:'NanumSquareB';}
 .person .comp-txt_box .txt {color:#4b4b4b;font-size:15px;}
 
-.location .comp-tab {margin-bottom:50px;}
 .location .heading-h3 {margin-bottom:18px;}
 .location .img-area {margin-bottom:55px;text-align:center;}
 .location .img-area + .comp-lst_dotted {margin-bottom:50px;}
 .location .img-area + .comp-lst_dotted li {margin-top:10px;}
 .location .comp-lst_dotted li:first-child {margin-top:0 !important;}
-.location .chinese {font-family:'Malgun Gothic';font-weight:bold;}
+.location .chinese {font-weight:bold;}
 .location .comp-tbl_datatype {margin-bottom:30px;}
 .location .comp-tbl_datatype .bold {color:#1c1c1c;}
 .location .comp-tbl_datatype + .comp-lst_dotted li {margin-top:20px;}
 .location .comp-tbl_datatype .al-l {padding-left:28px;}
-.location .public-area {margin-bottom:18px;padding:20px 28px;background:#f5f8f8;border:1px solid #dfdfdf;}
-.location .public-area .img-area {display:inline-block;margin:0 30px 0 0;text-align:left;}
-.location .public-area p {display:inline-block;margin-top:17px;font-size:20px;vertical-align:top;color:#39290c;}
 
 .song .heading-h3 {margin-bottom:28px;}
 .song .heading-h4 {margin-bottom:12px;}
@@ -328,6 +323,8 @@ SUB PAGE
 .bill .comp-iconbox_iconnone .comm-btn_type3_deeporange {margin-left:2px;}
 .bill .comp-iconbox_iconnone .comp-lst_important {margin-top:10px;color:#ee1c25;}
 .bill .img-area {padding:40px 0;border:1px solid #ddd;background:#f7f7f7;text-align:center;}
+
+.tax *[class^=comp-upport] {margin-top:0;}
 
 
 
@@ -538,9 +535,6 @@ MEDIA QUERY
 .location .comp-tbl_datatype {margin-bottom:1.5rem;}
 .location .comp-tbl_datatype + .comp-lst_dotted li {margin-top:1rem;}
 .location .comp-tbl_datatype .al-l {padding:0.5rem;text-align:center !important;}
-.location .public-area {margin-bottom:.9rem;padding:1rem 1.4rem;}
-.location .public-area .img-area {display:block;margin:0 0 15px 0;}
-.location .public-area p {display:block;margin:0;font-size:1.2rem;}
 
 .song .song-wrap {margin-left:1.5rem;padding:.7rem;}
 .song .heading-h3 {margin-bottom:1.4rem;}

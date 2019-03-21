@@ -582,18 +582,18 @@ MEDIA QUERY
 .bill .comp-iconbox_iconnone .comp-lst_important {margin-top:.5rem;text-align:left;}
 .bill .img-area {padding:2rem;}
 
-.tax .intro-wrap {height:auto;margin-bottom:2.3rem;}
+.tax .intro-wrap {height:auto;margin-bottom:2.3rem;padding:1rem;}
 .tax .intro-wrap:after {width:22.6rem;background-size:80%;}
-.tax .intro-wrap .tit-img {display:block;width:15rem;margin:1rem;padding:1rem;box-sizing:border-box;}
+.tax .intro-wrap .tit-img {width:10rem;margin:1rem;padding:1rem;box-sizing:border-box;}
 .tax .intro-wrap .txt-area {display:block;padding:0 1rem 1rem;}
-.tax .intro-wrap .sub-tit {margin-bottom:.8rem;font-size:2.4rem;}
+.tax .intro-wrap .sub-tit {margin:0 5rem .8rem 0;font-size:2.2rem;}
 .tax .intro-wrap .sub-txt {margin-bottom:1.3rem;padding:.6rem 1.1rem .5rem;font-size:1.3rem;}
 .tax .intro-wrap .txt {margin-bottom:.8rem;font-size:1.4rem;line-height:2rem;}
 .tax .btn-webtoon {width:13.5rem;height:3rem;margin-bottom:1rem;padding:0 .7rem;font-size:1.2rem;line-height:2.8rem;}
 .tax .btn-webtoon span {padding-right:1.5rem;background-size:1.1rem;}
 .tax .img-area span[class*="logo-"] {width:10rem;}
 .tax .logo-tax {padding-right:1.1rem;}
-.tax .logo-gove {width:7rem !important;top:1rem;right:1rem;}
+.tax .logo-gove {width:5rem !important;top:1rem;right:1rem;}
 .tax *[class^=comp-upport] ol > li dl {min-height:6rem;padding:0 0 0 11rem;background-size:10rem !important;background-position:left top !important;}
 .tax *[class^=comp-upport] ol > li dl .tit {margin-bottom:.6rem;}
 }

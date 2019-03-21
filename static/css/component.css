@@ -274,6 +274,16 @@ br.t, br.m { display: none; }
 
 .al-r { text-align: right !important; }
 
+.mt20 { margin-top: 20px; }
+
+.mt30 { margin-top: 30px; }
+
+.mt40 { margin-top: 40px; }
+
+.mt50 { margin-top: 50px; }
+
+.mt60 { margin-top: 60px; }
+
 /* ICON */
 *[class^=icon_] { background: url("../../static/images/common/sp_icon.png") no-repeat 0 0; }
 *[class^=icon_][class$=_facebook] { background-position: 0 0; }
@@ -373,8 +383,7 @@ h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 20px; }
 *[class^=comp-txt] + *[class^=heading-] { margin-top: 35px; }
 
 /* TABLE */
-.tbl-top-utile { margin-bottom: 12px; }
-.tbl-top-utile:after { display: block; clear: both; content: ""; }
+.tbl-top-utile { overflow: hidden; margin-bottom: 12px; }
 .tbl-top-utile .l-right { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #1c1c1c; font-size: 15px; text-align: right; }
 .tbl-top-utile *[class^=heading] { float: left; }
 .tbl-top-utile *[class^=heading] + .l-right { float: right; position: relative; top: 12px; }
@@ -713,6 +722,11 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   br.m { display: inherit; }
   .view-m { display: inherit; }
   .view-pc { display: none; }
+  .mt20 { margin-top: 1rem; }
+  .mt30 { margin-top: 1.5rem; }
+  .mt40 { margin-top: 2rem; }
+  .mt50 { margin-top: 2.5rem; }
+  .mt60 { margin-top: 3rem; }
   /* TITLE */
   *[class^=heading][class$=-h3] { font-size: 1.5rem; }
   *[class^=heading][class$=-h3]:before { width: 1.5rem; height: 1.5rem; margin-right: 0.6rem; background-size: 100% 100%; }

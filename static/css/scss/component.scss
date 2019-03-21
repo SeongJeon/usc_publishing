@@ -478,6 +478,12 @@ br.m {display:none}
 .al-r {text-align:right !important;}
 
 
+.mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
+.mt40 {margin-top: 40px;}
+.mt50 {margin-top: 50px;}
+.mt60 {margin-top: 60px;}
+
 
 
 /* ICON */
@@ -686,9 +692,10 @@ p[class^=comp-lst] {
 
 /* TABLE */
 .tbl-top-utile {
-	margin-bottom: 12px; 
-	&:after {display:block; clear:both; content:""}
+	overflow:hidden; margin-bottom: 12px; 
+	// &:after {display:block; clear:both; content:""}
 	.l-right {font-family: $font2; color:#1c1c1c; font-size: 15px; text-align: right;}
+
 	*[class^=heading] {float: left;}
 	*[class^=heading] + .l-right {float:right; position: relative; top:12px;}
 }
@@ -1335,6 +1342,12 @@ br.m {display:inherit}
 
 .view-m {display: inherit;}
 .view-pc {display: none;}
+
+.mt20 {margin-top: 1rem;}
+.mt30 {margin-top: 1.5rem;}
+.mt40 {margin-top: 2rem;}
+.mt50 {margin-top: 2.5rem;}
+.mt60 {margin-top: 3rem;}
 
 
 

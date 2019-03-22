@@ -30,6 +30,11 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+
+
+
+
+/*------------------usc_part01_01--------------------------*/
 .usc_part01_01 .btn-box {position: absolute; top:72px; right: 39px;}
 .usc_part01_01 .btn-box a {display: block; position: relative;}
 .usc_part01_01 .btn-box a:first-child {margin:0 0 4px 0;}
@@ -43,22 +48,91 @@ SUB PAGE
 
 
 
-.usc_part02_01 .comp-lst_dotted {margin-top:6px; margin-bottom:30px;}
-/*.usc_part02_01 *[class^=heading][class$=-h4] {margin-top:30px;}*/
+
+
+
+/*------------------usc_part02_01--------------------------*/
+.usc_part02_01 .heading-h3 {margin-top:35px;}
+.usc_part02_01 .heading-h4 {margin-top:25px;}
+.usc_part02_01 .comp-lst_dotted {margin-top:7px;}
+.usc_part02_01 .comp-txt_box {margin-top:7px;}
 
 
 
 
 
-.usc_part06_02
+
+/*------------------usc_part03_01--------------------------*/
+.usc_part03_01 .img_internal {text-align: center;}
+.usc_part03_01 .heading-h4 {margin: 30px 0 0 0;}
+.usc_part03_01 .comp-lst_dotted {margin:10px 0 0 20px;}
+.usc_part03_01 .comp-btn-zone {display: inline-block; margin:10px 0 0 20px;}
+.usc_part03_01 .comp-txt_box {margin-top: 7px;}
 
 
 
 
 
-.usc_part06_03 .comp-lst_dotted {margin-top:6px;}
+
+
+
+
+/*------------------usc_part03_02--------------------------*/
+.usc_part03_02 .heading-h4 {margin:30px 0 10px 0;}
+.usc_part03_02 .comp-btn-zone {margin-top:20px;}
+.usc_part03_02 .img_uscsong {border:1px solid #e7e9ea; padding:70px 0 50px 0; text-align: center;}
+
+.usc_part03_02 .uscsong-btn .btn-song span {padding-left:33px;background:url(../images/usc/subpage/icon_song_off.png) no-repeat left top;}
+.usc_part03_02 .uscsong-btn .btn-song:hover {background:#fe970e;color:#fff;}
+.usc_part03_02 .uscsong-btn .btn-song:hover span {background:url(../images/usc/subpage/icon_song_on.png) no-repeat left top;}
+
+
+
+
+
+
+
+
+/*------------------usc_part03_03--------------------------*/
+.usc_part03_03 .heading-h4 {margin-top:10px;}
+.usc_part03_03 .comp-lst_dotted {margin-top:7px;}
+
+
+
+
+
+
+
+
+/*------------------usc_part06_02--------------------------*/
+.usc_part06_02 .contents-zone ul li { margin:10px 0;}
+.usc_part06_02 .btn-box { width: 421px; height:80px; padding:15px; margin:15px 0 30px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box;}
+.usc_part06_02 .btn-box button {width:202px; padding:0 6px; font-size: 15px; letter-spacing: -1px; float: right; }
+
+
+.usc_part06_02 .viewer1:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer1.gif") no-repeat center center;}
+.usc_part06_02 .viewer2:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer2.png") no-repeat center center;}
+.usc_part06_02 .viewer3:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer3.png") no-repeat center center;}
+.usc_part06_02 .viewer4:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer4.png") no-repeat center center;}
+.usc_part06_02 .viewer5:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer5.png") no-repeat center center;}
+.usc_part06_02 .viewer6:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer6.gif") no-repeat center center;}
+.usc_part06_02 .viewer7:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer7.png") no-repeat center center;}
+.usc_part06_02 .viewer8:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer8.png") no-repeat center center;}
+
+
+
+
+
+
+
+
+/*------------------usc_part06_03 --------------------------*/
+.usc_part06_03 .comp-lst_dotted {margin-top:7px;}
 .usc_part06_03 .heading-h4 {margin-top:20px;}
 .usc_part06_03 .comp-lst_hyphen {margin-top:10px; margin-left:70px;}
+
+
+
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */

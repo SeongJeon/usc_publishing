@@ -237,6 +237,21 @@ MAIN
 /* 공통 */
 .chinese {font-family:'Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
 
+.comp-step-area .step-tit {margin-bottom:10px;font-size:17px;font-family:'NanumSquareB';color:#1c1c1c;text-align:center;}
+.comp-step-area ol {position:relative;margin-bottom:15px;}
+.comp-step-area ol:after {display:block;clear:both;content:'';}
+.comp-step-area ol:before {position:absolute;top:189px;right:23%;font-size:30px;font-family:'NanumSquareEB';color:#f27405;content:'장애등급 심사제도';z-index:10;}
+.comp-step-area ol li {position:relative;float:left;width:16.5%;border:1px solid #dfdfdf;border-left:0;box-sizing:border-box;}
+.comp-step-area ol li:first-child {border-left:1px solid #dfdfdf;}
+.comp-step-area ol li:before {position:absolute;top:86px;left:-7px;display:inline-block;width:19px;height:29px;background:url(../images/usc/subpage/bg_obstacle_arrow.png) no-repeat left top;z-index:10;content:'';}
+.comp-step-area ol li:first-child:before {display:none;}
+.comp-step-area ol li[class*="border"]:after {position:absolute;top:0;left:-1px;width:99%;height:98%;border:3px solid rgba(231, 31, 25, 0.4);content:'';}
+.comp-step-area ol li.border-left:after {border-right:0;}
+.comp-step-area ol li.border-right:after {border-left:0;}
+.comp-step-area ol .tit {width:100%;padding:20px 0;background:#f5f8f8;border-bottom:1px solid #dfdfdf;text-align:center;font-size:18px;font-family:'NanumSquareB';color:#1c1c1c;box-sizing:border-box;}
+.comp-step-area ol .cont {position:relative;height:175px;padding:0 18px;text-align:center;box-sizing:border-box;}
+.comp-step-area ol .txt {position:absolute;top:30px;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+.comp-step-area ol .belong {position:absolute;top:70px;width:80%;padding:10px 0 8px;background:#785719;border-radius:30px;font-family:'NanumSquareB';color:#fff;font-size:18px;}
 
 
 
@@ -347,11 +362,28 @@ SUB PAGE
 .tax *[class^=comp-upport] ol > li.upport04 dl {background:url(../images/usc/subpage/bg_tax_step04.png) no-repeat 20px center;}
 .tax *[class^=comp-lst][class*=_hyphen] > li {color:#1c1c1c;}
 
-
-
-
-
-
+.obstacle .heading-h3 {margin-bottom:14px;}
+.obstacle *[class^=comp-lst] > li,
+.obstacle .comp-lst_dotted {font-family:"NanumSquareR" !important;}
+.obstacle .heading-h3 + .comp-lst_dotted {margin:0 0 30px 22px;}
+.obstacle .heading-h3 + .comp-lst_dotted li + li {margin-top:15px;}
+.obstacle .heading-h4 {margin:0 0 16px 22px;}
+.obstacle .heading-h4 + .comp-lst_dotted {margin:0 0 30px 42px;}
+.obstacle .cont .comp-lst_hyphen li, .obstacle .cont .comp-lst_important {font-size:14px !important;
+}
+.obstacle .comp-lst_dotted .cont {margin-left:-16px;}
+.obstacle .cont + .comp-lst_important {margin-left:16px;}
+.obstacle .cont + .comp-lst_important li {font-size:14px;}
+.obstacle .comp-step-area + .comp-lst_important {margin-bottom:40px;}
+.obstacle .comp-lst_important + .heading-h4 {margin:0 0 16px 0;}
+.obstacle .issue-wrap {margin:0 0 50px 20px;}
+.obstacle .issue-wrap .comp-tbl_datatype {margin:10px 0 0 0;}
+.obstacle .issue-wrap .comp-tbl_datatype tbody td:first-child {color:#333;}
+.obstacle .issue-wrap .comp-tbl_datatype tbody td li,
+.obstacle .issue-wrap .comp-tbl_datatype tbody p {color:#7f7f7f;font-family:'NanumSquareR';}
+.obstacle .issue-wrap .comp-tbl_datatype + .comp-lst_dotted {margin-top:40px;}
+.obstacle .issue-wrap .comp-tbl_datatype + .comp-lst_important {margin-top:20px;}
+.obstacle .comp-txt_box {margin-bottom:30px;}
 
 
 
@@ -510,6 +542,17 @@ MEDIA QUERY
 /* ------------------------------------------------------
 - SUB PAGE
 ------------------------------------------------------ */
+/* 공통 */
+.comp-step-area .step-tit {margin-bottom:.5rem;font-size:1.3rem;}
+.comp-step-area ol {margin-bottom:.8rem;}
+.comp-step-area ol:before {top:11.5rem;right:auto;left:-webkit-calc(16.5% * 3.5);left:-moz-calc(16.5% * 3.5);left:-o-calc(16.5% * 3.5);left:calc(16.5% * 3.5);font-size:1.3rem;}
+.comp-step-area ol li:before {top:6rem;left:-.4rem;width:1rem;height:1.5rem;background-size:100%;}
+.comp-step-area ol .tit {width:100%;height:4.5rem;padding:1rem 0;font-size:1.2rem;}
+.comp-step-area ol li:nth-child(odd) .tit {padding-top:1.5rem;}
+.comp-step-area ol .cont {height:8.8rem;padding:0 .6rem;}
+.comp-step-area ol .txt {top:2rem;width:100%;}
+.comp-step-area ol .belong {top:4rem;width:-webkit-calc(100% - 1rem);width:-moz-calc(100% - 1rem);width:-o-calc(100% - 1rem);width:calc(100% - 1rem);padding:.5rem 0 .4rem;font-size:.9rem;}
+
 .status .img-area {margin-bottom:3.5rem;}
 .status .comp-tbl_datatype + .tbl-top-utile {margin-top:2.5rem;}
 
@@ -596,6 +639,23 @@ MEDIA QUERY
 .tax .logo-gove {width:5rem !important;top:1rem;right:1rem;}
 .tax *[class^=comp-upport] ol > li dl {min-height:6rem;padding:0 0 0 11rem;background-size:10rem !important;background-position:left top !important;}
 .tax *[class^=comp-upport] ol > li dl .tit {margin-bottom:.6rem;}
+
+.obstacle .heading-h3 {margin-bottom:.7rem;}
+.obstacle .heading-h3 + .comp-lst_dotted {margin:0 0 1.5rem 1rem;}
+.obstacle .heading-h3 + .comp-lst_dotted li + li {margin-top:.8rem;}
+.obstacle .heading-h4 {margin:0 0 .8rem 1rem;}
+.obstacle .heading-h4 + .comp-lst_dotted {margin:0 0 1.5rem 1rem;}
+.obstacle .cont .comp-lst_hyphen li, .obstacle .cont .comp-lst_important {font-size:1.1rem !important;}
+.obstacle .comp-lst_dotted .cont {margin-left:-1rem;}
+.obstacle .cont + .comp-lst_important {margin-left:0;}
+.obstacle .cont + .comp-lst_important li {font-size:1.1rem;}
+.obstacle .comp-step-area + .comp-lst_important {margin-bottom:2rem;}
+.obstacle .comp-lst_important + .heading-h4 {margin:0 0 .8rem 0;}
+.obstacle .issue-wrap {margin:0 0 2.5rem 1rem;}
+.obstacle .issue-wrap .comp-tbl_datatype {margin:.5rem 0 0 0;}
+.obstacle .issue-wrap .comp-tbl_datatype + .comp-lst_dotted {margin-top:2rem;}
+.obstacle .issue-wrap .comp-tbl_datatype + .comp-lst_important {margin-top:1rem;}
+.obstacle .comp-txt_box {margin-bottom:1.5rem;}
 }
 
 
@@ -603,10 +663,13 @@ MEDIA QUERY
 	.village .phone-inner .number-area ul {margin-right:1rem;padding-right:1.7rem;}
 }
 
-
 @media (max-width:420px) {
 	.village .phone-inner .number-area li {font-size: 1.1rem;}
 }
+
+/* @media (max-width:600px) {
+	.comp-step-area ol:before {left:-webkit-calc((16.5% * 3.2) - 1rem);left:-moz-calc((16.5% * 3.2) - 1rem);left:-o-calc((16.5% * 3.2) - 1rem);left:calc((16.5% * 3.2)) - 1rem;}
+} */
 
 
 @media (max-width:321px){

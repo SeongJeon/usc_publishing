@@ -321,7 +321,66 @@ SUB PAGE
 .direction *[class^=heading][class$=-h4] {margin-top:20px; margin-bottom:9px;}
 .direction *[class^=comp-lst][class*=_dotted] {margin-bottom:25px;}
 
+/* 통합신공항 */
+.airport *[class^=heading][class$=-h3] {margin-top:30px;}
+.airport .comp-lst_dotted {margin-top:6px; margin-bottom:30px;}
+.airport .exp-business {position:relative; margin-top:34px;}
+.airport .exp-business .ratio {display:table; width:100%; padding-top:25px;}
+.airport .exp-business .ratio > li {display:table-cell; font-size:16px; color:#fff;}
+.airport .exp-business .ratio > li .bold {display:block; }
+.airport .exp-business .ratio > li[class^=item-] {height:65px; padding:0 10px; line-height:20px; vertical-align:middle; box-sizing:border-box;}
+.airport .exp-business .ratio > li.item-1 {width:59%; background:#206cc1;}
+.airport .exp-business .ratio > li.item-1 .bold{display:inline-block;}
+.airport .exp-business .ratio > li.item-2 {width:14%; background:#f05757;}
+.airport .exp-business .ratio > li.item-3 {width:15%; background:#1c8f53;}
+.airport .exp-business .ratio > li.item-4 {width:12%; background:#f8b435;}
+.airport .exp-business .total {}
+.airport .exp-business .total:before {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:20px; border:1px solid #a0a0a0; border-bottom:none; box-sizing:border-box;}
+.airport .exp-business .total .inner{position:absolute; left:50%; top:-10px; display:inline-block; padding:0 14px; margin-left:-123px; background:#fff; font-size:18px; color:#1c1c1c; box-sizing:border-box;}
+.airport .exp-business .total .bold {font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:24px; color:#ff4000;}
 
+.airport .procedure {overflow:hidden; margin-top:15px;}
+.airport .procedure ol {float:left; width:745px; margin:-10px 0 0 -10px;}
+.airport .procedure ol > li {float:left; width:175px; height:163px; margin:10px 0 0 10px; padding:15px; background:#f8f8f8; box-sizing:border-box;}
+.airport .procedure ol > li .num {display:block; width:30px; height:30px; line-height:30px; background:#f27405; border-radius:100%; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:16px; color:#fff; text-align:center; }
+.airport .procedure ol > li .date {display:block; padding:10px 0; font-size:18px; color:#2e2e2e;}
+.airport .procedure ol > li .txt {display:block; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; line-height:24px; color:#2e2e2e;}
+.airport .procedure .goal {float:right; width:275px; padding:230px 0 0; background:url(../images/usc/subpage/bg_procedure.png) no-repeat center 58px; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:26px; color:#ff4000; text-align:center;}
+
+.airport .comp-txt_box_center {padding:20px; background:#f5f8f8; border:1px solid #dfdfdf; font-size:20px; color:#39290c; text-align:center;}
+.airport .img-area {margin:10px 0 30px; font-size:0;}
+.airport .list-situation {margin-top:20px; padding:50px 0 30px; background:#fefefe; border:1px solid #dcdcdc; text-align:center;}
+.airport .list-situation ul {display:inline-block;}
+.airport .list-situation ul > li {position:relative; float:left; margin:0 0 0 120px; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:25px; color:#2e2e2e;}
+.airport .list-situation ul > li .txt {position:absolute; left:0; right:0; top:-5px;}
+.airport .list-situation ul > li:first-child {margin-left:0;}
+.airport .list-situation ul > li:first-child:before,
+.airport .list-situation ul > li:first-child:after {display:none;}
+.airport .list-situation ul > li:before {position:absolute; left:-90px; top:50%; display:block; content:""; width:46px; height:4px; margin-top:-2px; background:#bababa;}
+.airport .list-situation ul > li:after {position:absolute; left:-70px; top:50%; display:block; content:""; width:4px; height:46px; margin-top:-23px; background:#bababa;}
+
+/* 통합신공항 - 소음피해 해소방안 */
+.damage *[class^=heading][class$=-h3] {margin-bottom:10px;}
+.damage .comp-txt_box_center,
+.effect .comp-txt_box_center {padding:20px; background:#f5f8f8; border:1px solid #dfdfdf; font-size:20px; color:#39290c; text-align:center;}
+.damage *[class^=img-area] {text-align:center;}
+.damage .img-area-01 {margin:90px 0;}
+.damage .img-area-02 {margin:45px 0 105px;}
+.damage .img-area-03 {margin:55px 0 0;}
+.damage .img-area-03 img:first-child {margin-right:30px;}
+
+/* 통합신공항 - 기대효과 */
+.effect *[class^=heading][class$=-h3] {margin-top:30px; margin-bottom:10px;}
+.effect .list-ripple {overflow:hidden; margin:10px 0 30px -14px;}
+.effect .list-ripple > li {float:left; width:33.33%; color:#2e2e2e;}
+.effect .list-ripple > li .inner {margin-left:14px; padding:40px 0 40px; background:#f8f8f8; border:1px solid #d8d7d7;}
+.effect .list-ripple > li * {display:block; text-align:center;}
+.effect .list-ripple > li .txt {font-size:24px;}
+.effect .list-ripple > li .before {position:relative; padding-bottom:45px; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:25px; }
+.effect .list-ripple > li .before:before {position:absolute; left:50%; bottom:18px; display:block; content:""; width:12px; height:17px; margin-left:-6px; background:#585858;}
+.effect .list-ripple > li .before:after {position:absolute; left:50%; bottom:-14px; display:block; content:""; width:0; height:0; margin-left:-12px; border-style:solid; border-width:16px 12px; border-color:#585858 transparent transparent transparent;}
+.effect .list-ripple > li .after {margin-top:7px; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:28px; font-style:italic; color:#ff4000;}
+.effect .img-area {margin-top:10px;}
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
@@ -412,6 +471,55 @@ MEDIA QUERY
 .direction .list-img > li[class^=icon-] .cont {background-position:center 3rem;}
 .direction *[class^=heading][class$=-h4] {margin-top:2rem; margin-bottom:0.5rem;}
 .direction *[class^=comp-lst][class*=_dotted] {margin-bottom:2.5rem;}
+
+/* 통합신공항 */
+.airport .exp-business {margin-top:2rem;}
+.airport .exp-business .ratio > li[class^=item-] {height:2rem;}
+.airport .exp-business .view-m > li {position:relative; margin-top:1rem; padding-left:1.5rem; font-size:1.2rem; line-height:1.4rem;}
+.airport .exp-business .view-m > li:before {position:absolute; left:0; top:0.1rem; display:block; content:""; width:1rem; height:1rem;}
+.airport .exp-business .view-m > li.item-1:before {background:#206cc1;}
+.airport .exp-business .view-m > li.item-2:before {background:#f05757;}
+.airport .exp-business .view-m > li.item-3:before {background:#1c8f53;}
+.airport .exp-business .view-m > li.item-4:before {background:#f8b435;}
+.airport .exp-business .total .inner {font-size:12px; margin-left:-82px;}
+.airport .exp-business .total .inner .bold {font-size:15px;}
+
+.airport .procedure {overflow:hidden; margin-top:15px;}
+.airport .procedure ol {float:none; width:auto;}
+.airport .procedure ol > li {float:none; width:auto; height:auto; padding:1rem;}
+.airport .procedure ol > li .num {display:inline-block; width:2rem; height:2rem; line-height:2rem; font-size:1rem;}
+.airport .procedure ol > li .date {display:inline-block; padding:0 1rem;font-size:1.2rem;}
+.airport .procedure ol > li .txt {display:inline-block; font-size:1.3rem; line-height:1;}
+.airport .procedure .goal {float:none; width:auto; font-size:1.3rem;}
+
+.airport .comp-txt_box_center {padding:1rem;}
+.airport .img-area {margin:1rem 0 1.5rem;}
+.airport .list-situation {margin-top:1.5rem; padding:3rem 0 2rem;}
+.airport .list-situation ul > li {margin-left:2rem;}
+.airport .list-situation ul > li:before {left:-1.65rem; width:1.5rem; height:2px;}
+.airport .list-situation ul > li:after {left:-1rem; width:2px; height:1.5rem; margin-top:-0.75rem;}
+.airport .list-situation ul > li img {width:8rem;}
+.airport .list-situation ul > li .txt {font-size:1.3rem;}
+
+/* 통합신공항 - 소음피해 해소방안 */
+.damage *[class^=heading][class$=-h3] {margin-bottom:0.5rem;}
+.damage .comp-txt_box_center,
+.effect .comp-txt_box_center {padding:1rem;}
+.damage *[class^=img-area] {text-align:center;}
+.damage .img-area-01 {margin:4rem 0;}
+.damage .img-area-02 {margin:3rem 0 4rem;}
+.damage .img-area-03 {margin:2rem 0 0;}
+.damage .img-area-03 img:first-child {margin:0 0 1.5rem 0;}
+
+/* 통합신공항 - 기대효과 */
+.effect *[class^=heading][class$=-h3] {margin-top:2rem; margin-bottom:0.5rem;}
+.effect .list-ripple {margin:1rem 0 2rem -0.5rem;}
+.effect .list-ripple > li .inner {margin-left:0.5rem; padding:2rem 0;}
+.effect .list-ripple > li .txt {font-size:1.2rem;}
+.effect .list-ripple > li .before {padding-bottom:2rem; font-size:1.2rem;}
+.effect .list-ripple > li .before:before {width:0.8rem; height: 1rem; margin-left: -0.4rem; bottom:0.5rem;}
+.effect .list-ripple > li .before:after {bottom:-1rem; margin-left:-0.6rem; border-width:0.8rem 0.6rem;}
+.effect .list-ripple > li .after {font-size:1rem;}
 }
 
 

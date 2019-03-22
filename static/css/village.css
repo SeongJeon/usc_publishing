@@ -237,10 +237,10 @@ MAIN
 /* 공통 */
 .chinese {font-family:'Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
 
+.comp-step-area {position:relative;}
 .comp-step-area .step-tit {margin-bottom:10px;font-size:17px;font-family:'NanumSquareB';color:#1c1c1c;text-align:center;}
 .comp-step-area ol {position:relative;margin-bottom:15px;}
 .comp-step-area ol:after {display:block;clear:both;content:'';}
-.comp-step-area ol:before {position:absolute;top:189px;right:23%;font-size:30px;font-family:'NanumSquareEB';color:#f27405;content:'장애등급 심사제도';z-index:10;}
 .comp-step-area ol li {position:relative;float:left;width:16.5%;border:1px solid #dfdfdf;border-left:0;box-sizing:border-box;}
 .comp-step-area ol li:first-child {border-left:1px solid #dfdfdf;}
 .comp-step-area ol li:before {position:absolute;top:86px;left:-7px;display:inline-block;width:19px;height:29px;background:url(../images/usc/subpage/bg_obstacle_arrow.png) no-repeat left top;z-index:10;content:'';}
@@ -252,6 +252,7 @@ MAIN
 .comp-step-area ol .cont {position:relative;height:175px;padding:0 18px;text-align:center;box-sizing:border-box;}
 .comp-step-area ol .txt {position:absolute;top:30px;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
 .comp-step-area ol .belong {position:absolute;top:70px;width:80%;padding:10px 0 8px;background:#785719;border-radius:30px;font-family:'NanumSquareB';color:#fff;font-size:18px;}
+.comp-step-area .emphasis {position:absolute;top:218px;right:23%;font-size:30px;font-family:'NanumSquareEB';color:#f27405;}
 
 
 
@@ -545,13 +546,13 @@ MEDIA QUERY
 /* 공통 */
 .comp-step-area .step-tit {margin-bottom:.5rem;font-size:1.3rem;}
 .comp-step-area ol {margin-bottom:.8rem;}
-.comp-step-area ol:before {top:11.5rem;right:auto;left:-webkit-calc(16.5% * 3.5);left:-moz-calc(16.5% * 3.5);left:-o-calc(16.5% * 3.5);left:calc(16.5% * 3.5);font-size:1.3rem;}
 .comp-step-area ol li:before {top:6rem;left:-.4rem;width:1rem;height:1.5rem;background-size:100%;}
 .comp-step-area ol .tit {width:100%;height:4.5rem;padding:1rem 0;font-size:1.2rem;}
 .comp-step-area ol li:nth-child(odd) .tit {padding-top:1.5rem;}
 .comp-step-area ol .cont {height:8.8rem;padding:0 .6rem;}
 .comp-step-area ol .txt {top:2rem;width:100%;}
 .comp-step-area ol .belong {top:4rem;width:-webkit-calc(100% - 1rem);width:-moz-calc(100% - 1rem);width:-o-calc(100% - 1rem);width:calc(100% - 1rem);padding:.5rem 0 .4rem;font-size:.9rem;}
+.comp-step-area .emphasis {top:13.5rem;right:auto;left:50%;width:33%;text-align:center;font-size:1.2rem;}
 
 .status .img-area {margin-bottom:3.5rem;}
 .status .comp-tbl_datatype + .tbl-top-utile {margin-top:2.5rem;}

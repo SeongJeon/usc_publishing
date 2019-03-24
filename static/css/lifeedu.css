@@ -32,7 +32,6 @@ SUB PAGE
 ------------------------------------------------------ */
 /*------------------usc_part03_02--------------------------*/
 .usc_part03_02 .heading-h4 {margin:40px 0 10px 0;}
-.usc_part03_02 .comp-btn-zone {margin-top:20px;}
 .usc_part03_02 .img_uscsong {border:1px solid #e7e9ea; padding:70px 0 50px 0; text-align: center;}
 
 
@@ -169,8 +168,10 @@ MEDIA QUERY
 .usc_part03_02 .uscsong-btn {position: static; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;}
 .usc_part03_02 .uscsong-btn a {-webkit-flex:1; flex:1;}
 .usc_part03_02 .uscsong-btn a:first-child {margin-right: 0.5rem}
-.usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_whiteorange] span {font-size: 1.1rem; padding-left:2rem; background-size:auto 100%;}
+.usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_whiteorange] span,
 .usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_lightorange] span {font-size: 1.1rem; padding-left: 2rem; background-size:auto 100%;}
+
+.usc_part03_02 .img_uscsong {padding:3rem;}
 
 
 
@@ -221,6 +222,9 @@ MEDIA QUERY
 
 .usc_part03_02 .uscsong-btn .comm-btn_type4_whiteorange,
 .usc_part03_02 .uscsong-btn .comm-btn_type4_lightorange {padding:0 0.5rem;}
+.usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_whiteorange] span,
+.usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_lightorange] span {font-size: 1rem; padding-left: 2rem; background-size:auto 100%;}
+
 
 
 .usc_part04_19 .comp-iconbox_iconnone > div {width:100%;}

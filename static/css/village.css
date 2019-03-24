@@ -520,10 +520,11 @@ MEDIA QUERY
 .adver .heading-h3 {margin:2.8rem 0 .6rem;}
 .adver .img-area {margin-bottom:1rem;}
 .adver .img-area > li {float:none;width:100%;height:27rem;padding:1.5rem 1rem 1.3rem;}
-.adver .img-area > li + li {margin:1rem 0 0 0;}
+.adver .img-area > li:first-child {height:20rem;}
+.adver .img-area > li + li {height:20rem;margin:1rem 0 0 0;}
 .adver .img-area .txt {bottom:1.5rem;font-size:1.2rem;line-height:1.5rem;}
 .adver .img-area.bg li:first-child .txt,
-.adver .img-area.bg li:first-child + li .txt {padding-top:19rem;background-size:50%;}
+.adver .img-area.bg li:first-child + li .txt {padding-top:13rem;background-size:10rem;}
 .adver .img-area .case {padding:.8rem 1rem;}
 .adver .img-area + .comp-lst_dotted,
 .adver .comp-lst_dotted + .comp-lst_important {margin-left:1rem;}

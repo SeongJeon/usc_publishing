@@ -918,17 +918,19 @@ SUB PAGE
 // 민원실이용안내
 .usc .guide-use {
 	.comp-tab {overflow:hidden; margin-bottom:30px; }
-	.tab-contents .floor-plan {margin:15px 0 0; padding:15px 0 40px; background:#efeeed;}
-	.tab-contents .floor-plan .img {text-align:center;}
-	.tab-contents .floor-plan .list {overflow:hidden; padding:30px 35px 0;}
-	.tab-contents .floor-plan .list ul {float:left; width:50%; }
-	.tab-contents .floor-plan .list ul:first-child {margin-left:-20px;}
-	.tab-contents .floor-plan .list ul + ul {margin-left:20px; }
-	.tab-contents .floor-plan .list ul > li {margin:12px 0 0; color:#4b4b4b;}
-	.tab-contents .floor-plan .list ul > li:first-child {margin-top:0;}
-	.tab-contents .floor-plan .list ul > li .num {display:inline-block; width:30px; height:30px; line-height:30px; margin-right:10px; background:#4b4b4b; border-radius:30px; text-align:center; color:#fff;}
-	.tab-contents .floor-plan .list ul > li .tel {display:inline-block; margin-left:2px; padding:2px; background:#f1e300;}
-	.tab-contents .comp-tbl_datatype {margin-top:15px;}
+	.comp-tbl_datatype {margin-top:15px;}
+}
+.floor-plan {
+	margin:15px 0 0; padding:15px 0 40px; background:#efeeed;
+	.img {text-align:center;}
+	.list {overflow:hidden; padding:30px 35px 0;}
+	.list ul {float:left; width:50%; }
+	.list ul:first-child {margin-left:-20px;}
+	.list ul + ul {margin-left:20px; }
+	.list ul > li {margin:12px 0 0; color:#4b4b4b;}
+	.list ul > li:first-child {margin-top:0;}
+	.list ul > li .num {display:inline-block; width:30px; height:30px; line-height:30px; margin-right:10px; background:#4b4b4b; border-radius:30px; text-align:center; color:#fff;}
+	.list ul > li .tel {display:inline-block; margin-left:2px; padding:2px; background:#f1e300;}
 }
 /* 정보공개 ------------------------------------------- */
 // 의성의 오늘
@@ -1758,9 +1760,11 @@ MEDIA QUERY
 // 민원실이용안내 
 .usc .guide-use {
 	.comp-tab {margin-bottom:1.5rem;}
-	.tab-contents .floor-plan {padding:15px 0 2rem;}
-	.tab-contents .floor-plan .list {padding:2rem 3rem 0;}
-	.tab-contents .floor-plan .list ul > li .num {width:2rem; height:2rem; line-height:2rem; border-radius:2rem;}
+}
+.floor-plan {
+	padding:15px 0 2rem;
+	.list {padding:2rem 3rem 0;}
+	.list ul > li .num {width:2rem; height:2rem; line-height:2rem; border-radius:2rem;}
 }
 
 
@@ -2064,11 +2068,11 @@ div[class^=oftoday_] {
 	.flow-chart > li:after {display:none;}
 }
 // 민원실이용안내 
-.usc .guide-use {
-	.tab-contents .floor-plan .list {padding:1.5rem;}
-	.tab-contents .floor-plan .list ul:first-child {margin-left:0;}
-	.tab-contents .floor-plan .list ul + ul {margin:12px 0 0;}
-	.tab-contents .floor-plan .list ul {float:none; width:100%;}
+.floor-plan {
+	.list {padding:1.5rem;}
+	.list ul:first-child {margin-left:0;}
+	.list ul + ul {margin:12px 0 0;}
+	.list ul {float:none; width:100%;}
 }
 /* 의성안내 ------------------------------------------- */
 // 찾아오시는길 

@@ -323,7 +323,13 @@ SUB PAGE
 
 /* 통합신공항 */
 .airport *[class^=heading][class$=-h3] {margin-top:30px;}
-.airport .comp-lst_dotted {margin-top:6px; margin-bottom:30px;}
+.airport .box-con {background:#f5f8f8; border:1px solid #dcdcdc;}
+.airport .box-con p {position:relative; margin:35px 0; padding:40px 20px; font-size:29px; color:#39290c; text-align:center;}
+.airport .box-con p:before {position:absolute; display:block; content:""; left:50%; top:0; width:16px; height:13px; margin-left:-8px; background:url(../images/usc/subpage/bg_safe_quote01.png) no-repeat center top;}
+.airport .box-con p:after {position:absolute; display:block; content:""; left:50%; bottom:0; width:16px; height:13px; margin-left:-8px; background:url(../images/usc/subpage/bg_safe_quote02.png) no-repeat center top;}
+.airport .box-con p .color1 {color:#3b9b60;}
+.airport .box-con p .color2 {color:#fe970e;}
+.airport .comp-lst_dotted {margin-top:10px; margin-bottom:30px;}
 .airport .exp-business {position:relative; margin-top:34px;}
 .airport .exp-business .ratio {display:table; width:100%; padding-top:25px;}
 .airport .exp-business .ratio > li {display:table-cell; font-size:16px; color:#fff;}
@@ -472,6 +478,11 @@ MEDIA QUERY
 
 /* 통합신공항 */
 .airport .exp-business {margin-top:2rem;}
+.airport .comp-lst_dotted {margin-top:0.5rem; margin-bottom:2.5rem;}
+.airport .box-con p {margin:1rem 0; padding:1.5rem 1rem; font-size:1.5rem; line-height:2rem;}
+.airport .box-con p:before {width:0.8rem; height:0.6rem; margin-left:-0.4rem; background-size:100%;}
+.airport .box-con p:after {width:0.8rem; height:0.6rem; margin-left:-0.4rem; background-size:100%;}
+
 .airport .exp-business .ratio > li[class^=item-] {height:2rem;}
 .airport .exp-business .view-m > li {position:relative; margin-top:1rem; padding-left:1.5rem; font-size:1.2rem; line-height:1.4rem;}
 .airport .exp-business .view-m > li:before {position:absolute; left:0; top:0.1rem; display:block; content:""; width:1rem; height:1rem;}

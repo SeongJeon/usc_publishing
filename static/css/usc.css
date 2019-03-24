@@ -643,14 +643,16 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .obstacle .comp-txt_box { margin-bottom: 30px; }
 
 .recycle_howto_lst { overflow: hidden; }
-.recycle_howto_lst > li { float: left; width: 490px; height: 293px; background: #f4f8fb; border: 1px solid #bbb; text-align: center; }
+.recycle_howto_lst > li { float: left; position: relative; width: 490px; height: 295px; background: #f4f8fb; border: 1px solid #bbb; text-align: center; box-sizing: border-box; }
 .recycle_howto_lst > li:nth-child(even) { margin-left: 10px; }
 .recycle_howto_lst > li:nth-child(2) ~ li { margin-top: 10px; }
-.recycle_howto_lst .name { display: block; width: 120px; margin: 12px auto 0; font-size: 15px; color: #fff; line-height: 36px; border-radius: 5px; background: #96526b; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-.recycle_howto_lst .howto { display: block; margin-top: 25px; font-family: 15px; color: #1b1b1b; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 20px; }
+.recycle_howto_lst .name { display: block; position: absolute; left: 50%; bottom: 20px; width: 120px; margin-left: -60px; font-size: 15px; color: #fff; line-height: 36px; border-radius: 5px; background: #96526b; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.recycle_howto_lst .howto { display: table; width: 100%; height: 40px; margin-top: 6px; font-size: 15px; color: #1b1b1b; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 20px; }
+.recycle_howto_lst .howto span { display: table-cell; vertical-align: middle; }
 .recycle_howto_lst .recycle_lst { display: inline-block; margin-top: 38px; }
 .recycle_howto_lst .recycle_lst:after { display: block; clear: both; content: ""; }
-.recycle_howto_lst .recycle_lst li { float: left; margin-left: 15px; }
+.recycle_howto_lst .recycle_lst li { float: left; margin-left: 50px; }
+.recycle_howto_lst .recycle_lst li:first-child:nth-last-of-type(3) ~ li { margin-left: 10px; }
 .recycle_howto_lst .recycle_lst li:first-child { margin-left: 0; }
 
 /* 기타 ------------------------------------------- */
@@ -1070,6 +1072,16 @@ MEDIA QUERY
   .obstacle .issue-wrap .comp-tbl_datatype + .comp-lst_dotted { margin-top: 2rem; }
   .obstacle .issue-wrap .comp-tbl_datatype + .comp-lst_important { margin-top: 1rem; }
   .obstacle .comp-txt_box { margin-bottom: 1.5rem; }
+  .recycle_howto_lst { margin-top: 0.5rem; }
+  .recycle_howto_lst > li { width: 49%; height: 22.5rem; }
+  .recycle_howto_lst > li:nth-child(even) { margin-left: 2%; }
+  .recycle_howto_lst > li:nth-child(2) ~ li { margin-top: 2%; }
+  .recycle_howto_lst .name { bottom: 20px; width: 10rem; margin-left: -5rem; font-size: 1.2rem; line-height: 3.3rem; }
+  .recycle_howto_lst .howto { height: 4rem; padding-left: 5rem; margin-top: 0.3rem; font-size: 1rem; line-height: 1.5rem; text-align: left; word-break: keep-all; }
+  .recycle_howto_lst .recycle_lst { display: block; margin-top: 2rem; padding: 0 1rem; }
+  .recycle_howto_lst .recycle_lst li { float: none; position: relative; margin-left: 0; margin-top: 1rem; width: 100%; height: 4rem; }
+  .recycle_howto_lst .recycle_lst li:first-child:nth-last-of-type(3) ~ li { margin-left: 0; }
+  .recycle_howto_lst .recycle_lst .img { position: absolute; left: 0; top: 0; width: 4rem; }
   /* 기타 ----------------------------------------------- */
   .banner-zone { margin-top: 2rem; }
   .banner-zone ul li { width: 49%; height: 14rem; margin-left: 0; }

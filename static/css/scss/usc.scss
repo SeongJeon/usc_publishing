@@ -1171,16 +1171,20 @@ div[class^=oftoday_] {
 // 폐기물
 .recycle_howto_lst {
 	overflow:hidden;
-	& > li {float:left; width: 490px; height: 293px; background:#f4f8fb; border:1px solid #bbb; text-align: center;}
+	& > li {float:left; position: relative; width: 490px; height: 295px; background:#f4f8fb; border:1px solid #bbb; text-align: center; box-sizing: border-box;}
 	& > li:nth-child(even) {margin-left: 10px;}
 	& > li:nth-child(2) ~ li {margin-top: 10px;}
-	.name {display: block; width: 120px; margin:12px auto 0; font-size: 15px; color:#fff; line-height: 36px; border-radius: 5px; background:#96526b; font-family: $font2;}
-	.howto {display: block; margin-top: 25px; font-family: 15px; color:#1b1b1b; font-family: $font2; line-height: 	20px;}
+	.name {display: block; position:absolute; left:50%; bottom:20px; width: 120px; margin-left:-60px; font-size: 15px; color:#fff; line-height: 36px; border-radius: 5px; background:#96526b; font-family: $font2;}
+	.howto {
+		display: table; width: 100%; height: 40px; margin-top:6px; font-size: 15px; color:#1b1b1b; font-family: $font2; line-height: 20px;
+		span {display: table-cell; vertical-align: middle;}
+	}
 
 	.recycle_lst {
 		display: inline-block; margin-top: 38px;
 		&:after {display:block; clear:both; content:""}
-		li {float: left; margin-left: 15px;}
+		li {float: left; margin-left: 50px;}
+		li:first-child:nth-last-of-type(3) ~ li {margin-left: 10px;}
 		li:first-child {margin-left: 0}
 	}
 }
@@ -1938,6 +1942,22 @@ div[class^=oftoday_] {
 	.issue-wrap .comp-tbl_datatype + .comp-lst_dotted {margin-top:2rem;}
 	.issue-wrap .comp-tbl_datatype + .comp-lst_important {margin-top:1rem;}
 	.comp-txt_box {margin-bottom:1.5rem;}
+}
+// 폐기물
+.recycle_howto_lst {
+	margin-top: 0.5rem;
+	& > li {width:49%; height: 22.5rem}
+	& > li:nth-child(even) {margin-left:2%;}
+	& > li:nth-child(2) ~ li {margin-top: 2%;}
+	.name {bottom:20px; width: 10rem; margin-left:-5rem; font-size:1.2rem; line-height: 3.3rem; }
+	.howto {height:4rem; padding-left: 5rem; margin-top:0.3rem; font-size:1rem; line-height: 1.5rem; text-align: left; word-break: keep-all;}
+
+	.recycle_lst {
+		display: block; margin-top:2rem; padding:0 1rem;
+		li {float: none; position: relative; margin-left:0; margin-top: 1rem; width: 100%; height: 4rem;}
+		li:first-child:nth-last-of-type(3) ~ li {margin-left:0;}
+		.img {position:absolute; left:0; top:0; width: 4rem;}
+	}
 }
 
 

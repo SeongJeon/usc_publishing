@@ -829,7 +829,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .tbl-top-utile .l-right { font-size: 1rem; }
   .tbl-bottom-utile { margin-top: 0.6rem; }
   .tbl-bottom-utile .l-right { font-size: 1rem; }
-  .tbl-zone { margin-left: 1rem; margin-top: 1rem; }
+  .tbl-zone { margin-left: 0; margin-top: 0.5rem; }
   table[class^=comp-tbl][class*=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; }
   table[class^=comp-tbl][class*=_datatype] thead th { height: 3.3rem; font-size: 1.2rem; }
   table[class^=comp-tbl][class*=_datatype] tbody th { font-size: 1.2rem; height: 3.3rem; line-height: 1.6rem; padding: 0.5rem; }

@@ -287,13 +287,25 @@
 										<tr>
 											<th scope="col">행사기간 <strong class="important">*</strong></th>
 											<td>
-												<input type="text" title="제목 입력" class="comp-input">
+												<div class="w_term">
+													<input type="text" title="행사기간 시작일 입력" class="comp-input js-datepicker">
+													<span class="txt">~</span>
+													<input type="text" title="행사기간 끝일 입력" class="comp-input js-datepicker">
+												</div>
 											</td>
 										</tr>
 										<tr>
 											<th scope="col">행사시간 <strong class="important">*</strong></th>
 											<td>
-												<input type="text" title="등록자 입력" class="comp-input w_writer">
+												<div class="w_time">
+													<input type="text" title="행사 시작시간 입력" class="comp-input">
+													<span class="txt">부터</span>
+													<input type="text" title="행사 끝 시간 입력" class="comp-input">
+													<span class="txt">까지</span>
+													<span class="comp-radio">
+														<input type="checkbox" name="" id="allday" checked="checked"><label for="allday">하루종일</label>
+													</span>
+												</div>
 											</td>
 										</tr>
 										<tr>

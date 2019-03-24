@@ -280,6 +280,8 @@ br.t, br.m { display: none; }
 
 .al-r { text-align: right !important; }
 
+.mt0 { margin-top: 0px !important; }
+
 .mt5 { margin-top: 5px !important; }
 
 .mt10 { margin-top: 10px !important; }
@@ -510,6 +512,15 @@ input.w_password { width: 135px; }
 .w_email input:nth-of-type(1) { width: 132px; }
 .w_email input:nth-of-type(2) { width: 200px; }
 .w_email select { width: 170px; margin-left: 6px; }
+
+.w_time > * { float: left; }
+.w_time input[type='text'] { width: 180px; }
+.w_time .txt { margin: 0 10px; }
+.w_time .comp-radio { margin-left: 20px; margin-top: 7px; }
+
+.w_term > * { float: left; }
+.w_term input { width: 180px; }
+.w_term .txt { margin: 0 10px; }
 
 /* UI - PAGING */
 *[class^=comp-paging] { margin-top: 60px; text-align: center; }
@@ -893,7 +904,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   *[class^=comp-check] input:checked ~ label:before { background-size: auto 100%; }
   textarea[class^=comp-textarea] { padding: 1rem; height: 15rem; font-size: 1.2rem; }
   /* INPUT SIZE */
-  input.w_writer { width: 100%; }
+  input.w_term { width: 100%; }
   input.w_password { width: 100%; }
   .w_addr > * + * { margin-left: 0; }
   .w_addr *[class^=comm-btn_type2] { width: 40%; margin-left: 2%; }
@@ -908,6 +919,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .w_email input:nth-of-type(1) { width: 90%; }
   .w_email input:nth-of-type(2) { width: 100%; margin-top: 0.5rem; }
   .w_email select { width: 100%; margin-left: 0; margin-top: 0.5rem; }
+  .w_time input { widows: 180px; }
   /* UI - PAGING */
   *[class^=comp-paging] { margin-top: 4rem; }
   *[class^=comp-paging] > div { padding: 0 6rem; }

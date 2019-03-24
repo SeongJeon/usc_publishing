@@ -481,6 +481,7 @@ br.m {display:none}
 .al-r {text-align:right !important;}
 
 
+.mt0 {margin-top:0px !important;}
 .mt5 {margin-top: 5px !important;}
 .mt10 {margin-top: 10px !important;}
 .mt15 {margin-top: 15px !important;}
@@ -857,6 +858,17 @@ input.w_password {width:135px;}
 	input:nth-of-type(1) {width: 132px;}
 	input:nth-of-type(2) {width: 200px;}
 	select {width: 170px; margin-left: 6px;}
+}
+.w_time {
+	& > * {float: left;}
+	input[type='text'] {width: 180px;}
+	.txt {margin:0 10px;}
+	.comp-radio {margin-left: 20px; margin-top: 7px}
+}
+.w_term {
+	&>* {float: left;}
+	input {width: 180px;}	
+	.txt {margin:0 10px;}
 }
 
 
@@ -1652,7 +1664,7 @@ textarea[class^=comp-textarea] {
 }
 
 /* INPUT SIZE */
-input.w_writer {width:100%;}
+input.w_term {width:100%;}
 input.w_password {width:100%;}
 .w_addr {
 	& > * + * {margin-left: 0}
@@ -1672,6 +1684,9 @@ input.w_password {width:100%;}
 	input:nth-of-type(1) {width:90%;}
 	input:nth-of-type(2) {width:100%; margin-top: 0.5rem}
 	select {width:100%; margin-left:0; margin-top: 0.5rem;}
+}
+.w_time {
+	input {widows: 180px;}
 }
 
 

@@ -480,13 +480,28 @@ br.m {display:none}
 .al-r {text-align:right !important;}
 
 
-.mt5 {margin-top: 5px;}
-.mt10 {margin-top: 10px;}
-.mt20 {margin-top: 20px;}
-.mt30 {margin-top: 30px;}
-.mt40 {margin-top: 40px;}
-.mt50 {margin-top: 50px;}
-.mt60 {margin-top: 60px;}
+.mt5 {margin-top: 5px !important;}
+.mt10 {margin-top: 10px !important;}
+.mt15 {margin-top: 15px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt25 {margin-top: 25px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt35 {margin-top: 35px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt50 {margin-top: 50px !important;}
+.mt60 {margin-top: 60px !important;}
+
+.ml0 {margin-left: 0px !important;}
+.ml10 {margin-left: 10px !important;}
+.ml20 {margin-left: 20px !important;}
+.ml30 {margin-left: 30px !important;}
+.ml40 {margin-left: 40px !important;}
+.ml50 {margin-left: 50px !important;}
+
+.ml-10 {margin-left:-10px !important;}
+.ml-15 {margin-left:-15px !important;}
+.ml-20 {margin-left:-20px !important;}
+.ml-30 {margin-left:-30px !important;}
 
 
 
@@ -592,6 +607,7 @@ br.m {display:none}
 	& + *[class^=comp-tbl_] {margin-top: 15px;}
 	& + .scrollzone {margin-top: 15px;}
 	&.ml0 {margin-left: 0;}
+	&.ml20 {margin-left: 20px;}
 
 }
 
@@ -662,14 +678,12 @@ p[class^=comp-lst] {
 			& > li:before {content: "-"; margin-right: 7px; background:none; width:auto; height: auto; top:0;}
 		}
 	}
-
 	&[class*=_important] {
 		& > li{
 			position: relative; padding-left: 15px; color:#7f7f7f; font-size: 15px; line-height: 24px;
 			&:before {display: inline-block;position: absolute; left:0; top:0;content: "※"; margin-right: 5px;}
 		}
 	}
-	&[class*=_star] {}
 
 
 	// 간격관련
@@ -686,7 +700,7 @@ p[class^=comp-lst] {
 *[class^=comp-txt] {
 	&[class*=_box] {
 		position: relative; min-height: 40px; padding:6px 20px 6px 12px; border:1px solid #f9e2b8; background:#fcf8e3;
-		p {font-size: 16px; line-height: 26px; }
+		* {font-size: 16px; line-height: 26px; }
 	}
 	&[class*=_box_center] {
 		padding: 22px 5px 20px; background: #f5f8f8; border: 1px solid #dfdfdf; color: #39290c; text-align: center; font-family: $font1;
@@ -696,7 +710,11 @@ p[class^=comp-lst] {
 		position: relative; min-height: 40px; padding:20px; border:1px solid #f9e2b8; background:#fcf8e3;
 	}
 
+	// 간격
 	& + *[class^=heading-] {margin-top: 35px;}
+	&.ml20 {margin-left: 20px;}
+	&.ml30 {margin-left: 30px;}
+	&.ml40 {margin-left: 40px;}
 }
 
 
@@ -1360,12 +1378,28 @@ br.m {display:inherit}
 .view-m {display: inherit;}
 .view-pc {display: none;}
 
-.mt10 {margin-top: 0.5rem;}
-.mt20 {margin-top: 1rem;}
-.mt30 {margin-top: 1.5rem;}
-.mt40 {margin-top: 2rem;}
-.mt50 {margin-top: 2.5rem;}
-.mt60 {margin-top: 3rem;}
+.mt5 {margin-top: 5px !important;}
+.mt10 {margin-top: 0.5rem !important;}
+.mt15 {margin-top: 0.7rem !important;}
+.mt20 {margin-top: 1rem !important;}
+.mt25 {margin-top: 1.2rem !important;}
+.mt30 {margin-top: 1.5rem !important;}
+.mt35 {margin-top: 1.7rem !important;}
+.mt40 {margin-top: 2rem !important;}
+.mt50 {margin-top: 2.5rem !important;}
+.mt60 {margin-top: 3rem !important;}
+
+.ml10 {margin-left: 0.5rem !important;}
+.ml20 {margin-left: 1rem !important;}
+.ml30 {margin-left: 1.5rem !important;}
+.ml40 {margin-left: 1.5rem !important;}
+.ml50 {margin-left: 2rem !important;}
+
+.ml-10 {margin-left:-0.5rem !important;}
+.ml-15 {margin-left:-1rem !important;}
+.ml-20 {margin-left:-1.5rem !important;}
+.ml-30 {margin-left:-2rem !important;}
+
 
 
 
@@ -1383,8 +1417,6 @@ br.m {display:inherit}
 	// 간격
 	& + .scrollzone {margin-top: 1rem;}
 	& + *[class^=comp-tbl_] {margin-top: 1rem}
-	&.ml0 {margin-left: 0;}
-
 }
 
 
@@ -1460,7 +1492,7 @@ p[class^=comp-lst] {
 	.l-right {font-size: 1rem;}
 }
 .tbl-bottom-utile {
- margin-top: 0.6rem;
+	margin-top: 0.6rem;
 	.l-right {font-size: 1rem;}
 }
 table[class^=comp-tbl] {
@@ -1504,7 +1536,7 @@ table[class^=comp-tbl] {
 *[class^=comp-txt] {
 	&[class*=_box] {
 		min-height: auto; padding:0.7rem 1rem; word-break: keep-all;
-		p {font-size:1.2rem; line-height:1.6rem; }
+		* {font-size:1.2rem; line-height:1.6rem; }
 	}
 	&[class*=_box_center] {
 		padding: 1rem 1rem;

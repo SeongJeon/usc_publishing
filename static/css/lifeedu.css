@@ -111,6 +111,9 @@ SUB PAGE
 .usc_part04_20 .gm-part3 {background:url(../images/usc/subpage/img_goodmenu3.png) no-repeat 100% 100%;}
 .usc_part04_20 .gm-part4 {background:url(../images/usc/subpage/img_goodmenu4.png) no-repeat 100% 100%;}
 
+.usc_part04_20 .valign {vertical-align: top; text-align: left;}
+.usc_part04_20 .valign ul{text-align: left;}
+.usc_part04_20 .valign ul li{ display: inline-block;}
 
 
 

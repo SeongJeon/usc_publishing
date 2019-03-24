@@ -79,15 +79,36 @@ SUB PAGE
 
 /*------------------usc_part04_20--------------------------*/
 .usc_part04_20 .comp-lst_dotted { margin:7px 0 0 20px;}
-.usc_part04_20 .heading-h4 { margin-left:20px;}
-.usc_part04_20 .gm_box:after{content: '';display: block; clear:both;}
-.usc_part04_20 .gm_box ul{float: left; width:500px; height:223px; background: #f5f8f8; border: 1px solid #dfdfdf; box-sizing: border-box; overflow: hidden;}
 
-/*.usc_part04_20 .gm_box1:after{content:''; display:inline-block; background:url(../images/usc/subpage/img_goodmenu1.png)no-repeat right bottom; background-size: cover;width:650px; height:262px;}
-.usc_part04_20 .gm_box2:after{content:''; display:inline-block; background:url(../images/usc/subpage/img_goodmenu2.png)no-repeat right bottom; background-size: cover;width:500px; height:223px;}
-.usc_part04_20 .gm_box3:after{content:''; display:inline-block; background:url(../images/usc/subpage/img_goodmenu3.png)no-repeat right bottom; background-size: cover;width:500px; height:223px;}
-.usc_part04_20 .gm_box4:after{content:''; display:inline-block; background:url(../images/usc/subpage/img_goodmenu4.png)no-repeat right bottom; background-size: cover;width:500px; height:223px;}
-*/
+.usc_part04_20 .gb-2 .heading-h3,
+.usc_part04_20 .gb-3 .heading-h3,
+.usc_part04_20 .gb-4 .heading-h3 { margin-top:50px;}
+
+.usc_part04_20 .gb-1 .heading-h4,
+.usc_part04_20 .gb-2 .heading-h4,
+.usc_part04_20 .gb-4 .heading-h4{ margin:30px 0 0 20px;}
+.usc_part04_20 .gb-3 .heading-h4 { margin:15px 0 0 20px; }
+.usc_part04_20 .gm-box:after{content: '';display: block; clear:both;}
+.usc_part04_20 .gm-box div{float: left; width:500px; height:223px; padding:40px 0 0 30px; background: #f5f8f8; border: 1px solid #dfdfdf; box-sizing: border-box; overflow: hidden;}
+
+
+.usc_part04_20 .gb-3 table {margin:10px 0 30px 15px;}
+
+
+.usc_part04_20 .gm-box .gm-part2,
+.usc_part04_20 .gm-box .gm-part4 {margin-left:10px;}
+.usc_part04_20 .gm-box .gm-part3,
+.usc_part04_20 .gm-box .gm-part4 {margin-top:10px;}
+
+.usc_part04_20 .gm-box > div {position: relative;}
+.usc_part04_20 .gm-box ul {position: relative; z-index: 1; margin-top:10px;}
+
+
+.usc_part04_20 .gm-part1:after{content:''; position: absolute; top: 70px; right: -80px; display:inline-block; background:url(../images/usc/subpage/img_goodmenu1.png)no-repeat center center; background-size: cover;width:650px; height:262px;}
+.usc_part04_20 .gm-part2:after{content:''; position: absolute; bottom:-20px; right:0; display:inline-block; background:url(../images/usc/subpage/img_goodmenu2.png)no-repeat center center; background-size: cover;width:252px; height:186px;}
+.usc_part04_20 .gm-part3:after{content:''; position: absolute; top:50px; left:0; display:inline-block; background:url(../images/usc/subpage/img_goodmenu3.png)no-repeat center center; background-size: cover;width:550px; height:204px;}
+.usc_part04_20 .gm-part4:after{content:''; position: absolute; top:30px; right:10px; display:inline-block; background:url(../images/usc/subpage/img_goodmenu4.png)no-repeat center center; background-size: cover;width:168px; height:291px;}
+
 
 
 
@@ -122,8 +143,7 @@ SUB PAGE
 .usc_part06_03 .heading-h4 {margin-top:20px;}
 .usc_part06_03 .comp-lst_hyphen { margin-left:70px;}
 
-.usc_part06_03 .img_site li {position: relative; width:946px; height:580px; margin-left:70px; border:2px solid #e7e8e9; box-sizing: border-box;}
-.usc_part06_03 .img_site p {width:921px; height:556px; background-color: #f1f3f4; margin:9px; } 
+.usc_part06_03 .img_site li {position: relative; width:946px; height:580px; padding:9px 10px 9px 9px; margin-left:70px; border:3px solid #e7e8e9; box-sizing: border-box;}
 .usc_part06_03 .img_site a {position: absolute; left:0; bottom:0;}
 
 

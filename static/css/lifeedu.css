@@ -65,8 +65,10 @@ SUB PAGE
 .usc_part04_19 .comp-lst_dotted p,
 .usc_part04_19 .comp-lst_dotted li{ line-height:28px;}
 .usc_part04_19 .comp-lst_important { margin-left:15px;}
+
+.usc_part04_19 .comp-iconbox_iconnone > div {width:49%;}
 .usc_part04_19 .comp-iconbox_iconnone .cardimg { display: inline-block;  vertical-align: middle;}
-.usc_part04_19 .comp-iconbox_iconnone .cont { display: inline-block; margin-left:10px; float:right; vertical-align: middle;}
+.usc_part04_19 .comp-iconbox_iconnone .cont { display: inline-block; margin-left:10px;vertical-align: middle;}
 
 .usc_part04_19 .cont .tit:before {content:''; display: inline-block; background:url("../images/usc/subpage/img_usclogo.png") no-repeat left center; width:69px; height: 32px; background-size: cover; margin-right:10px;vertical-align: middle;}
 
@@ -138,7 +140,7 @@ SUB PAGE
 
 /*------------------usc_part06_03 --------------------------*/
 .usc_part06_03 .img_site li {position: relative; width:946px; height:580px; padding:9px 10px 9px 9px; margin-left:70px; border:3px solid #e7e8e9; box-sizing: border-box;}
-.usc_part06_03 .img_site a {position: absolute; left:9px; bottom:9px;}
+.usc_part06_03 .img_site p {position: absolute; left:9px; bottom:9px;}
 
 
 
@@ -213,7 +215,8 @@ MEDIA QUERY
 
 
 
-.usc_part04_19 .comp-iconbox_iconnone > div {width:100%; }
+.usc_part04_19 .comp-iconbox_iconnone > div {width:100%;}
+.usc_part04_19 .comp-iconbox_iconnone .cardimg {text-align: center;}
 
 .usc_part04_20 .gb-1 .gm-box > div {position: static; margin:1rem auto; height:15rem; width:100%}
 .usc_part04_20 .gb-1 .gm-box div:nth-child(even) {margin-left:0;}

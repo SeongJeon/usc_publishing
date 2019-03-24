@@ -234,6 +234,16 @@ MAIN
 .village .service-inner .service-list .service09 a:hover {background:url(../images/village/main/ico_service09_on.png) no-repeat center top;}
 .village .service-inner .service-list .service10 a:hover {background:url(../images/village/main/ico_service10_on.png) no-repeat center top;}
 
+
+
+
+
+
+
+
+/* ------------------------------------------------------
+SUB PAGE
+------------------------------------------------------ */
 /* 공통 */
 .chinese {font-family:'Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
 
@@ -254,29 +264,44 @@ MAIN
 .comp-step-area ol .belong {position:absolute;top:70px;width:80%;padding:10px 0 8px;background:#785719;border-radius:30px;font-family:'NanumSquareB';color:#fff;font-size:18px;}
 .comp-step-area .emphasis {position:absolute;top:218px;right:23%;font-size:30px;font-family:'NanumSquareEB';color:#f27405;}
 
-
-
-
-
-
-/* ------------------------------------------------------
-SUB PAGE
------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.water .heading-h3 {margin-bottom:10px;}
+.water .heading-h3 + .comp-txt_box {margin-bottom:50px;}
+.water .heading-h3 + .comp-lst_dotted {margin:0 0 45px 22px;font-size:15px;letter-spacing:-0.5px;font-family:'NanumSquareR';}
+.water .volume .comp-txt_box {margin-bottom:10px;}
+.water .volume {margin-bottom:50px;}
+.water .comp-tbl_datatype {margin-bottom:30px;}
+.water .process-area {margin-bottom:44px;text-align:center;}
+.water .process-area .heading-h3 {margin-bottom:20px;text-align:left;}
+.water .process-area ol > li {position:relative;width:450px;margin:0 auto;padding-top:50px;}
+.water .process-area ol > li:before {position:absolute;top:0;left:50%;width:23px;height:19px;margin-left:-12px;background:#757575;content:'';}
+.water .process-area ol > li:after {position:absolute;top:19px;left:50%;margin-left:-24px;border-style:solid;border-width:32px 23.5px 0 23.5px;border-color:#757575 transparent transparent transparent;content:'';}
+.water .process-area ol > li:first-child {padding-top:0;}
+.water .process-area ol > li:first-child:before,
+.water .process-area ol > li:first-child:after {display:none;}
+.water .process-area .tit {height:50px;font-size:18px;font-family:'NanumSquareEB';color:#fff;text-align:center;line-height:50px;}
+.water .process-area .process01 .tit,
+.water .process-area .process02 .tit {background:#f27405}
+.water .process-area .process03 .tit,
+.water .process-area .process04 .tit {background:#b88527}
+.water .process-area .process05 .tit {background:#8d8563}
+.water .process-area .process06 .tit {background:#96526b}
+.water .process-area .process07 .tit {background:#8e2800}
+.water .process-area .cont {padding:16px 28px 14px;background:#f8f8f8;box-sizing:border-box;}
+.water .process-area .cont * {color:#2e2e2e;font-size:17px;}
+.water .process-area .cont p.comp-lst_hyphen_txt {display:inline-block;}
+.water .process-area .cont ul.comp-lst_hyphen_txt {margin-left:35px;text-align:left;}
+.water .process-area .cont .txt-area {margin-bottom:12px;padding:0 0 13px 35px;border-bottom:1px solid #dddbdb;text-align:left;}
+.water .process-area .cont .txt-area span {display:block;color:#f27405;font-family:'NanumSquareB';}
+.water .process-area .cont .txt-area + .comp-lst_hyphen_txt {display:block;margin-left:35px;text-align:left;}
+.water .process-area .process05 {width:974px;}
+.water .process-area .extend {padding:20px 25px;border:1px solid #c3c3c3;}
+.water .process-area .extend:after {display:block;clear:both;content:'';}
+.water .process-area .extend > .cont-area {float:left;width:450px;}
+.water .process-area .extend > .cont-area + .cont-area {margin-left:22px;}
+.water .process-area .extend .emphasis {display:inline-block;margin-top:20px;clear:both;font-size:22px;font-family:'NanumSquareEB';color:#f27405;}
+.water .process-area + .heading-h3 {margin-bottom:40px;}
+.water .img-area {position:relative;text-align:center;}
+.water .remark {position:absolute;right:0;bottom:0;font-size:16px;font-family:'NanumSquareB';text-align:right;color:#1c1c1c;}
 
 
 
@@ -457,6 +482,31 @@ MEDIA QUERY
 .comp-step-area ol .belong {top:4rem;width:-webkit-calc(100% - 1rem);width:-moz-calc(100% - 1rem);width:-o-calc(100% - 1rem);width:calc(100% - 1rem);padding:.5rem 0 .4rem;font-size:.9rem;}
 .comp-step-area .emphasis {top:13.5rem;right:auto;left:50%;width:33%;text-align:center;font-size:1.2rem;}
 
+.water .heading-h3 {margin-bottom:.5rem;}
+.water .heading-h3 + .comp-txt_box {margin-bottom:2.5rem;}
+.water .heading-h3 + .comp-lst_dotted {margin:0 0 2.3rem 1rem;font-size:1.2rem;}
+.water .volume {margin-bottom:2.5rem;}
+.water .volume .comp-txt_box {margin-bottom:.5rem;}
+.water .comp-tbl_datatype {margin-bottom:1.5rem;}
+.water .process-area {margin-bottom:2.2rem;}
+.water .process-area .heading-h3 {margin-bottom:1.5px;}
+.water .process-area ol > li {width:30rem;padding-top:2.5rem;}
+.water .process-area ol > li:before {width:1.2rem;height:1rem;margin-left:-.6rem;}
+.water .process-area ol > li:after {top:1rem;margin-left:-1.2rem;border-width:1.6rem 1.2rem 0 1.2rem;}
+.water .process-area .tit {height:2.5rem;font-size:1.4rem;line-height:2.5rem;}
+.water .process-area .cont {padding:.8rem 1.4px .7rem;}
+.water .process-area .cont * {font-size:1.3rem;}
+.water .process-area .cont ul.comp-lst_hyphen_txt {margin-left:1.8rem;}
+.water .process-area .cont .txt-area {margin-bottom:.6rem;padding:0 0 .7rem 1.8rem;}
+.water .process-area .cont .txt-area + .comp-lst_hyphen_txt {margin-left:1.8rem;}
+.water .process-area .process05 {width:30rem;}
+.water .process-area .extend {padding:1rem 1.3rem;}
+.water .process-area .extend > .cont-area {float:none;width:auto;}
+.water .process-area .extend > .cont-area + .cont-area {margin:1rem 0 0 0;}
+.water .process-area .extend .emphasis {margin-top:1rem;font-size:1.2rem;}
+.water .process-area + .heading-h3 {margin-bottom:2rem;}
+.water .remark {bottom:auto;font-size:1.2rem;}
+
 }
 
 @media (max-width:768px){
@@ -466,11 +516,6 @@ MEDIA QUERY
 @media (max-width:420px) {
 	.village .phone-inner .number-area li {font-size: 1.1rem;}
 }
-
-/* @media (max-width:600px) {
-	.comp-step-area ol:before {left:-webkit-calc((16.5% * 3.2) - 1rem);left:-moz-calc((16.5% * 3.2) - 1rem);left:-o-calc((16.5% * 3.2) - 1rem);left:calc((16.5% * 3.2)) - 1rem;}
-} */
-
 
 @media (max-width:321px){
 	.village .phone-inner .time-area {margin-left: 7rem;}

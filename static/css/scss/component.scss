@@ -762,7 +762,7 @@ table[class^=comp-tbl] {
 				height: 50px;padding:5px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 15px; font-family: $font2; text-align: center; color:#4b4b4b; line-height: 24px;
 				&.bg-none {background:none;}
 			}
-			td {height: 50px;padding:5px 10px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center;line-height: 24px;}
+			td {height: 50px;padding:5px 10px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center;line-height: 24px; word-break: break-all;}
 			th:first-of-type {border-left: 0;}
 			td:first-child {border-left: 0;}
 			tr:last-child > * {border-bottom: 0;}

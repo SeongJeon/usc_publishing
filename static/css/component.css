@@ -453,7 +453,7 @@ table[class^=comp-tbl][class*=_datatype] thead tr:first-child th { border-top: 0
 table[class^=comp-tbl][class*=_datatype] thead tr:last-child th { border-bottom: 0; }
 table[class^=comp-tbl][class*=_datatype] tbody th { height: 50px; padding: 5px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 15px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #4b4b4b; line-height: 24px; }
 table[class^=comp-tbl][class*=_datatype] tbody th.bg-none { background: none; }
-table[class^=comp-tbl][class*=_datatype] tbody td { height: 50px; padding: 5px 10px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center; line-height: 24px; }
+table[class^=comp-tbl][class*=_datatype] tbody td { height: 50px; padding: 5px 10px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center; line-height: 24px; word-break: break-all; }
 table[class^=comp-tbl][class*=_datatype] tbody th:first-of-type { border-left: 0; }
 table[class^=comp-tbl][class*=_datatype] tbody td:first-child { border-left: 0; }
 table[class^=comp-tbl][class*=_datatype] tbody tr:last-child > * { border-bottom: 0; }

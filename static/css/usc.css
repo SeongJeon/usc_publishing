@@ -642,6 +642,17 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .obstacle .issue-wrap .comp-tbl_datatype + .comp-lst_important { margin-top: 20px; }
 .obstacle .comp-txt_box { margin-bottom: 30px; }
 
+.recycle_howto_lst { overflow: hidden; }
+.recycle_howto_lst > li { float: left; width: 490px; height: 293px; background: #f4f8fb; border: 1px solid #bbb; text-align: center; }
+.recycle_howto_lst > li:nth-child(even) { margin-left: 10px; }
+.recycle_howto_lst > li:nth-child(2) ~ li { margin-top: 10px; }
+.recycle_howto_lst .name { display: block; width: 120px; margin: 12px auto 0; font-size: 15px; color: #fff; line-height: 36px; border-radius: 5px; background: #96526b; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.recycle_howto_lst .howto { display: block; margin-top: 25px; font-family: 15px; color: #1b1b1b; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 20px; }
+.recycle_howto_lst .recycle_lst { display: inline-block; margin-top: 38px; }
+.recycle_howto_lst .recycle_lst:after { display: block; clear: both; content: ""; }
+.recycle_howto_lst .recycle_lst li { float: left; margin-left: 15px; }
+.recycle_howto_lst .recycle_lst li:first-child { margin-left: 0; }
+
 /* 기타 ------------------------------------------- */
 .banner-zone { margin-top: 20px; }
 .banner-zone ul { overflow: hidden; }

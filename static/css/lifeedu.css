@@ -138,12 +138,13 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
-.usc_part03_02 .uscsong-box {padding-top:2rem;}
+.usc_part03_02 .uscsong-box {padding-top:0;}
 
-.usc_part03_02 .uscsong-btn {position: static; display: flex;}
-.usc_part03_02 .uscsong-btn a {flex:1;}
-.usc_part03_02 .uscsong-btn a:first-child { margin-right: 0.5rem;}
-.usc_part03_02 .uscsong-btn a span {font-size: 1.1rem; padding-left: 1.6rem; background-size:100% 100%;}
+.usc_part03_02 .uscsong-btn {position: static; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;}
+.usc_part03_02 .uscsong-btn a {-webkit-flex:1; flex:1;}
+.usc_part03_02 .uscsong-btn a:first-child {margin-right: 0.5rem}
+.usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_whiteorange] span {font-size: 1.1rem; padding-left:2rem; background-size:auto 100%;}
+.usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_lightorange] span {font-size: 1.1rem; padding-left: 2rem; background-size:auto 100%;}
 
 }
 @media (max-width:768px){}

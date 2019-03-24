@@ -845,7 +845,7 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-// 방문민원상담예약신청
+// 전자민원 > 방문민원상담예약신청
 .advice-app {
 	.comp-lst_important {color:#1c1c1c !important;}
 	.comp-iconbox {margin-bottom:25px;}
@@ -866,7 +866,7 @@ SUB PAGE
 	.box-agree .radio-area {display:inline-block;margin-left:25px;}
 	.box-agree .comp-radio + .comp-radio {margin-left:25px;}
 }
-// 방문민원상담예약안내
+// 전자민원 > 방문민원상담예약안내
 .advice-info  {
 	.heading-h3 {margin-bottom:10px;}
 	.comp-txt_box {margin:0 0 40px 30px;}
@@ -885,7 +885,7 @@ SUB PAGE
 	.task-order .comp-lst_hyphen {margin:0 0 13px;text-align:left;}
 	.charge {position:absolute;bottom:12px;left:14px;width:82%;height:35px;line-height:35px;background:#e2e1e1;color:#3f3f3f;border-radius:10px;font-family:'NanumSquareB';}
 }
-// 민원모니터이해 
+// 전자민원 > 민원모니터이해 
 .usc .service-monitor {
 	.heading-h3 + .heading-h4 {margin:20px 0 0 30px;}
 	.heading-h4 {margin:30px 0 0 30px;}
@@ -903,7 +903,7 @@ SUB PAGE
 	.flow-chart > li:last-child:before {display:none;}
 	.flow-chart > li strong {display:block; width:123px; margin:10px auto 0 auto; padding:10px 0 0; border-top:1px solid #d6d3d2; font-size:17px; font-weight:bold; color:#fe970e;}
 } 
-// 민원실이용안내
+// 전자민원 > 민원실이용안내
 .usc .guide-use {
 	.comp-tab {overflow:hidden; margin-bottom:30px; }
 	.tab-contents .floor-plan {margin:15px 0 0; padding:15px 0 40px; background:#efeeed;}
@@ -918,39 +918,7 @@ SUB PAGE
 	.tab-contents .floor-plan .list ul > li .tel {display:inline-block; margin-left:2px; padding:2px; background:#f1e300;}
 	.tab-contents .comp-tbl_datatype {margin-top:15px;}
 }
-// 배너존
-.banner-zone {
-	margin-top: 20px;
-	ul {
-		overflow:hidden;
-		li {float: left; width: 330px; height: 160px; border:1px solid #cbc8c7; box-sizing:border-box; margin-left: 10px;}
-		a {display: block; width: 100%; height: 160px; padding:19px 5px 0; text-align: center; box-sizing: border-box;}
-		li:nth-child(3n+1) {margin-left: 0;}
-		li:nth-child(3) ~ li {margin-top: 10px;}
-		.img {
-			display:block; width:234px; height: 60px; padding:5px; margin: 0 auto; border:1px solid #cbc6c5; box-sizing: border-box;
-			img {max-width:222px;}
-		}
-		.name {display: block; margin-top: 14px; font-size: 17px; font-family: $font2; color:#4b4b4b;}
-		.date {display: block; margin-top: 9px; color:#7b7b7b; font-size: 14px;  letter-spacing: -0.5px;}
-	}
-}
-.top-search-zone {
-	overflow:hidden; padding:19px 24px; background:#eff0f1; border:1px solid #e2e1e1;
-	.total-length {
-		float: left; position: relative; font-size: 16px; line-height: 42px; padding-left: 28px; color:#3e3e3e;
-		&:before {display: block; position: absolute; left:0; top:50%; content: ""; width: 16px; height: 19px; @include background("common/icon_file.png",no-repeat 50% 50%); background-size: 100% auto; margin-top: -10px;}
-	}
-	.form {
-		float: right;
-		&:after {display:block; clear:both; content:""}
-		> * {float: left;}
-		input {width: 226px;  margin-left: 2px;}
-		select {width: 116px;}
-		button {width:80px; margin-left: -1px;}
-	}
-}
-// 의성의 오늘
+// 정보공개 > 의성의 오늘
 div[class^=oftoday_] {
 	&[class*=_navigation] {
 		position: relative; width:275px; margin:15px auto 0;
@@ -974,7 +942,7 @@ div[class^=oftoday_] {
 		}
 	}
 }
-// 예산서공개
+// 정보공개 > 예산서공개
 .budgeting-box {
 	overflow:hidden;
 	p{
@@ -987,7 +955,7 @@ div[class^=oftoday_] {
 		a[class*=comm-btn] {width: 172px;}
 	}
 }
-// 재정정보공개 
+// 정보공개 > 재정정보공개 
 *[class*=inforopen-search] {
 	dt {
 		color:#f27405; font-family: $font2; font-size: 20px; margin-bottom: 20px;
@@ -1026,13 +994,15 @@ div[class^=oftoday_] {
 		*[class^=comm-btn] {margin-top: 125px}
 	}
 }
-// 공공데이터정보
+// 정보공개 > 공공데이터정보
 .usc_part02_01 {
 	.heading-h3 {margin-top:35px;}
 	.heading-h4 {margin-top:25px;}
 	.comp-lst_dotted {margin-top:7px;}
 	.comp-txt_box {margin-top:7px;}
 }
+
+
 // 의성안내 > 국내
 .usc_part03_01 {
 	.img_internal {text-align: center;}
@@ -1046,7 +1016,38 @@ div[class^=oftoday_] {
 
 
 
-
+// 기타 > 배너존
+.banner-zone {
+	margin-top: 20px;
+	ul {
+		overflow:hidden;
+		li {float: left; width: 330px; height: 160px; border:1px solid #cbc8c7; box-sizing:border-box; margin-left: 10px;}
+		a {display: block; width: 100%; height: 160px; padding:19px 5px 0; text-align: center; box-sizing: border-box;}
+		li:nth-child(3n+1) {margin-left: 0;}
+		li:nth-child(3) ~ li {margin-top: 10px;}
+		.img {
+			display:block; width:234px; height: 60px; padding:5px; margin: 0 auto; border:1px solid #cbc6c5; box-sizing: border-box;
+			img {max-width:222px;}
+		}
+		.name {display: block; margin-top: 14px; font-size: 17px; font-family: $font2; color:#4b4b4b;}
+		.date {display: block; margin-top: 9px; color:#7b7b7b; font-size: 14px;  letter-spacing: -0.5px;}
+	}
+}
+.top-search-zone {
+	overflow:hidden; padding:19px 24px; background:#eff0f1; border:1px solid #e2e1e1;
+	.total-length {
+		float: left; position: relative; font-size: 16px; line-height: 42px; padding-left: 28px; color:#3e3e3e;
+		&:before {display: block; position: absolute; left:0; top:50%; content: ""; width: 16px; height: 19px; @include background("common/icon_file.png",no-repeat 50% 50%); background-size: 100% auto; margin-top: -10px;}
+	}
+	.form {
+		float: right;
+		&:after {display:block; clear:both; content:""}
+		> * {float: left;}
+		input {width: 226px;  margin-left: 2px;}
+		select {width: 116px;}
+		button {width:80px; margin-left: -1px;}
+	}
+}
 
 
 
@@ -1510,7 +1511,18 @@ MEDIA QUERY
 /* ------------------------------------------------------
 - SUB PAGE
 ------------------------------------------------------ */
-// 방문민원상담예약신청
+// 전자민원 > 공직자부조리신고
+.usc_part01_01 {
+	.btn-box {position: absolute; top:72px; right: 39px;}
+	.btn-box a {display: block; position: relative;}
+	.btn-box a:first-child {margin:0 0 4px 0;}
+
+	.btn-box *[class*=btnn] { width: 174px; height: 45px; line-height: 45px; vertical-align: middle; text-align: center; font-size: 17px; box-sizing: border-box;}
+	.comm-btn_btnn1_orange {letter-spacing: 3px;}
+	.comm-btn_btnn1_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life1.png") no-repeat center center; width:16px; height:29px; vertical-align: middle; margin-right:10px;}
+	.comm-btn_btnn2_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life2.png") no-repeat center center; width:27px; height:24px; vertical-align: middle; margin-right:10px;}
+}
+// 전자민원 > 방문민원상담예약신청
 .advice-app {
 	.heading-h4 {margin-left:1.5rem;}
 	.heading-h4 + .heading-h4 {margin:1rem 0 1rem 1.5rem;}
@@ -1520,7 +1532,7 @@ MEDIA QUERY
 	.box-agree {padding:1.4rem;font-size:1.2rem;line-height:1.5;}
 	.box-agree .radio-area {display:block;margin:1rem 0 0 0;}
 }
-// 방문민원상담예약안내
+// 전자민원 > 방문민원상담예약안내
 .advice-info {
 	.comp-txt_box {margin:0 0 2rem 1.5rem;}
 	.comp-lst_hyphen {margin:0 0 2.3rem 2rem;}
@@ -1542,7 +1554,7 @@ MEDIA QUERY
 		width:calc(100% - 28px);
 	}
 }
-// 민원모니터 이해 
+// 전자민원 > 민원모니터 이해 
 .usc .service-monitor {
 	.heading-h3 + .heading-h4 {margin:1rem 0 0 1.5rem;}
 	.heading-h4 {margin:1.2rem 0 0 1.5rem;}
@@ -1558,14 +1570,71 @@ MEDIA QUERY
 	.flow-chart > li span {display:block; text-align:center; font-size:1rem;}
 	.flow-chart > li strong {width:6.5rem; margin:0.4rem auto 0 auto; padding:0.4rem 0 0; font-size:1.2rem;}
 }
-// 민원실이용안내 
+// 전자민원 > 민원실이용안내 
 .usc .guide-use {
 	.comp-tab {margin-bottom:1.5rem;}
 	.tab-contents .floor-plan {padding:15px 0 2rem;}
 	.tab-contents .floor-plan .list {padding:2rem 3rem 0;}
 	.tab-contents .floor-plan .list ul > li .num {width:2rem; height:2rem; line-height:2rem; border-radius:2rem;}
 }
-// 배너존
+// 정보공개 > 의성의 오늘
+div[class^=oftoday_] {
+	&[class*=_navigation] {
+		width:100%; margin:2rem auto 0;
+		.month {font-size: 2rem; padding:0 3rem; line-height:3rem;}
+	}
+	&[class*=_calendar] {
+		margin-top: 2rem;
+		table {
+			tbody {
+				td {height:12rem; }
+				.point1 {display:block; font-size:1.3rem; margin-bottom: 0.3rem;}
+				.icon {margin:0 0.6rem 1rem; }
+			}
+		} 
+	}
+}
+// 정보공개 > 예산서공개
+.budgeting-box {
+	p{
+		float: none; font-size:1.2rem; line-height:1.6rem;
+		&:before { margin-right: 0.2rem;}
+	}
+	.form {
+		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; float: none; margin-top:0.5rem;
+		select[class*=comp-select] {width:auto; -webkit-flex:1; flex:1;}
+		a[class*=comm-btn] {width:8rem; margin-left: 0.5rem;}
+	}
+}
+// 정보공개 > 재정정보공개 
+*[class*=inforopen-search] {
+	&.inforopen-search3 {
+		dd {
+			text-align: center;
+			.label {
+				height: 44px;
+				.sm {display: block; margin-top: 5px;}
+			}
+		}
+		.block {float:none; width: 49%; margin-right: 0; text-align: left;}
+		.block:nth-of-type(odd) {width: 49%}
+		.block:nth-of-type(2) ~ .block .label {height: auto;}
+		*[class^=comm-btn] {margin-top: 0}
+		input {width: 40%}
+		.txt {display: inline-block; width: 2%; margin:0; text-align: center;}
+	}
+}
+// 정보공개 >  공공데이터정보
+.usc_part02_01 {
+	.heading-h4 {margin-top: 1.5rem}
+	.heading-h3 {margin-top: 2rem}
+}
+// 의성안내 > 국내
+.usc_part03_01 {
+	.comp-txt_box {margin:0.5rem 1rem 0;}
+	.comp-btn-zone {margin:0.5rem 0 0 1rem;} 
+}
+// 기타 > 배너존
 .banner-zone {
 	margin-top: 2rem;
 	ul {
@@ -1596,63 +1665,22 @@ MEDIA QUERY
 		button {width:5rem; min-width:inherit;}
 	}
 }
-// 의성의 오늘
-div[class^=oftoday_] {
-	&[class*=_navigation] {
-		width:100%; margin:2rem auto 0;
-		.month {font-size: 2rem; padding:0 3rem; line-height:3rem;}
-	}
-	&[class*=_calendar] {
-		margin-top: 2rem;
-		table {
-			tbody {
-				td {height:12rem; }
-				.point1 {display:block; font-size:1.3rem; margin-bottom: 0.3rem;}
-				.icon {margin:0 0.6rem 1rem; }
-			}
-		} 
-	}
-}
-// 예산서공개
-.budgeting-box {
-	p{
-		float: none; font-size:1.2rem; line-height:1.6rem;
-		&:before { margin-right: 0.2rem;}
-	}
-	.form {
-		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; float: none; margin-top:0.5rem;
-		select[class*=comp-select] {width:auto; -webkit-flex:1; flex:1;}
-		a[class*=comm-btn] {width:8rem; margin-left: 0.5rem;}
-	}
-}
-// 재정정보공개 
-*[class*=inforopen-search] {
-	&.inforopen-search3 {
-		dd {
-			text-align: center;
-			.label {
-				height: 44px;
-				.sm {display: block; margin-top: 5px;}
-			}
-		}
-		.block {float:none; width: 49%; margin-right: 0; text-align: left;}
-		.block:nth-of-type(odd) {width: 49%}
-		.block:nth-of-type(2) ~ .block .label {height: auto;}
-		*[class^=comm-btn] {margin-top: 0}
-		input {width: 40%}
-		.txt {display: inline-block; width: 2%; margin:0; text-align: center;}
-	}
-}
-// 공공데이터정보
-.usc_part02_01 {
-	.heading-h4 {margin-top: 1.5rem}
-	.heading-h3 {margin-top: 2rem}
-}
-// 의성안내 > 국내
-.usc_part03_01 {
-	.comp-txt_box {margin:0.5rem 1rem 0;}
-	.comp-btn-zone {margin:0.5rem 0 0 1rem;} 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1662,30 +1690,30 @@ div[class^=oftoday_] {
 /* ------------------------------------------------------
 - SUB PAGE
 ------------------------------------------------------ */
-// 방문민원상담예약신청
+// 전자민원 > 방문민원상담예약신청
 .advice-app {
 	.w_time {display:block;}
 	.w_time .comp-input,
 	.w_time .comp-select {width:100%;}
 	.w_time .comp-select {margin-top:0.5rem;}
 }
-// 방문민원상담예약안내
+// 전자민원 > 방문민원상담예약안내
 .advice-app {
 	.box-agree {text-align:left;}
 	.box-agree .radio-area {text-align:center;}
 }
-// 민원모니터 이해 
+// 전자민원 > 민원모니터 이해 
 .usc .service-monitor {
 	.flow-chart > li:after {display:none;}
 }
-// 민원실이용안내 
+// 전자민원 > 민원실이용안내 
 .usc .guide-use {
 	.tab-contents .floor-plan .list {padding:1.5rem;}
 	.tab-contents .floor-plan .list ul:first-child {margin-left:0;}
 	.tab-contents .floor-plan .list ul + ul {margin:12px 0 0;}
 	.tab-contents .floor-plan .list ul {float:none; width:100%;}
 }
-// 재정정보공개 
+// 정보공개 > 재정정보공개 
 *[class*=inforopen-search] {
 	dt {
 		font-size: 1.5rem; margin-bottom: 1rem; 

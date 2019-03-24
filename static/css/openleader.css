@@ -407,20 +407,20 @@ SUB PAGE
 .effect .img-area {margin-top:10px;}
 
 /* 노인복지 - 노인장기요양보험제도 */
-.welfare *[class^=heading][class$=-h3] {margin-top:30px;}
-.welfare *[class^=heading][class$=-h4] {margin-top:16px; margin-bottom:9px;}
-.welfare p[class^=comp-lst][class*=_important] {margin-left:-15px;}
-.welfare *[class^=comp-lst][class*=_dotted] > li,
-.welfare h5[class^=comp-lst][class*=_dotted] {margin-top:5px;}
-.welfare *[class^=comp-txt][class*=_box] {margin:15px 0 0 40px;}
-.welfare .comp-step-area {margin:20px 0 40px 40px;}
-.welfare .comp-step-area ol {overflow:hidden;}
-.welfare .comp-step-area ol > li {width:25%;}
-.welfare .comp-step-area ol li:before {top:43px;}
-.welfare .comp-step-area ol .tit {display:table; height:110px; line-height:110px; padding:0;}
-.welfare .comp-step-area ol .tit .inner {display:table-cell; line-height:1; vertical-align:middle;}
-.welfare .comp-step-area ol .cont {position:static; height:auto; padding:15px 0; margin:0 18px; }
-.welfare .comp-step-area ol .cont .belong {position:static; width:100%;}
+.long-care *[class^=heading][class$=-h3] {margin-top:30px;}
+.long-care *[class^=heading][class$=-h4] {margin-top:16px; margin-bottom:9px;}
+.long-care p[class^=comp-lst][class*=_important] {margin-left:-15px;}
+.long-care *[class^=comp-lst][class*=_dotted] > li,
+.long-care h5[class^=comp-lst][class*=_dotted] {margin-top:5px;}
+.long-care *[class^=comp-txt][class*=_box] {margin:15px 0 0 40px;}
+.long-care .comp-step-area {margin:20px 0 40px 40px;}
+.long-care .comp-step-area ol {overflow:hidden;}
+.long-care .comp-step-area ol > li {width:25%;}
+.long-care .comp-step-area ol li:before {top:43px;}
+.long-care .comp-step-area ol .tit {display:table; height:110px; line-height:110px; padding:0;}
+.long-care .comp-step-area ol .tit .inner {display:table-cell; line-height:1; vertical-align:middle;}
+.long-care .comp-step-area ol .cont {position:static; height:auto; padding:15px 0; margin:0 18px; }
+.long-care .comp-step-area ol .cont .belong {position:static; width:100%;}
 
 
 /* ------------------------------------------------------
@@ -577,16 +577,19 @@ MEDIA QUERY
 .effect .list-ripple > li .after {font-size:1rem;}
 
 /* 노인복지 - 노인장기요양보험제도 */
-.welfare *[class^=heading][class$=-h3] {margin-top:1.5rem;}
-.welfare *[class^=heading][class$=-h4] {margin-top:2rem; margin-bottom:0.5rem;}
-.welfare *[class^=comp-lst][class*=_dotted] {margin-top:0.7rem; margin-bottom:0.5rem;}
-.welfare *[class^=comp-txt][class*=_box] {margin:1rem 0 0 1.5rem;}
-.welfare .comp-step-area {margin:1rem 0 1.5rem 1.5rem;}
-.welfare .comp-step-area ol li:nth-child(odd) .tit {padding-top:0;}
-.welfare .comp-step-area ol .tit {padding:0 1rem;}
-.welfare .comp-step-area ol .tit .inner {font-size:1rem;}
-.welfare .comp-step-area ol .cont {padding:;margin:0 0.6rem;}
-.welfare .comp-step-area ol .cont .belong {padding:0.5rem 1rem 0.4rem; box-sizing:border-box;}
+.long-care *[class^=heading][class$=-h3] {margin-top:1.5rem;}
+.long-care *[class^=heading][class$=-h4] {margin-top:2rem; margin-bottom:0.5rem;}
+.long-care *[class^=comp-lst][class*=_dotted] {margin-top:0.7rem; margin-bottom:0.5rem;}
+.long-care *[class^=comp-txt][class*=_box] {margin:1rem 0 0 1.5rem;}
+.long-care .comp-step-area {margin:1rem 0 1.5rem 1.5rem;}
+.long-care .comp-step-area ol {border:1px solid #dfdfdf;}
+.long-care .comp-step-area ol > li {width:100%; border:none; border-top:1px solid #dfdfdf;}
+.long-care .comp-step-area ol li:first-child {border:none;}
+.long-care .comp-step-area ol li:before {left:50%; top:-0.7rem; margin-left:-0.5rem; -ms-transform: rotate(90deg); -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg);}
+.long-care .comp-step-area ol .tit {height:auto; padding:1rem;}
+.long-care .comp-step-area ol .tit .inner {font-size:1rem;}
+.long-care .comp-step-area ol .cont {padding:1rem 0;margin:0 0.6rem;}
+.long-care .comp-step-area ol .cont .belong {padding:0.5rem 1rem 0.4rem; box-sizing:border-box;}
 
 }
 

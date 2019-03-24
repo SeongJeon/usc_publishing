@@ -460,10 +460,9 @@ SUB PAGE
 
 .floor-plan { margin: 15px 0 0; padding: 15px 0 40px; background: #efeeed; }
 .floor-plan .img { text-align: center; }
-.floor-plan .list { overflow: hidden; padding: 30px 35px 0; }
-.floor-plan .list ul { float: left; width: 50%; }
-.floor-plan .list ul:first-child { margin-left: -20px; }
-.floor-plan .list ul + ul { margin-left: 20px; }
+.floor-plan .list { overflow: hidden; padding: 30px 12px 0; }
+.floor-plan .list ul { float: left; width: 50%; box-sizing: border-box; }
+.floor-plan .list ul:first-child { padding-left: 20px; }
 .floor-plan .list ul > li { margin: 12px 0 0; color: #4b4b4b; }
 .floor-plan .list ul > li:first-child { margin-top: 0; }
 .floor-plan .list ul > li .num { display: inline-block; width: 30px; height: 30px; line-height: 30px; margin-right: 10px; background: #4b4b4b; border-radius: 30px; text-align: center; color: #fff; }
@@ -960,6 +959,7 @@ MEDIA QUERY
   .usc .guide-use .comp-tab { margin-bottom: 1.5rem; }
   .floor-plan { padding: 15px 0 2rem; }
   .floor-plan .list { padding: 2rem 3rem 0; }
+  .floor-plan .list ul:first-child { padding-left: 0px; }
   .floor-plan .list ul > li .num { width: 2rem; height: 2rem; line-height: 2rem; border-radius: 2rem; }
   /* 정보공개 ------------------------------------------- */
   div[class^=oftoday_][class*=_navigation] { width: 100%; margin: 2rem auto 0; }

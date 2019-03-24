@@ -923,10 +923,9 @@ SUB PAGE
 .floor-plan {
 	margin:15px 0 0; padding:15px 0 40px; background:#efeeed;
 	.img {text-align:center;}
-	.list {overflow:hidden; padding:30px 35px 0;}
-	.list ul {float:left; width:50%; }
-	.list ul:first-child {margin-left:-20px;}
-	.list ul + ul {margin-left:20px; }
+	.list {overflow:hidden; padding:30px 12px 0;}
+	.list ul {float:left; width:50%; box-sizing: border-box;}
+	.list ul:first-child {padding-left:20px;}
 	.list ul > li {margin:12px 0 0; color:#4b4b4b;}
 	.list ul > li:first-child {margin-top:0;}
 	.list ul > li .num {display:inline-block; width:30px; height:30px; line-height:30px; margin-right:10px; background:#4b4b4b; border-radius:30px; text-align:center; color:#fff;}
@@ -1069,7 +1068,9 @@ div[class^=oftoday_] {
 	.song-wrap .btn-song:hover span {background:url(../images/usc/subpage/icon_song_on.png) no-repeat left top;}
 }
 // 찾아오시는길 
-.ico-to {display: inline-block; width: 27px; height: 12px; margin: 0 5px; @include background("usc/subpage/icon_to.png",no-repeat 50% 50%); background-size: 100% auto; text-indent: -9999em; vertical-align: middle;}
+.ico-to {
+	display: inline-block; width: 27px; height: 12px; margin: 0 5px; @include background("usc/subpage/icon_to.png",no-repeat 50% 50%); background-size: 100% auto; text-indent: -9999em; vertical-align: middle;
+}
 .gotoway_usc {
 	position: relative; overflow:hidden; padding:10px 12px 0; margin-top: 20px; border:16px solid #efeeed;
 	.img2 {position: absolute; right:95px; top:50%; margin-top: -200px;}
@@ -1764,6 +1765,7 @@ MEDIA QUERY
 .floor-plan {
 	padding:15px 0 2rem;
 	.list {padding:2rem 3rem 0;}
+	.list ul:first-child {padding-left:0px;}
 	.list ul > li .num {width:2rem; height:2rem; line-height:2rem; border-radius:2rem;}
 }
 

@@ -377,23 +377,23 @@ br.t, br.m { display: none; }
 *[class^=heading].ml20 { margin-left: 20px; }
 
 /* LIST */
-h5[class^=comp-lst][class*=_dotted], p[class^=comp-lst][class*=_dotted] { position: relative; padding-left: 15px; font-size: 16px; color: #4b4b4b; line-height: 24px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-h5[class^=comp-lst][class*=_dotted]:before, p[class^=comp-lst][class*=_dotted]:before { display: inline-block; position: absolute; left: 0; top: 9px; content: ""; width: 5px; height: 5px; background: #656565; }
-h5[class^=comp-lst][class*=_dotted] .cont, p[class^=comp-lst][class*=_dotted] .cont { font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-h5[class^=comp-lst][class*=_dotted][class*=_small], p[class^=comp-lst][class*=_dotted][class*=_small] { color: #7f7f7f; font-size: 15px; padding-left: 10px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-h5[class^=comp-lst][class*=_dotted][class*=_small]:before, p[class^=comp-lst][class*=_dotted][class*=_small]:before { top: 10px; width: 1px; height: 1px; background: #7f7f7f; }
-h5[class^=comp-lst][class*=_dotted][class*=_grey], p[class^=comp-lst][class*=_dotted][class*=_grey] { color: #1c1c1c; }
-h5[class^=comp-lst][class*=_dotted][class*=_grey]:before, p[class^=comp-lst][class*=_dotted][class*=_grey]:before { background: #cfcfcf; }
-h5[class^=comp-lst][class*=_hyphen], p[class^=comp-lst][class*=_hyphen] { position: relative; padding-left: 15px; font-size: 15px; color: #7f7f7f; line-height: 24px; }
-h5[class^=comp-lst][class*=_hyphen]:before, p[class^=comp-lst][class*=_hyphen]:before { display: inline-block; position: absolute; left: 0; top: 10px; content: ""; width: 10px; height: 2px; background: #fe970e; }
-h5[class^=comp-lst][class*=_hyphen][class*=_txt]:before, p[class^=comp-lst][class*=_hyphen][class*=_txt]:before { content: "-"; margin-right: 7px; background: none; width: auto; height: auto; top: 0; }
-h5[class^=comp-lst][class*=_important], p[class^=comp-lst][class*=_important] { position: relative; padding-left: 15px; color: #7f7f7f; font-size: 15px; line-height: 24px; }
-h5[class^=comp-lst][class*=_important]:before, p[class^=comp-lst][class*=_important]:before { display: inline-block; position: absolute; left: 0; top: 0; content: "※"; margin-right: 5px; }
-h5[class^=comp-lst].ml1, p[class^=comp-lst].ml1 { margin-left: 5px; }
-h5[class^=comp-lst].ml2, p[class^=comp-lst].ml2 { margin-left: 30px; }
-h5[class^=comp-lst].ml3, p[class^=comp-lst].ml3 { margin-left: 40px; }
-h5[class^=comp-lst].ml4, p[class^=comp-lst].ml4 { margin-left: 50px; }
-h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 20px; }
+h4[class^=comp-lst][class*=_dotted], h5[class^=comp-lst][class*=_dotted], p[class^=comp-lst][class*=_dotted] { position: relative; padding-left: 15px; font-size: 16px; color: #4b4b4b; line-height: 24px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+h4[class^=comp-lst][class*=_dotted]:before, h5[class^=comp-lst][class*=_dotted]:before, p[class^=comp-lst][class*=_dotted]:before { display: inline-block; position: absolute; left: 0; top: 9px; content: ""; width: 5px; height: 5px; background: #656565; }
+h4[class^=comp-lst][class*=_dotted] .cont, h5[class^=comp-lst][class*=_dotted] .cont, p[class^=comp-lst][class*=_dotted] .cont { font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+h4[class^=comp-lst][class*=_dotted][class*=_small], h5[class^=comp-lst][class*=_dotted][class*=_small], p[class^=comp-lst][class*=_dotted][class*=_small] { color: #7f7f7f; font-size: 15px; padding-left: 10px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+h4[class^=comp-lst][class*=_dotted][class*=_small]:before, h5[class^=comp-lst][class*=_dotted][class*=_small]:before, p[class^=comp-lst][class*=_dotted][class*=_small]:before { top: 10px; width: 1px; height: 1px; background: #7f7f7f; }
+h4[class^=comp-lst][class*=_dotted][class*=_grey], h5[class^=comp-lst][class*=_dotted][class*=_grey], p[class^=comp-lst][class*=_dotted][class*=_grey] { color: #1c1c1c; }
+h4[class^=comp-lst][class*=_dotted][class*=_grey]:before, h5[class^=comp-lst][class*=_dotted][class*=_grey]:before, p[class^=comp-lst][class*=_dotted][class*=_grey]:before { background: #cfcfcf; }
+h4[class^=comp-lst][class*=_hyphen], h5[class^=comp-lst][class*=_hyphen], p[class^=comp-lst][class*=_hyphen] { position: relative; padding-left: 15px; font-size: 15px; color: #7f7f7f; line-height: 24px; }
+h4[class^=comp-lst][class*=_hyphen]:before, h5[class^=comp-lst][class*=_hyphen]:before, p[class^=comp-lst][class*=_hyphen]:before { display: inline-block; position: absolute; left: 0; top: 10px; content: ""; width: 10px; height: 2px; background: #fe970e; }
+h4[class^=comp-lst][class*=_hyphen][class*=_txt]:before, h5[class^=comp-lst][class*=_hyphen][class*=_txt]:before, p[class^=comp-lst][class*=_hyphen][class*=_txt]:before { content: "-"; margin-right: 7px; background: none; width: auto; height: auto; top: 0; }
+h4[class^=comp-lst][class*=_important], h5[class^=comp-lst][class*=_important], p[class^=comp-lst][class*=_important] { position: relative; padding-left: 15px; color: #7f7f7f; font-size: 15px; line-height: 24px; }
+h4[class^=comp-lst][class*=_important]:before, h5[class^=comp-lst][class*=_important]:before, p[class^=comp-lst][class*=_important]:before { display: inline-block; position: absolute; left: 0; top: 0; content: "※"; margin-right: 5px; }
+h4[class^=comp-lst].ml1, h5[class^=comp-lst].ml1, p[class^=comp-lst].ml1 { margin-left: 5px; }
+h4[class^=comp-lst].ml2, h5[class^=comp-lst].ml2, p[class^=comp-lst].ml2 { margin-left: 30px; }
+h4[class^=comp-lst].ml3, h5[class^=comp-lst].ml3, p[class^=comp-lst].ml3 { margin-left: 40px; }
+h4[class^=comp-lst].ml4, h5[class^=comp-lst].ml4, p[class^=comp-lst].ml4 { margin-left: 50px; }
+h4[class^=comp-lst].ml5, h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 20px; }
 
 *[class^=comp-lst][class*=_dotted] > li { position: relative; padding-left: 15px; font-size: 16px; color: #4b4b4b; line-height: 24px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 *[class^=comp-lst][class*=_dotted] > li:before { display: inline-block; position: absolute; left: 0; top: 9px; content: ""; width: 5px; height: 5px; background: #656565; }
@@ -430,27 +430,28 @@ h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 20px; }
 .tbl-top-utile *[class^=heading] { float: left; }
 .tbl-top-utile *[class^=heading] + .l-right { float: right; position: relative; top: 12px; }
 
-.tbl-bottom-utile { margin-top: 13px; }
-.tbl-bottom-utile:after { display: block; clear: both; content: ""; }
+.tbl-bottom-utile { overflow: hidden; margin-top: 13px; }
 .tbl-bottom-utile .l-right { float: right; color: #4b4b4b; font-size: 15px; }
 
 .tbl-zone { margin-left: 35px; margin-top: 10px; }
 
 table[class^=comp-tbl] { table-layout: fixed; }
 table[class^=comp-tbl][class*=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; border-bottom: 1px solid #d9d6d5; }
-table[class^=comp-tbl][class*=_datatype] thead th { height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #1c1c1c; }
+table[class^=comp-tbl][class*=_datatype] thead th { height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #4b4b4b; }
 table[class^=comp-tbl][class*=_datatype] thead th[rowspan] { border-right: 1px solid #d9d6d5; }
 table[class^=comp-tbl][class*=_datatype] thead th:last-child { border-right: 0; }
 table[class^=comp-tbl][class*=_datatype] thead th:first-child { border-left: 0; }
 table[class^=comp-tbl][class*=_datatype] thead tr:first-child th { border-top: 0; }
 table[class^=comp-tbl][class*=_datatype] thead tr:last-child th { border-bottom: 0; }
-table[class^=comp-tbl][class*=_datatype] tbody th { height: 50px; padding: 5px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 15px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #1c1c1c; line-height: 24px; }
+table[class^=comp-tbl][class*=_datatype] tbody th { height: 50px; padding: 5px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 15px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #4b4b4b; line-height: 24px; }
 table[class^=comp-tbl][class*=_datatype] tbody th.bg-none { background: none; }
 table[class^=comp-tbl][class*=_datatype] tbody td { height: 50px; padding: 5px 10px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center; line-height: 24px; }
 table[class^=comp-tbl][class*=_datatype] tbody th:first-of-type { border-left: 0; }
 table[class^=comp-tbl][class*=_datatype] tbody td:first-child { border-left: 0; }
 table[class^=comp-tbl][class*=_datatype] tbody tr:last-child > * { border-bottom: 0; }
 table[class^=comp-tbl][class*=_datatype] tbody tr:first-child > * { border-top: 1px solid #7a7a7a; }
+table[class^=comp-tbl][class*=_datatype] tbody td + th { border-left: 1px solid #d9d6d5; }
+table[class^=comp-tbl][class*=_datatype] tbody td + th:first-of-type { border-left: 1px solid #d9d6d5; }
 table[class^=comp-tbl][class*=_datatype] tfoot tr * { height: 50px; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #1c1c1c; text-align: center; border-top: 1px solid #666; border-left: 1px solid #d7d7d9; }
 table[class^=comp-tbl][class*=_datatype] tfoot tr *:first-child { border-left: 0; }
 table[class^=comp-tbl][class*=_datatype].border { border-bottom: 2px solid #7a7a7a; }
@@ -797,18 +798,18 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   *[class^=heading] + .scrollzone { margin-top: 1rem; }
   *[class^=heading] + *[class^=comp-tbl_] { margin-top: 1rem; }
   /* LIST */
-  h5[class^=comp-lst][class*=_dotted], p[class^=comp-lst][class*=_dotted] { padding-left: 1rem; font-size: 1.2rem; line-height: 1.6rem; }
-  h5[class^=comp-lst][class*=_dotted]:before, p[class^=comp-lst][class*=_dotted]:before { top: 0.5rem; width: 0.3rem; height: 0.3rem; }
-  h5[class^=comp-lst][class*=_dotted][class*=_small], p[class^=comp-lst][class*=_dotted][class*=_small] { font-size: 1.1rem; padding-left: 0.8rem; line-height: 1.6rem; }
-  h5[class^=comp-lst][class*=_dotted][class*=_small]:before, p[class^=comp-lst][class*=_dotted][class*=_small]:before { top: 0.7rem; }
-  h5[class^=comp-lst][class*=_hyphen], p[class^=comp-lst][class*=_hyphen] { padding-left: 1.1rem; font-size: 1.1rem; line-height: 1.6rem; }
-  h5[class^=comp-lst][class*=_hyphen]:before, p[class^=comp-lst][class*=_hyphen]:before { top: 0.6rem; width: 0.5rem; height: 2px; }
-  h5[class^=comp-lst][class*=_important], p[class^=comp-lst][class*=_important] { padding-left: 1.2rem; font-size: 1.2rem; line-height: 1.4rem; }
-  h5[class^=comp-lst].ml1, p[class^=comp-lst].ml1 { margin-left: 0.5rem; }
-  h5[class^=comp-lst].ml2, p[class^=comp-lst].ml2 { margin-left: 1.5rem; }
-  h5[class^=comp-lst].ml3, p[class^=comp-lst].ml3 { margin-left: 1.5rem; }
-  h5[class^=comp-lst].ml4, p[class^=comp-lst].ml4 { margin-left: 2rem; }
-  h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 1rem; }
+  h4[class^=comp-lst][class*=_dotted], h5[class^=comp-lst][class*=_dotted], p[class^=comp-lst][class*=_dotted] { padding-left: 1rem; font-size: 1.2rem; line-height: 1.6rem; }
+  h4[class^=comp-lst][class*=_dotted]:before, h5[class^=comp-lst][class*=_dotted]:before, p[class^=comp-lst][class*=_dotted]:before { top: 0.5rem; width: 0.3rem; height: 0.3rem; }
+  h4[class^=comp-lst][class*=_dotted][class*=_small], h5[class^=comp-lst][class*=_dotted][class*=_small], p[class^=comp-lst][class*=_dotted][class*=_small] { font-size: 1.1rem; padding-left: 0.8rem; line-height: 1.6rem; }
+  h4[class^=comp-lst][class*=_dotted][class*=_small]:before, h5[class^=comp-lst][class*=_dotted][class*=_small]:before, p[class^=comp-lst][class*=_dotted][class*=_small]:before { top: 0.7rem; }
+  h4[class^=comp-lst][class*=_hyphen], h5[class^=comp-lst][class*=_hyphen], p[class^=comp-lst][class*=_hyphen] { padding-left: 1.1rem; font-size: 1.1rem; line-height: 1.6rem; }
+  h4[class^=comp-lst][class*=_hyphen]:before, h5[class^=comp-lst][class*=_hyphen]:before, p[class^=comp-lst][class*=_hyphen]:before { top: 0.6rem; width: 0.5rem; height: 2px; }
+  h4[class^=comp-lst][class*=_important], h5[class^=comp-lst][class*=_important], p[class^=comp-lst][class*=_important] { padding-left: 1.2rem; font-size: 1.2rem; line-height: 1.4rem; }
+  h4[class^=comp-lst].ml1, h5[class^=comp-lst].ml1, p[class^=comp-lst].ml1 { margin-left: 0.5rem; }
+  h4[class^=comp-lst].ml2, h5[class^=comp-lst].ml2, p[class^=comp-lst].ml2 { margin-left: 1.5rem; }
+  h4[class^=comp-lst].ml3, h5[class^=comp-lst].ml3, p[class^=comp-lst].ml3 { margin-left: 1.5rem; }
+  h4[class^=comp-lst].ml4, h5[class^=comp-lst].ml4, p[class^=comp-lst].ml4 { margin-left: 2rem; }
+  h4[class^=comp-lst].ml5, h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 1rem; }
   *[class^=comp-lst][class*=_dotted] > li { padding-left: 1rem; font-size: 1.2rem; line-height: 1.6rem; }
   *[class^=comp-lst][class*=_dotted] > li:before { top: 0.5rem; width: 0.3rem; height: 0.3rem; }
   *[class^=comp-lst][class*=_dotted][class*=_small] > li { font-size: 1.1rem; padding-left: 0.8rem; line-height: 1.6rem; }
@@ -868,7 +869,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   *[class^=comm-btn][class*=_type1] { width: 100%; height: 3.5rem; line-height: 3.5rem; font-size: 1.3rem; }
   *[class^=comm-btn][class*=_type2] { width: auto; height: 3.3rem; line-height: 3.3rem; font-size: 1.2rem; }
   *[class^=comm-btn][class*=_type3] { width: auto; height: 3.3rem; line-height: 3.3rem; font-size: 1.2rem; }
-  *[class^=comm-btn][class*=_type4] { width: auto; height: 3.3rem; padding: 0 0.5rem; line-height: 3.3rem; font-size: 1.2rem; }
+  *[class^=comm-btn][class*=_type4] { width: auto; height: 3.3rem; padding: 0 1rem; line-height: 3.3rem; font-size: 1.2rem; }
   *[class^=comm-btn][class*=_prev] { width: 3rem; height: 3rem; background-size: 30% auto; }
   *[class^=comm-btn][class*=_next] { width: 3rem; height: 3rem; background-size: 30% auto; }
   *[class^=comm-btn][class*=_outlink] { width: auto; padding: 0 1rem; }

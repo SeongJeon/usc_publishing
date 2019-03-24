@@ -558,6 +558,13 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .song .song-wrap .btn-song:hover { background: #fe970e; color: #fff; }
 .song .song-wrap .btn-song:hover span { background: url(../images/usc/subpage/icon_song_on.png) no-repeat left top; }
 
+.ico-to { display: inline-block; width: 27px; height: 12px; margin: 0 5px; background: url("../../static/images/usc/subpage/icon_to.png") no-repeat 50% 50%; background-size: 100% auto; text-indent: -9999em; vertical-align: middle; }
+
+.gotoway_usc { position: relative; overflow: hidden; padding: 10px 12px 0; margin-top: 20px; border: 16px solid #efeeed; }
+.gotoway_usc .img2 { position: absolute; right: 95px; top: 50%; margin-top: -200px; }
+
+.gotoway_tbl tr > *:nth-child(4) { border-left-color: #a5a6a7 !important; }
+
 /* 분야별정보 ------------------------------------------- */
 .safe .heading-h3 { margin-bottom: 15px; }
 .safe .quote-wrap { position: relative; margin-bottom: 32px; padding: 45px 0; text-align: center; font-size: 29px; line-height: 40px; color: #39290c; }
@@ -1006,6 +1013,7 @@ MEDIA QUERY
   .song .song-wrap .btn-song { position: static; bottom: auto; right: auto; width: 9rem; height: 2.3rem; font-size: 1.2rem; line-height: 2.3rem; }
   .song .song-wrap .btn-song span { padding-left: 1.6rem; background-size: 1.2rem; background-position-y: 2px; }
   .song .song-wrap .btn-song:hover span { background-size: 1.2rem; background-position-y: 2px; }
+  .gotoway_usc .img2 { max-width: 15rem; margin-top: -10rem; right: 5rem; }
   /* 분야별정보 ------------------------------------------ */
   .safe .comp-tab { margin-bottom: 1.3rem; }
   .safe .heading-h3 { margin-bottom: .8rem; }
@@ -1112,6 +1120,10 @@ MEDIA QUERY
   .usc .guide-use .tab-contents .floor-plan .list ul:first-child { margin-left: 0; }
   .usc .guide-use .tab-contents .floor-plan .list ul + ul { margin: 12px 0 0; }
   .usc .guide-use .tab-contents .floor-plan .list ul { float: none; width: 100%; }
+  /* 의성안내 ------------------------------------------- */
+  .ico-to { position: relative; top: -2px; width: 2rem; height: 1rem; margin: 0 0.5rem; }
+  .gotoway_usc { padding: 1rem 1rem; margin-top: 1rem; border: 8px solid #efeeed; }
+  .gotoway_usc .img2 { position: static; width: 50%; max-width: 15rem; margin: -7rem 0 0 auto; }
   /* 정보공개 ------------------------------------------- */
   *[class*=inforopen-search] dt { font-size: 1.5rem; margin-bottom: 1rem; }
   *[class*=inforopen-search] dt .small { font-size: 1rem; }

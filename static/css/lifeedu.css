@@ -60,12 +60,6 @@ SUB PAGE
 
 
 /*------------------usc_part04_19--------------------------*/
-.usc_part04_19 .heading-h3 { margin-top:50px; }
-.usc_part04_19 .comp-lst_dotted { margin:7px 0 0 20px;}
-.usc_part04_19 .comp-lst_dotted p,
-.usc_part04_19 .comp-lst_dotted li{ line-height:28px;}
-.usc_part04_19 .comp-lst_important { margin-left:15px;}
-
 .usc_part04_19 .comp-iconbox_iconnone > div {width:49%;}
 .usc_part04_19 .comp-iconbox_iconnone .cardimg { display: inline-block;  vertical-align: middle;}
 .usc_part04_19 .comp-iconbox_iconnone .cont { display: inline-block; margin-left:10px;vertical-align: middle;}

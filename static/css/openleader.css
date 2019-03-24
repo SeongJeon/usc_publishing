@@ -236,6 +236,28 @@ SUB PAGE
 *[class^=comp-upport] ol > li dl .tit .tail {display:inline-block; margin-left:5px; font-size:20px; color:#f27405; font-family:'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
 *[class^=comp-upport] ol > li dl .comp-lst_hyphen {margin:8px 0 0 20px;}
 
+.comp-charter-cont {position:relative; border:30px solid #eff0f1;}
+.comp-charter-cont:before {position:absolute; left:-30px; top:-30px; display:block; content:""; width:382px; height:382px; background:url(../images/usc/subpage/bg_charter-cont_border_01.png) no-repeat}
+.comp-charter-cont:after {position:absolute; right:-30px; bottom:-30px; display:block; content:""; width:382px; height:382px; background:url(../images/usc/subpage/bg_charter-cont_border_02.png) no-repeat}
+.comp-charter-cont .inner {position:relative; margin:20px; border:3px solid #ac2633;}
+.comp-charter-cont .inner:before {position:absolute; left:-3px; top:-3px; display:block; content:""; width:27px; height:27px; background:#fff url(../images/usc/subpage/bg_charter-cont_raund.png) no-repeat}
+.comp-charter-cont .inner:after {position:absolute; right:-3px; top:-3px; display:block; content:""; width:27px; height:27px; background:#fff url(../images/usc/subpage/bg_charter-cont_raund.png) no-repeat;-ms-transform: rotate(90deg); -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+
+.comp-charter-cont .inner .cont:before {position:absolute; left:-3px; bottom:-3px; display:block; content:""; width:27px; height:27px; background:#fff url(../images/usc/subpage/bg_charter-cont_raund.png) no-repeat;-ms-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+.comp-charter-cont .inner .cont:after {position:absolute; right:-3px; bottom:-3px; display:block; content:""; width:27px; height:27px; background:#fff url(../images/usc/subpage/bg_charter-cont_raund.png) no-repeat;-ms-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.comp-charter-cont .inner .cont .surround {position:relative; margin:5px; padding:30px 24px 40px; border:1px solid #ac2633; z-index:10;}
+.comp-charter-cont .inner .cont .surround .en {display:block; text-align:center;}
+.comp-charter-cont .inner .cont .surround .en:before {display:block; content:""; width:192px; height:89px; margin:0 auto 35px auto; background:url(../images/usc/subpage/img_usclogo.png) no-repeat;}
+.comp-charter-cont .inner .cont .surround .tit {position:relative; display:block; margin:30px 0 34px; padding-bottom:35px; font-size:30px; color:#000; letter-spacing:5px; text-align:center;}
+.comp-charter-cont .inner .cont .surround .tit:after {position:absolute; left:50%; bottom:0; display:block; content:""; width:138px; height:1px; margin-left:-69px; background:#ad2634;}
+.comp-charter-cont .inner .cont .surround .tit .bold {}
+.comp-charter-cont .inner .cont .surround .tit .tail {font-style:italic;}
+.comp-charter-cont .inner .cont .surround .txt {font-size:18px; line-height:44px; color:#2a2a2a; text-align:center;}
+.comp-charter-cont .inner .cont .surround .txt .point {padding:1px; background:#ffea82;}
+.comp-charter-cont .inner .cont .surround .list {margin-top:31px; border:1px solid #cbc6c5;}
+.comp-charter-cont .inner .cont .surround .list > li {padding:10px 20px 10px 40px; border-top:1px solid #cbc6c5; color:#2a2a2a; text-indent:-20px;}
+.comp-charter-cont .inner .cont .surround .list > li:first-child {border-top:none;}
+
 
 /* 공장설립 - 공장설립지원센터 */
 .factory *[class^=comp-iconbox] {margin:40px 0 45px;}
@@ -383,6 +405,10 @@ SUB PAGE
 .effect .list-ripple > li .before:after {position:absolute; left:50%; bottom:-14px; display:block; content:""; width:0; height:0; margin-left:-12px; border-style:solid; border-width:16px 12px; border-color:#585858 transparent transparent transparent;}
 .effect .list-ripple > li .after {margin-top:7px; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:28px; font-style:italic; color:#ff4000;}
 .effect .img-area {margin-top:10px;}
+
+/* 납세자권리헌장 */
+
+
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
@@ -397,6 +423,15 @@ MEDIA QUERY
 *[class^=comp-upport] ol > li dl .tit .tail {font-size:1.2rem;}
 *[class^=comp-upport] ol > li dl .comp-lst_hyphen {margin:0.5rem 0 0 1rem;}
 
+.comp-charter-cont {border-width:1rem;}
+.comp-charter-cont:before {width:13rem; height:13rem; background-size:100%; left:-1rem; top:-1rem;}
+.comp-charter-cont:after {width:13rem; height:13rem; background-size:100%; right:-1rem; bottom:-1rem;}
+.comp-charter-cont .inner {margin:0.5rem;}
+.comp-charter-cont .inner .cont .surround {padding:1.5rem 1rem 1.5rem;}
+.comp-charter-cont .inner .cont .surround .en:before {width:6rem; height:3rem; margin:0 auto 1rem auto; background-size:100%;}
+.comp-charter-cont .inner .cont .surround .tit {margin:1rem 0; padding-bottom:1rem; font-size:1.5rem;}
+.comp-charter-cont .inner .cont .surround .tit:after {width:8rem; margin-left:-4rem;}
+.comp-charter-cont .inner .cont .surround .txt {font-size:1.2rem; line-height:2rem;}
 /* 공장설립 - 공장설립지원센터 */
 .factory *[class^=comp-iconbox] {margin:1rem 0 1.5rem;}
 .factory *[class^=comp-txt][class*=_box] {margin-top:1rem;}

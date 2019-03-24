@@ -526,22 +526,21 @@ MEDIA QUERY
 .adver .img-area > li {float:none;width:100%;height:32rem;padding:0 1rem;}
 .adver .img-area > li + li {margin:1rem 0 0 0;}
 .adver .img-area .img-inner {height:32rem;}
-.adver .img-area li.ex03,
-.adver .img-area li.ex06,
-.adver .img-area li.ex06 .img-inner {height:21rem;}
-.adver .img-area li.ex04 {height:24rem;}
+.adver .img-area li.ex03 {height:21rem;}
+.adver .img-area li.ex04 {height:27rem;}
 .adver .img-area li.ex05,
-.adver .img-area li.ex05 .img-inner {height:19rem;}
+.adver .img-area li.ex05 .img-inner {height:24rem;}
+.adver .img-area li.ex06,
+.adver .img-area li.ex06 .img-inner {height:27rem;}
 .adver .img-area li.ex03 .img-inner {height:16.5rem;}
-.adver .img-area li.ex04 .img-inner {height:20rem;}
-.adver .img-area li.ex07,
-.adver .img-area li.ex07 .img-inner {height:26rem;}
-
+.adver .img-area li.ex04 .img-inner {height:23rem;}
+.adver .img-area li.ex09,
+.adver .img-area li.ex09 .img-inner {height:20rem;}
 .adver .img-area .txt {bottom:1.5rem;font-size:1.2rem;line-height:1.5rem;}
 .adver .img-area.bg > li:first-child,
-.adver .img-area.bg > li:first-child + li {height:19rem;}
+.adver .img-area.bg > li:first-child + li {height:24rem;}
 .adver .img-area.bg li:first-child .txt,
-.adver .img-area.bg li:first-child + li .txt {padding-top:12.5rem;background-size:10rem;}
+.adver .img-area.bg li:first-child + li .txt {padding-top:17.5rem;background-size:15rem;}
 .adver .img-area .case {padding:.8rem 1rem;}
 .adver .img-area + .comp-lst_dotted,
 .adver .comp-lst_dotted + .comp-lst_important {margin-left:1rem;}

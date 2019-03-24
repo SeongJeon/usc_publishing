@@ -1168,6 +1168,25 @@ div[class^=oftoday_] {
 	.issue-wrap .comp-tbl_datatype + .comp-lst_important {margin-top:20px;}
 	.comp-txt_box {margin-bottom:30px;}
 }
+// 폐기물
+.recycle_howto_lst {
+	overflow:hidden;
+	& > li {float:left; width: 490px; height: 293px; background:#f4f8fb; border:1px solid #bbb; text-align: center;}
+	& > li:nth-child(even) {margin-left: 10px;}
+	& > li:nth-child(2) ~ li {margin-top: 10px;}
+	.name {display: block; width: 120px; margin:12px auto 0; font-size: 15px; color:#fff; line-height: 36px; border-radius: 5px; background:#96526b; font-family: $font2;}
+	.howto {display: block; margin-top: 25px; font-family: 15px; color:#1b1b1b; font-family: $font2; line-height: 	20px;}
+
+	.recycle_lst {
+		display: inline-block; margin-top: 38px;
+		&:after {display:block; clear:both; content:""}
+		li {float: left; margin-left: 15px;}
+		li:first-child {margin-left: 0}
+	}
+}
+
+
+
 
 
 
@@ -1920,9 +1939,6 @@ div[class^=oftoday_] {
 	.issue-wrap .comp-tbl_datatype + .comp-lst_important {margin-top:1rem;}
 	.comp-txt_box {margin-bottom:1.5rem;}
 }
-
-
-
 
 
 

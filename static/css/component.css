@@ -434,6 +434,8 @@ h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 20px; }
 .tbl-bottom-utile:after { display: block; clear: both; content: ""; }
 .tbl-bottom-utile .l-right { float: right; color: #4b4b4b; font-size: 15px; }
 
+.tbl-zone { margin-left: 35px; margin-top: 10px; }
+
 table[class^=comp-tbl] { table-layout: fixed; }
 table[class^=comp-tbl][class*=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; border-bottom: 1px solid #d9d6d5; }
 table[class^=comp-tbl][class*=_datatype] thead th { height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #1c1c1c; }
@@ -827,6 +829,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .tbl-top-utile .l-right { font-size: 1rem; }
   .tbl-bottom-utile { margin-top: 0.6rem; }
   .tbl-bottom-utile .l-right { font-size: 1rem; }
+  .tbl-zone { margin-left: 1rem; margin-top: 1rem; }
   table[class^=comp-tbl][class*=_datatype] { border-top: 2px solid #7a7a7a; color: #787878; }
   table[class^=comp-tbl][class*=_datatype] thead th { height: 3.3rem; font-size: 1.2rem; }
   table[class^=comp-tbl][class*=_datatype] tbody th { font-size: 1.2rem; height: 3.3rem; line-height: 1.6rem; padding: 0.5rem; }

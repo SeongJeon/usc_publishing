@@ -143,7 +143,7 @@ MEDIA QUERY
 .usc_part03_02 .uscsong-btn {position: static; display: flex;}
 .usc_part03_02 .uscsong-btn a {flex:1;}
 .usc_part03_02 .uscsong-btn a:first-child { margin-right: 0.5rem;}
-.usc_part03_02 .uscsong-btn a span {font-size: 1.1rem; padding-left: 1.6rem; background-size:100% 100%;}
+.usc_part03_02 *[class^=comm-btn_type4][class$=_whiteorange] span {font-size: 1.1rem; padding-left: 1.6rem; background-size:auto 100%;}
 
 }
 @media (max-width:768px){}

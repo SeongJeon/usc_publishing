@@ -585,7 +585,6 @@ br.m {display:none}
 	// ETC BUTTON
 	&[class*=_prev] {width: 39px; height: 39px; border:1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; @include background("common/btn_prev1.png",no-repeat 50% 50%);}
 	&[class*=_next] {width: 39px; height: 39px; border:1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; @include background("common/btn_next1.png",no-repeat 50% 50%);}
-
 } 
 
 
@@ -734,6 +733,9 @@ p[class^=comp-lst] {
 	&:after {display:block; clear:both; content:""}
 	.l-right {float: right; color:#4b4b4b; font-size: 15px; }
 }
+.tbl-zone {
+	margin-left: 35px; margin-top: 10px
+}
 table[class^=comp-tbl] {
 	table-layout: fixed; 
 
@@ -785,6 +787,7 @@ table[class^=comp-tbl] {
 	.pc {display: inherit;}
 	.m {display: none;}
 }
+
 
 
 
@@ -1494,6 +1497,9 @@ p[class^=comp-lst] {
 .tbl-bottom-utile {
 	margin-top: 0.6rem;
 	.l-right {font-size: 1rem;}
+}
+.tbl-zone {
+	margin-left:1rem; margin-top:1rem
 }
 table[class^=comp-tbl] {
 	&[class*=_datatype] {

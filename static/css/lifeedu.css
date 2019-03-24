@@ -31,13 +31,21 @@ MAIN
 SUB PAGE
 ------------------------------------------------------ */
 /*------------------usc_part03_02--------------------------*/
-.usc_part03_02 .heading-h4 {margin:30px 0 10px 0;}
+.usc_part03_02 .heading-h4 {margin:40px 0 10px 0;}
 .usc_part03_02 .comp-btn-zone {margin-top:20px;}
 .usc_part03_02 .img_uscsong {border:1px solid #e7e9ea; padding:70px 0 50px 0; text-align: center;}
 
-.usc_part03_02 .uscsong-btn .btn-song span {padding-left:33px;background:url(../images/usc/subpage/icon_song_off.png) no-repeat left top;}
-.usc_part03_02 .uscsong-btn .btn-song:hover {background:#fe970e;color:#fff;}
-.usc_part03_02 .uscsong-btn .btn-song:hover span {background:url(../images/usc/subpage/icon_song_on.png) no-repeat left top;}
+
+.usc_part03_02 .uscsong-box { position: relative; padding-top:70px;}
+.usc_part03_02 .uscsong-btn { position: absolute; right:0; top:0;}
+
+.usc_part03_02 .uscsong-btn a:first-child{margin-right:20px;}
+.usc_part03_02 .uscsong-btn span {padding-left:33px;}
+.usc_part03_02 *[class^=comm-btn_type4][class$=_lightorange] span {background:url(../images/usc/subpage/icon_song_on.png) no-repeat left top;}
+.usc_part03_02 *[class^=comm-btn_type4][class$=_whiteorange] span {background:url(../images/usc/subpage/icon_song_off.png) no-repeat left top;}
+
+
+
 
 
 /*------------------usc_part03_03--------------------------*/
@@ -69,31 +77,6 @@ SUB PAGE
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
 
 
 
@@ -137,13 +120,6 @@ SUB PAGE
 .usc_part06_02 .contents-zone ul li { margin:10px 0;}
 .usc_part06_02 .btn-box { width: 421px; height:80px; padding:15px; margin:15px 0 30px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box;}
 .usc_part06_02 .btn-box button {width:202px; padding:0 6px; font-size: 15px; letter-spacing: -1px; float: right; }
-=======
->>>>>>> 175a8cd3c7a67d866fbcc7e3b6b3c5d192cee0b3
-
-
-
-
-
 
 
 
@@ -162,8 +138,12 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
+.usc_part03_02 .uscsong-box {padding-top:2rem;}
 
-
+.usc_part03_02 .uscsong-btn {position: static; display: flex;}
+.usc_part03_02 .uscsong-btn a {flex:1;}
+.usc_part03_02 .uscsong-btn a:first-child { margin-right: 0.5rem;}
+.usc_part03_02 .uscsong-btn a span {font-size: 1.1rem; padding-left: 1.6rem; background-size:100% 100%;}
 
 }
 @media (max-width:768px){}

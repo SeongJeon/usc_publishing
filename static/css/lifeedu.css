@@ -212,10 +212,15 @@ MEDIA QUERY
 
 
 .usc_part06_03 .img_site li {width:100%; margin:auto; height:auto; padding:0.5rem; border-width:2px;}
-.usc_part06_03 .img_site a {position: absolute; left:0.5rem; bottom:0.5rem;}
+.usc_part06_03 .img_site p {position: absolute; left:0.5rem; bottom:0.8rem;}
 }
+
+
+
 @media (max-width:768px){
 
+.usc_part03_02 .uscsong-btn .comm-btn_type4_whiteorange,
+.usc_part03_02 .uscsong-btn .comm-btn_type4_lightorange {padding:0 0.5rem;}
 
 
 .usc_part04_19 .comp-iconbox_iconnone > div {width:100%;}
@@ -223,6 +228,9 @@ MEDIA QUERY
 
 .usc_part04_20 .gb-1 .gm-box > div {position: static; margin:1rem auto; height:15rem; width:100%}
 .usc_part04_20 .gb-1 .gm-box div:nth-child(even) {margin-left:0;}
+
+
+
 }
 @media (max-width:321px){}
 

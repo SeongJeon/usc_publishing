@@ -80,14 +80,15 @@ SUB PAGE
 
 .usc_part04_20 .gb-2 .heading-h3,
 .usc_part04_20 .gb-3 .heading-h3,
-.usc_part04_20 .gb-4 .heading-h3 { margin-top:50px;}
+.usc_part04_20 .gb-4 .heading-h3 { margin-top:30px;}
 
 .usc_part04_20 .gb-1 .heading-h4,
 .usc_part04_20 .gb-2 .heading-h4,
-.usc_part04_20 .gb-4 .heading-h4{ margin:30px 0 0 20px;}
-.usc_part04_20 .gb-3 .heading-h4 { margin:15px 0 0 20px; }
+.usc_part04_20 .gb-3 .heading-h4,
+.usc_part04_20 .gb-4 .heading-h4 { margin:15px 0 0 20px;}
 .usc_part04_20 .gm-box:after{content: '';display: block; clear:both;}
 .usc_part04_20 .gm-box div {float: left; width:500px; height:223px; padding:40px 0 0 30px; background-color: #f5f8f8; border: 1px solid #dfdfdf; box-sizing: border-box; overflow: hidden;}
+.usc_part04_20 .gm-box span { font-size: 18px; color:#4b4b4b; font-weight: bold;}
 
 
 .usc_part04_20 .gb-3 table {margin:10px 0 30px 15px;}
@@ -99,7 +100,7 @@ SUB PAGE
 .usc_part04_20 .gm-box .gm-part4 {margin-top:10px;}
 
 .usc_part04_20 .gm-box > div {position: relative;}
-.usc_part04_20 .gm-box ul {position: relative; z-index: 1; margin-top:10px;}
+.usc_part04_20 .gm-box ul {position: relative; z-index: 1;}
 
 
 .usc_part04_20 .gm-part1 {background:url(../images/usc/subpage/img_goodmenu1.png) no-repeat 100% 100%;}

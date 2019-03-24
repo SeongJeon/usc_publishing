@@ -407,7 +407,6 @@ SUB PAGE
 .effect .img-area {margin-top:10px;}
 
 /* 노인복지 - 노인장기요양보험제도 */
-.long-care *[class^=heading][class$=-h3] {margin-top:30px;}
 .long-care *[class^=heading][class$=-h4] {margin-top:30px; margin-bottom:9px;}
 .long-care p[class^=comp-lst][class*=_important] {margin-left:-15px;}
 .long-care *[class^=comp-lst][class*=_dotted] {margin-bottom:35px;}
@@ -581,7 +580,6 @@ MEDIA QUERY
 .effect .list-ripple > li .after {font-size:1rem;}
 
 /* 노인복지 - 노인장기요양보험제도 */
-.long-care *[class^=heading][class$=-h3] {margin-top:1.5rem;}
 .long-care *[class^=heading][class$=-h4] {margin-top:2rem; margin-bottom:0.5rem;}
 .long-care *[class^=comp-lst][class*=_dotted] {margin-top:0.7rem; margin-bottom:0.5rem;}
 .long-care *[class^=comp-txt][class*=_box] {margin:1rem 0 0 1.5rem;}

@@ -93,6 +93,52 @@ SUB PAGE
 
 
 
+<<<<<<< HEAD
+
+
+
+
+/*------------------usc_part04_19--------------------------*/
+.usc_part04_19 .heading-h3 { margin-top:50px; }
+.usc_part04_19 .comp-lst_dotted { margin:7px 0 0 20px;}
+.usc_part04_19 .comp-lst_dotted p,
+.usc_part04_19 .comp-lst_dotted li{ line-height:28px;}
+.usc_part04_19 .comp-lst_important { margin-left:15px;}
+.usc_part04_19 .comp-iconbox_iconnone { vertical-align: middle;}
+.usc_part04_19 .cardimg { display: inline-block; }
+.usc_part04_19 .cont { display: inline-block; margin-left:10px; float:right;}
+.usc_part04_19 .cont .tit::before {content:''; display: inline-block; background:url("../images/usc/subpage/img_usclogo.png") no-repeat left center; width:69px; height: 32px; background-size: cover; margin-right:10px;vertical-align: middle;}
+
+.usc_part04_19 .comp-txt_box { margin-left:30px; padding:15px 20px;}
+
+
+
+
+
+
+/*------------------usc_part04_20--------------------------*/
+.usc_part04_20 .comp-lst_dotted { margin:7px 0 0 20px;}
+.usc_part04_20 .gm_box:after{content: '';display: block; clear:both;}
+.usc_part04_20 .gm_box ul{float: left; width:500px; height:223px; background: #f5f8f8; border: 1px solid #dfdfdf; box-sizing: border-box; overflow: hidden;}
+
+/*.usc_part04_20 .gm_box1:after{content:''; display:inline-block; background:url(../images/usc/subpage/img_goodmenu1.png)no-repeat right bottom; background-size: cover;width:650px; height:262px;}
+.usc_part04_20 .gm_box2:after{content:''; display:inline-block; background:url(../images/usc/subpage/img_goodmenu2.png)no-repeat right bottom; background-size: cover;width:500px; height:223px;}
+.usc_part04_20 .gm_box3:after{content:''; display:inline-block; background:url(../images/usc/subpage/img_goodmenu3.png)no-repeat right bottom; background-size: cover;width:500px; height:223px;}
+.usc_part04_20 .gm_box4:after{content:''; display:inline-block; background:url(../images/usc/subpage/img_goodmenu4.png)no-repeat right bottom; background-size: cover;width:500px; height:223px;}
+*/
+
+
+
+
+
+
+
+/*------------------usc_part06_02--------------------------*/
+.usc_part06_02 .contents-zone ul li { margin:10px 0;}
+.usc_part06_02 .btn-box { width: 421px; height:80px; padding:15px; margin:15px 0 30px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box;}
+.usc_part06_02 .btn-box button {width:202px; padding:0 6px; font-size: 15px; letter-spacing: -1px; float: right; }
+=======
+>>>>>>> 175a8cd3c7a67d866fbcc7e3b6b3c5d192cee0b3
 
 
 

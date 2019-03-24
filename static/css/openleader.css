@@ -432,6 +432,8 @@ MEDIA QUERY
 .comp-charter-cont .inner .cont .surround .tit {margin:1rem 0; padding-bottom:1rem; font-size:1.5rem;}
 .comp-charter-cont .inner .cont .surround .tit:after {width:8rem; margin-left:-4rem;}
 .comp-charter-cont .inner .cont .surround .txt {font-size:1.2rem; line-height:2rem;}
+.comp-charter-cont .inner .cont .surround .list {margin-top:1rem;}
+.comp-charter-cont .inner .cont .surround .list > li {padding:0.5rem 1rem 0.5rem 2.3rem; text-indent:-1.1rem;}
 /* 공장설립 - 공장설립지원센터 */
 .factory *[class^=comp-iconbox] {margin:1rem 0 1.5rem;}
 .factory *[class^=comp-txt][class*=_box] {margin-top:1rem;}

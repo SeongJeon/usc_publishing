@@ -54,28 +54,6 @@ SUB PAGE
 
 
 
-/*------------------usc_part06_02--------------------------*/
-.usc_part06_02 .contents-zone ul li { margin:10px 0;}
-.usc_part06_02 .btn-box { width: 421px; height:80px; padding:15px; margin:15px 0 30px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box;}
-.usc_part06_02 .btn-box button {width:202px; padding:0 6px; font-size: 15px; letter-spacing: -1px; float: right; }
-
-
-.usc_part06_02 .viewer1:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer1.gif") no-repeat center center;}
-.usc_part06_02 .viewer2:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer2.png") no-repeat center center;}
-.usc_part06_02 .viewer3:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer3.png") no-repeat center center;}
-.usc_part06_02 .viewer4:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer4.png") no-repeat center center;}
-.usc_part06_02 .viewer5:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer5.png") no-repeat center center;}
-.usc_part06_02 .viewer6:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer6.gif") no-repeat center center;}
-.usc_part06_02 .viewer7:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer7.png") no-repeat center center;}
-.usc_part06_02 .viewer8:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer8.png") no-repeat center center;}
-
-
-/*------------------usc_part06_03 --------------------------*/
-.usc_part06_03 .comp-lst_dotted {margin-top:7px;}
-.usc_part06_03 .heading-h4 {margin-top:20px;}
-.usc_part06_03 .comp-lst_hyphen {margin-top:10px; margin-left:70px;}
-
-
 
 
 
@@ -118,8 +96,36 @@ SUB PAGE
 
 /*------------------usc_part06_02--------------------------*/
 .usc_part06_02 .contents-zone ul li { margin:10px 0;}
-.usc_part06_02 .btn-box { width: 421px; height:80px; padding:15px; margin:15px 0 30px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box;}
-.usc_part06_02 .btn-box button {width:202px; padding:0 6px; font-size: 15px; letter-spacing: -1px; float: right; }
+.usc_part06_02 .contents-zone ul li:first-child { margin:0;}
+.usc_part06_02 .btn-box { width: 421px; height:80px; padding:15px; margin:15px 0 40px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; vertical-align: middle; box-sizing: border-box;}
+.usc_part06_02 .btn-box a {width:202px; padding:0 6px; letter-spacing: -1px; float: right; }
+
+.usc_part06_02 .viewer1:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer1.gif") no-repeat center center;}
+.usc_part06_02 .viewer2:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer2.png") no-repeat center center;}
+.usc_part06_02 .viewer3:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer3.png") no-repeat center center;}
+.usc_part06_02 .viewer4:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer4.png") no-repeat center center;}
+.usc_part06_02 .viewer5:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer5.png") no-repeat center center;}
+.usc_part06_02 .viewer6:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer6.gif") no-repeat center center;}
+.usc_part06_02 .viewer7:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer7.png") no-repeat center center;}
+.usc_part06_02 .viewer8:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer8.png") no-repeat center center;}
+
+
+
+
+
+
+
+
+/*------------------usc_part06_03 --------------------------*/
+.usc_part06_03 .comp-lst_dotted {margin-top:7px;}
+.usc_part06_03 .heading-h4 {margin-top:20px;}
+.usc_part06_03 .comp-lst_hyphen { margin-left:70px;}
+
+.usc_part06_03 .img_site li {position: relative; width:946px; height:580px; margin-left:70px; border:2px solid #e7e8e9; box-sizing: border-box;}
+.usc_part06_03 .img_site img {background-color: #f1f3f4; margin:9px;} 
+.usc_part06_03 .img_site a {position: absolute; left:0; bottom:0;}
+
+
 
 
 
@@ -145,6 +151,16 @@ MEDIA QUERY
 .usc_part03_02 .uscsong-btn a:first-child {margin-right: 0.5rem}
 .usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_whiteorange] span {font-size: 1.1rem; padding-left:2rem; background-size:auto 100%;}
 .usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_lightorange] span {font-size: 1.1rem; padding-left: 2rem; background-size:auto 100%;}
+
+
+
+
+
+
+
+.usc_part06_02 .btn-box { display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; width:100%; margin:1rem;}
+.usc_part06_02 .btn-box button {-webkit-flex:1; flex:1;}
+
 
 }
 @media (max-width:768px){}

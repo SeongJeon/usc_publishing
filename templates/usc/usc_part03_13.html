@@ -28,7 +28,7 @@
 
 		<!-- CONTAINER -->
 		<main>
-			<div id="container" class="cityhall"><!-- D: 페이지 특정의 클래스 -->
+			<div id="container" class="cityhall usc_part03_13"><!-- D: 페이지 특정의 클래스 -->
 				<!-- 상단 비주얼 -->
 				<div class="top-visual-zone">
 					<p>군민과 함께하는 창조적인 희망군정 활력넘치는 희망의성! 살기좋은 의성으로 오세요~!</p>
@@ -277,33 +277,76 @@
 							<!-- 개별 컨텐츠 영역 -->
 							<div class="contents-zone">
 								<!-- D : 해당 부분에 서브페이지 작업 -->
-
 								<ul class="comp-tab" role="tablist" data-js="false">
-									<li role="presentation"><a href="#" role="tab"><span>1층</span></a></li>
-									<li role="presentation"><a href="#" role="tab"><span>2층</span></a></li>
-									<li role="presentation"><a href="#" role="tab" aria-selected="true"><span>3층</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
-									<li role="presentation"><a href="#" role="tab"><span>임시청사</span></a></li>
+									<li role="presentation"><a href="#" role="tab" aria-controls="tab-content1"><span>1층</span></a></li>
+									<li role="presentation"><a href="#" role="tab" aria-controls="tab-content2"><span>2층</span></a></li>
+									<li role="presentation"><a href="#" role="tab" aria-controls="tab-content3" aria-selected="true"><span>3층</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
+									<li role="presentation"><a href="#" role="tab" aria-controls="tab-content4"><span>임시청사</span></a></li>
 								</ul>
-
-								<h3 class="heading-h3">1층 청사안내</h3>
-								<ul>
-									① 종합민원실, ② 종합민원실(주택,건축,개발민원,복합민원), ③ 지역재생과, ④ 상하수도사업소, ⑤⑥ 사회복지과 , ⑦ 당직실
-								</ul>
-								<h3 class="heading-h3">2층 청사안내</h3>
-								<ul>
-									① 회의실, ② 국장실(자치행정국, 도시환경국), 총무과(통신관제, 새마을), ③ 재무과, ④ 총무과, ⑤ 부군수실, ⑥ 대기실, ⑦ 군수실, ⑧ 비서실, ⑨ 교환실, ⑩ 영상회의실, ⑪ 기획담당관, ⑫ 상설감사장, ⑬ 체력단련실, ⑭ 행정자료실, 발간실, ⑮ 기획담당관(예산계)
-								</ul>
-								<h3 class="heading-h3">3층 청사안내</h3>
-								<ul>
-										①② 홍보소통담당관, 산림과, ③ 전산실, ④ 환경과, ⑤⑥ 시범마을조성과, ⑦ 공무원노동조합, ⑧⑨ 안전건설과, 
-⑩ 통신실, ⑪ 지방세전산실, ⑫ 재난상황실
-								</ul>
-								<h3 class="heading-h3">임시청사</h3>
-								<ul>
-										① 경제투자과, ② 일자리창출과, ③ 국장실(관광경제국), ④ 관광문화과, ⑤원예과수과, ⑥ 농축산과
-								</ul>
-
-
+								<div id="tab-contents1">
+									<h3 class="heading-h3">1층 청사안내</h3>
+									<div class="floor-plan mt15">
+										<div class="img"><img src="../../static/images/usc/subpage/img_floor.gif" alt="1층 청사 평면도"></div>
+										<div class="list">
+											<ul>
+												<li><span class="num">01</span><span class="txt">종합민원실</span></li>
+												<li><span class="num">02</span><span class="txt">종합민원실(주택, 건축, 개발민원, 복합민원)</span></li>
+												<li><span class="num">03</span><span class="txt">지역재생과</span></li>
+												<li><span class="num">04</span><span class="txt">상하수도사업소</span></li>
+											</ul>
+											<ul>
+												<li><span class="num">05</span><span class="txt">사회복지과</span></li>
+												<li><span class="num">06</span><span class="txt">사회복지과</span></li>
+												<li><span class="num">07</span><span class="txt">당직실</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div id="tab-contents2" style="display:none">
+									<h3 class="heading-h3">2층 청사안내</h3>
+									<ul>
+										<li><span class="num">1</span><span class="txt">회의실</span></li>
+										<li><span class="num">2</span><span class="txt">국장실(자치행정국, 도시환경국), 총무과(통신관제, 새마을)</span></li>
+										<li><span class="num">3</span><span class="txt">재무과</span></li>
+										<li><span class="num">4</span><span class="txt">총무과</span></li>
+										<li><span class="num">5</span><span class="txt">부군수실</span></li>
+										<li><span class="num">6</span><span class="txt">대기실</span></li>
+										<li><span class="num">7</span><span class="txt">군수실</span></li>
+										<li><span class="num">8</span><span class="txt">비서실</span></li>
+										<li><span class="num">9</span><span class="txt">교환실</span></li>
+										<li><span class="num">10</span><span class="txt">영상회의실</span></li>
+										<li><span class="num">11</span><span class="txt">기획담당관</span></li>
+										<li><span class="num">12</span><span class="txt">상설감사장</span></li>
+										<li><span class="num">13</span><span class="txt">체력단련실</span></li>
+										<li><span class="num">14</span><span class="txt">행정자료실, 발간실</span></li>
+										<li><span class="num">15</span><span class="txt">기획담당관(예산계)</span></li>
+									</ul>
+								</div>
+								<div id="tab-contents3" style="display:none">
+									<h3 class="heading-h3">3층 청사안내</h3>
+									<ul>
+										<li><span class="num">1</span><span class="txt">홍보소통담당관, 산림과</span></li>
+										<li><span class="num">2</span><span class="txt">전산실</span></li>
+										<li><span class="num">3</span><span class="txt">환경과</span></li>
+										<li><span class="num">4</span><span class="txt">시범마을조성과</span></li>
+										<li><span class="num">5</span><span class="txt">공무원노동조합</span></li>
+										<li><span class="num">6</span><span class="txt">안전건설과</span></li>
+										<li><span class="num">7</span><span class="txt">통신실</span></li>
+										<li><span class="num">8</span><span class="txt">지방세전산실</span></li>
+										<li><span class="num">9</span><span class="txt">재난상황실</span></li>
+									</ul>
+								</div>
+								<div id="tab-contents4" style="display:none">
+									<h3 class="heading-h3">임시청사</h3>
+									<ul>
+										<li><span class="num">1</span><span class="txt">경제투자과</span></li>
+										<li><span class="num">2</span><span class="txt">일자리창출과</span></li>
+										<li><span class="num">3</span><span class="txt">국장실(관광경제국)</span></li>
+										<li><span class="num">4</span><span class="txt">관광문화과</span></li>
+										<li><span class="num">5</span><span class="txt">원예과수과</span></li>
+										<li><span class="num">6</span><span class="txt">농축산과</span></li>
+									</ul>
+								</div>
 								<!-- //D : 해당 부분에 서브페이지 작업 -->
 							</div>
 							<!--// 개별 컨텐츠 영역 -->

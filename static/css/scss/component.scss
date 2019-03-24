@@ -586,6 +586,14 @@ br.m {display:none}
 		width:auto; padding:0 14px; background:#eff0f1; color:#787878;
 		&:before {display: inline-block; content: ""; width:18px; height:16px; @include background("common/icon_filefind.png",no-repeat 50% 50%); background-size: 100% auto; margin-right: 7px; vertical-align: middle;}
 	}
+	&[class*=_writer]{
+		width:105px; padding:0; background:#f15922; color:#fff;
+		&:before {display: inline-block; content: ""; width:16px; height:17px; @include background("common/icon_writer.png",no-repeat 50% 50%); background-size: 100% auto; margin-right: 10px; vertical-align: middle;}
+	}
+	&[class*=_golist]{
+		width:105px; padding:0; background:#7a7a7a; color:#fff;
+		&:before {display: inline-block; content: ""; width:16px; height:18px; @include background("common/icon_gotolist.png",no-repeat 50% 50%); background-size: 100% auto; margin-right: 10px; vertical-align: middle;}
+	}
 
 
 	// ETC BUTTON
@@ -1609,7 +1617,7 @@ table[class^=comp-tbl] {
 	*:first-child:nth-last-of-type(2),
 	*:first-child:nth-last-of-type(2) ~ * {-webkit-flex:1; flex:1;}
 	& > * + * {margin-left: 0.5rem;}
-	.l-right {margin-top: 0;}
+	.l-right {margin-top: 0; -webkit-flex:1; flex:1;}
 
 	&.row {
 		display:block; 
@@ -1638,6 +1646,8 @@ table[class^=comp-tbl] {
 	&[class*=_prev] {width:3rem; height:3rem; background-size: 30% auto;}
 	&[class*=_next] {width:3rem; height:3rem; background-size: 30% auto;}
 	&[class*=_outlink] {width:auto; padding:0 1rem;}
+	&[class*=_writer] {width:49%;}
+	&[class*=_golist] {width:49%;}
 }
 
 
@@ -1696,7 +1706,14 @@ input.w_password {width:100%;}
 	select {width:100%; margin-left:0; margin-top: 0.5rem;}
 }
 .w_time {
-	input {widows: 180px;}
+	input[type='text'] {width: 80%}
+	input[type='text']:nth-of-type(2) {margin-top: 0.5rem;}
+	.txt:nth-of-type(2) {margin-top: 0.5rem;}
+	.comp-radio {margin-left: 0; margin-top: 0.5rem;}
+}
+.w_term {
+	input[type='text'] {width:80%}
+	input[type='text']:nth-of-type(2) {margin-top: 0.5rem;}
 }
 
 
@@ -1818,6 +1835,12 @@ div[class^=comp-public-area] {
 	}
 	p {display:table-cell; margin:0; padding-left:1.5rem; font-size:1.2rem; vertical-align: middle;}
 }
+/* UI - 파일첨부 */
+.comp-filefind {
+	button {float: none; }
+	.file-upload {margin-left:0; margin-top: 1rem; font-size:1.2rem; float:none; line-height:1.8rem;}
+}
+
 
 
 

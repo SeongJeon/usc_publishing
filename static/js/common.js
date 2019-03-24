@@ -400,7 +400,18 @@ $(document).on("click", "body", function(e){
 	}
 })
 
-
+// FILE UPLOAD
+$(document).on("change", ".comp-filefind input:file", function(){
+	var path = $(this).val(), $this = $(this).closest(".comp-filefind");
+	if($this.find(".file-upload").hasClass("ipt-type1")) {
+		$this.find(".file-upload").val(path);
+	}else {
+		$this.find(".file-upload").text(path);
+	}
+})
+$(document).on("click", ".comp-filefind .comp-btn_filefind", function(){
+	$(this).closest(".comp-filefind").find("input:file").trigger("click");
+})
 
 
 //-------------------------------------------------------------------------

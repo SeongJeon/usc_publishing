@@ -369,6 +369,10 @@ br.t, br.m { display: none; }
 *[class^=comm-btn][class*=_pdfdownload] em { display: inline-block; width: 23px; height: 23px; background: url("../../static/images/common/icon_pdf.png") no-repeat 50% 50%; background-size: 100% auto; text-indent: -999em; margin-right: 7px; vertical-align: middle; position: relative; top: -1px; }
 *[class^=comm-btn][class*=_filefind] { width: auto; padding: 0 14px; background: #eff0f1; color: #787878; }
 *[class^=comm-btn][class*=_filefind]:before { display: inline-block; content: ""; width: 18px; height: 16px; background: url("../../static/images/common/icon_filefind.png") no-repeat 50% 50%; background-size: 100% auto; margin-right: 7px; vertical-align: middle; }
+*[class^=comm-btn][class*=_writer] { width: 105px; padding: 0; background: #f15922; color: #fff; }
+*[class^=comm-btn][class*=_writer]:before { display: inline-block; content: ""; width: 16px; height: 17px; background: url("../../static/images/common/icon_writer.png") no-repeat 50% 50%; background-size: 100% auto; margin-right: 10px; vertical-align: middle; }
+*[class^=comm-btn][class*=_golist] { width: 105px; padding: 0; background: #7a7a7a; color: #fff; }
+*[class^=comm-btn][class*=_golist]:before { display: inline-block; content: ""; width: 16px; height: 18px; background: url("../../static/images/common/icon_gotolist.png") no-repeat 50% 50%; background-size: 100% auto; margin-right: 10px; vertical-align: middle; }
 *[class^=comm-btn][class*=_prev] { width: 39px; height: 39px; border: 1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; background: url("../../static/images/common/btn_prev1.png") no-repeat 50% 50%; }
 *[class^=comm-btn][class*=_next] { width: 39px; height: 39px; border: 1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; background: url("../../static/images/common/btn_next1.png") no-repeat 50% 50%; }
 
@@ -885,7 +889,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .comp-btn-zone { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; margin-top: 3rem; }
   .comp-btn-zone *:first-child:nth-last-of-type(2), .comp-btn-zone *:first-child:nth-last-of-type(2) ~ * { -webkit-flex: 1; flex: 1; }
   .comp-btn-zone > * + * { margin-left: 0.5rem; }
-  .comp-btn-zone .l-right { margin-top: 0; }
+  .comp-btn-zone .l-right { margin-top: 0; -webkit-flex: 1; flex: 1; }
   .comp-btn-zone.row { display: block; }
   .comp-btn-zone.row > * { flex: none; float: none; width: 100% !important; }
   .comp-btn-zone.row > * + * { margin-left: 0; margin-top: 0.5rem; }
@@ -898,6 +902,8 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   *[class^=comm-btn][class*=_prev] { width: 3rem; height: 3rem; background-size: 30% auto; }
   *[class^=comm-btn][class*=_next] { width: 3rem; height: 3rem; background-size: 30% auto; }
   *[class^=comm-btn][class*=_outlink] { width: auto; padding: 0 1rem; }
+  *[class^=comm-btn][class*=_writer] { width: 49%; }
+  *[class^=comm-btn][class*=_golist] { width: 49%; }
   /* INPUT */
   select[class^=comp-select] { padding: 0 1rem; height: 3.3rem; font-size: 1.2rem; background-size: auto 100%; }
   select[class^=comp-select]:focus { background-size: auto 100%; }
@@ -927,7 +933,12 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .w_email input:nth-of-type(1) { width: 90%; }
   .w_email input:nth-of-type(2) { width: 100%; margin-top: 0.5rem; }
   .w_email select { width: 100%; margin-left: 0; margin-top: 0.5rem; }
-  .w_time input { widows: 180px; }
+  .w_time input[type='text'] { width: 80%; }
+  .w_time input[type='text']:nth-of-type(2) { margin-top: 0.5rem; }
+  .w_time .txt:nth-of-type(2) { margin-top: 0.5rem; }
+  .w_time .comp-radio { margin-left: 0; margin-top: 0.5rem; }
+  .w_term input[type='text'] { width: 80%; }
+  .w_term input[type='text']:nth-of-type(2) { margin-top: 0.5rem; }
   /* UI - PAGING */
   *[class^=comp-paging] { margin-top: 4rem; }
   *[class^=comp-paging] > div { padding: 0 6rem; }
@@ -984,7 +995,10 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   div[class^=comp-public-area] { margin-bottom: .9rem; padding: 1rem 1.4rem; height: 5rem; display: table; width: 100%; }
   div[class^=comp-public-area] .img-area { display: table-cell; margin: 0; vertical-align: middle; width: 6rem; }
   div[class^=comp-public-area] .img-area img { width: 100%; }
-  div[class^=comp-public-area] p { display: table-cell; margin: 0; padding-left: 1.5rem; font-size: 1.2rem; vertical-align: middle; } }
+  div[class^=comp-public-area] p { display: table-cell; margin: 0; padding-left: 1.5rem; font-size: 1.2rem; vertical-align: middle; }
+  /* UI - 파일첨부 */
+  .comp-filefind button { float: none; }
+  .comp-filefind .file-upload { margin-left: 0; margin-top: 1rem; font-size: 1.2rem; float: none; line-height: 1.8rem; } }
 @media (max-width: 360px) { #gnb .gnb h3 a { font-size: 1.2rem; } }
 @media (max-width: 321px) { #gnb .gnb h3 a { font-size: 1.1rem; }
   #container .breadcrumb-zone .breadcrumb > li > a { padding-right: 1.5rem; }

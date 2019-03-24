@@ -352,8 +352,6 @@ SUB PAGE
 .airport .procedure ol > li .date {display:block; padding:10px 0; font-size:18px; color:#2e2e2e;}
 .airport .procedure ol > li .txt {display:block; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; line-height:24px; color:#2e2e2e;}
 .airport .procedure .goal {float:right; width:275px; padding:230px 0 0; background:url(../images/usc/subpage/bg_procedure.png) no-repeat center 58px; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:26px; color:#ff4000; text-align:center;}
-
-.airport .comp-txt_box_center {padding:20px; background:#f5f8f8; border:1px solid #dfdfdf; font-size:20px; color:#39290c; text-align:center;}
 .airport .img-area {margin:10px 0 30px; font-size:0;}
 .airport .list-situation {margin-top:20px; padding:50px 0 30px; background:#fefefe; border:1px solid #dcdcdc; text-align:center;}
 .airport .list-situation ul {display:inline-block;}
@@ -501,7 +499,6 @@ MEDIA QUERY
 .airport .procedure ol > li .txt {display:inline-block; font-size:1.3rem; line-height:1;}
 .airport .procedure .goal {float:none; width:auto; font-size:1.3rem;}
 
-.airport .comp-txt_box_center {padding:1rem;}
 .airport .img-area {margin:1rem 0 1.5rem;}
 .airport .list-situation {margin-top:1.5rem; padding:3rem 0 2rem;}
 .airport .list-situation ul > li {margin-left:2rem;}

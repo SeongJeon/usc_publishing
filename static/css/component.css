@@ -367,6 +367,8 @@ br.t, br.m { display: none; }
 *[class^=comm-btn][class*=_outlink]:after { display: inline-block; vertical-align: middle; content: ""; width: 19px; height: 19px; background: url("../../static/images/common/icon_outlnk.png") no-repeat 50% 50%; margin-left: 10px; }
 *[class^=comm-btn][class*=_pdfdownload] { width: auto; padding: 0 10px; }
 *[class^=comm-btn][class*=_pdfdownload] em { display: inline-block; width: 23px; height: 23px; background: url("../../static/images/common/icon_pdf.png") no-repeat 50% 50%; background-size: 100% auto; text-indent: -999em; margin-right: 7px; vertical-align: middle; position: relative; top: -1px; }
+*[class^=comm-btn][class*=_filefind] { width: auto; padding: 0 14px; background: #eff0f1; color: #787878; }
+*[class^=comm-btn][class*=_filefind]:before { display: inline-block; content: ""; width: 18px; height: 16px; background: url("../../static/images/common/icon_filefind.png") no-repeat 50% 50%; background-size: 100% auto; margin-right: 7px; vertical-align: middle; }
 *[class^=comm-btn][class*=_prev] { width: 39px; height: 39px; border: 1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; background: url("../../static/images/common/btn_prev1.png") no-repeat 50% 50%; }
 *[class^=comm-btn][class*=_next] { width: 39px; height: 39px; border: 1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; background: url("../../static/images/common/btn_next1.png") no-repeat 50% 50%; }
 
@@ -601,6 +603,12 @@ input.w_password { width: 135px; }
 div[class^=comp-public-area] { margin-bottom: 18px; padding: 20px 28px; background: #f5f8f8; border: 1px solid #dfdfdf; }
 div[class^=comp-public-area] .img-area { display: inline-block; margin: 0 30px 0 0; text-align: left; }
 div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-size: 20px; vertical-align: top; color: #39290c; }
+
+/* UI - 파일첨부 */
+.comp-filefind { position: relative; overflow: hidden; }
+.comp-filefind input[type=file] { position: absolute; left: 0; top: 0; width: 1px; height: 1px; }
+.comp-filefind button { float: left; position: relative; z-index: 1; }
+.comp-filefind .file-upload { margin-left: 10px; font-size: 16px; color: #787878; float: left; line-height: 35px; }
 
 /* LAYER */
 #layer { display: block; position: fixed; top: 50%; left: 50%; z-index: 1001; }

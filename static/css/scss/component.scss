@@ -582,6 +582,10 @@ br.m {display:none}
 		width:auto; padding:0 10px;
 		& em {display: inline-block; width:23px; height: 23px; @include background("common/icon_pdf.png",no-repeat 50% 50%); background-size: 100% auto;text-indent: -999em; margin-right: 7px; vertical-align: middle; position: relative; top:-1px;}
 	}
+	&[class*=_filefind]{
+		width:auto; padding:0 14px; background:#eff0f1; color:#787878;
+		&:before {display: inline-block; content: ""; width:18px; height:16px; @include background("common/icon_filefind.png",no-repeat 50% 50%); background-size: 100% auto; margin-right: 7px; vertical-align: middle;}
+	}
 
 
 	// ETC BUTTON
@@ -1013,7 +1017,13 @@ div[class^=comp-public-area] {
 	.img-area {display:inline-block;margin:0 30px 0 0;text-align:left;}
 	p {display:inline-block;margin-top:17px;font-size:20px;vertical-align:top;color:#39290c;}
 }
-
+/* UI - 파일첨부 */
+.comp-filefind {
+	position: relative; overflow:hidden;
+	input[type=file] {position: absolute; left:0; top:0; width: 1px; height: 1px;}
+	button {float: left; position: relative; z-index: 1;}
+	.file-upload {margin-left: 10px;font-size: 16px; color:#787878; float: left; line-height: 35px;}
+}
 
 
 

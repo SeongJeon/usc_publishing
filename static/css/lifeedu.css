@@ -44,6 +44,9 @@ SUB PAGE
 .usc_part03_02 *[class^=comm-btn_type4][class$=_whiteorange] span {background:url(../images/usc/subpage/icon_song_off.png) no-repeat left top;}
 
 
+.usc_part03_02 .uscsong_lyc li:fisrt-child .heading-h4 {margin:35px 0 10px 0;}
+.usc_part03_02 .uscsong_lyc li:nth-child(2) .heading-h4 {margin:15px 0 10px 0;}
+.usc_part03_02 .uscsong_lyc li:nth-child(3) .heading-h4 {margin:15px 0 10px 0;}
 
 
 

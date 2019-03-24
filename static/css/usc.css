@@ -662,6 +662,50 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .recycle_howto_lst .recycle_lst li:first-child:nth-last-of-type(3) ~ li { margin-left: 10px; }
 .recycle_howto_lst .recycle_lst li:first-child { margin-left: 0; }
 
+/* 열린군정 ------------------------------------------- */
+.board-event .contents-zone { position: relative; }
+.board-event *[class^=comp-tab] { width: 300px; position: absolute; right: 0; top: 25px; z-index: 1; margin-bottom: 0; }
+.board-event *[class^=comp-tab] a { line-height: 37px; background: #fff; }
+.board-event div[class^=oftoday_][class*=_navigation] { position: absolute; left: 0; top: 0; margin-top: 0; }
+.board-event .tab-cont { position: relative; padding-top: 60px; }
+.board-event #tabcont1 .flag-lst { margin-bottom: 16px; }
+.board-event #tabcont1 .flag-lst:after { display: inline-block; clear: both; content: ""; }
+.board-event #tabcont1 .flag-lst li { float: left; color: #1c1c1c; font-size: 16px; margin-left: 12px; }
+.board-event #tabcont1 .flag-lst li:first-child { margin-left: 0; }
+.board-event #tabcont1 .flag { display: inline-block; color: #fff; width: 22px; height: 22px; margin-right: 4px; border-radius: 4px; text-align: center; font-size: 16px; line-height: 22px; }
+.board-event #tabcont1 .flag.refresh { background: #19bb8f; }
+.board-event #tabcont1 .flag.event { background: #1952bb; }
+.board-event #tabcont1 .flag.movie { background: #7b30cf; }
+.board-event #tabcont1 .flag.culture { background: #cf3064; }
+.board-event #tabcont1 .calander_tbl { border-top: 2px solid #7a7a7a; }
+.board-event #tabcont1 .calander_tbl th { height: 49px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; text-align: center; color: #444; background: #f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; }
+.board-event #tabcont1 .calander_tbl th:first-child { color: #ea0909; border-left: 0; }
+.board-event #tabcont1 .calander_tbl th:last-child { color: #1948cd; }
+.board-event #tabcont1 .calander_tbl td { height: 150px; padding: 10px 4px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; color: #303030; font-size: 18px; vertical-align: top; box-sizing: border-box; }
+.board-event #tabcont1 .calander_tbl td:first-child { color: #ea0909; border-left: 0; }
+.board-event #tabcont1 .calander_tbl td:last-child { color: #1948cd; }
+.board-event #tabcont1 .calander_tbl td.today { background: #ffe8ba; }
+.board-event #tabcont1 .calander_tbl .lst { font-size: 14px; color: #1c1c1c; text-align: left; line-height: 20px; }
+.board-event #tabcont1 .calander_tbl .lst .flag { position: absolute; left: 6px; top: 4px; font-size: 14px; line-height: 20px; width: 20px; height: 20px; margin-right: 0; }
+.board-event #tabcont1 .calander_tbl .lst li { position: relative; padding: 5px 2px 1px 29px; margin-top: 4px; background: #f8faec; color: #1c1c1c; }
+.board-event #tabcont1 .calander_tbl .lst li:first-child { margin-top: 10px; }
+.board-event #tabcont2 .oftoday_navigation { width: 470px; }
+.board-event #tabcont2 .calander_tbl { border-top: 2px solid #7a7a7a; }
+.board-event #tabcont2 .calander_tbl th { height: 49px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; text-align: center; color: #444; background: #f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #7a7a7a; }
+.board-event #tabcont2 .calander_tbl th:first-child { color: #ea0909; border-left: 0; }
+.board-event #tabcont2 .calander_tbl th:last-child { color: #1948cd; }
+.board-event #tabcont2 .calander_tbl td { position: relative; height: 150px; padding: 10px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; color: #787878; font-size: 16px; vertical-align: top; box-sizing: border-box; }
+.board-event #tabcont2 .calander_tbl td:first-child { border-left: 0; }
+.board-event #tabcont2 .calander_tbl .event-name { line-height: 20px; }
+.board-event #tabcont2 .calander_tbl .event-group { position: absolute; bottom: 10px; left: 10px; font-size: 15px; color: #f27405; }
+.board-event #tabcont3 .oftoday_navigation { width: 420px; }
+.board-event #tabcont3 .calander_tbl { border-top: 2px solid #7a7a7a; }
+.board-event #tabcont3 .calander_tbl th { height: 49px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; text-align: center; color: #444; background: #f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #7a7a7a; }
+.board-event #tabcont3 .calander_tbl th:first-child { border-left: 0; }
+.board-event #tabcont3 .calander_tbl td { height: 50px; padding: 6px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; color: #787878; font-size: 16px; box-sizing: border-box; text-align: center; }
+.board-event #tabcont3 .calander_tbl td:first-child { border-left: 0; }
+.board-event #tabcont3 .calander_tbl .event-title { text-align: left; }
+
 /* 기타 ------------------------------------------- */
 .banner-zone { margin-top: 20px; }
 .banner-zone ul { overflow: hidden; }
@@ -1091,6 +1135,27 @@ MEDIA QUERY
   .recycle_howto_lst .recycle_lst li { float: none; position: relative; margin-left: 0; margin-top: 1rem; width: 100%; height: 4rem; }
   .recycle_howto_lst .recycle_lst li:first-child:nth-last-of-type(3) ~ li { margin-left: 0; }
   .recycle_howto_lst .recycle_lst .img { position: absolute; left: 0; top: 0; width: 4rem; }
+  /* 열린군정 ------------------------------------------- */
+  .board-event *[class^=comp-tab] { width: 100%; position: relative; right: 0; top: 0; }
+  .board-event *[class^=comp-tab] a { line-height: 1.2rem; }
+  .board-event div[class^=oftoday_][class*=_navigation] { position: relative; margin-top: 2rem; margin-bottom: 2rem; }
+  .board-event .tab-cont { position: relative; padding-top: 0; }
+  .board-event #tabcont1 .flag-lst { margin-bottom: 1.5rem; }
+  .board-event #tabcont1 .flag-lst li { font-size: 1.2rem; margin-left: 1rem; }
+  .board-event #tabcont1 .flag { width: 2rem; height: 2rem; margin-right: 0.5rem; line-height: 2rem; font-size: 1.2rem; }
+  .board-event #tabcont1 .calander_tbl th { height: 3.5rem; font-size: 1.2rem; }
+  .board-event #tabcont1 .calander_tbl td { height: 15rem; padding: 0.5rem 0.2rem; font-size: 1.4rem; }
+  .board-event #tabcont1 .calander_tbl .lst { font-size: 1.2rem; line-height: 1.8rem; }
+  .board-event #tabcont1 .calander_tbl .lst .flag { left: 6px; top: 4px; font-size: 1.2rem; line-height: 1.6rem; width: 1.6rem; height: 1.6rem; }
+  .board-event #tabcont1 .calander_tbl .lst li { padding: 0.4rem 0.2rem 0.1rem 2.5rem; }
+  .board-event #tabcont2 .oftoday_navigation { width: 100%; }
+  .board-event #tabcont2 .calander_tbl th { height: 3.5rem; font-size: 1.2rem; }
+  .board-event #tabcont2 .calander_tbl td { height: 15rem; padding: 0.5rem; font-size: 1.2rem; }
+  .board-event #tabcont2 .calander_tbl .event-name { line-height: 1.8rem; }
+  .board-event #tabcont2 .calander_tbl .event-group { bottom: 0.5rem; left: 0.5rem; font-size: 1rem; }
+  .board-event #tabcont3 .oftoday_navigation { width: 100%; }
+  .board-event #tabcont3 .calander_tbl th { height: 3.5rem; font-size: 1.2rem; }
+  .board-event #tabcont3 .calander_tbl td { height: 3.5rem; padding: 0.5rem; font-size: 1.2rem; }
   /* 기타 ----------------------------------------------- */
   .banner-zone { margin-top: 2rem; }
   .banner-zone ul li { width: 49%; height: 14rem; margin-left: 0; }

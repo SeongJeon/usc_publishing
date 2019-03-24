@@ -1205,6 +1205,92 @@ div[class^=oftoday_] {
 
 
 
+/* 열린군정 ------------------------------------------- */
+// 행사안내
+.board-event {
+	.contents-zone {position: relative;}
+	*[class^=comp-tab] {
+		width: 300px; position: absolute; right: 0; top:25px; z-index: 1; margin-bottom: 0;
+		a {line-height: 37px; background:#fff; }
+	}
+	div[class^=oftoday_][class*=_navigation] {
+		position: absolute; left:0; top:0; margin-top: 0; 
+	}
+	.tab-cont {position: relative; padding-top: 60px; } 
+
+	#tabcont1 {
+		.flag-lst {
+			margin-bottom: 16px;
+			&:after {display:inline-block; clear:both; content:""}
+			li {float: left; color:#1c1c1c; font-size: 16px; margin-left: 12px;}
+			li:first-child {margin-left: 0;}
+		}
+		.flag {
+			display: inline-block; color:#fff; width: 22px; height: 22px; margin-right: 4px; border-radius: 4px; text-align: center; font-size: 16px; line-height: 22px; 
+			&.refresh {background:#19bb8f;}
+			&.event {background:#1952bb;}
+			&.movie {background:#7b30cf;}
+			&.culture {background:#cf3064;}
+		}
+		.calander_tbl {
+			border-top: 2px solid #7a7a7a;
+			th {
+				height: 49px; font-family: $font2; font-size: 16px; text-align: center; color:#444; background:#f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5;
+				&:first-child {color:#ea0909; border-left: 0;}
+				&:last-child {color:#1948cd;}
+			}
+			td {
+				height: 150px; padding:10px 4px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; color:#303030; 
+				font-size: 18px; vertical-align: top; box-sizing: border-box;
+				&:first-child {color:#ea0909; border-left: 0;}
+				&:last-child {color:#1948cd;}
+				&.today {background:#ffe8ba;}
+			}
+			.lst {
+				font-size: 14px; color:#1c1c1c; text-align: left; line-height: 20px;
+				.flag {position: absolute; left:6px; top:4px; font-size: 14px; line-height: 20px; width: 20px; height: 20px; margin-right: 0}
+				li {position: relative; padding:5px 2px 1px 29px; margin-top: 4px; background:#f8faec; color:#1c1c1c;}	
+				li:first-child {margin-top: 10px;}	
+			}
+		}
+	}
+	#tabcont2 {
+		.oftoday_navigation {width: 470px;}
+		.calander_tbl {
+			border-top: 2px solid #7a7a7a;
+			th {
+				height: 49px; font-family: $font2; font-size: 16px; text-align: center; color:#444; background:#f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #7a7a7a;
+				&:first-child {color:#ea0909; border-left: 0;}
+				&:last-child {color:#1948cd;}
+			}
+			td {
+				position:relative; height: 150px; padding:10px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; color:#787878; 
+				font-size: 16px; vertical-align: top; box-sizing: border-box;
+				&:first-child {border-left: 0;}
+			}
+			.event-name {line-height: 20px;}
+			.event-group {position: absolute; bottom:10px; left:10px; font-size: 15px; color:#f27405;}
+		} 
+	}
+	#tabcont3 {
+		.oftoday_navigation {width: 420px;}
+		.calander_tbl {
+			border-top: 2px solid #7a7a7a;
+			th {
+				height: 49px; font-family: $font2; font-size: 16px; text-align: center; color:#444; background:#f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #7a7a7a;
+				&:first-child {border-left: 0;}
+			}
+			td {
+				height:50px; padding:6px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; color:#787878; font-size: 16px; box-sizing: border-box; text-align: center;
+				&:first-child {border-left: 0;}
+			}
+			.event-title {text-align: left;}
+		} 
+	}
+}
+
+
+
 /* 기타 ------------------------------------------- */
 // 배너존
 .banner-zone {
@@ -1238,6 +1324,18 @@ div[class^=oftoday_] {
 		button {width:80px; margin-left: -1px;}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1979,6 +2077,59 @@ div[class^=oftoday_] {
 }
 
 
+
+
+
+
+
+
+/* 열린군정 ------------------------------------------- */
+// 행사안내
+.board-event {
+	*[class^=comp-tab] {
+		width:100%; position:relative; right: 0; top:0; 
+		a {line-height: 1.2rem; }
+	}
+	div[class^=oftoday_][class*=_navigation] {
+		position: relative; margin-top: 2rem; margin-bottom: 2rem;
+	}
+	.tab-cont {position: relative; padding-top:0; } 
+
+	#tabcont1 {
+		.flag-lst {
+			margin-bottom: 1.5rem;
+			li {font-size:1.2rem; margin-left:1rem;}
+		}
+		.flag {
+			width: 2rem; height: 2rem; margin-right:0.5rem; line-height: 2rem; font-size: 1.2rem;
+		}
+		.calander_tbl {
+			th {height: 3.5rem; font-size: 1.2rem; }
+			td {height: 15rem; padding:0.5rem 0.2rem; font-size:1.4rem; }
+			.lst {
+				font-size:1.2rem; line-height:1.8rem;
+				.flag {left:6px; top:4px; font-size:1.2rem; line-height: 1.6rem; width: 1.6rem; height: 1.6rem;}
+				li {padding:0.4rem 0.2rem 0.1rem 2.5rem; }	
+			}
+		}
+	}
+	#tabcont2 {
+		.oftoday_navigation {width:100%;}
+		.calander_tbl {
+			th {height:3.5rem; font-size:1.2rem; }
+			td {height:15rem; padding:0.5rem; font-size:1.2rem; }
+			.event-name {line-height: 1.8rem;}
+			.event-group {bottom:0.5rem; left:0.5rem; font-size:1rem;}
+		} 
+	}
+	#tabcont3 {
+		.oftoday_navigation {width:100%;}
+		.calander_tbl {
+			th {height:3.5rem; font-size:1.2rem; }
+			td {height:3.5rem; padding:0.5rem; font-size: 1.2rem; }
+		} 
+	}
+}
 
 
 

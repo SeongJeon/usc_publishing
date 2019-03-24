@@ -262,6 +262,8 @@ br.t, br.m { display: none; }
 
 .bold { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif !important; }
 
+.ebold { font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif !important; }
+
 .line { text-decoration: underline !important; }
 
 .point1 { color: #ff4000 !important; }

@@ -396,6 +396,7 @@ h4[class^=comp-lst].ml2, h5[class^=comp-lst].ml2, p[class^=comp-lst].ml2 { margi
 h4[class^=comp-lst].ml3, h5[class^=comp-lst].ml3, p[class^=comp-lst].ml3 { margin-left: 40px; }
 h4[class^=comp-lst].ml4, h5[class^=comp-lst].ml4, p[class^=comp-lst].ml4 { margin-left: 50px; }
 h4[class^=comp-lst].ml5, h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 20px; }
+h4[class^=comp-lst].ml6, h5[class^=comp-lst].ml6, p[class^=comp-lst].ml6 { margin-left: 70px; }
 
 *[class^=comp-lst][class*=_dotted] > li { position: relative; padding-left: 15px; font-size: 16px; color: #4b4b4b; line-height: 24px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 *[class^=comp-lst][class*=_dotted] > li:before { display: inline-block; position: absolute; left: 0; top: 9px; content: ""; width: 5px; height: 5px; background: #656565; }
@@ -414,6 +415,7 @@ h4[class^=comp-lst].ml5, h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margi
 *[class^=comp-lst].ml3 { margin-left: 40px; }
 *[class^=comp-lst].ml4 { margin-left: 50px; }
 *[class^=comp-lst].ml5 { margin-left: 20px; }
+*[class^=comp-lst].ml6 { margin-left: 70px; }
 
 /* TEXT */
 *[class^=comp-txt][class*=_box] { position: relative; min-height: 40px; padding: 6px 20px 6px 12px; border: 1px solid #f9e2b8; background: #fcf8e3; }
@@ -812,6 +814,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   h4[class^=comp-lst].ml3, h5[class^=comp-lst].ml3, p[class^=comp-lst].ml3 { margin-left: 1.5rem; }
   h4[class^=comp-lst].ml4, h5[class^=comp-lst].ml4, p[class^=comp-lst].ml4 { margin-left: 2rem; }
   h4[class^=comp-lst].ml5, h5[class^=comp-lst].ml5, p[class^=comp-lst].ml5 { margin-left: 1rem; }
+  h4[class^=comp-lst].ml6, h5[class^=comp-lst].ml6, p[class^=comp-lst].ml6 { margin-left: 2rem; }
   *[class^=comp-lst][class*=_dotted] > li { padding-left: 1rem; font-size: 1.2rem; line-height: 1.6rem; }
   *[class^=comp-lst][class*=_dotted] > li:before { top: 0.5rem; width: 0.3rem; height: 0.3rem; }
   *[class^=comp-lst][class*=_dotted][class*=_small] > li { font-size: 1.1rem; padding-left: 0.8rem; line-height: 1.6rem; }
@@ -824,6 +827,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   *[class^=comp-lst].ml3 { margin-left: 1.5rem; }
   *[class^=comp-lst].ml4 { margin-left: 2rem; }
   *[class^=comp-lst].ml5 { margin-left: 1rem; }
+  *[class^=comp-lst].ml6 { margin-left: 2rem; }
   /* TABLE */
   .scrollzone { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .scrollzone .scrollzoneinner { width: 900px; }

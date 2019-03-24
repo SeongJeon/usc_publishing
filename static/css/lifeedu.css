@@ -137,10 +137,6 @@ SUB PAGE
 
 
 /*------------------usc_part06_03 --------------------------*/
-.usc_part06_03 .comp-lst_dotted {margin-top:7px;}
-.usc_part06_03 .heading-h4 {margin-top:20px;}
-.usc_part06_03 .comp-lst_hyphen { margin-left:70px;}
-
 .usc_part06_03 .img_site li {position: relative; width:946px; height:580px; padding:9px 10px 9px 9px; margin-left:70px; border:3px solid #e7e8e9; box-sizing: border-box;}
 .usc_part06_03 .img_site a {position: absolute; left:9px; bottom:9px;}
 
@@ -210,7 +206,8 @@ MEDIA QUERY
 
 
 
-.usc_part06_03 .img_site li {width:100%; margin:auto; height:auto;}
+.usc_part06_03 .img_site li {width:100%; margin:auto; height:auto; padding:0.5rem; border-width:2px;}
+.usc_part06_03 .img_site a {position: absolute; left:0.5rem; bottom:0.5rem;}
 }
 @media (max-width:768px){
 

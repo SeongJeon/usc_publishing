@@ -30,53 +30,6 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-
-
-
-
-/*------------------usc_part01_01--------------------------*/
-.usc_part01_01 .btn-box {position: absolute; top:72px; right: 39px;}
-.usc_part01_01 .btn-box a {display: block; position: relative;}
-.usc_part01_01 .btn-box a:first-child {margin:0 0 4px 0;}
-
-.usc_part01_01 .btn-box *[class*=btnn] { width: 174px; height: 45px; line-height: 45px; vertical-align: middle; text-align: center; font-size: 17px; box-sizing: border-box;}
-.usc_part01_01 .comm-btn_btnn1_orange {letter-spacing: 3px;}
-.usc_part01_01 .comm-btn_btnn1_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life1.png") no-repeat center center; width:16px; height:29px; vertical-align: middle; margin-right:10px;}
-.usc_part01_01 .comm-btn_btnn2_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life2.png") no-repeat center center; width:27px; height:24px; vertical-align: middle; margin-right:10px;}
-
-
-
-
-
-
-
-
-/*------------------usc_part02_01--------------------------*/
-.usc_part02_01 .heading-h3 {margin-top:35px;}
-.usc_part02_01 .heading-h4 {margin-top:25px;}
-.usc_part02_01 .comp-lst_dotted {margin-top:7px;}
-.usc_part02_01 .comp-txt_box {margin-top:7px;}
-
-
-
-
-
-
-/*------------------usc_part03_01--------------------------*/
-.usc_part03_01 .img_internal {text-align: center;}
-.usc_part03_01 .heading-h4 {margin: 30px 0 0 0;}
-.usc_part03_01 .comp-lst_dotted {margin:10px 0 0 20px;}
-.usc_part03_01 .comp-btn-zone {display: inline-block; margin:10px 0 0 20px;}
-.usc_part03_01 .comp-txt_box {margin-top: 7px;}
-
-
-
-
-
-
-
-
-
 /*------------------usc_part03_02--------------------------*/
 .usc_part03_02 .heading-h4 {margin:30px 0 10px 0;}
 .usc_part03_02 .comp-btn-zone {margin-top:20px;}
@@ -87,23 +40,60 @@ SUB PAGE
 .usc_part03_02 .uscsong-btn .btn-song:hover span {background:url(../images/usc/subpage/icon_song_on.png) no-repeat left top;}
 
 
-
-
-
-
-
-
 /*------------------usc_part03_03--------------------------*/
 .usc_part03_03 .heading-h4 {margin-top:10px;}
 .usc_part03_03 .comp-lst_dotted {margin-top:7px;}
 
 
 
+/*------------------usc_part06_02--------------------------*/
+.usc_part06_02 .contents-zone ul li { margin:10px 0;}
+.usc_part06_02 .btn-box { width: 421px; height:80px; padding:15px; margin:15px 0 30px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box;}
+.usc_part06_02 .btn-box button {width:202px; padding:0 6px; font-size: 15px; letter-spacing: -1px; float: right; }
+
+
+.usc_part06_02 .viewer1:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer1.gif") no-repeat center center;}
+.usc_part06_02 .viewer2:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer2.png") no-repeat center center;}
+.usc_part06_02 .viewer3:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer3.png") no-repeat center center;}
+.usc_part06_02 .viewer4:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer4.png") no-repeat center center;}
+.usc_part06_02 .viewer5:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer5.png") no-repeat center center;}
+.usc_part06_02 .viewer6:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer6.gif") no-repeat center center;}
+.usc_part06_02 .viewer7:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer7.png") no-repeat center center;}
+.usc_part06_02 .viewer8:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer8.png") no-repeat center center;}
+
+
+/*------------------usc_part06_03 --------------------------*/
+.usc_part06_03 .comp-lst_dotted {margin-top:7px;}
+.usc_part06_03 .heading-h4 {margin-top:20px;}
+.usc_part06_03 .comp-lst_hyphen {margin-top:10px; margin-left:70px;}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<<<<<<< HEAD
 
 
 
@@ -147,16 +137,8 @@ SUB PAGE
 .usc_part06_02 .contents-zone ul li { margin:10px 0;}
 .usc_part06_02 .btn-box { width: 421px; height:80px; padding:15px; margin:15px 0 30px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box;}
 .usc_part06_02 .btn-box button {width:202px; padding:0 6px; font-size: 15px; letter-spacing: -1px; float: right; }
-
-
-.usc_part06_02 .viewer1:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer1.gif") no-repeat center center;}
-.usc_part06_02 .viewer2:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer2.png") no-repeat center center;}
-.usc_part06_02 .viewer3:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer3.png") no-repeat center center;}
-.usc_part06_02 .viewer4:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer4.png") no-repeat center center;}
-.usc_part06_02 .viewer5:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer5.png") no-repeat center center;}
-.usc_part06_02 .viewer6:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer6.gif") no-repeat center center;}
-.usc_part06_02 .viewer7:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer7.png") no-repeat center center;}
-.usc_part06_02 .viewer8:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer8.png") no-repeat center center;}
+=======
+>>>>>>> 175a8cd3c7a67d866fbcc7e3b6b3c5d192cee0b3
 
 
 
@@ -165,10 +147,8 @@ SUB PAGE
 
 
 
-/*------------------usc_part06_03 --------------------------*/
-.usc_part06_03 .comp-lst_dotted {margin-top:7px;}
-.usc_part06_03 .heading-h4 {margin-top:20px;}
-.usc_part06_03 .comp-lst_hyphen {margin-top:10px; margin-left:70px;}
+
+
 
 
 
@@ -182,18 +162,11 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
-.usc_part01_01 .btn-box {position: static; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; margin-top: 1rem;}
-.usc_part01_01 .btn-box *[class*=btnn] {-webkit-flex:1; flex:1;  display: inline-block; width:auto; font-size:1.2rem; line-height: 3.5rem; height: 3.5rem;}
-.usc_part01_01 .btn-box *[class*=btnn] + * {margin-left: 0.5rem}
-.usc_part01_01 .btn-box a:first-child {margin-bottom: 0}
-.usc_part01_01 .comm-btn_btnn1_orange:before {width: 1.2rem; -webkit-background-size: 100% auto; background-size: 100% auto;}
-.usc_part01_01 .comm-btn_btnn2_orange:before {width: 1.5rem; -webkit-background-size: 100% auto; background-size: 100% auto;}
 
-}
-@media (max-width:768px){
 
 
 }
+@media (max-width:768px){}
 @media (max-width:321px){}
 
 

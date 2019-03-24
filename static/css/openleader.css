@@ -408,17 +408,21 @@ SUB PAGE
 
 /* 노인복지 - 노인장기요양보험제도 */
 .long-care *[class^=heading][class$=-h3] {margin-top:30px;}
-.long-care *[class^=heading][class$=-h4] {margin-top:16px; margin-bottom:9px;}
+.long-care *[class^=heading][class$=-h4] {margin-top:30px; margin-bottom:9px;}
 .long-care p[class^=comp-lst][class*=_important] {margin-left:-15px;}
+.long-care *[class^=comp-lst][class*=_dotted] {margin-bottom:35px;}
 .long-care *[class^=comp-lst][class*=_dotted] > li,
 .long-care h5[class^=comp-lst][class*=_dotted] {margin-top:5px;}
 .long-care *[class^=comp-txt][class*=_box] {margin:15px 0 0 40px;}
+.long-care p[class^=comp-lst][class*=_hyphen] {margin-top:9px; margin-bottom:13px;}
+.long-care *[class^=heading][class$=-h4] + h5[class^=comp-lst][class*=_dotted] {margin-bottom:0;}
+.long-care p[class^=comp-lst][class*=_hyphen] + h5[class^=comp-lst][class*=_dotted] {margin-bottom:0;}
 .long-care .comp-step-area {margin:20px 0 40px 40px;}
 .long-care .comp-step-area ol {overflow:hidden;}
 .long-care .comp-step-area ol > li {width:25%;}
 .long-care .comp-step-area ol li:before {top:43px;}
 .long-care .comp-step-area ol .tit {display:table; height:110px; line-height:110px; padding:0;}
-.long-care .comp-step-area ol .tit .inner {display:table-cell; line-height:1; vertical-align:middle;}
+.long-care .comp-step-area ol .tit .inner {display:table-cell; line-height:22px; vertical-align:middle;}
 .long-care .comp-step-area ol .cont {position:static; height:auto; padding:15px 0; margin:0 18px; }
 .long-care .comp-step-area ol .cont .belong {position:static; width:100%;}
 
@@ -581,6 +585,7 @@ MEDIA QUERY
 .long-care *[class^=heading][class$=-h4] {margin-top:2rem; margin-bottom:0.5rem;}
 .long-care *[class^=comp-lst][class*=_dotted] {margin-top:0.7rem; margin-bottom:0.5rem;}
 .long-care *[class^=comp-txt][class*=_box] {margin:1rem 0 0 1.5rem;}
+.long-care p[class^=comp-lst][class*=_hyphen] {margin-top:0.5rem; margin-bottom:1rem; }
 .long-care .comp-step-area {margin:1rem 0 1.5rem 1.5rem;}
 .long-care .comp-step-area ol {border:1px solid #dfdfdf;}
 .long-care .comp-step-area ol > li {width:100%; border:none; border-top:1px solid #dfdfdf;}

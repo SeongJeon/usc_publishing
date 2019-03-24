@@ -1026,6 +1026,20 @@ div[class^=oftoday_] {
 		*[class^=comm-btn] {margin-top: 125px}
 	}
 }
+// 공공데이터정보
+.usc_part02_01 {
+	.heading-h3 {margin-top:35px;}
+	.heading-h4 {margin-top:25px;}
+	.comp-lst_dotted {margin-top:7px;}
+	.comp-txt_box {margin-top:7px;}
+}
+// 의성안내 > 국내
+.usc_part03_01 {
+	.img_internal {text-align: center;}
+	.comp-btn-zone {margin:10px 0 0 20px;}
+	.comp-txt_box {margin: 7px 20px 0; }
+}
+
 
 
 
@@ -1611,7 +1625,6 @@ div[class^=oftoday_] {
 		a[class*=comm-btn] {width:8rem; margin-left: 0.5rem;}
 	}
 }
-
 // 재정정보공개 
 *[class*=inforopen-search] {
 	&.inforopen-search3 {
@@ -1630,8 +1643,16 @@ div[class^=oftoday_] {
 		.txt {display: inline-block; width: 2%; margin:0; text-align: center;}
 	}
 }
- 
-
+// 공공데이터정보
+.usc_part02_01 {
+	.heading-h4 {margin-top: 1.5rem}
+	.heading-h3 {margin-top: 2rem}
+}
+// 의성안내 > 국내
+.usc_part03_01 {
+	.comp-txt_box {margin:0.5rem 1rem 0;}
+	.comp-btn-zone {margin:0.5rem 0 0 1rem;} 
+}
 
 
 

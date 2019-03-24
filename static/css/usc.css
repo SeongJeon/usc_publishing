@@ -522,6 +522,15 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 *[class*=inforopen-search].inforopen-search3 select { width: 250px; }
 *[class*=inforopen-search].inforopen-search3 *[class^=comm-btn] { margin-top: 125px; }
 
+.usc_part02_01 .heading-h3 { margin-top: 35px; }
+.usc_part02_01 .heading-h4 { margin-top: 25px; }
+.usc_part02_01 .comp-lst_dotted { margin-top: 7px; }
+.usc_part02_01 .comp-txt_box { margin-top: 7px; }
+
+.usc_part03_01 .img_internal { text-align: center; }
+.usc_part03_01 .comp-btn-zone { margin: 10px 0 0 20px; }
+.usc_part03_01 .comp-txt_box { margin: 7px 20px 0; }
+
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
@@ -827,7 +836,11 @@ MEDIA QUERY
   *[class*=inforopen-search].inforopen-search3 .block:nth-of-type(2) ~ .block .label { height: auto; }
   *[class*=inforopen-search].inforopen-search3 *[class^=comm-btn] { margin-top: 0; }
   *[class*=inforopen-search].inforopen-search3 input { width: 40%; }
-  *[class*=inforopen-search].inforopen-search3 .txt { display: inline-block; width: 2%; margin: 0; text-align: center; } }
+  *[class*=inforopen-search].inforopen-search3 .txt { display: inline-block; width: 2%; margin: 0; text-align: center; }
+  .usc_part02_01 .heading-h4 { margin-top: 1.5rem; }
+  .usc_part02_01 .heading-h3 { margin-top: 2rem; }
+  .usc_part03_01 .comp-txt_box { margin: 0.5rem 1rem 0; }
+  .usc_part03_01 .comp-btn-zone { margin: 0.5rem 0 0 1rem; } }
 @media (max-width: 768px) { /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */
   .advice-app .w_time { display: block; }
   .advice-app .w_time .comp-input, .advice-app .w_time .comp-select { width: 100%; }

@@ -425,7 +425,36 @@ SUB PAGE
 .long-care .comp-step-area ol .cont {position:static; height:auto; padding:15px 0; margin:0 18px; }
 .long-care .comp-step-area ol .cont .belong {position:static; width:100%;}
 
-
+/* 노인복지 - 노인복지시설 */
+.elder *[class^=heading][class*=-h3] {margin-top:50px;}
+.elder #tab-content *[class^=heading][class*=-h3]:first-child {margin-top:0;}
+.elder table[class^=comp-tbl][class*=_datatype] {margin-bottom:35px;}
+.elder *[class^=heading][class*=-h4] {margin-top:25px;}
+.elder .ml40 [class^=comp-tbl_],
+.elder .ml20 [class^=comp-tbl_] {margin-top:15px;}
+.elder h5[class^=comp-lst][class*=_dotted] + *[class^=comp-lst][class*=_hyphen] > li {margin-top:10px; margin-bottom:10px;}
+.elder *[class^=comp-lst][class*=_hyphen] > li .comp-lst_hyphen_txt {margin-top:5px;}
+.elder *[class^=comp-lst][class*=_hyphen] > li .comp-lst_hyphen_txt > li {margin-top:2px;}
+.elder h5[class^=comp-lst][class*=_dotted],
+.elder *[class^=comp-lst][class*=_dotted] > li {margin-top:10px;}
+/* .elder *[class^=comp-lst][class*=_dotted] > li *[class^=comp-lst][class*=_hyphen] > li, 
+.elder *[class^=comp-lst][class*=_dotted] > li p[class^=comp-lst][class*=_hyphen] {margin-top:10px; margin-bottom:10px;} */
+.elder .comp-step-area ul {position:relative; }
+.elder .comp-step-area ul > li > .cont {position:relative; height:55px; line-height:55px; margin-top:-1px; padding-left:15px; border:1px solid #dfdfdf; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#785719; text-align:left;}
+.elder .comp-step-area ul > li > .cont:before {position:absolute; top:14px; left:50%; display:inline-block; width:19px; height:29px; margin-left:-9px; background:url(../images/usc/subpage/bg_obstacle_arrow.png) no-repeat left top; z-index:10; content:'';}
+.elder .comp-step-area ol {margin:0;}
+.elder .comp-step-area ol > li {width:20%;}
+.elder .comp-step-area ol > li:before {top:102px;}
+.elder .comp-step-area ol > li:last-child {border-bottom:none;}
+.elder .comp-step-area ol .tit {display:table; height:70px; padding:0;}
+.elder .comp-step-area ol .tit .inner {display:table-cell; vertical-align:middle}
+.elder .comp-step-area ol .tit .inner { }
+.elder .comp-step-area ol .cont {display:table; width:100%; height:95px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#785719; text-align:left;}
+.elder .comp-step-area ol .cont > * {display:table-cell; vertical-align:middle;}
+.elder .comp-step-area ul > li.round {position:absolute; right:1px; bottom:1px; width:calc(20% - 1px); height:56px; background:#fff;}
+.elder .comp-step-area ul > li.round:before {position:absolute; top:-22px; left:50%; display:inline-block; width:19px; height:29px; margin-left:-9px; background:url(../images/usc/subpage/bg_obstacle_arrow.png) no-repeat left top; z-index:10; -ms-transform: rotate(90deg); -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); content:'';}
+.elder .comp-step-area ul > li.round .inner {display:block; width:122px; height:37px; line-height:37px; margin:8px auto 0 auto; text-align:center; border-radius:18px; background:#785719; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:18px; color:#fff;}
+.elder .scrollzone {margin:14px 0 15px 20px;}
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
@@ -594,6 +623,23 @@ MEDIA QUERY
 .long-care .comp-step-area ol .cont {padding:1rem 0;margin:0 0.6rem;}
 .long-care .comp-step-area ol .cont .belong {padding:0.5rem 1rem 0.4rem; box-sizing:border-box;}
 
+/* 노인복지 - 노인복지시설 */
+.elder *[class^=heading][class*=-h3] {margin-top:2.5rem;}
+.elder .ml20 [class^=comp-tbl_],
+.elder .ml40 [class^=comp-tbl_] {margin-top:1rem;}
+.elder *[class^=heading][class*=-h4] {margin-top:2rem;}
+.elder table[class^=comp-tbl][class*=_datatype] {margin-bottom:2rem;}
+.elder h5[class^=comp-lst][class*=_dotted] + *[class^=comp-lst][class*=_hyphen] > li {margin-top:0.5rem; margin-bottom:0.5rem;}
+.elder h5[class^=comp-lst][class*=_dotted], .elder *[class^=comp-lst][class*=_dotted] > li {margin-top:0.5rem;}
+.elder .scrollzone {margin:1rem 0 1.2rem 1.2rem;}
+.elder .comp-step-area ol .tit {height:4.5rem;}
+.elder .comp-step-area ol .cont {height:6rem;padding:0 1rem;}
+.elder .comp-step-area ol .cont > * {line-height:1.3rem;}
+.elder .comp-step-area ol > li:before {top:6.5rem;}
+.elder .comp-step-area ul > li > .cont:before {top:50%; width:1rem; height:1.5rem; margin:-0.75rem 0 0 -0.5rem; background-size:100%;}
+.elder .comp-step-area ol > li:nth-child(odd) .tit {padding:0;}
+.elder .comp-step-area ul > li.round:before {top:-1rem; width:1rem; height:1.5rem; background-size:100%;}
+.elder .comp-step-area ul > li.round .inner {width:10rem; height:2.5rem; line-height:2.5rem; font-size:1.2rem;}
 }
 
 

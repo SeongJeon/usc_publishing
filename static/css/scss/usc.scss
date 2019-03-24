@@ -845,6 +845,17 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+// 전자민원 > 공직자부조리신고
+.usc_part01_01 {
+	.btn-box {position: absolute; top:72px; right: 39px;}
+	.btn-box a {display: block; position: relative;}
+	.btn-box a:first-child {margin:0 0 4px 0;}
+
+	.btn-box *[class*=btnn] { width: 174px; height: 45px; line-height: 45px; vertical-align: middle; text-align: center; font-size: 17px; box-sizing: border-box;}
+	.comm-btn_btnn1_orange {letter-spacing: 3px;}
+	.comm-btn_btnn1_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life1.png") no-repeat center center; width:16px; height:29px; vertical-align: middle; margin-right:10px;}
+	.comm-btn_btnn2_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life2.png") no-repeat center center; width:27px; height:24px; vertical-align: middle; margin-right:10px;}
+}
 // 전자민원 > 방문민원상담예약신청
 .advice-app {
 	.comp-lst_important {color:#1c1c1c !important;}
@@ -1009,6 +1020,8 @@ div[class^=oftoday_] {
 	.comp-btn-zone {margin:10px 0 0 20px;}
 	.comp-txt_box {margin: 7px 20px 0; }
 }
+
+
 
 
 
@@ -1513,14 +1526,12 @@ MEDIA QUERY
 ------------------------------------------------------ */
 // 전자민원 > 공직자부조리신고
 .usc_part01_01 {
-	.btn-box {position: absolute; top:72px; right: 39px;}
-	.btn-box a {display: block; position: relative;}
-	.btn-box a:first-child {margin:0 0 4px 0;}
-
-	.btn-box *[class*=btnn] { width: 174px; height: 45px; line-height: 45px; vertical-align: middle; text-align: center; font-size: 17px; box-sizing: border-box;}
-	.comm-btn_btnn1_orange {letter-spacing: 3px;}
-	.comm-btn_btnn1_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life1.png") no-repeat center center; width:16px; height:29px; vertical-align: middle; margin-right:10px;}
-	.comm-btn_btnn2_orange:before { content:''; display:inline-block; background:url("../../static/images/usc/icon_life2.png") no-repeat center center; width:27px; height:24px; vertical-align: middle; margin-right:10px;}
+	.btn-box {position: static; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; margin-top: 1rem;}
+	.btn-box *[class*=btnn] {-webkit-flex:1; flex:1;  display: inline-block; width:auto; font-size:1.2rem; line-height: 3.5rem; height: 3.5rem;}
+	.btn-box *[class*=btnn] + * {margin-left: 0.5rem}
+	.btn-box a:first-child {margin-bottom: 0}
+	.comm-btn_btnn1_orange:before {width: 1.2rem; -webkit-background-size: 100% auto; background-size: 100% auto;}
+	.comm-btn_btnn2_orange:before {width: 1.5rem; -webkit-background-size: 100% auto; background-size: 100% auto;}
 }
 // 전자민원 > 방문민원상담예약신청
 .advice-app {

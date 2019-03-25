@@ -94,67 +94,6 @@ SUB PAGE
 
 
 
-
-
-
-
-
-/*------------------usc_part04_19--------------------------*/
-.usc_part04_19 .comp-iconbox_iconnone > div {width:49%;}
-.usc_part04_19 .comp-iconbox_iconnone .cardimg { display: inline-block;  vertical-align: middle;}
-.usc_part04_19 .comp-iconbox_iconnone .cont { display: inline-block; margin-left:10px;vertical-align: middle;}
-
-.usc_part04_19 .cont .tit:before {content:''; display: inline-block; background:url("../images/usc/subpage/img_usclogo.png") no-repeat left center; width:69px; height: 32px; background-size: cover; margin-right:10px;vertical-align: middle;}
-
-.usc_part04_19 .comp-txt_box { margin-left:30px; padding:15px 20px;}
-
-
-
-
-
-
-/*------------------usc_part04_20--------------------------*/
-.usc_part04_20 .comp-lst_dotted { margin:7px 0 0 20px;}
-
-.usc_part04_20 .gb-2 .heading-h3,
-.usc_part04_20 .gb-3 .heading-h3,
-.usc_part04_20 .gb-4 .heading-h3 { margin-top:35px;}
-
-.usc_part04_20 .gb-1 .heading-h4,
-.usc_part04_20 .gb-2 .heading-h4,
-.usc_part04_20 .gb-4 .heading-h4 { margin:25px 0 0 15px;}
-.usc_part04_20 .gb-3 .heading-h4 { margin:15px 0 0 20px; }
-.usc_part04_20 .gb-4 .heading-h4:first-child {margin-top:15px !important;}
-.usc_part04_20 .gm-box:after{content: '';display: block; clear:both;}
-.usc_part04_20 .gm-box div {float: left; width:500px; height:223px; padding:35px 0 0 25px; background-color: #f5f8f8; border: 1px solid #dfdfdf; box-sizing: border-box; overflow: hidden;}
-.usc_part04_20 .gm-box .gm-part > span { font-size: 18px; font-weight: bold; color:#4b4b4b;}
-
-
-.usc_part04_20 .gb-3 table {margin:10px 0 30px 15px;}
-
-
-.usc_part04_20 .gm-box .gm-part2,
-.usc_part04_20 .gm-box .gm-part4 {margin-left:10px;}
-.usc_part04_20 .gm-box .gm-part3,
-.usc_part04_20 .gm-box .gm-part4 {margin-top:10px;}
-
-.usc_part04_20 .gm-box > div {position: relative;}
-.usc_part04_20 .gm-box ul {position: relative; z-index: 1;}
-
-
-.usc_part04_20 .gm-part1 {background:url(../images/usc/subpage/img_goodmenu1.png) no-repeat 100% 100%;}
-.usc_part04_20 .gm-part2 {background:url(../images/usc/subpage/img_goodmenu2.png) no-repeat 100% 100%; }
-.usc_part04_20 .gm-part3 {background:url(../images/usc/subpage/img_goodmenu3.png) no-repeat 100% 100%;}
-.usc_part04_20 .gm-part4 {background:url(../images/usc/subpage/img_goodmenu4.png) no-repeat 100% 100%;}
-
-.usc_part04_20 .valign {vertical-align: top; text-align: left;}
-.usc_part04_20 .valign ul{ text-align: left; }
-.usc_part04_20 .valign ul li{ display: inline-block;}
-
-
-
-
-
 /*------------------usc_part06_02--------------------------*/
 .usc_part06_02 .contents-zone ul li { margin:10px 0;}
 .usc_part06_02 .contents-zone ul li:first-child { margin:0;}
@@ -213,25 +152,6 @@ MEDIA QUERY
 
 
 
-.usc_part04_19 .comp-iconbox_iconnone > div {width:49%;}
-
-
-
-
-
-
-.usc_part04_20 .gb-1 .gm-box > div {position: static; margin:1rem auto; height:15rem; width:49%}
-.usc_part04_20 .gb-1 .gm-box div:nth-child(even) {margin-left:1rem;}
-
-.usc_part04_20 .gm-part1,
-.usc_part04_20 .gm-part3 {-webkit-background-size: 100% auto; background-size: 100% auto;}
-.usc_part04_20 .gm-part2,
-.usc_part04_20 .gm-part4 {-webkit-background-size: 40% auto; background-size: 40% auto;}
-
-
-
-
-
 .usc_part06_02 .btn-box {overflow:hidden; width:100%;height: auto; margin:1rem 0 2rem; padding:1rem 0.5rem;}
 .usc_part06_02 .btn-box a {width:50%; margin-left:0}
 .usc_part06_02 .viewer1:before,
@@ -263,12 +183,6 @@ MEDIA QUERY
 .usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_lightorange] span {font-size: 1rem; padding-left: 2rem; background-size:auto 100%;}
 
 
-
-.usc_part04_19 .comp-iconbox_iconnone > div {width:100%;}
-.usc_part04_19 .comp-iconbox_iconnone .cardimg {text-align: center;}
-
-.usc_part04_20 .gb-1 .gm-box > div {position: static; margin:1rem auto; height:15rem; width:100%}
-.usc_part04_20 .gb-1 .gm-box div:nth-child(even) {margin-left:0;}
 
 
 

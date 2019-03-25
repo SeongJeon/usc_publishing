@@ -1198,6 +1198,34 @@ div[class^=oftoday_] {
 		li:first-child {margin-left: 0}
 	}
 }
+// 좋은식단
+.usc_part04_20 {
+	.tbl-zone {margin:10px 0 0 15px;}
+	.gm-box:after {content: '';display: block; clear:both;}
+	.gm-box ul {position: relative; z-index: 1;}
+	.gm-box .gm-part {position: relative; float: left; width:500px; height:223px; padding:40px 0 0 25px; background-color: #f5f8f8; border: 1px solid #dfdfdf; box-sizing: border-box; overflow: hidden;}
+	.gm-box .gm-part:nth-of-type(even) {margin-left:10px;}
+	.gm-box .gm-part:nth-of-type(2) ~ .gm-part {margin-top:10px;}
+	.gm-box .gm-part > span { font-size: 18px; font-weight: bold; color:#4b4b4b;}
+	.gm-part1 {background:url(../images/usc/subpage/img_goodmenu1.png) no-repeat 100% 100%;}
+	.gm-part2 {background:url(../images/usc/subpage/img_goodmenu2.png) no-repeat 100% 100%; }
+	.gm-part3 {background:url(../images/usc/subpage/img_goodmenu3.png) no-repeat 100% 100%;}
+	.gm-part4 {background:url(../images/usc/subpage/img_goodmenu4.png) no-repeat 100% 100%;}
+
+	.valign {vertical-align: top; text-align: left;}
+	.valign ul{ text-align: left; }
+}
+// 장학금적립카드
+.usc_part04_19 {
+	.comp-iconbox_iconnone .cardimg {position:absolute; left:40px; top:45px;}
+	.comp-iconbox_iconnone .cont {padding-left: 500px; padding-top: 33px; height: 180px; vertical-align: middle; }
+	.cont .tit:before {content:''; display: inline-block; background:url("../images/usc/subpage/img_usclogo.png") no-repeat left center; width:69px; height: 32px; background-size: cover; margin-right:10px;vertical-align: middle;}
+}
+
+
+
+
+
 
 
 
@@ -2075,6 +2103,23 @@ div[class^=oftoday_] {
 		.img {position:absolute; left:0; top:0; width: 4rem;}
 	}
 }
+// 좋은식단
+.usc_part04_20 {
+	.gm-box .gm-part {position: static; float: none; margin:1rem 0 0; height:15rem; width:100%}
+	.gm-box .gm-part:nth-of-type(2) ~ .gm-part {margin-top: 1rem}
+	.gm-box .gm-part:nth-of-type(even) {margin-left: 0}
+	.gm-part1,
+	.gm-part3 {-webkit-background-size: 100% auto; background-size: 100% auto}
+	.gm-part2,
+	.gm-part4 {-webkit-background-size: 40% auto; background-size: 40% auto; }
+}
+// 장학금적립카드
+.usc_part04_19 {
+	.comp-iconbox_iconnone > div {width:100%;}
+	.comp-iconbox_iconnone .cardimg {position:static; text-align: center;}
+	.comp-iconbox_iconnone .cont {padding-left: 0; padding-top:1rem; height: auto}
+}
+
 
 
 

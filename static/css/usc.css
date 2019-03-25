@@ -662,6 +662,24 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .recycle_howto_lst .recycle_lst li:first-child:nth-last-of-type(3) ~ li { margin-left: 10px; }
 .recycle_howto_lst .recycle_lst li:first-child { margin-left: 0; }
 
+.usc_part04_20 .tbl-zone { margin: 10px 0 0 15px; }
+.usc_part04_20 .gm-box:after { content: ''; display: block; clear: both; }
+.usc_part04_20 .gm-box ul { position: relative; z-index: 1; }
+.usc_part04_20 .gm-box .gm-part { position: relative; float: left; width: 500px; height: 223px; padding: 40px 0 0 25px; background-color: #f5f8f8; border: 1px solid #dfdfdf; box-sizing: border-box; overflow: hidden; }
+.usc_part04_20 .gm-box .gm-part:nth-of-type(even) { margin-left: 10px; }
+.usc_part04_20 .gm-box .gm-part:nth-of-type(2) ~ .gm-part { margin-top: 10px; }
+.usc_part04_20 .gm-box .gm-part > span { font-size: 18px; font-weight: bold; color: #4b4b4b; }
+.usc_part04_20 .gm-part1 { background: url(../images/usc/subpage/img_goodmenu1.png) no-repeat 100% 100%; }
+.usc_part04_20 .gm-part2 { background: url(../images/usc/subpage/img_goodmenu2.png) no-repeat 100% 100%; }
+.usc_part04_20 .gm-part3 { background: url(../images/usc/subpage/img_goodmenu3.png) no-repeat 100% 100%; }
+.usc_part04_20 .gm-part4 { background: url(../images/usc/subpage/img_goodmenu4.png) no-repeat 100% 100%; }
+.usc_part04_20 .valign { vertical-align: top; text-align: left; }
+.usc_part04_20 .valign ul { text-align: left; }
+
+.usc_part04_19 .comp-iconbox_iconnone .cardimg { position: absolute; left: 40px; top: 45px; }
+.usc_part04_19 .comp-iconbox_iconnone .cont { padding-left: 500px; padding-top: 33px; height: 180px; vertical-align: middle; }
+.usc_part04_19 .cont .tit:before { content: ''; display: inline-block; background: url("../images/usc/subpage/img_usclogo.png") no-repeat left center; width: 69px; height: 32px; background-size: cover; margin-right: 10px; vertical-align: middle; }
+
 /* 열린군정 ------------------------------------------- */
 .board-event .contents-zone { position: relative; }
 .board-event *[class^=comp-tab] { width: 300px; position: absolute; right: 0; top: 25px; z-index: 1; margin-bottom: 0; }
@@ -1135,6 +1153,14 @@ MEDIA QUERY
   .recycle_howto_lst .recycle_lst li { float: none; position: relative; margin-left: 0; margin-top: 1rem; width: 100%; height: 4rem; }
   .recycle_howto_lst .recycle_lst li:first-child:nth-last-of-type(3) ~ li { margin-left: 0; }
   .recycle_howto_lst .recycle_lst .img { position: absolute; left: 0; top: 0; width: 4rem; }
+  .usc_part04_20 .gm-box .gm-part { position: static; float: none; margin: 1rem 0 0; height: 15rem; width: 100%; }
+  .usc_part04_20 .gm-box .gm-part:nth-of-type(2) ~ .gm-part { margin-top: 1rem; }
+  .usc_part04_20 .gm-box .gm-part:nth-of-type(even) { margin-left: 0; }
+  .usc_part04_20 .gm-part1, .usc_part04_20 .gm-part3 { -webkit-background-size: 100% auto; background-size: 100% auto; }
+  .usc_part04_20 .gm-part2, .usc_part04_20 .gm-part4 { -webkit-background-size: 40% auto; background-size: 40% auto; }
+  .usc_part04_19 .comp-iconbox_iconnone > div { width: 100%; }
+  .usc_part04_19 .comp-iconbox_iconnone .cardimg { position: static; text-align: center; }
+  .usc_part04_19 .comp-iconbox_iconnone .cont { padding-left: 0; padding-top: 1rem; height: auto; }
   /* 열린군정 ------------------------------------------- */
   .board-event *[class^=comp-tab] { width: 100%; position: relative; right: 0; top: 0; }
   .board-event *[class^=comp-tab] a { line-height: 1.2rem; }

@@ -1352,7 +1352,27 @@ div[class^=oftoday_] {
 		button {width:80px; margin-left: -1px;}
 	}
 }
+// 뷰어프로그램
+.usc_part06_02 {
+	.contents-zone ul li { margin:10px 0;}
+	.contents-zone ul li:first-child { margin:0;}
+	.btn-box {width: 421px; height:80px; padding:15px; margin:15px 0 40px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box;}
+	.btn-box a {display:inline-block; width:202px; padding:0 6px; letter-spacing: -1px; float: right; }
 
+	.viewer1:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer1.gif") no-repeat center center;}
+	.viewer2:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer2.png") no-repeat center center;}
+	.viewer3:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer3.png") no-repeat center center;}
+	.viewer4:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer4.png") no-repeat center center;}
+	.viewer5:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer5.png") no-repeat center center;}
+	.viewer6:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer6.gif") no-repeat center center;}
+	.viewer7:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer7.png") no-repeat center center;}
+	.viewer8:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer8.png") no-repeat center center;}
+}
+// 홈페이지 이용안내
+.usc_part06_03 {
+	.img_site li {position: relative; width:946px; height:580px; padding:9px 10px 9px 9px; margin-left:70px; border:3px solid #e7e8e9; box-sizing: border-box;}
+	.img_site p {position: absolute; left:9px; bottom:9px;}
+}
 
 
 
@@ -2210,7 +2230,30 @@ div[class^=oftoday_] {
 		button {width:5rem; min-width:inherit;}
 	}
 }
+// 뷰어프로그램
+.usc_part06_02 {
+	.btn-box {overflow:hidden; width:100%;height: auto; margin:1rem 0 2rem; padding:1rem 0.5rem;}
+	.btn-box a {width:50%; margin-left:0}
+	.viewer1:before,
+	.viewer6:before {width:50%; height: 3.3rem; background-size: auto 100%}
+	.viewer2:before,
+	.viewer3:before,
+	.viewer4:before,
+	.viewer5:before,
+	.viewer7:before,
+	.viewer8:before {width:50%; height: 3.3rem; background-size: auto 100%}
+}
+//	홈페이지이용안내
+.usc_part06_03 {
+	.img_site li {width:100%; margin:auto; height:auto; padding:0.5rem; border-width:2px;}
+	.img_site p {position: absolute; left:0.5rem; bottom:0.8rem;}
+}
 
+
+
+
+
+ 
 
 
 

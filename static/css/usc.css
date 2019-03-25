@@ -746,6 +746,22 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .top-search-zone .form select { width: 116px; }
 .top-search-zone .form button { width: 80px; margin-left: -1px; }
 
+.usc_part06_02 .contents-zone ul li { margin: 10px 0; }
+.usc_part06_02 .contents-zone ul li:first-child { margin: 0; }
+.usc_part06_02 .btn-box { width: 421px; height: 80px; padding: 15px; margin: 15px 0 40px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box; }
+.usc_part06_02 .btn-box a { display: inline-block; width: 202px; padding: 0 6px; letter-spacing: -1px; float: right; }
+.usc_part06_02 .viewer1:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer1.gif") no-repeat center center; }
+.usc_part06_02 .viewer2:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer2.png") no-repeat center center; }
+.usc_part06_02 .viewer3:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer3.png") no-repeat center center; }
+.usc_part06_02 .viewer4:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer4.png") no-repeat center center; }
+.usc_part06_02 .viewer5:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer5.png") no-repeat center center; }
+.usc_part06_02 .viewer6:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer6.gif") no-repeat center center; }
+.usc_part06_02 .viewer7:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer7.png") no-repeat center center; }
+.usc_part06_02 .viewer8:before { content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer8.png") no-repeat center center; }
+
+.usc_part06_03 .img_site li { position: relative; width: 946px; height: 580px; padding: 9px 10px 9px 9px; margin-left: 70px; border: 3px solid #e7e8e9; box-sizing: border-box; }
+.usc_part06_03 .img_site p { position: absolute; left: 9px; bottom: 9px; }
+
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
@@ -1199,7 +1215,13 @@ MEDIA QUERY
   .top-search-zone .form > * { float: none; }
   .top-search-zone .form input { -webkit-flex: 1; flex: 1; }
   .top-search-zone .form select { width: 10rem; }
-  .top-search-zone .form button { width: 5rem; min-width: inherit; } }
+  .top-search-zone .form button { width: 5rem; min-width: inherit; }
+  .usc_part06_02 .btn-box { overflow: hidden; width: 100%; height: auto; margin: 1rem 0 2rem; padding: 1rem 0.5rem; }
+  .usc_part06_02 .btn-box a { width: 50%; margin-left: 0; }
+  .usc_part06_02 .viewer1:before, .usc_part06_02 .viewer6:before { width: 50%; height: 3.3rem; background-size: auto 100%; }
+  .usc_part06_02 .viewer2:before, .usc_part06_02 .viewer3:before, .usc_part06_02 .viewer4:before, .usc_part06_02 .viewer5:before, .usc_part06_02 .viewer7:before, .usc_part06_02 .viewer8:before { width: 50%; height: 3.3rem; background-size: auto 100%; }
+  .usc_part06_03 .img_site li { width: 100%; margin: auto; height: auto; padding: 0.5rem; border-width: 2px; }
+  .usc_part06_03 .img_site p { position: absolute; left: 0.5rem; bottom: 0.8rem; } }
 @media (max-width: 768px) { /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */
   /* 전자민원 ------------------------------------------- */
   .advice-app .w_time { display: block; }

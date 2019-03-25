@@ -33,17 +33,12 @@ SUB PAGE
 /*------------------usc_part03_02--------------------------*/
 .usc_part03_02 .heading-h4 {margin:40px 0 10px 0;}
 .usc_part03_02 .img_uscsong {border:1px solid #e7e9ea; padding:70px 0 50px 0; text-align: center;}
-
-
 .usc_part03_02 .uscsong-box { position: relative; padding-top:70px;}
 .usc_part03_02 .uscsong-btn { position: absolute; right:0; top:0;}
-
 .usc_part03_02 .uscsong-btn a:first-child{margin-right:20px;}
 .usc_part03_02 .uscsong-btn span {padding-left:33px;}
 .usc_part03_02 *[class^=comm-btn_type4][class$=_lightorange] span {background:url(../images/usc/subpage/icon_song_on.png) no-repeat left top;}
 .usc_part03_02 *[class^=comm-btn_type4][class$=_whiteorange] span {background:url(../images/usc/subpage/icon_song_off.png) no-repeat left top;}
-
-
 .usc_part03_02 .uscsong_lyc li:fisrt-child .heading-h4 {margin:35px 0 10px 0;}
 .usc_part03_02 .uscsong_lyc li:nth-child(2) .heading-h4 {margin:15px 0 10px 0;}
 .usc_part03_02 .uscsong_lyc li:nth-child(3) .heading-h4 {margin:15px 0 10px 0;}
@@ -53,21 +48,8 @@ SUB PAGE
 /*------------------usc_part03_03--------------------------*/
 .usc_part03_03 .comp-lst_dotted {margin-top:7px;}
 .usc_part03_03 .comp-charter-cont .inner .cont .surround .en { letter-spacing:5px;}
-
-
-.usc_part03_03 .comp-charter-cont .inner .cont .surround .tit {
-    position: relative;
-    display: block;
-    margin: 30px 0 34px;
-    padding-bottom: 35px;
-    font-size: 30px;
-    color: #000;
-     letter-spacing: 0; 
-    text-align: center;
-}
-
+.usc_part03_03 .comp-charter-cont .inner .cont .surround .tit {position: relative; display: block; margin: 30px 0 34px; padding-bottom: 35px; font-size: 30px; color: #000; letter-spacing: 0; text-align: center; }
 .usc_part03_03 .comp-charter-cont .inner .cont .surround .list { text-align: center;}
-
 .usc_part03_03 .heading-h3 {margin-top:30px;}
 .usc_part03_03 .heading-h4 {margin:15px 0 0 28px;}
 
@@ -76,16 +58,7 @@ SUB PAGE
 
 /*------------------usc_part03_13--------------------------*/
 .usc_part03_13 #tab-contents1 .img {text-align: center}
-.usc_part03_13 #tab-contents1 .list .num {    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    margin-right: 10px;
-    background: #4b4b4b;
-    border-radius: 30px;
-    text-align: center;
-    color: #fff;}
-}
+.usc_part03_13 #tab-contents1 .list .num { display: inline-block; width: 30px; height: 30px; line-height: 30px; margin-right: 10px; background: #4b4b4b; border-radius: 30px; text-align: center; color: #fff;}
 
 
 
@@ -94,20 +67,6 @@ SUB PAGE
 
 
 
-/*------------------usc_part06_02--------------------------*/
-.usc_part06_02 .contents-zone ul li { margin:10px 0;}
-.usc_part06_02 .contents-zone ul li:first-child { margin:0;}
-.usc_part06_02 .btn-box {width: 421px; height:80px; padding:15px; margin:15px 0 40px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box;}
-.usc_part06_02 .btn-box a {display:inline-block; width:202px; padding:0 6px; letter-spacing: -1px; float: right; }
-
-.usc_part06_02 .viewer1:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer1.gif") no-repeat center center;}
-.usc_part06_02 .viewer2:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer2.png") no-repeat center center;}
-.usc_part06_02 .viewer3:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer3.png") no-repeat center center;}
-.usc_part06_02 .viewer4:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer4.png") no-repeat center center;}
-.usc_part06_02 .viewer5:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer5.png") no-repeat center center;}
-.usc_part06_02 .viewer6:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer6.gif") no-repeat center center;}
-.usc_part06_02 .viewer7:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer7.png") no-repeat center center;}
-.usc_part06_02 .viewer8:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer8.png") no-repeat center center;}
 
 
 
@@ -116,9 +75,41 @@ SUB PAGE
 
 
 
-/*------------------usc_part06_03 --------------------------*/
-.usc_part06_03 .img_site li {position: relative; width:946px; height:580px; padding:9px 10px 9px 9px; margin-left:70px; border:3px solid #e7e8e9; box-sizing: border-box;}
-.usc_part06_03 .img_site p {position: absolute; left:9px; bottom:9px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -140,43 +131,22 @@ MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
 .usc_part03_02 .uscsong-box {padding-top:0;}
-
 .usc_part03_02 .uscsong-btn {position: static; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;}
 .usc_part03_02 .uscsong-btn a {-webkit-flex:1; flex:1;}
 .usc_part03_02 .uscsong-btn a:first-child {margin-right: 0.5rem}
 .usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_whiteorange] span,
 .usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_lightorange] span {font-size: 1.1rem; padding-left: 2rem; background-size:auto 100%;}
-
 .usc_part03_02 .img_uscsong {padding:3rem;}
 
 
 
 
-.usc_part06_02 .btn-box {overflow:hidden; width:100%;height: auto; margin:1rem 0 2rem; padding:1rem 0.5rem;}
-.usc_part06_02 .btn-box a {width:50%; margin-left:0}
-.usc_part06_02 .viewer1:before,
-.usc_part06_02 .viewer6:before {width:50%; height: 3.3rem; background-size: auto 100%}
-.usc_part06_02 .viewer2:before,
-.usc_part06_02 .viewer3:before,
-.usc_part06_02 .viewer4:before,
-.usc_part06_02 .viewer5:before,
-.usc_part06_02 .viewer7:before,
-.usc_part06_02 .viewer8:before {width:50%; height: 3.3rem; background-size: auto 100%}
 
-
-
-
-
-
-
-.usc_part06_03 .img_site li {width:100%; margin:auto; height:auto; padding:0.5rem; border-width:2px;}
-.usc_part06_03 .img_site p {position: absolute; left:0.5rem; bottom:0.8rem;}
 }
 
 
 
 @media (max-width:768px){
-
 .usc_part03_02 .uscsong-btn .comm-btn_type4_whiteorange,
 .usc_part03_02 .uscsong-btn .comm-btn_type4_lightorange {padding:0 0.5rem;}
 .usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_whiteorange] span,

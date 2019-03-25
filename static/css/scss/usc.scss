@@ -931,6 +931,7 @@ SUB PAGE
 	.list ul > li .num {display:inline-block; width:30px; height:30px; line-height:30px; margin-right:10px; background:#4b4b4b; border-radius:30px; text-align:center; color:#fff;}
 	.list ul > li .tel {display:inline-block; margin-left:2px; padding:2px; background:#f1e300;}
 }
+
 /* 정보공개 ------------------------------------------- */
 // 의성의 오늘
 div[class^=oftoday_] {
@@ -1015,70 +1016,6 @@ div[class^=oftoday_] {
 	.comp-lst_dotted {margin-top:7px;}
 	.comp-txt_box {margin-top:7px;}
 }
-/* 의성안내 ------------------------------------------- */
-// 국내
-.usc_part03_01 {
-	.img_internal {text-align: center;}
-	.comp-btn-zone {margin:10px 0 0 20px;}
-	.comp-txt_box {margin: 7px 20px 0; }
-}
-// 일반현황
-.status {
-	.img-area {margin-bottom:70px;text-align:center;}
-	.comp-tbl_datatype + .tbl-top-utile {margin-top:50px;}
-}
-// 직원검색
-.staff {
-	.comp-iconbox_iconnone {padding:40px 30px 45px;}
-	*[class^=comp-iconbox] .cont .tit {font-size:15px;}
-	*[class^=comp-iconbox] .cont .tit span {color:#f27405;font-size:20px;font-family:'NanumSquareB';}
-	.comp-iconbox_iconnone .comp-select_h42 {width:258px;}
-	.comp-iconbox_iconnone .comp-input_h42 {width:298px;margin-left:2px;}
-	.comp-iconbox_iconnone .comm-btn_type3_deeporange {margin-left:2px;}
-}
-// 위치
-.location  {
-	.heading-h3 {margin-bottom:18px;}
-	.img-area {margin-bottom:55px;text-align:center;}
-	.img-area + .comp-lst_dotted {margin-bottom:50px;}
-	.img-area + .comp-lst_dotted li {margin-top:10px;}
-	.comp-lst_dotted li:first-child {margin-top:0 !important;}
-	.chinese {font-weight:bold;}
-	.comp-tbl_datatype {margin-bottom:30px;}
-	.comp-tbl_datatype .bold {color:#1c1c1c;}
-	.comp-tbl_datatype + .comp-lst_dotted li {margin-top:20px;}
-	.comp-tbl_datatype .al-l {padding-left:28px;}
-}
-// 의성노래
-.song {
-	.heading-h3 {margin-bottom:28px;}
-	.heading-h4 {margin-bottom:12px;}
-	.song-list li {margin-top:38px;}
-	.song-list li:first-child {margin-top:0;}
-	.song-wrap {position:relative;overflow:hidden;padding:14px;margin-left:46px;border:1px solid #d6d5d5;color:#4b4b4b;}
-	.song-wrap > div {float:left;}
-	.song-wrap .img-area {width:342px;margin-right:15px;}
-	.song-wrap .info-area {width:61%;padding-top:14px;}
-	.song-wrap .imply {margin:0 0 17px -8px;padding:0 0 15px 5px;font-size:16px;font-family:'NanumSquareB';border-bottom:1px solid #d8d8d8;}
-	.song-wrap .imply span {padding-left:8px;}
-	.song-wrap .lyrics {padding-left:5px;font-size:15px;line-height:24px;}
-	.song-wrap .btn-song {position:absolute;bottom:14px;right:14px;display:inline-block;width:188px;height:45px;border:1px solid #fe970e;font-size:16px;text-align:center;line-height:45px;}
-	.song-wrap .btn-song span {padding-left:33px;background:url(../images/usc/subpage/icon_song_off.png) no-repeat left top;}
-	.song-wrap .btn-song:hover {background:#fe970e;color:#fff;}
-	.song-wrap .btn-song:hover span {background:url(../images/usc/subpage/icon_song_on.png) no-repeat left top;}
-}
-// 찾아오시는길 
-.ico-to {
-	display: inline-block; width: 27px; height: 12px; margin: 0 5px; @include background("usc/subpage/icon_to.png",no-repeat 50% 50%); background-size: 100% auto; text-indent: -9999em; vertical-align: middle;
-}
-.gotoway_usc {
-	position: relative; overflow:hidden; padding:10px 12px 0; margin-top: 20px; border:16px solid #efeeed;
-	.img2 {position: absolute; right:95px; top:50%; margin-top: -200px;}
-}
-.gotoway_tbl {
-	tr > *:nth-child(4) {border-left-color:#a5a6a7 !important;}
-}
- 
 
 /* 분야별정보 ------------------------------------------- */
 // 안전문화운동
@@ -1221,17 +1158,136 @@ div[class^=oftoday_] {
 	.comp-iconbox_iconnone .cont {padding-left: 500px; padding-top: 33px; height: 180px; vertical-align: middle; }
 	.cont .tit:before {content:''; display: inline-block; background:url("../images/usc/subpage/img_usclogo.png") no-repeat left center; width:69px; height: 32px; background-size: cover; margin-right:10px;vertical-align: middle;}
 }
-
-
-
-
-
-
-
-
-
-
-
+// 공장설립 - 공장설립지원센터
+.factory {
+	*[class^=comp-iconbox] {margin:40px 0 45px;}
+	*[class^=comp-txt][class*=_box] {margin-top:20px;}
+	.comp-lst_dotted {margin-top:6px; margin-bottom:30px;}
+	.comp-lst_dotted + .comp-lst_important {margin-top:-30px; margin-bottom:30px;}
+	.comp-lst_hyphen { margin-top:5px; margin-bottom:35px;}
+}
+// 기초생활보장 - 보장절차 
+.guarantee *[class^=comp-upport] {margin-top:50px;}
+// 기초생활보장 - 수급자선정기준 
+.criteria {
+	.ml1 {margin-left:40px !important;}
+	*[class^=heading][class$=-h4] {margin-top:16px; margin-bottom:9px;}
+	*[class^=comp-lst][class*=_dotted] {margin:0 0 25px 40px;}
+	p[class^=comp-lst][class*=_important] {margin:10px 0 0 15px;}
+	h5[class^=comp-lst][class*=_dotted] {margin:0 0 7px 40px;}
+	p[class^=comp-lst][class*=_hyphen] {margin-bottom:15px;}
+	*[class^=comp-lst][class*=_hyphen] {margin:0 0 25px 40px;}
+	.img-area {margin-left:40px; padding:40px 0; background:#f5f8f8; border:1px solid #dddbdb; font-size:0; text-align:center;}
+	*[class^=comp-txt][class*=_box] {margin-left:40px;}
+}
+// 납세자보호관 - 고충민원 
+.grievance {
+	.btn-down {display:block; width:250px; height:45px; line-height:45px; margin-top:11px; padding-left:62px; background:url(../images/usc/subpage/ico_btn_grievance.png) no-repeat 30px center;border:1px solid #fe970e; box-sizing:border-box; font-size:15px; font-family:'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
+	.img-area {margin-top:10px; padding:30px 15px; background:#f5f8f8; border:1px solid #dfdfdf; text-align:center; font-size:0;}
+}
+// 노인복지 - 노인돌봄서비스사업 
+.insurance {
+	*[class^=comp-lst][class*=_dotted] {margin-top:10px; margin-bottom:7px; }
+	*[class^=comp-lst][class*=_dotted] + *[class^=heading][class$=-h4]  {margin-top:35px;}
+	*[class^=comp-txt][class*=_box] {margin:11px 0 16px -15px;}
+	.service-content {
+		margin:10px 0 0 20px; padding:50px 0 70px; background:#f5f8f8; border:1px solid #dfdfdf; font-size:0; text-align:center;
+		.inner {display:inline-block; }
+		.inner > li {float:left; margin-left:93px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
+		.inner > li:first-child {margin-left:0;}
+		.inner > li .tit {display:table; text-align:center; font-size:20px; color:#1c1c1c;}
+		.inner > li .tit .ball {display:table-cell; width:189px; height:189px; border-radius:100%; background:#ffc61a; vertical-align:middle;}
+		.inner > li .tit .ball .txt {line-height:30px;}
+		.inner > li .tail {position:relative; display:block; margin:24px 0 17px; font-size:25px; color:#8e2800;}
+		.inner > li .tail:before {position:absolute; left:50%; top:-17px; display:block; content:""; width:3px; height:13px; margin-left:-1px; background:#525252;}
+		.inner > li .list {}
+		.inner > li .list > li {position:relative; display:block; width:184px; height:44px; line-height:44px; margin-top:18px; border-radius:20px; background:#39290c; text-align:center; font-size:18px; color:#fff;}
+		.inner > li .list > li:first-child {margin-top:0;}
+		.inner > li .list > li:first-child:before {display:none;}
+		.inner > li .list > li:before {position:absolute; left:50%; top:-15px; display:block; content:""; width:3px; height:13px; margin-left:-1px; background:#525252;}
+	}
+}
+// 노인복지 - 치매/노인실명예방관리 
+.dementia  {
+	*[class^=heading][class$=-h4] {margin-bottom:9px;}
+	*[class^=comp-lst][class*=_dotted] {margin-top:10px; margin-bottom:9px;}
+	*[class^=comp-lst][class*=_dotted] *[class^=comp-lst][class*=_hyphen] {margin-left:-15px;}
+	.scrollzone {margin-left:-15px;}
+	.img-area {margin-left:30px;}
+}
+// 노인복지 - 노인장기요양보험제도 
+.long-care {
+	*[class^=heading][class$=-h4] {margin-top:30px; margin-bottom:9px;}
+	p[class^=comp-lst][class*=_important] {margin-left:-15px;}
+	*[class^=comp-lst][class*=_dotted] {margin-bottom:35px;}
+	*[class^=comp-lst][class*=_dotted] > li,
+	h5[class^=comp-lst][class*=_dotted] {margin-top:5px;}
+	*[class^=comp-txt][class*=_box] {margin:15px 0 0 40px;}
+	p[class^=comp-lst][class*=_hyphen] {margin-top:9px; margin-bottom:13px;}
+	*[class^=heading][class$=-h4] + h5[class^=comp-lst][class*=_dotted] {margin-bottom:0;}
+	p[class^=comp-lst][class*=_hyphen] + h5[class^=comp-lst][class*=_dotted] {margin-bottom:0;}
+	.comp-step-area {margin:20px 0 40px 40px;}
+	.comp-step-area ol {overflow:hidden;}
+	.comp-step-area ol > li {width:25%;}
+	.comp-step-area ol li:before {top:43px;}
+	.comp-step-area ol .tit {display:table; height:110px; line-height:110px; padding:0;}
+	.comp-step-area ol .tit .inner {display:table-cell; line-height:22px; vertical-align:middle;}
+	.comp-step-area ol .cont {position:static; height:auto; padding:15px 0; margin:0 18px; }
+	.comp-step-area ol .cont .belong {position:static; width:100%;}
+}
+// 노인복지 - 노인복지시설 
+.elder {
+	h5[class^=comp-lst][class*=_dotted] + *[class^=comp-lst][class*=_hyphen] > li {margin-top:10px; margin-bottom:10px;}
+	*[class^=comp-lst][class*=_hyphen] > li .comp-lst_hyphen_txt {margin-top:5px;}
+	*[class^=comp-lst][class*=_hyphen] > li .comp-lst_hyphen_txt > li {margin-top:2px;}
+	h5[class^=comp-lst][class*=_dotted],
+	*[class^=comp-lst][class*=_dotted] > li {margin-top:10px;}
+	.comp-step-area {
+		ul {position:relative; }
+		ul > li > .cont {position:relative; height:55px; line-height:55px; margin-top:-1px; padding-left:15px; border:1px solid #dfdfdf; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#785719; text-align:left;}
+		ul > li > .cont:before {position:absolute; top:14px; left:50%; display:inline-block; width:19px; height:29px; margin-left:-9px; background:url(../images/usc/subpage/bg_obstacle_arrow.png) no-repeat left top; z-index:10; content:'';}
+		ol {margin:0;}
+		ol > li {width:20%;}
+		ol > li:before {top:102px;}
+		ol > li:last-child {border-bottom:none;}
+		ol .tit {display:table; height:70px; padding:0;}
+		ol .tit .inner {display:table-cell; vertical-align:middle}
+		ol .cont {display:table; width:100%; height:95px; padding:0 15px 0 17px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#785719; text-align:left;}
+		ol .cont > * {display:table-cell; vertical-align:middle;}
+		ul > li.round {position:absolute; right:1px; bottom:1px; width:calc(20% - 1px); height:56px; background:#fff;}
+		ul > li.round:before {position:absolute; top:-22px; left:50%; display:inline-block; width:19px; height:29px; margin-left:-9px; background:url(../images/usc/subpage/bg_obstacle_arrow.png) no-repeat left top; z-index:10; -ms-transform: rotate(90deg); -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); content:'';}
+		ul > li.round .inner {display:block; width:122px; height:37px; line-height:37px; margin:8px auto 0 auto; text-align:center; border-radius:18px; background:#785719; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:18px; color:#fff;}
+	}
+	.scrollzone {margin:14px 0 15px 20px;}
+}
+// 헌장
+.comp-charter-cont {
+	position:relative; border:30px solid #eff0f1;
+	&:before {position:absolute; left:-30px; top:-30px; display:block; content:""; width:382px; height:382px; background:url(../images/usc/subpage/bg_charter-cont_border_01.png) no-repeat}
+	&:after {position:absolute; right:-30px; bottom:-30px; display:block; content:""; width:382px; height:382px; background:url(../images/usc/subpage/bg_charter-cont_border_02.png) no-repeat}
+	.inner {
+		position:relative; margin:20px; border:3px solid #ac2633;
+		&:before {position:absolute; left:-3px; top:-3px; display:block; content:""; width:27px; height:27px; background:#fff url(../images/usc/subpage/bg_charter-cont_raund.png) no-repeat}
+		&:after {position:absolute; right:-3px; top:-3px; display:block; content:""; width:27px; height:27px; background:#fff url(../images/usc/subpage/bg_charter-cont_raund.png) no-repeat;-ms-transform: rotate(90deg); -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+		.cont {
+			&:before {position:absolute; left:-3px; bottom:-3px; display:block; content:""; width:27px; height:27px; background:#fff url(../images/usc/subpage/bg_charter-cont_raund.png) no-repeat;-ms-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+			&:after {position:absolute; right:-3px; bottom:-3px; display:block; content:""; width:27px; height:27px; background:#fff url(../images/usc/subpage/bg_charter-cont_raund.png) no-repeat;-ms-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+			.surround {
+				position:relative; margin:5px; padding:30px 24px 40px; border:1px solid #ac2633; z-index:10;
+				.en {display:block; text-align:center;}
+				.en:before {display:block; content:""; width:192px; height:89px; margin:0 auto 35px auto; background:url(../images/usc/subpage/img_usclogo.png) no-repeat;}
+				.tit {position:relative; display:block; margin:30px 0 34px; padding-bottom:35px; font-size:30px; color:#000; letter-spacing:5px; text-align:center;}
+				.tit:after {position:absolute; left:50%; bottom:0; display:block; content:""; width:138px; height:1px; margin-left:-69px; background:#ad2634;}
+				.tit .tail {font-style:italic;}
+				.txt {font-size:18px; line-height:44px; color:#2a2a2a; text-align:center;}
+				.txt .point {padding:1px; background:#ffea82;}
+				.list {margin-top:31px; border:1px solid #cbc6c5;}
+				.list > li {padding:10px 20px 10px 40px; border-top:1px solid #cbc6c5; color:#2a2a2a; text-indent:-20px;}
+				.list > li:first-child {border-top:none;}
+			}
+		}
+	}
+}
 
 /* 열린군정 ------------------------------------------- */
 // 행사안내
@@ -1316,8 +1372,94 @@ div[class^=oftoday_] {
 		} 
 	}
 }
+// 군정방향 
+.direction {
+	.tit {padding:75px 0 35px; text-align:center;}
+	.tit .en {position:relative; padding-top:45px; font-size:28px; color:#cbcbcb;}
+	.tit .en:before {position:absolute; display:block; content:""; left:50%; top:0; width:16px; height:13px; margin-left:-8px; background:url(../images/usc/subpage/bg_safe_quote01.png) no-repeat center top;}
+	.tit .big {margin:8px 0 25px; font-size:46px; color:#2f2f2f;}
+	.tit .big .point {color:#fe970e;}
+	.tit .tail {position:relative; margin-bottom:15px; padding-bottom:45px; font-size:21px; color:#666;}
+	.tit .tail:after {position:absolute; display:block; content:""; left:50%; bottom:0; width:16px; height:13px; margin-left:-8px; background:url(../images/usc/subpage/bg_safe_quote02.png) no-repeat center top;}
+	.tit h4 {display:inline-block; padding:30px 25px 0; background:url(../images/usc/subpage/bg_leaf.png) no-repeat right top; font-size:36px; color:#39290c;}
+	.tit h4 .point { color:#3b9b60;}
+	.tit .en,
+	.tit .point {font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
+	.list-img {overflow:hidden; margin:0 0 35px -15px; }
+	.list-img > li {float:left; width:25%; font-size:20px; color:#2e2e2e; text-align:center;}
+	.list-img > li .cont {margin-left:15px; padding:155px 0 40px;}
+	.list-img > li .tail {display:block; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:25px;}
+	.list-img > li.icon-01 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list01.png) no-repeat;}
+	.list-img > li.icon-02 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list02.png) no-repeat;}
+	.list-img > li.icon-03 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list03.png) no-repeat;}
+	.list-img > li.icon-04 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list04.png) no-repeat;}
+	.list-img > li[class^=icon-] .cont {background-position:center 28px;}
+	*[class^=heading][class$=-h4] {margin-top:20px; margin-bottom:9px;}
+	*[class^=comp-lst][class*=_dotted] {margin-bottom:25px;}
+}
+// 통합신공항 
+.airport {
+	.box-con {background:#f5f8f8; border:1px solid #dcdcdc;}
+	.box-con p {position:relative; margin:35px 0; padding:40px 20px; font-size:29px; color:#39290c; text-align:center;}
+	.box-con p:before {position:absolute; display:block; content:""; left:50%; top:0; width:16px; height:13px; margin-left:-8px; background:url(../images/usc/subpage/bg_safe_quote01.png) no-repeat center top;}
+	.box-con p:after {position:absolute; display:block; content:""; left:50%; bottom:0; width:16px; height:13px; margin-left:-8px; background:url(../images/usc/subpage/bg_safe_quote02.png) no-repeat center top;}
+	.box-con p .color1 {color:#3b9b60;}
+	.box-con p .color2 {color:#fe970e;}
+	.comp-lst_dotted {margin-top:10px; margin-bottom:30px;}
+	.exp-business {position:relative; margin-top:34px;}
+	.exp-business .ratio {display:table; width:100%; padding-top:25px;}
+	.exp-business .ratio > li {display:table-cell; font-size:16px; color:#fff;}
+	.exp-business .ratio > li .bold {display:block; }
+	.exp-business .ratio > li[class^=item-] {height:65px; padding:0 10px; line-height:20px; vertical-align:middle; box-sizing:border-box;}
+	.exp-business .ratio > li.item-1 {width:59%; background:#206cc1;}
+	.exp-business .ratio > li.item-1 .bold{display:inline-block;}
+	.exp-business .ratio > li.item-2 {width:14%; background:#f05757;}
+	.exp-business .ratio > li.item-3 {width:15%; background:#1c8f53;}
+	.exp-business .ratio > li.item-4 {width:12%; background:#f8b435;}
+	.exp-business .total {}
+	.exp-business .total:before {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:20px; border:1px solid #a0a0a0; border-bottom:none; box-sizing:border-box;}
+	.exp-business .total .inner{position:absolute; left:50%; top:-10px; display:inline-block; padding:0 14px; margin-left:-123px; background:#fff; font-size:18px; color:#1c1c1c; box-sizing:border-box;}
+	.exp-business .total .bold {font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:24px; color:#ff4000;}
 
-
+	.procedure {overflow:hidden; margin-top:15px;}
+	.procedure ol {float:left; width:745px; margin:-10px 0 0 -10px;}
+	.procedure ol > li {float:left; width:175px; height:163px; margin:10px 0 0 10px; padding:15px; background:#f8f8f8; box-sizing:border-box;}
+	.procedure ol > li .num {display:block; width:30px; height:30px; line-height:30px; background:#f27405; border-radius:100%; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:16px; color:#fff; text-align:center; }
+	.procedure ol > li .date {display:block; padding:10px 0; font-size:18px; color:#2e2e2e;}
+	.procedure ol > li .txt {display:block; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; line-height:24px; color:#2e2e2e;}
+	.procedure .goal {float:right; width:275px; padding:230px 0 0; background:url(../images/usc/subpage/bg_procedure.png) no-repeat center 58px; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:26px; color:#ff4000; text-align:center;}
+	.img-area {margin:10px 0 30px; font-size:0;}
+	.list-situation {margin-top:20px; padding:50px 0 30px; background:#fefefe; border:1px solid #dcdcdc; text-align:center;}
+	.list-situation ul {display:inline-block;}
+	.list-situation ul > li {position:relative; float:left; margin:0 0 0 120px; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:25px; color:#2e2e2e;}
+	.list-situation ul > li .txt {position:absolute; left:0; right:0; top:-5px;}
+	.list-situation ul > li:first-child {margin-left:0;}
+	.list-situation ul > li:first-child:before,
+	.list-situation ul > li:first-child:after {display:none;}
+	.list-situation ul > li:before {position:absolute; left:-90px; top:50%; display:block; content:""; width:46px; height:4px; margin-top:-2px; background:#bababa;}
+	.list-situation ul > li:after {position:absolute; left:-70px; top:50%; display:block; content:""; width:4px; height:46px; margin-top:-23px; background:#bababa;}
+}
+// 통합신공항 - 소음피해 해소방안 
+.damage {
+	*[class^=img-area] {text-align:center;}
+	.img-area-01 {margin:90px 0;}
+	.img-area-02 {margin:45px 0 105px;}
+	.img-area-03 {margin:55px 0 0;}
+	.img-area-03 img:first-child {margin-right:30px;}
+}
+// 통합신공항 - 기대효과 
+.effect {
+	.list-ripple {overflow:hidden; margin:10px 0 30px -14px;}
+	.list-ripple > li {float:left; width:33.33%; color:#2e2e2e;}
+	.list-ripple > li .inner {margin-left:14px; padding:40px 0 40px; background:#f8f8f8; border:1px solid #d8d7d7;}
+	.list-ripple > li * {display:block; text-align:center;}
+	.list-ripple > li .txt {font-size:24px;}
+	.list-ripple > li .before {position:relative; padding-bottom:45px; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:25px; }
+	.list-ripple > li .before:before {position:absolute; left:50%; bottom:18px; display:block; content:""; width:12px; height:17px; margin-left:-6px; background:#585858;}
+	.list-ripple > li .before:after {position:absolute; left:50%; bottom:-14px; display:block; content:""; width:0; height:0; margin-left:-12px; border-style:solid; border-width:16px 12px; border-color:#585858 transparent transparent transparent;}
+	.list-ripple > li .after {margin-top:7px; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:28px; font-style:italic; color:#ff4000;}
+	.img-area {margin-top:10px;}
+}
 
 /* 기타 ------------------------------------------- */
 // 배너존
@@ -1357,7 +1499,7 @@ div[class^=oftoday_] {
 	.contents-zone ul li { margin:10px 0;}
 	.contents-zone ul li:first-child { margin:0;}
 	.btn-box {width: 421px; height:80px; padding:15px; margin:15px 0 40px 60px; background: #f5f8f8; border: 1px solid #dfdfdf; font-size: 0; text-align: center; box-sizing: border-box;}
-	.btn-box a {display:inline-block; width:202px; padding:0 6px; letter-spacing: -1px; float: right; }
+	.btn-box a {display:inline-block; width:202px; padding:0 6px; letter-spacing: -1px; float: right; font-size: 15px;}
 
 	.viewer1:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer1.gif") no-repeat center center;}
 	.viewer2:before {content: ''; display: inline-block; width: 105px; height: 50px; background: url("../images/usc/subpage/btn_viewer2.png") no-repeat center center;}
@@ -1373,6 +1515,115 @@ div[class^=oftoday_] {
 	.img_site li {position: relative; width:946px; height:580px; padding:9px 10px 9px 9px; margin-left:70px; border:3px solid #e7e8e9; box-sizing: border-box;}
 	.img_site p {position: absolute; left:9px; bottom:9px;}
 }
+/* 의성안내 ------------------------------------------- */
+// 국내
+.usc_part03_01 {
+	.img_internal {text-align: center;}
+	.comp-btn-zone {margin:10px 0 0 20px;}
+	.comp-txt_box {margin: 7px 20px 0; }
+}
+// 일반현황
+.status {
+	.img-area {margin-bottom:70px;text-align:center;}
+	.comp-tbl_datatype + .tbl-top-utile {margin-top:50px;}
+}
+// 직원검색
+.staff {
+	.comp-iconbox_iconnone {padding:40px 30px 45px;}
+	*[class^=comp-iconbox] .cont .tit {font-size:15px;}
+	*[class^=comp-iconbox] .cont .tit span {color:#f27405;font-size:20px;font-family:'NanumSquareB';}
+	.comp-iconbox_iconnone .comp-select_h42 {width:258px;}
+	.comp-iconbox_iconnone .comp-input_h42 {width:298px;margin-left:2px;}
+	.comp-iconbox_iconnone .comm-btn_type3_deeporange {margin-left:2px;}
+}
+// 위치
+.location  {
+	.heading-h3 {margin-bottom:18px;}
+	.img-area {margin-bottom:55px;text-align:center;}
+	.img-area + .comp-lst_dotted {margin-bottom:50px;}
+	.img-area + .comp-lst_dotted li {margin-top:10px;}
+	.comp-lst_dotted li:first-child {margin-top:0 !important;}
+	.chinese {font-weight:bold;}
+	.comp-tbl_datatype {margin-bottom:30px;}
+	.comp-tbl_datatype .bold {color:#1c1c1c;}
+	.comp-tbl_datatype + .comp-lst_dotted li {margin-top:20px;}
+	.comp-tbl_datatype .al-l {padding-left:28px;}
+}
+// 의성노래
+.song {
+	.heading-h3 {margin-bottom:28px;}
+	.heading-h4 {margin-bottom:12px;}
+	.song-list li {margin-top:38px;}
+	.song-list li:first-child {margin-top:0;}
+	.song-wrap {position:relative;overflow:hidden;padding:14px;margin-left:46px;border:1px solid #d6d5d5;color:#4b4b4b;}
+	.song-wrap > div {float:left;}
+	.song-wrap .img-area {width:342px;margin-right:15px;}
+	.song-wrap .info-area {width:61%;padding-top:14px;}
+	.song-wrap .imply {margin:0 0 17px -8px;padding:0 0 15px 5px;font-size:16px;font-family:'NanumSquareB';border-bottom:1px solid #d8d8d8;}
+	.song-wrap .imply span {padding-left:8px;}
+	.song-wrap .lyrics {padding-left:5px;font-size:15px;line-height:24px;}
+	.song-wrap .btn-song {position:absolute;bottom:14px;right:14px;display:inline-block;width:188px;height:45px;border:1px solid #fe970e;font-size:16px;text-align:center;line-height:45px;}
+	.song-wrap .btn-song span {padding-left:33px;background:url(../images/usc/subpage/icon_song_off.png) no-repeat left top;}
+	.song-wrap .btn-song:hover {background:#fe970e;color:#fff;}
+	.song-wrap .btn-song:hover span {background:url(../images/usc/subpage/icon_song_on.png) no-repeat left top;}
+}
+// 찾아오시는길 
+.ico-to {
+	display: inline-block; width: 27px; height: 12px; margin: 0 5px; @include background("usc/subpage/icon_to.png",no-repeat 50% 50%); background-size: 100% auto; text-indent: -9999em; vertical-align: middle;
+}
+.gotoway_usc {
+	position: relative; overflow:hidden; padding:10px 12px 0; margin-top: 20px; border:16px solid #efeeed;
+	.img2 {position: absolute; right:95px; top:50%; margin-top: -200px;}
+}
+.gotoway_tbl {
+	tr > *:nth-child(4) {border-left-color:#a5a6a7 !important;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1914,8 +2165,6 @@ MEDIA QUERY
 	.list ul:first-child {padding-left:0px;}
 	.list ul > li .num {width:2rem; height:2rem; line-height:2rem; border-radius:2rem;}
 }
-
-
 /* 정보공개 ------------------------------------------- */
 // 의성의 오늘
 div[class^=oftoday_] {
@@ -1969,62 +2218,6 @@ div[class^=oftoday_] {
 	.heading-h4 {margin-top: 1.5rem}
 	.heading-h3 {margin-top: 2rem}
 }
-
-
-/* 의성안내 ------------------------------------------- */
-// 국내
-.usc_part03_01 {
-	.comp-txt_box {margin:0.5rem 1rem 0;}
-	.comp-btn-zone {margin:0.5rem 0 0 1rem;} 
-}
-// 일반현황
-.status {
-	.img-area {margin-bottom:3.5rem;}
-	.comp-tbl_datatype + .tbl-top-utile {margin-top:2.5rem;}
-}
-// 직원검색
-.staff {
-	.comp-iconbox_iconnone {padding:2rem 1.5rem;}
-	.comp-iconbox_iconnone .comp-select_h42,
-	.comp-iconbox_iconnone .comp-input_h42 {width:100%;margin:0;}
-	.comp-iconbox_iconnone .comp-input_h42 {margin-top:.5rem;}
-	.comp-iconbox_iconnone .comm-btn_type3_deeporange {margin:.5rem 0 0 0;}
-	.cont {text-align:center;}
-	*[class^=comp-iconbox] .cont .tit {font-size:1.2rem;}
-	*[class^=comp-iconbox] .cont .tit span {font-size:1.5rem;}
-}
-// 위치
-.location {
-	.comp-tab {margin-bottom:2.5rem;}
-	.heading-h3 {margin-bottom:.8rem;}
-	.img-area,
-	.img-area + .comp-lst_dotted {margin-bottom:2.5rem;}
-	.comp-tbl_datatype {margin-bottom:1.5rem;}
-	.comp-tbl_datatype + .comp-lst_dotted li {margin-top:1rem;}
-	.comp-tbl_datatype .al-l {padding:0.5rem;text-align:center !important;}
-}
-// 의성노래
-.song {
-	.song-wrap {margin-left:1.5rem;padding:.7rem;}
-	.heading-h3 {margin-bottom:1.4rem;}
-	.song-list li {margin-top:1.8rem;}
-	.song-wrap > div {float:none;}
-	.song-wrap .img-area {width:auto;margin:0;}
-	.song-wrap .info-area {width:100%;padding-top:.7rem;}
-	.song-wrap .imply {margin:0 0 .9rem -.4rem;padding:0 0 .7rem 0;font-size:1.3rem;}
-	.song-wrap .imply span {padding-left:.4rem;}
-	.song-wrap .lyrics {margin-bottom:.5rem;padding-left:0;font-size:1.2rem;line-height:2rem;}
-	.song-wrap .btn-song {position:static;bottom:auto;right:auto;width:9rem;height:2.3rem;font-size:1.2rem;line-height:2.3rem;}
-	.song-wrap .btn-song span {padding-left:1.6rem;background-size:1.2rem;background-position-y:2px;}
-	.song-wrap .btn-song:hover span {background-size:1.2rem;background-position-y:2px;}
-}
-// 찾아오시는길 
-.gotoway_usc {
-	.img2 {max-width: 15rem; margin-top: -10rem; right: 5rem;}
-}
-
-
-
 /* 분야별정보 ------------------------------------------ */
 // 안전문화운동
 .safe {
@@ -2139,14 +2332,123 @@ div[class^=oftoday_] {
 	.comp-iconbox_iconnone .cardimg {position:static; text-align: center;}
 	.comp-iconbox_iconnone .cont {padding-left: 0; padding-top:1rem; height: auto}
 }
-
-
-
-
-
-
-
-
+// 공장설립 - 공장설립지원센터
+.factory {
+	*[class^=comp-iconbox] {margin:1rem 0 1.5rem;}
+	*[class^=comp-txt][class*=_box] {margin-top:1rem;}
+	.comp-lst_dotted {margin-top:0.5rem; margin-bottom:2.5rem;}
+	.comp-lst_dotted + .comp-lst_important {margin-top:-2.5rem; margin-bottom:2.5rem;}
+	.comp-lst_hyphen { margin-top:0.5rem; margin-bottom:2.5rem;}
+}
+// 기초생활보장 - 보장절차 
+.guarantee *[class^=comp-upport] {margin-top:2rem;}
+// 기초생활보장 - 수급자선정기준 
+.criteria {
+	.ml1 {margin-left:1.5rem !important;}
+	*[class^=heading][class$=-h4] {margin-top:2rem; margin-bottom:0.5rem;}
+	*[class^=comp-lst][class*=_dotted] {margin:0 0 2.5rem 1.5rem;}
+	p[class^=comp-lst][class*=_important] {margin:0.5rem 0 0 1rem;}
+	h5[class^=comp-lst][class*=_dotted] {margin:0 0 0.5rem 1.6rem;}
+	p[class^=comp-lst][class*=_hyphen] {margin-bottom:1rem;}
+	*[class^=comp-lst][class*=_hyphen] {margin:0 0 2.5rem 1.5rem;}
+	.img-area {margin-left:1.5rem; padding:2rem;}
+	.scrollzone + h5[class^=comp-lst][class*=_dotted] {margin-top:1.5rem;}
+	*[class^=comp-txt][class*=_box] {margin-left:1.5rem;}
+}
+// 납세자보호관 - 고충민원 
+.grievance {
+	.btn-down {display:block; width:15rem; height:3rem; line-height:3rem; margin-top:0.5rem; padding-left:3.5rem; background-position:1rem; font-size:1rem;}
+	.img-area {padding:1rem;}
+}
+// 노인복지 - 노인돌봄서비스사업 
+.insurance {
+	*[class^=heading][class*=-h4] {margin-bottom:0.5rem;}
+	*[class^=comp-lst][class*=_dotted] {margin-bottom:0.5px; }
+	*[class^=comp-lst][class*=_dotted] + *[class^=heading][class$=-h4]  {margin-top:2rem;}
+	*[class^=comp-txt][class*=_box] {margin:0.5rem 0 0.7rem -1.1rem;}
+	.service-content {
+		margin:0.5rem 0 0 1rem; padding:2rem 1rem;
+		.inner > li {
+			margin-left:5rem;
+			.tit .ball {width:10rem; height:10rem;}
+			.tit .ball .txt {font-size:1.2rem; line-height:1;}
+			.tail {font-size:1.6rem;}
+			.tail:before {width:2px; height:0.8rem;}
+			.list {width:8rem; margin:0 auto;}
+			.list > li {width:8rem; height:3rem; line-height:3rem; font-size:1rem;}
+			.list > li:before {width:2px; height:0.8rem;}
+		}
+	}
+}
+// 노인복지 - 치매/노인실명예방관리 
+.dementia {
+	*[class^=heading][class*=-h4] {margin-bottom:0.5rem;}
+	*[class^=comp-lst][class*=_dotted] {margin-top:0.7rem; margin-bottom:0.5rem;}
+	*[class^=comp-lst][class*=_dotted] *[class^=comp-lst][class*=_hyphen],
+	.scrollzone {margin-left:-1rem;}
+	.img-area {margin-left:1.3rem;}
+}
+// 노인복지 - 노인장기요양보험제도 
+.long-care {
+	*[class^=heading][class$=-h4] {margin-top:1.5rem; margin-bottom:0.5rem;}
+	*[class^=comp-lst][class*=_dotted] {margin-top:0.7rem; margin-bottom:0.5rem;}
+	*[class^=comp-txt][class*=_box] {margin:1rem 0 0 1.5rem;}
+	p[class^=comp-lst][class*=_hyphen] {margin-top:0.5rem; margin-bottom:1rem; }
+	p[class^=comp-lst][class*=_important] {margin-left: -1rem;}
+	.comp-step-area {
+		margin:1rem 0 1.5rem 1.5rem;
+		ol {
+			border:1px solid #dfdfdf;
+			& > li {width:100%; border:none; border-top:1px solid #dfdfdf;}
+			li:first-child {border:none;}
+			li:before {left:50%; top:-0.7rem; margin-left:-0.5rem; -ms-transform: rotate(90deg); -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg);}
+			.tit {height:auto; padding:1rem;}
+			.tit .inner {font-size:1.2rem; line-height: 1.6rem;}
+			.cont {padding:1rem 0;margin:0 0.6rem;}
+			.cont .belong {padding:0.5rem 1rem 0.4rem; box-sizing:border-box; font-size: 1.2rem;}
+		}
+	}
+} 
+// 노인복지 - 노인복지시설 
+.elder {
+	*[class^=heading][class*=-h3] {margin-top:2.5rem;}
+	.ml20 [class^=comp-tbl_],
+	.ml40 [class^=comp-tbl_] {margin-top:1rem;}
+	*[class^=heading][class*=-h4] {margin-top:2rem;}
+	table[class^=comp-tbl][class*=_datatype] {margin-bottom:2rem;}
+	h5[class^=comp-lst][class*=_dotted] + *[class^=comp-lst][class*=_hyphen] > li {margin-top:0.5rem; margin-bottom:0.5rem;}
+	h5[class^=comp-lst][class*=_dotted], 
+	*[class^=comp-lst][class*=_dotted] > li {margin-top:0.5rem;}
+	.scrollzone {margin:1rem 0 1.2rem 1.2rem;}
+	.comp-step-area {
+		ol .tit {height:4.5rem;}
+		ol .cont {height:6rem;padding:0 1rem;}
+		ol .cont > * {line-height:1.3rem;}
+		ol > li:before {top:6.5rem;}
+		ul > li > .cont:before {top:50%; width:1rem; height:1.5rem; margin:-0.75rem 0 0 -0.5rem; background-size:100%;}
+		ol > li:nth-child(odd) .tit {padding:0;}
+		ul > li.round:before {top:-1rem; width:1rem; height:1.5rem; background-size:100%;}
+		ul > li.round .inner {width:10rem; height:2.5rem; line-height:2.5rem; font-size:1.2rem;}
+	}
+}
+// 헌장
+.comp-charter-cont {
+	border-width:1rem;
+	&:before {width:13rem; height:13rem; background-size:100%; left:-1rem; top:-1rem;}
+	&:after {width:13rem; height:13rem; background-size:100%; right:-1rem; bottom:-1rem;}
+	.inner {
+		margin:0.5rem;
+		.cont .surround {
+			padding:1.5rem 1rem 1.5rem;
+			.en:before {width:6rem; height:3rem; margin:0 auto 1rem auto; background-size:100%;}
+			.tit {margin:1rem 0; padding-bottom:1rem; font-size:1.5rem;}
+			.tit:after {width:8rem; margin-left:-4rem;}
+			.txt {font-size:1.2rem; line-height:2rem;}
+			.list {margin-top:1rem;}
+			.list > li {padding:0.5rem 1rem 0.5rem 2.3rem; text-indent:-1.1rem;}
+		}
+	}
+}
 
 /* 열린군정 ------------------------------------------- */
 // 행사안내
@@ -2195,8 +2497,99 @@ div[class^=oftoday_] {
 		} 
 	}
 }
-
-
+// 열린군청 - 군정방향 
+.direction {
+	.tit {
+		padding:2rem 0 2rem; text-align:center;
+		.en {padding-top:3rem; font-size:1.5rem;}
+		.en:before {width:0.8rem; height:0.6rem; margin-left:-0.4rem; background-size:100%;}
+		.big {margin:0.5rem 0 1.5rem; font-size:2.5rem;}
+		.big .point {color:#fe970e;}
+		.tail {position:relative; margin-bottom:1.5rem; padding-bottom:3rem; font-size:1.5rem;}
+		.tail:after {width:0.8rem; height:0.6rem; margin-left:-0.4rem; background-size:100%;}
+		h4 {padding:1.8rem 1.8rem 0; background-size:2rem 2.2rem; font-size:1.8rem; color:#39290c;}
+		h4 .point {color:#3b9b60;}
+	}
+	.list-img {
+		overflow:hidden; margin:-1rem 0 3rem -1rem; 
+		& > li {
+			float:left; width:50%; font-size:2rem; color:#2e2e2e; text-align:center;
+			.cont {margin:1rem 0 0 1rem; padding:15rem 0 3rem;}
+			.tail {display:block; font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:2.5rem;}
+			&.icon-01 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list01.png) no-repeat;}
+			&.icon-02 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list02.png) no-repeat;}
+			&.icon-03 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list03.png) no-repeat;}
+			&.icon-04 .cont {background:#f8f8f8 url(../images/usc/subpage/ico_direction_list04.png) no-repeat;}
+			&[class^=icon-] .cont {background-position:center 3rem;}
+		}
+	}
+	*[class^=heading][class$=-h4] {margin-top:2rem; margin-bottom:0.5rem;}
+	*[class^=comp-lst][class*=_dotted] {margin-bottom:2.5rem;}
+}
+// 통합신공항 
+.airport {
+	.exp-business {margin-top:2rem;}
+	.comp-lst_dotted {margin-top:0.5rem; margin-bottom:2.5rem;}
+	.img-area {margin:1rem 0 1.5rem;}
+	.box-con p {
+		margin:1rem 0; padding:1.5rem 1rem; font-size:1.5rem; line-height:2rem;
+		&:before {width:0.8rem; height:0.6rem; margin-left:-0.4rem; background-size:100%;}
+		&:after {width:0.8rem; height:0.6rem; margin-left:-0.4rem; background-size:100%;}
+	}
+	.exp-business{ 
+		.ratio > li[class^=item-] {height:2rem;}
+		.view-m > li {position:relative; margin-top:1rem; padding-left:1.5rem; font-size:1.2rem; line-height:1.4rem;}
+		.view-m > li:before {position:absolute; left:0; top:0.1rem; display:block; content:""; width:1rem; height:1rem;}
+		.view-m > li.item-1:before {background:#206cc1;}
+		.view-m > li.item-2:before {background:#f05757;}
+		.view-m > li.item-3:before {background:#1c8f53;}
+		.view-m > li.item-4:before {background:#f8b435;}
+		.total .inner {font-size:12px; margin-left:-82px;}
+		.total .inner .bold {font-size:15px;}
+	}
+	.procedure {
+		overflow:hidden; margin-top:15px;
+		ol {
+			float:none; width:auto;
+			& > li {float:none; width:auto; height:auto; padding:1rem;}
+			& > li .num {display:inline-block; width:2rem; height:2rem; line-height:2rem; font-size:1rem;}
+			& > li .date {display:inline-block; padding:0 1rem;font-size:1.2rem;}
+			& > li .txt {display:inline-block; font-size:1.3rem; line-height:1;}
+		}
+		.goal {float:none; width:auto; font-size:1.3rem;}
+	}
+	.list-situation {
+		margin-top:1.5rem; padding:3rem 0 2rem;
+		ul > li {
+			margin-left:2rem;
+			&:before {left:-1.65rem; width:1.5rem; height:2px;}
+			&:after {left:-1rem; width:2px; height:1.5rem; margin-top:-0.75rem;}
+			img {width:8rem;}
+			.txt {font-size:1.3rem;}
+		}
+	}
+}
+// 통합신공항 - 소음피해 해소방안 
+.damage {
+	.img-area-01 {margin:4rem 0;}
+	.img-area-02 {margin:3rem 0 4rem;}
+	.img-area-03 {margin:2rem 0 0;}
+	.img-area-03 img:first-child {margin:0 0 1.5rem 0;}
+}
+// 통합신공항 - 기대효과 
+.effect {
+	.list-ripple {
+		margin:1rem 0 2rem -0.5rem;
+		& > li {
+			.inner {margin-left:0.5rem; padding:2rem 0;}
+			.txt {font-size:1.2rem;}
+			.before {padding-bottom:2rem; font-size:1.2rem;}
+			.before:before {width:0.8rem; height: 1rem; margin-left: -0.4rem; bottom:0.5rem;}
+			.before:after {bottom:-1rem; margin-left:-0.6rem; border-width:0.8rem 0.6rem;}
+			.after {font-size:1rem;}
+		}
+	}
+}
 
 /* 기타 ----------------------------------------------- */
 // 배너존
@@ -2249,11 +2642,57 @@ div[class^=oftoday_] {
 	.img_site p {position: absolute; left:0.5rem; bottom:0.8rem;}
 }
 
-
-
-
-
- 
+/* 의성안내 ------------------------------------------- */
+// 국내
+.usc_part03_01 {
+	.comp-txt_box {margin:0.5rem 1rem 0;}
+	.comp-btn-zone {margin:0.5rem 0 0 1rem;} 
+}
+// 일반현황
+.status {
+	.img-area {margin-bottom:3.5rem;}
+	.comp-tbl_datatype + .tbl-top-utile {margin-top:2.5rem;}
+}
+// 직원검색
+.staff {
+	.comp-iconbox_iconnone {padding:2rem 1.5rem;}
+	.comp-iconbox_iconnone .comp-select_h42,
+	.comp-iconbox_iconnone .comp-input_h42 {width:100%;margin:0;}
+	.comp-iconbox_iconnone .comp-input_h42 {margin-top:.5rem;}
+	.comp-iconbox_iconnone .comm-btn_type3_deeporange {margin:.5rem 0 0 0;}
+	.cont {text-align:center;}
+	*[class^=comp-iconbox] .cont .tit {font-size:1.2rem;}
+	*[class^=comp-iconbox] .cont .tit span {font-size:1.5rem;}
+}
+// 위치
+.location {
+	.comp-tab {margin-bottom:2.5rem;}
+	.heading-h3 {margin-bottom:.8rem;}
+	.img-area,
+	.img-area + .comp-lst_dotted {margin-bottom:2.5rem;}
+	.comp-tbl_datatype {margin-bottom:1.5rem;}
+	.comp-tbl_datatype + .comp-lst_dotted li {margin-top:1rem;}
+	.comp-tbl_datatype .al-l {padding:0.5rem;text-align:center !important;}
+}
+// 의성노래
+.song {
+	.song-wrap {margin-left:1.5rem;padding:.7rem;}
+	.heading-h3 {margin-bottom:1.4rem;}
+	.song-list li {margin-top:1.8rem;}
+	.song-wrap > div {float:none;}
+	.song-wrap .img-area {width:auto;margin:0;}
+	.song-wrap .info-area {width:100%;padding-top:.7rem;}
+	.song-wrap .imply {margin:0 0 .9rem -.4rem;padding:0 0 .7rem 0;font-size:1.3rem;}
+	.song-wrap .imply span {padding-left:.4rem;}
+	.song-wrap .lyrics {margin-bottom:.5rem;padding-left:0;font-size:1.2rem;line-height:2rem;}
+	.song-wrap .btn-song {position:static;bottom:auto;right:auto;width:9rem;height:2.3rem;font-size:1.2rem;line-height:2.3rem;}
+	.song-wrap .btn-song span {padding-left:1.6rem;background-size:1.2rem;background-position-y:2px;}
+	.song-wrap .btn-song:hover span {background-size:1.2rem;background-position-y:2px;}
+}
+// 찾아오시는길 
+.gotoway_usc {
+	.img2 {max-width: 15rem; margin-top: -10rem; right: 5rem;}
+}
 
 
 
@@ -2315,15 +2754,6 @@ div[class^=oftoday_] {
 	.list ul + ul {margin:12px 0 0;}
 	.list ul {float:none; width:100%;}
 }
-/* 의성안내 ------------------------------------------- */
-// 찾아오시는길 
-.ico-to {position: relative; top: -2px; width: 2rem; height: 1rem; margin: 0 0.5rem; }
-.gotoway_usc {
-	padding:1rem 1rem; margin-top:1rem; border:8px solid #efeeed;
-	.img2 {position:static; width:50%; max-width: 15rem; margin:-7rem 0 0 auto;}
-}
-
-
 
 /* 정보공개 ------------------------------------------- */
 // 재정정보공개 
@@ -2365,6 +2795,14 @@ div[class^=oftoday_] {
 	}
 }
 
+/* 의성안내 ------------------------------------------- */
+// 찾아오시는길 
+.ico-to {position: relative; top: -2px; width: 2rem; height: 1rem; margin: 0 0.5rem; }
+.gotoway_usc {
+	padding:1rem 1rem; margin-top:1rem; border:8px solid #efeeed;
+	.img2 {position:static; width:50%; max-width: 15rem; margin:-7rem 0 0 auto;}
+}
+
 
 
 
@@ -2381,11 +2819,6 @@ div[class^=oftoday_] {
 	.intro-wrap .sub-txt {text-align:left;}
 	.btn-webtoon {line-height:2.5rem;}
 }
-
-
-
-
-
 
 }
 //-------------------------------------------------------------------------------

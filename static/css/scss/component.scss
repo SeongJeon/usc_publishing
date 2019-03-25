@@ -458,7 +458,7 @@
 }
 
 
-
+ 
 
 
 
@@ -492,6 +492,18 @@ br.m {display:none}
 .mt40 {margin-top: 40px !important;}
 .mt50 {margin-top: 50px !important;}
 .mt60 {margin-top: 60px !important;}
+
+.mb0 {margin-bottom:0px !important;}
+.mb5 {margin-bottom: 5px !important;}
+.mb10 {margin-bottom: 10px !important;}
+.mb15 {margin-bottom: 15px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb25 {margin-bottom: 25px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.mb35 {margin-bottom: 35px !important;}
+.mb40 {margin-bottom: 40px !important;}
+.mb50 {margin-bottom: 50px !important;}
+.mb60 {margin-bottom: 60px !important;}
 
 .ml0 {margin-left: 0px !important;}
 .ml10 {margin-left: 10px !important;}
@@ -1032,6 +1044,25 @@ div[class^=comp-public-area] {
 	button {float: left; position: relative; z-index: 1;}
 	.file-upload {margin-left: 10px;font-size: 16px; color:#787878; float: left; line-height: 35px;}
 }
+/* UI - 화살표 */
+*[class^=comp-upport] {
+	margin-top:10px;
+	*[class^=comp-upport] ol {
+		& > li {
+			position:relative; margin-top:85px; padding:20px 20px 24px; background:#f5f8f8; border:1px solid #dcdcdc;
+			&:first-child {margin-top:0;}
+			&:last-child dl:before,
+			&:last-child dl:after {display:none;}
+			dl:before {position:absolute; left:26px; bottom:-38px; display:block; content:""; width:12px; height:17px; background:#585858;}
+			dl:after {position:absolute; left:20px; bottom:-70px; display:block; content:""; width:0; height:0; border-style:solid; border-top-width:16px; border-right-width:12px; border-bottom-width:16px; border-left-width:12px; border-color:#585858 transparent transparent transparent;}
+			dl .tit {height:27px; line-height:27px; font-size:20px; color:#1c1c1c; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif;}
+			dl .tit .num {display:inline-block; width:27px; height:27px; margin-right:5px; text-align:center; background:#785719; border-radius:100%; font-size:15px; color:#fff; }
+			dl .tit .tail {display:inline-block; margin-left:5px; font-size:20px; color:#f27405; font-family:'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
+			dl .comp-lst_hyphen {margin:8px 0 0 20px;}
+		}
+	}
+}
+
 
 
 
@@ -1426,6 +1457,17 @@ br.m {display:inherit}
 .mt40 {margin-top: 2rem !important;}
 .mt50 {margin-top: 2.5rem !important;}
 .mt60 {margin-top: 3rem !important;}
+
+.mb5 {margin-bottom: 5px !important;}
+.mb10 {margin-bottom: 0.5rem !important;}
+.mb15 {margin-bottom: 0.7rem !important;}
+.mb20 {margin-bottom: 1rem !important;}
+.mb25 {margin-bottom: 1.2rem !important;}
+.mb30 {margin-bottom: 1.5rem !important;}
+.mb35 {margin-bottom: 1.7rem !important;}
+.mb40 {margin-bottom: 2rem !important;}
+.mb50 {margin-bottom: 2.5rem !important;}
+.mb60 {margin-bottom: 3rem !important;}
 
 .ml10 {margin-left: 0.5rem !important;}
 .ml20 {margin-left: 1rem !important;}
@@ -1840,6 +1882,22 @@ div[class^=comp-public-area] {
 	button {float: none; }
 	.file-upload {margin-left:0; margin-top: 1rem; font-size:1.2rem; float:none; line-height:1.8rem;}
 }
+/* UI - 화살표 */
+*[class^=comp-upport] {
+	margin-top:0.5rem;
+	ol > li {
+		margin-top:3rem; padding:1rem;
+		dl {
+			&:before {left:1rem; bottom:-1.5rem; width:0.8rem; height:1rem;}
+			&:after {left:0.62rem; bottom:-3.5rem; border-top-width:1rem; border-right-width:0.8rem; border-bottom-width:1rem; border-left-width:0.8rem;}
+			.tit {height:1.5rem; line-height:1.5rem; font-size:1.2rem;}
+			.tit .num {width:1.5rem; height:1.5rem; font-size:0.9rem; vertical-align:top;}
+			.tit .tail {font-size:1.2rem;}
+			.comp-lst_hyphen {margin:0.5rem 0 0 1rem;}
+		}
+	}
+}
+
 
 
 

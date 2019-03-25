@@ -732,6 +732,56 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .comp-charter-cont .inner .cont .surround .list > li { padding: 10px 20px 10px 40px; border-top: 1px solid #cbc6c5; color: #2a2a2a; text-indent: -20px; }
 .comp-charter-cont .inner .cont .surround .list > li:first-child { border-top: none; }
 
+.water .heading-h3 { margin-bottom: 10px; }
+.water .heading-h3 + .comp-txt_box { margin-bottom: 50px; }
+.water .heading-h3 + .comp-lst_dotted { margin: 0 0 45px 22px; font-size: 15px; letter-spacing: -0.5px; font-family: 'NanumSquareR'; }
+.water .volume .comp-txt_box { margin-bottom: 10px; }
+.water .volume { margin-bottom: 50px; }
+.water .comp-tbl_datatype { margin-bottom: 30px; }
+.water .process-area { margin-bottom: 44px; text-align: center; }
+.water .process-area .heading-h3 { margin-bottom: 20px; text-align: left; }
+.water .process-area ol > li { position: relative; width: 450px; margin: 0 auto; padding-top: 50px; }
+.water .process-area ol > li:before { position: absolute; top: 0; left: 50%; width: 23px; height: 19px; margin-left: -12px; background: #757575; content: ''; }
+.water .process-area ol > li:after { position: absolute; top: 19px; left: 50%; margin-left: -24px; border-style: solid; border-width: 32px 23.5px 0 23.5px; border-color: #757575 transparent transparent transparent; content: ''; }
+.water .process-area ol > li:first-child { padding-top: 0; }
+.water .process-area ol > li:first-child:before, .water .process-area ol > li:first-child:after { display: none; }
+.water .process-area .tit { height: 50px; font-size: 18px; font-family: 'NanumSquareEB'; color: #fff; text-align: center; line-height: 50px; }
+.water .process-area .process01 .tit, .water .process-area .process02 .tit { background: #f27405; }
+.water .process-area .process03 .tit, .water .process-area .process04 .tit { background: #b88527; }
+.water .process-area .process05 .tit { background: #8d8563; }
+.water .process-area .process06 .tit { background: #96526b; }
+.water .process-area .process07 .tit { background: #8e2800; }
+.water .process-area .cont { padding: 16px 28px 14px; background: #f8f8f8; box-sizing: border-box; }
+.water .process-area .cont * { color: #2e2e2e; font-size: 17px; }
+.water .process-area .cont p.comp-lst_hyphen_txt { display: inline-block; }
+.water .process-area .cont ul.comp-lst_hyphen_txt { margin-left: 35px; text-align: left; }
+.water .process-area .cont .txt-area { margin-bottom: 12px; padding: 0 0 13px 35px; border-bottom: 1px solid #dddbdb; text-align: left; }
+.water .process-area .cont .txt-area span { display: block; color: #f27405; font-family: 'NanumSquareB'; }
+.water .process-area .cont .txt-area + .comp-lst_hyphen_txt { display: block; margin-left: 35px; text-align: left; }
+.water .process-area .process05 { width: 974px; }
+.water .process-area .extend { padding: 20px 25px; border: 1px solid #c3c3c3; }
+.water .process-area .extend:after { display: block; clear: both; content: ''; }
+.water .process-area .extend > .cont-area { float: left; width: 450px; }
+.water .process-area .extend > .cont-area + .cont-area { margin-left: 22px; }
+.water .process-area .extend .emphasis { display: inline-block; margin-top: 20px; clear: both; font-size: 22px; font-family: 'NanumSquareEB'; color: #f27405; }
+.water .process-area + .heading-h3 { margin-bottom: 40px; }
+.water .img-area { position: relative; text-align: center; }
+.water .remark { position: absolute; right: 0; bottom: 0; font-size: 16px; font-family: 'NanumSquareB'; text-align: right; color: #1c1c1c; }
+
+.adver .heading-h3 { margin: 55px 0 12px; }
+.adver .img-area { margin-bottom: 20px; }
+.adver .img-area:after { display: block; clear: both; content: ''; }
+.adver .img-area > li { position: relative; float: left; width: 388px; height: 328px; background: #f5f8f8; border: 1px solid #dfdfdf; text-align: center; box-sizing: border-box; }
+.adver .img-area > li + li { margin-left: 20px; }
+.adver .img-area .img-inner { display: table; width: 100%; height: 328px; }
+.adver .img-area li.ex03 .img-inner, .adver .img-area li.ex04 .img-inner { height: 263px; }
+.adver .img-area .img { display: table-cell; vertical-align: middle; }
+.adver .img-area .txt { position: absolute; left: 50%; bottom: 25px; width: 100%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -o-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); font-size: 16px; line-height: 20px; color: #1c1c1c; }
+.adver .img-area.bg li:first-child .txt { padding-top: 230px; background: url(../images/usc/subpage/img_adver_ex01.png) no-repeat center top; }
+.adver .img-area.bg li:first-child + li .txt { padding-top: 230px; background: url(../images/usc/subpage/img_adver_ex02.png) no-repeat center top; }
+.adver .img-area + .comp-lst_dotted, .adver .comp-lst_dotted + .comp-lst_important { margin-left: 20px; }
+.adver .comp-lst_dotted li { font-family: 'NanumSquareR'; }
+
 /* 열린군정 ------------------------------------------- */
 .board-event .contents-zone { position: relative; }
 .board-event *[class^=comp-tab] { width: 300px; position: absolute; right: 0; top: 25px; z-index: 1; margin-bottom: 0; }
@@ -1398,6 +1448,47 @@ MEDIA QUERY
   .comp-charter-cont .inner .cont .surround .txt { font-size: 1.2rem; line-height: 2rem; }
   .comp-charter-cont .inner .cont .surround .list { margin-top: 1rem; }
   .comp-charter-cont .inner .cont .surround .list > li { padding: 0.5rem 1rem 0.5rem 2.3rem; text-indent: -1.1rem; }
+  .water .heading-h3 { margin-bottom: .5rem; }
+  .water .heading-h3 + .comp-txt_box { margin-bottom: 2.5rem; }
+  .water .heading-h3 + .comp-lst_dotted { margin: 0 0 2.3rem 1rem; font-size: 1.2rem; }
+  .water .volume { margin-bottom: 2.5rem; }
+  .water .volume .comp-txt_box { margin-bottom: .5rem; }
+  .water .comp-tbl_datatype { margin-bottom: 1.5rem; }
+  .water .process-area { margin-bottom: 2.2rem; }
+  .water .process-area .heading-h3 { margin-bottom: 1.5px; }
+  .water .process-area ol > li { width: 30rem; padding-top: 2.5rem; }
+  .water .process-area ol > li:before { width: 1.2rem; height: 1rem; margin-left: -.6rem; }
+  .water .process-area ol > li:after { top: 1rem; margin-left: -1.2rem; border-width: 1.6rem 1.2rem 0 1.2rem; }
+  .water .process-area .tit { height: 2.5rem; font-size: 1.4rem; line-height: 2.5rem; }
+  .water .process-area .cont { padding: .8rem 1.4px .7rem; }
+  .water .process-area .cont * { font-size: 1.3rem; }
+  .water .process-area .cont ul.comp-lst_hyphen_txt { margin-left: 1.8rem; }
+  .water .process-area .cont .txt-area { margin-bottom: .6rem; padding: 0 0 .7rem 1.8rem; }
+  .water .process-area .cont .txt-area + .comp-lst_hyphen_txt { margin-left: 1.8rem; }
+  .water .process-area .process05 { width: 30rem; }
+  .water .process-area .extend { padding: 1rem 1.3rem; }
+  .water .process-area .extend > .cont-area { float: none; width: auto; }
+  .water .process-area .extend > .cont-area + .cont-area { margin: 1rem 0 0 0; }
+  .water .process-area .extend .emphasis { margin-top: 1rem; font-size: 1.2rem; }
+  .water .process-area + .heading-h3 { margin-bottom: 2rem; }
+  .water .process-area .remark { bottom: auto; font-size: 1.2rem; }
+  .adver .heading-h3 { margin: 2.8rem 0 .6rem; }
+  .adver .img-area { margin-bottom: 1rem; }
+  .adver .img-area > li { float: none; width: 100%; height: 32rem; padding: 0 1rem; }
+  .adver .img-area > li + li { margin: 1rem 0 0 0; }
+  .adver .img-area .img-inner { height: 32rem; }
+  .adver .img-area li.ex03 { height: 21rem; }
+  .adver .img-area li.ex04 { height: 27rem; }
+  .adver .img-area li.ex05, .adver .img-area li.ex05 .img-inner { height: 24rem; }
+  .adver .img-area li.ex06, .adver .img-area li.ex06 .img-inner { height: 27rem; }
+  .adver .img-area li.ex03 .img-inner { height: 16.5rem; }
+  .adver .img-area li.ex04 .img-inner { height: 23rem; }
+  .adver .img-area li.ex09, .adver .img-area li.ex09 .img-inner { height: 20rem; }
+  .adver .img-area .txt { bottom: 1.5rem; font-size: 1.2rem; line-height: 1.5rem; }
+  .adver .img-area .bg > li:first-child, .adver .img-area .bg > li:first-child + li { height: 24rem; }
+  .adver .img-area .bg li:first-child .txt, .adver .img-area .bg li:first-child + li .txt { padding-top: 17.5rem; background-size: 15rem; }
+  .adver .img-area .case { padding: .8rem 1rem; }
+  .adver .img-area + .comp-lst_dotted, .adver .comp-lst_dotted + .comp-lst_important { margin-left: 1rem; }
   /* 열린군정 ------------------------------------------- */
   .board-event *[class^=comp-tab] { width: 100%; position: relative; right: 0; top: 0; }
   .board-event *[class^=comp-tab] a { line-height: 1.2rem; }

@@ -1166,7 +1166,7 @@ div[class^=comp-public-area] {
 	.organization-chart {
 		padding:35px 40px 40px; border:2px solid #e2e1e1; text-align: center;
 		.part {
-			display:inline-block; width: 180px; min-height: 242px; border:2px solid #dcdcdc; color:#202020; vertical-align: top;
+			display:inline-block; width: 180px; min-height: 242px; border:2px solid #dcdcdc; color:#202020; vertical-align: top; background:#fff;
 			dt a {display:block; font-size: 17px; line-height: 38px; text-align: center; background:#dcdcdc; font-family: $font2;}
 			dd {
 				li {border-bottom: 1px solid #dcdcdc;}
@@ -2181,6 +2181,18 @@ div[class^=comp-public-area] {
 }
 /* 공통페이지 - 행정조직도 */
 .tp-organization {
+	.organization-chart {
+		padding:2rem 1rem;
+		.partgroup {
+			display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+			.part {
+				width: auto; -webkit-flex:1; flex:1; border-width:1px; min-height: 19rem;
+				dt a {font-size: 1.2rem; line-height: 3rem;}
+				dd a {font-size: 1.2rem; line-height: 3rem;}
+			}
+			.part + .part {margin-left: 0.5%;}
+		}
+	}
 	.organization-box {
 		margin-top:1rem; 
 		.group {

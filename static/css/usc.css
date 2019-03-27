@@ -1008,14 +1008,26 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .usc .tp-sitemap .sitemap-box:last-of-type .depth2:nth-child(5) ~ .depth2 { height: 130px; }
 .usc .tp-sitemap .sitemap-box:last-of-type .depth2:nth-child(10) ~ .depth2 { height: auto; }
 
-.usc .tp-organization .chartimg { position: relative; width: 659px; height: 491px; margin: 0 auto; background: url("../../static/images/usc/subpage/img_organization.png") no-repeat 50% 0; }
-.usc .tp-organization .chartimg p[class^=lnk] { position: absolute; overflow: hidden; border-radius: 100px; }
-.usc .tp-organization .chartimg p[class^=lnk] a { display: block; width: 100%; height: 100%; text-indent: -999em; }
-.usc .tp-organization .chartimg .lnk1 { left: 254px; top: 0; width: 148px; height: 148px; }
-.usc .tp-organization .chartimg .lnk2 { left: 243px; top: 204px; width: 170px; height: 50px; }
-.usc .tp-organization .chartimg .lnk3 { left: 488px; top: 153px; width: 170px; height: 50px; }
-.usc .tp-organization .chartimg .lnk4 { left: 488px; top: 280px; width: 170px; height: 50px; }
-.usc .tp-organization .chartimg .lnk5 { left: 488px; top: 359px; width: 170px; height: 50px; }
+.usc .tp-organization .chartimg { position: relative; width: 659px; height: 491px; margin: 0 auto; }
+.usc .tp-organization .chartimg:before { display: block; position: absolute; width: 1px; height: 350px; left: 50%; top: 145px; content: ""; background: #cbcaca; }
+.usc .tp-organization .chartimg:after { display: block; position: absolute; width: 412px; height: 43px; margin-left: -206px; left: 50%; bottom: 0; content: ""; border-top: 1px solid #cbcaca; border-left: 1px solid #cbcaca; border-right: 1px solid #cbcaca; }
+.usc .tp-organization .chartimg p[class^=lnk] { position: absolute; margin-left: 160px; }
+.usc .tp-organization .chartimg p[class^=lnk] a { display: block; width: 100%; height: 100%; text-align: center; color: #202020; box-sizing: border-box; border: 3px solid #fe970e; line-height: 44px; overflow: hidden; border-radius: 100px; font-size: 17px; }
+.usc .tp-organization .chartimg p[class^=lnk]:before { display: block; position: absolute; left: 0; top: 50%; width: 10px; height: 10px; border: 2px solid #fff; content: ""; border-radius: 100px; margin-top: -7px; margin-left: -7px; background: #fe970e; z-index: 1; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk1 { left: 50%; top: 0; width: 148px; margin-left: -74px; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk1 a { background: #ffd401; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 148px; border: 0; font-size: 18px; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk1:before { top: auto; bottom: 0; left: 50%; margin-top: 0; margin-bottom: -7px; background: #ffd401; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk2 { left: 50%; top: 204px; width: 170px; margin-left: -85px; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk2 a { background: #dea12f; line-height: 50px; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; border: 0; font-size: 18px; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk2:before { left: 50%; top: 0; background: #dea12f; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk3 { left: 50%; top: 153px; width: 170px; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk3:after { display: block; position: absolute; width: 155px; height: 1px; left: -160px; top: 50%; content: ""; background: #cbcaca; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk4 { left: 50%; top: 280px; width: 170px; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk4:after { display: block; position: absolute; width: 50px; height: 78px; left: -50px; top: 50%; content: ""; border-left: 1px solid #cbcaca; border-top: 1px solid #cbcaca; border-bottom: 1px solid #cbcaca; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk5 { left: 50%; top: 359px; width: 170px; }
+.usc .tp-organization .chartimg p[class^=lnk].lnk5:after { display: block; position: absolute; width: 110px; height: 1px; left: -160px; top: -15px; content: ""; background: #cbcaca; }
+.usc .tp-organization .part { position: relative; }
+.usc .tp-organization .part:before { display: block; position: absolute; left: 50%; top: -9px; width: 10px; height: 10px; margin-left: -7px; content: ""; border: 2px solid #fff; background: #a2a2a2; border-radius: 100px; }
 
 /* ------------------------------------------------------
 BROWSER HACK
@@ -1661,7 +1673,26 @@ MEDIA QUERY
   .usc .tp-sitemap .group { float: none; width: 100%; margin-top: 0px; }
   .usc .tp-sitemap .sitemap-box:last-of-type .depth2:first-child, .usc .tp-sitemap .sitemap-box:last-of-type .depth2:first-child ~ .depth2 { height: auto; }
   .usc .tp-sitemap .sitemap-box:last-of-type .depth2:nth-child(5) ~ .depth2 { height: auto; }
-  .usc .tp-sitemap .sitemap-box:last-of-type .depth2:nth-child(10) ~ .depth2 { height: auto; } }
+  .usc .tp-sitemap .sitemap-box:last-of-type .depth2:nth-child(10) ~ .depth2 { height: auto; }
+  .usc .tp-organization .chartimg { width: 100%; height: 36rem; }
+  .usc .tp-organization .chartimg:before { height: 100%; top: 5rem; }
+  .usc .tp-organization .chartimg:after { width: 67%; height: 3rem; margin-left: -34%; left: 50%; }
+  .usc .tp-organization .chartimg p[class^=lnk] a { font-size: 1.2rem; line-height: 2.8rem; }
+  .usc .tp-organization .chartimg p[class^=lnk]:before { left: 0; top: 50%; width: 6px; height: 6px; margin-top: -4px; margin-left: -4px; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk1 { left: 50%; width: 10rem; margin-left: -5rem; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk1 a { line-height: 10rem; font-size: 1.5rem; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk1:before { top: auto; bottom: 0; left: 50%; margin-top: 0; margin-bottom: -7px; background: #ffd401; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk2 { top: 17rem; width: 10rem; margin-left: -5rem; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk2 a { line-height: 3rem; font-size: 1.2rem; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk2:before { left: 50%; top: 0; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk3 { top: 12rem; width: 9rem; margin-left: 5rem; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk3:after { width: 5rem; left: -5rem; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk4 { top: 20rem; width: 9rem; margin-left: 5rem; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk4:after { width: 2.5rem; height: 6rem; left: -2.5rem; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk5 { top: 26rem; width: 9rem; margin-left: 5rem; }
+  .usc .tp-organization .chartimg p[class^=lnk].lnk5:after { width: 2.5rem; left: -5rem; top: -15px; }
+  .usc .tp-organization .part { position: relative; }
+  .usc .tp-organization .part:before { display: block; position: absolute; left: 50%; top: -9px; width: 10px; height: 10px; margin-left: -7px; content: ""; border: 2px solid #fff; background: #a2a2a2; border-radius: 100px; } }
 @media (max-width: 768px) { /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */
   /* 전자민원 ------------------------------------------- */
   .advice-app .w_time { display: block; }

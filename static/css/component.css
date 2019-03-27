@@ -701,7 +701,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 
 /* 공통페이지 - 행정조직도 */
 .tp-organization .organization-chart { padding: 35px 40px 40px; border: 2px solid #e2e1e1; text-align: center; }
-.tp-organization .organization-chart .part { display: inline-block; width: 180px; min-height: 242px; border: 2px solid #dcdcdc; color: #202020; vertical-align: top; }
+.tp-organization .organization-chart .part { display: inline-block; width: 180px; min-height: 242px; border: 2px solid #dcdcdc; color: #202020; vertical-align: top; background: #fff; }
 .tp-organization .organization-chart .part dt a { display: block; font-size: 17px; line-height: 38px; text-align: center; background: #dcdcdc; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .tp-organization .organization-chart .part dd li { border-bottom: 1px solid #dcdcdc; }
 .tp-organization .organization-chart .part dd li:nth-child(5) { border-bottom: 0; }
@@ -1139,6 +1139,12 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .tp-sitemap .sitemap-box.othersize .depth2 { width: 50%; padding-left: 0.7rem; }
   .tp-sitemap .sitemap-box.othersize .depth2.row { width: 100%; }
   /* 공통페이지 - 행정조직도 */
+  .tp-organization .organization-chart { padding: 2rem 1rem; }
+  .tp-organization .organization-chart .partgroup { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .tp-organization .organization-chart .partgroup .part { width: auto; -webkit-flex: 1; flex: 1; border-width: 1px; min-height: 19rem; }
+  .tp-organization .organization-chart .partgroup .part dt a { font-size: 1.2rem; line-height: 3rem; }
+  .tp-organization .organization-chart .partgroup .part dd a { font-size: 1.2rem; line-height: 3rem; }
+  .tp-organization .organization-chart .partgroup .part + .part { margin-left: 0.5%; }
   .tp-organization .organization-box { margin-top: 1rem; }
   .tp-organization .organization-box .group { padding: 1rem; margin-top: 1rem; }
   .tp-organization .organization-box .group:first-child { margin-top: 0; }

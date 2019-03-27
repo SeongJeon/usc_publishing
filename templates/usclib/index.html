@@ -273,12 +273,17 @@
 								<p class="month">2019.<em>01</em></p>
 								<p class="btn-arrow btn-next"><button type="button"><span>다음 달로 이동</span></button></p>
 							</div>
-							<ul class="closeday" aria-lable="이달의 휴관일 목록">
+							<ul class="closeday js-closeday" aria-lable="이달의 휴관일 목록">
 								<li>1</li>
-								<li>7</li>
-								<li>14</li>
-								<li>21</li>
-								<li>28</li>
+								<li>2</li>
+								<li>10</li>
+								<li>15</li>
+								<li>18</li>
+								<li>20</li>
+								<li>22</li>
+								<li>24</li>
+								<li>25</li>
+								<li>31</li>
 							</ul>
 						</div>
 						<p class="btn-librarian"><a href="#"><span>사서에게 물어보세요!</span></a></p>
@@ -387,7 +392,7 @@
 										<div class="slide">
 											<a href="#">
 												<span class="thumb"><img src="../../static/images/usclib/temp/@img_main_books.png" alt="아가씨와 밤 : 기욤 뭐소 표지"></span>
-												<span class="name">아가씨와 밤 : 기욤 뭐소</span>
+												<span class="name">아가씨와 밤 : 기욤 뭐소아가씨와 밤 : 기욤 뭐소아가씨와 밤 : 기욤 뭐소아가씨와 밤 : 기욤 뭐소아가씨와 밤 : 기욤 뭐소아가씨와 밤 : 기욤 뭐소</span>
 											</a>
 										</div>
 										<div class="slide">
@@ -602,6 +607,30 @@
 			}
 		]
 	});
+
+	// 자주찾는 서비스
+	$(".js-closeday").slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		ltr: true,
+		slidesToShow: 10,
+		slidesToScroll: 1,
+		swipe:false,
+		arrows:false,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					swipe:true,
+					slidesToShow:9,
+					slidesToScroll:9
+			   }
+			}
+		]
+	});
+
+
 </script>
 </body>
 </html>

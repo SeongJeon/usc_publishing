@@ -1000,6 +1000,21 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .usc_part03_03 .comp-charter-cont .inner .cont .surround .tit { background: url("../../static/images/usc/subpage/img_part03_03_txt.png") no-repeat 50% 50%; }
 .usc_part03_03 .comp-charter-cont .inner .cont .surround .list { margin: 31px 121px 0; text-align: center; }
 
+/* 공통페이지 ------------------------------------------- */
+.tp-sitemap .sitemap-box { overflow: hidden; padding: 15px 15px 15px 3px; margin: 15px 0 35px; border: 2px solid #e2e1e1; }
+.tp-sitemap .sitemap-box .depth2 { float: left; width: 20%; padding-left: 12px; }
+.tp-sitemap .sitemap-box .depth3 { padding: 10px 0 22px 15px; }
+.tp-sitemap .sitemap-box .depth3 li { margin-top: 7px; }
+.tp-sitemap .sitemap-box .depth3 a { font-size: 14px; color: #1c1c1c; line-height: 20px; }
+.tp-sitemap .sitemap-box .depth3 a:before { display: inline-block; content: "-"; margin-right: 3px; vertical-align: middle; }
+.tp-sitemap .sitemap-box .depth3 a:hover { color: #f27405; }
+.tp-sitemap .sitemap-box h4 a { display: block; width: 100%; font-size: 16px; color: #1c1c1c; text-align: center; line-height: 38px; border: 1px solid #e8ba60; box-sizing: border-box; }
+.tp-sitemap .sitemap-box h4 a:hover { background: #fe970e; border-color: #fe970e; color: #fff; }
+.tp-sitemap .sitemap-box.othersize { padding-left: 0; }
+.tp-sitemap .sitemap-box.othersize .depth2 { width: 25%; padding-left: 15px; }
+
+.usc .tp-sitemap .row-group { overflow: hidden; }
+
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */

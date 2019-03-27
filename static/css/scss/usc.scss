@@ -926,7 +926,7 @@ SUB PAGE
 	.img {text-align:center;}
 	.list {overflow:hidden; padding:30px 12px 0;}
 	.list ul {float:left; width:50%; box-sizing: border-box;}
-	.list ul:first-child {padding-left:20px;}
+	.list ul:first-child {padding-left:30px;}
 	.list ul > li {margin:12px 0 0; color:#4b4b4b;}
 	.list ul > li:first-child {margin-top:0;}
 	.list ul > li .num {display:inline-block; width:30px; height:30px; line-height:30px; margin-right:10px; background:#4b4b4b; border-radius:30px; text-align:center; color:#fff;}
@@ -1651,6 +1651,7 @@ div[class^=oftoday_] {
 	.comp-charter-cont .inner .cont .surround .tit {background: url("../../static/images/usc/subpage/img_part03_03_txt.png") no-repeat 50% 50%; }
 	.comp-charter-cont .inner .cont .surround .list {margin:31px 121px 0; text-align: center;}
 }
+
 
 
 

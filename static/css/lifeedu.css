@@ -30,14 +30,6 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-/*------------------usc_part03_13--------------------------*/
-.usc_part03_13 .tab-contents .floor-plan  {padding-bottom:23px;}
-.usc_part03_13 .tab-contents .floor-plan .list {padding:18px 47px 0;}
-.usc_part03_13 .tab-contents .floor-plan .list ul:first-child{padding-left:0;}
-.usc_part03_13 .tab-contents .floor-plan .list ul:last-child{padding-left:10px;}
-.usc_part03_13 #tab-contents1 .img {text-align: center}
-.usc_part03_13 #tab-contents1 .list .num { display: inline-block; width: 30px; height: 30px; line-height: 30px; margin-right: 10px; background: #4b4b4b; border-radius: 30px; text-align: center; color: #fff;}
-
 
 
 

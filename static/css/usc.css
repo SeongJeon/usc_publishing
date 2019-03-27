@@ -467,7 +467,7 @@ SUB PAGE
 .floor-plan .img { text-align: center; }
 .floor-plan .list { overflow: hidden; padding: 30px 12px 0; }
 .floor-plan .list ul { float: left; width: 50%; box-sizing: border-box; }
-.floor-plan .list ul:first-child { padding-left: 20px; }
+.floor-plan .list ul:first-child { padding-left: 30px; }
 .floor-plan .list ul > li { margin: 12px 0 0; color: #4b4b4b; }
 .floor-plan .list ul > li:first-child { margin-top: 0; }
 .floor-plan .list ul > li .num { display: inline-block; width: 30px; height: 30px; line-height: 30px; margin-right: 10px; background: #4b4b4b; border-radius: 30px; text-align: center; color: #fff; }

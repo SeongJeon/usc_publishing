@@ -237,7 +237,7 @@ SUB PAGE
 ------------------------------------------------------ */
 /* 의성안내 상징 */
 .emblem .heading-h3 {margin-bottom:12px;}
-.emblem div[class$='-wrap'] {overflow:hidden;margin-bottom:50px;}
+.emblem div[class$='-wrap'] {margin-bottom:50px;}
 .emblem div[class$='-wrap']:after {display:block;clear:both;content:'';}
 .emblem div.brand-wrap {margin-bottom:0;}
 .emblem div[class$='-wrap'] > div,
@@ -517,34 +517,21 @@ MEDIA QUERY
 .emblem .symbol-wrap .symbol-info li {width:30.7%;height:6.2rem;padding-top:2rem;font-size:1.1rem;line-height:1.2rem;}
 .emblem .symbol-wrap .symbol-info li + li {margin-left:.6rem;}
 .emblem .symbol-wrap .symbol-info *[class^=comm-btn][class*=_type4],
-.emblem .char-wrap *[class^=comm-btn][class*=_type4] {padding:0 .5rem;}
-.emblem .symbol-wrap .symbol-info *[class^=comm-btn][class*=_download2]:after,
-.emblem .char-wrap *[class^=comm-btn][class*=_type4]:after {display:none;}
+.emblem  *[class^=comm-btn][class*=_type4] {height:auto;padding:1rem;line-height:1.5rem;}
+.emblem  *[class^=comm-btn][class*=_type4]:after {display:none;}
 .emblem .char-wrap {height:auto;padding-left:17rem;background-size:15.5rem;}
+.emblem div.char-wrap div.info-area {min-height:16rem;}
 .emblem .char-wrap *[class^=comm-btn][class*=_type4] {left:0;right:auto;bottom:auto;top:11rem;width:15.5rem;}
 .emblem .brand-wrap *[class^=comm-btn][class*=_type4] {position:static;float:right;margin-top:1rem;}
-.emblem .bro-wrap ul {position:relative;overflow:hidden;margin-bottom:.8rem;}
-.emblem .bro-wrap li {float:left;width:25%;margin-left:5px;padding-top:198px;}
-.emblem .bro-wrap li.bro03 {clear:both;}
-
-
-/*
-.emblem .bro-wrap li:first-child {margin-left:0;}
-.emblem .bro-wrap li:after {position:absolute;left:0;top:0;width:99%;height:192px;border:1px solid #cedfdf;content:'';}
-.emblem .bro-wrap li *[class^=comm-btn][class*=_type4] {width:100%;padding:0;}
-.emblem .bro-wrap .comm-btn_type4_deeporange {float:right;}
-.emblem .bro-wrap .bro01 {background:url(../images/usc/subpage/img_emblem_char01.gif) no-repeat center 14px;}
-.emblem .bro-wrap .bro02 {background:url(../images/usc/subpage/img_emblem_char02.gif) no-repeat center 14px;}
-.emblem .bro-wrap .bro03 {background:url(../images/usc/subpage/img_emblem_char03.gif) no-repeat center 14px;}
-.emblem .bro-wrap .bro04 {background:url(../images/usc/subpage/img_emblem_char04.gif) no-repeat center 14px;}
-.emblem .bro-wrap .bro05 {background:url(../images/usc/subpage/img_emblem_char05.gif) no-repeat center 14px;}
-.emblem .plants-wrap .heading-h4 {margin-left:0;}
-.emblem .plants-wrap .comp-lst_dotted {font-size:15px;font-family:'NanumSquareR';}
-.emblem .brand-wrap {position:relative;height:272px;}
-.emblem .brand-wrap .img-area {background:url(../images/usc/subpage/bg_emblem_brand.gif) no-repeat left top;}
-*/
-
-
+.emblem .bro-wrap ul {position:relative;overflow:hidden;display:inline-block;margin-bottom:.8rem;}
+.emblem .bro-wrap li {width:31%;margin-left:5px;padding-top:9.9rem;background-size:7.9rem !important;}
+.emblem .bro-wrap li:nth-child(n+4) {margin-top:1rem;}
+.emblem .bro-wrap li:nth-child(4) {width:35%;}
+.emblem .bro-wrap li:after {height:9.8rem;}
+.emblem .bro-wrap li *[class^=comm-btn][class*=_type4] {height:auto;padding:1rem .4rem;line-height:1.5rem;}
+.emblem .plants-wrap .comp-lst_dotted {font-size:1.2rem;}
+.emblem .brand-wrap {height:auto;}
+.emblem .brand-wrap .img-area {background-size:15.5rem 15rem;}
 
 
 

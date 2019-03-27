@@ -300,7 +300,11 @@ br.t, br.m { display: none; }
 
 .mt40 { margin-top: 40px !important; }
 
+.mt45 { margin-top: 45px !important; }
+
 .mt50 { margin-top: 50px !important; }
+
+.mt55 { margin-top: 55px !important; }
 
 .mt60 { margin-top: 60px !important; }
 
@@ -860,7 +864,9 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .mt30 { margin-top: 1.5rem !important; }
   .mt35 { margin-top: 1.7rem !important; }
   .mt40 { margin-top: 2rem !important; }
+  .mt45 { margin-top: 2rem !important; }
   .mt50 { margin-top: 2.5rem !important; }
+  .mt55 { margin-top: 2.5rem !important; }
   .mt60 { margin-top: 3rem !important; }
   .mb5 { margin-bottom: 5px !important; }
   .mb10 { margin-bottom: 0.5rem !important; }

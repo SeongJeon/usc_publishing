@@ -721,10 +721,10 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .comp-charter-cont .inner .cont:before { position: absolute; left: -3px; bottom: -3px; display: block; content: ""; width: 27px; height: 27px; background: #fff url(../images/usc/subpage/bg_charter-cont_raund.png) no-repeat; -ms-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
 .comp-charter-cont .inner .cont:after { position: absolute; right: -3px; bottom: -3px; display: block; content: ""; width: 27px; height: 27px; background: #fff url(../images/usc/subpage/bg_charter-cont_raund.png) no-repeat; -ms-transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .comp-charter-cont .inner .cont .surround { position: relative; margin: 5px; padding: 30px 24px 40px; border: 1px solid #ac2633; z-index: 10; }
-.comp-charter-cont .inner .cont .surround .en { display: block; text-align: center; }
+.comp-charter-cont .inner .cont .surround .en { display: block; text-align: center; letter-spacing: 5px; }
 .comp-charter-cont .inner .cont .surround .en:before { display: block; content: ""; width: 192px; height: 89px; margin: 0 auto 35px auto; background: url(../images/usc/subpage/img_usclogo.png) no-repeat; }
-.comp-charter-cont .inner .cont .surround .tit { position: relative; display: block; margin: 30px 0 34px; padding-bottom: 35px; font-size: 30px; color: #000; letter-spacing: 5px; text-align: center; }
-.comp-charter-cont .inner .cont .surround .tit:after { position: absolute; left: 50%; bottom: 0; display: block; content: ""; width: 138px; height: 1px; margin-left: -69px; background: #ad2634; }
+.comp-charter-cont .inner .cont .surround .tit { position: relative; display: block; height: 30px; margin: 30px 0 69px; text-indent: -999em; background: url("../../static/images/usc/subpage/img_part04_05_txt.png") no-repeat 50% 50%; }
+.comp-charter-cont .inner .cont .surround .tit:after { position: absolute; left: 50%; bottom: -35px; display: block; content: ""; width: 138px; height: 1px; margin-left: -69px; background: #ad2634; }
 .comp-charter-cont .inner .cont .surround .tit .tail { font-style: italic; }
 .comp-charter-cont .inner .cont .surround .txt { font-size: 18px; line-height: 44px; color: #2a2a2a; text-align: center; }
 .comp-charter-cont .inner .cont .surround .txt .point { padding: 1px; background: #ffea82; }
@@ -988,6 +988,17 @@ div[class^=oftoday_][class*=_calendar] table tbody .icon { display: block; margi
 .gotoway_usc .img2 { position: absolute; right: 95px; top: 50%; margin-top: -200px; }
 
 .gotoway_tbl tr > *:nth-child(4) { border-left-color: #a5a6a7 !important; }
+
+.usc_part03_02 .img_uscsong { border: 1px solid #e7e9ea; padding: 70px 0 50px 0; text-align: center; }
+.usc_part03_02 .uscsong-btn { text-align: right; }
+.usc_part03_02 .uscsong-btn a:first-child { margin-right: 20px; }
+.usc_part03_02 .uscsong-btn span { padding-left: 33px; }
+.usc_part03_02 *[class^=comm-btn_type4][class$=_lightorange] span { background: url(../images/usc/subpage/icon_song_on.png) no-repeat left top; }
+.usc_part03_02 *[class^=comm-btn_type4][class$=_whiteorange] span { background: url(../images/usc/subpage/icon_song_off.png) no-repeat left top; }
+
+.usc_part03_03 .comp-lst_dotted { margin-top: 7px; }
+.usc_part03_03 .comp-charter-cont .inner .cont .surround .tit { background: url("../../static/images/usc/subpage/img_part03_03_txt.png") no-repeat 50% 50%; }
+.usc_part03_03 .comp-charter-cont .inner .cont .surround .list { margin: 31px 121px 0; text-align: center; }
 
 /* ------------------------------------------------------
 BROWSER HACK
@@ -1443,8 +1454,8 @@ MEDIA QUERY
   .comp-charter-cont .inner { margin: 0.5rem; }
   .comp-charter-cont .inner .cont .surround { padding: 1.5rem 1rem 1.5rem; }
   .comp-charter-cont .inner .cont .surround .en:before { width: 6rem; height: 3rem; margin: 0 auto 1rem auto; background-size: 100%; }
-  .comp-charter-cont .inner .cont .surround .tit { margin: 1rem 0; padding-bottom: 1rem; font-size: 1.5rem; }
-  .comp-charter-cont .inner .cont .surround .tit:after { width: 8rem; margin-left: -4rem; }
+  .comp-charter-cont .inner .cont .surround .tit { margin: 1rem 0 2rem; height: 2rem; background-size: auto 100%; }
+  .comp-charter-cont .inner .cont .surround .tit:after { width: 8rem; bottom: -1rem; margin-left: -4rem; }
   .comp-charter-cont .inner .cont .surround .txt { font-size: 1.2rem; line-height: 2rem; }
   .comp-charter-cont .inner .cont .surround .list { margin-top: 1rem; }
   .comp-charter-cont .inner .cont .surround .list > li { padding: 0.5rem 1rem 0.5rem 2.3rem; text-indent: -1.1rem; }
@@ -1623,7 +1634,12 @@ MEDIA QUERY
   .song .song-wrap .btn-song { position: static; bottom: auto; right: auto; width: 9rem; height: 2.3rem; font-size: 1.2rem; line-height: 2.3rem; }
   .song .song-wrap .btn-song span { padding-left: 1.6rem; background-size: 1.2rem; background-position-y: 2px; }
   .song .song-wrap .btn-song:hover span { background-size: 1.2rem; background-position-y: 2px; }
-  .gotoway_usc .img2 { max-width: 15rem; margin-top: -10rem; right: 5rem; } }
+  .gotoway_usc .img2 { max-width: 15rem; margin-top: -10rem; right: 5rem; }
+  .usc_part03_02 .uscsong-btn { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .usc_part03_02 .uscsong-btn a { -webkit-flex: 1; flex: 1; }
+  .usc_part03_02 .uscsong-btn a:first-child { margin-right: 0.5rem; }
+  .usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_whiteorange] span, .usc_part03_02 .uscsong-btn *[class^=comm-btn_type4][class$=_lightorange] span { font-size: 1.1rem; padding-left: 2rem; background-size: auto 100%; }
+  .usc_part03_02 .img_uscsong { padding: 3rem 2rem; } }
 @media (max-width: 768px) { /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */
   /* 전자민원 ------------------------------------------- */
   .advice-app .w_time { display: block; }
@@ -1659,7 +1675,9 @@ MEDIA QUERY
   /* 의성안내 ------------------------------------------- */
   .ico-to { position: relative; top: -2px; width: 2rem; height: 1rem; margin: 0 0.5rem; }
   .gotoway_usc { padding: 1rem 1rem; margin-top: 1rem; border: 8px solid #efeeed; }
-  .gotoway_usc .img2 { position: static; width: 50%; max-width: 15rem; margin: -7rem 0 0 auto; } }
+  .gotoway_usc .img2 { position: static; width: 50%; max-width: 15rem; margin: -7rem 0 0 auto; }
+  .usc_part03_03 .comp-charter-cont .inner .cont .surround .tit { background-size: 80% auto; }
+  .usc_part03_03 .comp-charter-cont .inner .cont .surround .list { margin: 1rem 0; } }
 @media (max-width: 321px) { /* 분야별정보 ------------------------------------------ */
   .tax .logo-tax { padding: 0 0 .5rem 0; }
   .tax .intro-wrap .sub-txt { text-align: left; }

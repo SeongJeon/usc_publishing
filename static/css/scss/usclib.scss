@@ -62,7 +62,77 @@ LAYOUT
 		.txt {color:#bababa;}
 	}
 }
-#wrap.usclib #container {padding-top: 130px}
+#wrap.usclib #container {
+	padding-top: 130px;
+	&:before {top:315px;}
+}
+#wrap.usclib #lnb {
+	.title-depth h2 {background:#336ac0;}
+	.menu {
+		h2 a {
+			&.open, &:hover {
+				background:#3f889a;
+				&:after {background-color: #155764;}
+			}
+		}
+		.smallmenu {
+			ul {background:#eff9fe;}
+			a {
+				&[aria-current=page], &:hover{
+					&:before {@include background("usclib/bul_lnb.png",no-repeat 50% 50%);}
+				}
+			}
+		}
+	}
+}
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+*[class^=heading] {
+	&[class*=-h3]:before {width:27px; @include background("usclib/bul_h3.png",no-repeat 50% 50%);}
+	&[class*=-h4]:before {@include background("usclib/bul_h4.png",no-repeat 50% 50%);}
+}
+
+
+
+*[class^=comp-tab] {
+	a {
+		&[aria-selected=true]:after {background:#336ac0;}
+	}
+}
+*[class^=comp-iconbox] {
+	border-top-color:#336ac0;
+	&:before {background:#336ac0;}
+}
+ 
+h4[class^=comp-lst],
+h5[class^=comp-lst],
+p[class^=comp-lst] {
+	&[class*=_hyphen]:before {background:#336ac0;}
+}
+*[class^=comp-lst]{
+	&[class*=_hyphen] > li:before {background:#336ac0;}
+}
+
+table[class^=comp-tbl]{
+	&[class*=_datatype] {
+		border-top-color: #3b596a;
+		thead th {background:#eff9fe;}
+		tbody th {background:#eff9fe;}
+		tfoot tr * {background:#eff9fe;}
+
+	}
+	&[class*=_formtype] .important {color:#336ac0}
+}
+
+
+*[class^=comm-btn] {
+	&[class*=_download1]:before {@include background("usclib/icon_download1.png",no-repeat 50% 50%);}
+}
+
+.top-search-zone {
+	&.bgcolor {background:#eff9fe; }
+}
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */

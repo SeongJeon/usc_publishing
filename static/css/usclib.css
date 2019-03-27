@@ -31,6 +31,38 @@ LAYOUT
 #wrap.usclib #footer .footer-notice .txt { color: #bababa; }
 
 #wrap.usclib #container { padding-top: 130px; }
+#wrap.usclib #container:before { top: 315px; }
+
+#wrap.usclib #lnb .title-depth h2 { background: #336ac0; }
+#wrap.usclib #lnb .menu h2 a.open, #wrap.usclib #lnb .menu h2 a:hover { background: #3f889a; }
+#wrap.usclib #lnb .menu h2 a.open:after, #wrap.usclib #lnb .menu h2 a:hover:after { background-color: #155764; }
+#wrap.usclib #lnb .menu .smallmenu ul { background: #eff9fe; }
+#wrap.usclib #lnb .menu .smallmenu a[aria-current=page]:before, #wrap.usclib #lnb .menu .smallmenu a:hover:before { background: url("../../static/images/usclib/bul_lnb.png") no-repeat 50% 50%; }
+
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+*[class^=heading][class*=-h3]:before { width: 27px; background: url("../../static/images/usclib/bul_h3.png") no-repeat 50% 50%; }
+*[class^=heading][class*=-h4]:before { background: url("../../static/images/usclib/bul_h4.png") no-repeat 50% 50%; }
+
+*[class^=comp-tab] a[aria-selected=true]:after { background: #336ac0; }
+
+*[class^=comp-iconbox] { border-top-color: #336ac0; }
+*[class^=comp-iconbox]:before { background: #336ac0; }
+
+h4[class^=comp-lst][class*=_hyphen]:before, h5[class^=comp-lst][class*=_hyphen]:before, p[class^=comp-lst][class*=_hyphen]:before { background: #336ac0; }
+
+*[class^=comp-lst][class*=_hyphen] > li:before { background: #336ac0; }
+
+table[class^=comp-tbl][class*=_datatype] { border-top-color: #3b596a; }
+table[class^=comp-tbl][class*=_datatype] thead th { background: #eff9fe; }
+table[class^=comp-tbl][class*=_datatype] tbody th { background: #eff9fe; }
+table[class^=comp-tbl][class*=_datatype] tfoot tr * { background: #eff9fe; }
+table[class^=comp-tbl][class*=_formtype] .important { color: #336ac0; }
+
+*[class^=comm-btn][class*=_download1]:before { background: url("../../static/images/usclib/icon_download1.png") no-repeat 50% 50%; }
+
+.top-search-zone.bgcolor { background: #eff9fe; }
 
 /* ------------------------------------------------------
 MAIN

@@ -54,6 +54,11 @@ LAYOUT
   body.pc #wrap.usc #header .depth2menu .category-menu a:hover .name { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-decoration: underline; }
   body.pc #wrap.usc #header.open { border-bottom: 6px solid #f27405; } }
 /* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+.top-search-zone.bgcolor { background: #fcf8e3; }
+
+/* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
 #wrap.usc #container.main { position: relative; }

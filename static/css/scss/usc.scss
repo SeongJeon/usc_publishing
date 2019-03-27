@@ -1669,32 +1669,58 @@ div[class^=oftoday_] {
 
 
 /* 공통페이지 ------------------------------------------- */
-.tp-sitemap {
-	.sitemap-box {
-		overflow:hidden; padding:15px 15px 15px 3px; margin: 15px 0 35px; border:2px solid #e2e1e1;
-		.depth2 {float: left ;width: 20%; padding-left: 12px}
-		.depth3 {
-			padding:10px 0 22px 15px;
-			li {margin-top: 7px}
-			a {
-				font-size: 14px; color:#1c1c1c; line-height: 20px;
-				&:before {display: inline-block; content: "-"; margin-right: 3px; vertical-align: middle; }
-			}
-			a:hover {color:#f27405; }
+// 사이트맵
+.usc .tp-sitemap {
+	.row-group {overflow: hidden;}	
+	.group {
+		float: left; width: 40%; margin-top: -390px;
+		.depth2 {width: 50%}
+	}
+	.sitemap-box:last-of-type .depth2:first-child,
+	.sitemap-box:last-of-type .depth2:first-child ~ .depth2 {height: 460px;}
+	.sitemap-box:last-of-type .depth2:nth-child(5) ~ .depth2 {height: 130px;}
+	.sitemap-box:last-of-type .depth2:nth-child(10) ~ .depth2 {height: auto;}
+}
+// 행정조직도
+.usc .tp-organization {
+	.chartimg {
+		position: relative; width:659px; height: 491px; margin:0 auto; @include background("usc/subpage/img_organization.png",no-repeat 50% 0);
+		p[class^=lnk]{
+			position: absolute;overflow:hidden; border-radius: 100px;
+			a {display: block;  width: 100%; height: 100%; text-indent: -999em; }
 		}
-		h4 {
-			a {display: block; width: 100%; font-size: 16px; color:#1c1c1c; text-align: center; line-height: 38px; border:1px solid #e8ba60; box-sizing: border-box;}
-			a:hover {background:#fe970e; border-color:#fe970e; color:#fff;}
-		}
-		&.othersize {
-			padding-left:0;
-			.depth2 {width: 25%; padding-left: 15px;}
-		}
+		.lnk1 {left:254px; top:0; width: 148px; height: 148px;}
+		.lnk2 {left:243px; top:204px; width: 170px; height: 50px;}
+		.lnk3 {left:488px; top:153px; width: 170px; height: 50px;}
+		.lnk4 {left:488px; top:280px; width: 170px; height: 50px;}
+		.lnk5 {left:488px; top:359px; width: 170px; height: 50px;}
 	}
 }
-.usc .tp-sitemap {
-	.row-group {overflow: hidden; }	
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2872,6 +2898,36 @@ div[class^=oftoday_] {
 	.uscsong-btn *[class^=comm-btn_type4][class$=_lightorange] span {font-size: 1.1rem; padding-left: 2rem; background-size:auto 100%;}
 	.img_uscsong {padding:3rem 2rem;}
 }
+
+
+
+
+/* 공통페이지 ------------------------------------------- */
+// 사이트맵
+.usc .tp-sitemap {
+	.group {float:none; width:100%; margin-top:0px; }
+
+	.sitemap-box:last-of-type .depth2:first-child,
+	.sitemap-box:last-of-type .depth2:first-child ~ .depth2 {height: auto;}
+	.sitemap-box:last-of-type .depth2:nth-child(5) ~ .depth2 {height: auto;}
+	.sitemap-box:last-of-type .depth2:nth-child(10) ~ .depth2 {height: auto;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

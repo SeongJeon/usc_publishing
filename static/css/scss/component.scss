@@ -1137,6 +1137,98 @@ div[class^=comp-public-area] {
 
 
 
+/* 공통페이지 - 사이트맵 */
+.tp-sitemap {
+	.sitemap-box {
+		overflow:hidden; padding:15px 15px 15px 3px; margin: 15px 0 35px; border:2px solid #e2e1e1;
+		.depth2 {float: left ;width: 20%; padding-left: 12px; padding-bottom: 10px;}
+		.depth3 {
+			padding:10px 0 12px 15px;
+			li {margin-top: 7px}
+			a {
+				font-size: 14px; color:#1c1c1c; line-height: 20px;
+				&:before {display: inline-block; content: "-"; margin-right: 3px; vertical-align: middle; }
+			}
+			a:hover {color:#f27405; }
+		}
+		h4 {
+			a {display: block; width: 100%; font-size: 16px; color:#1c1c1c; text-align: center; line-height: 38px; border:1px solid #e8ba60; box-sizing: border-box;}
+			a:hover {background:#fe970e; border-color:#fe970e; color:#fff; font-family: $font2;}
+		}
+		&.othersize {
+			padding-left:0;
+			.depth2 {width: 25%; padding-left: 15px;}
+		}
+	}
+}
+/* 공통페이지 - 행정조직도 */
+.tp-organization {
+	.organization-chart {
+		padding:35px 40px 40px; border:2px solid #e2e1e1; text-align: center;
+		.part {
+			display:inline-block; width: 180px; min-height: 242px; border:2px solid #dcdcdc; color:#202020; vertical-align: top;
+			dt a {display:block; font-size: 17px; line-height: 38px; text-align: center; background:#dcdcdc; font-family: $font2;}
+			dd {
+				li {border-bottom: 1px solid #dcdcdc;}
+				li:nth-child(5) {border-bottom:0}
+				a {display:block; font-size: 16px; line-height: 40px; text-align: center;}
+			}
+			& + .part {margin-left: 18px;}
+		}
+	}
+	.organization-box {
+		margin-top: 15px; 
+		.group {
+			position:relative; padding:15px 45px 15px 15px; margin-top: 10px; border:2px solid #e2e1e1;
+	 		&:first-child {margin-top: 0}
+			.tit {
+				position: absolute; left:15px; top:15px;
+				a {display: block; width: 180px; font-family: $font2; font-size: 17px; color:#1c1c1c; text-align: center; line-height: 40px;background:#f5cf66;}
+			}
+			.lst {
+				overflow:hidden; padding-left: 179px;
+				li {float: left;width:25%; padding-left: 11px; box-sizing: border-box;}
+				li:nth-child(4) ~ li {margin-top: 10px;}
+				a {display:block; font-size: 16px; color:#1c1c1c; line-height: 38px; border:1px solid #e8ba60; text-align: center;}
+			}
+		}
+	}
+	.tbl-organization {
+		margin-top: 15px;border-top: 2px solid #fe970e; font-size: 16px; text-align: center; table-layout: fixed; line-height: 20px;
+		tr > * {height: 49px; padding:0 14px; border-bottom: 1px solid #b5b5b5; border-left: 1px solid #b5b5b5;}
+		th {width: 160px; background:#fff4e1; color:#4b4b4b; font-family: $font2; border-left: 0;}
+		td:nth-of-type(1) {width:180px; background:#fbf9f9; color:#4b4b4b; font-family: $font2; border-left: 0;}
+		td:nth-of-type(2) {width:170px; background:#fbf9f9; color:#4b4b4b; }
+		td:nth-of-type(3) {text-align: left; font-size: 15px;}
+		.callnumber {display: inline-block; vertical-align: middle; width: 18px; height: 15px; @include background("common/icon_callnumber.png",no-repeat 50% 50%); text-indent: -999em; margin-right: 8px;}
+		.position {color:#f27405;}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2053,6 +2145,76 @@ div[class^=comp-public-area] {
 
 
 
+
+
+
+
+
+
+
+
+
+/* 공통페이지 - 사이트맵 */
+.tp-sitemap {
+	.sitemap-box {
+		padding:1rem 1rem 1rem 0.3rem; margin:1rem 0 2rem; 
+		.depth2 {
+			width:50%; padding-left:0.7rem; padding-bottom:1rem;
+			&.row {width: 100%}
+		}
+		.depth3 {
+			padding:0.5rem 0 1rem 1rem;
+			li {margin-top: 0.4rem}
+			a {font-size: 1.2rem; line-height:1.8rem; }
+		}
+		h4 {
+			a {font-size:1.4rem; line-height:3rem; }
+		}
+		&.othersize {
+			padding-left:0.3rem;
+			.depth2 {
+				width:50%; padding-left:0.7rem;
+				&.row {width: 100%}
+			}
+		}
+	}
+}
+/* 공통페이지 - 행정조직도 */
+.tp-organization {
+	.organization-box {
+		margin-top:1rem; 
+		.group {
+			padding:1rem; margin-top:1rem;
+	 		&:first-child {margin-top: 0}
+			.tit {
+				position: static; margin-bottom: 1rem;
+				a {width:100%; font-size:1.2rem; line-height:3.3rem;}
+			}
+			.lst {
+				padding-left:0;
+				a {font-size:1rem;line-height:3rem;}
+				li {float: left; width:50%; padding-left:0.25rem;}
+				li:nth-child(2) ~ li {margin-top: 0.5rem}
+				li:nth-child(odd) {padding-left: 0; padding-right: 0.25rem;}
+
+				li:first-child:nth-last-of-type(3n),
+				li:first-child:nth-last-of-type(3n) ~ li {width: 33.3%}
+				li:first-child:nth-last-of-type(3n) ~ li:nth-child(3) {margin-top: 0; padding-left: 0.25rem;}
+				li:first-child:nth-last-of-type(3n) ~ li:nth-child(2) {padding-right: 0.25rem;}
+			}
+		}
+	}
+	.tbl-organization {
+		margin-top: 1rem; font-size:1.2rem; line-height: 1.8rem;
+		tr > * {height:3.5rem; padding:0.5rem 0.5rem; }
+		th {width: 20%}
+		td:nth-of-type(1) {width:20%;}
+		td:nth-of-type(2) {width:20%;}
+		td:nth-of-type(3) {font-size:1.1rem;}
+		.position {display: block;}
+		.callnumber {display:block; width:1.5rem; height: 15px; margin:0 auto 0.3rem; background-size: 100% auto;}
+	}
+}
 
 
 //-------------------------------------------------------------------------------

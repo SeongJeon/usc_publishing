@@ -1,7 +1,7 @@
 @charset "utf-8";
  
 @import 'base';
-
+ 
 
 /* ------------------------------------------------------
 01. LAYOUT (HEADER, FOOTER, CONTINAER..)
@@ -136,7 +136,7 @@
 	}
 
 	.btn-gototop {
-		position: absolute; right: 0; top:0; z-index: 1;
+		position: absolute; right: 0; top:0; z-index: 3;
 		a {display: block; width: 120px; height: 59px; line-height: 59px; color:#fff; font-size: 18px; text-align: center; color:#fff; background:#37424c;}
 		a:after {display: inline-block; content: "^"; vertical-align: middle; margin-left: 10px;}
 	}
@@ -1066,7 +1066,7 @@ div[class^=comp-public-area] {
 		}
 	}
 }
-/* UI -  */
+/* UI - 단계박스 */
 .comp-step-area {
 	position:relative;
 	.step-tit {margin-bottom:10px;font-size:17px;font-family:'NanumSquareB';color:#1c1c1c;text-align:center;}
@@ -1087,9 +1087,28 @@ div[class^=comp-public-area] {
 	}
 	.emphasis {position:absolute;top:218px;right:23%;font-size:30px;font-family:'NanumSquareEB';color:#f27405;}
 }
+/* UI - 서브페이지 검색 */
+.top-search-zone {
+	overflow:hidden; padding:19px 24px; background:#eff0f1; border:1px solid #e2e1e1;
+	.total-length {
+		float: left; position: relative; font-size: 16px; line-height: 42px; padding-left: 28px; color:#3e3e3e;
+		&:before {display: block; position: absolute; left:0; top:50%; content: ""; width: 16px; height: 19px; @include background("common/icon_file.png",no-repeat 50% 50%); background-size: 100% auto; margin-top: -10px;}
+	}
+	.form {
+		float: right;
+		&:after {display:block; clear:both; content:""}
+		> * {float: left;}
+		input {width: 226px;  margin-left: 2px;}
+		select {width: 116px;}
+		button {width:80px; min-width: inherit; margin-left: -1px;}
+	}
 
-
-
+	&.bgcolor {
+		background:#fcf8e3;
+		.form {
+		}
+	}
+}
 
 
 
@@ -1161,7 +1180,7 @@ div[class^=comp-public-area] {
 		}
 	}
 }
-/* 공통페이지 - 행정조직도 */
+/* 공통페이지 - 조직도 */
 .tp-organization {
 	.organization-chart {
 		padding:35px 40px 40px; border:2px solid #e2e1e1; text-align: center;
@@ -1204,8 +1223,59 @@ div[class^=comp-public-area] {
 		.position {color:#f27405;}
 	}
 }
+/* 공통페이지 - 동영상 게시판 */
+.tp-movie-bd {
+	.board-movie {
+		margin-top: 20px;
+		li {
+			position: relative; margin-top: 15px; border:1px solid #d6d7d8; box-sizing: border-box;
+			&:first-child {margin-top: 0}
+			a {display: block; position: relative; width: 100%; height: 100%; padding:12px 10px; box-sizing: border-box;}
+		}
 
+		.thumb {
+			position: absolute; left:10px; top:12px; width: 328px; height: 234px;
+			.showthemovie {display: none; position: absolute; left:50%; top:50%; width:150px; margin:-20px 0 0 -75px; font-size: 16px; text-align: center; font-family: $font2; color:#fff; line-height: 38px; border:1px solid rgba(203,203,204,0.8); background:rgba(254,179,45,0.8); box-sizing: border-box; z-index: 1}
+			.flag {
+				display: inline-block; position: absolute; right:-25px; top:13px; z-index: 2; 
+				width: 50px;height: 50px; text-indent: -999em;
+				&.movie { @include background("common/icon_bd_movie1.png",no-repeat 50% 50%);}
+				&.photo { @include background("common/icon_bd_movie2.png",no-repeat 50% 50%);}
+			}
+		}
+		.contbox {
+			position:relative; padding-left: 370px; height: 234px; 
+			.tit {display: block; padding-top: 16px; font-size: 17px; font-family: $font2;color:#4b4b4b; }
+			.cont {
+				display:block; display:-webkit-box; overflow:hidden; max-height:144px; margin-top: 14px; font-size: 15px; line-height:24px; color:#7b7b7b; 
+				-webkit-line-clamp:6; -webkit-box-orient:vertical; text-overflow:ellipsis;
+			}
+			.date {position: absolute; right:10px; bottom:5px; font-size: 15px; color:#7b7b7b;}
+		}
+		.like {
+			position: absolute; left:370px; bottom:20px; z-index: 10;
+			button {
+				.icon {display: inline-block; width: 21px; height: 18px; text-indent: -999em; @include background("common/icon_like.png",no-repeat 50% 50%); margin-right: 8px; vertical-align: middle; position: relative; top:-1px;}
+				.number {color:#7b7b7b; font-size: 15px;}
+			}
+		}
 
+		li:hover {
+			a:after {display: block; position: absolute; left:-5px; top:-5px; content: ""; width: 100%; height: 100%; border:5px solid #feb32d; }
+			.thumb {
+				&:after {position: absolute; left:0; top:0; width: 100%; height: 100%; background:rgba(0,0,0,0.4); content: ""}
+				.showthemovie {display: block;}
+			}
+		}
+		a:hover {
+			&:after {display: block; position: absolute; left:-5px; top:-5px; content: ""; width: 100%; height: 100%; border:5px solid #feb32d; }
+			.thumb {
+				&:after {position: absolute; left:0; top:0; width: 100%; height: 100%; background:rgba(0,0,0,0.4); content: ""}
+				.showthemovie {display: block;}
+			}
+		}
+	}
+}
 
 
 
@@ -2142,7 +2212,22 @@ div[class^=comp-public-area] {
 	}
 	.emphasis {top:13.5rem;right:auto;left:50%;width:33%;text-align:center;font-size:1.2rem;}
 }
-
+/* UI - 서브페이지 검색 */
+.top-search-zone {
+	padding:1rem;
+	.total-length {
+		float: none; font-size:1.2rem; line-height:1.6rem; padding-left:2rem; 
+		&:before {width: 1.2rem; height:1.6rem; margin-top:0; top:0;}
+	}
+	.form {
+		overflow:hidden; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+		float: none; margin-top:1rem; 
+		> * {float: none;}
+		input {-webkit-flex:1; flex:1; }
+		select {width:10rem; }
+		button {width:5rem; min-width:inherit;}
+	}
+}
 
 
 
@@ -2227,7 +2312,43 @@ div[class^=comp-public-area] {
 		.callnumber {display:block; width:1.5rem; height: 15px; margin:0 auto 0.3rem; background-size: 100% auto;}
 	}
 }
+/* 공통페이지 - 동영상 게시판 */
+.tp-movie-bd {
+	.board-movie {
+		margin-top: 2rem;
+		li {
+			margin-top:1rem;
+			a {padding:1rem;}
+		}
 
+		.thumb {
+			position: relative; left:0; top:0; width:100%; height:auto;
+			img {width: 100%}
+			.showthemovie {width:10rem; margin:-1.75rem 0 0 -5rem; font-size:1.4rem; line-height:3.5rem; }
+			.flag {
+				right:-2rem; top:1rem; width:4rem;height:4rem;
+				&.movie {background-size: 100% 100%;}
+				&.photo {background-size: 100% 100%;}
+			}
+		}
+		.contbox {
+			padding-left:0; height: auto; 
+			.tit {padding-top:1.5rem; font-size:1.4rem;}
+			.cont {
+				max-height:9rem; margin-top:0.5rem; font-size:1.2rem; line-height:1.8rem;
+				-webkit-line-clamp:5;
+			}
+			.date {display:block; position:static; margin-top: 2rem; font-size:1.2rem; text-align: right;}
+		}
+		.like {
+			left:1rem; bottom:0.7rem;
+			button {
+				.icon {width: 1.8rem; height:1.8rem; margin-right:0.5rem; background-size: 100% auto; top:-3px;}
+				.number {font-size: 1.2rem; line-height: 1.8rem;}
+			}
+		}
+	}
+}
 
 //-------------------------------------------------------------------------------
 }

@@ -1011,10 +1011,11 @@ div[class^=oftoday_] {
 }
 // 공공데이터정보
 .usc_part02_01 {
-	.heading-h3 {margin-top:35px;}
-	.heading-h4 {margin-top:25px;}
+	.heading-h3:nth-of-type(1) {margin-top:40px;}
+	.heading-h3:nth-of-type(2) {margin-top:45px;}
+	.heading-h4 {margin-top:30px;}
 	.comp-lst_dotted {margin-top:7px;}
-	.comp-txt_box {margin-top:7px;}
+	.comp-txt_box {margin-top:15px;}
 }
 
 /* 분야별정보 ------------------------------------------- */
@@ -1549,21 +1550,6 @@ div[class^=oftoday_] {
 		.date {display: block; margin-top: 9px; color:#7b7b7b; font-size: 14px;  letter-spacing: -0.5px;}
 	}
 }
-.top-search-zone {
-	overflow:hidden; padding:19px 24px; background:#eff0f1; border:1px solid #e2e1e1;
-	.total-length {
-		float: left; position: relative; font-size: 16px; line-height: 42px; padding-left: 28px; color:#3e3e3e;
-		&:before {display: block; position: absolute; left:0; top:50%; content: ""; width: 16px; height: 19px; @include background("common/icon_file.png",no-repeat 50% 50%); background-size: 100% auto; margin-top: -10px;}
-	}
-	.form {
-		float: right;
-		&:after {display:block; clear:both; content:""}
-		> * {float: left;}
-		input {width: 226px;  margin-left: 2px;}
-		select {width: 116px;}
-		button {width:80px; margin-left: -1px;}
-	}
-}
 // 뷰어프로그램
 .usc_part06_02 {
 	.contents-zone ul li { margin:10px 0;}
@@ -1585,7 +1571,7 @@ div[class^=oftoday_] {
 	.img_site li {position: relative; width:946px; height:580px; padding:9px 10px 9px 9px; margin-left:70px; border:3px solid #e7e8e9; box-sizing: border-box;}
 	.img_site p {position: absolute; left:9px; bottom:9px;}
 }
-
+ 
 /* 의성안내 ------------------------------------------- */
 // 국내
 .usc_part03_01 {
@@ -2829,21 +2815,7 @@ div[class^=oftoday_] {
 		.date {margin-top: 0.5rem; font-size: 1rem; line-height: 1.4rem;}
 	}
 }
-.top-search-zone {
-	padding:1rem;
-	.total-length {
-		float: none; font-size:1.2rem; line-height:1.6rem; padding-left:2rem; 
-		&:before {width: 1.2rem; height:1.6rem; margin-top:0; top:0;}
-	}
-	.form {
-		overflow:hidden; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
-		float: none; margin-top:1rem; 
-		> * {float: none;}
-		input {-webkit-flex:1; flex:1; }
-		select {width:10rem; }
-		button {width:5rem; min-width:inherit;}
-	}
-}
+
 // 뷰어프로그램
 .usc_part06_02 {
 	.btn-box {overflow:hidden; width:100%;height: auto; margin:1rem 0 2rem; padding:1rem 0.5rem;}

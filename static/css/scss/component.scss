@@ -864,6 +864,7 @@ input[class^=comp-input] {
 	width: 100%; padding:0 10px; height: 35px; border:1px solid #d9d6d5; box-sizing: border-box; font-size: 15px; color:#787878;
 
 	&[class*=_h42] {height: 42px;}
+	&[class*=_h50] {height: 50px;}
 }
 *[class^=comp-radio] {
 	label {
@@ -1451,11 +1452,10 @@ div[class^=comp-public-area] {
 		}
 	}
 }
+/* 공통페이지 */
+.tp-total-login {
 
-
-
-
-
+}
 
 
 
@@ -2227,6 +2227,7 @@ input[class^=comp-input] {
 	padding:0 1rem; height:3.3rem; font-size: 1.2rem;
 
 	&[class*=_h42] {height: 3.3rem}
+	&[class*=_h50] {height: 4rem}
 }
 *[class^=comp-radio] {
 	label {

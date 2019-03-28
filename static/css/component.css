@@ -527,6 +527,7 @@ select[class^=comp-select][class*=_h42]:focus { background: #fff url("../../stat
 
 input[class^=comp-input] { width: 100%; padding: 0 10px; height: 35px; border: 1px solid #d9d6d5; box-sizing: border-box; font-size: 15px; color: #787878; }
 input[class^=comp-input][class*=_h42] { height: 42px; }
+input[class^=comp-input][class*=_h50] { height: 50px; }
 
 *[class^=comp-radio] label { font-size: 16px; color: #333; cursor: pointer; }
 *[class^=comp-radio] label:before { display: inline-block; width: 19px; height: 18px; margin-right: 8px; content: ""; background: url("../../static/images/common/form_radio1_off.png") no-repeat 50% 50%; vertical-align: middle; }
@@ -863,6 +864,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-bd-detail table[class^=comp-tbl] .file .lst li + li:before { display: inline-block; content: "/"; margin: 0 3px; vertical-align: middle; }
 .tp-bd-detail table[class^=comp-tbl] .file *[class*=comm-btn] { margin-left: 5px; }
 
+/* 공통페이지 */
 @-moz-document url-prefix() {}
 @media (max-width: 1024px) { /* LAYOUT */
   #header, #footer, #container { min-width: inherit; }
@@ -1157,6 +1159,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   select[class^=comp-select][class*=_h42] { height: 3.3rem; }
   input[class^=comp-input] { padding: 0 1rem; height: 3.3rem; font-size: 1.2rem; }
   input[class^=comp-input][class*=_h42] { height: 3.3rem; }
+  input[class^=comp-input][class*=_h50] { height: 4rem; }
   *[class^=comp-radio] label { font-size: 1.2rem; }
   *[class^=comp-radio] label:before { width: 1rem; height: 1rem; margin-right: 0.5rem; background-size: auto 100%; }
   *[class^=comp-radio] input:checked ~ label:before { background-size: auto 100%; }

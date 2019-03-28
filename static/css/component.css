@@ -793,14 +793,22 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-pdf-bd .board-pdf > li:nth-child(even) { margin-left: 20px; }
 .tp-pdf-bd .board-pdf > li:nth-child(2) ~ li { margin-top: 15px; }
 .tp-pdf-bd .board-pdf > li:hover:after { display: block; content: ""; position: absolute; left: -2px; top: -2px; width: 100%; height: 100%; border: 2px solid #feb32d; }
-.tp-pdf-bd .board-pdf > li .cont { padding-right: 235px; }
+.tp-pdf-bd .board-pdf > li .cont { position: relative; height: 100%; padding-right: 235px; z-index: 1; }
 .tp-pdf-bd .board-pdf > li .cont .tit { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 17px; color: #4b4b4b; line-height: 24px; }
-.tp-pdf-bd .board-pdf > li .cont .date { font-size: 15px; color: #7b7b7b; position: absolute; left: 32px; bottom: 20px; }
-.tp-pdf-bd .board-pdf > li .cont .pdf-menu { border: 1px solid #cbc6c5; }
+.tp-pdf-bd .board-pdf > li .cont .date { font-size: 15px; color: #7b7b7b; position: absolute; left: 0; bottom: 20px; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu { width: 170px; margin-top: 16px; border: 1px solid #cbc6c5; }
 .tp-pdf-bd .board-pdf > li .cont .pdf-menu li { border-top: 1px solid #cbc6c5; }
 .tp-pdf-bd .board-pdf > li .cont .pdf-menu li:first-child { border-top: 0; }
-.tp-pdf-bd .board-pdf > li .cont .pdf-menu a { display: block; font-size: 16px; color: #5d5d5d; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 42px; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu a { display: block; position: relative; padding: 0 20px; font-size: 16px; color: #5d5d5d; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 42px; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu a:after { display: inline-block; content: ""; float: right; height: 42px; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu a.btn-nowshow:after { width: 18px; background: url("../../static/images/common/btn_search.png") no-repeat 50% 50%; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu a.btn-pdfdown:after { width: 20px; background: url("../../static/images/common/btn_download.png") no-repeat 50% 50%; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu a:hover { background: #feb32d; color: #fff; height: 40px; border: 1px solid #ff9732; margin: -1px; padding: 1px 21px; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu a:hover:after { height: 40px; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu a:hover.btn-nowshow:after { background: url("../../static/images/common/btn_search_on.png") no-repeat 50% 50%; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu a:hover.btn-pdfdown:after { background: url("../../static/images/common/btn_download_on.png") no-repeat 50% 50%; }
 .tp-pdf-bd .board-pdf > li .thumb { position: absolute; right: 45px; top: 20px; width: 155px; }
+.tp-pdf-bd .board-pdf > li .thumb .flag { display: inline-block; width: 50px; height: 50px; position: absolute; left: -24px; bottom: 11px; background: url("../../static/images/common/icon_pdf.png") no-repeat 50% 50%; text-indent: -999em; }
 
 @-moz-document url-prefix() {}
 @media (max-width: 1024px) { /* LAYOUT */
@@ -1275,7 +1283,26 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .tp-movie-bd .board-movie .contbox .date { display: block; position: static; margin-top: 2rem; font-size: 1.2rem; text-align: right; }
   .tp-movie-bd .board-movie .like { left: 1rem; bottom: 0.7rem; }
   .tp-movie-bd .board-movie .like button .icon { width: 1.8rem; height: 1.8rem; margin-right: 0.5rem; background-size: 100% auto; top: -3px; }
-  .tp-movie-bd .board-movie .like button .number { font-size: 1.2rem; line-height: 1.8rem; } }
+  .tp-movie-bd .board-movie .like button .number { font-size: 1.2rem; line-height: 1.8rem; }
+  /* 공통페이지 - 메아리 게시판 */
+  .tp-pdf-bd .board-pdf { margin-top: 2rem; }
+  .tp-pdf-bd .board-pdf > li { float: none; width: 100%; height: 17.5rem; padding: 1rem 1rem 0; }
+  .tp-pdf-bd .board-pdf > li:nth-child(even) { margin-left: 0; }
+  .tp-pdf-bd .board-pdf > li:nth-child(1) ~ li { margin-top: 1rem; }
+  .tp-pdf-bd .board-pdf > li .cont { height: 100%; padding-right: 13rem; }
+  .tp-pdf-bd .board-pdf > li .cont .tit { font-size: 1.4rem; line-height: 1.8rem; }
+  .tp-pdf-bd .board-pdf > li .cont .date { font-size: 1.2rem; bottom: 1rem; }
+  .tp-pdf-bd .board-pdf > li .cont .pdf-menu { width: 100%; max-width: 14rem; margin-top: 1rem; }
+  .tp-pdf-bd .board-pdf > li .cont .pdf-menu a { padding: 0 1rem; font-size: 1.2rem; line-height: 3.5rem; }
+  .tp-pdf-bd .board-pdf > li .cont .pdf-menu a:after { height: 3.5rem; }
+  .tp-pdf-bd .board-pdf > li .cont .pdf-menu a.btn-nowshow:after { width: 1.4rem; background-size: 100% auto; }
+  .tp-pdf-bd .board-pdf > li .cont .pdf-menu a.btn-pdfdown:after { width: 1.5rem; background-size: 100% auto; }
+  .tp-pdf-bd .board-pdf > li .cont .pdf-menu a:hover { height: 3.3rem; padding: 1px 1rem; }
+  .tp-pdf-bd .board-pdf > li .cont .pdf-menu a:hover:after { height: 3.3rem; }
+  .tp-pdf-bd .board-pdf > li .cont .pdf-menu a:hover.btn-nowshow:after { background-size: 100% auto; }
+  .tp-pdf-bd .board-pdf > li .cont .pdf-menu a:hover.btn-pdfdown:after { background-size: 100% auto; }
+  .tp-pdf-bd .board-pdf > li .thumb { right: 1rem; top: 1rem; width: 12rem; }
+  .tp-pdf-bd .board-pdf > li .thumb .flag { width: 3rem; height: 3rem; left: -1rem; bottom: 1rem; background-size: 100% 100%; } }
 @media (max-width: 360px) { #gnb .gnb h3 a { font-size: 1.2rem; } }
 @media (max-width: 321px) { #gnb .gnb h3 a { font-size: 1.1rem; }
   #container .breadcrumb-zone .breadcrumb > li > a { padding-right: 1.5rem; }

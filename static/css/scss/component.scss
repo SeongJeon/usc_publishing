@@ -1324,20 +1324,34 @@ div[class^=comp-public-area] {
 			&:hover:after {display: block; content: ""; position: absolute; left:-2px; top:-2px; width: 100%; height: 100%; border:2px solid #feb32d;}
 
 			.cont {
-				padding-right: 235px;
+				position: relative; height: 100%; padding-right: 235px; z-index: 1;
 				.tit {font-family: $font2; font-size: 17px; color:#4b4b4b; line-height: 24px;}
-				.date {font-size: 15px; color:#7b7b7b; position: absolute; left:32px; bottom:20px;}
+				.date {font-size: 15px; color:#7b7b7b; position: absolute; left:0; bottom:20px;}
 				.pdf-menu {
-					border:1px solid #cbc6c5;
+					width: 170px; margin-top: 16px; border:1px solid #cbc6c5; 
 					li {border-top: 1px solid #cbc6c5;}
 					li:first-child {border-top: 0;}
-					a {display: block; font-size: 16px; color:#5d5d5d; font-family: $font2; line-height: 42px;}
+					a {
+						display: block; position: relative; padding:0 20px; font-size: 16px; color:#5d5d5d; font-family: $font2; line-height: 42px;
+						&:after {display: inline-block; content: ""; float: right; height: 42px;}
+						&.btn-nowshow:after {width: 18px; @include background("common/btn_search.png",no-repeat 50% 50%);}
+						&.btn-pdfdown:after {width: 20px; @include background("common/btn_download.png",no-repeat 50% 50%);}
+
+						&:hover {
+							background:#feb32d; color:#fff; height: 40px; border:1px solid #ff9732; margin:-1px; padding:1px 21px; 
+							&:after {height: 40px}
+							&.btn-nowshow:after {@include background("common/btn_search_on.png",no-repeat 50% 50%);}
+							&.btn-pdfdown:after {@include background("common/btn_download_on.png",no-repeat 50% 50%);}
+						}
+					}
 				}
 			}
-			.thumb {position: absolute; right: 45px; top:20px; width: 155px; }
+			.thumb {
+				position: absolute; right: 45px; top:20px; width: 155px; 
+				.flag {display: inline-block; width: 50px; height: 50px; position: absolute; left:-24px; bottom:11px; @include background("common/icon_pdf.png",no-repeat 50% 50%); text-indent: -999em;}
+			}
 		}
 	}
-
 }
 
 
@@ -2475,16 +2489,51 @@ div[class^=comp-public-area] {
 		}
 	}
 }
+/* 공통페이지 - 메아리 게시판 */
+.tp-pdf-bd {
+	.board-pdf {
+		margin-top: 2rem;
+		& > li {
+			float:none; width:100%; height:17.5rem; padding:1rem 1rem 0;
+			&:nth-child(even) {margin-left: 0;}
+			&:nth-child(1) ~ li {margin-top:1rem;}
+
+			.cont {
+				height: 100%; padding-right: 13rem; 
+				.tit {font-size:1.4rem; line-height:1.8rem}
+				.date {font-size:1.2rem;bottom:1rem;}
+				.pdf-menu {
+					width: 100%; max-width: 14rem; margin-top:1rem;
+					a {
+						padding:0 1rem; font-size:1.2rem; line-height: 3.5rem;
+						&:after {height:3.5rem;}
+						&.btn-nowshow:after {width: 1.4rem; background-size: 100% auto;}
+						&.btn-pdfdown:after {width: 1.5rem; background-size: 100% auto;}
+
+						&:hover {
+							height:3.3rem; padding:1px 1rem; 
+							&:after {height: 3.3rem}
+							&.btn-nowshow:after {background-size: 100% auto;}
+							&.btn-pdfdown:after {background-size: 100% auto;}
+						}
+					}
+				}
+			}
+			.thumb {
+				right: 1rem; top:1rem; width: 12rem; 
+				.flag {width:3rem; height:3rem;left:-1rem; bottom:1rem;background-size: 100% 100%;}
+			}
+		}
+	}
+}
+
 
 //-------------------------------------------------------------------------------
 }
-@media (max-width:768px){
-
-}
+@media (max-width:768px){}
 @media (max-width:360px){
 	#gnb .gnb h3 a {font-size: 1.2rem;} 
 }
-
 @media (max-width:321px){
 	#gnb .gnb h3 a {font-size: 1.1rem;} 
 	#container .breadcrumb-zone .breadcrumb > li > a {padding-right: 1.5rem;}

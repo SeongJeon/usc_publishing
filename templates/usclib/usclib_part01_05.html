@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" >
 	<meta name="format-detection" content="telephone=no" >
-	<title>로그인 &lt; 의성군립도서관</title>
+	<title>아이디/비밀번호찾기 &lt; 의성군립도서관</title>
 	<meta name="Subject" content="의성군립도서관" >
 	<meta name="title" content="의성군립도서관" >
 	<meta name="keywords" content="의성군립도서관" >
@@ -38,38 +38,54 @@
 					<!-- 로그인 서비스 탭 -->
 					<div class="login-service-tab">
 						<ul role="tablist" data-js="false">
-							<li role="presentation"><a href="#loginTabcontent" role="tab" aria-controls="loginTabcontent" aria-selected="true"><span>로그인</span></a></li>
+							<li role="presentation"><a href="#" role="tab"><span>로그인</span></a></li>
 							<li role="presentation"><a href="#" role="tab" ><span>회원가입</span></a></li>
-							<li role="presentation"><a href="#" role="tab" ><span>아이디/비밀번호 찾기</span></a></li>
+							<li role="presentation"><a href="#loginTabcontent" role="tab"  aria-controls="loginTabcontent" aria-selected="true"><span>아이디/비밀번호 찾기</span></a></li>
 						</ul>
 					</div>
 					<!-- //로그인 서비스 탭 -->
 					
-					<!-- 로그인 서비스 탭 컨텐츠 -->
+					<!-- 아이디/비밀번호찾기 탭 컨텐츠 -->
 					<div id="loginTabcontent" role="tabpanel">
-						<div class="tab-conts login-service-zone">
-							<div class="login-form-group">
-								<h2 class="tit"><em>로그인</em>서비스</h2>
+						<div class="tab-conts find-service-zone">
+							<!-- 아이디 찾기 -->
+							<div class="find-zone id">
+								<h2 class="tit">아이디 찾기</h2>
+								<p class="txt">회원가입을 하신 경우, 휴대폰인증이나 공공I-PIN 인증을 하시면 <br>가입하신 아이디를 알려드립니다.</p>
+								<ul class="btn-zone">
+									<li><a href="#" class="btn-phone"><span>휴대폰 인증</span></a></li>
+									<li><a href="#" class="btn-ipin"><span>공공 I-PIN 인증</span></a></li>
+								</ul>
+							</div>
+							<!--// 아이디 찾기 -->
+							<!-- 비밀번호 찾기 -->
+							<div class="find-zone id">
+								<h2 class="tit">비밀번호 찾기</h2>
+								<p class="txt">
+									본인인증 시, 회원정보에 등록된 휴대폰번호로 임시비밀번호를 발송해드립니다. <br>
+									비밀번호 찾기가 안되시는 분들은 <em class="line">830-1234</em>로 연락주시기 바랍니다.
+								</p>
 								<div class="form">
 									<input type="text" title="아이디 입력" placeholder="아이디를 입력해주세요" class="comp-input_h50">
-									<input type="password" title="비밀번호 입력" placeholder="비밀번호를 입력해주세요" class="comp-input_h50">
+									<input type="text" title="성함 입력" placeholder="성함을 입력해주세요" class="comp-input_h50">
 								</div>
-								<button type="submit"><span>로그인</span></button>
+								<ul class="btn-zone">
+									<li><a href="#" class="btn-phone"><span>휴대폰 인증</span></a></li>
+									<li><a href="#" class="btn-ipin"><span>공공 I-PIN 인증</span></a></li>
+								</ul>
 							</div>
-						</div>
-						<div class="info-zone">
-							<p class="txt">
-								회원 로그인을 통해 서비스를 이용하시면 서비스이용내역, 내가 쓴 글 등 마이페이지에서 일괄 관리 할 수 있어 편리하고, 전자책 서비스도 이용할 수 있습니다. <br>
-								윈도우 XP 서비스팩 2 이하 이용자는 로그인 및 회원가입이 되지 않을 수 있습니다.
-								<span class="point"><em>※ 로그인이 안될 경우 홈페이지담당자 (☎830-6071)로 문의바랍니다.</em></span>
-							</p>
+							<!--// 비밀번호 찾기 -->
 						</div>
 					</div>
-					<!--// 로그인 서비스 탭 컨텐츠 -->
+					<!--// 아이디/비밀번호찾기 탭 컨텐츠 -->
 				</div>
 			</div>
 		</main>
 		<!-- //CONTAINER -->
+
+		<!-- FOOTER -->
+		<footer></footer>
+		<!-- //FOOTER -->
 	</div>
 
 <script type="text/javascript" src="../../static/js/jquery-1.11.3.min.js"></script>

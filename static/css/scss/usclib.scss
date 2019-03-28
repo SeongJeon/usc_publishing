@@ -128,13 +128,6 @@ COMMON
 		&:before {background:#336ac0;}
 	}
 	table[class^=comp-tbl]{
-		&[class*=_datatype] {
-			border-top-color: #3b596a;
-			thead th {background:#eff9fe;}
-			tbody th {background:#eff9fe;}
-			tfoot tr * {background:#eff9fe;}
-
-		}
 		&[class*=_formtype] .important {color:#336ac0}
 	}
 

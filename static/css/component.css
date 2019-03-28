@@ -786,6 +786,22 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-movie-bd .board-movie a:hover .thumb:after { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); content: ""; }
 .tp-movie-bd .board-movie a:hover .thumb .showthemovie { display: block; }
 
+/* 공통페이지 - 메아리 게시판 */
+.tp-pdf-bd .board-pdf { margin-top: 19px; }
+.tp-pdf-bd .board-pdf:after { display: block; clear: both; content: ""; }
+.tp-pdf-bd .board-pdf > li { position: relative; float: left; width: 493px; height: 240px; padding: 20px 32px 0; border: 1px solid #d7d5d4; box-sizing: border-box; }
+.tp-pdf-bd .board-pdf > li:nth-child(even) { margin-left: 20px; }
+.tp-pdf-bd .board-pdf > li:nth-child(2) ~ li { margin-top: 15px; }
+.tp-pdf-bd .board-pdf > li:hover:after { display: block; content: ""; position: absolute; left: -2px; top: -2px; width: 100%; height: 100%; border: 2px solid #feb32d; }
+.tp-pdf-bd .board-pdf > li .cont { padding-right: 235px; }
+.tp-pdf-bd .board-pdf > li .cont .tit { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 17px; color: #4b4b4b; line-height: 24px; }
+.tp-pdf-bd .board-pdf > li .cont .date { font-size: 15px; color: #7b7b7b; position: absolute; left: 32px; bottom: 20px; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu { border: 1px solid #cbc6c5; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu li { border-top: 1px solid #cbc6c5; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu li:first-child { border-top: 0; }
+.tp-pdf-bd .board-pdf > li .cont .pdf-menu a { display: block; font-size: 16px; color: #5d5d5d; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 42px; }
+.tp-pdf-bd .board-pdf > li .thumb { position: absolute; right: 45px; top: 20px; width: 155px; }
+
 @-moz-document url-prefix() {}
 @media (max-width: 1024px) { /* LAYOUT */
   #header, #footer, #container { min-width: inherit; }

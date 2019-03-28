@@ -1312,6 +1312,81 @@ div[class^=comp-public-area] {
 		}
 	}
 }
+/* 공통페이지 - 메아리 게시판 */
+.tp-pdf-bd {
+	.board-pdf {
+		margin-top: 19px;
+		&:after {display:block; clear:both; content:""}
+		& > li {
+			position: relative; float: left; width:493px; height: 240px; padding:20px 32px 0; border:1px solid #d7d5d4; box-sizing: border-box;
+			&:nth-child(even) {margin-left: 20px;}
+			&:nth-child(2) ~ li {margin-top: 15px;}
+			&:hover:after {display: block; content: ""; position: absolute; left:-2px; top:-2px; width: 100%; height: 100%; border:2px solid #feb32d;}
+
+			.cont {
+				padding-right: 235px;
+				.tit {font-family: $font2; font-size: 17px; color:#4b4b4b; line-height: 24px;}
+				.date {font-size: 15px; color:#7b7b7b; position: absolute; left:32px; bottom:20px;}
+				.pdf-menu {
+					border:1px solid #cbc6c5;
+					li {border-top: 1px solid #cbc6c5;}
+					li:first-child {border-top: 0;}
+					a {display: block; font-size: 16px; color:#5d5d5d; font-family: $font2; line-height: 42px;}
+				}
+			}
+			.thumb {position: absolute; right: 45px; top:20px; width: 155px; }
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -970,7 +970,7 @@ input.w_password {width:135px;}
 }
 /* UI - TAB */
 *[class^=comp-tab] {
-	margin-bottom: 30px;
+	overflow:hidden;margin-bottom: 30px;
 	&:after {display:block; clear:both; content:""}
 	li {float: left; width: 20%; box-sizing: border-box; border-top: 1px solid #d1d1d1; }
 	a {
@@ -990,6 +990,7 @@ input.w_password {width:135px;}
 	li:nth-child(5n+1) a {border-left: 1px solid #d1d1d1;}
 
 	&[class*=_row] {
+		overflow:visible; height: 60px;
 		a {
 			color:#a9a9a9; font-family: $font2; font-size: 20px; border-bottom-color:#000; line-height: 58px; 
 			&[aria-selected=true]{
@@ -1000,7 +1001,7 @@ input.w_password {width:135px;}
 		}
 	}
 	&[class*=_small] {
-		border-bottom: 1px solid #000;
+		height:59px; border-bottom: 1px solid #000;
 		li {width: 300px !important; margin-bottom:-1px;}
 	}
 }

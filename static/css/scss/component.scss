@@ -872,6 +872,15 @@ input[class^=comp-input] {
 		&:before {display:inline-block; width:19px; height: 18px; margin-right: 8px; content: ""; @include background("common/form_radio1_off.png",no-repeat 50% 50%); vertical-align: middle;}
 	}
 	input:checked ~ label:before {@include background("common/form_radio1_on.png",no-repeat 50% 50%);}
+
+	&[class*=_big] {
+		label {
+			font-size: 24px; font-family: $font2; color:#222;
+			.sm {font-size:18px; font-family: $font1;}
+			&:before {width:32px; height:32px; margin-right:14px; content: ""; @include background("common/form_radio3_off.png",no-repeat 50% 50%);}
+		}
+		input:checked ~ label:before {@include background("common/form_radio3_on.png",no-repeat 50% 50%);}
+	}
 }
 *[class^=comp-check] {
 	label {
@@ -1484,13 +1493,22 @@ div[class^=comp-public-area] {
 	// 하단 텍스트
 	.info-zone {
 		line-height:30px; margin:50px 0 0; font-size:18px; color:#303030; text-align:center;
-		.txt {
+		p.txt {
 			position:relative; display:inline-block; padding:0 0 0 37px;
 			&:before {position:absolute; left:0; top:0; display:block; content:"!"; width:30px; height:30px; line-height:30px; background:#ee3106; border-radius:100%; font-family:$font2; color:#fff; text-align:center;}
 			.point {
 				display:block;
 				em {display:inline-block; padding-left:20px; background:#fcecbd; text-indent:-20px;}
 			}
+		}
+		dl.txt {
+			text-align: center;
+			dt {
+				position:relative; font-family: $font2; font-size: 18px;
+				&:before {display:inline-block; content:"!"; width:30px; height:30px; margin-right: 7px; line-height:30px; background:#ee3106; border-radius:100%; font-family:$font2; color:#fff; text-align:center; font-size: 16px;}
+			}
+			dd {margin-top: 14px;}
+			.point {display:inline-block; background:#fcecbd; line-height:1.2;}
 		}
 	}
 	// 로그인 서비스 탭
@@ -1542,15 +1560,73 @@ div[class^=comp-public-area] {
 				input {width: 200px; padding:0 15px;}
 				input + input {margin-left: 3px;}
 			}
-			.btn-zone {
-				overflow:hidden; position: absolute; left:0; bottom:25px; width: 100%;
-				li {display: inline-block; margin-left: 12px;}
-				li:first-child {margin-left: 0;}
-				a {
-					display: inline-block; width: 200px; line-height: 50px; color:#fff; font-family: $font2; font-size: 18px; text-align: center; border-radius: 100px;
-					&.btn-phone {background:#ff7200;}
-					&.btn-ipin {background:#1556b0;}
+			.btn-zone{position: absolute; left:0; bottom:25px; }
+		}
+		.btn-zone {
+			overflow:hidden; width: 100%; text-align: center;
+			li {display: inline-block; margin-left: 12px;}
+			li:first-child {margin-left: 0;}
+			a[class^=btn-] {
+				display: inline-block; width: 200px; line-height: 50px; color:#fff; font-family: $font2; font-size: 18px; text-align: center; border-radius: 100px;
+				&.btn-phone {background:#ff7200;}
+				&.btn-ipin {background:#1556b0;}
+			}
+		}
+		// 회원가입
+		.join-service-zone {
+			position: relative; padding:30px 35px 40px;
+			.member-select-group {
+				overflow:hidden; 
+				& > li {float:left; width:564px; padding:20px 40px; margin-left: 15px; background:#f1f3f4; text-align: center;box-sizing:border-box;}
+				& > li:first-child {margin-left: 0;}
+
+				*[class^=comp-lst] {text-align: left; margin-top: 22px; word-break: keep-all;}
+			}
+			.agreement-box {
+				margin-top: 30px;
+				&:nth-of-type(1) {margin-top: 20px}
+				.comp-textarea {overflow-y:scroll; overflow-x:hidden; height: 195px; padding:15px 20px; line-height: 24px; font-size: 16px;}
+				.txt-agree {text-align: right; margin-top: 15px;}
+			}
+			.txt-allagree {
+				margin-top: 40px; text-align: center;
+				& + .agree-certification {margin-top: 25px;}
+			}
+			.agree-tabcontent {display: none}
+			.btn-zone {margin-top: 25px;}
+			.agree-certification {
+				margin-bottom: 10px; text-align: center;
+				dt {display: inline-block; margin-right:25px; vertical-align: middle; line-height:50px; font-family: $font2; font-size: 18px; color:#363636; text-align: right; vertical-align: top}
+				dd {
+					display: inline-block; vertical-align: top;
+					.btn-zone {margin-top: 0}
 				}
+			}
+			.agree-relation {
+				margin-top: 20px; padding:15px; border:1px solid #cbc8c7; text-align: center;
+				dt {display: inline-block; margin-right:25px; vertical-align: middle; font-family: $font2; font-size: 18px; color:#363636; text-align: right; vertical-align: top; line-height:40px}
+				dd {
+					display: inline-block; vertical-align: top;
+					ul {
+						display: inline-block; vertical-align: top;
+						&:after {display:block; clear:both; content:""}
+						li {float: left; margin-left: 30px; line-height: 35px;}
+						li:first-child {margin-left: 0;}
+					}
+					.comp-input {width: 180px; margin-left: 5px;}
+				}
+			}
+			.comp-btn-zone {
+				*[class^=comm-btn] {width:190px}
+			}
+
+			&.step2 {
+				.member-select-group > li {height: 190px}
+				.infor-txt {
+					margin-top: 25px;
+					dt {font-size: 18px; font-family: $font2; color:#000; }
+					dd {margin-top: 13px}
+				} 
 			}
 		}
 	}
@@ -2333,6 +2409,15 @@ input[class^=comp-input] {
 		&:before {width:1rem; height:1rem; margin-right: 0.5rem; background-size: auto 100%;}
 	}
 	input:checked ~ label:before {background-size: auto 100%;}
+
+	&[class*=_big] {
+		label {
+			font-size:1.5rem;
+			.sm {font-size:1.2rem;}
+			&:before {width:2rem; height:2rem; margin-right:0.5rem; background-size: auto 100%;}
+		}
+		input:checked ~ label:before {background-size: auto 100%;}
+	}
 }
 *[class^=comp-check] {
 	label {
@@ -2813,11 +2898,19 @@ div[class^=comp-public-area] {
 	// 하단텍스트
 	.info-zone {
 		line-height:1.8rem; margin-top:1rem; font-size:1.2rem; text-align:left;
-		.txt {
+		p.txt {
 			padding:0 0 0 1.8rem; word-break:keep-all;
 			&:before {width:1.5rem; height:1.5rem; line-height:1.5rem;}
 			& .point {margin-top:0.2rem;}
 			& .point em {padding-left:1.3rem; text-indent:-1.3rem;}
+		}
+		dl.txt {
+			dt {
+				font-size: 1.2rem;
+				&:before {width:1.5rem; height:1.5rem; margin-right: 0.5rem; line-height:1.5rem;  font-size: 1.2rem;}
+			}
+			dd {margin-top: 1rem;}
+			.point {line-height:1.2;}
 		}
 	}
 	// 로그인 서비스 탭
@@ -2863,12 +2956,49 @@ div[class^=comp-public-area] {
 				input {width: 100%; padding:0 1rem;}
 				input + input {margin-left:0; margin-top: 0.5rem}
 			}
-			.btn-zone {
-				display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
-				position:static; margin: 2rem auto 0; max-width:50rem;
-				li {display: inline-block; margin-left: 1rem; -webkit-flex:1; flex:1;}
-				li:first-child {margin-left: 0;}
-				a {width: 100%; line-height:3rem; font-size:1.2rem; }
+		}
+		.btn-zone {
+			display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+			position:static; margin: 2rem auto 0; max-width:50rem;
+			li {display: inline-block; margin-left: 1rem; -webkit-flex:1; flex:1;}
+			li:first-child {margin-left: 0;}
+			a[class^=btn-] {width: 100%; line-height:3rem; font-size:1.2rem; }
+		}
+		// 회원가입
+		.join-service-zone {
+			padding:2rem 1rem 2rem;
+			.member-select-group {
+				li {float:none; width:100%; padding:2rem 1rem; margin-left:0; margin-top: 0.5rem; text-align: left;}
+				li:first-child {margin-left: 0; margin-top: 0}
+			}
+			.agreement-box {
+				margin-top: 3rem;
+				&:nth-of-type(1) {margin-top: 2rem}
+				.comp-textarea {height:20rem; padding:1rem 1rem; line-height:1.8rem; font-size:1.2rem;}
+				.txt-agree {margin-top:1rem;}
+			}
+			.txt-allagree {
+				margin-top:3rem;
+				& + .agree-certification {margin-top:2rem;}
+			}
+			.agree-tabcontent {display: none}
+			.btn-zone {margin-top:2rem;}
+			.agree-certification {
+				margin-bottom:1rem;
+				dt {display: block; margin-right:0; line-height:1.8rem; font-size:1.4rem; text-align: center;}
+				dd {display: block; margin-top:1rem; }
+			}
+			.agree-relation {
+				margin-top: 2rem; padding:1rem;
+				dt {display: block; margin-right:0; font-size:1.4rem; line-height: 1.8rem; text-align: center;}
+				dd {
+					display:block;
+					ul {
+						display: block;
+						li {width:50%; margin-left:0; line-height:3.3rem; text-align: left;}
+						li:last-child {width: 100%}
+					}
+				}
 			}
 		}
 	}

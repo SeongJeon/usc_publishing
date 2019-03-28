@@ -532,6 +532,10 @@ input[class^=comp-input][class*=_h50] { height: 50px; }
 *[class^=comp-radio] label { font-size: 16px; color: #333; cursor: pointer; }
 *[class^=comp-radio] label:before { display: inline-block; width: 19px; height: 18px; margin-right: 8px; content: ""; background: url("../../static/images/common/form_radio1_off.png") no-repeat 50% 50%; vertical-align: middle; }
 *[class^=comp-radio] input:checked ~ label:before { background: url("../../static/images/common/form_radio1_on.png") no-repeat 50% 50%; }
+*[class^=comp-radio][class*=_big] label { font-size: 24px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #222; }
+*[class^=comp-radio][class*=_big] label .sm { font-size: 18px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+*[class^=comp-radio][class*=_big] label:before { width: 32px; height: 32px; margin-right: 14px; content: ""; background: url("../../static/images/common/form_radio3_off.png") no-repeat 50% 50%; }
+*[class^=comp-radio][class*=_big] input:checked ~ label:before { background: url("../../static/images/common/form_radio3_on.png") no-repeat 50% 50%; }
 
 *[class^=comp-check] label { font-size: 16px; color: #7f7f7f; cursor: pointer; }
 *[class^=comp-check] label:before { display: inline-block; width: 14px; height: 14px; margin-right: 5px; content: ""; vertical-align: middle; border: 1px solid #cfcfcf; position: relative; top: -1px; }
@@ -883,10 +887,15 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-total-login .tit-login-zone .subtit span:before { right: -10px; }
 .tp-total-login .tit-login-zone .subtit span:after { right: -6px; }
 .tp-total-login .info-zone { line-height: 30px; margin: 50px 0 0; font-size: 18px; color: #303030; text-align: center; }
-.tp-total-login .info-zone .txt { position: relative; display: inline-block; padding: 0 0 0 37px; }
-.tp-total-login .info-zone .txt:before { position: absolute; left: 0; top: 0; display: block; content: "!"; width: 30px; height: 30px; line-height: 30px; background: #ee3106; border-radius: 100%; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; }
-.tp-total-login .info-zone .txt .point { display: block; }
-.tp-total-login .info-zone .txt .point em { display: inline-block; padding-left: 20px; background: #fcecbd; text-indent: -20px; }
+.tp-total-login .info-zone p.txt { position: relative; display: inline-block; padding: 0 0 0 37px; }
+.tp-total-login .info-zone p.txt:before { position: absolute; left: 0; top: 0; display: block; content: "!"; width: 30px; height: 30px; line-height: 30px; background: #ee3106; border-radius: 100%; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; }
+.tp-total-login .info-zone p.txt .point { display: block; }
+.tp-total-login .info-zone p.txt .point em { display: inline-block; padding-left: 20px; background: #fcecbd; text-indent: -20px; }
+.tp-total-login .info-zone dl.txt { text-align: center; }
+.tp-total-login .info-zone dl.txt dt { position: relative; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 18px; }
+.tp-total-login .info-zone dl.txt dt:before { display: inline-block; content: "!"; width: 30px; height: 30px; margin-right: 7px; line-height: 30px; background: #ee3106; border-radius: 100%; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; font-size: 16px; }
+.tp-total-login .info-zone dl.txt dd { margin-top: 14px; }
+.tp-total-login .info-zone dl.txt .point { display: inline-block; background: #fcecbd; line-height: 1.2; }
 .tp-total-login .login-service-tab { position: relative; width: 1220px; margin: -45px auto 40px; }
 .tp-total-login .login-service-tab:before { display: block; position: absolute; left: -8px; top: 50%; width: 11px; height: 11px; background: #ffc61a; border: 3px solid #fff; border-radius: 100px; content: ""; margin-top: -8px; }
 .tp-total-login .login-service-tab:after { display: block; position: absolute; right: -8px; top: 50%; width: 11px; height: 11px; background: #ffc61a; border: 3px solid #fff; border-radius: 100px; content: ""; margin-top: -8px; }
@@ -916,12 +925,43 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-total-login #loginTabcontent .find-service-zone .form { margin-top: 40px; }
 .tp-total-login #loginTabcontent .find-service-zone .form input { width: 200px; padding: 0 15px; }
 .tp-total-login #loginTabcontent .find-service-zone .form input + input { margin-left: 3px; }
-.tp-total-login #loginTabcontent .find-service-zone .btn-zone { overflow: hidden; position: absolute; left: 0; bottom: 25px; width: 100%; }
-.tp-total-login #loginTabcontent .find-service-zone .btn-zone li { display: inline-block; margin-left: 12px; }
-.tp-total-login #loginTabcontent .find-service-zone .btn-zone li:first-child { margin-left: 0; }
-.tp-total-login #loginTabcontent .find-service-zone .btn-zone a { display: inline-block; width: 200px; line-height: 50px; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 18px; text-align: center; border-radius: 100px; }
-.tp-total-login #loginTabcontent .find-service-zone .btn-zone a.btn-phone { background: #ff7200; }
-.tp-total-login #loginTabcontent .find-service-zone .btn-zone a.btn-ipin { background: #1556b0; }
+.tp-total-login #loginTabcontent .find-service-zone .btn-zone { position: absolute; left: 0; bottom: 25px; }
+.tp-total-login #loginTabcontent .btn-zone { overflow: hidden; width: 100%; text-align: center; }
+.tp-total-login #loginTabcontent .btn-zone li { display: inline-block; margin-left: 12px; }
+.tp-total-login #loginTabcontent .btn-zone li:first-child { margin-left: 0; }
+.tp-total-login #loginTabcontent .btn-zone a[class^=btn-] { display: inline-block; width: 200px; line-height: 50px; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 18px; text-align: center; border-radius: 100px; }
+.tp-total-login #loginTabcontent .btn-zone a[class^=btn-].btn-phone { background: #ff7200; }
+.tp-total-login #loginTabcontent .btn-zone a[class^=btn-].btn-ipin { background: #1556b0; }
+.tp-total-login #loginTabcontent .join-service-zone { position: relative; padding: 30px 35px 40px; }
+.tp-total-login #loginTabcontent .join-service-zone .member-select-group { overflow: hidden; }
+.tp-total-login #loginTabcontent .join-service-zone .member-select-group > li { float: left; width: 564px; padding: 20px 40px; margin-left: 15px; background: #f1f3f4; text-align: center; box-sizing: border-box; }
+.tp-total-login #loginTabcontent .join-service-zone .member-select-group > li:first-child { margin-left: 0; }
+.tp-total-login #loginTabcontent .join-service-zone .member-select-group *[class^=comp-lst] { text-align: left; margin-top: 22px; word-break: keep-all; }
+.tp-total-login #loginTabcontent .join-service-zone .agreement-box { margin-top: 30px; }
+.tp-total-login #loginTabcontent .join-service-zone .agreement-box:nth-of-type(1) { margin-top: 20px; }
+.tp-total-login #loginTabcontent .join-service-zone .agreement-box .comp-textarea { overflow-y: scroll; overflow-x: hidden; height: 195px; padding: 15px 20px; line-height: 24px; font-size: 16px; }
+.tp-total-login #loginTabcontent .join-service-zone .agreement-box .txt-agree { text-align: right; margin-top: 15px; }
+.tp-total-login #loginTabcontent .join-service-zone .txt-allagree { margin-top: 40px; text-align: center; }
+.tp-total-login #loginTabcontent .join-service-zone .txt-allagree + .agree-certification { margin-top: 25px; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-tabcontent { display: none; }
+.tp-total-login #loginTabcontent .join-service-zone .btn-zone { margin-top: 25px; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-certification { margin-bottom: 10px; text-align: center; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-certification dt { display: inline-block; margin-right: 25px; vertical-align: middle; line-height: 50px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 18px; color: #363636; text-align: right; vertical-align: top; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-certification dd { display: inline-block; vertical-align: top; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-certification dd .btn-zone { margin-top: 0; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-relation { margin-top: 20px; padding: 15px; border: 1px solid #cbc8c7; text-align: center; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-relation dt { display: inline-block; margin-right: 25px; vertical-align: middle; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 18px; color: #363636; text-align: right; vertical-align: top; line-height: 40px; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-relation dd { display: inline-block; vertical-align: top; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-relation dd ul { display: inline-block; vertical-align: top; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-relation dd ul:after { display: block; clear: both; content: ""; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-relation dd ul li { float: left; margin-left: 30px; line-height: 35px; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-relation dd ul li:first-child { margin-left: 0; }
+.tp-total-login #loginTabcontent .join-service-zone .agree-relation dd .comp-input { width: 180px; margin-left: 5px; }
+.tp-total-login #loginTabcontent .join-service-zone .comp-btn-zone *[class^=comm-btn] { width: 190px; }
+.tp-total-login #loginTabcontent .join-service-zone.step2 .member-select-group > li { height: 190px; }
+.tp-total-login #loginTabcontent .join-service-zone.step2 .infor-txt { margin-top: 25px; }
+.tp-total-login #loginTabcontent .join-service-zone.step2 .infor-txt dt { font-size: 18px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #000; }
+.tp-total-login #loginTabcontent .join-service-zone.step2 .infor-txt dd { margin-top: 13px; }
 
 @-moz-document url-prefix() {}
 @media (max-width: 1024px) { /* LAYOUT */
@@ -1221,6 +1261,10 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   *[class^=comp-radio] label { font-size: 1.2rem; }
   *[class^=comp-radio] label:before { width: 1rem; height: 1rem; margin-right: 0.5rem; background-size: auto 100%; }
   *[class^=comp-radio] input:checked ~ label:before { background-size: auto 100%; }
+  *[class^=comp-radio][class*=_big] label { font-size: 1.5rem; }
+  *[class^=comp-radio][class*=_big] label .sm { font-size: 1.2rem; }
+  *[class^=comp-radio][class*=_big] label:before { width: 2rem; height: 2rem; margin-right: 0.5rem; background-size: auto 100%; }
+  *[class^=comp-radio][class*=_big] input:checked ~ label:before { background-size: auto 100%; }
   *[class^=comp-check] label { font-size: 1.2rem; }
   *[class^=comp-check] label:before { width: 1rem; height: 1rem; margin-right: 0.5rem; background-size: auto 100%; }
   *[class^=comp-check] input:checked ~ label:before { background-size: auto 100%; }
@@ -1462,10 +1506,14 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .tp-total-login .tit-login-zone .tail { font-size: 1.2rem; line-height: 1.8rem; }
   .tp-total-login .tit-login-zone .subtit { bottom: -2rem; left: 1rem; height: 4rem; width: calc(100% - 2rem); line-height: 4rem; font-size: 1.5rem; }
   .tp-total-login .info-zone { line-height: 1.8rem; margin-top: 1rem; font-size: 1.2rem; text-align: left; }
-  .tp-total-login .info-zone .txt { padding: 0 0 0 1.8rem; word-break: keep-all; }
-  .tp-total-login .info-zone .txt:before { width: 1.5rem; height: 1.5rem; line-height: 1.5rem; }
-  .tp-total-login .info-zone .txt .point { margin-top: 0.2rem; }
-  .tp-total-login .info-zone .txt .point em { padding-left: 1.3rem; text-indent: -1.3rem; }
+  .tp-total-login .info-zone p.txt { padding: 0 0 0 1.8rem; word-break: keep-all; }
+  .tp-total-login .info-zone p.txt:before { width: 1.5rem; height: 1.5rem; line-height: 1.5rem; }
+  .tp-total-login .info-zone p.txt .point { margin-top: 0.2rem; }
+  .tp-total-login .info-zone p.txt .point em { padding-left: 1.3rem; text-indent: -1.3rem; }
+  .tp-total-login .info-zone dl.txt dt { font-size: 1.2rem; }
+  .tp-total-login .info-zone dl.txt dt:before { width: 1.5rem; height: 1.5rem; margin-right: 0.5rem; line-height: 1.5rem; font-size: 1.2rem; }
+  .tp-total-login .info-zone dl.txt dd { margin-top: 1rem; }
+  .tp-total-login .info-zone dl.txt .point { line-height: 1.2; }
   .tp-total-login .login-service-tab { width: 100%; max-width: 50rem; margin: -2.2rem auto 1rem; padding: 0 1rem; }
   .tp-total-login .login-service-tab:before { left: 3px; }
   .tp-total-login .login-service-tab:after { right: 3px; }
@@ -1489,10 +1537,30 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .tp-total-login #loginTabcontent .find-service-zone .form { margin-top: 1rem; }
   .tp-total-login #loginTabcontent .find-service-zone .form input { width: 100%; padding: 0 1rem; }
   .tp-total-login #loginTabcontent .find-service-zone .form input + input { margin-left: 0; margin-top: 0.5rem; }
-  .tp-total-login #loginTabcontent .find-service-zone .btn-zone { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; position: static; margin: 2rem auto 0; max-width: 50rem; }
-  .tp-total-login #loginTabcontent .find-service-zone .btn-zone li { display: inline-block; margin-left: 1rem; -webkit-flex: 1; flex: 1; }
-  .tp-total-login #loginTabcontent .find-service-zone .btn-zone li:first-child { margin-left: 0; }
-  .tp-total-login #loginTabcontent .find-service-zone .btn-zone a { width: 100%; line-height: 3rem; font-size: 1.2rem; } }
+  .tp-total-login #loginTabcontent .btn-zone { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; position: static; margin: 2rem auto 0; max-width: 50rem; }
+  .tp-total-login #loginTabcontent .btn-zone li { display: inline-block; margin-left: 1rem; -webkit-flex: 1; flex: 1; }
+  .tp-total-login #loginTabcontent .btn-zone li:first-child { margin-left: 0; }
+  .tp-total-login #loginTabcontent .btn-zone a[class^=btn-] { width: 100%; line-height: 3rem; font-size: 1.2rem; }
+  .tp-total-login #loginTabcontent .join-service-zone { padding: 2rem 1rem 2rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .member-select-group li { float: none; width: 100%; padding: 2rem 1rem; margin-left: 0; margin-top: 0.5rem; text-align: left; }
+  .tp-total-login #loginTabcontent .join-service-zone .member-select-group li:first-child { margin-left: 0; margin-top: 0; }
+  .tp-total-login #loginTabcontent .join-service-zone .agreement-box { margin-top: 3rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .agreement-box:nth-of-type(1) { margin-top: 2rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .agreement-box .comp-textarea { height: 20rem; padding: 1rem 1rem; line-height: 1.8rem; font-size: 1.2rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .agreement-box .txt-agree { margin-top: 1rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .txt-allagree { margin-top: 3rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .txt-allagree + .agree-certification { margin-top: 2rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .agree-tabcontent { display: none; }
+  .tp-total-login #loginTabcontent .join-service-zone .btn-zone { margin-top: 2rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .agree-certification { margin-bottom: 1rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .agree-certification dt { display: block; margin-right: 0; line-height: 1.8rem; font-size: 1.4rem; text-align: center; }
+  .tp-total-login #loginTabcontent .join-service-zone .agree-certification dd { display: block; margin-top: 1rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .agree-relation { margin-top: 2rem; padding: 1rem; }
+  .tp-total-login #loginTabcontent .join-service-zone .agree-relation dt { display: block; margin-right: 0; font-size: 1.4rem; line-height: 1.8rem; text-align: center; }
+  .tp-total-login #loginTabcontent .join-service-zone .agree-relation dd { display: block; }
+  .tp-total-login #loginTabcontent .join-service-zone .agree-relation dd ul { display: block; }
+  .tp-total-login #loginTabcontent .join-service-zone .agree-relation dd ul li { width: 50%; margin-left: 0; line-height: 3.3rem; text-align: left; }
+  .tp-total-login #loginTabcontent .join-service-zone .agree-relation dd ul li:last-child { width: 100%; } }
 @media (max-width: 360px) { #gnb .gnb h3 a { font-size: 1.2rem; } }
 @media (max-width: 321px) { #gnb .gnb h3 a { font-size: 1.1rem; }
   #container .breadcrumb-zone .breadcrumb > li > a { padding-right: 1.5rem; }

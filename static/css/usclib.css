@@ -45,9 +45,12 @@ COMMON
 #wrap.usclib *[class^=heading][class*=-h3]:before { width: 27px; background: url("../../static/images/usclib/bul_h3.png") no-repeat 50% 50%; }
 #wrap.usclib *[class^=heading][class*=-h4]:before { background: url("../../static/images/usclib/bul_h4.png") no-repeat 50% 50%; }
 #wrap.usclib h4[class^=comp-lst][class*=_hyphen]:before, #wrap.usclib h5[class^=comp-lst][class*=_hyphen]:before, #wrap.usclib p[class^=comp-lst][class*=_hyphen]:before { background: #336ac0; }
+#wrap.usclib h4[class^=comp-lst][class*=_hyphen][class*=_txt]:before, #wrap.usclib h5[class^=comp-lst][class*=_hyphen][class*=_txt]:before, #wrap.usclib p[class^=comp-lst][class*=_hyphen][class*=_txt]:before { background: none; }
 #wrap.usclib *[class^=comp-lst][class*=_hyphen] > li:before { background: #336ac0; }
+#wrap.usclib *[class^=comp-lst][class*=_hyphen][class*=_txt] > li:before { background: none; }
 #wrap.usclib *[class^=comm-btn][class*=_download1]:before { background: url("../../static/images/usclib/icon_download1.png") no-repeat 50% 50%; }
 #wrap.usclib *[class^=comp-tab] a[aria-selected=true]:after { background: #336ac0; }
+#wrap.usclib *[class^=comp-tab][class*=_row] a[aria-selected=true] span { color: #336ac0; }
 #wrap.usclib *[class^=comp-iconbox] { border-top-color: #336ac0; }
 #wrap.usclib *[class^=comp-iconbox]:before { background: #336ac0; }
 #wrap.usclib table[class^=comp-tbl][class*=_datatype] { border-top-color: #3b596a; }
@@ -274,6 +277,9 @@ MEDIA QUERY
   #wrap.usclib #footer .footer-utilegroup .footer-utile a { color: #d5d5d5; }
   #wrap.usclib #footer .footer-utilegroup .footer-utile a strong { color: #fff; }
   #wrap.usclib #container { padding-top: 0; }
+  /* ------------------------------------------------------ COMMON ------------------------------------------------------ */
+  #wrap.usclib *[class^=heading][class*=-h3]:before { width: 2rem; height: 2rem; background-size: 100% auto; }
+  #wrap.usclib *[class^=heading][class*=-h4]:before { background-size: 100% auto; }
   /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
   #wrap.usclib #container.main .inner { width: 100%; }
   #wrap.usclib #container.main .main-visual-zone .slider { min-width: inherit; height: 50rem; }

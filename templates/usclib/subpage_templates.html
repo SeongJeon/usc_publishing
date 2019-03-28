@@ -278,6 +278,7 @@
 							<div class="contents-zone">
 								<!-- D : 해당 부분에 서브페이지 작업 -->
 
+								<!-- 상단 아이콘 박스 영역 -->
 								<div class="comp-iconbox">
 									<div class="icon"><img src="" alt=""></div>
 									<div class="cont">
@@ -301,6 +302,7 @@
 									</div>
 								</div>
 
+								<!-- 탭 타입1 -->
 								<ul class="comp-tab" role="tablist" data-js="false">
 									<li role="presentation"><a href="#" role="tab"><span>제목</span></a></li>
 									<li role="presentation"><a href="#" role="tab" aria-selected="true"><span>제목</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
@@ -316,10 +318,23 @@
 									<li role="presentation"><a href="#" role="tab"><span>제목</span></a></li>
 									<li role="presentation"><a href="#" role="tab"><span>제목</span></a></li>
 								</ul>
-
+								<!-- 탭 타입2 -->
+								<ul class="comp-tab_row" role="tablist" data-js="false">
+									<li role="presentation"><a href="#" role="tab" aria-controls="tabcontentId" aria-selected="true"><span>제목</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
+									<li role="presentation"><a href="#" role="tab"><span>제목</span></a></li>
+								</ul>
+								<!-- 탭 타입2 - small -->
+								<ul class="comp-tab_row_small" role="tablist" data-js="false">
+									<li role="presentation"><a href="#" role="tab" aria-controls="tabcontentId" aria-selected="true"><span>제목</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
+									<li role="presentation"><a href="#" role="tab"><span>제목</span></a></li>
+								</ul>
+								
+								
+								<!-- 헤딩타입 -->
 								<h3 class="heading-h3">제목</h3>
 								<h4 class="heading-h4">제목</h4>
 
+								<!-- 리스트타입 -->
 								<ul class="comp-lst_dotted">
 									<li>
 										<span class="tit">제목</span> 
@@ -511,6 +526,8 @@
 								</div>
 								<!--// 페이지 하단 버튼 영역 -->
 
+
+								<!-- 페이징 -->
 								<div class="comp-paging" aria-label="페이지 선택" role="navigation">
 									<div>
 										<p class="allprev"><a href="#"><span>처음으로 이동</span></a></p>
@@ -527,7 +544,7 @@
 									</div>
 								</div>
 
-
+								<!-- 상단 검색 1 -->
 								<div class="top-search-zone bgcolor">
 									<p class="total-length">전체게시물 <em class="bold point1">22</em>건 / <span class="totalpage">1</span>page</p>
 									<div class="form" role="search">
@@ -536,6 +553,17 @@
 										</select>
 										<input type="text" name="" id="" class="comp-input_h42" title="검색어 입력">
 										<button type="submit" class="comm-btn_type3_green"><span>검색</span></button>
+									</div>
+								</div>
+								<!-- 상단 검색 2 -->
+								<div class="top-search-zone bgcolor">
+									<div class="form2" role='search'>
+										<select name="" id="" title="검색항목 선택" class="comp-select_h42">
+											<option value="">검색항목</option>
+										</select>
+										<input type="text" name="" id="" class="comp-input_h42" title="자료 검색어 입력" placeholder="자료를 검색하세요">
+										<button type="submit" class="comm-btn_type3_green"><span>검색</span></button>
+										<button type="button" class="comm-btn_type3_lightblue"><span>검색 초기화</span></button>
 									</div>
 								</div>
 

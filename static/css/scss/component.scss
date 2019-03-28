@@ -965,7 +965,8 @@ input.w_password {width:135px;}
 }
 /* UI - TAB */
 *[class^=comp-tab] {
-	overflow:hidden; margin-bottom: 30px;
+	margin-bottom: 30px;
+	&:after {display:block; clear:both; content:""}
 	li {float: left; width: 20%; box-sizing: border-box; border-top: 1px solid #d1d1d1; }
 	a {
 		display: block; position: relative; text-align: center; line-height: 50px; font-size: 17px; color:#111; background:#f4f4f4; border-right:1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1;
@@ -982,6 +983,21 @@ input.w_password {width:135px;}
 	li:first-child:nth-last-of-type(4) ~ li {width: 25%; border-top: 1px solid #d1d1d1;}
 	li:nth-child(n+6) {border-top: 0;}
 	li:nth-child(5n+1) a {border-left: 1px solid #d1d1d1;}
+
+	&[class*=_row] {
+		a {
+			color:#a9a9a9; font-family: $font2; font-size: 20px; border-bottom-color:#000; line-height: 58px; 
+			&[aria-selected=true]{
+				background:#fff;  border-color:#000; border-bottom-color:#fff; 
+				&:after {padding:0; background:#fff !important; border:1px solid #000; border-bottom-color:#fff;}
+				span {color:#336ac0;}
+			}
+		}
+	}
+	&[class*=_small] {
+		border-bottom: 1px solid #000;
+		li {width: 300px !important; margin-bottom:-1px;}
+	}
 }
 /* UI - SUBPAGE TOP */
 *[class^=comp-iconbox] {
@@ -1119,6 +1135,14 @@ div[class^=comp-public-area] {
 		input {width: 226px;  margin-left: 2px;}
 		select {width: 116px;}
 		button {width:80px; min-width: inherit; margin-left: -1px;}
+	}
+	.form2 {
+		&:after {display:block; clear:both; content:""}
+		& > * {float: left;}
+		select {width: 160px;}	
+		input {width:520px; margin-left: 7px;}
+		button {width:130px;}
+		button:last-of-type {margin-left: 7px;}
 	}
 }
 
@@ -2115,6 +2139,14 @@ input.w_password {width:100%;}
 	li:nth-child(n+5) {border-top: 0;}
 	li:nth-child(5n+1) a {border-left: 0}
 	li:nth-child(4n+1) a {border-left: 1px solid #d1d1d1;}
+
+
+	&[class*=_row] {
+		a {font-size: 1.2rem; height: 4rem; line-height: 1.2; }
+	}
+	&[class*=_small] {
+		li {width: 10rem !important; }
+	}
 }
 /* UI - SUBPAGE TOP */
 *[class^=comp-iconbox] {
@@ -2239,8 +2271,15 @@ div[class^=comp-public-area] {
 		select {width:10rem; }
 		button {width:5rem; min-width:inherit;}
 	}
+	.form2 {
+		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+		select {width:10rem;}	
+		input {-webkit-flex:1; flex:1; margin-left: 2px;}
+		button {width:5rem; min-width: inherit; }
+		button:last-of-type {display: none}
+	}
 }
-
+ 
 
 
 

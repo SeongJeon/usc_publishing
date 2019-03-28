@@ -66,6 +66,7 @@ Show/Hide 의 경우는 해당 속성 기입하지 말 것.
 			<!-- //end -->
 
 
+
 			<!-- start -->
 			<div class="code-box">
 				<div class="tit-area">
@@ -98,6 +99,37 @@ Show/Hide 의 경우는 해당 속성 기입하지 말 것.
 * tab js 안쓸경우, ul에 data-js="false" 속성 추가
 * ajax 탭일 경우, a 에 aria-controls="탭컨텐츠 id값" 하나로 통일 (현재 예시 형태)
 * 보여지는 탭일 경우, 가이드 상단처럼 만들 것.
+-->
+<!-- //code -->
+				</div>
+			</div>
+			<!-- //end -->
+
+
+			<!-- start -->
+			<div class="code-box">
+				<div class="tit-area">
+					<h3 class="subtit">Tab (ROW TYPE)</h3>
+					<p class="date">최종 수정일 : <span>2017.00.00</span></p>
+				</div>
+				<div class="code-view" style="position:relative">
+<!-- code -->
+<ul class="comp-tab_row" role="tablist" data-js="false">
+	<li role="presentation"><a href="#" role="tab"><span>제목</span></a></li>
+	<li role="presentation"><a href="#" role="tab" aria-controls="tabcontentId" aria-selected="true"><span>제목</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
+	<li role="presentation"><a href="#" role="tab"><span>제목</span></a></li>
+</ul>
+
+<div id="tabcontentId" role="tabpanel">
+	탭 내용
+</div>
+<!-- 
+* aria 속성으로 작동함. 
+* 해당 구조만 동일하면 작동함으로 css는 자유
+* animation은 Show/Hide와 fadeIn/Out를 선택가능. 
+fadeIn/Out일 경우 data-animation='fade'를 넣어주고,
+Show/Hide 의 경우는 해당 속성 기입하지 말 것. 
+* 탭이기에 해당 속성들은 넣지만, js를 쓰지 않을 경우, role='tablist' 태그에 data-js="flase"를 넣어줄 것
 -->
 <!-- //code -->
 				</div>

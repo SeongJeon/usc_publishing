@@ -592,7 +592,8 @@ input.w_password { width: 135px; }
 *[class^=comp-paging] + .comp-btn-zone { margin-top: -46px; }
 
 /* UI - TAB */
-*[class^=comp-tab] { overflow: hidden; margin-bottom: 30px; }
+*[class^=comp-tab] { margin-bottom: 30px; }
+*[class^=comp-tab]:after { display: block; clear: both; content: ""; }
 *[class^=comp-tab] li { float: left; width: 20%; box-sizing: border-box; border-top: 1px solid #d1d1d1; }
 *[class^=comp-tab] a { display: block; position: relative; text-align: center; line-height: 50px; font-size: 17px; color: #111; background: #f4f4f4; border-right: 1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1; }
 *[class^=comp-tab] a[aria-selected=true]:after { display: block; position: absolute; left: -1px; top: -1px; width: 100%; height: 100%; background: #f27405; content: ""; padding: 1px; }
@@ -603,6 +604,12 @@ input.w_password { width: 135px; }
 *[class^=comp-tab] li:first-child:nth-last-of-type(4), *[class^=comp-tab] li:first-child:nth-last-of-type(4) ~ li { width: 25%; border-top: 1px solid #d1d1d1; }
 *[class^=comp-tab] li:nth-child(n+6) { border-top: 0; }
 *[class^=comp-tab] li:nth-child(5n+1) a { border-left: 1px solid #d1d1d1; }
+*[class^=comp-tab][class*=_row] a { color: #a9a9a9; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 20px; border-bottom-color: #000; line-height: 58px; }
+*[class^=comp-tab][class*=_row] a[aria-selected=true] { background: #fff; border-color: #000; border-bottom-color: #fff; }
+*[class^=comp-tab][class*=_row] a[aria-selected=true]:after { padding: 0; background: #fff !important; border: 1px solid #000; border-bottom-color: #fff; }
+*[class^=comp-tab][class*=_row] a[aria-selected=true] span { color: #336ac0; }
+*[class^=comp-tab][class*=_small] { border-bottom: 1px solid #000; }
+*[class^=comp-tab][class*=_small] li { width: 300px !important; margin-bottom: -1px; }
 
 /* UI - SUBPAGE TOP */
 *[class^=comp-iconbox] { position: relative; min-height: 160px; padding: 39px 40px 30px 0; border: 2px solid #e2e1e1; border-top-color: #fe970e; background: #fff; }
@@ -695,6 +702,12 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .top-search-zone .form input { width: 226px; margin-left: 2px; }
 .top-search-zone .form select { width: 116px; }
 .top-search-zone .form button { width: 80px; min-width: inherit; margin-left: -1px; }
+.top-search-zone .form2:after { display: block; clear: both; content: ""; }
+.top-search-zone .form2 > * { float: left; }
+.top-search-zone .form2 select { width: 160px; }
+.top-search-zone .form2 input { width: 520px; margin-left: 7px; }
+.top-search-zone .form2 button { width: 130px; }
+.top-search-zone .form2 button:last-of-type { margin-left: 7px; }
 
 /* LAYER */
 #layer { display: block; position: fixed; top: 50%; left: 50%; z-index: 1001; }
@@ -1116,6 +1129,8 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   *[class^=comp-tab] li:nth-child(n+5) { border-top: 0; }
   *[class^=comp-tab] li:nth-child(5n+1) a { border-left: 0; }
   *[class^=comp-tab] li:nth-child(4n+1) a { border-left: 1px solid #d1d1d1; }
+  *[class^=comp-tab][class*=_row] a { font-size: 1.2rem; height: 4rem; line-height: 1.2; }
+  *[class^=comp-tab][class*=_small] li { width: 10rem !important; }
   /* UI - SUBPAGE TOP */
   *[class^=comp-iconbox] { min-height: 160px; padding: 2rem 2rem 1.5rem 0; }
   *[class^=comp-iconbox]:before { height: 5px; }
@@ -1184,6 +1199,11 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .top-search-zone .form input { -webkit-flex: 1; flex: 1; }
   .top-search-zone .form select { width: 10rem; }
   .top-search-zone .form button { width: 5rem; min-width: inherit; }
+  .top-search-zone .form2 { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .top-search-zone .form2 select { width: 10rem; }
+  .top-search-zone .form2 input { -webkit-flex: 1; flex: 1; margin-left: 2px; }
+  .top-search-zone .form2 button { width: 5rem; min-width: inherit; }
+  .top-search-zone .form2 button:last-of-type { display: none; }
   /* 공통페이지 - 사이트맵 */
   .tp-sitemap .sitemap-box { padding: 1rem 1rem 1rem 0.3rem; margin: 1rem 0 2rem; }
   .tp-sitemap .sitemap-box .depth2 { width: 50%; padding-left: 0.7rem; padding-bottom: 1rem; }

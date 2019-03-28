@@ -867,7 +867,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 /* 공통페이지 */
 .tp-total-login { padding: 0 !important; }
 .tp-total-login:before { display: none !important; }
-.tp-total-login .contents-zone { padding-top: 0; padding-bottom: 70px; }
+.tp-total-login .contents-zone { padding-top: 0 !important; padding-bottom: 70px; }
 .tp-total-login .contents-zone .tit-login-zone { position: relative; height: 398px; background: url(../../static/images/usc/subpage/bg_tit_login_zone.png); border-bottom: 4px solid #ff9c00; text-align: center; }
 .tp-total-login .contents-zone .tit-login-zone .inner { width: 1220px; margin: 0 auto; padding: 45px 0 0; }
 .tp-total-login .contents-zone .tit-login-zone h2.tit { font-family: 'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 36px; color: #000; }
@@ -882,6 +882,32 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-total-login .contents-zone .tit-login-zone h3.tit:after { left: -6px; }
 .tp-total-login .contents-zone .tit-login-zone h3.tit span:before { right: -10px; }
 .tp-total-login .contents-zone .tit-login-zone h3.tit span:after { right: -6px; }
+.tp-total-login .login-service-tab { position: relative; width: 1220px; margin: -45px auto 40px; }
+.tp-total-login .login-service-tab:before { display: block; position: absolute; left: -8px; top: 50%; width: 11px; height: 11px; background: #ffc61a; border: 3px solid #fff; border-radius: 100px; content: ""; margin-top: -8px; }
+.tp-total-login .login-service-tab:after { display: block; position: absolute; right: -8px; top: 50%; width: 11px; height: 11px; background: #ffc61a; border: 3px solid #fff; border-radius: 100px; content: ""; margin-top: -8px; }
+.tp-total-login .login-service-tab ul[role=tablist] { overflow: hidden; border: 3px solid #ff9c00; border-radius: 100px; background: #fff; }
+.tp-total-login .login-service-tab ul[role=tablist]:after { display: block; clear: both; content: ""; }
+.tp-total-login .login-service-tab ul[role=tablist] li { float: left; width: 33%; border-left: 1px solid #ff9c00; box-sizing: border-box; }
+.tp-total-login .login-service-tab ul[role=tablist] li:nth-child(2) { width: 34%; }
+.tp-total-login .login-service-tab ul[role=tablist] li:first-child { border-left: 0; }
+.tp-total-login .login-service-tab ul[role=tablist] a { display: block; width: 100%; font-size: 30px; color: #1e1e1e; text-align: center; line-height: 84px; background: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.tp-total-login .login-service-tab ul[role=tablist] a[aria-selected="true"] { background: #ff9c00; color: #fff; }
+.tp-total-login #loginTabcontent { width: 1220px; margin: 0 auto; position: relative; }
+.tp-total-login #loginTabcontent .tab-conts { border: 3px solid #d6d5d5; border-radius: 15px; }
+.tp-total-login #loginTabcontent .login-service-zone { padding: 30px; text-align: center; }
+.tp-total-login #loginTabcontent .login-service-zone:before { display: inline-block; width: 200px; height: 200px; background: url("../../static/images/usc/subpage/bg_login_zone.png") no-repeat 50% 50%; content: ""; vertical-align: middle; }
+.tp-total-login #loginTabcontent .login-service-zone .login-form-group { display: inline-block; height: 235px; padding-left: 65px; padding-top: 40px; margin-left: 65px; border-left: 1px solid #d6d5d5; vertical-align: middle; }
+.tp-total-login #loginTabcontent .login-service-zone .login-form-group button { width: 120px; height: 110px; line-height: 110px; background: #00a54f; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 18px; color: #fff; text-align: center; vertical-align: top; }
+.tp-total-login #loginTabcontent .login-service-zone .login-form-group .tit { font-size: 24px; color: #262626; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; margin-bottom: 20px; text-align: left; }
+.tp-total-login #loginTabcontent .login-service-zone .login-form-group .tit em { color: #00a54f; }
+.tp-total-login #loginTabcontent .login-service-zone .login-form-group .form { width: 290px; display: inline-block; vertical-align: top; }
+.tp-total-login #loginTabcontent .login-service-zone .login-form-group .form input { width: 100%; margin-top: 10px; }
+.tp-total-login #loginTabcontent .login-service-zone .login-form-group .form input:first-child { margin-top: 0; }
+.tp-total-login #loginTabcontent .info-zone { line-height: 30px; margin: 54px 0 0; font-size: 18px; color: #303030; text-align: center; }
+.tp-total-login #loginTabcontent .info-zone .txt { position: relative; display: inline-block; padding: 0 0 0 37px; }
+.tp-total-login #loginTabcontent .info-zone .txt:before { position: absolute; left: 0; top: 0; display: block; content: "!"; width: 30px; height: 30px; line-height: 30px; background: #ee3106; border-radius: 100%; font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color: #fff; text-align: center; }
+.tp-total-login #loginTabcontent .info-zone .txt .point { display: block; }
+.tp-total-login #loginTabcontent .info-zone .txt .point em { display: inline-block; padding-left: 20px; background: #fcecbd; text-indent: -20px; }
 
 @-moz-document url-prefix() {}
 @media (max-width: 1024px) { /* LAYOUT */
@@ -1420,7 +1446,12 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .tp-total-login .contents-zone .tit-login-zone h2.tit:before { width: 6rem; height: 3rem; margin: 0 auto 1rem auto; background-size: 100%; }
   .tp-total-login .contents-zone .tit-login-zone .txt { line-height: 1.8rem; margin: 0.5rem 0; font-size: 1.4rem; }
   .tp-total-login .contents-zone .tit-login-zone .tail { font-size: 1.2rem; line-height: 1.6rem; }
-  .tp-total-login .contents-zone .tit-login-zone h3.tit { top: 1.7rem; height: 3rem; line-height: 3rem; font-size: 1.5rem; } }
+  .tp-total-login .contents-zone .tit-login-zone h3.tit { top: 1.7rem; height: 3rem; line-height: 3rem; font-size: 1.5rem; }
+  .tp-total-login #loginTabcontent .info-zone { line-height: 1.6rem; margin-top: 1rem; padding: 0 1rem; font-size: 1.2rem; text-align: left; }
+  .tp-total-login #loginTabcontent .info-zone .txt { padding: 0 0 0 1.8rem; }
+  .tp-total-login #loginTabcontent .info-zone .txt:before { width: 1.5rem; height: 1.5rem; line-height: 1.5rem; }
+  .tp-total-login #loginTabcontent .info-zone .txt .point { margin-top: 0.2rem; }
+  .tp-total-login #loginTabcontent .info-zone .txt .point em { padding-left: 1.3rem; text-indent: -1.3rem; } }
 @media (max-width: 360px) { #gnb .gnb h3 a { font-size: 1.2rem; } }
 @media (max-width: 321px) { #gnb .gnb h3 a { font-size: 1.1rem; }
   #container .breadcrumb-zone .breadcrumb > li > a { padding-right: 1.5rem; }

@@ -1462,14 +1462,14 @@ div[class^=comp-public-area] {
 		.tit-login-zone {
 			position:relative; height:398px; background:url(../../static/images/usc/subpage/bg_tit_login_zone.png); border-bottom:4px solid #ff9c00; text-align:center;
 			.inner {width:1220px; margin:0 auto; padding:45px 0 0;}
-			h2.tit {
+			.title {
 				font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:36px; color:#000;
 				&:before {display:block; content:""; width:192px; height:89px; margin:0 auto 20px auto; background:url(../images/usc/subpage/img_usclogo.png) no-repeat;}
 				.point {color:#f27405;}
 			}
 			.txt {margin:28px 0 22px; line-height:30px; font-size:24px; color:#303030;}
 			.tail {line-height:28px; font-size:18px; color:#303030;}
-			h3.tit {
+			.subtit {
 				position:relative; bottom:-21px; height:90px; line-height:90px; background:#ff9c00; border-radius:40px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:30px; color:#fff;
 				&:before,
 				& span:before {position:absolute; top:50%; display:block; content:""; width:20px; height:20px; margin-top:-10px; background:#fff; border-radius:100%;}
@@ -1525,10 +1525,10 @@ div[class^=comp-public-area] {
 
 	// 하단 텍스트
 	.info-zone {
-		line-height:30px; margin:54px 0 0; font-size:18px; color:#303030; text-align:center;
+		line-height:30px; margin:50px 0 0; font-size:18px; color:#303030; text-align:center;
 		.txt {
 			position:relative; display:inline-block; padding:0 0 0 37px;
-			&:before {position:absolute; left:0; top:0; display:block; content:"!"; width:30px; height:30px; line-height:30px; background:#ee3106; border-radius:100%; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#fff; text-align:center;}
+			&:before {position:absolute; left:0; top:0; display:block; content:"!"; width:30px; height:30px; line-height:30px; background:#ee3106; border-radius:100%; font-family:$font2; color:#fff; text-align:center;}
 			.point {
 				display:block;
 				em {display:inline-block; padding-left:20px; background:#fcecbd; text-indent:-20px;}

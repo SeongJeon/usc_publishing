@@ -865,6 +865,24 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-bd-detail table[class^=comp-tbl] .file *[class*=comm-btn] { margin-left: 5px; }
 
 /* 공통페이지 */
+.tp-total-login { padding: 0 !important; }
+.tp-total-login:before { display: none !important; }
+.tp-total-login .contents-zone { padding-top: 0; padding-bottom: 70px; }
+.tp-total-login .contents-zone .tit-login-zone { position: relative; height: 398px; background: url(../../static/images/usc/subpage/bg_tit_login_zone.png); border-bottom: 4px solid #ff9c00; text-align: center; }
+.tp-total-login .contents-zone .tit-login-zone .inner { width: 1220px; margin: 0 auto; padding: 45px 0 0; }
+.tp-total-login .contents-zone .tit-login-zone h2.tit { font-family: 'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 36px; color: #000; }
+.tp-total-login .contents-zone .tit-login-zone h2.tit:before { display: block; content: ""; width: 192px; height: 89px; margin: 0 auto 20px auto; background: url(../images/usc/subpage/img_usclogo.png) no-repeat; }
+.tp-total-login .contents-zone .tit-login-zone h2.tit .point { color: #f27405; }
+.tp-total-login .contents-zone .tit-login-zone .txt { margin: 28px 0 22px; line-height: 30px; font-size: 24px; color: #303030; }
+.tp-total-login .contents-zone .tit-login-zone .tail { line-height: 28px; font-size: 18px; color: #303030; }
+.tp-total-login .contents-zone .tit-login-zone h3.tit { position: relative; bottom: -21px; height: 90px; line-height: 90px; background: #ff9c00; border-radius: 40px; font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 30px; color: #fff; }
+.tp-total-login .contents-zone .tit-login-zone h3.tit:before, .tp-total-login .contents-zone .tit-login-zone h3.tit span:before { position: absolute; top: 50%; display: block; content: ""; width: 20px; height: 20px; margin-top: -10px; background: #fff; border-radius: 100%; }
+.tp-total-login .contents-zone .tit-login-zone h3.tit:after, .tp-total-login .contents-zone .tit-login-zone h3.tit span:after { position: absolute; top: 50%; display: block; content: ""; width: 12px; height: 12px; margin-top: -6px; background: #ffc61a; border-radius: 100%; }
+.tp-total-login .contents-zone .tit-login-zone h3.tit:before { left: -10px; }
+.tp-total-login .contents-zone .tit-login-zone h3.tit:after { left: -6px; }
+.tp-total-login .contents-zone .tit-login-zone h3.tit span:before { right: -10px; }
+.tp-total-login .contents-zone .tit-login-zone h3.tit span:after { right: -6px; }
+
 @-moz-document url-prefix() {}
 @media (max-width: 1024px) { /* LAYOUT */
   #header, #footer, #container { min-width: inherit; }
@@ -1393,7 +1411,16 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .tp-bd-detail table[class^=comp-tbl] .file .lst li { float: none; }
   .tp-bd-detail table[class^=comp-tbl] .file .lst li + li:before { display: none; }
   .tp-bd-detail table[class^=comp-tbl] .file *[class*=comm-btn] { margin-left: 5px; padding: 0 0.5rem; }
-  .tp-bd-detail table[class^=comp-tbl] .bd-content { min-height: 20rem; } }
+  .tp-bd-detail table[class^=comp-tbl] .bd-content { min-height: 20rem; }
+  /* 공통페이지 - 로그인 */
+  .tp-total-login .contents-zone { padding: 0 0 5rem !important; }
+  .tp-total-login .contents-zone .tit-login-zone { height: auto; }
+  .tp-total-login .contents-zone .tit-login-zone .inner { width: auto; padding: 1.5rem 1.5rem 0; }
+  .tp-total-login .contents-zone .tit-login-zone h2.tit { font-size: 2rem; }
+  .tp-total-login .contents-zone .tit-login-zone h2.tit:before { width: 6rem; height: 3rem; margin: 0 auto 1rem auto; background-size: 100%; }
+  .tp-total-login .contents-zone .tit-login-zone .txt { line-height: 1.8rem; margin: 0.5rem 0; font-size: 1.4rem; }
+  .tp-total-login .contents-zone .tit-login-zone .tail { font-size: 1.2rem; line-height: 1.6rem; }
+  .tp-total-login .contents-zone .tit-login-zone h3.tit { top: 1.7rem; height: 3rem; line-height: 3rem; font-size: 1.5rem; } }
 @media (max-width: 360px) { #gnb .gnb h3 a { font-size: 1.2rem; } }
 @media (max-width: 321px) { #gnb .gnb h3 a { font-size: 1.1rem; }
   #container .breadcrumb-zone .breadcrumb > li > a { padding-right: 1.5rem; }

@@ -1454,7 +1454,35 @@ div[class^=comp-public-area] {
 }
 /* 공통페이지 */
 .tp-total-login {
+	padding:0 !important;
+	&:before {display:none !important;}
 
+	.contents-zone {
+		padding-top:0; padding-bottom:70px;
+		.tit-login-zone {
+			position:relative; height:398px; background:url(../../static/images/usc/subpage/bg_tit_login_zone.png); border-bottom:4px solid #ff9c00; text-align:center;
+			.inner {width:1220px; margin:0 auto; padding:45px 0 0;}
+			h2.tit {
+				font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:36px; color:#000;
+				&:before {display:block; content:""; width:192px; height:89px; margin:0 auto 20px auto; background:url(../images/usc/subpage/img_usclogo.png) no-repeat;}
+				.point {color:#f27405;}
+			}
+			.txt {margin:28px 0 22px; line-height:30px; font-size:24px; color:#303030;}
+			.tail {line-height:28px; font-size:18px; color:#303030;}
+			h3.tit {
+				position:relative; bottom:-21px; height:90px; line-height:90px; background:#ff9c00; border-radius:40px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:30px; color:#fff;
+				&:before,
+				& span:before {position:absolute; top:50%; display:block; content:""; width:20px; height:20px; margin-top:-10px; background:#fff; border-radius:100%;}
+				&:after,
+				span:after {position:absolute; top:50%; display:block; content:""; width:12px; height:12px; margin-top:-6px; background:#ffc61a; border-radius:100%;}
+				&:before {left:-10px;}
+				&:after {left:-6px;}
+
+				span:before {right:-10px;}
+				span:after {right:-6px;}
+			}
+		}
+	}
 }
 
 
@@ -2697,6 +2725,22 @@ div[class^=comp-public-area] {
 		.bd-content {min-height: 20rem}
 	}
 }
+/* 공통페이지 - 로그인 */
+.tp-total-login {
+	.contents-zone {
+		padding:0 0 5rem !important;
+		.tit-login-zone {
+			height:auto;
+			.inner {width:auto; padding:1.5rem 1.5rem 0;}
+			h2.tit {font-size:2rem;}
+			h2.tit:before {width:6rem; height:3rem; margin:0 auto 1rem auto; background-size:100%;}
+			.txt {line-height:1.8rem; margin:0.5rem 0; font-size:1.4rem; }
+			.tail {font-size:1.2rem; line-height:1.6rem;}
+			h3.tit {top:1.7rem; height:3rem; line-height:3rem; font-size:1.5rem;}
+		}
+	}
+}
+
 
 //-------------------------------------------------------------------------------
 }

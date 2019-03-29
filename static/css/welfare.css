@@ -90,7 +90,9 @@ SUB PAGE
 .tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label:before {margin-right:10px;}
 .tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label .txt {display:inline-block; margin:0;}
 .tp-survey-view .bd-content .view-list .comp-input_wrap,
-.tp-survey-view .bd-content .view-list textarea {margin:25px 0 0 15px;}
+.tp-survey-view .bd-content .view-list .txt-wrap {margin:25px 20px 0 15px;}
+.tp-survey-view .bd-content .view-list .comp-input_wrap input[class^=comp-input] {background:#f4f7f9;}
+.tp-survey-view .bd-content .view-list .txt-wrap textarea {height:129px; background:#f4f7f9;}
 
 
 

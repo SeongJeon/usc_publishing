@@ -278,164 +278,90 @@
 							<div class="contents-zone">
 								<!-- 상단 탭 -->
 								<ul class="comp-tab_row" role="tablist" data-js="false">
-									<li role="presentation"><a href="#tabcontent" role="tab" aria-controls="tabcontent" aria-selected="true"><span>일반검색</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
-									<li role="presentation"><a href="#" role="tab"><span>상세검색</span></a></li>
+									<li role="presentation"><a href="#" role="tab"><span>일반검색</span></a></li>
+									<li role="presentation"><a href="#tabcontent" role="tab" aria-controls="tabcontent" aria-selected="true"><span>상세검색</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
 								</ul>
 								<!--// 상단 탭 -->
-
 					
 								<div id="tabcontent" role="tabpanel">
-									<!-- 상단 검색 -->
-									<div class="top-search-zone bgcolor">
-										<div class="form2" role='search'>
-											<select name="" id="" title="검색항목 선택" class="comp-select_h42">
+									<div class="search-box-detail" role='search'>
+										<!-- 검색 폼 영역 -->
+										<div class="form-base-search">
+											<select name="" title="검색항목 선택" id="" class="comp-select_h42">
 												<option value="">검색항목</option>
 											</select>
-											<input type="text" name="" id="" class="comp-input_h42" title="자료 검색어 입력" placeholder="자료를 검색하세요">
-											<button type="submit" class="comm-btn_type3_deepblue"><span>검색</span></button>
-											<button type="button" class="comm-btn_type3_lightblue"><span>검색 초기화</span></button>
+											<input type="text" title="자료 검색어 입력" placeholder="자료를 검색하세요" class="comp-input_h42">
 										</div>
-									</div>
-									<!--// 상단 검색 -->
-
-									<!-- 검색결과 / 분류 -->
-									<div class="comp-sorting-zone">
-										<p class="txt-result">“<em class="word">마법</em>” / 총 <em class="total">7,482권</em> 이 검색되었습니다.</p>
-										<div class="sorting-zone">
-											<select name="" title="출력건수 선택" id="" class="comp-select_h42">
-												<option value="">출력건수(기본10)</option>
-											</select>											
-											<select name="" title="정렬방식 선택" id="" class="comp-select_h42">
-												<option value="">정렬방식</option>
-											</select>											
-											<ul class="sorting-lst js-sorting" aria-label="검색 목록 보기 타입"><!-- 만들어둔 js 안쓸 경우, js-sorting 빼시면 됩니다. -->
-												<li><button type="button" aria-selected="true" aria-controls="table-type" data-class="tbl-lst_list" class="btn-type_list"><span>목록형</span></button></li>
-												<li><button type="button" aria-controls="table-type" data-class="tbl-lst_gallery" class="btn-type_gallery"><span>갤러리형</span></button></li>
-											</ul>
-										</div>
-									</div>
-									<!-- //검색결과 / 분류 -->
-
-									<!-- 서브 탭 -->
-									<ul class="comp-tab_row_small" role="tablist" data-js="false">
-										<li role="presentation"><a href="#subtabcontent" role="tab" aria-controls="subtabcontent" aria-selected="true"><span>도서자료(269)</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
-										<li role="presentation"><a href="#" role="tab"><span>E-BOOK(2)</span></a></li>
-									</ul>
-									<!--// 서브 탭 -->
-
-									<!-- 서브 탭 컨텐츠 -->
-									<div id="subtabcontent" role="tabpanel">
-										<table id="table-type" class="tbl-lst_list"><!-- 갤러리형 class="tbl-lst_gallery" / 목록형 class="tbl-lst_list" -->
-											<caption>목록 - 도서명, 출판사, 청구기호, 자료실, 발생년도, 자료상태</caption>
-											<colgroup>
-												<col>
-												<col>
-												<col>
-												<col>
-												<col>
-												<col>
-											</colgroup>
-											<thead>
-												<tr>
-													<th scope="col">도서명</th>
-													<th scope="col">출판사</th>
-													<th scope="col">청구기호</th>
-													<th scope="col">자료실</th>
-													<th scope="col">발행년도</th>
-													<th scope="col">자료상태</th>
-												</tr>
-											</thead>
+										<table class="comp-tbl_formtype">
+											<caption>상세검색 - 자료실, 정렬조건, 자료유형, 등록번호, 이용대상구분, 발행처, 발행년도, 저자</caption>
 											<tbody>
 												<tr>
-													<td colspan="6">
-														<div class="tdlayout">
-															<div class="td-thumb"><img src="../../static/images/usclib/temp/@book.png" alt="색이 가득한 주머니 : 디즈니 색의 마법사 메리 블레어 이야기 표지"></div>
-															<div class="td-name">
-																<span class="name">
-																	<em class="flag">역사</em>
-																	색이 가득한 주머니 : 디즈니 색의 마법사 메리 블레어 이야기
-																</span>
-																<span class="writer">저자 : 에이미 굴리엘모, 재클린 투르빌 글 ; 브리짓 배라저 그림 ; 양진희 옮김</span>
-															</div>
-															<div class="td-group">
-																<div class="td-company">
-																	<span class="tit">출판사 : </span><span class="cont">함께자람(교학사)</span>
-																</div>
-																<div class="td-code">
-																	<span class="tit">청구기호 : </span><span class="cont">아동998.6-굴298</span>
-																</div>
-																<div class="td-year">
-																	<span class="tit">발행년 : </span><span class="cont">2018</span>
-																</div>
-																<div class="td-category">
-																	<span class="tit">자료실 : </span><span class="cont">아동열람실</span>
-																</div>
-															</div>
-															<div class="td-btn">
-																<button type="button" class="btn-borrow"><span>대출가능</span></button>
-																<p type="button" class="btn-notbooking"><span>예약불가</span></p>
-																<button type="button" class="btn-put"><span>내서재 담기</span></button>
-															</div>
-														</div>
+													<th scope="row">자료실</th>
+													<td>
+														<select name="" title="자료실 선택" id="" class="comp-select_h42">
+															<option value="">적용안함</option>
+														</select>
+													</td>
+													<th scope="row">정렬조건</th>
+													<td>
+														<select name="" title="정렬조건 선택" id="" class="comp-select_h42">
+															<option value="">등록일 내림차순</option>
+														</select>
 													</td>
 												</tr>
+												
 												<tr>
-													<td colspan="6">
-														<div class="tdlayout">
-															<div class="td-thumb"><img src="../../static/images/usclib/temp/@book.png" alt="색이 가득한 주머니 : 디즈니 색의 마법사 메리 블레어 이야기 표지"></div>
-															<div class="td-name">
-																<span class="name">
-																	<em class="flag">역사</em>
-																	색이 가득한 주머니 : 디즈니 색의 마법사 메리 블레어 이야기
-																</span>
-																<span class="writer">저자 : 에이미 굴리엘모, 재클린 투르빌 글 ; 브리짓 배라저 그림 ; 양진희 옮김</span>
-															</div>
-															<div class="td-group">
-																<div class="td-company">
-																	<span class="tit">출판사 : </span><span class="cont">함께자람(교학사)</span>
-																</div>
-																<div class="td-code">
-																	<span class="tit">청구기호 : </span><span class="cont">아동998.6-굴298</span>
-																</div>
-																<div class="td-year">
-																	<span class="tit">발행년 : </span><span class="cont">2018</span>
-																</div>
-																<div class="td-category">
-																	<span class="tit">자료실 : </span><span class="cont">아동열람실</span>
-																</div>
-															</div>
-															<div class="td-btn">
-																<button type="button" class="btn-borrow"><span>대출가능</span></button>
-																<button type="button" class="btn-booking"><span>예약가능</span></button>
-																<button type="button" class="btn-put"><span>내서재 담기</span></button>
-															</div>
+													<th scope="row">자료유형</th>
+													<td>
+														<select name="" title="자료유형 선택" id="" class="comp-select_h42">
+															<option value="">전 체</option>
+														</select>
+													</td>
+													<th scope="row">등록번호</th>
+													<td>
+														<input type="text" title="등록번호 입력" class="comp-input_h42">
+													</td>
+												</tr>
+
+												<tr>
+													<th scope="row">이용대상구분</th>
+													<td>
+														<select name="" title="이용대상구분 선택" id="" class="comp-select_h42">
+															<option value="">전 체</option>
+														</select>
+													</td>
+													<th scope="row">발행처</th>
+													<td>
+														<input type="text" title="발행처 입력" class="comp-input_h42">
+													</td>
+												</tr>
+
+												<tr>
+													<th scope="row">발행년도</th>
+													<td>
+														<div class="w_year">
+															<input type="text" title="발행년도 시작년도 입력" class="comp-input_h42">
+															<span class="txt">부터</span>
+															<input type="text" title="발행년도 마지막년도 입력" class="comp-input_h42">
+															<span class="txt">까지</span>
 														</div>
+													</td>
+													<th scope="row">저자</th>
+													<td>
+														<input type="text" title="저자 입력" class="comp-input_h42">
 													</td>
 												</tr>
 											</tbody>
 										</table>
-
-										<!-- 페이징 -->
-										<div class="comp-paging" aria-label="페이지 선택" role="navigation">
-											<div>
-												<p class="allprev"><a href="#"><span>처음으로 이동</span></a></p>
-												<p class="prev"><a href="#"><span>이전으로 이동</span></a></p>
-												<ol class="number">
-													<li><a href="#" aria-live="assertive" aria-current="page"><span>1</span></a></li><!-- 개발시 현재페이지 숫자에 aria-current='page' 속성 추가 -->
-													<li><a href="#" aria-live="assertive"><span>2</span></a></li>
-													<li><a href="#" aria-live="assertive"><span>3</span></a></li>
-													<li><a href="#" aria-live="assertive"><span>4</span></a></li>
-													<li><a href="#" aria-live="assertive"><span>5</span></a></li>
-												</ol>
-												<p class="next"><a href="#"><span>다음으로 이동</span></a></p>
-												<p class="allnext"><a href="#"><span>마지막으로 이동</span></a></p>
-											</div>
+										<!-- // 검색 폼 영역 -->
+										<!-- 하단 버튼 영역 -->
+										<div class="comp-btn-zone mt25">
+											<button type="submit" class="comm-btn_type3_deepblue"><span>검색</span></button>
+											<button type="button" class="comm-btn_type3_lightblue"><span>검색 초기화</span></button>
 										</div>
-										<!--// 페이징 -->
+										<!--// 하단 버튼 영역 -->
 									</div>
-									<!-- 서브 탭 컨텐츠 -->
 								</div>
-
 							</div>
 							<!--// 개별 컨텐츠 영역 -->
 

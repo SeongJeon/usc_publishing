@@ -248,6 +248,7 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+/* 자료검색  */
 .usclib table[class^=tbl-lst] .flag { display: block; position: absolute; left: 0; top: 0; color: #fff; text-align: center; background: #588681; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; border-radius: 4px; }
 .usclib table[class^=tbl-lst] .td-btn *[class^=btn-] { display: inline-block; text-align: center; border-radius: 3px; border-width: 1px; border-style: solid; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #333; vertical-align: top; box-sizing: border-box; }
 .usclib table[class^=tbl-lst] .td-btn .btn-booking, .usclib table[class^=tbl-lst] .td-btn .btn-borrow { border-color: #a2b9e0; background: #d4e7f7; }
@@ -305,6 +306,17 @@ SUB PAGE
 .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-booking, .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-notbooking, .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-borrow { width: 120px; margin-right: 4px; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-put { width: 145px; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-put:before { width: 21px; height: 17px; margin-right: 8px; }
+
+.usclib .search-box-detail { padding: 29px 25px 25px; background: #eff9fe; border: 1px solid #d1d1d1; }
+.usclib .search-box-detail .form-base-search { overflow: hidden; }
+.usclib .search-box-detail .form-base-search select { width: 160px; }
+.usclib .search-box-detail .form-base-search input { width: 775px; margin-left: 15px; }
+.usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] { margin-top: 15px; }
+.usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] tr > * { height: 55px; }
+.usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] th { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 17px; width: 130px; line-height: 42px; color: #333; background: #d8e9f2; }
+.usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] td { padding: 5px 10px; }
+.usclib .search-box-detail .w_year input { width: 115px; }
+.usclib .search-box-detail .w_year .txt { font-size: 17px; color: #333; margin: 0 5px; }
 
 /* ------------------------------------------------------
 BROWSER HACK
@@ -455,6 +467,7 @@ MEDIA QUERY
   #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl a { width: 1.6rem; height: 1.6rem; line-height: 1.6rem; }
   #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl .today { width: 1.6rem; height: 1.6rem; line-height: 1.6rem; }
   /* ------------------------------------------------------ SUB PAGE ------------------------------------------------------ */
+  /* 자료검색 */
   .usclib table[class^=tbl-lst] .td-btn .btn-put:before { display: inline-block; vertical-align: middle; content: ""; background: url("../../static/images/usclib/subpage/btn_list.png") no-repeat 50% 50%; background-size: 100% 100%; }
   .usclib table[class^=tbl-lst][class*=_list] { margin-top: -1rem; }
   .usclib table[class^=tbl-lst][class*=_list] thead th { display: none; }
@@ -494,4 +507,16 @@ MEDIA QUERY
   .usclib table[class^=tbl-lst][class*=_gallery] .td-btn *[class^=btn-] { font-size: 1.4rem; height: 3.5rem; line-height: 3.3rem; }
   .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-booking, .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-notbooking, .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-borrow { width: 100%; margin-right: 0.5rem; -webkit-flex: 1; flex: 1; }
   .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-put { width: 45%; }
-  .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-put:before { width: 2rem; height: 1.5rem; background-size: 100% auto; } }
+  .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-put:before { width: 2rem; height: 1.5rem; background-size: 100% auto; }
+  .usclib .search-box-detail { padding: 2rem 1rem; }
+  .usclib .search-box-detail .form-base-search { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .usclib .search-box-detail .form-base-search select { width: 12rem; }
+  .usclib .search-box-detail .form-base-search input { width: 100%; margin-left: 0.5rem; -webkit-flex: 1; flex: 1; }
+  .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] { display: block; margin-top: 2rem; }
+  .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] tbody, .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] tr { display: block; overflow: hidden; }
+  .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] tr > * { display: block; float: left; }
+  .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] th { font-size: 1.2rem; height: 4.3rem; width: 30%; padding: 0 1rem; line-height: 4.3rem; }
+  .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] td { width: 70%; height: 4.3rem; padding: 0.5rem 1rem; }
+  .usclib .search-box-detail .w_year { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .usclib .search-box-detail .w_year input { width: 100%; -webkit-flex: 1; flex: 1; }
+  .usclib .search-box-detail .w_year .txt { display: inline-block; font-size: 1.2rem; margin: 0 0.3rem; } }

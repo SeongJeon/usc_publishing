@@ -505,7 +505,8 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-// 자료검색
+/* 자료검색  */
+// 일반검색
 .usclib table[class^=tbl-lst] {
 	.flag {display: block; position: absolute; left:0; top:0; color:#fff; text-align: center; background:#588681; font-family: $font1; border-radius: 4px}
 	.td-btn {
@@ -609,6 +610,25 @@ SUB PAGE
 				&:before {width: 21px; height: 17px; margin-right: 8px;}
 			}
 		}
+	}
+}
+// 상세검색
+.usclib .search-box-detail {
+	padding:29px 25px 25px; background: #eff9fe; border:1px solid #d1d1d1;
+	.form-base-search {
+		overflow: hidden;
+		select {width: 160px;}
+		input {width:775px; margin-left: 15px;}
+	}
+	table[class^=comp-tbl][class*=_formtype] {
+		margin-top: 15px;
+		tr > * {height: 55px}
+		th {font-family: $font2; font-size: 17px; width:130px; line-height: 42px; color:#333; background:#d8e9f2; }
+		td {padding:5px 10px;}
+	}
+	.w_year {
+		input {width:115px;}
+		.txt {font-size: 17px; color:#333; margin:0 5px;}
 	}
 }
 
@@ -1050,7 +1070,8 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-// 자료검색
+/* 자료검색 */
+// 일반검색
 .usclib table[class^=tbl-lst] {
 	.td-btn {
 		.btn-put {
@@ -1133,6 +1154,29 @@ SUB PAGE
 		}
 	}
 }
+// 상세검색
+.usclib .search-box-detail {
+	padding:2rem 1rem; 
+	.form-base-search {
+		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+		select {width: 12rem;}
+		input {width:100%; margin-left:0.5rem; -webkit-flex:1; flex:1;}
+	}
+	table[class^=comp-tbl][class*=_formtype] {
+		display: block; margin-top: 2rem;
+		tbody, tr {display: block; overflow:hidden;}
+		tr > * {display:block; float: left;}
+		th {font-size:1.2rem; height:4.3rem; width:30%; padding:0 1rem; line-height:4.3rem;}
+		td {width:70%; height:4.3rem; padding:0.5rem 1rem;}
+	}
+	.w_year {
+		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+		input {width:100%; -webkit-flex:1; flex:1;}
+		.txt {display:inline-block;font-size:1.2rem; margin:0 0.3rem;}
+	}
+}
+
+
 //-------------------------------------------------------------------------------
 }
 @media (max-width:768px){}

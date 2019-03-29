@@ -306,6 +306,9 @@ SUB PAGE
 
 .ebooksys .books-detail-contents { display: none; padding: 0 20px; }
 
+/* 도서 목록 */
+.ebooksys .books-category-tab .number { display: block; font-size: 15px; }
+
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
@@ -428,7 +431,9 @@ MEDIA QUERY
   .ebooksys .books-button-zone *[class^=comm-btn_type4] + * { margin-left: 0; }
   .ebooksys .books-button-zone *[class^=comm-btn_type4]:nth-of-type(even) { margin-left: 2%; }
   .ebooksys .books-button-zone *[class^=comm-btn_type4]:nth-of-type(2) ~ * { margin-top: 0.5rem; }
-  .ebooksys .books-detail-contents { padding: 0 0.5rem; } }
+  .ebooksys .books-detail-contents { padding: 0 0.5rem; }
+  /* 도서 목록 */
+  .ebooksys .books-category-tab .number { font-size: 1rem; } }
 @media (max-width: 800px) { .ebooksys .main .main-slide .list { padding: 0 9rem; }
   .ebooksys .main .main-search-zone .popularity .list .slick-list { width: 30rem; } }
 @media (max-width: 670px) { .ebooksys .main .main-slide .list { padding: 0 8rem; } }

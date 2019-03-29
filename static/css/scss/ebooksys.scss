@@ -494,7 +494,13 @@ SUB PAGE
 	*[class^=comm-btn_type4] + * {margin-left: 3px;}
 }
 .ebooksys .books-detail-contents {display: none; padding:0 20px; }
+/* 도서 목록 */
+.ebooksys {
+	.books-category-tab {
+		.number {display: block; font-size: 15px;}  
+	}
 
+}
 
 
 
@@ -826,7 +832,13 @@ SUBPATE
 	*[class^=comm-btn_type4]:nth-of-type(2) ~ * {margin-top: 0.5rem;}
 }
 .ebooksys .books-detail-contents {padding:0 0.5rem }
+/* 도서 목록 */
+.ebooksys {
+	.books-category-tab {
+		.number {font-size:1rem;} 
+	}
 
+}
  
 
 

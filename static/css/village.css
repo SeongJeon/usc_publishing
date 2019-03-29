@@ -279,12 +279,33 @@ SUB PAGE
 .emblem .brand-wrap {position:relative;height:320px;}
 .emblem .brand-wrap .img-area {background:url(../images/usc/subpage/bg_emblem_brand.gif) no-repeat left top;}
 
-.history .tp-history-tit {width:100%;height:437px;padding:62px 120px 70px;background:url(../images/usc/subpage/bg_history.png) no-repeat left top;text-align:center;box-sizing:border-box;}
+.history .tp-history-tit {position:relative;width:100%;height:437px;margin-bottom:32px;padding:62px 120px 70px;background:url(../images/usc/subpage/bg_history.png) no-repeat left top;border:2px solid #ba5534;text-align:center;box-sizing:border-box;}
+.history .tp-history-tit:before {position:absolute;right:-1px;top:-1px;display:inline-block;width:40px;height:40px;background:url(../images/usc/subpage/bg_history_corner.png) no-repeat left top;content:'';}
+.history .tp-history-tit:after {position:absolute;left:-1px;top:-1px;display:inline-block;width:40px;height:40px;background:url(../images/usc/subpage/bg_history_corner.png) no-repeat left top;-webkit-transform:rotateY(-180deg);-moz-transform:rotateY(-180deg);-o-transform:rotateY(-180deg);transform:rotateY(-180deg);content:'';}
+.history .tp-history-tit .visual:before {position:absolute;right:-1px;bottom:-1px;display:inline-block;width:40px;height:40px;background:url(../images/usc/subpage/bg_history_corner.png) no-repeat left top;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg);content:'';}
+.history .tp-history-tit .visual:after {position:absolute;left:-1px;bottom:-1px;display:inline-block;width:40px;height:40px;background:url(../images/usc/subpage/bg_history_corner.png) no-repeat left top;-webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg);content:'';}
 .history .tp-history-tit .tit-top {margin-bottom:50px;}
 .history .tp-history-tit .tit {margin-bottom:30px;font-size:18px;color:#b64926;letter-spacing:2px;}
-.history .tp-history-tit .txt {background:url(../images/usc/subpage/txt_hitory.png) no-repeat center top;}
-
-
+.history .tp-history-tit .txt {height:75px;background:url(../images/usc/subpage/txt_history.png) no-repeat center top;text-indent:-999em;}
+.history .tp-history-tit .history-list {display:table;text-align:center;}
+.history .tp-history-tit .history-list li {display:table-cell;width:16%;height:123px;padding:5px;vertical-align:middle;font-size:17px;color:#000;box-sizing:border-box;}
+.history .tp-history-tit .history-list li:nth-child(odd) {position:relative;border:1px solid #b64926;}
+.history .tp-history-tit .history-list li:nth-child(odd):after {position:absolute;right:-18px;top:33px;width:27px;height:1px;background:#b64926;z-index:100;content:'';}
+.history .tp-history-tit .history-list li:nth-child(odd):before {position:absolute;right:-18px;top:92px;width:27px;height:1px;background:#b64926;z-index:100;content:'';}
+.history .tp-history-tit .history-list li:nth-child(even) {width:105px;height:105px;border:10px solid #fff;}
+.history .tp-history-con {position:relative;display:table;width:100%;padding:26px 0 0 10px;border-top:2px solid #e7ebee;box-sizing:border-box;}
+.history .tp-history-con .tit {display:table-cell;width:254px;font-size:28px;color:#2b2b2b;font-family:'NanumSquareEB';vertical-align:top;}
+.history .tp-history-con .tit:after {position:absolute;top:-2px;left:0;width:254px;height:2px;background:#f27405;content:'';}
+.history .tp-history-con .tit span {display:block;margin-bottom:10px;font-size:14px;color:#8c8c8c;font-family:'NanumSquareR';}
+.history .tp-history-con .con {display:table-cell;font-family:'NanumSquareB';color:#8c8c8c;line-height:26px;}
+.history .tp-history-con .con .txt + .txt,
+.history .tp-history-con .con .txt + .img {margin-top:30px;}
+.history .tp-history-con .date-list {margin-bottom:25px;}
+.history .tp-history-con .date-list li {overflow:hidden;}
+.history .tp-history-con .date-list li + li {margin-top:15px;}
+.history .tp-history-con .date-list li > * {float:left;}
+.history .tp-history-con .date-list li .date {position:relative;margin-right:20px;padding-right:25px;font-size:16px;font-family:'NanumSquareEB';color:#b64926}
+.history .tp-history-con .date-list li .date:before {position:absolute;top:0;right:0;display:inline-block;content:'/';}
 
 
 
@@ -536,8 +557,34 @@ MEDIA QUERY
 .emblem .brand-wrap .img-area {background-size:15.5rem 15rem;}
 
 
+.history .tp-history-tit {height:auto;margin-bottom:1.6rem;padding:3rem 1.5rem;background-size:cover;}
+.history .tp-history-tit:before,
+.history .tp-history-tit:after,
+.history .tp-history-tit .visual:before,
+.history .tp-history-tit .visual:after {width:2rem;height:2rem;background-size:100%;}
+.history .tp-history-tit .tit-top {margin-bottom:2.5rem;}
+.history .tp-history-tit .tit {margin-bottom:1.5rem;font-size:1.5rem;}
+.history .tp-history-tit .txt {height:4rem;background-size:100%;}
+.history .tp-history-tit .history-list {display:block;}
+.history .tp-history-tit .history-list li {position:relative;display:block;width:100% !important;height:7rem;font-size:1.3rem;}
+.history .tp-history-tit .history-list li:nth-child(odd):after,
+.history .tp-history-tit .history-list li:nth-child(odd):before {display:none;}
+.history .tp-history-tit .history-list li:nth-child(even) {height:9rem;}
+.history .tp-history-tit .history-list li p {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
+.history .tp-history-con {display:block;padding:1.3rem 0 0 0;}
+.history .tp-history-con .tit {display:block;width:100%;font-size:2rem;margin-bottom:1rem;}
+.history .tp-history-con .tit:after {width:13rem;}
+.history .tp-history-con .tit span {margin-bottom:.5rem;font-size:1.2rem;}
+.history .tp-history-con .con {display:block;line-height:1.5rem;font-size:1.2rem;}
+.history .tp-history-con .con > .txt + .txt,
+.history .tp-history-con .con > .txt + .img {margin-top:1.5rem;}
+.history .tp-history-con .date-list {margin-bottom:1.7rem;}
+.history .tp-history-con .date-list .txt {width:69%;}
+.history .tp-history-con .date-list li + li {margin-top:.7rem;}
+.history .tp-history-con .date-list li .date {margin-right:1rem;padding-right:1.5rem;font-size:1.2rem;}
 
-
+/*
+*/
 
 
 

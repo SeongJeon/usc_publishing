@@ -83,13 +83,13 @@ SUB PAGE
 .tp-survey-view .bd-content .view-list .transverse:before {position:absolute; left:0; top:8px; display:block; content:""; width:100%; height:5px; background:#f3dd66; border-radius:2px;}
 .tp-survey-view .bd-content .view-list .transverse *[class^=comp-radio][class*=_big] {float:left; width:170px;}
 .tp-survey-view .bd-content .view-list .transverse *[class^=comp-radio][class*=_big] {position:relative; text-align:center; z-index:10;}
-.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] input {position:absolute; left:-9999em;}
+ .tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] input {position:absolute; left:-9999em;} 
 /* .tp-survey-view .bd-content .view-list .transverse *[class^=comp-radio][class*=_big] label:before {display:block; margin:0 auto 10px auto;} */ 
 .tp-survey-view .bd-content .view-list .vertical {margin-top:15px;}
 .tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] {display:block; margin-top:6px;}
 .tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big]:first-child {margin-top:0;}
 .tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label {position:relative; display:block; padding-left:32px;}
-.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label:before {position:absolute; left:0; top:0;}
+.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label:before {position:absolute; left:0; top:2px;}
 .tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label .txt {display:inline-block; margin:0;}
 .tp-survey-view .bd-content .view-list .comp-input_wrap,
 .tp-survey-view .bd-content .view-list .txt-wrap {margin:25px 20px 0 15px;}
@@ -145,6 +145,21 @@ MEDIA QUERY
 	
 	/* 설문조사 상세 */
 	.tp-survey-view .board-title {line-height:2.2rem; padding:1rem 1rem; font-size:1.5rem;}
+	.tp-survey-view .bd-content {padding:.8rem 0;}
+	.tp-survey-view .bd-content .view-list {padding:2rem 0;}
+	.tp-survey-view .bd-content .view-list .tit {padding-left:3rem;font-size:1.5rem;}
+	.tp-survey-view .bd-content .view-list .tit .num {top:-5px;width:2.5rem;height:2.5rem; line-height:2.5rem;font-size:1.5rem;}
+	.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label:before {width:1.8rem; height:1.8rem;}
+	.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label .txt {margin-top:.5rem;font-size:1.5rem;}
+	.tp-survey-view .bd-content .view-list .transverse {margin-top:.8rem;}
+	.tp-survey-view .bd-content .view-list .vertical {margin-top:2rem;}
+	.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big]{margin-top:1rem;}
+	.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label:before {top:0;}
+	.tp-survey-view .bd-content .view-list .comp-input_wrap,
+	.tp-survey-view .bd-content .view-list .txt-wrap {margin:1.8rem 0 0 0;}
+	.tp-survey-view .bd-content .view-list .txt-wrap textarea {height:7rem;}
+	.tp-survey-view .bd-content .view-list .comp-input_wrap {padding-left:9rem;}
+	.tp-survey-view .comp-input_wrap .txt {font-size:1.4rem;}
 
 }
 @media (max-width:768px){

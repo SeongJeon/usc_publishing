@@ -133,6 +133,16 @@ COMMON
 	.top-search-zone {
 		&.bgcolor {background:#eff9fe; }
 	}
+	.sorting-lst {
+		button[class^=btn-type_] { 
+			&[aria-selected=true] {
+				border:1px solid #336ac0;
+				&[class*=_list] {background-color:#336ac0}
+				&[class*=_gallery] {background-color:#336ac0}
+			}
+		}
+	}
+
 }
 /* ------------------------------------------------------
 MAIN

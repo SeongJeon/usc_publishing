@@ -182,30 +182,33 @@
 										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>고 전<em class="number">(233종)</em></span></a></li>
 										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>시<em class="number">(106종)</em></span></a></li>
 										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>이론과 평론<em class="number">(31종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>문학 전체<em class="number">(1,562종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>한국소설<em class="number">(521종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>외국소설<em class="number">(671종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>고 전<em class="number">(233종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>시<em class="number">(106종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>이론과 평론<em class="number">(31종)</em></span></a></li>
 									</ul>
-									
 									<!--// 서브 탭 -->
 
 									<!-- 검색 -->
 									<div class="top-search-zone bgcolor">
 										<p class="total-length">전체게시물 <em class="bold point1">22</em>건 / <span class="totalpage">1</span>page</p>
-										<div class="form" role="search">
-											<select name="" id="" title="목록 분류 선택" class="comp-select_h42">
-												<option value="">제목</option>
-											</select>
-											<input type="text" name="" id="" class="comp-input_h42" title="검색어 입력">
-											<button type="submit" class="comm-btn_type3_green"><span>검색</span></button>
+										<div class="form3">
+											<ul class="radio-lst">
+												<li><span class="comp-radio"><input type="radio" name="show" id="show1" checked="checked"><label for="show1">모두보기</label></span></li>
+												<li><span class="comp-radio"><input type="radio" name="show" id="show2"><label for="show2">대출가능한 전자책만 보기</label></span></li>
+											</ul>
+											<div class="group">
+												<select name="" id="" title="도서 목록 분류 선택" class="comp-select_h42">
+													<option value="">신착순</option>
+												</select>
+												<ul class="sorting-lst js-sorting" aria-label="검색 목록 보기 타입"><!-- 만들어둔 js 안쓸 경우, js-sorting 빼시면 됩니다. -->
+													<li><button type="button" aria-selected="true" aria-controls="table-type" data-class="tbl-lst_list" class="btn-type_list"><span>목록형</span></button></li>
+													<li><button type="button" aria-controls="table-type" data-class="tbl-lst_gallery" class="btn-type_gallery"><span>갤러리형</span></button></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 									<!--// 검색 -->
 
 									<!-- 목록 -->
+									<ul id="table-type" class="tbl-lst_list"><!-- 갤러리형 class="tbl-lst_gallery" / 목록형 class="tbl-lst_list" -->
+									</ul>
 									<!-- //목록 -->
 									
 									<!-- 페이징 -->

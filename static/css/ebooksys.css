@@ -147,6 +147,7 @@ COMMON
 
 .ebooksys *[class^=comp-tab][class*=_row] a[aria-selected=true] span { color: #ff6600; }
 .ebooksys *[class^=comp-paging] .number a[aria-current=page] { background: #cc9966; }
+.ebooksys h4[class^=comp-lst][class*=_round]:before, .ebooksys h5[class^=comp-lst][class*=_round]:before, .ebooksys p[class^=comp-lst][class*=_round]:before, .ebooksys *[class^=comp-lst][class*=_round] dt:before, .ebooksys *[class^=comp-lst][class*=_round] li:before { background: url("../../static/images/ebooksys/bul_round.png") no-repeat 50% 50%; background-size: 100% 100%; }
 
 /* ------------------------------------------------------
 MAIN
@@ -279,6 +280,32 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+/* 도서 상세보기 */
+.ebooksys .books-infor-zone { position: relative; }
+.ebooksys .books-infor-zone .thumb { position: absolute; left: 0; top: 0; width: 241px; height: 335px; background: url("../../static/images/usclib/subpage/img_book2.png") no-repeat 0 0; }
+.ebooksys .books-infor-zone .thumb img { width: 225px; height: 315px; }
+.ebooksys .books-infor-zone .infor { position: relative; padding: 20px 0 0 265px; }
+.ebooksys .books-infor-zone .infor .book-name { margin-bottom: 15px; font-size: 20px; color: #333; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 27px; }
+.ebooksys .books-infor-zone .infor .book-name .flag { display: inline-block; min-width: 75px; padding: 0 20px; margin-right: 4px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; box-sizing: border-box; line-height: 27px; border-radius: 100px; background: #cc9966; font-size: 16px; }
+.ebooksys .books-infor-zone .infor .lst li { padding: 10px 5px; border-bottom: 1px solid #d6d5d5; color: #333; font-size: 16px; line-height: 25px; }
+.ebooksys .books-infor-zone .infor .lst .tit { display: inline-block; width: 80px; box-sizing: border-box; line-height: 23px; color: #f27405; font-size: 15px; border: 1px solid #fe970e; border-radius: 3px; text-align: center; margin-right: 10px; }
+.ebooksys .books-infor-zone .infor .lst .cont.tts:before { display: inline-block; content: ""; vertical-align: middle; width: 22px; height: 22px; background: url("../../static/images/ebooksys/bul_tts.png") no-repeat 50% 50%; margin-right: 5px; }
+.ebooksys .books-infor-zone .infor .qrcode { position: absolute; right: 20px; top: 100px; height: 166px; width: 166px; border: 3px solid #dddbdb; border-radius: 10px; padding: 15px; box-sizing: border-box; }
+.ebooksys .books-infor-zone .infor .qrcode img { width: 100%; }
+.ebooksys .books-infor-zone .infor .qrcode + .lst { width: 530px; }
+
+.ebooksys .books-count-zone { overflow: hidden; border: 1px solid #c7c1bf; margin-top: 20px; }
+.ebooksys .books-count-zone li { float: left; width: 25%; text-align: center; font-size: 18px; color: #333; box-sizing: border-box; line-height: 58px; }
+.ebooksys .books-count-zone li + li { border-left: 1px solid #c7c1bf; }
+.ebooksys .books-count-zone li:first-child .num { margin-left: 15px; }
+.ebooksys .books-count-zone .num { margin-left: 30px; }
+
+.ebooksys .books-button-zone { text-align: center; margin-top: 35px; }
+.ebooksys .books-button-zone *[class^=comm-btn_type4] { width: 120px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.ebooksys .books-button-zone *[class^=comm-btn_type4] + * { margin-left: 3px; }
+
+.ebooksys .books-detail-contents { display: none; padding: 0 20px; }
+
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
@@ -382,7 +409,26 @@ MEDIA QUERY
   .ebooksys #pop_detailsearch .close { right: 0.5rem; top: 1.5rem; background-size: 1.5rem; }
   .pc .ebooksys .main .main-tab .tab-contents .book-list { max-width: 650px; }
   .pc .ebooksys .main .main-tab .tab-contents .book-list { max-width: 75%; }
-  /* ------------------------------------------------------ SUBPATE ------------------------------------------------------ */ }
+  /* ------------------------------------------------------ SUBPATE ------------------------------------------------------ */
+  /* 도서 상세보기 */
+  .ebooksys .books-infor-zone .thumb { position: static; width: 22rem; height: 33rem; margin: 0 auto; background-size: 100% auto; }
+  .ebooksys .books-infor-zone .thumb img { width: 20.5rem; height: auto; }
+  .ebooksys .books-infor-zone .infor { padding-left: 0; padding-top: 0; margin-top: 1rem; }
+  .ebooksys .books-infor-zone .infor .book-name { position: relative; padding-top: 2.5rem; margin-bottom: 1rem; font-size: 1.5rem; line-height: 2rem; }
+  .ebooksys .books-infor-zone .infor .book-name .flag { position: absolute; left: 0; top: 0; min-width: 6rem; padding: 0 1rem; line-height: 2rem; font-size: 1.2rem; }
+  .ebooksys .books-infor-zone .infor .lst li { position: relative; padding: 0.7rem 0.5rem 0.7rem 9rem; font-size: 1.2rem; line-height: 2rem; }
+  .ebooksys .books-infor-zone .infor .lst .tit { position: absolute; left: 0; top: 0.7rem; width: 8rem; line-height: 2rem; font-size: 1rem; margin-right: 0.5rem; }
+  .ebooksys .books-infor-zone .infor .qrcode { display: none; width: 10rem; height: 10rem; padding: 1rem; }
+  .ebooksys .books-count-zone { margin-top: 2rem; }
+  .ebooksys .books-count-zone li { font-size: 1.2rem; line-height: 4rem; }
+  .ebooksys .books-count-zone li:first-child .num { margin-left: 1rem; }
+  .ebooksys .books-count-zone .num { margin-left: 1rem; }
+  .ebooksys .books-button-zone { margin-top: 2rem; overflow: hidden; }
+  .ebooksys .books-button-zone *[class^=comm-btn_type4] { float: left; width: 49%; }
+  .ebooksys .books-button-zone *[class^=comm-btn_type4] + * { margin-left: 0; }
+  .ebooksys .books-button-zone *[class^=comm-btn_type4]:nth-of-type(even) { margin-left: 2%; }
+  .ebooksys .books-button-zone *[class^=comm-btn_type4]:nth-of-type(2) ~ * { margin-top: 0.5rem; }
+  .ebooksys .books-detail-contents { padding: 0 0.5rem; } }
 @media (max-width: 800px) { .ebooksys .main .main-slide .list { padding: 0 9rem; }
   .ebooksys .main .main-search-zone .popularity .list .slick-list { width: 30rem; } }
 @media (max-width: 670px) { .ebooksys .main .main-slide .list { padding: 0 8rem; } }

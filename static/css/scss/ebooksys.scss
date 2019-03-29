@@ -226,7 +226,11 @@ COMMON
 	*[class^=comp-tab][class*=_row] a[aria-selected=true] span {color:#ff6600;}
 	*[class^=comp-paging] .number a[aria-current=page] {background:#cc9966;}
 
-
+	h4[class^=comp-lst][class*=_round]:before, 
+	h5[class^=comp-lst][class*=_round]:before, 
+	p[class^=comp-lst][class*=_round]:before,
+	*[class^=comp-lst][class*=_round] dt:before, 
+	*[class^=comp-lst][class*=_round] li:before {@include background("ebooksys/bul_round.png", no-repeat 50% 50%); background-size: 100% 100%;}
 }
 /* ------------------------------------------------------
 MAIN
@@ -449,8 +453,47 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-
-
+/* 도서 상세보기 */
+.ebooksys .books-infor-zone {
+	position: relative;
+	.thumb {
+		position: absolute; left:0; top:0;
+		width: 241px; height: 335px; @include background("usclib/subpage/img_book2.png",no-repeat 0 0);
+		img {width: 225px; height: 315px;}
+	}	
+	.infor {
+		position: relative; padding: 20px 0 0 265px;
+		.book-name {
+			margin-bottom: 15px; font-size: 20px; color:#333; font-family: $font2; line-height: 27px;
+			.flag {display:inline-block; min-width:75px; padding:0 20px; margin-right: 4px; font-family: $font1; color:#fff; text-align: center; box-sizing: border-box; line-height: 27px; border-radius:100px; background:#cc9966; font-size: 16px;} 
+		}
+		.lst {
+			li {padding:10px 5px; border-bottom: 1px solid #d6d5d5; color:#333; font-size: 16px; line-height: 25px;}
+			.tit {display: inline-block; width:80px; box-sizing: border-box; line-height: 23px; color:#f27405; font-size: 15px; border:1px solid #fe970e; border-radius: 3px; text-align: center; margin-right: 10px;}
+			.cont.tts {
+				&:before {display: inline-block; content: ""; vertical-align: middle; width: 22px; height: 22px; @include background("ebooksys/bul_tts.png",no-repeat 50% 50%); margin-right: 5px;}
+			}
+		}
+		.qrcode {
+			position: absolute; right:20px; top:100px; height: 166px; width: 166px; border:3px solid #dddbdb; border-radius: 10px; padding:15px; box-sizing: border-box;
+			img {width: 100%; }
+			& + .lst {width: 530px}
+		}
+	}
+}
+.ebooksys .books-count-zone {
+	overflow:hidden; border:1px solid #c7c1bf; margin-top: 20px;
+	li {float: left; width: 25%; text-align: center;font-size: 18px; color:#333; box-sizing: border-box; line-height: 58px;}
+	li + li {border-left: 1px solid #c7c1bf;}
+	li:first-child .num {margin-left: 15px;}
+	.num {margin-left: 30px;}
+}
+.ebooksys .books-button-zone {
+	text-align: center; margin-top: 35px;
+	*[class^=comm-btn_type4] {width: 120px; font-family: $font2;}
+	*[class^=comm-btn_type4] + * {margin-left: 3px;}
+}
+.ebooksys .books-detail-contents {display: none; padding:0 20px; }
 
 
 
@@ -749,8 +792,42 @@ MAIN
 /* ------------------------------------------------------
 SUBPATE
 ------------------------------------------------------ */
+/* 도서 상세보기 */
+.ebooksys .books-infor-zone {
+	.thumb {
+		position: static;
+		width:22rem; height:33rem; margin:0 auto; background-size: 100% auto;
+		img {width:20.5rem; height:auto;}
+	}	
+	.infor {
+		padding-left:0; padding-top: 0; margin-top: 1rem;
+		.book-name {
+			position:relative; padding-top: 2.5rem; margin-bottom:1rem; font-size:1.5rem; line-height:2rem ;
+			.flag {position: absolute; left:0; top:0; min-width:6rem; padding:0 1rem; line-height:2rem; font-size:1.2rem;} 
+		}
+		.lst {
+			li {position: relative; padding:0.7rem 0.5rem 0.7rem 9rem; font-size:1.2rem; line-height:2rem;}
+			.tit {position: absolute; left:0; top:0.7rem; width:8rem;line-height:2rem; font-size:1rem; margin-right:0.5rem;}
+		}
+		.qrcode {display:none; width: 10rem; height: 10rem; padding:1rem;}
+	}
+}
+.ebooksys .books-count-zone {
+	margin-top: 2rem;
+	li {font-size:1.2rem; line-height: 4rem}
+	li:first-child .num {margin-left: 1rem;}
+	.num {margin-left: 1rem;}
+}
+.ebooksys .books-button-zone {
+	margin-top: 2rem; overflow:hidden;
+	*[class^=comm-btn_type4] {float: left; width:49%;}
+	*[class^=comm-btn_type4] + * {margin-left:0;}
+	*[class^=comm-btn_type4]:nth-of-type(even) {margin-left: 2%;}
+	*[class^=comm-btn_type4]:nth-of-type(2) ~ * {margin-top: 0.5rem;}
+}
+.ebooksys .books-detail-contents {padding:0 0.5rem }
 
-
+ 
 
 
 

@@ -583,8 +583,27 @@ MEDIA QUERY
 .history .tp-history-con .date-list li + li {margin-top:.7rem;}
 .history .tp-history-con .date-list li .date {margin-right:1rem;padding-right:1.5rem;font-size:1.2rem;}
 
-/*
-*/
+/* 설문조사 상세 */
+.tp-survey-view .bd-content {padding:.8rem 0;}
+.tp-survey-view .bd-content .view-list {padding:1rem 0;}
+.tp-survey-view .bd-content .view-list .tit {padding-left:3rem;font-size:1.5rem;}
+.tp-survey-view .bd-content .view-list .tit .num {top:-5px;width:2.5rem;height:2.5rem; line-height:2.5rem;font-size:1.5rem;}
+.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label:before {width:1.8rem; height:1.8rem;}
+.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label .txt {margin-top:.5rem;font-size:1.5rem;}
+.tp-survey-view .bd-content .view-list .transverse {margin-top:.8rem;}
+.tp-survey-view .bd-content .view-list .vertical {margin-top:1rem;}
+.tp-survey-view .bd-content .view-list .comp-input_wrap,
+.tp-survey-view .bd-content .view-list .txt-wrap {margin:1.8rem 0 0 0;}
+.tp-survey-view .bd-content .view-list .txt-wrap textarea {height:7rem;}
+.tp-survey-view .bd-content .view-list .comp-input_wrap {padding-left:9rem;}
+.tp-survey-view .comp-input_wrap .txt {font-size:1.5rem;}
+
+
+
+
+
+
+
 
 
 

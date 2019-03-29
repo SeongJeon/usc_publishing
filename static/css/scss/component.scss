@@ -643,6 +643,11 @@ br.m {display:none}
 		&:before {display: inline-block; position: absolute; left:0; top:0; content: ""; width: 12px; height: 19px;  @include background("common/bul_h4.png",no-repeat 50% 50%); }
 	}
 
+	&[class*=_tab] {
+		margin-bottom: 30px; font-size: 20px; color:#336ac0; font-family: $font2; text-align:left; line-height: 60px; border-bottom: 1px solid #000;
+		span {display: inline-block; width:240px; margin-bottom: -1px; background:#fff; border:1px solid #000; border-bottom-color: #fff; text-align: center; }
+	}
+
 
 	// 간격
 	& + *[class^=comp-tbl_] {margin-top: 15px;}
@@ -680,6 +685,10 @@ p[class^=comp-lst] {
 		&[class*=_txt] {
 			&:before {content: "-"; margin-right: 7px; background:none; width:auto; height: auto; top:0;}
 		}
+	}
+	&[class*=_round] {
+		position: relative; padding-left: 20px; font-size: 15px; color:#6d6d6d; line-height: 20px;
+		&:before {display: inline-block; position: absolute; left:0; top:1px; content: ""; width:16px; height:16px; @include background("usclib/bul_round.png",no-repeat 50% 50%); background-size: 100% 100%;}
 	}
 	&[class*=_important] {
 		position: relative; padding-left: 15px; color:#7f7f7f; font-size: 15px; line-height: 24px;
@@ -1042,6 +1051,10 @@ input.w_password {width:135px;}
 	&[class*=_small] {
 		height:59px; margin-bottom: 30px; border-bottom: 1px solid #000;
 		li {width: 300px !important; margin-bottom:-1px;}
+	}
+	&[class*=_exsmall] {
+		height:59px; margin-bottom: 30px; border-bottom: 1px solid #000;
+		li {width: 250px !important; margin-bottom:-1px;}
 	}
 }
 /* UI - SUBPAGE TOP */
@@ -2102,7 +2115,7 @@ div[class^=comp-public-area] {
 	}
 	.page-zoom {display: none;}
 	.title-zone {
-		padding-top: 1.5rem; height: 6.6rem;
+		padding-top: 1.5rem; padding-bottom: 1rem; min-height: 6.6rem; height: auto;
 		.page-title {font-size: 2.4rem;text-align: center;}
 		.page-utile {
 			top:50%; margin-top:-17px;
@@ -2272,6 +2285,14 @@ br.m {display:inherit}
 		&:before {width: 0.7rem; height: 1.2rem;background-size: 100% 100%;}
 	}
 
+
+
+	&[class*=_tab] {
+		margin-bottom: 2rem; font-size: 1.2rem;  line-height:4rem; 
+		span {width:10rem;}
+	}
+
+
 	// 간격
 	& + .scrollzone {margin-top: 1rem;}
 	& + *[class^=comp-tbl_] {margin-top: 1rem}
@@ -2295,6 +2316,10 @@ p[class^=comp-lst] {
 	&[class*=_hyphen] {
 		padding-left: 1.1rem; font-size:1.1rem; line-height:1.6rem;
 		&:before {top:0.6rem; width: 0.5rem; height: 2px; }
+	}
+	&[class*=_round] {
+		padding-left: 1.5rem; font-size:1.2rem; line-height:1.8rem;
+		&:before {top:0.2rem; width:1rem; height:1rem; } 
 	}
 	&[class*=_important] {
 		padding-left:1.2rem; font-size:1.2rem; line-height: 1.4rem;
@@ -2627,6 +2652,10 @@ input.w_password {width:100%;}
 		a {font-size: 1.2rem; height: 4rem; line-height: 1.2; }
 	}
 	&[class*=_small] {
+		margin-bottom: 2rem;
+		li {width: 10rem !important; }
+	}
+	&[class*=_exsmall] {
 		margin-bottom: 2rem;
 		li {width: 10rem !important; }
 	}

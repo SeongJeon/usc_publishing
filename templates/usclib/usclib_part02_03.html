@@ -244,7 +244,7 @@
 						<section>
 							<!-- 페이지 타이틀영역 -->
 							<div class="title-zone">
-								<h2 class="page-title">자료검색</h2>
+								<h2 class="page-title">건지 감자껍질파이북클럽 (개정판) </h2>
 								<ul class="page-utile">
 									<li>
 										<button type="button" aria-haspopup="true" aria-controls="area-sns" aria-expanded="false" class="icon-sns"><span>SNS 공유 레이어 열기</span></button>
@@ -276,92 +276,85 @@
 							
 							<!-- 개별 컨텐츠 영역 -->
 							<div class="contents-zone">
-								<!-- 상단 탭 -->
-								<ul class="comp-tab_row" role="tablist" data-js="false">
-									<li role="presentation"><a href="#" role="tab"><span>일반검색</span></a></li>
-									<li role="presentation"><a href="#tabcontent" role="tab" aria-controls="tabcontent" aria-selected="true"><span>상세검색</span></a></li><!-- D : 선택된 영역에 aria-selected="true" 속성 추가 -->
-								</ul>
-								<!--// 상단 탭 -->
-					
-								<div id="tabcontent" role="tabpanel">
-									<div class="search-box-detail" role='search'>
-										<!-- 검색 폼 영역 -->
-										<div class="form-base-search">
-											<select name="" title="검색항목 선택" id="" class="comp-select_h42">
-												<option value="">검색항목</option>
-											</select>
-											<input type="text" title="자료 검색어 입력" placeholder="자료를 검색하세요" class="comp-input_h42">
-										</div>
-										<table class="comp-tbl_formtype">
-											<caption>상세검색 - 자료실, 정렬조건, 자료유형, 등록번호, 이용대상구분, 발행처, 발행년도, 저자</caption>
-											<tbody>
-												<tr>
-													<th scope="row">자료실</th>
-													<td>
-														<select name="" title="자료실 선택" id="" class="comp-select_h42">
-															<option value="">적용안함</option>
-														</select>
-													</td>
-													<th scope="row">정렬조건</th>
-													<td>
-														<select name="" title="정렬조건 선택" id="" class="comp-select_h42">
-															<option value="">등록일 내림차순</option>
-														</select>
-													</td>
-												</tr>
-												
-												<tr>
-													<th scope="row">자료유형</th>
-													<td>
-														<select name="" title="자료유형 선택" id="" class="comp-select_h42">
-															<option value="">전 체</option>
-														</select>
-													</td>
-													<th scope="row">등록번호</th>
-													<td>
-														<input type="text" title="등록번호 입력" class="comp-input_h42">
-													</td>
-												</tr>
-
-												<tr>
-													<th scope="row">이용대상구분</th>
-													<td>
-														<select name="" title="이용대상구분 선택" id="" class="comp-select_h42">
-															<option value="">전 체</option>
-														</select>
-													</td>
-													<th scope="row">발행처</th>
-													<td>
-														<input type="text" title="발행처 입력" class="comp-input_h42">
-													</td>
-												</tr>
-
-												<tr>
-													<th scope="row">발행년도</th>
-													<td>
-														<div class="w_year">
-															<input type="text" title="발행년도 시작년도 입력" class="comp-input_h42">
-															<span class="txt">부터</span>
-															<input type="text" title="발행년도 마지막년도 입력" class="comp-input_h42">
-															<span class="txt">까지</span>
-														</div>
-													</td>
-													<th scope="row">저자</th>
-													<td>
-														<input type="text" title="저자 입력" class="comp-input_h42">
-													</td>
-												</tr>
-											</tbody>
-										</table>
-										<!-- // 검색 폼 영역 -->
-										<!-- 하단 버튼 영역 -->
-										<div class="comp-btn-zone mt25">
-											<button type="submit" class="comm-btn_type3_deepblue"><span>검색</span></button>
-											<button type="button" class="comm-btn_type3_lightblue"><span>검색 초기화</span></button>
-										</div>
-										<!--// 하단 버튼 영역 -->
+								<!-- 도서 정보 -->
+								<div class="books-infor-zone">
+									<div class="thumb"><img src="../../static/images/usclib/temp/@img.png" alt="색이 가득한 주머니 : 디즈니 색의 마법사 메리 블레어 이야기 표지"></div>
+									<div class="infor">
+										<p class="book-name"><em class="flag">역사</em> 색이 가득한 주머니 : 디즈니 색의 마법사 메리 블레어 이야기</p>
+										<ul class="lst">
+											<li><span class="tit">저자</span> <em class="cont">에이미 굴리엘모</em></li>
+											<li><span class="tit">출판사</span> <em class="cont">서울: 함께자람(교학사)</em></li>
+											<li><span class="tit">출판년도</span> <em class="cont">2018-07-20</em></li>
+											<li><span class="tit">형태사항</span> <em class="cont">48 p.: 천연색삽화; 25 cm</em></li>
+											<li><span class="tit">일반노트</span> <em class="cont">원저자명: Amy Guglielmo, Jacqueline Tourville, Brigette Barrager </em></li>
+											<li><span class="tit">ISBN</span> <em class="cont">9788909205788</em></li>
+											<li><span class="tit">이용대상자</span> <em class="cont">초등저학년</em></li>
+											<li><span class="tit">주제어/키워드</span> <em class="cont">색 주머니 디즈니 일러스트레이터 전기 인물</em></li>
+										</ul>
 									</div>
+
+									<table class="tbl-book-infor">
+										<caption>도서 정보 - 구분, 청구기호, 낱권정보, 자료실, 자료상태, 반납예정일, 예약상태</caption>
+										<thead>
+											<tr>
+												<th scope="col">구분</th>
+												<th scope="col">청구기호</th>
+												<th scope="col">낱권정보</th>
+												<th scope="col">자료실</th>
+												<th scope="col">자료상태</th>
+												<th scope="col">반납예정일</th>
+												<th scope="col">예약상태</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="tit">구분</div>
+													<div class="cont">EM0000062673</div>
+												</td>
+												<td>
+													<div class="tit">청구기호</div>
+													<div class="cont">아813.7-김298ㅁ</div>
+												</td>
+												<td>
+													<div class="tit">낱권정보</div>
+													<div class="cont">-</div>
+												</td>
+												<td>
+													<div class="tit">자료실</div>
+													<div class="cont">어린이자료실</div>
+												</td>
+												<td>
+													<div class="tit">자료상태</div>
+													<div class="cont">
+														<span class="state-data">대출중</span>
+													</div>
+												</td>
+												<td>
+													<div class="tit">반납예정일</div>
+													<div class="cont">
+														<span class="state">0000-00-00</span>
+													</div>
+												</td>
+												<td>
+													<div class="tit">예약상태</div>
+													<div class="cont">
+														<span class="state-booking">예약가능</span>
+														<button type="button" class="btn-put"><span>내서재 담기</span></button>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
+								<!--// 도서 정보 -->
+
+								<!-- 상세정보 영역 -->
+								<h3 class="heading_tab mt40"><span>상세정보</span></h3>
+								<div class="books-detail-contents">
+									<p class="comp-lst_round">디즈니의 전설적인 예술가, 메리 블레어 이야기‘함께자람 인물 그림책’ 시리즈 3권. ‘색의 마법사’로 불리는 디즈니의 전설적인 예술가 메리 블레어의 삶과 업적을 그린 책입니다. 메리 블레어는 디즈니 고전 만화 영화인 「신데렐라」, 「이상한 나라의 앨리스」, 「피터 팬」의 등장인물과 배경을 만드는 데...</p>
+								</div>
+								<!--// 상세정보 영역 -->
 							</div>
 							<!--// 개별 컨텐츠 영역 -->
 

@@ -103,15 +103,36 @@ SUB PAGE
 .tp-survey-view .view-list {}
 .tp-survey-view .view-list .legend-wrap {}
 .tp-survey-view .view-list .legend-wrap:after {display:block; content:""; clear:both;}
-.tp-survey-view .view-list .legend-wrap .tit {float:left;}
-.tp-survey-view .view-list .legend-wrap .legend {float:right; width:550px; height:35px; line-height:35px; padding:0 0 0 25px; border:1px solid #cbc8c7; box-sizing:border-box;}
-.tp-survey-view .view-list .legend-wrap .legend > li {position:relative; float:left; width:20%; padding:0 0 0 25px; font-size:15px; color:#3e3e3e; box-sizing:border-box;}
-.tp-survey-view .view-list .legend-wrap .legend > li:before {position:absolute; left:0; top:50%; display:block; content:""; width:18px; height:18px; margin-top:-7px; border-radius:100%;}
+.tp-survey-view .view-list .legend-wrap .tit {float:left; margin-top:7px;}
+.tp-survey-view .view-list .legend-wrap .legend {float:right; width:550px; height:35px; line-height:35px; margin:0 10px 0 0; padding:0 0 0 25px; border:1px solid #cbc8c7; box-sizing:border-box;}
+.tp-survey-view .view-list .legend-wrap .legend > li {position:relative; float:left; width:20%; height:33px;padding:0 0 0 25px; font-size:15px; color:#3e3e3e; box-sizing:border-box;}
+.tp-survey-view .view-list .legend-wrap .legend > li:before {position:absolute; left:0; top:50%; display:block; content:""; width:18px; height:18px; margin-top:-9px; border-radius:100%;}
 .tp-survey-view .view-list .legend-wrap .legend > li.case1:before {background:#e25e5e;}
 .tp-survey-view .view-list .legend-wrap .legend > li.case2:before {background:#e2b25e;}
 .tp-survey-view .view-list .legend-wrap .legend > li.case3:before {background:#34cf51;}
 .tp-survey-view .view-list .legend-wrap .legend > li.case4:before {background:#28b4a5;}
 .tp-survey-view .view-list .legend-wrap .legend > li.case5:before {background:#1e78c4;}
+.tp-survey-view .view-list .graph-color {padding:0 10px 0 0;}
+.tp-survey-view .view-list .graph-color .inner {display:table; width:100%; margin-top:25px;}
+.tp-survey-view .view-list .graph-color .inner :after {display:block; content:""; clear:both;}
+.tp-survey-view .view-list .graph-color .inner [class^=case] {position:relative; display:table-cell; height:25px; line-height:25px; border-radius:0 15px 15px 0; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:14px; color:#fff; text-align:center; box-sizing:border-box;}
+.tp-survey-view .view-list .graph-color .inner [class^=case]:first-child {border-radius:15px}
+.tp-survey-view .view-list .graph-color .inner [class^=case]:after {position:absolute; left:-12px; top:0; display:block; content:""; width:12px; height:25px; z-index:10;}
+.tp-survey-view .view-list .graph-color .inner [class^=case]:first-child:before {display:none;}
+.tp-survey-view .view-list .graph-color .inner .case1 {background:#e25e5e; z-index:20;}
+.tp-survey-view .view-list .graph-color .inner .case2,
+.tp-survey-view .view-list .graph-color .inner .case2:after {background:#e2b25e; z-index:19;}
+.tp-survey-view .view-list .graph-color .inner .case3,
+.tp-survey-view .view-list .graph-color .inner .case3:after {background:#34cf51; z-index:18;}
+.tp-survey-view .view-list .graph-color .inner .case4,
+.tp-survey-view .view-list .graph-color .inner .case4:after {background:#28b4a5; z-index:17;}
+.tp-survey-view .view-list .graph-color .inner .case5,
+.tp-survey-view .view-list .graph-color .inner .case5:after {background:#1e78c4; z-index:16;}
+.tp-survey-view .view-list .graph-gray {margin:18px 0 0 0; padding:0 40px;}
+.tp-survey-view .view-list .graph-gray > li {overflow:hidden; margin-top:10px;}
+.tp-survey-view .view-list .graph-gray > li .graph {float:left; width:45%;}
+.tp-survey-view .view-list .graph-gray > li .graph .inner {height:25px; line-height:25px; background:#525252; border-radius:15px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:16px; color:#fff; text-align:center;}
+.tp-survey-view .view-list .graph-gray > li .txt {float:left; width:55%; padding:0 0 0 15px; font-size:16px; color:#787878; box-sizing:border-box;}
 
 /* ------------------------------------------------------
 BROWSER HACK

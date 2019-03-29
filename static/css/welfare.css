@@ -32,30 +32,30 @@ MAIN
 SUB PAGE
 ------------------------------------------------------ */
 /*로그인*/
-#container.login .contents-zone .wrap-login-zone {width:1220px; margin:85px auto 0 auto;}
-#container.login .contents-zone .wrap-login-zone .certified-zone {overflow:hidden; padding:31px 0 28px; border:3px solid #d6d5d5; border-radius:17px;}
-#container.login .contents-zone .wrap-login-zone .certified-zone > div {position:relative; float:left; width:33.33%; padding:0 25px 97px; border-left:1px solid #d6d5d5; box-sizing:border-box;}
-#container.login .contents-zone .wrap-login-zone .certified-zone > div:first-child {border-left:none;}
-#container.login .contents-zone .wrap-login-zone .certified-zone h4.tit {font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:24px; color:#262626; text-align:center;}
-#container.login .contents-zone .wrap-login-zone .certified-zone h4.tit:before {display:block; content:""; width:200px; height:200px; margin:15px auto 30px auto;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .txt {margin-top:15px; line-height:26px; font-size:16px; color:#262626; letter-spacing:-1px; text-align:center;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .btn-bottom {position:absolute; left:50%; bottom:17px; margin-left:-100px;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .btn-bottom .btn {display:block; width:200px; height:50px; margin:0 auto; line-height:50px; border-radius:23px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:18px; color:#fff; text-align:center;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .login-zone {padding:0 33px 0 36px;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .login-zone .tit:before {background:url(../../static/images/usc/subpage/bg_login_zone.png) no-repeat;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .login-zone .tit .point {color:#00a54f;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box {position:relative; margin:20px 0 0;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box .form {}
-#container.login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box .form input {width:220px; margin-top:10px;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box .form input:first-child {margin-top:0;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box button {position:absolute; right:0; top:0; width:103px; height:109px; line-height:109px; background:#00a54f; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:18px; color:#fff; text-align:center;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .login-zone .btn-naver {width:100%; height:45px; line-height:45px; margin-top:45px; background:#3ec729 url(../../static/images/usc/subpage/txt_naver_login.png) no-repeat 50% 50%; border:1px solid #28b613; border-radius:4px; box-sizing:border-box; text-indent:-9999rem;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .cell-phone .tit:before {background:url(../../static/images/usc/subpage/bg_cell_phone.png) no-repeat;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .cell-phone .tit .point {color:#ff7200;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .cell-phone .btn-cell-phone .btn {background:#ff7200;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .i-pin .tit:before {background:url(../../static/images/usc/subpage/bg_i_pin.png) no-repeat;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .i-pin .tit .point {color:#1556b0;}
-#container.login .contents-zone .wrap-login-zone .certified-zone .i-pin .btn-i-pin .btn{background:#1556b0;}
+#container.tp-total-login .contents-zone .wrap-login-zone {width:1220px; margin:85px auto 0 auto;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone {overflow:hidden; padding:31px 0 28px; border:3px solid #d6d5d5; border-radius:17px;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone > div {position:relative; float:left; width:33.33%; padding:0 25px 97px; border-left:1px solid #d6d5d5; box-sizing:border-box;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone > div:first-child {border-left:none;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone h4.tit {font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:24px; color:#262626; text-align:center;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone h4.tit:before {display:block; content:""; width:200px; height:200px; margin:15px auto 30px auto;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .txt {margin-top:15px; line-height:26px; font-size:16px; color:#262626; letter-spacing:-1px; text-align:center;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .btn-bottom {position:absolute; left:50%; bottom:17px; margin-left:-100px;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .btn-bottom .btn {display:block; width:200px; height:50px; margin:0 auto; line-height:50px; border-radius:23px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:18px; color:#fff; text-align:center;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone {padding:0 33px 0 36px;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .tit:before {background:url(../../static/images/usc/subpage/bg_login_zone.png) no-repeat;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .tit .point {color:#00a54f;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box {position:relative; margin:20px 0 0;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box .form {}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box .form input {width:220px; margin-top:10px;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box .form input:first-child {margin-top:0;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box button {position:absolute; right:0; top:0; width:103px; height:114px; line-height:114px; background:#00a54f; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:18px; color:#fff; text-align:center;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .btn-naver {width:100%; height:45px; line-height:45px; margin-top:45px; background:#3ec729 url(../../static/images/usc/subpage/txt_naver_login.png) no-repeat 50% 50%; border:1px solid #28b613; border-radius:4px; box-sizing:border-box; text-indent:-9999rem;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .cell-phone .tit:before {background:url(../../static/images/usc/subpage/bg_cell_phone.png) no-repeat;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .cell-phone .tit .point {color:#ff7200;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .cell-phone .btn-cell-phone .btn {background:#ff7200;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .i-pin .tit:before {background:url(../../static/images/usc/subpage/bg_i_pin.png) no-repeat;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .i-pin .tit .point {color:#1556b0;}
+#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .i-pin .btn-i-pin .btn{background:#1556b0;}
 
 
 
@@ -64,13 +64,35 @@ SUB PAGE
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
-@media screen and (-webkit-min-device-pixel-ratio:0){ } // webkit hack
-@-moz-document url-prefix() { } // firefox hack
+@media screen and (-webkit-min-device-pixel-ratio:0){ } /* webkit hack*/
+@-moz-document url-prefix() { } /* firefox hack */
 
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width:1024px){}
+@media (max-width:1024px){
+	#container.tp-total-login .contents-zone .wrap-login-zone {width:auto; margin:3rem 0 0; /*padding:0 1.5rem 0;*/}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone h4.tit {font-size:1.8rem;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone h4.tit:before {display:none;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone {padding:1.5rem 0; border-radius:0.5rem; border-width:2px;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone > div {float:none; width:auto; margin:1.5rem 1rem 0; padding:1.5rem 0 0; border-top:1px solid #d6d5d5; border-left:none; box-sizing:border-box; }
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone > div:first-child {margin-top:0; padding:0; border:none;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone > div:last-child {padding-bottom:0;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone {}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box {margin:1rem 0 0;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box {}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box .form {width:70%; padding-right:1rem;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box .form input {width:100%;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box .form input {margin-top:0.3rem;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .member-box .box button {width:30%; height:8.3rem; line-height:8.3rem; font-size:1.4rem;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .login-zone .btn-naver {height:4rem; line-height:4rem; margin-top:1rem; background-size:9rem;}
+
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .txt {margin-top:1rem; font-size:1.2rem; line-height:1.8rem;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .btn-bottom {position:static; margin:1rem 0 0;}
+	#container.tp-total-login .contents-zone .wrap-login-zone .certified-zone .btn-bottom .btn {width:100%; height:4rem; line-height:4rem; border-radius:4px; font-size:1.4rem;}
+	
+
+}
 @media (max-width:768px){
 
 

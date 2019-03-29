@@ -289,7 +289,7 @@
 	.title-zone {
 		position: relative; height: 120px; padding-top: 50px; border-bottom:1px solid $bd1;
 		&:after {display: block; position: absolute; bottom:3px; left:0; content: ""; width: 100%; height: 1px; background:$bd1;}
-		.page-title {color:#111; font-size: 34px; font-family: $font2; }
+		.page-title {display: inline-block;color:#111; font-size: 34px; font-family: $font2; }
 		.page-utile {
 			position: absolute; right: 0; top:53px; border:1px solid #d6d5d5;
 			&:after {display:block; clear:both; content:""}
@@ -344,6 +344,10 @@
 				}
 			}
 		}
+		.page-dsec {
+			display: inline-block; color:#111; font-size: 18px; font-family: $font2; 
+			&:before {display: inline-block; margin:0 9px 0 13px; content: ""; vertical-align: middle; width: 15px; height: 15px; @include background("common/img_slash.png",no-repeat 50% 50%); }
+		}
 	}
 	.contents-zone {padding-top: 25px; padding-bottom: 100px; min-height: 1000px; }
 
@@ -385,6 +389,12 @@
 					}
 				}
 
+			}
+		}
+
+		&.single {
+			h2 a {
+				&:after {display: none}
 			}
 		}
 	}
@@ -2116,7 +2126,7 @@ div[class^=comp-public-area] {
 	.page-zoom {display: none;}
 	.title-zone {
 		padding-top: 1.5rem; padding-bottom: 1rem; min-height: 6.6rem; height: auto;
-		.page-title {font-size: 2.4rem;text-align: center;}
+		.page-title {display: block;font-size: 2.4rem;text-align: center;}
 		.page-utile {
 			top:50%; margin-top:-17px;
 			& > li {
@@ -2155,6 +2165,10 @@ div[class^=comp-public-area] {
 
 				}
 			}
+		}
+		.page-dsec {
+			display: block; margin-top: 0.5rem; font-size: 1.2rem; text-align: center;
+			&:before {display: none}
 		}
 	}
 	.contents-zone {padding-bottom:3rem; min-height: inherit; padding-top: 1.5rem;}

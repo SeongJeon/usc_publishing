@@ -141,7 +141,7 @@ caption {overflow:hidden; visibility:hidden; height:0; text-indent:-9999em;}
     //방법2 
     // overflow:hidden; white-space: nowrap; text-indent: 100%;
 }
-
+.blind {position:absolute; left:-9999em; top:-9999em; overflow: hidden; white-space: nowrap; text-indent: 100%; }
 
 
 

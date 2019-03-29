@@ -164,7 +164,7 @@
 #container .breadcrumb-zone .page-zoom button[class^=btn-].btn-zoomdown { background-position: -250px -150px; }
 #container .title-zone { position: relative; height: 120px; padding-top: 50px; border-bottom: 1px solid #d1d1d1; }
 #container .title-zone:after { display: block; position: absolute; bottom: 3px; left: 0; content: ""; width: 100%; height: 1px; background: #d1d1d1; }
-#container .title-zone .page-title { color: #111; font-size: 34px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#container .title-zone .page-title { display: inline-block; color: #111; font-size: 34px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 #container .title-zone .page-utile { position: absolute; right: 0; top: 53px; border: 1px solid #d6d5d5; }
 #container .title-zone .page-utile:after { display: block; clear: both; content: ""; }
 #container .title-zone .page-utile > li { float: left; }
@@ -195,6 +195,8 @@
 #container .title-zone .page-utile .area-qrcode .btn { position: absolute; right: 0; top: 0; }
 #container .title-zone .page-utile .area-qrcode .btn .btn-close { width: 36px; height: 36px; }
 #container .title-zone .page-utile .area-qrcode .btn .btn-close span { display: inline-block; width: 14px; height: 14px; background: url("../../static/images/common/sp_icon.png") no-repeat -250px -250px; text-indent: -999em; }
+#container .title-zone .page-dsec { display: inline-block; color: #111; font-size: 18px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#container .title-zone .page-dsec:before { display: inline-block; margin: 0 9px 0 13px; content: ""; vertical-align: middle; width: 15px; height: 15px; background: url("../../static/images/common/img_slash.png") no-repeat 50% 50%; }
 #container .contents-zone { padding-top: 25px; padding-bottom: 100px; min-height: 1000px; }
 #container.main:before { display: none; }
 
@@ -217,6 +219,7 @@
 #lnb .menu .smallmenu ul a:before { display: inline-block; content: "-"; margin-right: 10px; }
 #lnb .menu .smallmenu ul a[aria-current=page] span, #lnb .menu .smallmenu ul a:hover span { text-decoration: underline; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 #lnb .menu .smallmenu ul a[aria-current=page]:before, #lnb .menu .smallmenu ul a:hover:before { content: ""; position: relative; top: -1px; width: 14px; height: 14px; margin-right: 5px; margin-left: -4px; background: url("../../static/images/common/sp_icon.png") no-repeat -200px -200px; vertical-align: middle; }
+#lnb .menu.single h2 a:after { display: none; }
 
 @media (min-width: 1025px) { body.pc #header.header-type2 { height: 130px; }
   body.pc #header.header-type2 .header-middle .title { z-index: 11; }
@@ -1130,7 +1133,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   #container .breadcrumb-zone .breadcrumb .menu a:after { right: 0; top: 0; margin-top: 0; width: 1.3rem; height: 3rem; background: url("../../static/images/common/bg_utile_arrow.png") no-repeat 0% 50%; background-size: auto 100%; }
   #container .page-zoom { display: none; }
   #container .title-zone { padding-top: 1.5rem; padding-bottom: 1rem; min-height: 6.6rem; height: auto; }
-  #container .title-zone .page-title { font-size: 2.4rem; text-align: center; }
+  #container .title-zone .page-title { display: block; font-size: 2.4rem; text-align: center; }
   #container .title-zone .page-utile { top: 50%; margin-top: -17px; }
   #container .title-zone .page-utile > li:nth-child(2), #container .title-zone .page-utile > li:nth-child(3) { display: none; }
   #container .title-zone .page-utile > li > *[class^=icon-] { width: 25px; height: 25px; background-size: 100% 100% !important; }
@@ -1153,6 +1156,8 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   #container .title-zone .page-utile .area-sns *[class^=icon-].icon-kakao { background: url("../../static/images/common/icon_utile_kakao.png") no-repeat 50% 50%; }
   #container .title-zone .page-utile .area-sns *[class^=icon-].icon-twitter { background: url("../../static/images/common/icon_utile_twitter.png") no-repeat 50% 50%; }
   #container .title-zone .page-utile .area-sns *[class^=icon-].icon-facebook { background: url("../../static/images/common/icon_utile_facebook.png") no-repeat 50% 50%; }
+  #container .title-zone .page-dsec { display: block; margin-top: 0.5rem; font-size: 1.2rem; text-align: center; }
+  #container .title-zone .page-dsec:before { display: none; }
   #container .contents-zone { padding-bottom: 3rem; min-height: inherit; padding-top: 1.5rem; }
   #gnb .gnb { position: relative; }
   #gnb .gnb h2 a { display: block; height: 7.2rem; width: 7.2rem; font-size: 1.2rem; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #393939; text-align: center; border-bottom: 1px solid #c5c5c5; line-height: 7.2rem; }

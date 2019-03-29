@@ -74,6 +74,8 @@ caption { overflow: hidden; visibility: hidden; height: 0; text-indent: -9999em;
 
 .hidden { position: absolute; overflow: hidden; top: 0; left: 0; width: 1px; height: 1px; text-indent: -9999em; }
 
+.blind { position: absolute; left: -9999em; top: -9999em; overflow: hidden; white-space: nowrap; text-indent: 100%; }
+
 @media (max-width: 1024px) { html { font-size: 13px; } }
 @media (max-width: 767px) { html { font-size: 13px; } }
 @media (max-width: 430px) { html { font-size: 11px; } }

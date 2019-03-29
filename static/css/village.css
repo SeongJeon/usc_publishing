@@ -272,14 +272,17 @@ SUB PAGE
 .emblem .bro-wrap li:first-child {margin-left:0;}
 .emblem .bro-wrap li *[class^=comm-btn][class*=_type4] {width:100%;padding:0;}
 .emblem .bro-wrap .comm-btn_type4_deeporange {float:right;}
-.emblem .bro-wrap .img-area {margin-bottom:4px;padding:15px 0;border:1px solid #cedfdf;}
+.emblem .bro-wrap .img-area {display:table;width:100%;margin-bottom:4px;padding:15px 0;border:1px solid #cedfdf;}
 
 .emblem .plants-wrap .heading-h4 {margin-left:0;}
 .emblem .plants-wrap .comp-lst_dotted {font-size:15px;font-family:'NanumSquareR';}
-.emblem .brand-wrap {position:relative;height:272px;}
+.emblem .brand-wrap {position:relative;height:320px;}
 .emblem .brand-wrap .img-area {background:url(../images/usc/subpage/bg_emblem_brand.gif) no-repeat left top;}
 
-
+.history .tp-history-tit {width:100%;height:437px;padding:62px 120px 70px;background:url(../images/usc/subpage/bg_history.png) no-repeat left top;text-align:center;box-sizing:border-box;}
+.history .tp-history-tit .tit-top {margin-bottom:50px;}
+.history .tp-history-tit .tit {margin-bottom:30px;font-size:18px;color:#b64926;letter-spacing:2px;}
+.history .tp-history-tit .txt {background:url(../images/usc/subpage/txt_hitory.png) no-repeat center top;}
 
 
 
@@ -531,8 +534,6 @@ MEDIA QUERY
 .emblem .plants-wrap .comp-lst_dotted {font-size:1.2rem;}
 .emblem .brand-wrap {height:auto;}
 .emblem .brand-wrap .img-area {background-size:15.5rem 15rem;}
-
-
 
 
 

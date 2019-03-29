@@ -633,12 +633,12 @@ input.w_password { width: 135px; }
 *[class^=comp-tab] li:first-child:nth-last-of-type(4), *[class^=comp-tab] li:first-child:nth-last-of-type(4) ~ li { width: 25%; border-top: 1px solid #d1d1d1; }
 *[class^=comp-tab] li:nth-child(n+6) { border-top: 0; }
 *[class^=comp-tab] li:nth-child(5n+1) a { border-left: 1px solid #d1d1d1; }
-*[class^=comp-tab][class*=_row] { overflow: visible; height: 60px; }
+*[class^=comp-tab][class*=_row] { overflow: visible; height: 60px; margin-bottom: 35px; }
 *[class^=comp-tab][class*=_row] a { color: #a9a9a9; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 20px; border-bottom-color: #000; line-height: 58px; }
 *[class^=comp-tab][class*=_row] a[aria-selected=true] { background: #fff; border-color: #000; border-bottom-color: #fff; }
 *[class^=comp-tab][class*=_row] a[aria-selected=true]:after { padding: 0; background: #fff !important; border: 1px solid #000; border-bottom-color: #fff; }
 *[class^=comp-tab][class*=_row] a[aria-selected=true] span { color: #336ac0; }
-*[class^=comp-tab][class*=_small] { height: 59px; border-bottom: 1px solid #000; }
+*[class^=comp-tab][class*=_small] { height: 59px; margin-bottom: 30px; border-bottom: 1px solid #000; }
 *[class^=comp-tab][class*=_small] li { width: 300px !important; margin-bottom: -1px; }
 
 /* UI - SUBPAGE TOP */
@@ -749,6 +749,25 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .comp-page-move li .cont { padding-left: 150px; padding-right: 10px; }
 .comp-page-move li .cont a { display: inline-block; color: #787878; vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
 .comp-page-move li .cont a:hover { text-decoration: underline; }
+
+/* UI - 검색 결과, 분류 */
+.comp-sorting-zone { overflow: hidden; margin-top: 50px; margin-bottom: 25px; }
+.comp-sorting-zone .txt-result { position: relative; float: left; padding-left: 34px; font-size: 18px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #111; line-height: 42px; }
+.comp-sorting-zone .txt-result .word { font-size: 20px; }
+.comp-sorting-zone .txt-result .total { color: #3f889a; text-decoration: underline; }
+.comp-sorting-zone .txt-result:before { position: absolute; left: 0; top: 10px; display: block; content: ""; width: 22px; height: 23px; background: url("../../static/images/common/bul_h5.png") no-repeat 50% 50%; }
+.comp-sorting-zone .sorting-zone { float: right; }
+.comp-sorting-zone .sorting-zone select:first-of-type { width: 170px; }
+.comp-sorting-zone .sorting-zone select:last-of-type { width: 145px; }
+.comp-sorting-zone .sorting-lst { overflow: hidden; float: right; margin-left: 20px; }
+.comp-sorting-zone .sorting-lst li { float: left; border: 1px solid #6e6e6e; }
+.comp-sorting-zone .sorting-lst li + li { border-left: 0; }
+.comp-sorting-zone .sorting-lst button[class^=btn-type_] { width: 40px; height: 40px; text-indent: -999em; }
+.comp-sorting-zone .sorting-lst button[class^=btn-type_][class*=_list] { background: #fff url("../../static/images/common/btn_list.png") no-repeat 50% 50%; }
+.comp-sorting-zone .sorting-lst button[class^=btn-type_][class*=_gallery] { background: #fff url("../../static/images/common/btn_gallery.png") no-repeat 50% 50%; }
+.comp-sorting-zone .sorting-lst button[class^=btn-type_][aria-selected=true] { border: 1px solid #ff7200; margin: -1px; width: 42px; height: 42px; }
+.comp-sorting-zone .sorting-lst button[class^=btn-type_][aria-selected=true][class*=_list] { background: #336ac0 url("../../static/images/common/btn_list_on.png") no-repeat 50% 50%; }
+.comp-sorting-zone .sorting-lst button[class^=btn-type_][aria-selected=true][class*=_gallery] { background: #336ac0 url("../../static/images/common/btn_gallery_on.png") no-repeat 50% 50%; }
 
 /* LAYER */
 #layer { display: block; position: fixed; top: 50%; left: 50%; z-index: 1001; }
@@ -1293,7 +1312,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   /* INPUT */
   select[class^=comp-select] { padding: 0 1rem; height: 3.3rem; font-size: 1.2rem; background-size: auto 100%; }
   select[class^=comp-select]:focus { background-size: auto 100%; }
-  select[class^=comp-select][class*=_h42] { height: 3.3rem; }
+  select[class^=comp-select][class*=_h42] { height: 3.3rem; padding-right: 3rem; box-sizing: border-box; }
   input[class^=comp-input] { padding: 0 1rem; height: 3.3rem; font-size: 1.2rem; }
   input[class^=comp-input][class*=_h42] { height: 3.3rem; }
   input[class^=comp-input][class*=_h50] { height: 4rem; }
@@ -1362,7 +1381,9 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   *[class^=comp-tab] li:nth-child(n+5) { border-top: 0; }
   *[class^=comp-tab] li:nth-child(5n+1) a { border-left: 0; }
   *[class^=comp-tab] li:nth-child(4n+1) a { border-left: 1px solid #d1d1d1; }
+  *[class^=comp-tab][class*=_row] { margin-bottom: 2rem; height: 4rem; }
   *[class^=comp-tab][class*=_row] a { font-size: 1.2rem; height: 4rem; line-height: 1.2; }
+  *[class^=comp-tab][class*=_small] { margin-bottom: 2rem; }
   *[class^=comp-tab][class*=_small] li { width: 10rem !important; }
   /* UI - SUBPAGE TOP */
   *[class^=comp-iconbox] { min-height: 160px; padding: 2rem 2rem 1.5rem 0; }
@@ -1443,6 +1464,21 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
   .comp-page-move li .txt { width: 8rem; }
   .comp-page-move li .txt:after { width: 1.5rem; height: 3.5rem; margin-left: 1rem; background-size: 100% auto !important; }
   .comp-page-move li .cont { padding-left: 9rem; padding-right: 1rem; }
+  /* UI - 검색 결과, 분류 */
+  .comp-sorting-zone { margin-top: 3rem; margin-bottom: 2rem; }
+  .comp-sorting-zone .txt-result { float: none; padding-left: 2.5rem; font-size: 1.4rem; line-height: 2rem; }
+  .comp-sorting-zone .txt-result .word { font-size: 1.3rem; }
+  .comp-sorting-zone .txt-result:before { top: 0; width: 1.5rem; height: 2rem; background-size: 100% auto; }
+  .comp-sorting-zone .sorting-zone { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; float: none; margin-top: 1rem; }
+  .comp-sorting-zone .sorting-zone select:first-of-type { -webkit-flex: 1; flex: 1; width: 100%; }
+  .comp-sorting-zone .sorting-zone select:last-of-type { -webkit-flex: 1; flex: 1; width: 100%; margin-left: 0.5rem; }
+  .comp-sorting-zone .sorting-lst { float: none; margin-left: 1rem; }
+  .comp-sorting-zone .sorting-lst button[class^=btn-type_] { width: 3rem; height: 3rem; }
+  .comp-sorting-zone .sorting-lst button[class^=btn-type_][class*=_list] { background-size: 40% auto; }
+  .comp-sorting-zone .sorting-lst button[class^=btn-type_][class*=_gallery] { background-size: 40% auto; }
+  .comp-sorting-zone .sorting-lst button[class^=btn-type_][aria-selected=true] { width: 3.2rem; height: 3.2rem; }
+  .comp-sorting-zone .sorting-lst button[class^=btn-type_][aria-selected=true][class*=_list] { background-size: 40% auto; }
+  .comp-sorting-zone .sorting-lst button[class^=btn-type_][aria-selected=true][class*=_gallery] { background-size: 40% auto; }
   /* 공통페이지 - 사이트맵 */
   .tp-sitemap .sitemap-box { padding: 1rem 1rem 1rem 0.3rem; margin: 1rem 0 2rem; }
   .tp-sitemap .sitemap-box .depth2 { width: 50%; padding-left: 0.7rem; padding-bottom: 1rem; }

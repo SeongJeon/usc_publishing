@@ -65,6 +65,7 @@ LAYOUT
 #wrap.usclib #container {
 	padding-top: 130px;
 	&:before {top:315px;}
+	.top-visual-zone p {width:1320px; height:185px; margin:0 auto; @include background("commonbg/img_usclibtxt.png",no-repeat 0 50%);}
 }
 #wrap.usclib #lnb {
 	.title-depth h2 {background:#336ac0;}
@@ -504,6 +505,132 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+// 자료검색
+.usclib table[class^=tbl-lst] {
+	.flag {display: block; position: absolute; left:0; top:0; color:#fff; text-align: center; background:#588681; font-family: $font1; border-radius: 4px}
+	.td-btn {
+		*[class^=btn-] {display:inline-block; text-align: center; border-radius: 3px; border-width:1px; border-style: solid; font-family: $font2; color:#333; vertical-align: top; box-sizing: border-box}
+		.btn-booking,
+		.btn-borrow {border-color:#a2b9e0; background:#d4e7f7;}
+		.btn-notbooking {border-color:#db91a6; background:#f5ced9;}
+		.btn-put {
+			border-color:#d2d2d2; background:#ededed;
+			&:before {display: inline-block; vertical-align: middle; content: ""; @include background("usclib/subpage/btn_list.png",no-repeat 50% 50%); background-size: 100% 100%;}
+		}
+	}
+
+	// 목록형
+	&[class*=_list] {
+		border-bottom: 1px solid #c7c1bf;
+		thead th {
+			background:#f4f4f4; font-size: 18px; color:#333; height: 44px; border-top: 2px solid #336ac0;
+			&:nth-child(1) {width: 340px}
+			&:nth-child(2) {width: 115px}
+			&:nth-child(3) {width: 150px}
+			&:nth-child(4) {width: 80px}
+			&:nth-child(5) {width: 100px}
+			&:nth-child(6) {width: 225px}
+		}
+		tbody td {overflow:hidden; height:110px; padding:12px 0; border-top: 1px solid #c7c1bf; box-sizing: border-box;}
+		.tdlayout {
+			display: table;
+			& > div[class^=td-] {display:table-cell; font-size: 15px; color:#333; text-align: center; vertical-align: middle;}
+		}
+
+		.td-name {
+			width: 340px; padding:0 10px 0 7px; vertical-align: top;
+			.name {display: block;  position: relative; padding-left: 68px; font-size: 16px; color:#333; font-family: $font2; line-height: 24px; text-align: left;}
+			.flag {width: 58px; line-height: 20px; font-size: 12px;}
+			.writer {display:block; font-size: 14px; color:rgba(52,52,52,0.7); line-height: 20px; text-align: left;}
+		}
+		.td-group {
+			width:445px;
+			> div[class^=td-] {float: left;}
+			> div[class^=td-].td-year {float:right;}
+			.tit {display: none;}
+		}
+		.td-company {width:115px;}
+		.td-code {width:150px;}
+		.td-category {width:80px; color:#336ac0; font-family: $font3;}
+		.td-year {width:100px;}
+		.td-btn {
+			width:225px;
+			*[class^=btn-] {font-size: 16px;  height: 40px; line-height: 38px}
+			.btn-notbooking,
+			.btn-booking,
+			.btn-borrow {width:95px;}
+			.btn-put {
+				width:195px; margin-top: 5px;
+				&:before {width: 19px; height: 16px; margin-right: 5px;}
+			}
+		}
+		.td-thumb {display: none !important}
+	}
+
+	// 갤러리형
+	&[class*=_gallery] {
+		margin-top: -25px;
+		thead {display: none;}
+		tbody td {padding:25px 20px 20px; border-bottom: 1px solid #c7c1bf;}
+		.tdlayout {position: relative; height: 240px; padding-left: 195px;}
+		.td-name {
+			padding-top: 9px;
+			.name {display:block; position: relative; padding-left: 78px; font-size: 20px; font-family: $font2; color:#333;}
+			.flag {width: 70px; line-height: 25px; font-size: 15px;}
+			.writer {display: block; font-size: 16px; color:#333; margin-top: 12px;}
+		}
+		.td-group {
+			margin-top: 20px; padding:15px 14px; background:#eff0f1; color:#333; font-size: 16px; line-height: 24px;
+			> div[class^=td-] {
+				float: left;
+				&:after {display: inline-block; content: "|"; margin:0 13px;}
+			} 
+			> div[class^=td-].td-year:after {display: none;}
+			> div[class^=td-].td-category {
+				float:none; clear:both;
+				&:after {display: none}
+			}
+		}
+		.td-category {
+			.cont {color:#336ac0; font-family: $font3;}
+		}
+		.td-thumb {
+			position: absolute; left:0; top:0; width: 172px; height: 238px; @include background("usclib/subpage/img_book.png",no-repeat 0 0);
+			img {width: 160px; height: 225px;}
+		}
+		.td-btn {
+			margin-top: 35px;
+			*[class^=btn-] {font-size: 17px; font-family: $font2; height: 45px; line-height: 43px}
+			.btn-booking,
+			.btn-notbooking,
+			.btn-borrow {width:120px; margin-right: 4px;}
+			.btn-put {
+				width:145px;
+				&:before {width: 21px; height: 17px; margin-right: 8px;}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -662,7 +789,6 @@ COMMON
 		&[class*=-h4]:before {background-size: 100% auto;}
 	}
 }
-
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -921,37 +1047,94 @@ MAIN
 		}
 	}
 }
-//-------------------------------------------------------------------------------
-}
-@media (max-width:768px){
 /* ------------------------------------------------------
-MAIN
+SUB PAGE
 ------------------------------------------------------ */
-// #wrap.usclib #container.main {
-// 	// 이달의 휴관일
-// 	.main-closedays-zone {
-// 		height: 10.6vw;
-// 		.closeday-zone  {
-// 			.tit {line-height: 10.6vw; font-size:3.7vw;}
-// 			.indicator {
-// 				margin-left: 4.4vw; 
-// 				.month {
-// 					padding:0 1.5rem; line-height: 10.6vw; font-size: 4.1vw;
-// 					em {font-size: 4.8vw;}
-// 				}
-// 				.btn-arrow {
-// 					width: 1.9vw; height: 10.6vw; background-size: 100% auto;
-// 					button {height: 10.6vw;}
-// 				}
-// 			}		
-// 			.closeday {
-// 				margin-left: 0; float: right; margin-top: 2vw;
-// 				li {width: 6.7vw; height: 6.7vw; line-height:6.7vw; font-size: 2.9vw; margin-left: 2vw;}
-// 			}
-// 		}
-// 	}
-// }
+// 자료검색
+.usclib table[class^=tbl-lst] {
+	.td-btn {
+		.btn-put {
+			&:before {display: inline-block; vertical-align: middle; content: ""; @include background("usclib/subpage/btn_list.png",no-repeat 50% 50%); background-size: 100% 100%;}
+		}
+	}
+
+	// 목록형
+	&[class*=_list] {
+		margin-top: -1rem;
+		thead th {display: none }
+		tbody td {height:15rem; padding:1rem 0; }
+		tbody tr:first-child td {border-top: 0;}
+		.tdlayout {
+			display: block;
+			& > div[class^=td-] {display:block; padding:0 1rem; font-size:1.3rem; text-align: left;}
+			& > div[class^=td-].td-btn {display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;}
+		}
+		.td-name {
+			width:100%; padding:0;
+			.name {padding-left:6rem; font-size:1.4rem;line-height:1.8rem;}
+			.flag {width:5rem; line-height: 2rem; font-size:1rem;}
+			.writer {font-size:1.3rem;line-height:1.8rem; margin-top: 0.5rem;}
+		}
+		.td-group {
+			overflow:hidden; width:100%; margin-top: 1rem; text-align: left; line-height: 2rem;
+			> div[class^=td-] {float:left;}
+			> div[class^=td-].td-year {float:left;}
+		}
+		.td-company, .td-code, .td-category, .td-year {width:50%}
+		.td-btn {
+			width:100%; margin-top: 1rem;
+			*[class^=btn-] {font-size:1.2rem;  height:3rem; line-height:2.8rem}
+			.btn-notbooking,
+			.btn-booking,
+			.btn-borrow {width:100%; -webkit-flex:1; flex:1; margin-right:0.5rem;}
+			.btn-put {
+				width:45%; margin-top:0;
+				&:before {width: 2rem; height:1.5rem; background-size: 100% auto;}
+			}
+		}
+	}
+
+	// 갤러리형
+	&[class*=_gallery] {
+		margin-top: -1rem;
+		tbody td {padding:1rem;}
+		.tdlayout {height:auto; padding-left:0;}
+		.td-name {
+			height:20rem; padding-top: 0.5rem; padding-left: 15rem;
+			.name {padding-left:0; font-size:1.5rem; line-height: 2rem;}
+			.flag {position:static; width:7rem; line-height:2rem; font-size:1.2rem; margin-bottom: 0.5rem;}
+			.writer {font-size: 1.2rem;margin-top: 1rem; line-height: 1.8rem;}
+		}
+		.td-group {
+			margin-top: 1rem; padding:1rem;font-size:1.2rem; line-height:1.8rem;
+			> div[class^=td-] {
+				float: left;
+				&:after {display: inline-block; content: "|"; margin:0 13px;}
+			} 
+			> div[class^=td-].td-company {
+				float: none;
+				&:after {display: none}
+			}
+		}
+		.td-thumb {
+			width:14rem; height:20rem; background-size: 100% auto;
+			img {width: 13rem; height:auto;}
+		}
+		.td-btn {
+			display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; margin-top: 1rem;
+			*[class^=btn-] {font-size: 1.4rem; height:3.5rem; line-height:3.3rem}
+			.btn-booking,
+			.btn-notbooking,
+			.btn-borrow {width:100%; margin-right:0.5rem; -webkit-flex:1; flex:1;}
+			.btn-put {
+				width:45%;
+				&:before {width: 2rem; height:1.5rem; background-size: 100% auto;}
+			}
+		}
+	}
+}
 //-------------------------------------------------------------------------------
 }
+@media (max-width:768px){}
 @media (max-width:600px){}
 @media (max-width:321px){}

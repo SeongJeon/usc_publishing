@@ -1029,7 +1029,7 @@ input.w_password {width:135px;}
 	li:nth-child(5n+1) a {border-left: 1px solid #d1d1d1;}
 
 	&[class*=_row] {
-		overflow:visible; height: 60px;
+		overflow:visible; height: 60px; margin-bottom: 35px;
 		a {
 			color:#a9a9a9; font-family: $font2; font-size: 20px; border-bottom-color:#000; line-height: 58px; 
 			&[aria-selected=true]{
@@ -1040,7 +1040,7 @@ input.w_password {width:135px;}
 		}
 	}
 	&[class*=_small] {
-		height:59px; border-bottom: 1px solid #000;
+		height:59px; margin-bottom: 30px; border-bottom: 1px solid #000;
 		li {width: 300px !important; margin-bottom:-1px;}
 	}
 }
@@ -1208,7 +1208,37 @@ div[class^=comp-public-area] {
 		}
 	}
 } 
+/* UI - 검색 결과, 분류 */
+.comp-sorting-zone {
+	overflow: hidden; margin-top: 50px; margin-bottom: 25px;
+	.txt-result {
+		position: relative; float: left; padding-left: 34px; font-size: 18px; font-family: $font2; color:#111; line-height: 42px;
+		.word {font-size: 20px;}
+		.total {color:#3f889a; text-decoration: underline;}
+		&:before {position: absolute; left:0; top:10px; display: block; content: ""; width: 22px; height: 23px; @include background("common/bul_h5.png",no-repeat 50% 50%);}
+	}
+	.sorting-zone {
+		float: right;
+		select:first-of-type {width: 170px}
+		select:last-of-type {width:145px}
+	}
+	.sorting-lst {
+		overflow:hidden; float: right; margin-left: 20px;
+		li {float: left; border:1px solid #6e6e6e;}
+		li + li {border-left: 0;}
+		button[class^=btn-type_] { 
+			width:40px; height: 40px; text-indent: -999em;
+			&[class*=_list] {background:#fff url("../../static/images/common/btn_list.png") no-repeat 50% 50%;}
+			&[class*=_gallery] {background:#fff url("../../static/images/common/btn_gallery.png") no-repeat 50% 50%;}
 
+			&[aria-selected=true] {
+				border:1px solid #ff7200; margin:-1px; width:42px; height: 42px;
+				&[class*=_list] {background:#336ac0 url("../../static/images/common/btn_list_on.png") no-repeat 50% 50%;}
+				&[class*=_gallery] {background:#336ac0 url("../../static/images/common/btn_gallery_on.png") no-repeat 50% 50%;}
+			}
+		}
+	}
+}
 
 
 
@@ -2457,7 +2487,7 @@ select[class^=comp-select] {
 	padding:0 1rem; height: 3.3rem; font-size: 1.2rem; background-size: auto 100%;
 	&:focus {background-size: auto 100%}
 
-	&[class*=_h42] {height: 3.3rem}
+	&[class*=_h42] {height: 3.3rem; padding-right:3rem; box-sizing: border-box;}
 }
 input[class^=comp-input] {
 	padding:0 1rem; height:3.3rem; font-size: 1.2rem;
@@ -2593,9 +2623,11 @@ input.w_password {width:100%;}
 
 
 	&[class*=_row] {
+		margin-bottom: 2rem; height: 4rem;
 		a {font-size: 1.2rem; height: 4rem; line-height: 1.2; }
 	}
 	&[class*=_small] {
+		margin-bottom: 2rem;
 		li {width: 10rem !important; }
 	}
 }
@@ -2742,7 +2774,34 @@ div[class^=comp-public-area] {
 		.cont {padding-left:9rem; padding-right:1rem; }
 	}
 } 
- 
+/* UI - 검색 결과, 분류 */
+.comp-sorting-zone {
+	margin-top:3rem; margin-bottom:2rem;
+	.txt-result {
+		float:none; padding-left: 2.5rem; font-size:1.4rem; line-height: 2rem;
+		.word {font-size:1.3rem;}
+		&:before {top:0; width:1.5rem; height:2rem; background-size: 100% auto}
+	}
+	.sorting-zone {
+		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; float: none; margin-top: 1rem;
+		select:first-of-type {-webkit-flex:1; flex:1; width:100%;}
+		select:last-of-type {-webkit-flex:1; flex:1; width:100%; margin-left: 0.5rem;}
+	}
+	.sorting-lst {
+		float:none; margin-left:1rem;
+		button[class^=btn-type_] { 
+			width:3rem; height:3rem; 
+			&[class*=_list] {background-size: 40% auto;}
+			&[class*=_gallery] {background-size: 40% auto;}
+
+			&[aria-selected=true] {
+				width:3.2rem; height:3.2rem;
+				&[class*=_list] {background-size: 40% auto;}
+				&[class*=_gallery] {background-size: 40% auto;}
+			}
+		}
+	}
+}
 
 
 

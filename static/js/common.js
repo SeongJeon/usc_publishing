@@ -388,6 +388,20 @@ $(document).ready(function(){
 		});
 	})();
 
+	var compsort = (function(){
+		if($('.js-sorting').length < 1) return false;
+
+		var ct, cls;
+		$('.js-sorting *[data-class]').on("click", function(){
+			if($(this).attr("aria-selected") == 'true') return false;
+
+			ct = $("#"+$(this).attr("aria-controls")), cls = $(this).attr("data-class");
+
+			$(this).attr("aria-selected", true).closest("li").siblings().find("*[data-class]").removeAttr("aria-selected");
+			ct.attr("class",cls);
+		})
+	})();
+
 })
 
 

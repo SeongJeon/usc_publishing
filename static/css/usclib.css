@@ -53,7 +53,6 @@ COMMON
 #wrap.usclib *[class^=comp-tab][class*=_row] a[aria-selected=true] span { color: #336ac0; }
 #wrap.usclib *[class^=comp-iconbox] { border-top-color: #336ac0; }
 #wrap.usclib *[class^=comp-iconbox]:before { background: #336ac0; }
-#wrap.usclib table[class^=comp-tbl][class*=_formtype] .important { color: #336ac0; }
 #wrap.usclib .top-search-zone.bgcolor { background: #eff9fe; }
 
 /* ------------------------------------------------------

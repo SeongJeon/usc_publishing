@@ -685,6 +685,10 @@ p[class^=comp-lst] {
 		position: relative; padding-left: 15px; color:#7f7f7f; font-size: 15px; line-height: 24px;
 		&:before {display: inline-block; position: absolute; left:0; top:0; content: "※"; margin-right: 5px;}
 	}
+	&[class*=_star] {
+		position: relative; padding-left: 15px; color:#474747; font-size: 15px; line-height: 24px;
+		&:before {display: inline-block; position: absolute; left:0; top:0; content: "*"; margin-right: 5px;}
+	}
 
 	// 간격관련
 	&.ml1 {margin-left: 5px;}
@@ -725,6 +729,12 @@ p[class^=comp-lst] {
 		& > li{
 			position: relative; padding-left: 15px; color:#7f7f7f; font-size: 15px; line-height: 24px;
 			&:before {display: inline-block;position: absolute; left:0; top:0;content: "※"; margin-right: 5px;}
+		}
+	}
+	&[class*=_star] {
+		& > li{
+			position: relative; padding-left: 15px; color:#474747; font-size: 15px; line-height: 24px;
+			&:before {display: inline-block;position: absolute; left:0; top:0;content: "*"; margin-right: 5px;}
 		}
 	}
 
@@ -865,6 +875,7 @@ input[class^=comp-input] {
 
 	&[class*=_h42] {height: 42px;}
 	&[class*=_h50] {height: 50px;}
+	&[disabled=disabled] {background:#f4f7f9;}
 }
 *[class^=comp-radio] {
 	label {
@@ -895,7 +906,7 @@ textarea[class^=comp-textarea] {
 }
 
 /* INPUT SIZE */
-input.w_writer {width:220px;}
+input.w_writer {width:220px; }
 input.w_password {width:135px;}
 .w_addr {
 	overflow: hidden;
@@ -905,15 +916,21 @@ input.w_password {width:135px;}
 	input:nth-of-type(2) {width: 308px;}
 	input:nth-of-type(3) {width: 270px;}
 }
+.w_addr2 {
+	overflow:hidden;
+	& > input {width:545px; margin-top: 5px}
+	.zipcode input {width: 215px;}
+	.zipcode *[class^=comm-btn] {width:135px; margin-left: 4px;}
+}
 .w_phone {
-	overflow: hidden;
+	overflow: hidden; display: inline-block; vertical-align: middle;
 	& > * {float: left;}
 	.txt {margin:0 14px;}
 	input {width: 100px}
 	select {width: 100px;}
 }
 .w_email {
-	overflow: hidden;
+	overflow: hidden; display: inline-block; vertical-align: middle;
 	& > * {float: left;}
 	.txt {margin:0 11px;}
 	input:nth-of-type(1) {width: 132px;}
@@ -931,9 +948,21 @@ input.w_password {width:135px;}
 	input {width: 180px;}	
 	.txt {margin:0 10px;}
 }
-
-
-
+.w_confirm {
+	display: inline-block; vertical-align: middle;
+	input {width:220px;}
+	*[class*=comm-btn] {margin-left: 4px; width:135px;}
+}
+.w_radio {
+	display: inline-block; vertical-align: middle; margin-left: 15px; 
+	.tit {color:#444; font-size: 15px;}
+	.lst-radio {
+		display: inline-block; vertical-align: middle; margin-left: 20px;
+		&:after {display:block; clear:both; content:""}
+		li {float: left; margin-left: 18px;}
+		li:first-child {margin-left: 0;}
+	}
+}
 
 
 
@@ -1622,11 +1651,35 @@ div[class^=comp-public-area] {
 
 			&.step2 {
 				.member-select-group > li {height: 190px}
+				.heading-h3{
+					margin-left: 10px;
+					&:before {width:24px; height: 26px; @include background("common/bul_h3.png",no-repeat 50% 50%);}
+				}
 				.infor-txt {
-					margin-top: 25px;
+					margin-top: 25px; margin-left: 18px;
 					dt {font-size: 18px; font-family: $font2; color:#000; }
 					dd {margin-top: 13px}
 				} 
+				.join-form {
+					padding:10px 20px 25px; margin-top: 15px;
+					&.important {padding:21px 16px; border:2px solid #fe970e;}
+					& > .tit {font-size: 18px; color:#000; font-family: $font2; }
+				}
+				table[class^=comp-tbl] {
+					*[class^=comm-btn].confirm {background:#1a50ca; border-color:#1a50ca;}
+					.txt-validation {display: inline-block; margin-left: 5px; color:#1a50ca; font-size: 16px;}
+					.inline {display: inline-block; margin-left: 5px;}
+				}
+			}
+			&.step3 {
+				.complete-box {height: 378px; padding:60px 100px 0; background:#f7f7f7; border:1px solid #eee; border-top: 2px solid #f27405; text-align: center;}
+				.tit {font-size: 22px; color:#f27405; font-family: $font2;}
+				.txt {margin-top: 8px; font-size: 16px;}
+				ul[class^=comp-lst][class*=_hyphen] {
+					margin-top: 30px; text-align: left;
+					li {color:#343434; font-size: 16px; line-height: 24px}
+				}
+				.btn-zone {margin-top: 50px}
 			}
 		}
 	}
@@ -2216,6 +2269,9 @@ p[class^=comp-lst] {
 	&[class*=_important] {
 		padding-left:1.2rem; font-size:1.2rem; line-height: 1.4rem;
 	}
+	&[class*=_star] {
+		padding-left:1.2rem; font-size:1.2rem; line-height: 1.4rem;
+	}
 
 
 	// 간격관련
@@ -2246,7 +2302,9 @@ p[class^=comp-lst] {
 	&[class*=_important] {
 		& > li {padding-left:1.2rem; font-size:1.2rem; line-height: 1.4rem; }
 	}
-	&[class*=_star] {}
+	&[class*=_star] {
+		& > li {padding-left:1.2rem; font-size:1.2rem; line-height: 1.4rem; }
+	}
 
 
 	// 간격관련
@@ -2294,14 +2352,15 @@ table[class^=comp-tbl] {
 	&[class*=_formtype] {
 		tbody{
 			th {
-				height:4.3rem; padding:0.5rem 1rem 0.5rem 0.7rem; width:25%;
-				font-size:1.2rem; line-height: 3.3rem;
+				position: relative; height:4.3rem; padding:1.2rem 1rem 0.5rem 0.7rem; width:27%; word-break: keep-all;
+				font-size:1.2rem; line-height: 1.8rem;
 			}
 			td {
 				height:4.3rem; padding:0.5rem 0.7rem; font-size:1.2rem;
 			}
 		}
 		.txt {line-height: 3.3rem;}
+		.important {position: absolute; right: 0.5rem; line-height: 4.3rem; top:0; }
 	}
 
 	.pc {display: none;}
@@ -2354,7 +2413,10 @@ table[class^=comp-tbl] {
 	*:first-child:nth-last-of-type(2),
 	*:first-child:nth-last-of-type(2) ~ * {-webkit-flex:1; flex:1;}
 	& > * + * {margin-left: 0.5rem;}
-	.l-right {margin-top: 0; -webkit-flex:1; flex:1;}
+	.l-right {
+		margin-top: 0; -webkit-flex:1; flex:1;
+		* + * {margin-left: 1%;}
+	}
 
 	&.row {
 		display:block; 
@@ -2431,6 +2493,7 @@ textarea[class^=comp-textarea] {
 }
 
 /* INPUT SIZE */
+input.w_writer {width:100%;}
 input.w_term {width:100%;}
 input.w_password {width:100%;}
 .w_addr {
@@ -2439,6 +2502,14 @@ input.w_password {width:100%;}
 	input:first-of-type {width: 58%}
 	input:nth-of-type(2) {width: 100%; margin-top: 0.5rem;}
 	input:nth-of-type(3) {width:100%; margin-top: 0.5rem}
+}
+.w_addr2 {
+	& > input {width:545px; margin-top: 5px}
+	.zipcode {
+		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+		input {-webkit-flex:1; flex:1; width: 100%;}
+		*[class^=comm-btn] {width:9rem;}
+	}
 }
 .w_phone {
 	.txt {margin:0; width: 10%; text-align: center; margin-bottom: 0.5rem}
@@ -2462,7 +2533,19 @@ input.w_password {width:100%;}
 	input[type='text'] {width:80%}
 	input[type='text']:nth-of-type(2) {margin-top: 0.5rem;}
 }
-
+.w_confirm {
+	display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+	input {-webkit-flex:1; flex:1; width:100%;}
+	*[class*=comm-btn] {width:9rem;}
+}
+.w_radio {
+	display: block; margin:1rem 0; 
+	.tit {font-size: 1.2rem; line-height:1.5rem;}
+	.lst-radio {
+		display: inline-block; margin-left: 2rem; vertical-align: top;
+		li {float: left; margin-left: 1.5rem; line-height: 1.5rem}
+	}
+}
 
 
 
@@ -2968,8 +3051,8 @@ div[class^=comp-public-area] {
 		.join-service-zone {
 			padding:2rem 1rem 2rem;
 			.member-select-group {
-				li {float:none; width:100%; padding:2rem 1rem; margin-left:0; margin-top: 0.5rem; text-align: left;}
-				li:first-child {margin-left: 0; margin-top: 0}
+				& > li {float:none; width:100%; padding:2rem 1rem; margin-left:0; margin-top: 0.5rem; text-align: left;}
+				& > li:first-child {margin-left: 0; margin-top: 0}
 			}
 			.agreement-box {
 				margin-top: 3rem;
@@ -2999,6 +3082,43 @@ div[class^=comp-public-area] {
 						li:last-child {width: 100%}
 					}
 				}
+			}
+
+
+			&.step2 {
+				.member-select-group {
+					> li {height: 13rem}
+					*[class^=comp-lst] {margin-top: 1rem}
+				}
+				.heading-h3{
+					margin-left:0;
+					&:before {width: 1.5rem; height: 1.5rem; margin-right: 0.6rem; background-size: 100% 100%;}
+				}
+				.infor-txt {
+					margin-top:2rem; margin-left:0;
+					dt {font-size: 1.3rem; }
+					dd {margin-top:0.5rem}
+				} 
+				.join-form {
+					padding:1rem 1rem 1rem; margin-top:1rem;
+					&.important {padding:1rem 0.8rem;}
+					& > .tit {font-size:1.2rem; }
+				}
+				table[class^=comp-tbl] {
+					.txt-validation {display: block; margin-left:0; margin-top: 0.4rem; font-size:1.2rem;}
+					.inline {display:block; margin-left:0; margin-top: 0.5rem}
+				}
+				.comp-btn-zone {margin-top: 2rem}
+			}
+			&.step3 {
+				.complete-box {height:auto; padding:3rem 2rem;}
+				.tit {font-size: 2rem; }
+				.txt {margin-top: 1rem; font-size:1.4rem; line-height: 1.8rem}
+				ul[class^=comp-lst][class*=_hyphen] {
+					margin-top:2rem; 
+					li {font-size:1.2rem; line-height:1.8rem}
+				}
+				.btn-zone {margin-top: 3rem}
 			}
 		}
 	}

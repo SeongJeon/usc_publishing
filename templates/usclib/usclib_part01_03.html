@@ -68,6 +68,7 @@
 									</ul>
 								</li>
 							</ul>
+							<!--// 회원 종류 선택 -->
 
 							<!-- 신규회원가입안내/도서회원증 발급 -->
 							<dl class="infor-txt">
@@ -85,29 +86,154 @@
 									<p class="comp-lst_hyphen_txt">도서회원증 발급 자격 및 구비서류 확인을 하시고 우리 도서관에 방문하기 바랍니다.</p>
 								</dd>
 							</dl>
+							<!--// 신규회원가입안내/도서회원증 발급 -->
 
-							<!-- 정보입력 -->
 							<h2 class="heading-h3 mt60">도서회원가입 정보입력</h2>
 
+							<!-- 기존회원 정보 입력 -->
+							<div class="join-form important">
+								<h3 class="tit">도서회원 확인</h3>
+								<table class="comp-tbl_formtype mt20">
+									<caption>도서회원가입 정보 입력 - 이름, 도서회원번호</caption>
+									<tbody>
+										<tr>
+											<th scope="row">이름<em class="important">*</em></th>
+											<td><input type="text" title="이름 입력" class="comp-input w_writer" disabled="disabled"></td>
+										</tr>
+										<tr>
+											<th scope="row">도서회원번호<em class="important">*</em></th>
+											<td>
+												<div class="w_confirm">
+													<input type="text" title="이름 입력" class="comp-input">
+													<button type="submit" class="comm-btn_type2_lightorange confirm"><span>도서회원확인</span></button><!-- 확인시 confirm 클래스 추가 -->
+												</div>
+												<p class="txt-validation">도서회원 확인이 되었습니다. </p>
+												<p class="comp-lst_star mt10">이름과 대출자번호 입력 후 ‘도서회원확인’ 버튼을 클릭해주세요</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!--// 기존회원 정보 입력 -->
 
+							<!-- 신규회원 정보입력 -->
+							<div class="join-form">
+								<table class="comp-tbl_formtype">
+									<caption>도서회원가입 정보 입력 - 이름, 생년월일, 아이디, 비밀번호, 비밀번호 확인, 휴대폰 번호, 집 전화번호, 이메일, 주소</caption>
+									<tbody>
+										<tr>
+											<th scope="row">이름</th>
+											<td><input type="text" title="이름 입력" class="comp-input w_writer" disabled="disabled"></td>
+										</tr>
+										<tr>
+											<th scope="row">생년월일</th>
+											<td>
+												<input type="text" title="생년월일 입력" class="comp-input w_writer" disabled="disabled">
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">아이디<em class="important">*</em></th>
+											<td>
+												<div class="w_confirm">
+													<input type="text" title="아이디 입력" class="comp-input">
+													<button type="submit" class="comm-btn_type2_lightorange"><span>아이디 중복확인</span></button><!-- 확인시 confirm 클래스 추가 -->
+												</div>
+												<p class="txt-validation">아이디 사용이 가능합니다.</p>
+												<p class="comp-lst_star mt10 ">아이디는 영문 또는 숫자(개별 또는 혼용) 4자 이상 가능합니다. / 아이디 영문은 모두 소문자입니다.</p>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">비밀번호<em class="important">*</em></th>
+											<td>
+												<input type="password" title="비밀번호 입력" class="comp-input w_writer">
+												<p class="comp-lst_star inline">8~20자로 숫자+영문 2가지 이상 조합 (특수문자 제외)</p>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">비밀번호 확인<em class="important">*</em></th>
+											<td>
+												<input type="password" title="비밀번호 확인 입력" class="comp-input w_writer">
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">휴대폰 번호<em class="important">*</em></th>
+											<td>
+												<div class="w_phone">
+													<select name="" id="" title="휴대폰 번호 앞 3자리 선택" class="comp-select">
+														<option value="">010</option>
+													</select>
+													<span class="txt">-</span>
+													<input type="text" title="휴대폰 번호 중간 4자리 입력" class="comp-input">
+													<span class="txt">-</span>
+													<input type="text" title="휴대폰 번호 끝 4자리 입력" class="comp-input">
+												</div>
+												<div class="w_radio">
+													<span class="tit">SNS 수신</span>
+													<ul class="lst-radio">
+														<li class="comp-radio"><input type="radio" name="sms" id="smsyes" checked="checked"><label for="smsyes">예</label></li>
+														<li class="comp-radio"><input type="radio" name="sms" id="smsno"><label for="smsno">아니오</label></li>
+													</ul>
+												</div>
+												<p class="comp-lst_star mt10">SMS 수신미동의시 도서 대출관련 정보 및 행사 등에 대한 내용을 안내 받으실 수 없습니다.</p>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">집 번화번호<em class="important">*</em></th>
+											<td>
+												<div class="w_phone">
+													<select name="" id="" title="집 전화번호 지역번호 2~3자리 선택" class="comp-select">
+														<option value="">054</option>
+													</select>
+													<span class="txt">-</span>
+													<input type="text" title="집 전화번호 중간 4자리 입력" class="comp-input">
+													<span class="txt">-</span>
+													<input type="text" title="집 전화번호 끝 4자리 입력" class="comp-input">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">이메일<em class="important">*</em></th>
+											<td>
+												<div class="w_email">
+													<input type="text" title="이메일 아이디 입력" class="comp-input">
+													<span class="txt">@</span>
+													<input type="text" title="이메일 도메인 입력" class="comp-input">
+													<select name="" id="" title="이메일 도메인 선택" class="comp-select">
+														<option value="">직접입력</option>
+													</select>
+												</div>
+												<div class="w_radio">
+													<span class="tit">이메일 수신</span>
+													<ul class="lst-radio">
+														<li class="comp-radio"><input type="radio" name="email" id="emailyes" checked="checked"><label for="smsyes">예</label></li>
+														<li class="comp-radio"><input type="radio" name="email" id="emailno"><label for="smsno">아니오</label></li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">주소<em class="important">*</em></th>
+											<td>
+												<div class="w_addr2">
+													<div class="zipcode">
+														<input type="text" title="우편번호 입력" class="comp-input">
+														<a href="#" class="comm-btn_type2_lightorange"><span>주소 찾기</span></a>
+													</div>
+													<input type="text" title="상세주소 입력" class="comp-input" placeholder="상세주소를 입력하세요.">
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!--// 신규회원 정보입력 -->
 
+							<!-- 하단 버튼 영역 -->
 							<div class="comp-btn-zone">
 								<button type="button" class="comm-btn_type1_deeporange"><span>확인</span></button>
 								<a href="#" class="comm-btn_type1_lgrey"><span>취소</span></a>
 							</div>
-						</div>
-						<!--// 14세 미만 -->
-
-						<div class="info-zone">
-							<dl class="txt">
-								<dt>만 14세 미만 회원 안내</dt>
-								<dd>
-									개인정보보호법 제22조 5항에 의해 만 14세 미만 어린이/학생은 법정대리인(보호자)와 함께 가입해 주세요. <br>
-									아래 중 보호자 등의 수단을 선택하시면 됩니다. 입력하신 정보는 가입완료 전까지 저장되지 않습니다. <br>
-									<span class="point">(아래 중 편리한 방법으로 실명확인을 진행하시면 됩니다.)</span> <br>
-									실명확인 정보는 가입완료 전까지 홈페이지내에 저장되지 않습니다.
-								</dd>
-							</dl>
+							<!--// 하단 버튼 영역 -->
 						</div>
 					</div>
 					<!--// 회원가입 탭 컨텐츠 -->

@@ -127,9 +127,6 @@ COMMON
 		border-top-color:#336ac0;
 		&:before {background:#336ac0;}
 	}
-	table[class^=comp-tbl]{
-		&[class*=_formtype] .important {color:#336ac0}
-	}
 
 
 	.top-search-zone {

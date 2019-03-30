@@ -308,6 +308,8 @@ MEDIA QUERY
 	.tp-survey-view .bd-content .view-list .txt-wrap textarea {height:7rem;}
 	.tp-survey-view .bd-content .view-list .comp-input_wrap {padding-left:8rem;}
 	.tp-survey-view .comp-input_wrap .txt {font-size:1.2rem;}
+	.tp-survey-view .comp-btn-zone .l-right {position: static;}
+	.tp-survey-view .comp-btn-zone .l-right *[class^=comm-btn][class*=_golist] {width: 100%}
 
 
 	/* 설문조사 결과 */

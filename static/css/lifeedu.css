@@ -1,141 +1,97 @@
-@charset "utf-8";
- 
-
-/* ------------------------------------------------------
-[ FONT WEIGHT ]
-기본 공통 폰트 - 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
- 
-나눔스퀘어 
-'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font0
-'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font1
-'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font2
-'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font3
------------------------------------------------------- */
-
+@charset "UTF-8";
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
+@media (min-width: 1025px) { body.pc .lifeedu #header .header-middle .title { top: 22px; }
+  body.pc .lifeedu #header .header-middle .title a { width: 205px; height: 51px; background: url("../../static/images/lifeedu/img_logo.png") no-repeat 50% 50%; }
+  body.pc .lifeedu #header .header-bottom .sitemap { background: #3f9a82; }
+  body.pc .lifeedu #header.header-type2 #gnb h2.over a:before, body.pc .lifeedu #header.header-type2 #gnb h2 a:hover:before { background: #1058a8; }
+  body.pc .lifeedu #header.header-type2 #gnb h2.over a:after, body.pc .lifeedu #header.header-type2 #gnb h2 a:hover:after { border-color: #1058a8; }
+  body.pc .lifeedu #header.header-type2 #gnb p a:hover { background: #3cb7cd; }
+  body.pc .lifeedu #header.header-type2 #gnb h3 a:before { background: #1e4363; }
+  body.pc .lifeedu #header.header-type2.open { border-bottom-color: #1058a8; }
+  body.pc .lifeedu #header.header-type2.open .header-bottom { border-bottom-color: #54c2d8; }
+  body.pc .lifeedu #gnb { margin-left: 330px; }
+  body.pc .lifeedu #gnb h2 a { width: 150px; }
+  body.pc .lifeedu #gnb .depth2menu { width: 226px; height: 420px; padding-left: 36px; }
+  body.pc .lifeedu #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }
+  body.pc .lifeedu #gnb .gnb > li:nth-child(2) .depth2menu { left: 190px; }
+  body.pc .lifeedu #gnb .gnb > li:nth-child(3) .depth2menu { left: 416px; }
+  body.pc .lifeedu #gnb .gnb > li:nth-child(4) .depth2menu { left: 642px; }
+  body.pc .lifeedu #gnb .gnb > li:nth-child(5) .depth2menu { left: 868px; }
+  body.pc .lifeedu #gnb .gnb > li:nth-child(6) .depth2menu { left: 1094px; }
+  body.pc .lifeedu #gnb .gnb > li:nth-child(1) .depth2menu { width: 190px; padding-left: 0; } }
+.lifeedu #footer { background: #2f4242; }
+.lifeedu #footer .btn-gototop a { background: #4f4f4f; }
+.lifeedu #footer .footer-selectgroup .footer-comp-select dt button { background: #212e2e url("../../static/images/usclib/form_select.png") no-repeat 100% 50%; border-color: #212e2e; color: #fff; }
+.lifeedu #footer .footer-utilegroup { color: #a9a9a9; padding-left: 0; }
+.lifeedu #footer .footer-utilegroup .footer-utile a { color: rgba(255, 255, 255, 0.7); }
+.lifeedu #footer .footer-utilegroup .footer-addr strong { color: #fff; }
+.lifeedu #footer .footer-notice .number { color: #f7c52c; }
+.lifeedu #footer .footer-notice .number .call { background: url("../../static/images/lifeedu/icon_footer_call.png") no-repeat 50% 50%; }
+.lifeedu #footer .footer-notice .txt { color: #bababa; }
 
+.lifeedu #container { padding-top: 130px; }
+.lifeedu #container:before { top: 315px; background: #d6d5d5; }
+.lifeedu #container .top-visual-zone p { width: 1320px; background: url("../../static/images/commonbg/img_lifeedutxt.png") no-repeat 100% 50%; }
+.lifeedu #container .breadcrumb-zone { background: #d6d5d5; }
+.lifeedu #container .breadcrumb-zone .breadcrumb > li { border-right-color: #c4bebd; }
+.lifeedu #container .breadcrumb-zone .breadcrumb > li > a { color: #666; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; }
+.lifeedu #container .breadcrumb-zone .breadcrumb > li:first-child > a { color: #8e8886; }
+.lifeedu #container .breadcrumb-zone .breadcrumb a:after { background: url("../../static/images/lifeedu/icon_arrow_lnb.png") no-repeat 50% 50%; }
+.lifeedu #container .breadcrumb-zone .breadcrumb a.open { background: #383b3b; color: #fff; }
+.lifeedu #container .breadcrumb-zone .breadcrumb a.open:after { background: url("../../static/images/common/sp_icon.png") no-repeat -250px -100px; }
+.lifeedu #container .breadcrumb-zone .page-zoom button[class^=btn-] { width: 23px; }
+.lifeedu #container .breadcrumb-zone .page-zoom button[class^=btn-].btn-zoomup { background: url("../../static/images/lifeedu/btn_zoom_up.png") no-repeat 50% 50%; }
+.lifeedu #container .breadcrumb-zone .page-zoom button[class^=btn-].btn-zoomdown { background: url("../../static/images/lifeedu/btn_zoom_down.png") no-repeat 50% 50%; }
+.lifeedu #container .breadcrumb-zone .page-zoom dt { color: rgba(72, 72, 72, 0.6); }
 
+.lifeedu #container.main { padding-top: 0; }
+.lifeedu #container.main:before { display: none; }
 
+.lifeedu #lnb { border-top-color: #d6d5d5; }
+.lifeedu #lnb .title-depth h2 { background: #014099; }
+.lifeedu #lnb .menu h2 a.open, .lifeedu #lnb .menu h2 a:hover { background: #dce8f6; color: #000; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu #lnb .menu h2 a.open:after, .lifeedu #lnb .menu h2 a:hover:after { background-color: #417ff2; }
 
-
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
-
-
-
-
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------
-BROWSER HACK
------------------------------------------------------- */
-@media screen and (-webkit-min-device-pixel-ratio:0){ } /*webkit hack*/
-@-moz-document url-prefix() { } /*firefox hack*/
-
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width:1024px){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-@media (max-width:768px){
-}
-@media (max-width:321px){}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 1024px) { /* ------------------------------------------------------ LAYOUT ------------------------------------------------------ */
+  #wrap.lifeedu #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/usclib/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.lifeedu #header .header-bottom .header-utilegroup .header-utile .icon-join:before { background: url("../../static/images/usclib/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.lifeedu #header .header-bottom .gnb-mo-title { background: #016dae; }
+  #wrap.lifeedu #header .header-bottom .header-utilegroup { background: #d6eef0; }
+  #wrap.lifeedu #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #73cdc3; }
+  #wrap.lifeedu #header .header-middle .btn-menu-open button { background-color: #3f9a82; }
+  #wrap.lifeedu #header .header-middle .title a { width: 17rem; background: url("../../static/images/lifeedu/img_logo.png") no-repeat 50% 50%; }
+  #wrap.lifeedu #gnb .category { display: none; }
+  #wrap.lifeedu #gnb .gnb .clicked, #wrap.lifeedu #gnb .gnb .current, #wrap.lifeedu #gnb .gnb .clicked h3 a, #wrap.lifeedu #gnb .gnb h2 a:hover, #wrap.lifeedu #gnb .gnb h3 a:hover, #wrap.lifeedu #gnb .gnb h4 a:hover { color: #016dae; }
+  #wrap.lifeedu #gnb .gnb h4 a:hover:before { background: #016dae; }
+  #wrap.lifeedu #footer .footer-selectgroup .footer-comp-select dt button { background-size: auto 100%; }
+  #wrap.lifeedu #footer .footer-notice .number .call { background-size: 100% 100%; }
+  #wrap.lifeedu #footer .footer-utilegroup .footer-utile { color: #d5d5d5; }
+  #wrap.lifeedu #footer .footer-utilegroup .footer-addr strong { color: #d5d5d5; }
+  #wrap.lifeedu #footer .footer-utilegroup .footer-utile a { color: #d5d5d5; }
+  #wrap.lifeedu #footer .footer-utilegroup .footer-utile a strong { color: #fff; }
+  #wrap.lifeedu #container { padding-top: 0; }
+  #wrap.lifeedu #container .breadcrumb-zone { border-top-color: #d6d5d5; }
+  /* ------------------------------------------------------ COMMON ------------------------------------------------------ */
+  .ebooksys .radio-type1 label { font-size: 1rem; }
+  .ebooksys .radio-type1 label span { font-size: 1rem; }
+  .ebooksys .radio-type1 label:before { width: 1.5rem; height: 1.5rem; background-size: 1.5rem; }
+  .ebooksys .radio-type1 input:checked + label:before { background-size: 1.5rem; }
+  .ebooksys .table { display: table; width: 100%; height: 100%; }
+  .ebooksys .table-cell { display: table-cell; vertical-align: middle; }
+  .ebooksys .view-pc { display: none !important; }
+  /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
+  /* ------------------------------------------------------ SUBPATE ------------------------------------------------------ */ }

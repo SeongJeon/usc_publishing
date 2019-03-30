@@ -374,6 +374,9 @@
 				&:after {@include background("common/icon_lnb_outlnk.png",no-repeat 50% 50%);}
 				&:hover:after {right: 1px}
 			}
+			&.single {
+				&:after {display:none;}
+			}
 		}
 		.smallmenu {
 			display: none;

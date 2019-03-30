@@ -212,6 +212,7 @@
 #lnb .menu h2 a.open:after, #lnb .menu h2 a:hover:after { background: #b64926 url("../../static/images/common/icon_lnb_on.png") no-repeat 50% 50%; }
 #lnb .menu h2 a.outlnk:after { background: url("../../static/images/common/icon_lnb_outlnk.png") no-repeat 50% 50%; }
 #lnb .menu h2 a.outlnk:hover:after { right: 1px; }
+#lnb .menu h2 a.single:after { display: none; }
 #lnb .menu .smallmenu { display: none; }
 #lnb .menu .smallmenu ul { padding: 15px 18px 18px; background: #fcfcee; }
 #lnb .menu .smallmenu ul li + li { margin-top: 7px; }

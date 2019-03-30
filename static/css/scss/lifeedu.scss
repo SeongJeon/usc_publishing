@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+@import 'base';
+
+/* ------------------------------------------------------
+LAYOUT
+------------------------------------------------------ */ 
+@media (min-width:1025px){
+	body.pc .lifeedu #header {
+		.header-middle .title {
+			top: 22px;
+			a {width: 205px; height: 51px; background:url("../../static/images/lifeedu/img_logo.png") no-repeat 50% 50%;}
+		}
+		.header-bottom .sitemap {background: #3f9a82}
+		&.header-type2 #gnb {
+			h2.over a:before,
+			h2 a:hover:before {background: #1058a8; }
+			h2.over a:after,
+			h2 a:hover:after {border-color:#1058a8;}
+			p a:hover {background: #3cb7cd;}
+			h3 a:before{background: #1e4363;}
+		}
+
+		&.header-type2.open {border-bottom-color:#1058a8;}
+		&.header-type2.open .header-bottom {border-bottom-color: #54c2d8;}
+	}
+	body.pc .lifeedu #gnb {
+		margin-left: 330px;
+		h2 a {width: 150px}
+		.depth2menu {width: 226px; height: 420px; padding-left: 36px;}
+		.gnb > li:nth-child(1) .depth2menu {left:0;}
+		.gnb > li:nth-child(2) .depth2menu {left:190px;}
+		.gnb > li:nth-child(3) .depth2menu {left:416px;}
+		.gnb > li:nth-child(4) .depth2menu {left:642px}
+		.gnb > li:nth-child(5) .depth2menu {left:868px}
+		.gnb > li:nth-child(6) .depth2menu {left:1094px}
+		.gnb > li:nth-child(1) .depth2menu {width:190px; padding-left: 0}
+	}
+}
+.lifeedu #footer {
+	background:#2f4242;
+	.btn-gototop a {background:#4f4f4f;}
+	.footer-selectgroup {
+		.footer-comp-select {
+			dt{
+				button {background:#212e2e url("../../static/images/usclib/form_select.png") no-repeat 100% 50%; border-color:#212e2e; color:#fff;}
+			}
+		}
+	}
+	.footer-utilegroup {
+		color:#a9a9a9; padding-left:0;
+		.footer-utile {
+			a {color:rgba(256,256,256,0.7);}
+		}
+		.footer-addr {
+			strong {color:#fff;}
+		}
+	}
+	.footer-notice {
+		.number {
+			color:#f7c52c;
+			.call {@include background("lifeedu/icon_footer_call.png",no-repeat 50% 50%);}
+		}
+		.txt {color:#bababa;}
+	}
+}
+.lifeedu #container{ 
+	padding-top: 130px; 
+	&:before {top:315px; background:#d6d5d5;}
+	.top-visual-zone {
+		p {width:1320px; @include background("commonbg/img_lifeedutxt.png",no-repeat 100% 50%);}
+	}
+	.breadcrumb-zone {
+		background:#d6d5d5;
+		.breadcrumb {
+			& > li {border-right-color: #c4bebd}
+			& > li > a {color:#666; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease;}
+			& > li:first-child > a {color:#8e8886;}
+			a:after {@include background("lifeedu/icon_arrow_lnb.png",no-repeat 50% 50%);}
+			a.open {
+				background:#383b3b; color:#fff;
+				&:after {@include background("common/sp_icon.png",no-repeat -250px -100px);}
+			} 
+		}
+		.page-zoom {
+			button[class^=btn-] {
+				width: 23px;
+				&.btn-zoomup {@include background("lifeedu/btn_zoom_up.png",no-repeat 50% 50%);}
+				&.btn-zoomdown {@include background("lifeedu/btn_zoom_down.png",no-repeat 50% 50%);}
+			}
+			dt {color:rgba(72,72,72,0.6);}
+		}
+	}
+}
+.lifeedu #container.main {
+	padding-top: 0;
+	&:before {display: none}
+}
+.lifeedu #lnb {
+	border-top-color: #d6d5d5;
+	.title-depth h2 {background:#014099;}
+	.menu {
+		h2 a {
+			&.open, &:hover {
+				background:#dce8f6; color:#000; font-family: $font1;
+				&:after {background-color:#417ff2 }
+			}
+		}
+	}
+}
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+
+/* ------------------------------------------------------
+MAIN
+------------------------------------------------------ */
+
+/* ------------------------------------------------------
+SUB PAGE
+------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------
+MEDIA QUERY
+------------------------------------------------------ */
+@media (max-width: 1024px) {
+/* ------------------------------------------------------
+LAYOUT
+------------------------------------------------------ */
+#wrap.lifeedu #header {
+	.header-bottom {
+		.header-utilegroup .header-utile {
+			.icon-login:before {@include background("usclib/icon_gnb_login.png",no-repeat 50% 50%); background-size:auto 100%;}		
+			.icon-join:before {@include background("usclib/icon_gnb_join.png",no-repeat 50% 50%); background-size:auto 100%;}
+		}
+		.gnb-mo-title {background: #016dae}
+		.header-utilegroup {background: #d6eef0;}
+		.header-utilegroup .header-utile li + li {border-color:#73cdc3;}
+	}
+	.header-middle {
+		.btn-menu-open button {background-color: #3f9a82}
+		.title a {width:17rem; @include background("lifeedu/img_logo.png",no-repeat 50% 50%); }
+	}
+}
+#wrap.lifeedu #gnb {
+	.category {display: none}
+	.gnb .clicked, 
+	.gnb .current, 
+	.gnb .clicked h3 a, 
+	.gnb h2 a:hover, 
+	.gnb h3 a:hover, 
+	.gnb h4 a:hover {color:#016dae;}
+	.gnb h4 a:hover:before {background:#016dae;}
+}
+#wrap.lifeedu #footer {
+	.footer-selectgroup .footer-comp-select dt button {background-size: auto 100%;}
+	.footer-notice .number .call {background-size: 100% 100%;}
+	.footer-utilegroup .footer-utile {color:#d5d5d5;}
+	.footer-utilegroup .footer-addr strong {color:#d5d5d5;}
+	.footer-utilegroup .footer-utile a {color:#d5d5d5;}
+	.footer-utilegroup .footer-utile a strong {color:#fff;}
+}
+#wrap.lifeedu #container {
+	padding-top: 0;
+	.breadcrumb-zone {border-top-color:#d6d5d5;}
+}
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+.ebooksys .radio-type1 {
+	label {font-size:1rem;}
+	label span {font-size:1rem;}
+	label:before {width:1.5rem; height:1.5rem; background-size:1.5rem;}
+	input:checked + label:before {background-size:1.5rem;}
+}
+.ebooksys .table {display:table; width:100%; height:100%;}
+.ebooksys .table-cell {display:table-cell; vertical-align:middle;}
+.ebooksys .view-pc { display: none !important; }  
+/* ------------------------------------------------------
+MAIN
+------------------------------------------------------ */
+/* ------------------------------------------------------
+SUBPATE
+------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} @media (max-width: 768px) {
+} @media (max-width:320px) {
+}

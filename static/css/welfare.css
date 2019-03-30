@@ -130,7 +130,7 @@ SUB PAGE
 .tp-survey-view .view-list .graph-color .inner .case5:after {background:#1e78c4; z-index:16;}
 .tp-survey-view .view-list .graph-gray {margin:18px 0 0 0; padding:0 40px;}
 .tp-survey-view .view-list .graph-gray > li {overflow:hidden; margin-top:10px;}
-.tp-survey-view .view-list .graph-gray > li:first-child {margin-top:0;}
+.tp-survey-view .view-list .graph-gray > li:first-child {margin-top:0;} 
 .tp-survey-view .view-list .graph-gray > li .graph {float:left; width:45%;}
 .tp-survey-view .view-list .graph-gray > li .graph .inner {height:25px; line-height:25px; background:#525252; border-radius:15px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:16px; color:#fff; text-align:center;}
 .tp-survey-view .view-list .graph-gray > li .txt {float:left; width:55%; padding:0 0 0 15px; font-size:16px; color:#787878; box-sizing:border-box;}

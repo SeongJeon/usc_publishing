@@ -175,70 +175,326 @@
 								<!-- 탭 컨텐츠 -->
 								<div id="tabcontent" role="tabpanel">
 									<!-- 서브 탭 -->
-									<ul class="comp-tab_vertical_6n books-category-tab" role="tablist" aria-label="도서 목록 분류 선택 옵션">
-										<li role="presentation"><a href="#" role="tab" aria-controls="" aria-selected="true"><span>문학 전체<em class="number">(1,562종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>한국소설<em class="number">(521종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>외국소설<em class="number">(671종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>고 전<em class="number">(233종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>시<em class="number">(106종)</em></span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls=""><span>이론과 평론<em class="number">(31종)</em></span></a></li>
+									<ul class="comp-tab_vertical_6n books-category-tab" role="tablist" aria-label="도서 목록 분류 선택 옵션" data-js="false">
+										<li role="presentation"><a href="#" role="tab" aria-controls="subtabcontent" aria-selected="true"><span>문학 전체<em class="number">(1,562종)</em></span></a></li><!-- D : 선택하는 옵션에 aria-selected="true" 추가 및 그외는 삭제 -->
+										<li role="presentation"><a href="#" role="tab" aria-controls="subtabcontent"><span>한국소설<em class="number">(521종)</em></span></a></li>
+										<li role="presentation"><a href="#" role="tab" aria-controls="subtabcontent"><span>외국소설<em class="number">(671종)</em></span></a></li>
+										<li role="presentation"><a href="#" role="tab" aria-controls="subtabcontent"><span>고 전<em class="number">(233종)</em></span></a></li>
+										<li role="presentation"><a href="#" role="tab" aria-controls="subtabcontent"><span>시<em class="number">(106종)</em></span></a></li>
+										<li role="presentation"><a href="#" role="tab" aria-controls="subtabcontent"><span>이론과 평론<em class="number">(31종)</em></span></a></li>
 									</ul>
 									<!--// 서브 탭 -->
 
-									<!-- 검색 -->
-									<div class="top-search-zone bgcolor">
-										<p class="total-length">전체게시물 <em class="bold point1">22</em>건 / <span class="totalpage">1</span>page</p>
-										<div class="form3">
-											<ul class="radio-lst">
-												<li><span class="comp-radio"><input type="radio" name="show" id="show1" checked="checked"><label for="show1">모두보기</label></span></li>
-												<li><span class="comp-radio"><input type="radio" name="show" id="show2"><label for="show2">대출가능한 전자책만 보기</label></span></li>
-											</ul>
-											<div class="group">
-												<select name="" id="" title="도서 목록 분류 선택" class="comp-select_h42">
-													<option value="">신착순</option>
-												</select>
-												<ul class="sorting-lst js-sorting" aria-label="검색 목록 보기 타입"><!-- 만들어둔 js 안쓸 경우, js-sorting 빼시면 됩니다. -->
-													<li><button type="button" aria-selected="true" aria-controls="table-type" data-class="tbl-lst_list" class="btn-type_list"><span>목록형</span></button></li>
-													<li><button type="button" aria-controls="table-type" data-class="tbl-lst_gallery" class="btn-type_gallery"><span>갤러리형</span></button></li>
+									<!-- 서브 탭 컨텐츠 -->
+									<div id="subtabcontent" role="tabpanel">
+										<!-- 검색 -->
+										<div class="top-search-zone bgcolor">
+											<p class="total-length">전체게시물 <em class="bold point1">22</em>건 / <span class="totalpage">1</span>page</p>
+											<div class="form3">
+												<ul class="radio-lst">
+													<li><span class="comp-radio"><input type="radio" name="show" id="show1" checked="checked"><label for="show1">모두보기</label></span></li>
+													<li><span class="comp-radio"><input type="radio" name="show" id="show2"><label for="show2">대출가능한 전자책만 보기</label></span></li>
 												</ul>
-											</div>
-										</div>
-									</div>
-									<!--// 검색 -->
-
-									<!-- 목록 -->
-									<ul id="table-type" class="tbl-lst_list"><!-- 갤러리형 class="tbl-lst_gallery" / 목록형 class="tbl-lst_list" -->
-										<li>
-											<div class="thumb"><a href="#"><img src="../../static/images/ebooksys/temp/@img.png" alt="건지 감자껍질파이 북클럽 (개정판)"></a></div>
-											<div class="infor">
-												<div class="namegroup">
-													<em class="flag">문학</em>
-													<span class="name">건지 감자껍질파이 북클럽 (개정판)</span>
+												<div class="group">
+													<select name="" id="" title="도서 목록 분류 선택" class="comp-select_h42">
+														<option value="">신착순</option>
+													</select>
+													<ul class="sorting-lst js-sorting" aria-label="검색 목록 보기 타입"><!-- 만들어둔 js 안쓸 경우, js-sorting 빼시면 됩니다. -->
+														<li><button type="button" aria-selected="true" aria-controls="table-type" data-class="tbl-lst_list" class="btn-type_list"><span>목록형</span></button></li>
+														<li><button type="button" aria-controls="table-type" data-class="tbl-lst_gallery" class="btn-type_gallery"><span>갤러리형</span></button></li>
+													</ul>
 												</div>
-												
-												
 											</div>
-										</li>
-									</ul>
-									<!-- //목록 -->
-									
-									<!-- 페이징 -->
-									<div class="comp-paging" aria-label="페이지 선택" role="navigation">
-										<div>
-											<p class="allprev"><a href="#"><span>처음으로 이동</span></a></p>
-											<p class="prev"><a href="#"><span>이전으로 이동</span></a></p>
-											<ol class="number">
-												<li><a href="#" aria-live="assertive" aria-current="page"><span>1</span></a></li><!-- 개발시 현재페이지 숫자에 aria-current='page' 속성 추가 -->
-												<li><a href="#" aria-live="assertive"><span>2</span></a></li>
-												<li><a href="#" aria-live="assertive"><span>3</span></a></li>
-												<li><a href="#" aria-live="assertive"><span>4</span></a></li>
-												<li><a href="#" aria-live="assertive"><span>5</span></a></li>
-											</ol>
-											<p class="next"><a href="#"><span>다음으로 이동</span></a></p>
-											<p class="allnext"><a href="#"><span>마지막으로 이동</span></a></p>
 										</div>
+										<!--// 검색 -->
+
+										<!-- 목록 -->
+										<ul id="table-type" class="tbl-lst_list"><!-- 갤러리형 class="tbl-lst_gallery" / 목록형 class="tbl-lst_list" -->
+											<li>
+												<a href="#" class="hoverlink">
+													<div class="thumb"><img src="../../static/images/ebooksys/temp/@img2.png" alt="건지 감자껍질파이 북클럽 (개정판)"></div>
+													<div class="infor">
+														<div class="namegroup">
+															<em class="flag">문학</em>
+															<span class="name">건지 감자껍질파이 북클럽 (개정판)</span>
+														</div>
+														<ul class="infor-lst">
+															<li><span class="tit">저자 : </span><span class="cont">가와사키 쇼헤이</span></li>
+															<li><span class="tit">출판사 : </span><span class="cont">도서출판 유유</span></li>
+															<li><span class="tit">출판년도 : </span><span class="cont">0000-00-00</span></li>
+															<li><span class="tit">공급 : </span><span class="cont">(주)북큐브네트웍스 (2018-11-27)</span></li>
+															<li><span class="tit">지원단말기 : </span><span class="cont">PC/스마트기기</span></li>
+														</ul>
+														<ul class="state-lst">
+															<li>대출<span class="hid">가능</span> <em class="num">0/1</em></li>
+															<li>예약 <em class="num">0</em></li>
+															<li>누적대출 <em class="num">0</em></li>
+															<li>추천 <em class="num">0</em></li>
+														</ul>
+														<p class="desc">2009년 미국 소설 베스트셀러 4위! 2008년 아마존·뉴욕타임스 베스트셀러 1위! 2008년 워싱턴 포스트 “Best Books” 미국&middot;프랑스&middot;호주 등 전 세계 30여 개국에서 베스트셀러! 2018년 전 세계 2...</p>
+													</div>
+												</a>
+												<div class="btn-group">
+													<div>
+														<a href="#" class="comm-btn_type4_round__deepyellow"><span>대출하기</span></a>
+														<a href="#" class="comm-btn_type4_round__lightyellow"><span>추천하기</span></a>
+													</div>
+													<div class="qrcode"><img src="../../static/images/ebooksys/temp/@qr.png" alt="건지 감자껍질파이 북클럽 (개정판) QR 코드"></div>
+												</div>
+											</li>
+
+											<li>
+												<a href="#" class="hoverlink">
+													<div class="thumb"><img src="../../static/images/ebooksys/temp/@img2.png" alt="건지 감자껍질파이 북클럽 (개정판)"></div>
+													<div class="infor">
+														<div class="namegroup">
+															<em class="flag">문학</em>
+															<span class="name">건지 감자껍질파이 북클럽 (개정판)</span>
+														</div>
+														<ul class="infor-lst">
+															<li><span class="tit">저자 : </span><span class="cont">가와사키 쇼헤이</span></li>
+															<li><span class="tit">출판사 : </span><span class="cont">도서출판 유유</span></li>
+															<li><span class="tit">출판년도 : </span><span class="cont">0000-00-00</span></li>
+															<li><span class="tit">공급 : </span><span class="cont">(주)북큐브네트웍스 (2018-11-27)</span></li>
+															<li><span class="tit">지원단말기 : </span><span class="cont">PC/스마트기기</span></li>
+														</ul>
+														<ul class="state-lst">
+															<li>대출<span class="hid">가능</span> <em class="num">0/1</em></li>
+															<li>예약 <em class="num">0</em></li>
+															<li>누적대출 <em class="num">0</em></li>
+															<li>추천 <em class="num">0</em></li>
+														</ul>
+														<p class="desc">2009년 미국 소설 베스트셀러 4위! 2008년 아마존·뉴욕타임스 베스트셀러 1위! 2008년 워싱턴 포스트 “Best Books” 미국&middot;프랑스&middot;호주 등 전 세계 30여 개국에서 베스트셀러! 2018년 전 세계 2...</p>
+													</div>
+												</a>
+												<div class="btn-group">
+													<div>
+														<a href="#" class="comm-btn_type4_round__deepyellow"><span>대출하기</span></a>
+														<a href="#" class="comm-btn_type4_round__lightyellow"><span>추천하기</span></a>
+													</div>
+													<div class="qrcode"><img src="../../static/images/ebooksys/temp/@qr.png" alt="건지 감자껍질파이 북클럽 (개정판) QR 코드"></div>
+												</div>
+											</li>
+
+											<li>
+												<a href="#" class="hoverlink">
+													<div class="thumb"><img src="../../static/images/ebooksys/temp/@img2.png" alt="건지 감자껍질파이 북클럽 (개정판)"></div>
+													<div class="infor">
+														<div class="namegroup">
+															<em class="flag">문학</em>
+															<span class="name">건지 감자껍질파이 북클럽 (개정판)</span>
+														</div>
+														<ul class="infor-lst">
+															<li><span class="tit">저자 : </span><span class="cont">가와사키 쇼헤이</span></li>
+															<li><span class="tit">출판사 : </span><span class="cont">도서출판 유유</span></li>
+															<li><span class="tit">출판년도 : </span><span class="cont">0000-00-00</span></li>
+															<li><span class="tit">공급 : </span><span class="cont">(주)북큐브네트웍스 (2018-11-27)</span></li>
+															<li><span class="tit">지원단말기 : </span><span class="cont">PC/스마트기기</span></li>
+														</ul>
+														<ul class="state-lst">
+															<li>대출<span class="hid">가능</span> <em class="num">0/1</em></li>
+															<li>예약 <em class="num">0</em></li>
+															<li>누적대출 <em class="num">0</em></li>
+															<li>추천 <em class="num">0</em></li>
+														</ul>
+														<p class="desc">2009년 미국 소설 베스트셀러 4위! 2008년 아마존·뉴욕타임스 베스트셀러 1위! 2008년 워싱턴 포스트 “Best Books” 미국&middot;프랑스&middot;호주 등 전 세계 30여 개국에서 베스트셀러! 2018년 전 세계 2...</p>
+													</div>
+												</a>
+												<div class="btn-group">
+													<div>
+														<a href="#" class="comm-btn_type4_round__deepyellow"><span>대출하기</span></a>
+														<a href="#" class="comm-btn_type4_round__lightyellow"><span>추천하기</span></a>
+													</div>
+													<div class="qrcode"><img src="../../static/images/ebooksys/temp/@qr.png" alt="건지 감자껍질파이 북클럽 (개정판) QR 코드"></div>
+												</div>
+											</li>
+
+											<li>
+												<a href="#" class="hoverlink">
+													<div class="thumb"><img src="../../static/images/ebooksys/temp/@img2.png" alt="건지 감자껍질파이 북클럽 (개정판)"></div>
+													<div class="infor">
+														<div class="namegroup">
+															<em class="flag">문학</em>
+															<span class="name">건지 감자껍질파이 북클럽 (개정판)</span>
+														</div>
+														<ul class="infor-lst">
+															<li><span class="tit">저자 : </span><span class="cont">가와사키 쇼헤이</span></li>
+															<li><span class="tit">출판사 : </span><span class="cont">도서출판 유유</span></li>
+															<li><span class="tit">출판년도 : </span><span class="cont">0000-00-00</span></li>
+															<li><span class="tit">공급 : </span><span class="cont">(주)북큐브네트웍스 (2018-11-27)</span></li>
+															<li><span class="tit">지원단말기 : </span><span class="cont">PC/스마트기기</span></li>
+														</ul>
+														<ul class="state-lst">
+															<li>대출<span class="hid">가능</span> <em class="num">0/1</em></li>
+															<li>예약 <em class="num">0</em></li>
+															<li>누적대출 <em class="num">0</em></li>
+															<li>추천 <em class="num">0</em></li>
+														</ul>
+														<p class="desc">2009년 미국 소설 베스트셀러 4위! 2008년 아마존·뉴욕타임스 베스트셀러 1위! 2008년 워싱턴 포스트 “Best Books” 미국&middot;프랑스&middot;호주 등 전 세계 30여 개국에서 베스트셀러! 2018년 전 세계 2...</p>
+													</div>
+												</a>
+												<div class="btn-group">
+													<div>
+														<a href="#" class="comm-btn_type4_round__deepyellow"><span>대출하기</span></a>
+														<a href="#" class="comm-btn_type4_round__lightyellow"><span>추천하기</span></a>
+													</div>
+													<div class="qrcode"><img src="../../static/images/ebooksys/temp/@qr.png" alt="건지 감자껍질파이 북클럽 (개정판) QR 코드"></div>
+												</div>
+											</li>
+
+											<li>
+												<a href="#" class="hoverlink">
+													<div class="thumb"><img src="../../static/images/ebooksys/temp/@img2.png" alt="건지 감자껍질파이 북클럽 (개정판)"></div>
+													<div class="infor">
+														<div class="namegroup">
+															<em class="flag">문학</em>
+															<span class="name">건지 감자껍질파이 북클럽 (개정판)</span>
+														</div>
+														<ul class="infor-lst">
+															<li><span class="tit">저자 : </span><span class="cont">가와사키 쇼헤이</span></li>
+															<li><span class="tit">출판사 : </span><span class="cont">도서출판 유유</span></li>
+															<li><span class="tit">출판년도 : </span><span class="cont">0000-00-00</span></li>
+															<li><span class="tit">공급 : </span><span class="cont">(주)북큐브네트웍스 (2018-11-27)</span></li>
+															<li><span class="tit">지원단말기 : </span><span class="cont">PC/스마트기기</span></li>
+														</ul>
+														<ul class="state-lst">
+															<li>대출<span class="hid">가능</span> <em class="num">0/1</em></li>
+															<li>예약 <em class="num">0</em></li>
+															<li>누적대출 <em class="num">0</em></li>
+															<li>추천 <em class="num">0</em></li>
+														</ul>
+														<p class="desc">2009년 미국 소설 베스트셀러 4위! 2008년 아마존·뉴욕타임스 베스트셀러 1위! 2008년 워싱턴 포스트 “Best Books” 미국&middot;프랑스&middot;호주 등 전 세계 30여 개국에서 베스트셀러! 2018년 전 세계 2...</p>
+													</div>
+												</a>
+												<div class="btn-group">
+													<div>
+														<a href="#" class="comm-btn_type4_round__deepyellow"><span>대출하기</span></a>
+														<a href="#" class="comm-btn_type4_round__lightyellow"><span>추천하기</span></a>
+													</div>
+													<div class="qrcode"><img src="../../static/images/ebooksys/temp/@qr.png" alt="건지 감자껍질파이 북클럽 (개정판) QR 코드"></div>
+												</div>
+											</li>
+
+											<li>
+												<a href="#" class="hoverlink">
+													<div class="thumb"><img src="../../static/images/ebooksys/temp/@img2.png" alt="건지 감자껍질파이 북클럽 (개정판)"></div>
+													<div class="infor">
+														<div class="namegroup">
+															<em class="flag">문학</em>
+															<span class="name">건지 감자껍질파이 북클럽 (개정판)</span>
+														</div>
+														<ul class="infor-lst">
+															<li><span class="tit">저자 : </span><span class="cont">가와사키 쇼헤이</span></li>
+															<li><span class="tit">출판사 : </span><span class="cont">도서출판 유유</span></li>
+															<li><span class="tit">출판년도 : </span><span class="cont">0000-00-00</span></li>
+															<li><span class="tit">공급 : </span><span class="cont">(주)북큐브네트웍스 (2018-11-27)</span></li>
+															<li><span class="tit">지원단말기 : </span><span class="cont">PC/스마트기기</span></li>
+														</ul>
+														<ul class="state-lst">
+															<li>대출<span class="hid">가능</span> <em class="num">0/1</em></li>
+															<li>예약 <em class="num">0</em></li>
+															<li>누적대출 <em class="num">0</em></li>
+															<li>추천 <em class="num">0</em></li>
+														</ul>
+														<p class="desc">2009년 미국 소설 베스트셀러 4위! 2008년 아마존·뉴욕타임스 베스트셀러 1위! 2008년 워싱턴 포스트 “Best Books” 미국&middot;프랑스&middot;호주 등 전 세계 30여 개국에서 베스트셀러! 2018년 전 세계 2...</p>
+													</div>
+												</a>
+												<div class="btn-group">
+													<div>
+														<a href="#" class="comm-btn_type4_round__deepyellow"><span>대출하기</span></a>
+														<a href="#" class="comm-btn_type4_round__lightyellow"><span>추천하기</span></a>
+													</div>
+													<div class="qrcode"><img src="../../static/images/ebooksys/temp/@qr.png" alt="건지 감자껍질파이 북클럽 (개정판) QR 코드"></div>
+												</div>
+											</li>
+
+											<li>
+												<a href="#" class="hoverlink">
+													<div class="thumb"><img src="../../static/images/ebooksys/temp/@img2.png" alt="건지 감자껍질파이 북클럽 (개정판)"></div>
+													<div class="infor">
+														<div class="namegroup">
+															<em class="flag">문학</em>
+															<span class="name">건지 감자껍질파이 북클럽 (개정판)</span>
+														</div>
+														<ul class="infor-lst">
+															<li><span class="tit">저자 : </span><span class="cont">가와사키 쇼헤이</span></li>
+															<li><span class="tit">출판사 : </span><span class="cont">도서출판 유유</span></li>
+															<li><span class="tit">출판년도 : </span><span class="cont">0000-00-00</span></li>
+															<li><span class="tit">공급 : </span><span class="cont">(주)북큐브네트웍스 (2018-11-27)</span></li>
+															<li><span class="tit">지원단말기 : </span><span class="cont">PC/스마트기기</span></li>
+														</ul>
+														<ul class="state-lst">
+															<li>대출<span class="hid">가능</span> <em class="num">0/1</em></li>
+															<li>예약 <em class="num">0</em></li>
+															<li>누적대출 <em class="num">0</em></li>
+															<li>추천 <em class="num">0</em></li>
+														</ul>
+														<p class="desc">2009년 미국 소설 베스트셀러 4위! 2008년 아마존·뉴욕타임스 베스트셀러 1위! 2008년 워싱턴 포스트 “Best Books” 미국&middot;프랑스&middot;호주 등 전 세계 30여 개국에서 베스트셀러! 2018년 전 세계 2...</p>
+													</div>
+												</a>
+												<div class="btn-group">
+													<div>
+														<a href="#" class="comm-btn_type4_round__deepyellow"><span>대출하기</span></a>
+														<a href="#" class="comm-btn_type4_round__lightyellow"><span>추천하기</span></a>
+													</div>
+													<div class="qrcode"><img src="../../static/images/ebooksys/temp/@qr.png" alt="건지 감자껍질파이 북클럽 (개정판) QR 코드"></div>
+												</div>
+											</li>
+
+											<li>
+												<a href="#" class="hoverlink">
+													<div class="thumb"><img src="../../static/images/ebooksys/temp/@img2.png" alt="건지 감자껍질파이 북클럽 (개정판)"></div>
+													<div class="infor">
+														<div class="namegroup">
+															<em class="flag">문학</em>
+															<span class="name">건지 감자껍질파이 북클럽 (개정판)</span>
+														</div>
+														<ul class="infor-lst">
+															<li><span class="tit">저자 : </span><span class="cont">가와사키 쇼헤이</span></li>
+															<li><span class="tit">출판사 : </span><span class="cont">도서출판 유유</span></li>
+															<li><span class="tit">출판년도 : </span><span class="cont">0000-00-00</span></li>
+															<li><span class="tit">공급 : </span><span class="cont">(주)북큐브네트웍스 (2018-11-27)</span></li>
+															<li><span class="tit">지원단말기 : </span><span class="cont">PC/스마트기기</span></li>
+														</ul>
+														<ul class="state-lst">
+															<li>대출<span class="hid">가능</span> <em class="num">0/1</em></li>
+															<li>예약 <em class="num">0</em></li>
+															<li>누적대출 <em class="num">0</em></li>
+															<li>추천 <em class="num">0</em></li>
+														</ul>
+														<p class="desc">2009년 미국 소설 베스트셀러 4위! 2008년 아마존·뉴욕타임스 베스트셀러 1위! 2008년 워싱턴 포스트 “Best Books” 미국&middot;프랑스&middot;호주 등 전 세계 30여 개국에서 베스트셀러! 2018년 전 세계 2...</p>
+													</div>
+												</a>
+												<div class="btn-group">
+													<div>
+														<a href="#" class="comm-btn_type4_round__deepyellow"><span>대출하기</span></a>
+														<a href="#" class="comm-btn_type4_round__lightyellow"><span>추천하기</span></a>
+													</div>
+													<div class="qrcode"><img src="../../static/images/ebooksys/temp/@qr.png" alt="건지 감자껍질파이 북클럽 (개정판) QR 코드"></div>
+												</div>
+											</li>
+										</ul>
+										<!-- //목록 -->
+										
+										<!-- 페이징 -->
+										<div class="comp-paging" aria-label="페이지 선택" role="navigation">
+											<div>
+												<p class="allprev"><a href="#"><span>처음으로 이동</span></a></p>
+												<p class="prev"><a href="#"><span>이전으로 이동</span></a></p>
+												<ol class="number">
+													<li><a href="#" aria-live="assertive" aria-current="page"><span>1</span></a></li><!-- 개발시 현재페이지 숫자에 aria-current='page' 속성 추가 -->
+													<li><a href="#" aria-live="assertive"><span>2</span></a></li>
+													<li><a href="#" aria-live="assertive"><span>3</span></a></li>
+													<li><a href="#" aria-live="assertive"><span>4</span></a></li>
+													<li><a href="#" aria-live="assertive"><span>5</span></a></li>
+												</ol>
+												<p class="next"><a href="#"><span>다음으로 이동</span></a></p>
+												<p class="allnext"><a href="#"><span>마지막으로 이동</span></a></p>
+											</div>
+										</div>
+										<!--// 페이징 -->
 									</div>
-									<!--// 페이징 -->
+									<!--// 서브 탭 컨텐츠 -->
 								</div>
 								<!--// 탭 컨텐츠 -->
 							</div>

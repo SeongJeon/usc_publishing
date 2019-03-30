@@ -496,10 +496,94 @@ SUB PAGE
 .ebooksys .books-detail-contents {display: none; padding:0 20px; }
 /* 도서 목록 */
 .ebooksys {
-	.books-category-tab .number {display: block; font-size: 15px;}
+	.books-category-tab {
+		margin-bottom: 20px;
+		.number {display: block; font-size: 15px;}
+	}
 
-	.tbl-lst_list {
-		
+	ul[id=table-type] {
+		margin-top: 15px;
+		// 갤러리형
+		&.tbl-lst_gallery {
+			overflow:hidden;
+			& > li {position: relative; float: left; width: 240px; height:390px; margin-left: 16px; border:1px solid #c7c1bf; box-sizing: border-box; color:#333;}
+			& > li:nth-child(4n+1) {margin-left: 0;}
+			& > li:nth-child(4) ~ li {margin-top: 30px;}
+			& > li:hover .btn-group {display: table;}
+			& > li:focus .btn-group {display: table;}
+			.hoverlink {display: block; padding:15px 13px 13px; }
+			.namegroup {
+				margin-top: 20px;
+				.name {display:block; overflow:hidden; width:100%; font-size: 18px; font-family: $font2; text-align: center; white-space: nowrap; text-overflow:ellipsis;}
+				.flag {display: none}
+			}
+			.thumb {
+				width: 138px; height: 192px; margin:0 auto; @include background("ebooksys/subpage/img_book.png",no-repeat 0 0);
+				img {width: 128px; height: 180px;}
+			}
+			.btn-group {
+				display: none; position: absolute; left:0; top:0; width: 100%; height:100%; background:rgba(0,0,0,0.6); text-align: center; z-index: 10;
+				& > div {display: table-cell; vertical-align: middle;}
+				.qrcode {display: none}
+				*[class^=comm-btn] {display: block; margin:0 auto; width:120px;}
+				*[class^=comm-btn] + * {margin-top: 10px}
+			}
+			.infor-lst {
+				font-size: 15px; line-height: 24px; margin-top: 11px;
+				li:before {display: inline-block; content: "-"; margin-right: 2px;}
+				li:nth-child(2),
+				li:nth-child(4) {display: none;}
+				.cont {display: inline-block; vertical-align: middle; max-width: 75%; overflow: hidden; white-space: nowrap; text-overflow:ellipsis; }
+			}
+			.state-lst {
+				background:#ededed; color:#f27405; font-family: $font2; padding:0 15px; margin-top: 6px;
+				li {display: none; line-height: 35px;}
+				li:first-child {display: block;}
+				.num {float: right;}
+			}
+			.desc {display: none}
+		}
+		// 목록형
+		&.tbl-lst_list {
+			border-top: 1px solid #c7c1bf;
+			& > li {position: relative; border-bottom: 1px solid #c7c1bf; color:#333;}
+			.hoverlink {position:relative; display: block; padding:20px 20px;}
+			.thumb {
+				position: absolute; left:20px; top:20px; width: 172px; height: 238px; @include background("ebooksys/subpage/img_book_list.png",no-repeat 0 0);
+				img {width: 158px; height: 225px;}
+			}
+			.infor {
+				padding-left: 216px; padding-right: 165px;
+				.namegroup {
+					padding-top: 8px;
+					.name {display: block; overflow: hidden; width: 100%; margin-top: 8px; font-size: 20px; font-family: $font2; white-space: nowrap; text-overflow:ellipsis;}
+					.flag {display: inline-block; font-size: 17px; color:#fff; line-height: 28px; background:#cc9966; min-width:70px; padding:0 12px; box-sizing: border-box; border-radius: 100px; text-align: center;}
+				}
+			}
+			.infor-lst {
+				overflow:hidden; margin-top:12px; font-size: 16px; line-height: 24px;
+				li {float: left;}
+				li:nth-child(1) .tit, li:nth-child(2) .tit, li:nth-child(3) .tit {display: none;}
+				li:after {display: inline-block; content: "|"; margin:0 10px;}
+				li:nth-child(3):after, li:nth-child(5):after {display: none;}
+			}
+			.state-lst {
+				overflow:hidden; background:#ededed; font-size: 18px; line-height: 40px; padding:0 20px; margin-top: 15px;
+				.hid {display: none;}
+				li {float:left;}
+				li + li:before {display: inline-block; content: "/"; margin:0 15px 0 20px;}
+			}
+			.btn-group {
+				width: 120px; position: absolute; right: 25px; top:35px;
+				.qrcode {
+					border:2px solid #dddbdb; border-radius: 5px; padding:12px 15px;
+					img {width: 100%;}
+				}
+				*[class^=comm-btn] {width: 100%; margin-bottom: 5px;}
+			}
+			.desc {display:-webkit-box; overflow:hidden; max-height: 40px; font-size: 14px; color:#8a8a8a; line-height: 20px; margin-top: 14px;-webkit-line-clamp:2; -webkit-box-orient:vertical;}
+		}
+		.btn-group *[class^=comm-btn] {font-family: $font2;}
 	}
 }
 
@@ -836,13 +920,78 @@ SUBPATE
 /* 도서 목록 */
 .ebooksys {
 	.books-category-tab {
-		.number {font-size:1rem;} 
+		margin-bottom:2rem;
+		.number {font-size: 1rem;}
 	}
-
-	.tbl-lst_list {}
-
+	ul[id=table-type] {
+		margin-top: 2rem;
+		// 갤러리형
+		&.tbl-lst_gallery {
+			& > li {width:49%; min-height:34rem; height: auto; margin-left:0;}
+			& > li:nth-child(even) {margin-left: 2%;}
+			& > li:nth-child(2) ~ li {margin-top:1rem;}
+			& > li:focus .btn-group,
+			& > li:hover .btn-group {display: block;}
+			.hoverlink {padding:2rem 1rem; }
+			.namegroup {
+				margin-top: 1rem;
+				.name {font-size:1.4rem; }
+			}
+			.thumb {
+				 width: 12rem; height:17rem; margin:0 auto; background-size: 100% auto;
+				img {width: 11rem; height: auto;}
+			}
+			.btn-group {
+				display: none; position: absolute; left:0; top:0; width: 100%; height:100%; background:rgba(0,0,0,0.6); text-align: center; z-index: 10;
+				& > div {position: absolute; left:50%; top:50%; margin-left: -5rem; margin-top: -3.8rem}
+				*[class^=comm-btn] {display: block; margin:0 auto; width:10rem;}
+				*[class^=comm-btn] + * {margin-top:1rem}
+			}
+			.infor-lst {
+				font-size:1.2rem; line-height:1.8rem; margin-top:1rem;
+				.cont {max-width: 70%;}
+			}
+			.state-lst {
+				padding:0 1rem; margin-top:0.5rem; font-size: 1.4rem;
+				li {line-height:3.5rem;}
+			}
+		}
+		// 목록형
+		&.tbl-lst_list {
+			.hoverlink {padding:2rem 1rem 1rem;}
+			.thumb {
+				position: static; width: 15rem; height:22rem; margin:0 auto; background-size: 100% auto;
+				img {width: 14rem; height:auto;}
+			}
+			.infor {
+				padding-left: 0; padding-right:0; 
+				.namegroup {
+					padding-top:1rem;
+					.name {margin-top:0.7rem; font-size:1.4rem;}
+					.flag {font-size:1.2rem; line-height:2rem; min-width:5rem; padding:0 1rem;}
+				}
+			}
+			.infor-lst {
+				margin-top:0.8rem; font-size:1.2rem; line-height:1.8rem;
+				li:after {margin:0 0.5rem;}
+				li:nth-child(4):after {display: none}
+			}
+			.state-lst {
+				font-size:1.2rem; line-height:3.5rem; padding:0 1rem; margin-top:0.5rem; text-align: center;
+				li {float: none; display: inline-block;}
+				li + li:before {margin:0 1rem;}
+			}
+			.btn-group {
+				position: static; display: table; overflow:hidden; padding:0 1rem 2rem; width: 100%;
+				& > div {display:table-cell; width:80%; padding-right: 1rem; vertical-align: bottom;}
+				*[class^=comm-btn] {width: 100%; margin-top: 0.5rem; margin-bottom: 0;}
+				.qrcode {display:table-cell; vertical-align: middle; padding:0.5rem; width:20%;}
+			}
+			.desc { max-height: 40px; font-size:1rem; line-height:1.8rem; margin-top:1rem; }
+		}
+	}
 }
- 
+
 
 
 

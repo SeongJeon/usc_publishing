@@ -135,6 +135,130 @@ SUB PAGE
 .tp-survey-view .view-list .graph-gray > li .graph .inner {height:25px; line-height:25px; background:#525252; border-radius:15px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:16px; color:#fff; text-align:center;}
 .tp-survey-view .view-list .graph-gray > li .txt {float:left; width:55%; padding:0 0 0 15px; font-size:16px; color:#787878; box-sizing:border-box;}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
@@ -172,18 +296,19 @@ MEDIA QUERY
 	.tp-survey-view .bd-content .view-list {padding:1rem 0;}
 	.tp-survey-view .bd-content .view-list .tit {line-height:2rem; padding-left:2.5rem;font-size:1.4rem;}
 	.tp-survey-view .bd-content .view-list .tit .num {top:0;width:2rem;height:2rem; line-height:2rem;font-size:1.3rem;}
-	.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label:before {width:1.8rem; height:1.8rem;}
-	.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label .txt {margin-top:.5rem; line-height:1.6rem; font-size:1.2rem;}
+	.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] {margin-top: 0.5rem}
+	.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label {padding-left: 2.5rem !important; line-height: 1.8rem;}
+	.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label:before {position:absolute; left:0; top:0 !important; width:1.8rem; height:1.8rem;}
+	.tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label .txt {margin-top: 0; line-height:1.8rem; font-size:1.2rem;}
 	.tp-survey-view .bd-content .view-list .transverse {margin-top:.8rem;}
-	.tp-survey-view .bd-content .view-list .vertical {margin-top:1rem;}
-	.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big]{margin-top:0.5rem;}
-	.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label {padding-left:2.5rem;}
-	.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label:before {top:0;}
+	.tp-survey-view .bd-content .view-list .transverse:before {display: none}
+	.tp-survey-view .bd-content .view-list .transverse *[class^=comp-radio][class*=_big] {display:block; float: none; width: 100%; text-align: left;}
 	.tp-survey-view .bd-content .view-list .comp-input_wrap,
 	.tp-survey-view .bd-content .view-list .txt-wrap {margin:1rem 0 0 0;}
 	.tp-survey-view .bd-content .view-list .txt-wrap textarea {height:7rem;}
 	.tp-survey-view .bd-content .view-list .comp-input_wrap {padding-left:8rem;}
 	.tp-survey-view .comp-input_wrap .txt {font-size:1.2rem;}
+
 
 	/* 설문조사 결과 */
 	.tp-survey-view .view-list .graph-gray {margin-top:1rem;}

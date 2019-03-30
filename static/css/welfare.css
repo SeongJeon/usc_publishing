@@ -79,19 +79,18 @@ SUB PAGE
 .tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label:before {width:22px; height:22px; margin:0 auto; background-size:100%;}
 
 .tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label .txt {display:block; margin-top:10px; font-family:'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:16px; color:#787878;}
-.tp-survey-view .bd-content .view-list .transverse {overflow:hidden;}
-.tp-survey-view .bd-content .view-list .transverse {position:relative; margin-top:15px;}
+.tp-survey-view .bd-content .view-list .transverse {position:relative; overflow:hidden; margin-top:15px;}
 .tp-survey-view .bd-content .view-list .transverse:before {position:absolute; left:0; top:8px; display:block; content:""; width:100%; height:5px; background:#f3dd66; border-radius:2px;}
-.tp-survey-view .bd-content .view-list .transverse *[class^=comp-radio][class*=_big] {float:left; width:170px;}
-.tp-survey-view .bd-content .view-list .transverse *[class^=comp-radio][class*=_big] {position:relative; text-align:center; z-index:10;}
+.tp-survey-view .bd-content .view-list .transverse *[class^=comp-radio][class*=_big] {position:relative; float:left; width:170px; text-align:center; z-index:10;}
  .tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] input {position:absolute; left:-9999em;} 
 /* .tp-survey-view .bd-content .view-list .transverse *[class^=comp-radio][class*=_big] label:before {display:block; margin:0 auto 10px auto;} */ 
-.tp-survey-view .bd-content .view-list .vertical {margin-top:15px;}
-.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] {display:block; margin-top:6px;}
-.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big]:first-child {margin-top:0;}
-.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label {position:relative; display:block; padding-left:32px;}
-.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label:before {position:absolute; left:0; top:2px;}
-.tp-survey-view .bd-content .view-list .vertical *[class^=comp-radio][class*=_big] label .txt {display:inline-block; margin:0;}
+.tp-survey-view .bd-content .view-list .transverse.vertical {margin-top:15px;}
+.tp-survey-view .bd-content .view-list .transverse.vertical:before {display:none;}
+.tp-survey-view .bd-content .view-list .transverse.vertical *[class^=comp-radio][class*=_big] {display:block; width:100%; margin-top:6px; text-align:left; }
+.tp-survey-view .bd-content .view-list .transverse.vertical *[class^=comp-radio][class*=_big]:first-child {margin-top:0;}
+.tp-survey-view .bd-content .view-list .transverse.vertical *[class^=comp-radio][class*=_big] label {position:relative; display:block; padding-left:32px;}
+.tp-survey-view .bd-content .view-list .transverse.vertical *[class^=comp-radio][class*=_big] label:before {position:absolute; left:0; top:2px;}
+.tp-survey-view .bd-content .view-list .transverse.vertical *[class^=comp-radio][class*=_big] label .txt {display:inline-block; margin:0;}
 .tp-survey-view .bd-content .view-list .comp-input_wrap,
 .tp-survey-view .bd-content .view-list .txt-wrap {margin:25px 20px 0 15px;}
 .tp-survey-view .bd-content .view-list .comp-input_wrap input[class^=comp-input] {background:#f4f7f9;}
@@ -131,6 +130,7 @@ SUB PAGE
 .tp-survey-view .view-list .graph-color .inner .case5:after {background:#1e78c4; z-index:16;}
 .tp-survey-view .view-list .graph-gray {margin:18px 0 0 0; padding:0 40px;}
 .tp-survey-view .view-list .graph-gray > li {overflow:hidden; margin-top:10px;}
+.tp-survey-view .view-list .graph-gray > li:first-child {margin-top:0;}
 .tp-survey-view .view-list .graph-gray > li .graph {float:left; width:45%;}
 .tp-survey-view .view-list .graph-gray > li .graph .inner {height:25px; line-height:25px; background:#525252; border-radius:15px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:16px; color:#fff; text-align:center;}
 .tp-survey-view .view-list .graph-gray > li .txt {float:left; width:55%; padding:0 0 0 15px; font-size:16px; color:#787878; box-sizing:border-box;}
@@ -184,6 +184,9 @@ MEDIA QUERY
 	.tp-survey-view .bd-content .view-list .txt-wrap textarea {height:7rem;}
 	.tp-survey-view .bd-content .view-list .comp-input_wrap {padding-left:8rem;}
 	.tp-survey-view .comp-input_wrap .txt {font-size:1.2rem;}
+
+	/* 설문조사 결과 */
+	.tp-survey-view .view-list .graph-gray {margin-top:1rem;}
 
 }
 @media (max-width:768px){

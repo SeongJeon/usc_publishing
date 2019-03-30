@@ -496,10 +496,11 @@ SUB PAGE
 .ebooksys .books-detail-contents {display: none; padding:0 20px; }
 /* 도서 목록 */
 .ebooksys {
-	.books-category-tab {
-		.number {display: block; font-size: 15px;}  
-	}
+	.books-category-tab .number {display: block; font-size: 15px;}
 
+	.tbl-lst_list {
+		
+	}
 }
 
 
@@ -837,6 +838,8 @@ SUBPATE
 	.books-category-tab {
 		.number {font-size:1rem;} 
 	}
+
+	.tbl-lst_list {}
 
 }
  

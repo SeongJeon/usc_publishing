@@ -77,6 +77,7 @@ SUB PAGE
 .tp-survey-view .bd-content .view-list .tit .num {position:absolute; left:0; top:-4px; display:block; width:30px; height:30px; line-height:30px; background:#fe970e; border-radius:100%; font-size:18px; color:#fff; text-align:center;}
 .tp-survey-view .bd-content .view-list .tit .num.gray {background:#707070;}
 .tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label:before {width:22px; height:22px; margin:0 auto; background-size:100%;}
+
 .tp-survey-view .bd-content .view-list *[class^=comp-radio][class*=_big] label .txt {display:block; margin-top:10px; font-family:'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:16px; color:#787878;}
 .tp-survey-view .bd-content .view-list .transverse {overflow:hidden;}
 .tp-survey-view .bd-content .view-list .transverse {position:relative; margin-top:15px;}

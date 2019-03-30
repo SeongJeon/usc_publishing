@@ -550,7 +550,8 @@ input[class^=comp-input][class*=_h42] { height: 42px; }
 input[class^=comp-input][class*=_h50] { height: 50px; }
 input[class^=comp-input][disabled=disabled] { background: #f4f7f9; }
 
-*[class^=comp-radio] label { font-size: 16px; color: #333; cursor: pointer; }
+*[class^=comp-radio] input { outline: none; }
+*[class^=comp-radio] label { display: inline-block; position: relative; font-size: 16px; color: #333; cursor: pointer; }
 *[class^=comp-radio] label:before { display: inline-block; width: 19px; height: 18px; margin-right: 8px; content: ""; background: url("../../static/images/common/form_radio1_off.png") no-repeat 50% 50%; vertical-align: middle; }
 *[class^=comp-radio] input:checked ~ label:before { background: url("../../static/images/common/form_radio1_on.png") no-repeat 50% 50%; }
 *[class^=comp-radio][class*=_big] label { font-size: 24px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #222; }
@@ -558,6 +559,7 @@ input[class^=comp-input][disabled=disabled] { background: #f4f7f9; }
 *[class^=comp-radio][class*=_big] label:before { width: 32px; height: 32px; margin-right: 14px; content: ""; background: url("../../static/images/common/form_radio3_off.png") no-repeat 50% 50%; background-size: 100% 100%; }
 *[class^=comp-radio][class*=_big] input:checked ~ label:before { background: url("../../static/images/common/form_radio3_on.png") no-repeat 50% 50%; background-size: 100% 100%; }
 
+*[class^=comp-check] input { outline: none; }
 *[class^=comp-check] label { font-size: 16px; color: #7f7f7f; cursor: pointer; }
 *[class^=comp-check] label:before { display: inline-block; width: 14px; height: 14px; margin-right: 5px; content: ""; vertical-align: middle; border: 1px solid #cfcfcf; position: relative; top: -1px; }
 *[class^=comp-check] input:checked ~ label:before { background: #cfcfcf; }

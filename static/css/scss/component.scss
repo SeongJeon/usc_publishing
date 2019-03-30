@@ -912,8 +912,9 @@ input[class^=comp-input] {
 	&[disabled=disabled] {background:#f4f7f9;}
 }
 *[class^=comp-radio] {
+	input {outline: none}
 	label {
-		font-size: 16px; color:#333; cursor: pointer;
+		display: inline-block; position: relative; font-size: 16px; color:#333; cursor: pointer; 
 		&:before {display:inline-block; width:19px; height: 18px; margin-right: 8px; content: ""; @include background("common/form_radio1_off.png",no-repeat 50% 50%); vertical-align: middle;}
 	}
 	input:checked ~ label:before {@include background("common/form_radio1_on.png",no-repeat 50% 50%);}
@@ -923,11 +924,12 @@ input[class^=comp-input] {
 			font-size: 24px; font-family: $font2; color:#222;
 			.sm {font-size:18px; font-family: $font1;}
 			&:before {width:32px; height:32px; margin-right:14px; content: ""; @include background("common/form_radio3_off.png",no-repeat 50% 50%); background-size: 100% 100%;}
-		}
+		} 
 		input:checked ~ label:before {@include background("common/form_radio3_on.png",no-repeat 50% 50%); background-size: 100% 100%;}
 	}
 }
 *[class^=comp-check] {
+	input {outline: none}
 	label {
 		font-size: 16px; color:#7f7f7f; cursor: pointer;
 		&:before {display:inline-block; width:14px; height:14px; margin-right:5px; content: ""; vertical-align: middle; border:1px solid #cfcfcf; position: relative; top:-1px;}

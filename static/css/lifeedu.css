@@ -57,12 +57,87 @@ LAYOUT
 /* ------------------------------------------------------
 COMMON
 ------------------------------------------------------ */
+.lifeedu .top-search-zone.bgcolor { background: #f1f6fc; }
+
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+.lifeedu-class-search .flag { padding: 0 20px; color: #417ff2; font-size: 16px; display: inline-block; border: 2px solid #417ff2; line-height: 30px; border-radius: 100px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu-class-search .flag:before { display: inline-block; vertical-align: middle; width: 26px; height: 17px; background: #417ff2 url("../../static/images/lifeedu/subpage/icon_class.png") no-repeat 50% 50%; margin-right: 7px; content: ""; }
+
+/* 강좌 상세 */
+.class-simple-infor { padding: 15px 20px 28px; position: relative; border: 1px solid #d1d1d1; border-top: 2px solid #014099; }
+.class-simple-infor .class-name .name { display: block; margin-top: 14px; color: #222; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 19px; padding-right: 85px; }
+.class-simple-infor .booking-state { position: absolute; right: -1px; top: -2px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; background: #014099; font-size: 17px; }
+.class-simple-infor .booking-state .sm { color: #fff475; font-size: 14px; display: block; padding-top: 23px; background: url("../../static/images/lifeedu/subpage/bg_txt.png") no-repeat 50% 9px; }
+.class-simple-infor .booking-state.not { background: #797979; }
+.class-simple-infor .class-lst { overflow: hidden; margin-top: 26px; }
+.class-simple-infor .class-lst li { position: relative; float: left; width: 50%; padding-left: 12px; box-sizing: border-box; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.class-simple-infor .class-lst li:before { display: inline-block; position: absolute; left: 0; top: 7px; width: 3px; height: 3px; background: #797979; content: ""; vertical-align: middle; }
+.class-simple-infor .class-lst li:nth-child(2) ~ li { margin-top: 12px; }
+.class-simple-infor .class-lst .tit { display: inline-block; width: 85px; float: left; color: #222; }
+.class-simple-infor .class-lst .cont { padding-left: 85px; }
+
+.class-detail-infor table[class^=comp-tbl] td { text-align: left !important; padding: 5px 20px !important; }
+.class-detail-infor table[class^=comp-tbl] tbody td + th { border-left-color: #7a7a7a; }
+.class-detail-infor table[class^=comp-tbl] tbody th + td { border-left: 0; line-height: 35px; }
+.class-detail-infor .down-lst .comm-btn_type2 { margin-left: 5px; }
+.class-detail-infor *[class*=_search] { float: right; }
+
+/* 강좌 검색 */
+.lifeedu .search-box-detail { padding: 35px 50px; background: #f1f6fc; border: 1px solid #d1d1d1; border-top: 2px solid #014099; border-bottom-color: #014099; }
+.lifeedu .search-box-detail .ebooksys-search-form { overflow: hidden; }
+.lifeedu .search-box-detail .ebooksys-search-form li { float: left; width: 50%; padding: 6px 0; }
+.lifeedu .search-box-detail .ebooksys-search-form li.pl { padding-left: 35px; box-sizing: border-box; }
+.lifeedu .search-box-detail .ebooksys-search-form li.pl:last-of-type .tit { width: 150px; }
+.lifeedu .search-box-detail .ebooksys-search-form li.pl:last-of-type .form { padding-left: 150px; }
+.lifeedu .search-box-detail .ebooksys-search-form li:nth-child(1) .tit, .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(4) .tit, .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(6) .tit { color: #014099; }
+.lifeedu .search-box-detail .ebooksys-search-form .tit { float: left; width: 95px; color: #111; font-size: 18px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 35px; }
+.lifeedu .search-box-detail .ebooksys-search-form .form { padding-left: 95px; }
+.lifeedu .search-box-detail .ebooksys-search-form .block + .block { margin-top: 12px; }
+.lifeedu .search-box-detail .ebooksys-search-form .term input { width: 153px; }
+.lifeedu .search-box-detail .comp-btn-zone *[class^=comm-btn] { width: 150px; }
+
+.lifeedu *[class^=class-lst][class*=_simpletype] { overflow: hidden; margin-top: 30px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li { float: left; width: 490px; height: 340px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(even) { margin-left: 30px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(2) ~ li { margin-top: 20px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li a { display: block; padding: 15px 20px 28px; width: 100%; height: 100%; position: relative; border: 1px solid #d1d1d1; border-top: 1px solid #014099; box-sizing: border-box; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-name .name { display: block; margin-top: 14px; color: #222; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 19px; padding-right: 85px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state { position: absolute; right: -1px; top: -1px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; background: #014099; font-size: 17px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state .sm { color: #fff475; font-size: 14px; display: block; padding-top: 23px; background: url("../../static/images/lifeedu/subpage/bg_txt.png") no-repeat 50% 9px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state.not { background: #797979; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst { overflow: hidden; margin-top: 26px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li { position: relative; padding-left: 12px; box-sizing: border-box; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:before { display: inline-block; position: absolute; left: 0; top: 7px; width: 3px; height: 3px; background: #797979; content: ""; vertical-align: middle; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:nth-child(1) ~ li { margin-top: 12px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst .tit { display: inline-block; width: 85px; float: left; color: #222; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst .cont { padding-left: 85px; color: #939393; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover { border: 3px solid #014099; padding: 13px 18px 26px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover .booking-state { top: -3px; right: -3px; }
+.lifeedu *[class^=class-lst][class*=_listtype] { margin-top: 30px; }
+.lifeedu *[class^=class-lst][class*=_listtype] .classflag { font-size: 15px; display: inline-block; vertical-align: middle; color: #fff; text-align: center; width: 22px; height: 22px; border-radius: 100px; line-height: 22px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu *[class^=class-lst][class*=_listtype] .classflag.recruit { background: #f0102a; }
+.lifeedu *[class^=class-lst][class*=_listtype] .classflag.term { background: #fd9807; }
+.lifeedu *[class^=class-lst][class*=_listtype] .classflag.online { background: #00a388; }
+.lifeedu *[class^=class-lst][class*=_listtype] .classflag.visit { background: #016dae; }
+.lifeedu *[class^=class-lst][class*=_listtype] .flag { padding: 0 10px; line-height: 22px; font-size: 12px; border-color: #79bd8f; color: #79bd8f; }
+.lifeedu *[class^=class-lst][class*=_listtype] .flag:before { width: 19px; height: 13px; margin-right: 5px; background-size: 100% 100%; background-color: #79bd8f; }
+.lifeedu *[class^=class-lst][class*=_listtype] .flag-lst { float: right; }
+.lifeedu *[class^=class-lst][class*=_listtype] .flag-lst li { float: left; font-size: 15px; color: #787878; margin-left: 10px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu *[class^=class-lst][class*=_listtype] .flag-lst .classflag { margin-right: 6px; }
+.lifeedu *[class^=class-lst][class*=_listtype] td { letter-spacing: -1px; }
+.lifeedu *[class^=class-lst][class*=_listtype] td .name { display: block; margin-top: 6px; }
+.lifeedu *[class^=class-lst][class*=_listtype] td *.btn-submit { display: inline-block; width: 56px; height: 56px; padding: 8px 12px 0; color: #fff; text-align: center; line-height: 20px; box-sizing: border-box; background: #417ff2; border-radius: 5px; letter-spacing: 0px; }
+.lifeedu *[class^=class-lst][class*=_listtype] td *.btn-submit.not { background: #9c9c9c; }
+.lifeedu *[class^=class-lst][class*=_listtype] td p { line-height: 22px; }
+.lifeedu *[class^=class-lst][class*=_listtype] td p + p { margin-top: 5px; }
+.lifeedu *[class^=class-lst][class*=_listtype] td p .classflag { margin-right: 8px; }
+.lifeedu *[class^=class-lst][class*=_listtype] td:first-child { text-align: left; }
+
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
@@ -87,4 +162,63 @@ MEDIA QUERY
   #wrap.lifeedu #container .breadcrumb-zone { border-top-color: #d6d5d5; }
   /* ------------------------------------------------------ COMMON ------------------------------------------------------ */
   /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
-  /* ------------------------------------------------------ SUBPATE ------------------------------------------------------ */ }
+  /* ------------------------------------------------------ SUBPATE ------------------------------------------------------ */
+  .lifeedu-class-search .flag { padding: 0 1rem; font-size: 1.2rem; line-height: 2rem; }
+  .lifeedu-class-search .flag:before { width: 1.5rem; height: 0.9rem; background-size: 100% auto; margin-right: 0.5rem; }
+  /* 강좌 상세 */
+  .class-simple-infor { padding: 1rem 1rem 1.5rem; }
+  .class-simple-infor .class-name .name { margin-top: 1rem; font-size: 1.4rem; padding-right: 7rem; }
+  .class-simple-infor .booking-state { width: 7rem; height: 7rem; padding-top: 1.5rem; font-size: 1.4rem; }
+  .class-simple-infor .booking-state .sm { font-size: 1rem; padding-top: 1.7rem; background-position: 50% 0.5rem; }
+  .class-simple-infor .class-lst { margin-top: 2rem; }
+  .class-simple-infor .class-lst li { float: none; width: 100%; padding-left: 12px; font-size: 1.2rem; }
+  .class-simple-infor .class-lst li:before { width: 2px; height: 2px; top: 0.5rem; }
+  .class-simple-infor .class-lst li:nth-child(1) ~ li { margin-top: 0.7rem; }
+  .class-simple-infor .class-lst .tit { display: inline-block; width: 85px; float: left; color: #222; }
+  .class-simple-infor .class-lst .cont { padding-left: 85px; }
+  .class-detail-infor table[class^=comp-tbl] tbody th + td { line-height: 3.3rem; }
+  .class-detail-infor .down-lst .comm-btn_type2 { padding: 0 0.5rem; }
+  .class-detail-infor *[class*=_search] { padding: 0 0.5rem; }
+  /* 강좌 검색 */
+  .lifeedu .search-box-detail { padding: 1rem 1rem 1.5rem; }
+  .lifeedu .search-box-detail .ebooksys-search-form li { float: none; width: 100%; padding: 0.5rem 0; }
+  .lifeedu .search-box-detail .ebooksys-search-form li.pl { padding-left: 0; }
+  .lifeedu .search-box-detail .ebooksys-search-form li.pl:last-of-type .tit { width: 38%; }
+  .lifeedu .search-box-detail .ebooksys-search-form li.pl:last-of-type .form { padding-left: 38%; }
+  .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(1) .tit, .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(4) .tit, .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(6) .tit { color: #111; }
+  .lifeedu .search-box-detail .ebooksys-search-form .tit { width: 30%; font-size: 1.3rem; line-height: 3.3rem; }
+  .lifeedu .search-box-detail .ebooksys-search-form .form { padding-left: 30%; }
+  .lifeedu .search-box-detail .ebooksys-search-form .block + .block { margin-top: 0.5rem; }
+  .lifeedu .search-box-detail .ebooksys-search-form .term { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .lifeedu .search-box-detail .ebooksys-search-form .term input { width: 100%; -webkit-flex: 1; flex: 1; }
+  .lifeedu .search-box-detail .ebooksys-search-form .term .txt { line-height: 3.3rem; margin: 0 0.5rem; }
+  .lifeedu .search-box-detail .comp-btn-zone *[class^=comm-btn] { min-width: auto; }
+  .lifeedu .search-box-detail .comp-btn-zone .p-right { position: static; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] { margin-top: 2rem; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li { width: 49%; min-height: 33rem; height: auto; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(even) { margin-left: 2%; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(1) ~ li { margin-top: 0; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(2) ~ li { margin-top: 1rem; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li a { padding: 4rem 1rem 1.5rem; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-name .name { overflow: hidden; width: 100%; margin-top: 1rem; font-size: 1.4rem; padding-right: 0; white-space: nowrap; text-overflow: ellipsis; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state { position: absolute; right: inherit; left: -1px; top: -1px; width: 100%; height: 3rem; padding: 0 1px; font-size: 1.2rem; box-sizing: content-box; line-height: 3rem; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state .sm { display: inline-block; vertical-align: middle; font-size: 1.2rem; padding-left: 2.7rem; padding-top: 0; margin-left: 1rem; background: url("../../static/images/lifeedu/subpage/bg_txt.png") no-repeat 0 50%; background-size: auto 20%; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst { margin-top: 1rem; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li { padding-left: 1rem; font-size: 1.1rem; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:before { top: 0.4rem; width: 2px; height: 2px; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:nth-child(1) ~ li { margin-top: 0.5rem; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst .tit { float: none; width: 100%; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst .cont { padding-left: 0; padding-top: 0.3rem; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover { border: 2px solid #014099; padding: 4.1rem 1.1rem 1.6rem; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover .booking-state { top: -2px; right: inherit; left: -2px; }
+  .lifeedu *[class^=class-lst][class*=_listtype] { margin-top: 2rem; }
+  .lifeedu *[class^=class-lst][class*=_listtype] .classflag { font-size: 1rem; width: 2rem; height: 2rem; line-height: 2rem; }
+  .lifeedu *[class^=class-lst][class*=_listtype] .flag { padding: 0 1rem; line-height: 2rem; font-size: 1rem; }
+  .lifeedu *[class^=class-lst][class*=_listtype] .flag:before { width: 19px; height: 13px; margin-right: 5px; background-size: 100% 100%; background-color: #79bd8f; }
+  .lifeedu *[class^=class-lst][class*=_listtype] .flag-lst li { font-size: 1.1rem; margin-left: 0.5rem; }
+  .lifeedu *[class^=class-lst][class*=_listtype] .flag-lst .classflag { margin-right: 0.2rem; }
+  .lifeedu *[class^=class-lst][class*=_listtype] td .name { margin-top: 0.5rem; }
+  .lifeedu *[class^=class-lst][class*=_listtype] td *.btn-submit { width: 5rem; height: 5rem; padding: 0.8rem 1rem 0; line-height: 1.8rem; }
+  .lifeedu *[class^=class-lst][class*=_listtype] td p { line-height: 2rem; }
+  .lifeedu *[class^=class-lst][class*=_listtype] td p + p { margin-top: 0.3rem; }
+  .lifeedu *[class^=class-lst][class*=_listtype] td p .classflag { margin-right: 0.3rem; } }

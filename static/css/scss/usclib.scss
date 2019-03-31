@@ -631,7 +631,7 @@ SUB PAGE
 		input {width:775px; margin-left: 15px;}
 	}
 	table[class^=comp-tbl][class*=_formtype] {
-		margin-top: 15px;
+		margin-top: 15px; border-top: 1px solid #d0cdcd;
 		tr > * {height: 55px}
 		th {font-family: $font2; font-size: 17px; width:130px; line-height: 42px; color:#333; background:#d8e9f2; }
 		td {padding:5px 10px;}
@@ -639,6 +639,9 @@ SUB PAGE
 	.w_year {
 		input {width:115px;}
 		.txt {font-size: 17px; color:#333; margin:0 5px;}
+	}
+	.comp-btn-zone {
+		* {width: 130px}
 	}
 }
 // 도서 상세보기

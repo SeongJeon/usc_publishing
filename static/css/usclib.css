@@ -314,12 +314,13 @@ SUB PAGE
 .usclib .search-box-detail .form-base-search { overflow: hidden; }
 .usclib .search-box-detail .form-base-search select { width: 160px; }
 .usclib .search-box-detail .form-base-search input { width: 775px; margin-left: 15px; }
-.usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] { margin-top: 15px; }
+.usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] { margin-top: 15px; border-top: 1px solid #d0cdcd; }
 .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] tr > * { height: 55px; }
 .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] th { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 17px; width: 130px; line-height: 42px; color: #333; background: #d8e9f2; }
 .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] td { padding: 5px 10px; }
 .usclib .search-box-detail .w_year input { width: 115px; }
 .usclib .search-box-detail .w_year .txt { font-size: 17px; color: #333; margin: 0 5px; }
+.usclib .search-box-detail .comp-btn-zone * { width: 130px; }
 
 .usclib .books-infor-zone { position: relative; }
 .usclib .books-infor-zone .thumb { position: absolute; left: 0; top: 0; width: 241px; height: 335px; background: url("../../static/images/usclib/subpage/img_book2.png") no-repeat 0 0; }

@@ -307,10 +307,24 @@ SUB PAGE
 .history .tp-history-con .date-list li .date {position:relative;margin-right:20px;padding-right:25px;font-size:16px;font-family:'NanumSquareEB';color:#b64926}
 .history .tp-history-con .date-list li .date:before {position:absolute;top:0;right:0;display:inline-block;content:'/';}
 
+.civil .comp-lst_dotted_grey li {font-size:14px;}
+.civil .comp-tbl_datatype *[class^=comm-btn][class*=_filefind] {width:24px;height:24px;padding:0;line-height:24px;}
+.civil .comp-tbl_datatype *[class^=comm-btn][class*=_filefind]:before {margin:0;}
+.civil .comp-tbl_datatype .comp-filefind {display:inline-block;}
 
+.tp-bd-detail .reply-wrap {border-top:1px solid #7a7a7a;}
+.tp-bd-detail .reply-wrap .write-area {overflow:hidden;border:10px solid #fcf8e3;}
+.tp-bd-detail .reply-wrap textarea[class^=comp-textarea] {float:left;width:89%;height:80px;border:0;}
+.tp-bd-detail .reply-wrap *[class^=comm-btn][class*=_lightorange] {float:left;width:11%;height:80px;padding:0 20px;}
+.tp-bd-detail .relpy-list li {display:table;width:100%;padding:18px 30px;border-bottom:1px solid #d9d6d5;box-sizing:border-box;}
+.tp-bd-detail .relpy-list li .writer {display:table-cell;width:70px;padding-right:10px;font-family:'NanumSquareB';color:#4b4b4b;box-sizing:border-box;}
+.tp-bd-detail .relpy-list li .reply {display:table-cell;width:80%;}
+.tp-bd-detail .relpy-list li .date {display:table-cell;text-align:right;}
 
-
-
+.tp-bd-write table[class^=comp-tbl][class*=_formtype][class*=_orange] {border-top:2px solid #fe970e;}
+.tp-bd-write table[class^=comp-tbl][class*=_formtype][class*=_orange] tr:nth-child(-n+3) th {background:#fcf8e3}
+.tp-bd-write table[class^=comp-tbl][class*=_formtype][class*=_orange] tr:nth-child(3) th,
+.tp-bd-write table[class^=comp-tbl][class*=_formtype][class*=_orange] tr:nth-child(3) td{border-bottom:1px solid #fe970e;}
 
 
 
@@ -583,10 +597,15 @@ MEDIA QUERY
 .history .tp-history-con .date-list li + li {margin-top:.7rem;}
 .history .tp-history-con .date-list li .date {margin-right:1rem;padding-right:1.5rem;font-size:1.2rem;}
 
+.civil .comp-lst_dotted_grey li {font-size:1.2rem;}
+.civil .comp-tbl_datatype *[class^=comm-btn][class*=_filefind] {width:3.3rem;height:3.3rem;line-height:3.3rem;}
 
-
-
-
+.tp-bd-detail .reply-wrap .write-area {border:.5rem solid #fcf8e3;}
+.tp-bd-detail .reply-wrap textarea[class^=comp-textarea] {width:77%;}
+.tp-bd-detail .reply-wrap *[class^=comm-btn][class*=_lightorange] {width:23%;padding:0 1rem;}
+.tp-bd-detail .relpy-list li {padding:.9rem 0;font-size:1.2rem;}
+.tp-bd-detail .relpy-list li .writer {width:4.5rem;padding-right:.5rem;}
+.tp-bd-detail .relpy-list li .reply {width:60%;}
 
 
 

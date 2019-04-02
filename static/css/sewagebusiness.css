@@ -34,6 +34,11 @@ SUB PAGE
 
 
 
+/*.usclib_part03_01 .fix-contents {padding-top:40px;}*/
+.usclib_part03_01 .fix-contents .heading-h4 {margin:20px 0 40px 36px;}
+.usclib_part03_01 .fix-contents table tbody td {height:30px;}
+.usclib_part03_01 .fix-contents .sum td:first-child {color:#336ac0;}
+
 
 
 /* ------------------------------------------------------
@@ -45,10 +50,8 @@ BROWSER HACK
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width:1024px){}
+@media (max-width:1024px){
 @media (max-width:768px){
-
-
 }
 @media (max-width:321px){}
 

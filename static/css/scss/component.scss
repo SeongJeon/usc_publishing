@@ -602,6 +602,7 @@ br.m {display:none}
 		&:hover {background-color:#fe970e; color:#fff;}
 	}
 	&[class*=_brown] {background-color:#785719; color:#fff; border-color:#785719; }
+	&[class*=_lightbrown] {background-color:#cc9966; color:#fff; border-color:#cc9966; }
 	&[class*=_yellow] {background-color:#feb32d; color:#fff; border-color:#feb32d; }
 	&[class*=_lightyellow] {background-color:#fff6c5; color:#333; border-color:#e3daa8; }
 	&[class*=_deepyellow] {background-color:#ffca59; color:#333; border-color:#d6a743; }
@@ -1237,12 +1238,13 @@ div[class^=comp-public-area] {
 	.emphasis {position:absolute;top:218px;right:23%;font-size:30px;font-family:'NanumSquareEB';color:#f27405;}
 }
 /* UI - 서브페이지 검색 */
+.total-length {
+	float: left; position: relative; font-size: 16px; line-height: 42px; padding-left: 28px; color:#3e3e3e;
+	&:before {display: block; position: absolute; left:0; top:50%; content: ""; width: 16px; height: 19px; @include background("common/icon_file.png",no-repeat 50% 50%); background-size: 100% auto; margin-top: -10px;}
+}
 .top-search-zone {
 	overflow:hidden; padding:19px 24px; background:#eff0f1; border:1px solid #e2e1e1;
-	.total-length {
-		float: left; position: relative; font-size: 16px; line-height: 42px; padding-left: 28px; color:#3e3e3e;
-		&:before {display: block; position: absolute; left:0; top:50%; content: ""; width: 16px; height: 19px; @include background("common/icon_file.png",no-repeat 50% 50%); background-size: 100% auto; margin-top: -10px;}
-	}
+	.total-length {float: left; }
 	.form {
 		float: right;
 		&:after {display:block; clear:both; content:""}
@@ -2753,16 +2755,16 @@ table[class^=comp-tbl] {
 
 /* INPUT */
 select[class^=comp-select] {
-	padding:0 1rem; height: 3.3rem; font-size: 1.2rem; background-size: auto 100%;
+	padding:0 1rem; height: 3.3rem; font-size: 1.2rem; background-size: auto 100%; line-height: 3.1rem;
 	&:focus {background-size: auto 100%}
 
-	&[class*=_h42] {height: 3.3rem; padding-right:3rem; box-sizing: border-box;}
+	&[class*=_h42] {height: 3.3rem; padding-right:3rem; box-sizing: border-box; }
 }
 input[class^=comp-input] {
-	padding:0 1rem; height:3.3rem; font-size: 1.2rem;
+	padding:0 1rem; height:3.3rem; font-size: 1.2rem; line-height: 3.1rem;
 
 	&[class*=_h42] {height: 3.3rem}
-	&[class*=_h50] {height: 4rem}
+	&[class*=_h50] {height: 4rem; line-height: 3.8rem}
 }
 *[class^=comp-radio] {
 	label {
@@ -3024,12 +3026,13 @@ div[class^=comp-public-area] {
 	.emphasis {top:13.5rem;right:auto;left:50%;width:33%;text-align:center;font-size:1.2rem;}
 }
 /* UI - 서브페이지 검색 */
+.total-length {
+	float: none; font-size:1.2rem; line-height:1.6rem; padding-left:2rem; 
+	&:before {width: 1.2rem; height:1.6rem; margin-top:0; top:0;}
+}
 .top-search-zone {
 	padding:1rem;
-	.total-length {
-		float: none; font-size:1.2rem; line-height:1.6rem; padding-left:2rem; 
-		&:before {width: 1.2rem; height:1.6rem; margin-top:0; top:0;}
-	}
+	.total-length {float: none; }
 	.form {
 		overflow:hidden; display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
 		float: none; margin-top:1rem; 

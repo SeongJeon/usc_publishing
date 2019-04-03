@@ -189,24 +189,34 @@
 									<div id="subtabcontent" role="tabpanel">
 										<!-- 검색 -->
 										<div class="top-search-zone bgcolor">
-											<p class="total-length">전체게시물 <em class="bold point1">22</em>건 / <span class="totalpage">1</span>page</p>
-											<div class="form3">
-												<ul class="radio-lst">
-													<li><span class="comp-radio"><input type="radio" name="show" id="show1" checked="checked"><label for="show1">모두보기</label></span></li>
-													<li><span class="comp-radio"><input type="radio" name="show" id="show2"><label for="show2">대출가능한 전자책만 보기</label></span></li>
-												</ul>
-												<div class="group">
-													<select name="" id="" title="도서 목록 분류 선택" class="comp-select_h42">
-														<option value="">신착순</option>
-													</select>
-													<ul class="sorting-lst js-sorting" aria-label="검색 목록 보기 타입"><!-- 만들어둔 js 안쓸 경우, js-sorting 빼시면 됩니다. -->
-														<li><button type="button" aria-selected="true" aria-controls="table-type" data-class="tbl-lst_list" class="btn-type_list"><span>목록형</span></button></li>
-														<li><button type="button" aria-controls="table-type" data-class="tbl-lst_gallery" class="btn-type_gallery"><span>갤러리형</span></button></li>
-													</ul>
-												</div>
+											<div class="form2" role="search">
+												<select name="" id="" title="검색항목 선택" class="comp-select_h42">
+													<option value="">검색항목</option>
+												</select>
+												<input type="text" name="" id="" class="comp-input_h42" title="자료 검색어 입력" placeholder="자료를 검색하세요">
+												<button type="submit" class="comm-btn_type3_orange"><span>검색</span></button>
+												<button type="button" class="comm-btn_type3_lightbrown"><span>검색 초기화</span></button>
 											</div>
 										</div>
-										<!--// 검색 -->
+										<!-- //검색 -->
+
+										<!-- 검색결과 / 분류 -->
+										<div class="comp-sorting-zone">
+											<p class="total-length">전체게시물 <em class="bold point1">22</em>건 / <span class="totalpage">1</span>page</p>
+											<div class="sorting-zone">
+												<select name="" title="분류 선택" id="" class="comp-select_h42">
+													<option value="">대출가능한 전자책만 보기</option>
+												</select>											
+												<select name="" title="정렬방식 선택" id="" class="comp-select_h42">
+													<option value="">신착순</option>
+												</select>											
+												<ul class="sorting-lst js-sorting" aria-label="검색 목록 보기 타입"><!-- 만들어둔 js 안쓸 경우, js-sorting 빼시면 됩니다. -->
+													<li><button type="button" aria-selected="true" aria-controls="table-type" data-class="tbl-lst_list" class="btn-type_list"><span>목록형</span></button></li>
+													<li><button type="button" aria-controls="table-type" data-class="tbl-lst_gallery" class="btn-type_gallery"><span>갤러리형</span></button></li>
+												</ul>
+											</div>
+										</div>
+										<!--// 검색결과 / 분류 -->
 
 										<!-- 목록 -->
 										<ul id="table-type" class="tbl-lst_list"><!-- 갤러리형 class="tbl-lst_gallery" / 목록형 class="tbl-lst_list" -->

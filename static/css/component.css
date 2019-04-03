@@ -397,6 +397,7 @@ br.t, br.m { display: none; }
 *[class^=comm-btn][class*=_whiteorange] { background-color: #fff; color: #4b4b4b; border-color: #fe970e; }
 *[class^=comm-btn][class*=_whiteorange]:hover { background-color: #fe970e; color: #fff; }
 *[class^=comm-btn][class*=_brown] { background-color: #785719; color: #fff; border-color: #785719; }
+*[class^=comm-btn][class*=_lightbrown] { background-color: #cc9966; color: #fff; border-color: #cc9966; }
 *[class^=comm-btn][class*=_yellow] { background-color: #feb32d; color: #fff; border-color: #feb32d; }
 *[class^=comm-btn][class*=_lightyellow] { background-color: #fff6c5; color: #333; border-color: #e3daa8; }
 *[class^=comm-btn][class*=_deepyellow] { background-color: #ffca59; color: #333; border-color: #d6a743; }
@@ -761,9 +762,11 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .comp-step-area .emphasis { position: absolute; top: 218px; right: 23%; font-size: 30px; font-family: 'NanumSquareEB'; color: #f27405; }
 
 /* UI - 서브페이지 검색 */
+.total-length { float: left; position: relative; font-size: 16px; line-height: 42px; padding-left: 28px; color: #3e3e3e; }
+.total-length:before { display: block; position: absolute; left: 0; top: 50%; content: ""; width: 16px; height: 19px; background: url("../../static/images/common/icon_file.png") no-repeat 50% 50%; background-size: 100% auto; margin-top: -10px; }
+
 .top-search-zone { overflow: hidden; padding: 19px 24px; background: #eff0f1; border: 1px solid #e2e1e1; }
-.top-search-zone .total-length { float: left; position: relative; font-size: 16px; line-height: 42px; padding-left: 28px; color: #3e3e3e; }
-.top-search-zone .total-length:before { display: block; position: absolute; left: 0; top: 50%; content: ""; width: 16px; height: 19px; background: url("../../static/images/common/icon_file.png") no-repeat 50% 50%; background-size: 100% auto; margin-top: -10px; }
+.top-search-zone .total-length { float: left; }
 .top-search-zone .form { float: right; }
 .top-search-zone .form:after { display: block; clear: both; content: ""; }
 .top-search-zone .form > * { float: left; }
@@ -1455,12 +1458,12 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   *[class^=comm-btn][class*=_writer] { width: 49%; }
   *[class^=comm-btn][class*=_golist] { width: 49%; }
   /* INPUT */
-  select[class^=comp-select] { padding: 0 1rem; height: 3.3rem; font-size: 1.2rem; background-size: auto 100%; }
+  select[class^=comp-select] { padding: 0 1rem; height: 3.3rem; font-size: 1.2rem; background-size: auto 100%; line-height: 3.1rem; }
   select[class^=comp-select]:focus { background-size: auto 100%; }
   select[class^=comp-select][class*=_h42] { height: 3.3rem; padding-right: 3rem; box-sizing: border-box; }
-  input[class^=comp-input] { padding: 0 1rem; height: 3.3rem; font-size: 1.2rem; }
+  input[class^=comp-input] { padding: 0 1rem; height: 3.3rem; font-size: 1.2rem; line-height: 3.1rem; }
   input[class^=comp-input][class*=_h42] { height: 3.3rem; }
-  input[class^=comp-input][class*=_h50] { height: 4rem; }
+  input[class^=comp-input][class*=_h50] { height: 4rem; line-height: 3.8rem; }
   *[class^=comp-radio] label { font-size: 1.2rem; }
   *[class^=comp-radio] label:before { width: 1rem; height: 1rem; margin-right: 0.5rem; background-size: auto 100%; }
   *[class^=comp-radio] input:checked ~ label:before { background-size: auto 100%; }
@@ -1599,9 +1602,10 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   .comp-step-area ol .belong { top: 4rem; width: -webkit-calc(100% - 1rem); width: -moz-calc(100% - 1rem); width: -o-calc(100% - 1rem); width: calc(100% - 1rem); padding: .5rem 0 .4rem; font-size: .9rem; }
   .comp-step-area .emphasis { top: 13.5rem; right: auto; left: 50%; width: 33%; text-align: center; font-size: 1.2rem; }
   /* UI - 서브페이지 검색 */
+  .total-length { float: none; font-size: 1.2rem; line-height: 1.6rem; padding-left: 2rem; }
+  .total-length:before { width: 1.2rem; height: 1.6rem; margin-top: 0; top: 0; }
   .top-search-zone { padding: 1rem; }
-  .top-search-zone .total-length { float: none; font-size: 1.2rem; line-height: 1.6rem; padding-left: 2rem; }
-  .top-search-zone .total-length:before { width: 1.2rem; height: 1.6rem; margin-top: 0; top: 0; }
+  .top-search-zone .total-length { float: none; }
   .top-search-zone .form { overflow: hidden; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; float: none; margin-top: 1rem; }
   .top-search-zone .form > * { float: none; }
   .top-search-zone .form input { -webkit-flex: 1; flex: 1; }

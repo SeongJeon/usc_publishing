@@ -28,3 +28,9 @@
 @import url("farmingtech.css");
 /* 조문국박물관 */
 @import url("uscmuseum.css");
+/* 외국어 */
+@import url("foreign.css");
+/* 통합예약 */
+@import url("reservation.css");
+/*  문화관광 */
+@import url("culture.css");

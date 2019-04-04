@@ -91,6 +91,7 @@ LAYOUT
   body.pc .ebooksys #header.header-type2 #gnb h2.over a:after, body.pc .ebooksys #header.header-type2 #gnb h2 a:hover:after { border-color: #ffca3c; }
   body.pc .ebooksys #header.header-type2 #gnb p a:hover { background: #3cb7cd; }
   body.pc .ebooksys #header.header-type2 #gnb h3 a:before { background: #1e4363; }
+  body.pc .ebooksys #header.header-type2 #gnb h2.over a, body.pc .ebooksys #header.header-type2 #gnb h2 a:hover { color: #f27405; }
   body.pc .ebooksys #header.header-type2.open { border-bottom-color: #f25e3d; }
   body.pc .ebooksys #header.header-type2.open .header-bottom { border-bottom-color: #f27405; } }
 .ebooksys #header .depth2menu .menugroup h3 a[class^=icon-]:before { display: block; content: ""; width: 100px; height: 100px; margin: 0 auto 10px; }

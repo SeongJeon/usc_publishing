@@ -118,6 +118,8 @@ LAYOUT
 		#gnb h2 a:hover:after {border-color:#ffca3c;}
 		#gnb p a:hover {background: #3cb7cd;}
 		#gnb h3 a:before{background: #1e4363;}
+		#gnb h2.over a,
+		#gnb h2 a:hover {color:#f27405}
 
 		&.open {border-bottom-color:#f25e3d;}
 		&.open .header-bottom {border-bottom-color: #f27405;}

@@ -25,7 +25,7 @@ LAYOUT
   body.pc .lifeedu #header #gnb h2.over a, body.pc .lifeedu #header #gnb h2 a:hover { font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
   body.pc .lifeedu #header.open { border-bottom: 6px solid #35518f; }
   body.pc .lifeedu #header.open .header-bottom { border-bottom-color: #c2c0bf; } }
-.lifeedu #footer { background: #f1f3f4; }
+.lifeedu #footer { height: 230px; background: #f1f3f4; }
 .lifeedu #footer .btn-gototop a { background: #37424c; }
 .lifeedu #footer .footer-selectgroup .footer-comp-select dt button { background: #f1f3f4 url("../../static/images/lifeedu/form_select.png") no-repeat 100% 50%; border-color: #d0cfd0; color: #6a6a6a; }
 .lifeedu #footer .footer-utilegroup { color: #6a6a6a; padding-left: 0; }

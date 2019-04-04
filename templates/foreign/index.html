@@ -35,7 +35,7 @@
 						<div class="slide">
 							<div class="inner">
 								<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
-								<div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""><!-- mobile배경 --></div>
+								<!-- <div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""></div> -->
 								<div class="popup">
 									<p class="tit">1살기좋은 마을, 산수유 꽃피는 마을</p>
 									<p class="txt">경북 제일의 의성 사곡면 산수유 마을은 해마다<br>3월말에서 4월 초가 되면 산수유의 만개가 절정을 이룬다.</p>
@@ -50,9 +50,24 @@
 						<div class="slide">
 							<div class="inner">
 								<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
-								<div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""><!-- mobile배경 --></div>
+								<!-- <div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""></div> -->
 								<div class="popup">
 									<p class="tit">2살기좋은 마을, 산수유 꽃피는 마을</p>
+									<p class="txt">경북 제일의 의성 사곡면 산수유 마을은 해마다<br>3월말에서 4월 초가 되면 산수유의 만개가 절정을 이룬다.</p>
+									<div class="info">
+										<span class="address">경북 의성군 금성면 수정리 424-3(주차장)</span>
+										<span class="phone">054-830-6574</span>
+									</div>
+									<a href="#" class="btn-more">더보기</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="inner">
+								<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
+								<!-- <div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""></div> -->
+								<div class="popup">
+									<p class="tit">3살기좋은 마을, 산수유 꽃피는 마을</p>
 									<p class="txt">경북 제일의 의성 사곡면 산수유 마을은 해마다<br>3월말에서 4월 초가 되면 산수유의 만개가 절정을 이룬다.</p>
 									<div class="info">
 										<span class="address">경북 의성군 금성면 수정리 424-3(주차장)</span>
@@ -218,13 +233,17 @@
 		$( window ).resize(function() {
 			windowWidth();
 		});
-		$('.js-main-visual-zone > .slider').slick({
+		$('.js-main-visual-zone .slider').slick({
 			dots: true,
 			infinite: true,
-			speed: 400,
-			swipe:false,
+			speed: 1000,
 			fade: true,
- 			 cssEase: 'linear',
+			arrows: false,
+			swipe: true,
+			dotsClass: 'custom-paging',
+			customPaging: function(slider, i) {
+				return '<em>' + (i + 1) + '</em>' + "/" + slider.slideCount;
+			},
 			responsive: [
 				{
 					breakpoint: 1024,

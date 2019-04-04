@@ -232,6 +232,9 @@
 		}
 		.txt {margin-top: 6px; font-size: 17px; line-height: 26px; color:#888;}
 	}
+	.footer-logo {
+		position: absolute; left:0; top:54px; text-indent: -999em;
+	}
 }
 #container {
 	position: relative; min-width: 1320px; border-bottom: 1px solid $bd1; padding-top: 180px;
@@ -425,7 +428,7 @@
 			h2 a {display: block; position: relative; font-size: 18px; color:#343434; text-align: center; }
 			p a {display: block; width:100%; font-size: 17px; color:#2d2d2d; text-align: center; line-height: 35px; background: #d6eef0}
 			h3 a {font-size: 15px; color:#525252; }
-			h3 a:before{display: inline-block;content: ""; vertical-align: middle; width: 4px; height: 4px; margin-right: 10px;}
+			h3 a:before{display: inline-block; position: relative; content: ""; vertical-align: middle; width: 4px; height: 4px; margin-right: 10px; top:-2px;}
 			h4 a {font-size: 14px; color:#525252; }
 			h4 a:before{display: inline-block;content: "-"; vertical-align: middle; margin-right: 3px;}
 		
@@ -2331,6 +2334,9 @@ div[class^=tp-survey] {
 		.footer-qrcode {display: inline-block; position: static; margin-left:3.6vw; width: 6rem; padding:1rem 0.5rem 1rem 1rem; border:1px solid #ddd; border-radius: 5px;}
 		.footer-acmark {display: inline-block; position: static; width: 8rem;}
 		& + .footer-utilegroup {margin-top: 2.5vw;}
+	}
+	.footer-logo {
+		position: static; text-align: center; margin:1.6rem auto 0; 
 	}
 }
 #container {

@@ -275,13 +275,13 @@ MAIN
 	.main-search-zone {
 		position:relative; width:1320px; height:150px; margin:0 auto; padding:34px 0 0 217px; background:#d7aa93 url(../images/ebooksys/main/bg_main_search_zone.png) no-repeat 96px 26px; border-radius:73px; -webkit-box-sizing:border-box;box-sizing:border-box; 
 		 .form-search {
-		 	position:relative; width:824px; height:55px; margin:0 0 14px; padding:0 0 0 30px; background:#fff; border-radius:25px; -webkit-box-sizing:border-box;box-sizing:border-box; 
+		 	position:relative; width:824px; height:55px; margin:0 0 14px; background:#fff; border-radius:100px; -webkit-box-sizing:border-box;box-sizing:border-box; 
 			 &:after {display:block; content:""; clear:both;}
 			 & > * {float:left; -webkit-box-sizing:border-box; box-sizing:border-box; }
-			 .select select {width:96px; height:55px; line-height:55px; background:url(../images/ebooksys/main/bg_form_search_select.png) no-repeat right 50%; font-size:17px; color:#343434;}
+			 .select select {width:126px; height:55px; padding-left: 30px; line-height:55px; background:url(../images/ebooksys/main/bg_form_search_select.png) no-repeat right 50%; font-size:17px; color:#343434;}
 			 .input {
 			 	width:560px; margin:0 0 0 15px; padding:0 0 0 13px; background:url(../images/ebooksys/main/bg_form_search_input.png) no-repeat left 50%;
-				input {width:100%; height:55px; padding:0 10px; line-height:55px; }
+				input {width:100%; height:55px; padding:0 6rem 0 1.5rem; line-height:55px; box-sizing: border-box; border-radius: 100px; }
 			 }
 			 button {position:absolute; right:18px; top:-8px; width:70px; height:70px; background:url(../images/ebooksys/main/btn_form_search.png) no-repeat; text-indent:-9999em;}
 		 }
@@ -417,12 +417,6 @@ MAIN
 		}
 	}
 }
-/* 스크롤 UI  */
-// .mouse-control {
-// 	position:fixed; right:50px; bottom:20px; padding:0 0 104px 0; background: url(../images/ebooksys/main/bg_mouse_control.png) no-repeat center 25px; font-size:14px; text-align:center; color:#fff; z-index:10;
-// 	&.bottom { bottom:220px; }
-// 	&.on {padding:95px 0 0; background: url(../images/ebooksys/main/bg_mouse_control_on.png) no-repeat center top;}
-// }
 /* 상세검색 팝업 */
 .ebooksys #pop_detailsearch {
 	position:fixed; left:50%; top:50%; width:500px; padding:0 2px 2px; background:#ff6942; border-radius:10px; -webkit-box-sizing:border-box;box-sizing:border-box;  z-index:1001;
@@ -765,7 +759,7 @@ MAIN
 .ebooksys .main {
 	.section {
 		height:auto; padding:0 1rem 4.5rem;
-		&:first-of-type {height: auto; padding-bottom: 8rem;}
+		&:first-of-type {height: auto; padding-bottom:13rem;}
 		.title {height:6rem; max-width:39.5rem; margin:0 auto; padding-top: 3.8rem; background-size:100% auto;}
 	}
 
@@ -788,10 +782,13 @@ MAIN
 	.main-search-zone {
 		width:100%; height:10rem; margin-top:2.5rem; padding:2rem 2rem; background-image:none; border-radius:5rem;
 		.form-search {
-			width:100%; height:3rem; margin:0 0 0.9rem; padding-left:1.5rem;
-			.input {width:20rem;}
-			.select select {width:6rem; height:3rem; line-height:3rem; font-size:1rem;}
-			.input input {height:3rem; line-height:3rem; font-size:0.8rem;}
+			display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+			width:100%; height:3rem; margin:0 0 0.9rem;
+			.input {
+				width:20rem; margin-left: 0.5rem; -webkit-flex:1; flex:1;
+				input {height:3rem; line-height:3rem; font-size:0.8rem;}
+			}
+			.select select {width:6rem; height:3rem; padding-left: 1rem; line-height:3rem; font-size:1rem;}
 			button {right:1rem;width:4.5rem; height:4.5rem; background-size:4.5rem;}
 		}
 		.popularity {
@@ -833,7 +830,7 @@ MAIN
 
 	// 신착도서, 인기도서, 오디오북 목록  
 	.main-tab {
-		width:100%; padding:4rem 1rem 0;
+		width:100%; padding:4rem 0 0;
 		.custom-paging, .slick-prev, .slick-next {display:none !important;}
 		.tab {
 			margin:0 0 1rem; padding:0 0 0;
@@ -842,28 +839,29 @@ MAIN
 		}  
 		.tab-contents {
 			.book-list {
-				width:100%; margin:1rem -0.6rem 0;
+				width:100%; max-width: 45rem; margin:1rem auto 0; padding:0 0.5rem;
 				.slick-list {margin-left:0rem;}
 				& > ul {
 					width:100%;
 					.slick-slide {padding:0 0.6rem;}
 					.slick-slide > div > li {margin:0 0 1rem 0;}
-					a {width:100%; height: 17.6rem;}
+					a {width:100%; height:auto;}
+				}
+				.before {
+					padding:4rem 1rem 1rem;
+					.img {
+						height: auto;  
+						img {height: auto;}
+					}
 				}
 			}
+
 			.dep2 {
 				ul {display:block;} 
 				ul > li {float:none; display:inline-block; padding:0 2rem 0.3rem 0; line-height: 1.8rem}  
 				ul > li:after {right:1rem;}
 				ul > li a {padding:1px 7px; font-size:1rem;}
 			} 
-			.book-list {
-				.before a,
-				.after a {width:85%; margin:0 auto;}
-				.before a {height:auto; padding:0 0.5rem 0.5rem;}
-				.before a .tit {font-size: 1em; overflow: hidden; text-overflow: ellipsis; line-height:1.5rem; height: 3em; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; min-height: 0rem;}
-				.before a img {width:100%;}
-			}
 		}
 	}
 }
@@ -892,8 +890,6 @@ MAIN
 	.btn {height:3rem; font-size:1.2rem;}
 	.close {right:0.5rem; top:1.5rem; background-size:1.5rem;}
 }
-.pc .ebooksys .main .main-tab .tab-contents .book-list {max-width:650px;}
-.pc .ebooksys .main .main-tab .tab-contents .book-list {max-width:75%;}	
 /* ------------------------------------------------------
 SUBPATE
 ------------------------------------------------------ */

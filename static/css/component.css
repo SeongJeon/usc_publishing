@@ -133,6 +133,7 @@
 #footer .footer-notice .number { font-size: 23px; color: #ff6942; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 35px; }
 #footer .footer-notice .number .call { display: inline-block; overflow: hidden; width: 35px; height: 35px; background: url("../../static/images/common/icon_footer_call.png") no-repeat 50% 50%; text-indent: 9999em; vertical-align: middle; }
 #footer .footer-notice .txt { margin-top: 6px; font-size: 17px; line-height: 26px; color: #888; }
+#footer .footer-logo { position: absolute; left: 0; top: 54px; text-indent: -999em; }
 
 #container { position: relative; min-width: 1320px; border-bottom: 1px solid #d1d1d1; padding-top: 180px; }
 #container > .inner { width: 1320px; margin: 0 auto; }
@@ -241,7 +242,7 @@
   body.pc #header.header-type2 #gnb h2 a { display: block; position: relative; font-size: 18px; color: #343434; text-align: center; }
   body.pc #header.header-type2 #gnb p a { display: block; width: 100%; font-size: 17px; color: #2d2d2d; text-align: center; line-height: 35px; background: #d6eef0; }
   body.pc #header.header-type2 #gnb h3 a { font-size: 15px; color: #525252; }
-  body.pc #header.header-type2 #gnb h3 a:before { display: inline-block; content: ""; vertical-align: middle; width: 4px; height: 4px; margin-right: 10px; }
+  body.pc #header.header-type2 #gnb h3 a:before { display: inline-block; position: relative; content: ""; vertical-align: middle; width: 4px; height: 4px; margin-right: 10px; top: -2px; }
   body.pc #header.header-type2 #gnb h4 a { font-size: 14px; color: #525252; }
   body.pc #header.header-type2 #gnb h4 a:before { display: inline-block; content: "-"; vertical-align: middle; margin-right: 3px; }
   body.pc #header.header-type2 #gnb h2.over a, body.pc #header.header-type2 #gnb h2 a:hover { font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
@@ -1259,6 +1260,7 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   #footer .footer-markgroup .footer-qrcode { display: inline-block; position: static; margin-left: 3.6vw; width: 6rem; padding: 1rem 0.5rem 1rem 1rem; border: 1px solid #ddd; border-radius: 5px; }
   #footer .footer-markgroup .footer-acmark { display: inline-block; position: static; width: 8rem; }
   #footer .footer-markgroup + .footer-utilegroup { margin-top: 2.5vw; }
+  #footer .footer-logo { position: static; text-align: center; margin: 1.6rem auto 0; }
   #container { padding-top: 0; }
   #container:before { display: none; }
   #container > .inner { width: auto; }

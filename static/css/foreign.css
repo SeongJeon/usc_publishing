@@ -24,7 +24,25 @@ LAYOUT
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
-
+.foreign .main {}
+.foreign .main .main-visual-zone {}
+.foreign .main .main-visual-zone .slide {height:540px;}
+.foreign .main .main-visual-zone .slide .mobg {display:none;}
+.foreign .main .main-visual-zone .slide img {display:none;}
+.foreign .main .main-visual-zone .inner {width:1320px; margin:0 auto;}
+.foreign .main .main-visual-zone .popup {width:470px; height:540px; padding:75px 43px 150px; background:#ee7f1d; }
+.foreign .main .main-visual-zone .popup .tit {position:relative; padding:0 0 31px 0;font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:26px; color:#fff;}
+.foreign .main .main-visual-zone .popup .tit:after {position:absolute; left:0; bottom:0; display:block; content:""; width:57px; height:3px; background:#f5e820;}
+.foreign .main .main-visual-zone .popup .txt {margin:43px 0 0; font-size:17px; line-height:26px; color:#fff; letter-spacing:-1px;}
+.foreign .main .main-visual-zone .popup .info {margin:35px 0 0; padding:12px 0 11px 18px; border:1px solid #f7bf8e; font-size:17px; color:#fff;}
+.foreign .main .main-visual-zone .popup .info > * {position:relative;display:block; padding:0 0 0 25px; line-height:30px;}
+.foreign .main .main-visual-zone .popup .info > *:before {position:absolute; left:0; top:4px; display:block; content:""; width:17px; height:22px;}
+.foreign .main .main-visual-zone .popup .info .address {}
+.foreign .main .main-visual-zone .popup .info .address:before {background:url(../../static/images/foreign/bg_address.png) no-repeat;}
+.foreign .main .main-visual-zone .popup .info .phone {}
+.foreign .main .main-visual-zone .popup .info .phone:before {background:url(../../static/images/foreign/bg_phone.png) no-repeat;}
+.foreign .main .main-visual-zone .btn-more {display:inline-block; margin:23px 0 0; font-size:15px; color:rgba(255,255,255,0.7);}
+.foreign .main .main-visual-zone .btn-more:after {display:inline-block; content:"+"; margin-left:3px;}
 
 
 

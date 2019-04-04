@@ -210,7 +210,7 @@ MEDIA QUERY
 	/* 열린마당 - 세미나실 신청 */
 	.seminar-guide .calander_tbl th { height: 3.5rem; font-size: 1.2rem; }
 	.seminar-guide .calander_tbl td { height:5rem; padding: 0.5rem; font-size: 1.4rem; }
-	.seminar-guide .calander_tbl td .txt {width:8rem; height:2rem; line-height:2rem; border-radius:0.4rem; font-size:1.2rem;}
+	.seminar-guide .calander_tbl td .txt {width:auto; height:auto; padding:0.2rem 0; line-height:1.4rem; border-radius:0.4rem; font-size:1.2rem;}
 } @media (max-width:768px){
 } @media (max-width:321px){}
 

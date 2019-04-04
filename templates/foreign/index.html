@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" >
+	<meta name="format-detection" content="telephone=no" >
+	<title>의성군 외국어</title>
+	<meta name="Subject" content="의성군 외국어" >
+	<meta name="title" content="의성군 외국어" >
+	<meta name="keywords" content="의성군 외국어" >
+	<meta name="description" content="의성군 외국어" >
+
+	<!-- <link rel="shortcut icon" href="../../" > -->
+	<!-- <link rel="icon" href="../../static/images/usc/favicon.png" > -->
+	<link rel="stylesheet" href="../../static/css/common.css" >
+</head>
+<body>
+	<div id="skipnavi">
+		<a href="#container">주내용으로 이동</a>
+		<a href="#gnb">메뉴로 이동</a>
+		<a href="#footer">하단 정보로 이동</a>
+	</div>
+	<div id="wrap" class="foreign">
+		<!-- HEADER -->
+		<header><!-- usc/header.html  --></header>
+		<!-- //HEADER -->
+
+		<!-- CONTAINER -->
+		<main>
+			<div id="container" class="main">
+				<!-- VISUAL SLIDER ZONE -->
+				<div class="main-visual-zone js-main-visual-zone">
+					<div class="slider">
+						<div class="slide">
+							<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
+							<div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""><!-- mobile배경 --></div>
+							<div class="popup">
+								<p class="tit">살기좋은 마을, 산수유 꽃피는 마을</p>
+								<p class="txt">경북 제일의 의성 사곡면 산수유 마을은 해마다<br>3월말에서 4월 초가 되면 산수유의 만개가 절정을 이룬다.</p>
+								<div class="info">
+									<span class="address">경북 의성군 금성면 수정리 424-3(주차장)</span>
+									<span class="phone">054-830-6574</span>
+								</div>
+								<a href="#" class="btn-more"></a>
+							</div>
+						</div>
+						<div class="slide">
+							<p class="hidden">책으로 소통하는 행복한 도서관 의성군립도서관 Uiseong County Library</p>
+							<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
+							<div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""><!-- mobile배경 --></div>
+						</div>
+					</div>
+				</div>
+				<!--// VISUAL SLIDER ZONE -->
+				
+			</div>
+		</main>
+		<!-- //CONTAINER -->
+
+		<!-- FOOTER -->
+		<footer><!-- usc/footer.html  --></footer>
+		<!-- //FOOTER -->
+	</div>
+
+<script type="text/javascript" src="../../static/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../static/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../static/js/slick.min.js"></script>
+<script type="text/javascript" src="../../static/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="../../static/js/iscroll.js"></script>
+<script type="text/javascript" src="../../static/js/common.js"></script>
+<script>
+	// 메인 비주얼
+	var mainSlider = (function(){
+		$(".js-main-visual-zone .slide").each(function(){
+			$(this).find(".pcbg").css({"background":"url("+$(this).find(".pcbg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
+			$(this).find(".mobg").css({"background":"url("+$(this).find(".mobg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
+		})
+
+		$('.js-main-visual-zone > .slider').slick({
+			dots: false,
+			infinite: true,
+			speed: 400,
+			//ltr: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			swipe:false,
+			fade: true,
+ 			 cssEase: 'linear',
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						arrows:false,
+						swipe:true
+				   }
+				}
+			]
+		});
+	})();
+
+
+
+
+</script>
+</body>
+</html>

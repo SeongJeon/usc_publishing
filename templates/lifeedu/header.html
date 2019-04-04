@@ -1,4 +1,4 @@
-<div id="header" class="header-type2">
+<div id="header">
 	<!-- header top menu -->
 	<div class="header-top">
 		<div class="inner">
@@ -31,7 +31,28 @@
 	<div class="header-middle">
 		<div class="inner">
 			<h1 class="title"><a href="#">의성군 평생학습</a></h1>
+			<p class="btn-search-open view-m"><button type="button" aria-haspopup="true" aria-expanded="false" aria-controls="gnb-search"><span>통합검색 열기</span></button></p>
 			<p class="btn-menu-open view-m"><button type="button" aria-haspoup="true" aria-controls="gnb-mo" aria-expanded="false"><span>전체메뉴 열기</span></button></p>
+			<div class="comp-search" role="search" id="gnb-search" role="dialog">
+				<div class="form">
+					<p class="btn"><button type="button" class="btn-close"><span>검색 레이어 닫기</span></button></p>
+					<select name="" id="" title="검색어 분류 선택">
+						<option value="">통합검색</option>
+					</select>
+					<input type="text" title="검색어 입력" placeholder="검색어를 입력하세요">
+				</div>
+				<button type="submit"><span>검색</span></button>
+			</div>
+			<div class="usc-snsgroup">
+				<p class="txt">의성군과 소통하기</p>
+				<ul class="sns">
+					<li><a href="#" target="_blank" title="새창으로 열림" class="icon_facebook"><span>페이스북</span></a></li>
+					<li><a href="#" target="_blank" title="새창으로 열림" class="icon_twitter"><span>트위터</span></a></li>
+					<li><a href="#" target="_blank" title="새창으로 열림" class="icon_blog"><span>블로그</span></a></li>
+					<li><a href="#" target="_blank" title="새창으로 열림" class="icon_kakao"><span>카카오스토리</span></a></li>
+					<li><a href="#" target="_blank" title="새창으로 열림" class="icon_instar"><span>인스타그램</span></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<!--// header middle -->
@@ -39,7 +60,7 @@
 	<div class="header-bottom" id="gnb-mo">
 		<p class="gnb-mo-title">전체메뉴</p>
 		<div class="inner">
-			<div class="header-utilegroup">
+			<div class="header-utilegroup view-m">
 				<ul class="header-utile">
 					<li><a href="#" class="icon-login"><span>로그인</span></a></li>
 					<li><a href="#" class="icon-join"><span>회원가입</span></a></li>
@@ -49,30 +70,16 @@
 				<div id="gnb">
 					<ul class="gnb" role="tree">
 						<li role="treeitem">
-							<h2> <a href="#"><span>교육신청</span></a> </h2>
+							<h2> <a href="#"><span>강좌신청</span></a> </h2>
 							<div class="depth2menu">
 								<div class="menu" role="group">
 									<div class="menugroup">
-										<p><a href="#"><span>교육신청</span></a></p> 
-										<div class="group"> <h3><a href="#"><span>자료 검색</span></a></h3> </div>
-										<div class="group"> 
-											<h3><a href="#"><span>전자책</span></a></h3> 
-											<ul class="depth3menu">
-												<li><h4> <a href="#"><span>모바일 전자책</span></a> </h4></li>
-												<li><h4> <a href="#"><span>인터넷 전자책</span></a> </h4></li>
-											</ul>
-										</div>
-										<div class="group"> <h3><a href="#"><span>희망도서 신청</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>도서기증 신청</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>책나래</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>사서에게 물어보세요</span></a></h3> </div>
-										<div class="group">
-											<h3><a href="#"><span>학술정보 검색</span></a></h3> 
-											<ul class="depth3menu">
-												<li><h4> <a href="#"><span>학위논문,학술지 검색</span></a> </h4></li>
-												<li><h4> <a href="#"><span>전국도서관 소장자료 검색</span></a> </h4></li>
-											</ul>
-										</div>
+										<div class="group"><h3><a href="#"><span>강좌검색</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>평생학습관</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>의성군립도서관</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>문화원</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>정보화교육</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>배달강좌</span></a></h3></div>
 									</div>
 								</div>
 							</div>
@@ -82,112 +89,49 @@
 							<div class="depth2menu">
 								<div class="menu" role="group">
 									<div class="menugroup">
-										<p><a href="#"><span>강사뱅크</span></a></p> 
-										<div class="group"> 
-											<h3><a href="#"><span>도서관소개</span></a></h3> 
-											<ul class="depth3menu">
-												<li><h4> <a href="#"><span>인사말</span></a> </h4></li>
-												<li><h4> <a href="#"><span>도서관 연혁</span></a> </h4></li>
-												<li><h4> <a href="#"><span>시설현황</span></a> </h4></li>
-												<li><h4> <a href="#"><span>자료현황</span></a> </h4></li>
-												<li><h4> <a href="#"><span>조직도</span></a> </h4></li>
-												<li><h4> <a href="#"><span>오시는 길</span></a> </h4></li>
-											</ul>
-										</div>
-										<div class="group"> <h3><a href="#"><span>이용시간/개관안내</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>회원가입 안내</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>도서 이용 안내</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>시설 이용 안내</span></a></h3> </div>
+										<div class="group"><h3><a href="#"><span>강사뱅크란?</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>일반강사</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>배달강사</span></a></h3></div>
 									</div>
 								</div>
 							</div>
 						</li>
 						<li role="treeitem">
 							<h2> <a href="#"><span>평생학습관소개</span></a> </h2>
-							<div class="depth2menu" >
+							<div class="depth2menu">
 								<div class="menu" role="group">
 									<div class="menugroup">
-										<p><a href="#"><span>평생학습관소개</span></a></p> 
-										<div class="group"> 
-											<h3><a href="#"><span>인기도서</span></a></h3> 
-											<ul class="depth3menu">
-												<li><h4> <a href="#"><span>도서관 대출 순위</span></a> </h4></li>
-												<li><h4> <a href="#"><span>전국도서관 인기대출 도서</span></a> </h4></li>
-											</ul>
-										</div>
-										<div class="group"> <h3><a href="#"><span>신간도서</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>독서 동아리</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>독서 퀴즈</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>한 줄 독후감</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>책 읽어주는 문화봉사단</span></a></h3> </div>
+										<div class="group"><h3><a href="#"><span>인사말</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>평생학습도시선언문</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>조례</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>비전 및 목표</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>연혁</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>찾아오시는 길</span></a></h3></div>
 									</div>
 								</div>
 							</div>
 						</li>
 						<li role="treeitem">
 							<h2> <a href="#"><span>평생네트워크</span></a> </h2>
-							<div class="depth2menu ">
+							<div class="depth2menu">
 								<div class="menu" role="group">
 									<div class="menugroup">
-										<p><a href="#"><span>평생네트워크</span></a></p> 
-										<div class="group"> <h3><a href="#"><span>문화 강좌</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>도서관 행사</span></a></h3> </div>
-										<div class="group"> 
-											<h3><a href="#"><span>도서관 주간/독서의 달</span></a></h3> 
-											<ul class="depth3menu">
-												<li><h4> <a href="#"><span>4월 도서관 주간</span></a> </h4></li>
-												<li><h4> <a href="#"><span>9월 독서의 달</span></a> </h4></li>
-											</ul>
-										</div>
-										<div class="group"> 
-											<h3><a href="#"><span>도서관 캠프</span></a></h3> 
-											<ul class="depth3menu">
-												<li><h4> <a href="#"><span>여름방학 도서관 캠프</span></a> </h4></li>
-												<li><h4> <a href="#"><span>겨울방학 도서관 캠프</span></a> </h4></li>
-											</ul>
-										</div>
-										<div class="group"> <h3><a href="#"><span>북스타트</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>강좌개설요청</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>사진게시판</span></a></h3> </div>
+										<div class="group"><h3><a href="#"><span>학습기관현황</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>학습동아리</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>재능나눔</span></a></h3></div>
 									</div>
 								</div>
 							</div>
 						</li>
 						<li role="treeitem">
-							<h2> <a href="#"><span>정보마당</span></a> </h2>
-							<div class="depth2menu ">
-								<div class="menu" role="group">
+							<h2> <a href="#"><span>열린마당</span></a> </h2>
+							<div class="depth2menu">
+								<div class="menu other" role="group">
 									<div class="menugroup">
-										<p><a href="#"><span>정보마당</span></a></p> 
-										<div class="group"> <h3><a href="#"><span>공지사항</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>이 달의 행사</span></a></h3> </div>
-										<div class="group">
-											<h3><a href="#"><span>질의 응답</span></a></h3> 
-											<ul class="depth3menu">
-												<li><h4> <a href="#"><span>4월 도서관 주간</span></a> </h4></li>
-												<li><h4> <a href="#"><span>9월 독서의 달</span></a> </h4></li>
-											</ul>
-										</div>
-										<div class="group"> <h3><a href="#"><span>설문 조사</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>강당 대관</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>세미나실 신청</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>자원봉사 신청</span></a></h3> </div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li role="treeitem">
-							<h2> <a href="#"><span>참여마당</span></a> </h2>
-							<div class="depth2menu ">
-								<div class="menu" role="group">
-									<div class="menugroup">
-										<p><a href="#"><span>참여마당</span></a></p> 
-										<div class="group"> <h3><a href="#"><span>대출/예약조회</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>희망도서 조회</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>프로그램 신청내역</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>내가 쓴 글</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>회원정보 수정</span></a></h3> </div>
-										<div class="group"> <h3><a href="#"><span>회원 탈퇴</span></a></h3> </div>
+										<div class="group"><h3><a href="#"><span>공지사항</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>자료실</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>학습상담 및 제안</span></a></h3></div>
+										<div class="group"><h3><a href="#"><span>평생학습갤러리</span></a></h3></div>
 									</div>
 								</div>
 							</div>
@@ -202,5 +146,5 @@
 	<!--// header gnb -->
 </div>
 <script>
-usc.gnbEvent('425,425,425,425,425,425', false);
+usc.gnbEvent('210,210,210,210,210',false);
 </script>

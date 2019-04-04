@@ -536,7 +536,7 @@ table[class^=comp-tbl][class*=_datatype].border { border-bottom: 2px solid #7a7a
 table[class^=comp-tbl][class*=_boardtype] { border-top: 2px solid #7a7a7a; color: #787878; border-bottom: 1px solid #d9d6d5; }
 table[class^=comp-tbl][class*=_boardtype] thead th { height: 48px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; color: #4b4b4b; }
 table[class^=comp-tbl][class*=_boardtype] thead th:first-child { border-left: 0; }
-table[class^=comp-tbl][class*=_boardtype] tbody td { height: 50px; padding: 10px 10px 8px; font-size: 16px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center; line-height: 26px; word-break: break-all; }
+table[class^=comp-tbl][class*=_boardtype] tbody td { height: 50px; padding: 10px 10px 8px; font-size: 16px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center; line-height: 26px; word-break: break-all; box-sizing: border-box; }
 table[class^=comp-tbl][class*=_boardtype] tbody td:first-child { border-left: 0; }
 table[class^=comp-tbl][class*=_boardtype] tbody tr:last-child > * { border-bottom: 0; }
 table[class^=comp-tbl][class*=_boardtype] tbody tr:first-child > * { border-top: 1px solid #7a7a7a; }
@@ -545,8 +545,9 @@ table[class^=comp-tbl][class*=_formtype] tbody th { height: 50px; padding: 6px 1
 table[class^=comp-tbl][class*=_formtype] tbody td { height: 50px; padding: 6px 15px; font-size: 15px; border-bottom: 1px solid #d9d6d5; text-align: center; box-sizing: border-box; text-align: left; }
 table[class^=comp-tbl][class*=_formtype] .important { float: right; color: #ff4e00; }
 table[class^=comp-tbl][class*=_formtype] .txt { line-height: 35px; }
-table[class^=comp-tbl] .pc { display: inherit; }
 table[class^=comp-tbl] .m { display: none; }
+table[class^=comp-tbl] .subject { overflow: hidden; display: inline-block; max-width: 100%; text-overflow: ellipsis; white-space: nowrap; position: relative; top: 4px; }
+table[class^=comp-tbl] .file { display: inline-block; width: 26px; height: 26px; background: #eff0f1 url("../../static/images/common/btn_download.png") no-repeat 50% 50%; background-size: 14px auto; border: 1px solid #d9d6d5; box-sizing: border-box; text-indent: -999em; }
 
 /* INPUT */
 select[class^=comp-select] { width: 100%; padding: 0 10px; height: 35px; border: 1px solid #d9d6d5; box-sizing: border-box; font-size: 15px; color: #787878; background: #fff url("../../static/images/common/form_select3.png") no-repeat 100% 50%; }
@@ -733,15 +734,15 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 
 /* UI - 화살표 */
 *[class^=comp-upport] { margin-top: 10px; }
-*[class^=comp-upport] *[class^=comp-upport] ol > li { position: relative; margin-top: 85px; padding: 20px 20px 24px; background: #f5f8f8; border: 1px solid #dcdcdc; }
-*[class^=comp-upport] *[class^=comp-upport] ol > li:first-child { margin-top: 0; }
-*[class^=comp-upport] *[class^=comp-upport] ol > li:last-child dl:before, *[class^=comp-upport] *[class^=comp-upport] ol > li:last-child dl:after { display: none; }
-*[class^=comp-upport] *[class^=comp-upport] ol > li dl:before { position: absolute; left: 26px; bottom: -38px; display: block; content: ""; width: 12px; height: 17px; background: #585858; }
-*[class^=comp-upport] *[class^=comp-upport] ol > li dl:after { position: absolute; left: 20px; bottom: -70px; display: block; content: ""; width: 0; height: 0; border-style: solid; border-top-width: 16px; border-right-width: 12px; border-bottom-width: 16px; border-left-width: 12px; border-color: #585858 transparent transparent transparent; }
-*[class^=comp-upport] *[class^=comp-upport] ol > li dl .tit { height: 27px; line-height: 27px; font-size: 20px; color: #1c1c1c; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-*[class^=comp-upport] *[class^=comp-upport] ol > li dl .tit .num { display: inline-block; width: 27px; height: 27px; margin-right: 5px; text-align: center; background: #785719; border-radius: 100%; font-size: 15px; color: #fff; }
-*[class^=comp-upport] *[class^=comp-upport] ol > li dl .tit .tail { display: inline-block; margin-left: 5px; font-size: 20px; color: #f27405; font-family: 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
-*[class^=comp-upport] *[class^=comp-upport] ol > li dl .comp-lst_hyphen { margin: 8px 0 0 20px; }
+*[class^=comp-upport] ol > li { position: relative; margin-top: 85px; padding: 20px 20px 24px; background: #f5f8f8; border: 1px solid #dcdcdc; }
+*[class^=comp-upport] ol > li:first-child { margin-top: 0; }
+*[class^=comp-upport] ol > li:last-child dl:before, *[class^=comp-upport] ol > li:last-child dl:after { display: none; }
+*[class^=comp-upport] ol > li dl:before { position: absolute; left: 26px; bottom: -38px; display: block; content: ""; width: 12px; height: 17px; background: #585858; }
+*[class^=comp-upport] ol > li dl:after { position: absolute; left: 20px; bottom: -70px; display: block; content: ""; width: 0; height: 0; border-style: solid; border-top-width: 16px; border-right-width: 12px; border-bottom-width: 16px; border-left-width: 12px; border-color: #585858 transparent transparent transparent; }
+*[class^=comp-upport] ol > li dl .tit { height: 27px; line-height: 27px; font-size: 20px; color: #1c1c1c; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+*[class^=comp-upport] ol > li dl .tit .num { display: inline-block; width: 27px; height: 27px; margin-right: 5px; text-align: center; background: #785719; border-radius: 100%; font-size: 15px; color: #fff; }
+*[class^=comp-upport] ol > li dl .tit .tail { display: inline-block; margin-left: 5px; font-size: 20px; color: #f27405; font-family: 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
+*[class^=comp-upport] ol > li dl .comp-lst_hyphen { margin: 8px 0 0 20px; }
 
 /* UI - 단계박스 */
 .comp-step-area { position: relative; }
@@ -949,6 +950,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-bd-detail table[class^=comp-tbl] { border-top: 0 !important; border-bottom: 0 !important; }
 .tp-bd-detail table[class^=comp-tbl] tbody tr:first-child > * { border-top: 0; }
 .tp-bd-detail table[class^=comp-tbl] .bd-content { padding: 10px; min-height: 600px; text-align: left; }
+.tp-bd-detail table[class^=comp-tbl] .bd-editor { margin: 6px 25px; height: 570px; overflow: hidden; }
 .tp-bd-detail table[class^=comp-tbl] .file { padding-left: 34px; position: relative; font-size: 16px; color: #787878; text-align: left; }
 .tp-bd-detail table[class^=comp-tbl] .file:before { display: block; position: absolute; left: 0; top: 5px; width: 25px; height: 25px; content: ""; background: url("../../static/images/common/icon_download1.png") no-repeat 50% 50%; }
 .tp-bd-detail table[class^=comp-tbl] .file .lst { display: inline-block; vertical-align: middle; }
@@ -956,6 +958,20 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-bd-detail table[class^=comp-tbl] .file .lst li { float: left; }
 .tp-bd-detail table[class^=comp-tbl] .file .lst li + li:before { display: inline-block; content: "/"; margin: 0 3px; vertical-align: middle; }
 .tp-bd-detail table[class^=comp-tbl] .file *[class*=comm-btn] { margin-left: 5px; }
+.tp-bd-detail .reply-wrap { border-top: 1px solid #7a7a7a; }
+.tp-bd-detail .reply-wrap .write-area { overflow: hidden; border: 10px solid #fcf8e3; }
+.tp-bd-detail .reply-wrap textarea[class^=comp-textarea] { float: left; width: 89%; height: 80px; border: 0; }
+.tp-bd-detail .reply-wrap *[class^=comm-btn][class*=_lightorange] { float: left; width: 11%; height: 80px; padding: 0 20px; }
+.tp-bd-detail .reply-wrap .relpy-list li { display: table; width: 100%; padding: 18px 30px; border-bottom: 1px solid #d9d6d5; box-sizing: border-box; }
+.tp-bd-detail .reply-wrap .relpy-list li .writer { display: table-cell; width: 70px; padding-right: 10px; font-family: 'NanumSquareB'; color: #4b4b4b; box-sizing: border-box; }
+.tp-bd-detail .reply-wrap .relpy-list li .reply { display: table-cell; width: 80%; }
+.tp-bd-detail .reply-wrap .relpy-list li .date { display: table-cell; text-align: right; }
+
+/* 공통페이지 - 게시판 쓰기 */
+.tp-bd-write table[class^=comp-tbl][class*=_formtype][class*=_orange] { border-top: 2px solid #fe970e; }
+.tp-bd-write table[class^=comp-tbl][class*=_formtype][class*=_orange] tr th { background: #fcf8e3; }
+.tp-bd-write table[class^=comp-tbl][class*=_formtype][class*=_orange] tr:nth-child(3) th, .tp-bd-write table[class^=comp-tbl][class*=_formtype][class*=_orange] tr:nth-child(3) td { border-bottom: 1px solid #fe970e; }
+.tp-bd-write .bd-editor { margin: 6px 25px; height: 570px; overflow: hidden; }
 
 /* 공통페이지 - 로그인 */
 .tp-total-login { padding: 0 !important; }
@@ -1416,6 +1432,7 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   table[class^=comp-tbl][class*=_boardtype] { border-top: 2px solid #7a7a7a; color: #787878; }
   table[class^=comp-tbl][class*=_boardtype] thead th { height: 3.3rem; font-size: 1.2rem; }
   table[class^=comp-tbl][class*=_boardtype] tbody td { height: 3.3rem; font-size: 1.2rem; line-height: 1.6rem; padding: 0.5rem; }
+  table[class^=comp-tbl][class*=_boardtype] .pc + * { border-left: 0; }
   table[class^=comp-tbl][class*=_formtype] tbody th { position: relative; height: 4.3rem; padding: 1.2rem 1rem 0.5rem 0.7rem; width: 27%; word-break: keep-all; font-size: 1.2rem; line-height: 1.8rem; }
   table[class^=comp-tbl][class*=_formtype] tbody td { height: 4.3rem; padding: 0.5rem 0.7rem; font-size: 1.2rem; }
   table[class^=comp-tbl][class*=_formtype] .txt { line-height: 3.3rem; }
@@ -1743,11 +1760,19 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   /* 공통페이지 - 게시판 상세 */
   .tp-bd-detail .board-title { font-size: 1.5rem; line-height: 2.2rem; padding: 1rem 1rem; }
   .tp-bd-detail table[class^=comp-tbl] .file { padding-left: 2.5rem; font-size: 1.2rem; }
-  .tp-bd-detail table[class^=comp-tbl] .file:before { top: 0; width: 2rem; height: 2rem; background-size: 100% 100%; }
+  .tp-bd-detail table[class^=comp-tbl] .file:before { top: 0.5rem; width: 2rem; height: 2rem; background-size: 100% 100%; }
   .tp-bd-detail table[class^=comp-tbl] .file .lst li { float: none; }
   .tp-bd-detail table[class^=comp-tbl] .file .lst li + li:before { display: none; }
   .tp-bd-detail table[class^=comp-tbl] .file *[class*=comm-btn] { margin-left: 5px; padding: 0 0.5rem; }
   .tp-bd-detail table[class^=comp-tbl] .bd-content { min-height: 20rem; }
+  .tp-bd-detail .reply-wrap .write-area { border: .5rem solid #fcf8e3; }
+  .tp-bd-detail .reply-wrap textarea[class^=comp-textarea] { width: 77%; }
+  .tp-bd-detail .reply-wrap *[class^=comm-btn][class*=_lightorange] { width: 23%; padding: 0 1rem; }
+  .tp-bd-detail .reply-wrap .relpy-list li { padding: .9rem 0; font-size: 1.2rem; }
+  .tp-bd-detail .reply-wrap .relpy-list li .writer { width: 4.5rem; padding-right: .5rem; }
+  .tp-bd-detail .reply-wrap .relpy-list li .reply { width: 60%; }
+  /* 공통페이지 - 게시판 쓰기 */
+  .tp-bd-write .bd-editor { margin: 0; height: 30rem; }
   /* 공통페이지 - 로그인 */
   .tp-total-login .contents-zone { padding: 0 0 5rem !important; }
   .tp-total-login .tit-login-zone { height: auto; }

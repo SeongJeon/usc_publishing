@@ -879,7 +879,7 @@ table[class^=comp-tbl] {
 			th:first-child {border-left: 0;}
 		}
 		tbody{
-			td {height: 50px;padding:10px 10px 8px; font-size: 16px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center;line-height: 26px; word-break: break-all;}
+			td {height: 50px;padding:10px 10px 8px; font-size: 16px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center;line-height: 26px; word-break: break-all; box-sizing: border-box;}
 			td:first-child {border-left: 0;}
 			tr:last-child > * {border-bottom: 0;}
 			tr:first-child > * {border-top:1px solid #7a7a7a;}
@@ -900,8 +900,9 @@ table[class^=comp-tbl] {
 		.txt {line-height: 35px;}
 	}
 
-	.pc {display: inherit;}
 	.m {display: none;}
+	.subject {overflow:hidden; display: inline-block; max-width: 100%; text-overflow:ellipsis; white-space: nowrap; position: relative; top:4px;}
+	.file {display: inline-block; width: 26px; height: 26px; background:#eff0f1 url("../../static/images/common/btn_download.png") no-repeat 50% 50%; background-size: 14px auto; border:1px solid #d9d6d5; box-sizing: border-box; text-indent: -999em;}
 }
 
 
@@ -1201,7 +1202,7 @@ div[class^=comp-public-area] {
 /* UI - 화살표 */
 *[class^=comp-upport] {
 	margin-top:10px;
-	*[class^=comp-upport] ol {
+	ol {
 		& > li {
 			position:relative; margin-top:85px; padding:20px 20px 24px; background:#f5f8f8; border:1px solid #dcdcdc;
 			&:first-child {margin-top:0;}
@@ -1590,6 +1591,7 @@ div[class^=comp-public-area] {
 		border-top: 0 !important; border-bottom: 0 !important;
 		tbody tr:first-child > * {border-top: 0;}
 		.bd-content {padding:10px; min-height: 600px; text-align: left;}
+		.bd-editor {margin:6px 25px; height: 570px; overflow:hidden; }
 		.file {
 			padding-left:34px; position: relative; font-size: 16px; color:#787878; text-align: left;
 			&:before {display: block; position:absolute; left:0; top:5px; width: 25px; height: 25px; content: ""; @include background("common/icon_download1.png",no-repeat 50% 50%); }
@@ -1602,6 +1604,28 @@ div[class^=comp-public-area] {
 			*[class*=comm-btn] {margin-left: 5px;}
 		}
 	}
+	.reply-wrap {
+		border-top:1px solid #7a7a7a;
+		.write-area {overflow:hidden;border:10px solid #fcf8e3;}
+		textarea[class^=comp-textarea] {float:left;width:89%;height:80px;border:0;}
+		*[class^=comm-btn][class*=_lightorange] {float:left;width:11%;height:80px;padding:0 20px;}
+		.relpy-list li {
+			display:table;width:100%;padding:18px 30px;border-bottom:1px solid #d9d6d5;box-sizing:border-box;
+			.writer {display:table-cell;width:70px;padding-right:10px;font-family:'NanumSquareB';color:#4b4b4b;box-sizing:border-box;}
+			.reply {display:table-cell;width:80%;}
+			.date {display:table-cell;text-align:right;}
+		}
+	}
+}
+/* 공통페이지 - 게시판 쓰기 */
+.tp-bd-write {
+	table[class^=comp-tbl][class*=_formtype][class*=_orange] {
+		border-top:2px solid #fe970e;
+		tr th {background:#fcf8e3;}
+		tr:nth-child(3) th,
+		tr:nth-child(3) td {border-bottom:1px solid #fe970e;}
+	}
+	.bd-editor {margin:6px 25px; height: 570px; overflow:hidden; }
 }
 /* 공통페이지 - 로그인 */
 .tp-total-login {
@@ -2648,6 +2672,7 @@ table[class^=comp-tbl] {
 		tbody{
 			td {height: 3.3rem; font-size: 1.2rem; line-height: 1.6rem; padding:0.5rem;}
 		}
+		.pc + * {border-left: 0;}
 	}
 
 	&[class*=_formtype] {
@@ -3110,7 +3135,7 @@ div[class^=comp-public-area] {
 
 
 
-
+ 
 
 /* 공통페이지 - 사이트맵 */
 .tp-sitemap {
@@ -3312,7 +3337,7 @@ div[class^=comp-public-area] {
 	table[class^=comp-tbl] {
 		.file {
 			padding-left:2.5rem; font-size: 1.2rem;
-			&:before {top:0; width:2rem; height:2rem;background-size: 100% 100%;}
+			&:before {top:0.5rem; width:2rem; height:2rem;background-size: 100% 100%;}
 			.lst {
 				li {float:none;}
 				li + li:before {display:none;}
@@ -3321,6 +3346,20 @@ div[class^=comp-public-area] {
 		}
 		.bd-content {min-height: 20rem}
 	}
+	.reply-wrap {
+		.write-area {border:.5rem solid #fcf8e3;}
+		textarea[class^=comp-textarea] {width:77%;}
+		*[class^=comm-btn][class*=_lightorange] {width:23%;padding:0 1rem;}
+		.relpy-list li {
+			padding:.9rem 0;font-size:1.2rem;
+			.writer {width:4.5rem;padding-right:.5rem;}
+			.reply {width:60%;}
+		}
+	}
+}
+/* 공통페이지 - 게시판 쓰기 */
+.tp-bd-write {
+	.bd-editor {margin:0; height:30rem; }
 }
 /* 공통페이지 - 로그인 */
 .tp-total-login {

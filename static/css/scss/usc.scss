@@ -839,10 +839,9 @@ MAIN
 }
 
 
+ 
 
-
-
-
+ 
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
@@ -1658,11 +1657,128 @@ div[class^=oftoday_] {
 	.comp-lst_dotted {margin-top:7px;}
 	.comp-charter-cont .inner .cont .surround .tit {background: url("../../static/images/usc/subpage/img_part03_03_txt.png") no-repeat 50% 50%; }
 	.comp-charter-cont .inner .cont .surround .list {margin:31px 121px 0; text-align: center;}
+} 
+// 상징
+.emblem{
+	.heading-h3 {margin-bottom:20px;}
+	div[class$='-wrap'] {
+		overflow:hidden; margin-bottom:50px;
+		& > div {float:left;}
+		.info-area {float:left; width:-webkit-calc(100% - 430px);width:-moz-calc(100% - 430px);width:-o-calc(100% - 430px);width:calc(100% - 430px);}
+		& > .img-area {width:400px;height:272px;margin-right:30px;padding:12px 9px;}
+	}
+	div.brand-wrap {margin-bottom:0;}
+	.military-wrap .img-inner,
+	.brand-wrap .img-inner {display:table;width:100%;height:100%;text-align:center;}
+	.img {display:table-cell;vertical-align:middle;}
+	.military-wrap {
+		.img-area {border:1px solid #cedfdf;background:#f5f8f8;text-align:center;box-sizing:border-box;}
+		.img-inner {background:#901b21;}
+		.info-area {padding-top: 10px}
+	}
+	.info-area {
+		.heading-h4 {font-size:17px;margin:19px 0 9px 0;}
+		.heading-h4 + .comp-lst_dotted {margin-left:12px;font-size:15px;letter-spacing:-0.5px;line-height:23px;font-family:'NanumSquareR';}
+		.heading-h4 + .comp-lst_dotted li {font-family:'NanumSquareR'}
+		.comp-lst_dotted .comp-lst_hyphen {margin-left:-15px;}
+		.comp-lst_dotted .comp-lst_hyphen li {font-size:14px;font-family:'NanumSquareR';}
+	}
+	.symbol-wrap .img-area,
+	.char-wrap .img-area {padding:0 !important;}
+	.symbol-wrap .symbol-info {
+		width:400px;margin-right:30px;
+		ul {
+			margin-bottom:10px;
+			&:after {display:block;clear:both;content:'';}
+			li {float:left;width:31.5%;height:124px;padding-top:40px;font-size:17px;line-height:23px;font-family:'NanaumSquareB';color:#fff;text-align:center;box-sizing:border-box;}
+			li + li {margin-left:11px;background:#f5c71f;}
+			li:first-child {margin-left:0;background:#369244;}
+			li:first-child + li {background:#d51a3c;}
+		}
+		*[class^=comm-btn][class*=_type4] {width:100%;}
+	}
+	.char-wrap *[class^=comm-btn][class*=_type4],
+	.brand-wrap *[class^=comm-btn][class*=_type4] {position:absolute;bottom:0;right:0;}
+	.bro-wrap {
+		text-align:center;
+		ul {margin-bottom:16px;}
+		li {
+			position:relative;display:inline-block;width:-webkit-calc((100% / 5) - 7px);width:-moz-calc((100% / 5) - 7px);width:-o-calc((100% / 5) - 7px);width:calc((100% / 5) - 7px);margin-left:5px;
+			&:first-child {margin-left:0;}
+			*[class^=comm-btn][class*=_type4] {width:100%;padding:0;}
+		}
+		.comm-btn_type4_deeporange {float:right;}
+		.img-area {display:table;width:100%;margin-bottom:4px;padding:15px 0;border:1px solid #cedfdf;}
+	}
+	.plants-wrap{ 
+		.heading-h4 {margin-left:0;}
+		.comp-lst_dotted {font-size:15px;font-family:'NanumSquareR';}
+	}
+	.brand-wrap {
+		position:relative;height:320px;
+		.img-area {background:url(../images/usc/subpage/bg_emblem_brand.gif) no-repeat left top;}
+	}
+}
+// 연혁
+.history {
+	.tp-history-tit {
+		position:relative;width:100%;height:437px;margin-bottom:32px;padding:62px 120px 70px;background:url(../images/usc/subpage/bg_history.png) no-repeat left top;border:2px solid #ba5534;text-align:center;box-sizing:border-box;
+		&:before {position:absolute;right:-1px;top:-1px;display:inline-block;width:40px;height:40px;background:url(../images/usc/subpage/bg_history_corner.png) no-repeat left top;content:'';}
+		&:after {position:absolute;left:-1px;top:-1px;display:inline-block;width:40px;height:40px;background:url(../images/usc/subpage/bg_history_corner.png) no-repeat left top;-webkit-transform:rotateY(-180deg);-moz-transform:rotateY(-180deg);-o-transform:rotateY(-180deg);transform:rotateY(-180deg);content:'';}
+		.visual{
+			&:before {position:absolute;right:-1px;bottom:-1px;display:inline-block;width:40px;height:40px;background:url(../images/usc/subpage/bg_history_corner.png) no-repeat left top;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg);content:'';}
+			&:after {position:absolute;left:-1px;bottom:-1px;display:inline-block;width:40px;height:40px;background:url(../images/usc/subpage/bg_history_corner.png) no-repeat left top;-webkit-transform:rotate(-180deg);-moz-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg);content:'';}
+		}
+		.tit-top {margin-bottom:50px;}
+		.tit {margin-bottom:30px;font-size:18px;color:#b64926;letter-spacing:2px;}
+		.txt {height:75px;background:url(../images/usc/subpage/txt_history.png) no-repeat center top;text-indent:-999em;}
+		.history-list {
+			display:table;text-align:center;
+			li {
+				display:table-cell;width:16%;height:123px;padding:5px;vertical-align:middle;font-size:17px;color:#000;box-sizing:border-box;
+				&:nth-child(odd) {
+					position:relative;border:1px solid #b64926;
+					&:after {position:absolute;right:-18px;top:33px;width:27px;height:1px;background:#b64926;z-index:100;content:'';}
+					&:before {position:absolute;right:-18px;top:92px;width:27px;height:1px;background:#b64926;z-index:100;content:'';}
+				}
+				&:nth-child(even) {width:105px;height:105px;border:10px solid #fff;}
+			}
+		}
+	}
+	.tp-history-con {
+		position:relative;display:table;width:100%;padding:26px 0 0 10px;border-top:2px solid #e7ebee;box-sizing:border-box;
+		.tit {
+			display:table-cell;width:254px;font-size:28px;color:#2b2b2b;font-family:'NanumSquareEB';vertical-align:top;
+			&:after {position:absolute;top:-2px;left:0;width:254px;height:2px;background:#f27405;content:'';}
+			span {display:block;margin-bottom:10px;font-size:14px;color:#8c8c8c;font-family:'NanumSquareR';}
+		}
+		.con {
+			display:table-cell;font-family:'NanumSquareB';color:#8c8c8c;line-height:26px;
+			.txt + .txt,
+			.txt + .img {margin-top:30px;}
+		}
+		.date-list {
+			margin-bottom:25px;
+			li {
+				overflow:hidden;
+				& + li {margin-top:15px;}
+				& > * {float:left;}
+				.date {
+					position:relative;margin-right:20px;padding-right:25px;font-size:16px;font-family:'NanumSquareEB';color:#b64926;
+					&:before {position:absolute;top:0;right:0;display:inline-block;content:'/';}
+				}
+			}
+		}
+	}
 }
 
-
-
-
+/* 소통참여 ------------------------------------------- */
+.civil {
+	.comp-lst_dotted_grey li {font-size:14px;}
+	.comp-tbl_datatype *[class^=comm-btn][class*=_filefind] {width:24px;height:24px;padding:0;line-height:24px;}
+	.comp-tbl_datatype *[class^=comm-btn][class*=_filefind]:before {margin:0;}
+	.comp-tbl_datatype .comp-filefind {display:inline-block;}
+}
 
 /* 공통페이지 ------------------------------------------- */
 // 사이트맵
@@ -2964,9 +3080,91 @@ div[class^=oftoday_] {
 	.uscsong-btn *[class^=comm-btn_type4][class$=_lightorange] span {font-size: 1.1rem; padding-left: 2rem; background-size:auto 100%;}
 	.img_uscsong {padding:3rem 2rem;}
 }
+// 상징
+.emblem  {
+	.heading-h3 {margin-bottom:.6rem;}
+	div[class$='-wrap'] {
+		margin-bottom:2.5rem;
+		& > .img-area {width:15.5rem;height:15rem;margin-right:1.5rem;padding:.6rem .5rem;}
+		.info-area {width:-webkit-calc(100% - 17rem);width:-moz-calc(100% - 17rem);width:-o-calc(100% - 17rem);width:calc(100% - 17rem);}
+	}
+	.military-wrap .img-inner,
+	.brand-wrap .img-inner {padding:1rem;}
+	.info-area {
+		.heading-h4 {font-size:1.3rem;margin:1rem 0 .5rem 0;}
+		.heading-h4 + .comp-lst_dotted {margin-left:.6rem;font-size:1.2rem;line-height:1.6rem;}
+		.comp-lst_dotted .comp-lst_hyphen {margin-left:-.9rem;}
+		.comp-lst_dotted .comp-lst_hyphen li {font-size:1.2rem;}
+	}
+	.symbol-wrap .symbol-info {
+		width:15.5rem;margin-right:1.5rem;
+		ul {margin-bottom:.5rem;background-size:15.5rem;}
+		li {width:30.7%;height:6.2rem;padding-top:2rem;font-size:1.1rem;line-height:1.2rem;}
+		li + li {margin-left:.6rem;}
+	}
+	.symbol-wrap .symbol-info *[class^=comm-btn][class*=_type4],
+	 *[class^=comm-btn][class*=_type4] {height:auto;padding:1rem;line-height:1.5rem;}
+	 *[class^=comm-btn][class*=_type4]:after {display:none;}
+	.char-wrap {position:relative;}
+	.char-wrap *[class^=comm-btn][class*=_type4] {left:0;right:auto;bottom:auto;top:11rem;width:15.5rem;}
+	.brand-wrap *[class^=comm-btn][class*=_type4] {position:static;float:right;margin-top:1rem;}
+	.bro-wrap ul {
+		position:relative;overflow:hidden;display:inline-block;margin-bottom:.8rem;
+		li {width:31%;margin-left:5px;}
+		li:nth-child(n+4) {margin-top:1rem;}
+		li:nth-child(4) {width:35%;}
+		li .img-area {display:table;height:14rem;padding:0;}
+		li .img-area .img {display:table-cell;vertical-align:middle;}
+		li *[class^=comm-btn][class*=_type4] {height:auto;padding:1rem .4rem;line-height:1.5rem;}
+	}
+	.plants-wrap .comp-lst_dotted {font-size:1.2rem;}
+	.brand-wrap {
+		height:auto;
+		.img-area {background-size:15.5rem 15rem;}
+	}
+}
+// 연혁
+.history {
+	.tp-history-tit {
+		height:auto;margin-bottom:1.6rem;padding:3rem 1.5rem;background-size:cover;
+		&:before,
+		&:after,
+		.visual:before,
+		.visual:after {width:2rem;height:2rem;background-size:100%;}
+		.tit-top {margin-bottom:2.5rem;}
+		.tit {margin-bottom:1.5rem;font-size:1.5rem;}
+		.txt {height:7.5rem;background-size:100%;}
+		.history-list {
+			display:block;
+			li {position:relative;display:block;width:100% !important;height:7rem;font-size:1.3rem;}
+			li:nth-child(odd):after,
+			li:nth-child(odd):before {display:none;}
+			li:nth-child(even) {height:9rem;}
+			li p {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
+		}
+	}
+	.tp-history-con {
+		display:block;padding:1.3rem 0 0 0;
+		.tit {display:block;width:100%;font-size:2rem;margin-bottom:1rem;}
+		.tit:after {width:13rem;}
+		.tit span {margin-bottom:.5rem;font-size:1.2rem;}
+		.con {display:block;line-height:1.5rem;font-size:1.2rem;}
+		.con > .txt + .txt,
+		.con > .txt + .img {margin-top:1.5rem;}
+		.date-list {
+			margin-bottom:1.7rem;
+			.txt {width:69%;}
+			li + li {margin-top:.7rem;}
+			li .date {margin-right:1rem;padding-right:1.5rem;font-size:1.2rem;}
+		}
+	}
+}
 
-
-
+/* 소통참여 ------------------------------------------- */
+.civil {
+	.comp-lst_dotted_grey li {font-size:1.2rem;}
+	.comp-tbl_datatype *[class^=comm-btn][class*=_filefind] {width:3.3rem;height:3.3rem;line-height:3.3rem;}
+}
 
 /* 공통페이지 ------------------------------------------- */
 // 사이트맵
@@ -3152,7 +3350,8 @@ div[class^=oftoday_] {
 		.list {margin:1rem 0;}
 	}
 }
-
+// 연혁
+.history .tp-history-tit .txt {height:6rem;}
 
 
 
@@ -3160,6 +3359,9 @@ div[class^=oftoday_] {
 
 }
 //-------------------------------------------------------------------------------
+@media (max-width:640px){
+.history .tp-history-tit .tit-top {margin-bottom:0;}
+}
 @media (max-width:321px){
 /* 분야별정보 ------------------------------------------ */
 // 마을세무사
@@ -3168,7 +3370,9 @@ div[class^=oftoday_] {
 	.intro-wrap .sub-txt {text-align:left;}
 	.btn-webtoon {line-height:2.5rem;}
 }
-
+/* 의성안내 ------------------------------------------ */
+// 연혁
+.history .tp-history-tit .txt {height:4rem;}
 }
 //-------------------------------------------------------------------------------
 

@@ -351,6 +351,15 @@ SUB PAGE
 
 .usclib .books-detail-contents { padding: 0 20px; }
 
+/* 열린마당 */
+.usclib_part05_01 .flow-chart:after { display: block; clear: both; content: ''; }
+.usclib_part05_01 .flow-chart li { position: relative; float: left; width: 164px; height: 163px; margin-left: 104px; padding: 41px 0 0; background: url(../images/usclib/subpage/bg_chart.png) no-repeat; text-align: center; box-sizing: border-box; }
+.usclib_part05_01 .flow-chart li:before { display: block; position: absolute; left: 164px; top: 50%; width: 104px; height: 1px; margin-top: -1px; background: #d6d3d2; content: ''; }
+.usclib_part05_01 .flow-chart li:after { display: block; position: absolute; left: -63px; top: 50%; width: 24px; height: 24px; margin-top: -12px; background: url(../images/usc/bg_flow_chart_arrow.png) no-repeat; content: ''; }
+.usclib_part05_01 .flow-chart li:first-child { margin-left: 0; }
+.usclib_part05_01 .flow-chart li:first-child:after, .usclib_part05_01 .flow-chart li:last-child:before { display: none; }
+.usclib_part05_01 .flow-chart li span { display: block; width: 110px; margin: 7px auto 0; padding: 7px 0 0; border-top: 1px solid #e9e8e7; font-size: 16px; color: #336ac0; line-height: 20px; }
+
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
@@ -570,4 +579,15 @@ MEDIA QUERY
   .usclib .books-infor-zone .tbl-book-infor *[class^=state-] { width: 9rem; line-height: 3rem; }
   .usclib .books-infor-zone .tbl-book-infor .btn-put { width: 9rem; margin-left: 0.5rem; line-height: 3rem; }
   .usclib .books-infor-zone .tbl-book-infor .btn-put:before { width: 1.5rem; height: 1.3rem; background-size: 100% 100%; }
-  .usclib .books-detail-contents { padding: 0 0.5rem; } }
+  .usclib .books-detail-contents { padding: 0 0.5rem; }
+  /* 열린마당 */
+  .usclib_part05_01 .flow-chart { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .usclib_part05_01 .flow-chart li { -webkit-flex: 1; flex: 1; width: auto; margin-left: 1.6rem; padding: 2rem 0 0; background-size: contain; background-position: center; text-align: center; }
+  .usclib_part05_01 .flow-chart li:before { display: none; }
+  .usclib_part05_01 .flow-chart li:after { left: -0.5rem; width: 1.6rem; height: 1.6rem; margin-left: -1rem; background-size: 100%; }
+  .usclib_part05_01 .flow-chart li span { width: 9rem; font-size: 1.2rem; line-height: 1.8rem; } }
+@media (max-width: 768px) { /* 열린마당 */
+  .usclib_part05_01 .flow-chart li { display: table; width: 100%; height: 8rem; padding: 0; }
+  .usclib_part05_01 .flow-chart li:before { display: none; }
+  .usclib_part05_01 .flow-chart li span { display: table-cell; width: auto; padding: 0; margin: 0; border: 0; font-size: 1rem; line-height: 1.4rem; vertical-align: middle; }
+  .usclib_part05_01 .flow-chart li img { display: none; } }

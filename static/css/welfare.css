@@ -62,7 +62,7 @@ SUB PAGE
 .seminar-guide .calander_tbl th {height: 49px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; text-align: center; color: #444; background: #f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; }
 .seminar-guide .calander_tbl th:first-child { color: #ea0909; border-left: 0; }
 .seminar-guide .calander_tbl th:last-child { color: #1277cd; }
-.seminar-guide .calander_tbl td {height: 150px; padding: 10px 12px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; color: #303030; font-size: 18px; vertical-align: top; box-sizing: border-box; }
+.seminar-guide .calander_tbl td {height:100px; padding: 10px 12px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; color: #303030; font-size: 18px; vertical-align: top; box-sizing: border-box; }
 .seminar-guide .calander_tbl td:first-child {color: #ea0909; border-left: 0; }
 .seminar-guide .calander_tbl td:last-child {color: #1277cd; }
 .seminar-guide .calander_tbl td.today {background:#f40723; }

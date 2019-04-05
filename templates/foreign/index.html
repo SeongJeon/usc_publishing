@@ -91,7 +91,7 @@
 								<li><a href="#">의성군 상징 및 기호</a></li>
 								<li><a href="#">의성군 위치 및 자연환경</a></li>
 							</ul>
-						</div>
+						</div> 
 						<div class="gorup-small">
 							<div class="tourist-map">
 								<h2 class="tit">관광지도안내</h2>
@@ -103,34 +103,49 @@
 							</div>
 						</div>
 					</div>
-					<div class="festival">
-						<h2 class="hidden">의성의 농특산품</h2>
+					<div class="festival js-festival">
+						<h2 class="hidden">의성의 축제</h2>
+						<div class="slide-indicator">
+							<p><button type="button" class="btn-prev"><span>의성의 축제 이전</span></button></p>
+							<p><button type="button" onclick="usc.slickPause('.js-news-favoritmenu','.slider', this)" class="btn-pause"><span>의성의 축제 일시정지 및 재생</span></button></p>
+							<p><button type="button" class="btn-next"><span>의성의 축제 다음</span></button></p>
+						</div>
 						<div class="slider">
 							<div class="slide">
 								<span class="category">1의성의 축제</span>
-								<p class="tit">산수유마을 꽃맞이 행사</p>
-								<div class="img-area"></div>
+								<p class="tit"><a href="#">산수유마을 꽃맞이 행사산수유마을 꽃맞이 행사산수유마을 꽃맞이 행사산수유마을 꽃맞이 행사</a></p>
+								<div class="img-area"><a href="#"><img src="../../static/images/foreign/temp/@img_festival.jpg" alt="산수유마을 꽃맞이 행사 전경"></a></div>
 							</div>
 							<div class="slide">
 								<span class="category">2의성의 축제</span>
-								<p class="tit">산수유마을 꽃맞이 행사</p>
-								<div class="img-area"></div>
+								<p class="tit"><a href="#">산수유마을 꽃맞이 행사</a></p>
+								<div class="img-area"><a href="#"><img src="../../static/images/foreign/temp/@img_festival.jpg" alt="산수유마을 꽃맞이 행사 전경"></a></div>
 							</div>
 						</div>
 					</div>
-					<div class="list-product">
+					<div class="list-product js-list-product">
 						<h2 class="hidden">의성의 농특산품</h2>
+						<div class="slide-indicator">
+							<p><button type="button" class="btn-prev"><span>의성의 농특산품 이전</span></button></p>
+							<p><button type="button" onclick="usc.slickPause('.js-news-favoritmenu','.slider', this)" class="btn-pause"><span>의성의 농특산품 일시정지 및 재생</span></button></p>
+							<p><button type="button" class="btn-next"><span>의성의 농특산품 다음</span></button></p>
+						</div>
 						<div class="slider">
 							<div class="slide">
 								<span class="category">1의성의 농특산품</span>
-								<span class="tit">의성진 마늘</span>
-								<span class="txt">의성진마늘의 재배역사는 매우 <br>오래되었으며, 그 유래가 깊다.</span>
-								<div class="img-area"></div>
+								<a href="#">
+									<span class="tit">의성진 마늘</span>
+									<span class="txt">의성진마늘의 재배역사는 매우 <br>오래되었으며, 그 유래가 깊다.</span>
+								</a>
+								<div class="img-area"><a href="#"><img src="../../static/images/foreign/temp/@img_product.jpg" alt="의성진 마늘"></a></div>
 							</div>
 							<div class="slide">
 								<span class="category">2의성의 농특산품</span>
-								<span class="tit">의성진 마늘</span>
-								<span class="txt">의성진마늘의 재배역사는 매우 <br>오래되었으며, 그 유래가 깊다.</span>
+								<a href="#">
+									<span class="tit">의성진 마늘</span>
+									<span class="txt">의성진마늘의 재배역사는 매우 <br>오래되었으며, 그 유래가 깊다.</span>
+								</a>
+								<div class="img-area"><a href="#"><img src="../../static/images/foreign/temp/@img_product.jpg" alt="의성진 마늘"></a></div>
 							</div>
 						</div>
 					</div>
@@ -138,65 +153,65 @@
 				<!-- // MAIN-INFO -->
 				<!-- MAIN-ETC-ZONE -->
 				<div class="main-etc-zone">
-					<div class="travel-info">
-						<h2>여행정보 바로가기</h2>
-						<ul>
-							<li><a href="#">숙박시설</a></li>
-							<li><a href="#">bbb korea</a></li>
-							<li><a href="#">여행 안내전화(1330)<br>콜센터</a></li>
-							<li><a href="#">24시간<br>통역서비스</a></li>
-							<li><a href="#">1345 외국인<br>종합 정보센터</a></li>
-							<li><a href="#">여행정보</a></li>
-						</ul>
-
-					</div>
-					<div class="weather-info">
-						<h2>날씨정보</h2>
-						<p class="date">2019년 1월 20일 9시 기준</p>
-						<div class="info">
-							<span class="ico"></span>
+					<div class="inner">
+						<div class="travel-info">
+							<h2 class="heading">여행정보 바로가기</h2>
 							<ul class="list">
+								<li class="ico-01"><a href="#">숙박시설</a></li>
+								<li class="ico-02"><a href="#">bbb korea</a></li>
+								<li class="ico-03"><a href="#">여행 안내전화(1330)<br>콜센터</a></li>
+								<li class="ico-04"><a href="#">24시간<br>통역서비스</a></li>
+								<li class="ico-05"><a href="#">1345 외국인<br>종합 정보센터</a></li>
+								<li class="ico-06"><a href="#">여행정보</a></li>
+							</ul>
+
+						</div>
+						<div class="weather-info">
+							<h2 class="heading">날씨정보</h2>
+							<p class="date">2019년 1월 20일 9시 기준</p>
+							<div class="info">
+								<span class="ico"><img src="../../static/images/foreign/img_weather01.png" alt="맑음">17.5℃</span>
+								<ul class="list">
+									<li>
+										<dl>
+											<dt>기상</dt>
+											<dd>맑음</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>미세먼지</dt>
+											<dd>보통</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>강수량</dt>
+											<dd>0.0mm</dd>
+										</dl>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="usc-guide">
+							<h2 class="heading">의성 가이드</h2>
+							<ul class="phone-number">
 								<li>
-									<dl>
-										<dt>기상</dt>
-										<dd>맑음</dd>
-									</dl>
+									<div class="info">
+										<span class="tit">관광 안내전화</span>
+										<span class="txt">TEL. 1300</span>
+									</div>
 								</li>
 								<li>
-									<dl>
-										<dt>미세먼지</dt>
-										<dd>보통</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>강수량</dt>
-										<dd>0.0mm</dd>
-									</dl>
+									<div class="info">
+										<span class="tit">관광 통역 안내전화</span>
+										<span class="txt">TEL. 1345</span>
+									</div>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="usc-guide">
-						<h2>날씨정보</h2>
-						<ul class="phone-number">
-							<li>
-								<span class="ico"></span>
-								<div class="info">
-									<span class="tit">관광 안내전화</span>
-									<span class="txt">TEL. 1300</span>
-								</div>
-							</li>
-							<li>
-								<span class="ico"></span>
-								<div class="info">
-									<span class="tit">관광 통역 안내전화</span>
-									<span class="txt">TEL. 1345</span>
-								</div>
-							</li>
-						</ul>
-
-					</div>
+					
 				</div>
 				<!-- // MAIN-ETC-ZONE -->
 				
@@ -239,10 +254,10 @@
 			speed: 1000,
 			fade: true,
 			arrows: false,
-			swipe: true,
+			swipe: false,
 			dotsClass: 'custom-paging',
 			customPaging: function(slider, i) {
-				return '<em>' + (i + 1) + '</em>' + "/" + slider.slideCount;
+				return "<a href='#none'>" + (i + 1) + "</a>"
 			},
 			responsive: [
 				{
@@ -254,6 +269,30 @@
 			]
 		});
 	})();
+
+	//의성의 축제
+	$('.js-festival .slider').slick({
+		dots: false,
+		arrows: true,
+		speed: 400,
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		nextArrow : $('.js-festival .btn-prev'),
+		prevArrow : $('.js-festival .btn-next')
+	});
+
+	//의성의 농특산품
+	$('.js-list-product .slider').slick({
+		dots: false,
+		arrows: true,
+		speed: 400,
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		nextArrow : $('.js-list-product .btn-prev'),
+		prevArrow : $('.js-list-product .btn-next')
+	});
 
 
 

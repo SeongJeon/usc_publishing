@@ -33,35 +33,25 @@ SUB PAGE
 
 
 
+/*----------------------ebook_part02------------------*/
+
+.ebook_part02 .contents-zone .comp-lst_important {color:#fc0000;}
+.ebook_part02 .contents-zone .img1 {width: 956px; height: 511px; background-color:#f1f1f1;}
 
 
 
+.ebook_part02 #tab-1 table tbody { border-bottom: 1px solid #7a7a7a;}
+.ebook_part02 #tab-1 table tbody td:first-child{ color:#4b4b4b; }
+.ebook_part02 #tab-1 table tbody td+td { padding-left:20px; }
+.ebook_part02 #tab-2 .comp-tab li {width:168px;}
+.ebook_part02 #tab-2 .comp-tab li:nth-child(n+6) a { border-top: 1px solid #d1d1d1; border-left:0;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ebook_part02 #tab-3 #mo_ver .ver-tab {height: 154px;}
+.ebook_part02 #tab-3 #mo_ver .ver-tab:after {display:block; clear:both; content:'';}
+.ebook_part02 #tab-3 #mo_ver .ver-tab li { float:left; width:49%; height:154px; border:1px solid #a9a9a9; box-sizing: border-box;text-align: center; }
+.ebook_part02 #tab-3 #mo_ver .ver-tab li:nth-child(1) img { width:261px; height: 91px;}
+.ebook_part02 #tab-3 #mo_ver .ver-tab li:nth-child(2) img { width:188px; height: 87px;}
 
 
 

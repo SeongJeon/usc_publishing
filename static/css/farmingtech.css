@@ -1,68 +1,72 @@
-@charset "utf-8";
- 
-
-
-/* ------------------------------------------------------
-[ FONT WEIGHT ]
-기본 공통 폰트 - 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
- 
-나눔스퀘어 
-'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font0
-'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font1
-'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font2
-'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font3
------------------------------------------------------- */
-
+@charset "UTF-8";
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
+#wrap.uscmuseum #footer { background: #302c26; }
+#wrap.uscmuseum #footer .footer-selectgroup .footer-comp-select dt button { border-color: #221f1b; color: #fff; background: #221f1b url("../../static/images/uscmuseum/form_select.png") no-repeat 100% 50%; }
+#wrap.uscmuseum #footer .footer-utilegroup { padding-left: 0; color: #a9a9a9; }
+#wrap.uscmuseum #footer .footer-utilegroup .footer-utile a { color: rgba(255, 255, 255, 0.7); }
+#wrap.uscmuseum #footer .footer-utilegroup .footer-addr li strong { color: #fff; }
+#wrap.uscmuseum #footer .footer-notice .number { color: #ee9166; }
+#wrap.uscmuseum #footer .footer-notice .number .call { background: url("../../static/images/uscmuseum/icon_footer_call.png") no-repeat 50% 50%; background-size: 100% 100%; }
+#wrap.uscmuseum #footer .footer-notice .txt { color: #bababa; }
 
+#wrap.uscmuseum #container { padding-top: 130px; }
 
-
-
-
+@media (min-width: 1025px) { body.pc .uscmuseum #header .header-middle .title a { width: 250px; height: 48px; background: url("../../static/images/uscmuseum/img_logo.png") no-repeat 50% 50%; }
+  body.pc .uscmuseum #header .header-bottom .sitemap { background: #c3893a; }
+  body.pc .uscmuseum #header.header-type2 #gnb h2.over a:before, body.pc .uscmuseum #header.header-type2 #gnb h2 a:hover:before { background: #733f2c; }
+  body.pc .uscmuseum #header.header-type2 #gnb h2.over a:after, body.pc .uscmuseum #header.header-type2 #gnb h2 a:hover:after { border-color: #733f2c; }
+  body.pc .uscmuseum #header.header-type2 #gnb p a:hover { background: #dcb725; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+  body.pc .uscmuseum #header.header-type2 #gnb h3 a:before { background: #1e4363; }
+  body.pc .uscmuseum #header.header-type2.open { border-bottom-color: #c3893a; }
+  body.pc .uscmuseum #header.header-type2.open .header-bottom { border-bottom-color: #edc834; }
+  body.pc .uscmuseum #header.header-type2 .header-middle .title { top: 22px; }
+  body.pc .uscmuseum #header.header-type2 #gnb p a { background: #ffeda9; color: #2d2d2d; }
+  body.pc .uscmuseum #gnb { margin-left: 330px; }
+  body.pc .uscmuseum #gnb h2 a { width: 150px; }
+  body.pc .uscmuseum #gnb .depth2menu { width: 226px; height: 420px; padding-left: 36px; }
+  body.pc .uscmuseum #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }
+  body.pc .uscmuseum #gnb .gnb > li:nth-child(2) .depth2menu { left: 190px; }
+  body.pc .uscmuseum #gnb .gnb > li:nth-child(3) .depth2menu { left: 416px; }
+  body.pc .uscmuseum #gnb .gnb > li:nth-child(4) .depth2menu { left: 642px; }
+  body.pc .uscmuseum #gnb .gnb > li:nth-child(5) .depth2menu { left: 868px; }
+  body.pc .uscmuseum #gnb .gnb > li:nth-child(6) .depth2menu { left: 1094px; }
+  body.pc .uscmuseum #gnb .gnb > li:nth-child(1) .depth2menu { width: 190px; padding-left: 0; } }
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
-
-
-
-
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-
-
-
-
-
-
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
-@media screen and (-webkit-min-device-pixel-ratio:0){ } // webkit hack
-@-moz-document url-prefix() { } // firefox hack
-
+@-moz-document url-prefix() {}
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width:1024px){}
-@media (max-width:768px){
-
-
-}
-@media (max-width:321px){}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 1024px) { /* ------------------------------------------------------ - LAYOUT ------------------------------------------------------ */
+  #wrap.uscmuseum #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/uscmuseum/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.uscmuseum #header .header-bottom .header-utilegroup .header-utile .icon-join:before { background: url("../../static/images/uscmuseum/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.uscmuseum #header .header-bottom .gnb-mo-title { background: #dcb725; }
+  #wrap.uscmuseum #header .header-bottom .header-utilegroup { background: #f5f3df; }
+  #wrap.uscmuseum #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #d8cf6c; }
+  #wrap.uscmuseum #header .header-middle .btn-menu-open button { background-color: #c3893a; }
+  #wrap.uscmuseum #header .header-middle .title a { width: 20.8rem; background: url("../../static/images/uscmuseum/img_logo_m.png") no-repeat 50% 50%; }
+  #wrap.uscmuseum #gnb .category { display: none; }
+  #wrap.uscmuseum #gnb .gnb .clicked, #wrap.uscmuseum #gnb .gnb .current, #wrap.uscmuseum #gnb .gnb .clicked h3 a, #wrap.uscmuseum #gnb .gnb h2 a:hover, #wrap.uscmuseum #gnb .gnb h3 a:hover, #wrap.uscmuseum #gnb .gnb h4 a:hover { color: #c3893a; }
+  #wrap.uscmuseum #gnb .gnb h4 a:hover:before { background: #c3893a; }
+  /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
+  /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */ }
+@media (max-width: 768px) { /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
+  #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] { padding: 2rem 0; }
+  /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */ }
+@media (max-width: 360px) { /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
+  #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu a { width: 6rem; height: 6rem; }
+  #wrap.uscmuseum #container.main .main-group-zone .tit .small { display: block; } }
+@media (max-width: 321px) { /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
+  #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] .tit { font-size: 1.7rem; }
+  #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .information-lst { padding-left: 10rem; }
+  #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu { padding-left: 12rem; }
+  #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu a { width: 5.5rem; height: 5.5rem; } }

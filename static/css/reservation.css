@@ -316,7 +316,7 @@ MEDIA QUERY
 	.reservation .reserve-wrap .btn-reserve,
 	.reservation .reserve-wrap .deadline {position:static;padding:.7rem 0;}
 	.reservation .reserve-wrap .btn-reserve span,
-	.reservation .reserve-wrap .deadline span {font-size:1.2rem;}
+	.reservation .reserve-wrap .deadline span {padding:.3rem 0 .3rem 2rem;font-size:1.2rem;}
 	.reservation .util-area,
 	.reservation .slide-wrap .slick-arrow {display:none !important;}
 	.reservation .section-combine {padding:2rem .9rem 2rem;}

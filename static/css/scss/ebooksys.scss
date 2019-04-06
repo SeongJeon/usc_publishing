@@ -228,54 +228,66 @@ MAIN
 .ebooksys .main {
 	.section {
 		position:relative; width: 100%; height:810px; background:#f9e8de;
-		.title {height:180px; background:url(../images/ebooksys/main/txt_visual.png) no-repeat center bottom; text-indent:-9999em;}
-
-		&:first-of-type {height:800px; background:url(../images/ebooksys/main/bg_main_visual.jpg); -webkit-background-size:cover; background-size:cover;}
+		&:first-of-type {height:auto; background:none; overflow: hidden;}
 	}
 	.main-slide {
-		position:relative; width:1320px; margin:90px auto 100px auto;
-		.list {
-			*[class^='togo'] {
-				text-align:center; color:#fff;
-				a {position:relative; display:block;}
-				a:before {display:block; content:""; width:126px; height:126px; margin:0 auto 15px auto; border-radius:126px; background:url(../images/ebooksys/main/sp_main_slide.png) no-repeat;}
-				a:after {position:absolute; left:50%; top:0; display:block; content:""; width:126px; height:126px; border-radius:126px; margin-left:-63px;  box-sizing: border-box; }
-				a:hover:after,
-				a:focus:after {transition: all 0.2s ease; -webkit-transition: all 0.2s ease;}
-			}
-			.togo1 a:before {background:url(../images/ebooksys/main/main_slide01.png) no-repeat;}
-			.togo2 a:before {background:url(../images/ebooksys/main/main_slide02.png) no-repeat;}
-			.togo3 a:before {background:url(../images/ebooksys/main/main_slide03.png) no-repeat;}
-			.togo4 a:before {background:url(../images/ebooksys/main/main_slide04.png) no-repeat;}
-			.togo5 a:before {background:url(../images/ebooksys/main/main_slide05.png) no-repeat;}
-			.togo1 a:hover:after,
-			.togo1 a:focus:after {border:6px solid #e5bfb7;}
-			.togo2 a:hover:after,
-			.togo2 a:focus:after {border:6px solid #f6c4ab;}
-			.togo3 a:hover:after,
-			.togo3 a:focus:after {border:6px solid #ffd9b9;}
-			.togo4 a:hover:after,
-			.togo4 a:focus:after {border:6px solid #fde3be;}
-			.togo5 a:hover:after,
-			.togo5 a:focus:after {border:6px solid #fef6c1;}
+		position:relative; height: 700px;
+		.img {
+			height: 700px;
+			img {display: none}
+			&.mo {display: none;}
 		}
 		.slick-arrow {
-			position:absolute; top:24px; width:51px; height:102px; text-indent:-9999em;
-			&.main-slide-prev {left:-90px; background:url(../images/ebooksys/main/bg_main_slide_prev.png) no-repeat;}
-			&.main-slide-next {right:-90px; background:url(../images/ebooksys/main/bg_main_slide_next.png) no-repeat;}
+			position:absolute; top:290px; left:50%; width:51px; height:102px; text-indent:-9999em; z-index: 2;
+			&.main-slide-prev {margin-left: -754px; background:url(../images/ebooksys/main/bg_main_slide_prev.png) no-repeat;}
+			&.main-slide-next {margin-left: 700px; background:url(../images/ebooksys/main/bg_main_slide_next.png) no-repeat;}
 		}
 		.custom-paging {
-			position:absolute; right:-79px; top:145px;
+			position:absolute; left:50%; top:410px; margin-left: 710px;
 			> li {display:none; font-size:18px; color:#fff;font-style: italic;}
 			> li em {font-size:20px; font-weight:bold; font-style: italic;}
 			> li.slick-active {display:block;}
 		}
 	}
+	.main-top-section {
+		position: absolute; top:0; left:0; width:100%; 
+		& > .inner {position: relative; width:1320px; margin:0 auto;  height: 700px;}
+		.title {height:180px; background:url(../images/ebooksys/main/txt_visual.png) no-repeat center bottom; text-indent:-9999em;}
+	}
+	// 메인 메뉴
+	.main-menu-list {
+		overflow:hidden; width:1106px; margin:50px auto 0;
+		li {float: left; padding:0 47px;}
+		*[class^='togo'] {
+			text-align:center; color:#fff;
+			a {position:relative; display:block;}
+			a:before {display:block; content:""; width:126px; height:126px; margin:0 auto 15px auto; border-radius:126px; background:url(../images/ebooksys/main/sp_main_slide.png) no-repeat;}
+			a:after {position:absolute; left:50%; top:0; display:block; content:""; width:126px; height:126px; border-radius:126px; margin-left:-63px;  box-sizing: border-box; }
+			a:hover:after,
+			a:focus:after {transition: all 0.2s ease; -webkit-transition: all 0.2s ease;}
+		}
+		.togo1 a:before {background:url(../images/ebooksys/main/main_slide01.png) no-repeat;}
+		.togo2 a:before {background:url(../images/ebooksys/main/main_slide02.png) no-repeat;}
+		.togo3 a:before {background:url(../images/ebooksys/main/main_slide03.png) no-repeat;}
+		.togo4 a:before {background:url(../images/ebooksys/main/main_slide04.png) no-repeat;}
+		.togo5 a:before {background:url(../images/ebooksys/main/main_slide05.png) no-repeat;}
+		.togo1 a:hover:after,
+		.togo1 a:focus:after {border:6px solid #e5bfb7;}
+		.togo2 a:hover:after,
+		.togo2 a:focus:after {border:6px solid #f6c4ab;}
+		.togo3 a:hover:after,
+		.togo3 a:focus:after {border:6px solid #ffd9b9;}
+		.togo4 a:hover:after,
+		.togo4 a:focus:after {border:6px solid #fde3be;}
+		.togo5 a:hover:after,
+		.togo5 a:focus:after {border:6px solid #fef6c1;}
+	}
 	/*통합검색*/
 	.main-search-zone {
-		position:relative; width:1320px; height:150px; margin:0 auto; padding:34px 0 0 217px; background:#d7aa93 url(../images/ebooksys/main/bg_main_search_zone.png) no-repeat 96px 26px; border-radius:73px; -webkit-box-sizing:border-box;box-sizing:border-box; 
+		position:relative; height:150px; margin-top:55px; padding:34px 0 0 217px; 
+		background:#d7aa93 url(../images/ebooksys/main/bg_main_search_zone.png) no-repeat 96px 26px; border-radius:73px; 
 		 .form-search {
-		 	position:relative; width:824px; height:55px; margin:0 0 14px; background:#fff; border-radius:100px; -webkit-box-sizing:border-box;box-sizing:border-box; 
+		 	position:relative; width:824px; height:55px; margin:0 0 14px; background:#fff; border-radius:100px; 
 			 &:after {display:block; content:""; clear:both;}
 			 & > * {float:left; -webkit-box-sizing:border-box; box-sizing:border-box; }
 			 .select select {width:126px; height:55px; padding-left: 30px; line-height:55px; background:url(../images/ebooksys/main/bg_form_search_select.png) no-repeat right 50%; font-size:17px; color:#343434;}
@@ -306,7 +318,7 @@ MAIN
 	}
 	/*메인 공지*/
 	.main-notice {
-		position:absolute; bottom:0; left:0; right:0; width:1320px; height:55px; margin:0 auto; padding:11px 0 0 16px; background:rgba(0,0,0,0.4); -webkit-box-sizing:border-box;box-sizing:border-box; 
+		position:absolute; bottom:0; left:0; right:0; height:55px; padding:11px 0 0 16px; background:rgba(0,0,0,0.4); -webkit-box-sizing:border-box;box-sizing:border-box; 
 		.list {
 			.slick-list{width:1145px;}
 			li a {
@@ -702,18 +714,18 @@ SUB PAGE
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width: 1522px) {
-	.ebooksys .main-slide .slick-arrow.main-slide-prev,
-	.ebooksys .main-slide .slick-arrow.main-slide-next,
-	.ebooksys .main-slide .custom-paging,
-	.ebooksys .main-tab .slick-prev,
-	.ebooksys .main-tab .slick-next,
-	.ebooksys .main-tab .custom-paging {display:none !important;}
+	// .ebooksys .main-slide .slick-arrow.main-slide-prev,
+	// .ebooksys .main-slide .slick-arrow.main-slide-next,
+	// .ebooksys .main-slide .custom-paging,
+	// .ebooksys .main-tab .slick-prev,
+	// .ebooksys .main-tab .slick-next,
+	// .ebooksys .main-tab .custom-paging {display:none !important;}
 } @media (max-width: 1024px) {
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
 .ebooksys #header {
-	.header-middle .title a {margin:0 auto 0 1.4rem; width:23.4rem;width:57vw; background: url("../../static/images/ebooksys/img_logo_m.png") no-repeat 50% 50%; -webkit-background-size: 100% auto; background-size: 100% auto;}
+	.header-middle .title a {margin:0 auto 0 1.4rem; width:23.4rem; background: url("../../static/images/ebooksys/img_logo_m.png") no-repeat 50% 50%; -webkit-background-size: 100% auto; background-size: 100% auto;}
 	.header-middle .btn-menu-open button {background-color: #9e5433}
 	.header-bottom .gnb-mo-title {background: #f25e3d}
 	.header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/ebooksys/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
@@ -759,23 +771,34 @@ MAIN
 .ebooksys .main {
 	.section {
 		height:auto; padding:0 1rem 4.5rem;
-		&:first-of-type {height: auto; padding-bottom:13rem;}
-		.title {height:6rem; max-width:39.5rem; margin:0 auto; padding-top: 3.8rem; background-size:100% auto;}
+		&:first-of-type {height: auto; padding:0;}
 	}
 
 	// 메인 상단 슬라이드
 	.main-slide {
-		width:auto; margin:3.3rem auto; 
-		.list {
-			padding:0 3rem; text-align:center;
-			*[class^='togo'] {
-				display:inline-block; margin-left:4rem; margin-top:1.5rem;
-				a {
-					&:before {width:8rem; height:8rem; background-size:100%; border-radius:8rem;}
-					&:after {width:8rem; height:8rem; border-radius:8rem; margin-left:-4rem;}
-					&:hover:after,
-					&:focus:after {border-width:0.2rem;}
-				}
+		height: 61rem; 
+		button[class^=main-slide-] {display: none}
+		.img {
+			height: 61rem;
+			&.pc {display: none}
+			&.mo {display: block; height: 61rem;}
+		}
+	}
+	.main-top-section {
+		& > .inner {width:100%; height: 61rem; padding:0 1rem; text-align: center;}
+		.title {height:6rem; max-width:39.5rem; margin:0 auto; padding-top: 3.8rem; background-size:100% auto;}
+	}
+	.main-menu-list {
+		display: inline-block; width:auto; margin-top: 3.5rem;
+		*[class^='togo'] {
+			padding:0 1.75rem;
+			&:nth-child(4) {clear:both; padding-left:7.5rem}
+			&:nth-child(3) ~ li {margin-top: 1.6rem}
+			a {
+				&:before {width:8rem; height:8rem; background-size:100%; border-radius:8rem;}
+				&:after {width:8rem; height:8rem; border-radius:8rem; margin-left:-4rem;}
+				&:hover:after,
+				&:focus:after {border-width:0.2rem;}
 			}
 		}
 	}
@@ -811,18 +834,18 @@ MAIN
 		}
 	}
 	.main-notice {
-		width:auto; height:4rem; padding:1rem 0 0 1rem;
+		width:auto; height:4rem; padding:1rem 8.6rem 0 1rem;
 		.list {
-			.slick-list {width:33rem;}
+			.slick-list {width:100%;}
 			li a > * {font-size:1rem; line-height:2rem;}
 			li a .ico {width:3.5rem; height:2rem; line-height:2rem;}
-			li a .subject {margin:0 0 0 0.5rem; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; width:20rem; overflow: hidden;}
+			li a .subject {overflow: hidden;width:55%; margin:0 0 0 0.5rem; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; }
 			li a .date {font-size:1rem;}
 		}
 		.btn-link a {width:4rem; height:4rem;}
 		.control {
 			top:1.2rem; right:5rem;
-			& > * {width:1.7rem; height:2rem;}
+			& > * {width:1rem; height:2rem;}
 			.main-notice-prev {background-size:3rem;}
 			.main-notice-next {background-size:3rem;}
 		}
@@ -853,6 +876,12 @@ MAIN
 						height: auto;  
 						img {height: auto;}
 					}
+					.tit {line-height: 1.6rem; max-height: 3.2rem;}
+				}
+				.after{
+					padding: 4.5rem 1rem 0;
+					ul > li {font-size:0.9rem; line-height: 2.1rem; letter-spacing: -1px;}
+					.btn {height:2.6rem; line-height: 2.6rem; width: 100%; margin-top: 0.5rem;}
 				}
 			}
 
@@ -1027,53 +1056,11 @@ SUBPATE
 
 }
 
-/*
-
-
-} @media (max-width: 800px) {
-	.ebooksys .main .main-slide .list {padding: 0 9rem;}
-	.ebooksys .main .main-search-zone .popularity .list .slick-list {width:30rem;} 
-} @media (max-width: 670px) {
-	.ebooksys .main .main-slide .list {padding: 0 8rem;}
-} @media (max-width: 640px) {
-	.ebooksys .main .section .title {margin:0 0 2rem 0; padding:0;}
-	.ebooksys .main .main-slide .list [class^='togo']{display:inline-block; margin-left:3rem;}
-	.ebooksys .main .main-slide .list [class^='togo'] a:before {width:6rem; height:6rem; margin-bottom:0.4rem; background-size:100%; border-radius:6rem;}
-	.ebooksys .main .main-slide .list [class^='togo'] a:after {width:6rem; height:6rem; border-radius:6rem; margin-left:-3rem;}
-	.ebooksys .main .main-search-zone {height:8rem; padding:1.5rem 2rem; border-radius:4rem;}
-	.ebooksys .main .main-search-zone .popularity .list .slick-list {width:20rem;}
-	.ebooksys .main-search-zone .form-search .input {width: 16rem; margin-left:0.5rem; padding-left:0.5rem; background-size: 0.8rem; background-position:left 0.9rem;}
-	.ebooksys .main .main-search-zone .form-search .btn {top:-5px; width:4rem; height:4rem; background-size:4rem;}
-	.ebooksys .main .main-notice .list .slick-list {width:31rem;}
-	.ebooksys .main .main-notice .list li a .subject {width:21rem;}
-	// .ebooksys .main .main-tab {margin-top:60px;}
-	.ebooksys .main .main-search-zone .detail-search {margin-top:1.5rem;}
-	.pc .ebooksys .main .main-tab .tab-contents .book-list {max-width:inherit;}	
-} @media (max-width:550px) {
-	.ebooksys .main .main-slide .list {padding:0 8rem;}
-	.ebooksys .main .main-notice .list .slick-list {width:25rem;}
-	.ebooksys .main .main-notice .list li a .subject {width:15rem;}
-	.ebooksys .main .main-search-zone .popularity .list .slick-list {width:15rem;}
-} @media (max-width:530px) {
-	.ebooksys .main .main-slide .list {padding:0 4rem;}
-} @media (max-width:414px) {
-	.ebooksys .main .main-notice .list .slick-list {width:25rem;}
-	.ebooksys .main .main-notice .list li a .subject {width:15rem;}
-	.ebooksys .main .main-search-zone .detail-search {margin-top:1rem;} 
-} @media (max-width:376px) {
-	.ebooksys #pop_detailsearch.layer {left:2vw; width:90vw; }
-} @media (max-width:320px) {
-	.ebooksys .radio-type1 label span {font-size:0.9rem;}
-	.ebooksys .main .main-search-zone .form-search .input  {width:10rem;}
-	.ebooksys .main .main-search-zone {margin:1rem 1rem;}
-	.ebooksys .main .main-slide .list [class^='togo']{display:inline-block; margin-left:2.5rem;}
-	.ebooksys .main .main-slide .list [class^='togo'] a:before {width:5rem; height:5rem; margin-bottom:0.4rem; background-size:100%; border-radius:5rem;}
-	.ebooksys .main .main-slide .list [class^='togo'] a:after {width:5rem; height:5rem; border-radius:5rem; margin-left:-2.5rem;}
-	.ebooksys .main .main-search-zone .detail-search {margin-top:1rem;}
-	// .ebooksys .main .main-tab {margin-top:30px;}
-	.ebooksys .main .main-tab .tab-contents .book-list {margin-top:0.2rem;}
-	.ebooksys .main .main-notice .list .slick-list {width:21rem;} 
-	.ebooksys .main .main-notice .list li a .subject {width:10rem;}
-	.ebooksys #pop_detailsearch .form-list .list > li .radio {padding:0 0 0 0.5rem;}
+@media (max-width:768) {
+} @media (max-width:360px) {
+/* ------------------------------------------------------
+MAIN
+------------------------------------------------------ */
+.ebooksys .main .main-menu-list *[class^='togo'] {padding:0 1rem;}
+.ebooksys .main .main-menu-list *[class^='togo']:nth-child(4) {padding-left: 6rem;}
 }
-*/

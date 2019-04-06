@@ -45,35 +45,89 @@ MAIN
 .reservation *[class^=comp-lst][class*=_dotted] > li:before {background:#a4a4a4;}
 .reservation .notice-wrap .comp-lst_dotted .txt {overflow:hidden;display:inline-block;width:70%;vertical-align:middle;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
 .reservation .notice-wrap .comp-lst_dotted time {float:right;margin-right:23px;vertical-align:middle;color:#a2a2a2;font-size:14px;}
-.reservation .section-edu {margin-top:-4px;padding:14px 0 50px;background:url(../images/reservation/main/bg_main_edu.png) no-repeat left top;background-size:cover;}
-.reservation .section-edu .edu-wrap {max-width:1320px;margin:0 auto;}
-.reservation .section-edu .edu-wrap h3 {margin-bottom:18px;text-align:center;}
+.reservation .section-edu {position:relative;height:690px;margin-top:-4px;padding:14px 0 50px;background:url(../images/reservation/main/bg_main_edu.png) no-repeat left top;background-size:cover;}
+
+.reservation .section-edu .guide-wrap {position:absolute;top:23px;left:50%;}
+.reservation .section-edu .guide-wrap .guide-tit {position:relative;width:123px;height:123px;padding-top:43px;background:#fff;border-radius:50%;text-align:center;font-size:18px;font-family:'NanumSquareB';color:#595959;box-sizing:border-box;z-index:100;}
+.reservation .section-edu .guide-wrap .guide-tit:before {position:absolute;left:-10px;top:0;display:block;width:90px;height:90px;border:15px solid #2e5aba;border-radius:50%;content:'';}
+
+.reservation .slide-wrap {max-width:1320px;margin:0 auto;}
+.reservation .slide-wrap h3 {margin-bottom:18px;text-align:center;}
+
+.reservation .section-edu .tab-wrap {position:relative;}
+.reservation .section-edu .tab-wrap:after {position:absolute;right:0;top:-87px;width:127px;height:87px;background:url(../images/reservation/main/bg_main_book.png);content:'';}
 .reservation .section-edu .tab-tit {overflow:hidden;margin-bottom:10px;}
-.reservation .section-edu .tab-tit li {float:left;width:14.12%;border:1px solid #bfcaf5;}
+.reservation .section-edu .tab-tit li {float:left;width:14.19%;border:1px solid #bfcaf5;}
 .reservation .section-edu .tab-tit li + li {margin-left:-1px;}
 .reservation .section-edu .tab-tit a {display:block;height:54px;line-height:54px;font-size:18px;color:#b2bdbe;text-align:center;}
 .reservation .section-edu .tab-tit a[aria-selected*="true"] {background:#2e5aba;color:#fff;font-family:'NanumSquareB';}
-.reservation .section-edu .util-area {overflow:hidden;margin-bottom:10px;}
-.reservation .section-edu .util-area .util-inner {float:right;}
-.reservation .section-edu .util-area a {display:inline-block;text-indent:-999em;}
-.reservation .section-edu .util-area a[class*="btn-edu"] {width:11px;height:20px;margin:18px 20px 0 0;vertical-align:top;}
-.reservation .section-edu .util-area .btn-edu-prev {background:url(../images/reservation/main/btn_slide_prev.png) no-repeat left top;}
-.reservation .section-edu .util-area .btn-edu-next {background:url(../images/reservation/main/btn_slide_next.png) no-repeat left top;}
-.reservation .section-edu .util-area .btn-detail {width:56px;height:55px;background:url(../images/reservation/main/btn_slide_plus.png) no-repeat left top;}
-.reservation .tab-content {margin-left:-20px;}
-.reservation .section-edu .edu-reserve {width:248px;padding-top:22px;background:#fff;border:1px solid #cbc6c5;}
-.reservation .section-edu .reserve-inner {padding:0 12px;border-bottom:1px solid #dddbdb;}
-.reservation .section-edu .tit {overflow:hidden;margin-bottom:8px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;color:#383838;font-family:'NanumSquareB';font-size:18px;}
-.reservation .section-edu .txt {display:block;margin-bottom:8px;font-size:15px;color:#868686;}
-.reservation .section-edu .img-area {margin-bottom:10px;}
-.reservation .section-edu .img-area img {border:1px solid #d6d5d5;}
-.reservation .section-edu .info-list {margin:0 0 10px 3px;}
-.reservation .section-edu .info-list li {position:relative;padding-left:10px;font-size:14px;color:#383838;letter-spacing:-1px;}
-.reservation .section-edu .info-list li + li {margin-top:10px;}
-.reservation .section-edu .info-list li:before {position:absolute;left:0;top:2px;font-size:10px;content:'▶';}
-.reservation .section-edu .btn-reserve {display:block;padding:15px;font-size:16px;color:#383838;text-align:center;}
-.reservation .section-edu .btn-reserve span {padding:3px 0 2px 20px;font-size:16px;background:url(../images/reservation/main/bg_pointer_off.png) no-repeat left top;}
-.reservation .js-slide {display:inline-block;margin-left:20px;}
+.reservation .util-area {overflow:hidden;margin-bottom:10px;}
+.reservation .util-area .util-inner {float:right;}
+.reservation .util-area a {display:inline-block;text-indent:-999em;}
+.reservation .util-area a[class*="btn-edu"] {width:11px;height:20px;margin:18px 20px 0 0;vertical-align:top;}
+.reservation .util-area .btn-edu-prev {background:url(../images/reservation/main/btn_slide_prev.png) no-repeat left top;}
+.reservation .util-area .btn-edu-next {margin-top:17px !important;background:url(../images/reservation/main/btn_slide_next.png) no-repeat left top;}
+.reservation .util-area .btn-detail {width:56px;height:55px;background:url(../images/reservation/main/btn_slide_plus.png) no-repeat left top;}
+
+/* .reservation .tab-contents .slick-list {margin-left:-20px;} */
+.reservation .tab-contents > div {position:relative;display:none;overflow:hidden;height:380px;}
+.reservation .tab-contents .slick-slide {width:248px;margin-left:20px;}
+
+.reservation .reserve-wrap {position:relative;height:380px;padding-top:22px;background:#fff;border:1px solid #cbc6c5;}
+.reservation .reserve-inner {padding:0 12px;}
+.reservation .tit {overflow:hidden;margin-bottom:8px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;color:#383838;font-family:'NanumSquareB';font-size:18px;}
+.reservation .txt {display:block;margin-bottom:8px;font-size:15px;color:#868686;}
+.reservation .img-area {margin-bottom:10px;}
+.reservation .img-area img {border:1px solid #d6d5d5;}
+.reservation .info-list {margin:0 0 10px 3px;}
+.reservation .info-list li {position:relative;padding-left:10px;font-size:14px;color:#383838;letter-spacing:-1px;}
+.reservation .info-list li + li {margin-top:10px;}
+.reservation .info-list li:before {position:absolute;left:0;top:2px;font-size:10px;content:'▶';}
+.reservation .info-list em {font-family:'NanumSquareB';color:#1667c1;}
+.reservation .btn-reserve {position:absolute;bottom:0;left:0;width:100%;display:block;padding:15px;font-size:16px;color:#383838;border-top:1px solid #dddbdb;text-align:center;box-sizing:border-box;}
+.reservation .btn-reserve span {padding:3px 0 2px 20px;font-size:16px;background:url(../images/reservation/main/bg_pointer_off.png) no-repeat left top;}
+
+.reservation .section-edu .reserve-wrap.on:hover:after {position:absolute;top:0;left:0;display:block;width:99%;height:99%;border:2px solid #1058a8;content:'';}
+.reservation .section-edu .reserve-wrap.on:hover .btn-reserve {background:#1058a8;color:#fff;}
+.reservation .reserve-wrap.on:hover .btn-reserve span,
+.reservation .reserve-wrap.off .btn-reserve span {background:url(../images/reservation/main/bg_pointer_on.png) no-repeat left top;}
+.reservation  .reserve-wrap.off .btn-reserve {background:#5d5e5e;color:#fff;}
+
+.reservation .section-rental {position:relative;padding:58px 0;background:url(../images/reservation/main/bg_main_rental.png) no-repeat left top;background-size:cover;}
+.reservation .section-rental:after {position:absolute;bottom:-24px;left:0;width:299px;height:337px;background:url(../images/reservation/main/bg_main_stat.png) no-repeat left top;content:'';}
+.reservation .section-rental .js-slide-rental {z-index:100;}
+.reservation .section-rental .slick-slide {width:248px;margin-left:20px;}
+.reservation .section-rental .reserve-wrap.on:hover:after {position:absolute;top:0;left:0;display:block;width:98.9%;height:99%;border:2px solid #2790c7;content:'';}
+.reservation .section-rental .reserve-wrap.on:hover .btn-reserve {background:#2790c7;color:#fff;}
+
+.reservation .section-combine {padding:25px 0;}
+.reservation .combine-inner {max-width:1320px;margin:0 auto;}
+.reservation .combine-inner:after {display:block;clear:both;content:'';}
+.reservation .combine-inner h3 {float:left;width:130px;padding:20px 0 32px;background:url(../images/reservation/main/bg_often_arrow.png) no-repeat bottom left;font-size:23px;line-height:30px;font-family:'NanumSquareB';color:#2b2b2b;}
+.reservation .combine-inner .combine-list {float:right;width:90%;}
+.reservation .combine-inner .combine-list div[class*="combine"] {float:left;width:12.5%}
+.reservation .combine-inner .combine-list a {display:block;padding-top:103px;font-size:17px;color:#555;text-align:center;}
+
+/* 자주찾는 통합예약강좌 ico */
+.reservation .combine-inner .combine-list .combine01 a {background:url(../images/reservation/main/ico_combine01_off.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine02 a {background:url(../images/reservation/main/ico_combine02_off.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine03 a {background:url(../images/reservation/main/ico_combine03_off.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine04 a {background:url(../images/reservation/main/ico_combine04_off.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine05 a {background:url(../images/reservation/main/ico_combine05_off.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine06 a {background:url(../images/reservation/main/ico_combine06_off.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine07 a {background:url(../images/reservation/main/ico_combine07_off.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine08 a {background:url(../images/reservation/main/ico_combine08_off.png) no-repeat center top;}
+.reservation .combine-inner .combine-list a:hover {color:#2e5aba;font-family:'NanumSquareB';-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease}
+.reservation .combine-inner .combine-list .combine01 a:hover {background:url(../images/reservation/main/ico_combine01_on.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine02 a:hover {background:url(../images/reservation/main/ico_combine02_on.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine03 a:hover {background:url(../images/reservation/main/ico_combine03_on.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine04 a:hover {background:url(../images/reservation/main/ico_combine04_on.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine05 a:hover {background:url(../images/reservation/main/ico_combine05_on.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine06 a:hover {background:url(../images/reservation/main/ico_combine06_on.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine07 a:hover {background:url(../images/reservation/main/ico_combine07_on.png) no-repeat center top;}
+.reservation .combine-inner .combine-list .combine08 a:hover {background:url(../images/reservation/main/ico_combine08_on.png) no-repeat center top;}
+
+
 
 
 

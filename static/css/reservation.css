@@ -104,7 +104,7 @@ MAIN
 
 .reservation .section-rental {position:relative;padding:58px 0;background:url(../images/reservation/main/bg_main_rental.png) no-repeat left top;background-size:cover;}
 .reservation .section-rental:after {position:absolute;bottom:-24px;left:0;width:299px;height:337px;background:url(../images/reservation/main/bg_main_stat.png) no-repeat left top;z-index:100;content:'';}
-.reservation .section-rental .js-slide-rental {z-index:100;}
+.reservation .section-rental .js-slide-rental {z-index:1000;}
 .reservation .section-rental .reserve-wrap.on:hover .reserve-area:after {position:absolute;top:0;left:0;display:block;width:98.9%;height:99%;border:2px solid #2790c7;content:'';}
 .reservation .section-rental .reserve-wrap.on:hover .btn-reserve {background:#2790c7;color:#fff;}
 

@@ -242,18 +242,11 @@
 <script>
 	// 메인 비주얼
 	var mainSlider = (function(){
-		var windowWidth = (function(){
-			$(".js-main-visual-zone .slide").each(function(){
-				if($(window).width() < 1024){
-					$(this).css({"background":"url("+$(this).find(".mobg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
-				}else{
-					$(this).css({"background":"url("+$(this).find(".pcbg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
-				}
-			});
-		});
-		$( window ).resize(function() {
-			windowWidth();
-		});
+		$(".js-main-visual-zone .slide").each(function(){
+			console.log(11)
+			$(this).css({"background":"url("+$(this).find(".pcbg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
+			$(this).css({"background":"url("+$(this).find(".mobg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
+		})
 		$('.js-main-visual-zone .slider').slick({
 			dots: true,
 			infinite: true,
@@ -274,7 +267,6 @@
 				}
 			]
 		});
-		windowWidth();
 	})();
 
 	//의성의 축제

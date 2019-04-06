@@ -28,9 +28,8 @@ MAIN
 .foreign .main .main-visual-zone {position:relative;}
 .foreign .main .main-visual-zone .slide {height:540px;}
 .foreign .main .main-visual-zone .slide .pcbg {display:block;}
-.foreign .main .main-visual-zone .slide .pcbg img{display:none;}
+.foreign .main .main-visual-zone .slide  img{display:none;}
 .foreign .main .main-visual-zone .slide .mobg {display:none;}
-.foreign .main .main-visual-zone .slide .mobg img {display:none;}
 .foreign .main .main-visual-zone .slide img {display:none;}
 .foreign .main .main-visual-zone .inner {width:1320px; margin:0 auto;}
 .foreign .main .main-visual-zone .popup {width:470px; height:540px; padding:75px 43px 150px; background:#ee7f1d; }
@@ -300,10 +299,10 @@ MEDIA QUERY
 @media (max-width:1024px){
 	.foreign .main .main-visual-zone .slide .mobg {display:block;}
 	.foreign .main .main-visual-zone .slide .pcbg {display:none;}
-	.foreign .main .main-visual-zone .slide .mobg img {display:block;}
+	.foreign .main .main-visual-zone .slide .mobg img {display:none;}
 	.foreign .main .main-visual-zone .slide .pcbg img {display:none;}
 	.foreign .main .main-visual-zone .slide {height:auto;}
-	.foreign .main .main-visual-zone .inner {width:100%;}
+	.foreign .main .main-visual-zone .inner {width:100%; padding:29rem 0 0;}
 	.foreign .main .main-visual-zone .popup {width:100%; height:auto; padding:1.5rem 2rem 5rem;}
 	.foreign .main .main-visual-zone .popup .tit {padding:0 0 2rem 0; font-size:1.7rem;}
 	.foreign .main .main-visual-zone .popup .txt {margin:2rem 0 0; font-size:1.3rem; line-height:1.8rem;}

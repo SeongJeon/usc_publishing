@@ -389,7 +389,7 @@ MEDIA QUERY
 	.foreign .main .main-etc-zone > .inner .weather-info .info .list > li dl {height:2.5rem; padding:0 0.4rem; line-height:1.4rem;}
 	.foreign .main .main-etc-zone > .inner .weather-info .info .list > li dl dt {vertical-align:middle;}
 	.foreign .main .main-etc-zone > .inner .weather-info .info .list > li dl dd {vertical-align:middle;}
-	
+	.foreign .main .main-etc-zone > .inner .weather-info .btn-more {right:1rem; top:1.5rem; font-size:1rem;}
 	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number {position:absolute; bottom:1.5rem; width:calc(100% - 2rem); margin:1rem 0 0;}
 	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li:before {top:50%; width:4rem; height:4rem; background-size:100%; margin-top:-2rem;}
 	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li:first-child:before {top:50%; margin-top:-2.5rem;}

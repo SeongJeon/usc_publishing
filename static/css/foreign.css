@@ -16,7 +16,34 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
-
+#wrap.foreign #container.main {padding-top: 130px;}
+@media (min-width: 1025px) { 
+	body.pc .foreign #header .header-middle { border-bottom: 1px solid #dddbdb; }
+	body.pc .foreign #header .header-middle .title { top: 25px; }
+	body.pc .foreign #header .header-middle .title a { width: 203px; height: 42px; background: url("../../static/images/foreign/img_logo.png") no-repeat 50% 50%; }
+	body.pc .foreign #header .header-bottom .sitemap { background: #f27405; }
+	body.pc .foreign #header.header-type2 #gnb p a { background: #ffeda9; }
+	body.pc .foreign #header.header-type2 #gnb h2.over a:before, body.pc .foreign #header.header-type2 #gnb h2 a:hover:before { background: #f0412c; }
+	body.pc .foreign #header.header-type2 #gnb h2.over a:after, body.pc .foreign #header.header-type2 #gnb h2 a:hover:after { border-color: #f0412c; }
+	body.pc .foreign #header.header-type2 #gnb p a:hover { background: #f27405; }
+	body.pc .foreign #header.header-type2 #gnb h3 a:before { background: #1e4363; }
+	body.pc .foreign #header.header-type2.open { border-bottom-color: #f27405; }
+	body.pc .foreign #header.header-type2.open .header-bottom { border-bottom-color: #ff9900; }
+	body.pc .foreign #gnb { margin-left: 390px; }
+	body.pc .foreign #gnb h2 a { width: 170px; }
+	body.pc .foreign #gnb .depth2menu { width: 272px; height: 230px; padding-left: 40px; }
+	body.pc .foreign #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }
+	body.pc .foreign #gnb .gnb > li:nth-child(2) .depth2menu { left: 232px; }
+	body.pc .foreign #gnb .gnb > li:nth-child(3) .depth2menu { left: 504px; }
+	body.pc .foreign #gnb .gnb > li:nth-child(4) .depth2menu { left: 776px; }
+	body.pc .foreign #gnb .gnb > li:nth-child(5) .depth2menu { left: 1048px; }
+	body.pc .foreign #gnb .gnb > li:nth-child(1) .depth2menu { width: 232px; padding-left: 0; } 
+}
+#wrap.foreign #footer { height: 175px; }
+#wrap.foreign #footer .inner { overflow: hidden; }
+#wrap.foreign #footer .footer-logo { width: 202px; height: 49px; background: url("../../static/images/foreign/img_footer_logo.png") no-repeat 50% 50%; }
+#wrap.foreign #footer .footer-utilegroup { padding-left: 278px; margin-top: 35px; }
+#wrap.foreign #footer .footer-utilegroup .footer-utile a strong, #wrap.foreign #footer .footer-utilegroup .footer-addr li strong { color: #333; }
 
 
 
@@ -26,12 +53,11 @@ MAIN
 ------------------------------------------------------ */
 .foreign .main {}
 .foreign .main .main-visual-zone {position:relative;}
-.foreign .main .main-visual-zone .slide {height:540px;}
-.foreign .main .main-visual-zone .slide .pcbg {display:block;}
-.foreign .main .main-visual-zone .slide  img{display:none;}
+.foreign .main .main-visual-zone .slide {position: relative;}
 .foreign .main .main-visual-zone .slide .mobg {display:none;}
-.foreign .main .main-visual-zone .slide img {display:none;}
-.foreign .main .main-visual-zone .inner {width:1320px; margin:0 auto;}
+.foreign .main .main-visual-zone .slide div[class*=bg] {height:540px; position: absolute; left:0; top:0; width: 100%; }
+.foreign .main .main-visual-zone .slide div[class*=bg] img{display:none;}
+.foreign .main .main-visual-zone .inner {position: relative; width:1320px; height:540px; margin:0 auto; z-index: 1;}
 .foreign .main .main-visual-zone .popup {width:470px; height:540px; padding:75px 43px 150px; background:#ee7f1d; }
 .foreign .main .main-visual-zone .popup .tit {position:relative; padding:0 0 31px 0;font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:26px; color:#fff;}
 .foreign .main .main-visual-zone .popup .tit:after {position:absolute; left:0; bottom:0; display:block; content:""; width:57px; height:3px; background:#f5e820;}
@@ -297,114 +323,135 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
-	.foreign .main .main-visual-zone .slide .mobg {display:block;}
-	.foreign .main .main-visual-zone .slide .pcbg {display:none;}
-	.foreign .main .main-visual-zone .slide .mobg img {display:none;}
-	.foreign .main .main-visual-zone .slide .pcbg img {display:none;}
-	.foreign .main .main-visual-zone .slide {height:auto;}
-	.foreign .main .main-visual-zone .inner {width:100%; padding:29rem 0 0;}
-	.foreign .main .main-visual-zone .popup {width:100%; height:auto; padding:1.5rem 2rem 5rem;}
-	.foreign .main .main-visual-zone .popup .tit {padding:0 0 2rem 0; font-size:1.7rem;}
-	.foreign .main .main-visual-zone .popup .txt {margin:2rem 0 0; font-size:1.3rem; line-height:1.8rem;}
-	.foreign .main .main-visual-zone .popup .info {margin:1.5rem 0 0; padding:1rem;}
-	.foreign .main .main-visual-zone .popup .info > * {padding:0 0 0 2rem; font-size:1.2rem; line-height:1.8rem;}
-	.foreign .main .main-visual-zone .popup .info > *:before {top:0.1rem; width:1.2rem; height:1.4rem; }
-	.foreign .main .main-visual-zone .popup .info .address:before {background-size:100%;}
-	.foreign .main .main-visual-zone .popup .info .phone:before {background-size:100%;}
-	.foreign .main .main-visual-zone .btn-more {margin:1rem 0 0; font-size:1rem;}
-	.foreign .main .main-visual-zone .custom-paging {position:static; margin:-3rem 0 0; text-align:center;}
-	.foreign .main .main-visual-zone .custom-paging > li {position:relative; float:none; display:inline-block; margin-left:1rem;}
-	.foreign .main .main-visual-zone .custom-paging > li a {width:1.2rem; height:1.2rem;}
-
-	.foreign .main .main-info {width:auto; height:auto; margin:2.7rem 1rem 0;}
-	.foreign .main .main-info .gorup {float:none; width:100%;}
-	.foreign .main .main-info .gorup .news-leadermenu {float:none; width:auto; height:auto; padding:1.5rem 1rem 1.2rem; background-size:cover}
-	.foreign .main .main-info .gorup .news-leadermenu .tit {font-size:1.5rem;}
-	.foreign .main .main-info .gorup .news-leadermenu .txt {margin:0.8rem 0 1rem;}
-	.foreign .main .main-info .gorup .news-leadermenu .menu {width:22rem;}
-	.foreign .main .main-info .gorup .news-leadermenu .menu > li {margin-top:0.5rem;}
-	.foreign .main .main-info .gorup .news-leadermenu .menu > li a {height:2.6rem; line-height:2.6rem; padding:0 0 0 1rem; font-size:1.2rem; }
-	.foreign .main .main-info .gorup .news-leadermenu .menu > li a:after {right:1rem;}
+/* ------------------------------------------------------
+LAYOUT
+------------------------------------------------------ */
+#wrap.foreign #container.main {padding-top: 0;}
+#wrap.foreign #header .header-bottom .gnb-mo-title { background: #f27405; }
+#wrap.foreign #header .header-bottom .header-utilegroup { background: #d6eef0; }
+#wrap.foreign #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #73cdc3; }
+#wrap.foreign #header .header-middle .btn-menu-open button { background-color: #f27405; }
+#wrap.foreign #header .header-middle .title a { width: 17rem; background: url("../../static/images/foreign/img_logo_m.png") no-repeat 50% 50%; }
+#wrap.foreign #header.header-type2 #gnb .gnb > li:first-child .depth2menu { height: calc(100vh - 6rem); }
+#wrap.foreign #footer .footer-logo { width: 13.3rem; height: 3.3rem; background-size: 100% auto; }
+#wrap.foreign #footer .footer-utilegroup { padding-left: 2rem; margin-top: 2.5rem; }
 
 
-	.foreign .main .main-info .gorup .gorup-small {float:none; margin-top:1rem;}
-	.foreign .main .main-info .gorup .gorup-small:after {display:block; content:""; clear:both;}
-	.foreign .main .main-info .gorup .gorup-small > div {width:calc(50% - 0.5rem); height:50%; margin:0; padding:0;}
-	.foreign .main .main-info .gorup .gorup-small > div:before {display:block; content:""; padding-top:100%;}
-	.foreign .main .main-info .gorup .gorup-small > div:after {top:50%; width:8rem; height:8rem; margin:-2rem 0 0 -4rem;}
-	.foreign .main .main-info .gorup .gorup-small > div .inner {position:absolute; left:0; top:0; right:0; bottom:0; padding:1.5rem 1rem;}
-	.foreign .main .main-info .gorup .gorup-small .tit {font-size:1.5rem;}
-	.foreign .main .main-info .gorup .gorup-small .btn-more {margin:1rem 0 0; font-size:1rem;}
-	.foreign .main .main-info .gorup .gorup-small .tourist-map {float:left; }
-	.foreign .main .main-info .gorup .gorup-small .tourist-map:after {background-size:100%;}
-	.foreign .main .main-info .gorup .gorup-small .culture-guide {float:right;}
-	.foreign .main .main-info .gorup .gorup-small .culture-guide:after {background-size:100%;}
 
-	.foreign .main .main-info .festival {float:none; width:auto; height:72vw; margin-top:1rem;}
-	.foreign .main .main-info .festival .slide-indicator {left:1.5rem; top:auto; bottom:2.5rem;}
-	.foreign .main .main-info .slide-indicator > p button[class^=btn-] {width:2rem; height:2rem;}
-	.foreign .main .main-info .slide-indicator > p button[class^=btn-].btn-prev span {width:0.7rem; height:1.2rem; background-size:contain;}
-	.foreign .main .main-info .slide-indicator > p button[class^=btn-].btn-pause span {width:0.7rem; height:1.2rem; background-size:contain;}
-	.foreign .main .main-info .slide-indicator > p button[class^=btn-].btn-pause.play span {width:0.8rem; height:1.4rem; background-size:contain;}
-	.foreign .main .main-info .slide-indicator > p button[class^=btn-].btn-next span {width:0.7rem; height:1.2rem; background-size:contain;}
-	.foreign .main .main-info .festival {overflow:hidden; background:none;}
-	.foreign .main .main-info .festival:before {position:absolute; left:0; top:0; display:block; content:""; width:70%; height:100%; background:linear-gradient(#b18b70, #8e6546);}
-	.foreign .main .main-info .festival .slide {position:relative; height:72vw; padding:1.5rem 1rem; background:none;}
-	
-	.foreign .main .main-info .festival .slide .category {position:relative; display:block; z-index:10;}
-	.foreign .main .main-info .festival .slide .tit {position:relative; display:inline-block; width:7.5rem; margin-top:1rem; font-size:1.5rem; line-height:1.8rem; z-index:10;}
-	.foreign .main .main-info .festival .slide .tit a {overflow:visible; display:inline-block; width:auto; text-overflow:inherit; white-space:inherit; word-wrap:inherit;}
-	.foreign .main .main-info .festival .slide .img-area {position:absolute; right:0; top:0; bottom:0;  width:72%; margin:1rem 0; z-index:20;}
-	.foreign .main .main-info .festival .slide .img-area a {position:absolute; right:0; top:0; width:100%; height:100%;}
-	.foreign .main .main-info .festival .slide .img-area img {width:100%; height:100%;}
+/* ------------------------------------------------------
+MAIN
+------------------------------------------------------ */
+.foreign .main .main-visual-zone .slide div[class*=bg] {height:54rem;}
+.foreign .main .main-visual-zone .slide .mobg {display:block;}
+.foreign .main .main-visual-zone .slide .pcbg {display:none;}
+.foreign .main .main-visual-zone .slide {height:54rem;}
+.foreign .main .main-visual-zone .inner {width:100%; padding:29rem 0 0;}
+.foreign .main .main-visual-zone .popup {width:100%; height:auto; padding:1.5rem 2rem 5rem;}
+.foreign .main .main-visual-zone .popup .tit {padding:0 0 2rem 0; font-size:1.7rem;}
+.foreign .main .main-visual-zone .popup .txt {margin:2rem 0 0; font-size:1.3rem; line-height:1.8rem;}
+.foreign .main .main-visual-zone .popup .info {margin:1.5rem 0 0; padding:1rem;}
+.foreign .main .main-visual-zone .popup .info > * {padding:0 0 0 2rem; font-size:1.2rem; line-height:1.8rem;}
+.foreign .main .main-visual-zone .popup .info > *:before {top:0.1rem; width:1.2rem; height:1.4rem; }
+.foreign .main .main-visual-zone .popup .info .address:before {background-size:100%;}
+.foreign .main .main-visual-zone .popup .info .phone:before {background-size:100%;}
+.foreign .main .main-visual-zone .btn-more {margin:1rem 0 0; font-size:1rem;}
+.foreign .main .main-visual-zone .custom-paging {position:static; margin:-3rem 0 0; text-align:center;}
+.foreign .main .main-visual-zone .custom-paging > li {position:relative; float:none; display:inline-block; margin-left:1rem;}
+.foreign .main .main-visual-zone .custom-paging > li a {width:1.2rem; height:1.2rem;}
 
-	.foreign .main .main-info .list-product {position:static; width:auto; height:calc(51vw - 2rem); margin-top:1rem;}
-	.foreign .main .main-info .list-product .slide-indicator {left:calc(50% + 1rem); bottom:1.5rem;}
-	.foreign .main .main-info .list-product .slide {height:calc(51vw - 2rem); padding:1.5rem 0 6rem calc(50% + 1rem);}
-	.foreign .main .main-info .list-product .slide .tit {margin:1rem 0; font-size:1.5rem;}
-	.foreign .main .main-info .list-product .slide .txt {font-size:1.2rem; line-height:1.6rem;}
-	.foreign .main .main-info .list-product .slide .img-area {width:50%; height:100%; }
-	.foreign .main .main-info .list-product .slide .img-area img {width:100%; height:100%}
-	.foreign .main .main-etc-zone {margin-top:1rem; padding:1.5rem 1rem 3rem;}
-	.foreign .main .main-etc-zone .heading {font-size:1.5rem;}
-	.foreign .main .main-etc-zone > .inner {width:auto;}
-	.foreign .main .main-etc-zone > .inner .travel-info {float:none; width:auto; padding:0 1rem;}
-	.foreign .main .main-etc-zone > .inner .travel-info .heading {margin:0 0 2rem;}
-	.foreign .main .main-etc-zone > .inner .travel-info .list {margin:-1rem 0 1.5rem;}
-	.foreign .main .main-etc-zone > .inner .travel-info .list > li {margin-top:1rem;}
-	.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-] a {height:5rem; padding:0 0 0 6rem;}
-	.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-] a:before {width:5rem; height:5rem;}
-	.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-] a:after {width:5rem; height:5rem;}
-	.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-01 a:before, 
-	.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-02 a:before, 
-	.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-03 a:before, 
-	.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-04 a:before, 
-	.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-05 a:before,
-	.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-06 a:before {background-size:100%;}
-	.foreign .main .main-etc-zone > .inner .weather-info, 
-	.foreign .main .main-etc-zone > .inner .usc-guide {position:relative; width:50%; height:50%; margin:0; padding:0;}
-	/*.foreign .main .main-etc-zone > .inner .weather-info:before, 
-	.foreign .main .main-etc-zone > .inner .usc-guide:before {display:block; content:""; padding-top:100%;}*/
-	.foreign .main .main-etc-zone > .inner .weather-info .inner, 
-	.foreign .main .main-etc-zone > .inner .usc-guide .inner {/*position:absolute; top:0; right:0; bottom:0; left:0; */padding:1.5rem 1rem;}
-	.foreign .main .main-etc-zone > .inner .usc-guide {float:right;}
-	.foreign .main .main-etc-zone > .inner .weather-info {}
-	.foreign .main .main-etc-zone > .inner .weather-info .date {margin:1rem 0 1rem; font-size:1.2rem;}
-	.foreign .main .main-etc-zone > .inner .weather-info .info {/*position:absolute; bottom:1.5rem; width:calc(100% - 2rem); */padding:0;}
-	.foreign .main .main-etc-zone > .inner .weather-info .info .ico {width:5rem; padding-right:1rem; font-size:1.5rem;}
-	.foreign .main .main-etc-zone > .inner .weather-info .info .ico img {margin-bottom:0.5rem;}
-	.foreign .main .main-etc-zone > .inner .weather-info .info .list > li dl {height:2.5rem; padding:0 0.4rem; line-height:1.4rem;}
-	.foreign .main .main-etc-zone > .inner .weather-info .info .list > li dl dt {vertical-align:middle;}
-	.foreign .main .main-etc-zone > .inner .weather-info .info .list > li dl dd {vertical-align:middle;}
-	.foreign .main .main-etc-zone > .inner .weather-info .btn-more {right:1rem; top:1.5rem; font-size:1rem;}
-	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number {/*position:absolute; bottom:1.5rem; width:calc(100% - 2rem);*/ margin:1rem 0 0;}
-	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li:before {top:50%; width:4rem; height:4rem; background-size:100%; margin-top:-2rem;}
-	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li:first-child:before {top:50%; margin-top:-2.5rem;}
-	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li:first-child:before {background-size:100%;}
-	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li {padding:0.5rem 0 0.5rem 5rem;}
-	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li:last-child {padding-bottom:0;}
-	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li .info .tit { padding:0.8rem 0; font-size:1rem;}
-	.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li .info .txt {font-size:1.5rem;}
+.foreign .main .main-info {width:auto; height:auto; margin:2.7rem 1rem 0;}
+.foreign .main .main-info .gorup {float:none; width:100%;}
+.foreign .main .main-info .gorup .news-leadermenu {float:none; width:auto; height:auto; padding:1.5rem 1rem 1.2rem; background-size:cover}
+.foreign .main .main-info .gorup .news-leadermenu .tit {font-size:1.5rem;}
+.foreign .main .main-info .gorup .news-leadermenu .txt {margin:0.8rem 0 1rem;}
+.foreign .main .main-info .gorup .news-leadermenu .menu {width:22rem;}
+.foreign .main .main-info .gorup .news-leadermenu .menu > li {margin-top:0.5rem;}
+.foreign .main .main-info .gorup .news-leadermenu .menu > li a {height:2.6rem; line-height:2.6rem; padding:0 0 0 1rem; font-size:1.2rem; }
+.foreign .main .main-info .gorup .news-leadermenu .menu > li a:after {right:1rem;}
+
+
+.foreign .main .main-info .gorup .gorup-small {float:none; margin-top:1rem;}
+.foreign .main .main-info .gorup .gorup-small:after {display:block; content:""; clear:both;}
+.foreign .main .main-info .gorup .gorup-small > div {width:calc(50% - 0.5rem); height:50%; margin:0; padding:0;}
+.foreign .main .main-info .gorup .gorup-small > div:before {display:block; content:""; padding-top:100%;}
+.foreign .main .main-info .gorup .gorup-small > div:after {top:50%; width:8rem; height:8rem; margin:-2rem 0 0 -4rem;}
+.foreign .main .main-info .gorup .gorup-small > div .inner {position:absolute; left:0; top:0; right:0; bottom:0; padding:1.5rem 1rem;}
+.foreign .main .main-info .gorup .gorup-small .tit {font-size:1.5rem;}
+.foreign .main .main-info .gorup .gorup-small .btn-more {margin:1rem 0 0; font-size:1rem;}
+.foreign .main .main-info .gorup .gorup-small .tourist-map {float:left; }
+.foreign .main .main-info .gorup .gorup-small .tourist-map:after {background-size:100%;}
+.foreign .main .main-info .gorup .gorup-small .culture-guide {float:right;}
+.foreign .main .main-info .gorup .gorup-small .culture-guide:after {background-size:100%;}
+
+.foreign .main .main-info .festival {float:none; width:auto; height:72vw; margin-top:1rem;}
+.foreign .main .main-info .festival .slide-indicator {left:1.5rem; top:auto; bottom:2.5rem;}
+.foreign .main .main-info .slide-indicator > p button[class^=btn-] {width:2rem; height:2rem;}
+.foreign .main .main-info .slide-indicator > p button[class^=btn-].btn-prev span {width:0.7rem; height:1.2rem; background-size:contain;}
+.foreign .main .main-info .slide-indicator > p button[class^=btn-].btn-pause span {width:0.7rem; height:1.2rem; background-size:contain;}
+.foreign .main .main-info .slide-indicator > p button[class^=btn-].btn-pause.play span {width:0.8rem; height:1.4rem; background-size:contain;}
+.foreign .main .main-info .slide-indicator > p button[class^=btn-].btn-next span {width:0.7rem; height:1.2rem; background-size:contain;}
+.foreign .main .main-info .festival {overflow:hidden; background:none;}
+.foreign .main .main-info .festival:before {position:absolute; left:0; top:0; display:block; content:""; width:70%; height:100%; background:linear-gradient(#b18b70, #8e6546);}
+.foreign .main .main-info .festival .slide {position:relative; height:72vw; padding:1.5rem 1rem; background:none;}
+
+.foreign .main .main-info .festival .slide .category {position:relative; display:block; z-index:10;}
+.foreign .main .main-info .festival .slide .tit {position:relative; display:inline-block; width:7.5rem; margin-top:1rem; font-size:1.5rem; line-height:1.8rem; z-index:10;}
+.foreign .main .main-info .festival .slide .tit a {overflow:visible; display:inline-block; width:auto; text-overflow:inherit; white-space:inherit; word-wrap:inherit;}
+.foreign .main .main-info .festival .slide .img-area {position:absolute; right:0; top:0; bottom:0;  width:72%; margin:1rem 0; z-index:20;}
+.foreign .main .main-info .festival .slide .img-area a {position:absolute; right:0; top:0; width:100%; height:100%;}
+.foreign .main .main-info .festival .slide .img-area img {width:100%; height:100%;}
+
+.foreign .main .main-info .list-product {position:static; width:auto; height:calc(51vw - 2rem); margin-top:1rem;}
+.foreign .main .main-info .list-product .slide-indicator {left:calc(50% + 1rem); bottom:1.5rem;}
+.foreign .main .main-info .list-product .slide {height:calc(51vw - 2rem); padding:1.5rem 0 6rem calc(50% + 1rem);}
+.foreign .main .main-info .list-product .slide .tit {margin:1rem 0; font-size:1.5rem;}
+.foreign .main .main-info .list-product .slide .txt {font-size:1.2rem; line-height:1.6rem;}
+.foreign .main .main-info .list-product .slide .img-area {width:50%; height:100%; }
+.foreign .main .main-info .list-product .slide .img-area img {width:100%; height:100%}
+.foreign .main .main-etc-zone {margin-top:1rem; padding:1.5rem 1rem 3rem;}
+.foreign .main .main-etc-zone .heading {font-size:1.5rem;}
+.foreign .main .main-etc-zone > .inner {width:auto;}
+.foreign .main .main-etc-zone > .inner .travel-info {float:none; width:auto; padding:0 1rem;}
+.foreign .main .main-etc-zone > .inner .travel-info .heading {margin:0 0 2rem;}
+.foreign .main .main-etc-zone > .inner .travel-info .list {margin:-1rem 0 1.5rem;}
+.foreign .main .main-etc-zone > .inner .travel-info .list > li {margin-top:1rem;}
+.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-] a {height:5rem; padding:0 0 0 6rem;}
+.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-] a:before {width:5rem; height:5rem;}
+.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-] a:after {width:5rem; height:5rem;}
+.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-01 a:before, 
+.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-02 a:before, 
+.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-03 a:before, 
+.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-04 a:before, 
+.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-05 a:before,
+.foreign .main .main-etc-zone > .inner .travel-info .list > li[class^=ico-].ico-06 a:before {background-size:100%;}
+.foreign .main .main-etc-zone > .inner .weather-info, 
+.foreign .main .main-etc-zone > .inner .usc-guide {position:relative; width:50%; height:50%; margin:0; padding:0;}
+/*.foreign .main .main-etc-zone > .inner .weather-info:before, 
+.foreign .main .main-etc-zone > .inner .usc-guide:before {display:block; content:""; padding-top:100%;}*/
+.foreign .main .main-etc-zone > .inner .weather-info .inner, 
+.foreign .main .main-etc-zone > .inner .usc-guide .inner {/*position:absolute; top:0; right:0; bottom:0; left:0; */padding:1.5rem 1rem;}
+.foreign .main .main-etc-zone > .inner .usc-guide {float:right;}
+.foreign .main .main-etc-zone > .inner .weather-info {}
+.foreign .main .main-etc-zone > .inner .weather-info .date {margin:1rem 0 1rem; font-size:1.2rem;}
+.foreign .main .main-etc-zone > .inner .weather-info .info {/*position:absolute; bottom:1.5rem; width:calc(100% - 2rem); */padding:0;}
+.foreign .main .main-etc-zone > .inner .weather-info .info .ico {width:5rem; padding-right:1rem; font-size:1.5rem;}
+.foreign .main .main-etc-zone > .inner .weather-info .info .ico img {margin-bottom:0.5rem;}
+.foreign .main .main-etc-zone > .inner .weather-info .info .list > li dl {height:2.5rem; padding:0 0.4rem; line-height:1.4rem;}
+.foreign .main .main-etc-zone > .inner .weather-info .info .list > li dl dt {vertical-align:middle;}
+.foreign .main .main-etc-zone > .inner .weather-info .info .list > li dl dd {vertical-align:middle;}
+.foreign .main .main-etc-zone > .inner .weather-info .btn-more {right:1rem; top:1.5rem; font-size:1rem;}
+.foreign .main .main-etc-zone > .inner .usc-guide .phone-number {/*position:absolute; bottom:1.5rem; width:calc(100% - 2rem);*/ margin:1rem 0 0;}
+.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li:before {top:50%; width:4rem; height:4rem; background-size:100%; margin-top:-2rem;}
+.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li:first-child:before {top:50%; margin-top:-2.5rem;}
+.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li:first-child:before {background-size:100%;}
+.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li {padding:0.5rem 0 0.5rem 5rem;}
+.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li:last-child {padding-bottom:0;}
+.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li .info .tit { padding:0.8rem 0; font-size:1rem;}
+.foreign .main .main-etc-zone > .inner .usc-guide .phone-number > li .info .txt {font-size:1.5rem;}
+
+
+
+
 } @media (max-width:768px){
 } @media (max-width:321px){}
 

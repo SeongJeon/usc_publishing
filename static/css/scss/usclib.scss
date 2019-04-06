@@ -88,55 +88,7 @@ LAYOUT
 }
 
 
-// 외국어 홈페이지
-@media (min-width:1025px){
-	body.pc .foreign #header {
-		.header-middle {
-			border-bottom: 1px solid #dddbdb;
-			.title {
-				top:25px;
-				a {width: 203px; height: 42px; background:url("../../static/images/foreign/img_logo.png") no-repeat 50% 50%;}
-			}
-		}
-		.header-bottom .sitemap {background: #f27405}
-		&.header-type2 #gnb {
-			p a {background:#ffeda9;}
-
-			h2.over a:before,
-			h2 a:hover:before {background: #f0412c; }
-			h2.over a:after,
-			h2 a:hover:after {border-color:#f0412c;}
-			p a:hover {background: #f27405;}
-			h3 a:before{background: #1e4363;}
-		}
-
-		&.header-type2.open {border-bottom-color:#f27405;}
-		&.header-type2.open .header-bottom {border-bottom-color: #ff9900;}
-	}
-	body.pc .foreign #gnb {
-		margin-left: 390px;
-		h2 a {width: 170px}
-		.depth2menu {width: 272px; height: 230px; padding-left: 40px;}
-		.gnb > li:nth-child(1) .depth2menu {left:0;}
-		.gnb > li:nth-child(2) .depth2menu {left:232px;}
-		.gnb > li:nth-child(3) .depth2menu {left:504px}
-		.gnb > li:nth-child(4) .depth2menu {left:776px}
-		.gnb > li:nth-child(5) .depth2menu {left:1048px}
-		.gnb > li:nth-child(1) .depth2menu {width:232px; padding-left: 0}
-	}
-}
-#wrap.foreign #footer {
-	height: 175px;
-	.inner {overflow: hidden} 
-	.footer-logo {width:202px; height: 49px; @include background("foreign/img_footer_logo.png",no-repeat 50% 50%); }
-	.footer-utilegroup {
-		padding-left:278px; margin-top: 35px; 
-		.footer-utile a strong,
-		.footer-addr li strong {color:#333;}
-	}
-}
-
-// 통합예약 홈페이지
+/* 통합예약 홈페이지 */
 @media (min-width:1025px){
 	body.pc .reservation #header {
 		.header-middle {
@@ -985,23 +937,23 @@ LAYOUT
 #wrap.usclib #container {padding-top: 0;}
 
 
-// 외국어 홈페이지
-#wrap.foreign #header {
-	.header-bottom {
-		.gnb-mo-title {background: #f27405}
-		.header-utilegroup {background: #d6eef0;}
-		.header-utilegroup .header-utile li + li {border-color:#73cdc3;}
-	}
-	.header-middle {
-		.btn-menu-open button {background-color: #f27405}
-		.title a {width: 17rem; @include background("foreign/img_logo_m.png",no-repeat 50% 50%); }
-	}
-	&.header-type2 #gnb .gnb > li:first-child .depth2menu {height: calc(100vh - 6rem)}
-}
-#wrap.foreign #footer {
-	.footer-logo {width: 13.3rem; height: 3.3rem; background-size: 100% auto;}
-	.footer-utilegroup {padding-left: 2rem; margin-top: 2.5rem;}
-}
+/* 외국어 홈페이지 */
+// #wrap.foreign #header {
+// 	.header-bottom {
+// 		.gnb-mo-title {background: #f27405}
+// 		.header-utilegroup {background: #d6eef0;}
+// 		.header-utilegroup .header-utile li + li {border-color:#73cdc3;}
+// 	}
+// 	.header-middle {
+// 		.btn-menu-open button {background-color: #f27405}
+// 		.title a {width: 17rem; @include background("foreign/img_logo_m.png",no-repeat 50% 50%); }
+// 	}
+// 	&.header-type2 #gnb .gnb > li:first-child .depth2menu {height: calc(100vh - 6rem)}
+// }
+// #wrap.foreign #footer {
+// 	.footer-logo {width: 13.3rem; height: 3.3rem; background-size: 100% auto;}
+// 	.footer-utilegroup {padding-left: 2rem; margin-top: 2.5rem;}
+// }
 
 /* ------------------------------------------------------
 COMMON

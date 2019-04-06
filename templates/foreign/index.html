@@ -33,9 +33,9 @@
 				<div class="main-visual-zone js-main-visual-zone">
 					<div class="slider">
 						<div class="slide">
+							<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
+							<div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""><!-- mobile  배경 --></div>
 							<div class="inner">
-								<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
-								<div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""><!-- mobile  배경 --></div>
 								<div class="popup">
 									<p class="tit">1살기좋은 마을, 산수유 꽃피는 마을</p>
 									<p class="txt">경북 제일의 의성 사곡면 산수유 마을은 해마다<br>3월말에서 4월 초가 되면 산수유의 만개가 절정을 이룬다.</p>
@@ -48,9 +48,9 @@
 							</div>
 						</div>
 						<div class="slide">
+							<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
+							<div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""><!-- mobile  배경 --></div>
 							<div class="inner">
-								<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
-								<div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""><!-- mobile  배경 --></div>
 								<div class="popup">
 									<p class="tit">2살기좋은 마을, 산수유 꽃피는 마을</p>
 									<p class="txt">경북 제일의 의성 사곡면 산수유 마을은 해마다<br>3월말에서 4월 초가 되면 산수유의 만개가 절정을 이룬다.</p>
@@ -63,9 +63,9 @@
 							</div>
 						</div>
 						<div class="slide">
+							<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
+							<div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""><!-- mobile  배경 --></div>
 							<div class="inner">
-								<div class="pcbg"><img src="../../static/images/foreign/temp/@img_main1.png" alt=""><!-- pc배경 --></div>
-								<div class="mobg"><img src="../../static/images/foreign/temp/@img_main1_m.png" alt=""><!-- mobile  배경 --></div>
 								<div class="popup">
 									<p class="tit">3살기좋은 마을, 산수유 꽃피는 마을</p>
 									<p class="txt">경북 제일의 의성 사곡면 산수유 마을은 해마다<br>3월말에서 4월 초가 되면 산수유의 만개가 절정을 이룬다.</p>
@@ -220,10 +220,8 @@
 							</div>
 						</div>
 					</div>
-					
 				</div>
 				<!-- // MAIN-ETC-ZONE -->
-				
 			</div>
 		</main>
 		<!-- //CONTAINER -->
@@ -242,10 +240,11 @@
 <script>
 	// 메인 비주얼
 	var mainSlider = (function(){
-		$(".js-main-visual-zone .slide").each(function(){
-			console.log(11)
-			$(this).css({"background":"url("+$(this).find(".pcbg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
-			$(this).css({"background":"url("+$(this).find(".mobg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
+		$(".js-main-visual-zone div[class*=bg]").each(function(){
+			$(this).css({
+				'background': 'url('+$("img", this).attr('src')+") no-repeat 50% 50%",
+				'background-size': 'cover'
+			})
 		})
 		$('.js-main-visual-zone .slider').slick({
 			dots: true,

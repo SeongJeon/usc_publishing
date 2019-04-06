@@ -66,6 +66,10 @@ LAYOUT
 #wrap.foreign #footer .footer-utilegroup { padding-left: 278px; margin-top: 35px; }
 #wrap.foreign #footer .footer-utilegroup .footer-utile a strong, #wrap.foreign #footer .footer-utilegroup .footer-addr li strong { color: #333; }
 
+#wrap.reservation #footer { height: 290px; }
+#wrap.reservation #footer .footer-utilegroup { padding-left: 0; }
+#wrap.reservation #footer .footer-utilegroup .footer-utile a strong, #wrap.reservation #footer .footer-utilegroup .footer-addr li strong { color: #333; }
+
 /* ------------------------------------------------------
 COMMON
 ------------------------------------------------------ */

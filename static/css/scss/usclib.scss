@@ -135,6 +135,14 @@ LAYOUT
 		.footer-addr li strong {color:#333;}
 	}
 }
+#wrap.reservation #footer {
+	height: 290px;
+	.footer-utilegroup {
+		padding-left: 0;
+		.footer-utile a strong,
+		.footer-addr li strong {color:#333;}
+	}
+}
 /* ------------------------------------------------------
 COMMON
 ------------------------------------------------------ */

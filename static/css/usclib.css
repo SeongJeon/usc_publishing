@@ -66,6 +66,29 @@ LAYOUT
 #wrap.foreign #footer .footer-utilegroup { padding-left: 278px; margin-top: 35px; }
 #wrap.foreign #footer .footer-utilegroup .footer-utile a strong, #wrap.foreign #footer .footer-utilegroup .footer-addr li strong { color: #333; }
 
+@media (min-width: 1025px) { body.pc .reservation #header .header-middle { border-bottom: 1px solid #dddbdb; }
+  body.pc .reservation #header .header-middle .title { top: 20px; }
+  body.pc .reservation #header .header-middle .title a { width: 281px; height: 51px; background: url("../../static/images/reservation/img_logo.png") no-repeat 50% 50%; }
+  body.pc .reservation #header .header-middle .comp-search .form { border-color: #1667c1; }
+  body.pc .reservation #header .header-middle .comp-search > button { background: #1667c1; }
+  body.pc .reservation #header .header-bottom { background: #fff; border-top: 1px solid #c2c0bf; }
+  body.pc .reservation #header .header-bottom .sitemap { background: #1058a8; }
+  body.pc .reservation #header.header-type2 #gnb p a { background: #ffeda9; }
+  body.pc .reservation #header.header-type2 #gnb h2.over a:before, body.pc .reservation #header.header-type2 #gnb h2 a:hover:before { background: #f0412c; }
+  body.pc .reservation #header.header-type2 #gnb h2.over a:after, body.pc .reservation #header.header-type2 #gnb h2 a:hover:after { border-color: #f0412c; }
+  body.pc .reservation #header.header-type2 #gnb p a:hover { background: #f27405; }
+  body.pc .reservation #header.header-type2 #gnb h3 a:before { background: #1e4363; }
+  body.pc .reservation #header.header-type2.open { border-bottom-color: #f27405; }
+  body.pc .reservation #header.header-type2.open .header-bottom { border-bottom-color: #ff9900; }
+  body.pc .reservation #gnb { margin-left: 390px; }
+  body.pc .reservation #gnb h2 a { width: 170px; }
+  body.pc .reservation #gnb .depth2menu { width: 272px; height: 230px; padding-left: 40px; }
+  body.pc .reservation #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }
+  body.pc .reservation #gnb .gnb > li:nth-child(2) .depth2menu { left: 232px; }
+  body.pc .reservation #gnb .gnb > li:nth-child(3) .depth2menu { left: 504px; }
+  body.pc .reservation #gnb .gnb > li:nth-child(4) .depth2menu { left: 776px; }
+  body.pc .reservation #gnb .gnb > li:nth-child(5) .depth2menu { left: 1048px; }
+  body.pc .reservation #gnb .gnb > li:nth-child(1) .depth2menu { width: 232px; padding-left: 0; } }
 #wrap.reservation #footer { height: 290px; }
 #wrap.reservation #footer .footer-utilegroup { padding-left: 0; }
 #wrap.reservation #footer .footer-utilegroup .footer-utile a strong, #wrap.reservation #footer .footer-utilegroup .footer-addr li strong { color: #333; }

@@ -243,15 +243,13 @@
 	// 메인 비주얼
 	var mainSlider = (function(){
 		var windowWidth = (function(){
-			if($(window).width() < 1024){
-				$(".js-main-visual-zone .slide").each(function(){
+			$(".js-main-visual-zone .slide").each(function(){
+				if($(window).width() < 1024){
 					$(this).css({"background":"url("+$(this).find(".mobg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
-				})
-			}else{
-				$(".js-main-visual-zone .slide").each(function(){
+				}else{
 					$(this).css({"background":"url("+$(this).find(".pcbg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
-				})
-			}
+				}
+			});
 		});
 		$( window ).resize(function() {
 			windowWidth();

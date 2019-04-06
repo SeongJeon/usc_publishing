@@ -712,8 +712,62 @@ SUB PAGE
 		}
 	}
 }
+// 세미나실 신청 
+.seminar-guide {
+	.calander_tbl {
+		border-top: 2px solid #7a7a7a; 
+		th {
+			height: 49px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; text-align: center; color: #444; background: #f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; 
+			&:first-child { color: #ea0909; border-left: 0; }
+			&:last-child { color: #1277cd; }
+		}
+		td {
+			height:100px; padding: 10px 12px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; color: #303030; font-size: 18px; vertical-align: top; box-sizing: border-box; 
+			&:first-child {color: #ea0909; border-left: 0; }
+			&:last-child {color: #1277cd; }
+			&.today {background:#f40723; }
+			.capable .txt {background:#eff9fe; border-color:#d4e0f2; color:#527cb8;}
+			.unable .txt {background:#f1f1f1; border-color:#c5c5c5; color:#838383;}
+			.txt {display:block; width:116px; height:32px; line-height:32px; font-size:15px; border:1px solid; border-radius:8px; text-align:center; box-sizing:border-box;}
+		}
+	}
+	*[class^=comm-btn][class*=_deepblue] {width:150px;}
+}
+
+ 
 
 
+
+/* 문화마당 */
+// 문화강좌소개
+.course-info {
+	table[class^=comp-tbl][class*=_datatype] tbody {
+		th:first-of-type {border-right:1px solid #d9d6d5;}
+		td:first-child {border-left:1px solid #d9d6d5;}
+		th {background:none; color:#787878;}
+		td {padding:0;}
+		td[class^=education] {line-height:20px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#fff;}
+		td[class^=education].bg-01 {background:#f67280;}
+		td[class^=education].bg-02 {background:#02a3b0;}
+		td[class^=education].bg-03 {background:#ed553b;}
+		td[class^=education].bg-04 {background:#8cc13f;}
+		td[class^=education].bg-05 {background:#1eb7de;}
+		td[class^=education].bg-06 {background:#336ac0;}
+		td[class^=education].bg-07 {background:#6c5b7b;}
+		td[class^=education].bg-08 {background:#94090d;}
+		td[class^=education].bg-09 {background:#3f5866;}
+		td[class^=education].bg-10 {background:#45183c;}
+		td[class^=education].bg-11 {background:#efb704;}
+		td[class^=education].bg-12 {background:#92d1c8;}
+		td[class^=education].bg-13 {background:#d0b6a4;}
+		td[class^=education].bg-14 {background:#ed1651;}
+		td[class^=education].bg-15 {background:#ffc1b4;}
+		td[class^=education].bg-16 {background:#02a676;}
+		td[class^=education].bg-17 {background:#f38902;}
+		td[class^=education].bg-18 {background:#292929;}
+		td[class^=education].bg-19 {background:#c06c84;}
+	}
+}
 
 
 
@@ -1309,7 +1363,14 @@ SUB PAGE
 		}
 	}
 }
-
+// 세미나실 신청 
+.seminar-guide {
+	.calander_tbl {
+		th { height: 3.5rem; font-size: 1.2rem; }
+		td { height:5rem; padding: 0.5rem; font-size: 1.4rem; }
+		td .txt {width:auto; height:auto; padding:0.2rem 0; line-height:1.4rem; border-radius:0.4rem; font-size:1.2rem;}
+	}
+}
 
 
 //-------------------------------------------------------------------------------

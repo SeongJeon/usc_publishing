@@ -26,6 +26,7 @@ MAIN
 ------------------------------------------------------ */
 .reservation .view-pc {display:block !important;}
 .reservation .view-m {display:none !important;}
+.reservation .slide-wrap .view-pc {display:inline-block !important;}
 
 .reservation .section-visual {position:relative;height:485px;}
 .reservation .section-visual .banner-wrap .view-pc {height:100%;}
@@ -52,21 +53,16 @@ MAIN
 .reservation .section-edu .guide-wrap {position:absolute;top:23px;left:50%;margin-left:708px;z-index:100;}
 .reservation .section-edu .guide-wrap .guide-tit {position:relative;width:128px;height:128px;font-size:18px;text-align:center;font-family:'NanumSquareB';color:#595959;background:#fff;border:15px solid #2e5aba;border-radius:50%;}
 .reservation .section-edu .guide-wrap .guide-tit:before {position:absolute;left:-15px;top:-15px;display:block;width:128px;height:128px;border-top:15px solid transparent;border-right:15px solid #962d3e;border-bottom:15px solid #962d3e;border-left:15px solid transparent;border-radius:50%;box-sizing:border-box;content:'';}
-
 .reservation .section-edu .guide-wrap .guide-tit a {position:relative;display:block;padding-top:28px;height:100%;background:#fff;border-radius:50%;box-sizing:border-box;z-index:100;}
-
 .reservation .section-edu .guide-wrap .guide-area {display:none;position:relative;top:-60px;}
 .reservation .section-edu .guide-wrap .guide-area ul {padding-top:60px;background:#2e5aba;}
 .reservation .section-edu .guide-wrap .guide-area ul li {border-top:1px solid rgba(255, 255, 255, 0.3);text-align:center;}
 .reservation .section-edu .guide-wrap .guide-area ul li a {display:block;padding:15px 0;font-size:17px;color:#fff;}
 .reservation .section-edu .guide-wrap .guide-area ul li:first-child {border-top:0;}
 .reservation .section-edu .guide-wrap .guide-area .btn-close {display:inline-block;width:100%;height:60px;background:#343642 url(../images/reservation/main/btn_close.png) no-repeat center center;text-indent:-999em;border-radius:0 0 60px 60px;}
-
 .reservation .section-edu .guide-wrap.on .guide-tit:before {border-bottom:15px solid transparent}
-
 .reservation .slide-wrap {max-width:1320px;margin:0 auto;}
 .reservation .slide-wrap h3 {margin-bottom:18px;text-align:center;}
-
 .reservation .section-edu .tab-wrap {position:relative;}
 .reservation .section-edu .tab-wrap:after {position:absolute;right:0;top:-87px;width:127px;height:87px;background:url(../images/reservation/main/bg_main_book.png);content:'';}
 .reservation .section-edu .tab-tit {overflow:hidden;margin-bottom:10px;}
@@ -87,14 +83,14 @@ MAIN
 .reservation .reserve-inner {padding:0 12px;}
 .reservation .slide-wrap .tit {overflow:hidden;margin-bottom:8px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;color:#383838;font-family:'NanumSquareB';font-size:18px;}
 .reservation .slide-wrap .txt {display:block;margin-bottom:8px;font-size:15px;color:#868686;}
-.reservation .img-area {margin-bottom:10px;}
-.reservation .img-area img {border:1px solid #d6d5d5;}
+.reservation .slide-wrap .img-area {margin-bottom:10px;}
+.reservation .slide-wrap .img-area img {border:1px solid #d6d5d5;}
 .reservation .info-list {margin:0 0 10px 3px;}
 .reservation .info-list li {position:relative;padding-left:10px;font-size:14px;color:#383838;letter-spacing:-1px;}
 .reservation .info-list li + li {margin-top:10px;}
 .reservation .info-list li:before {position:absolute;left:0;top:2px;font-size:10px;content:'▶';}
 .reservation .info-list em {font-family:'NanumSquareB';color:#1667c1;}
-.reservation .btn-reserve {position:absolute;bottom:0;left:0;width:100%;display:block;padding:15px;font-size:16px;color:#383838;border-top:1px solid #dddbdb;text-align:center;box-sizing:border-box;z-index:100;}
+.reservation .btn-reserve {position:absolute;bottom:0;left:0;width:100%;display:block;padding:15px;color:#383838;border-top:1px solid #dddbdb;text-align:center;box-sizing:border-box;z-index:100;}
 .reservation .btn-reserve span {padding:3px 0 2px 20px;font-size:16px;background:url(../images/reservation/main/bg_pointer_off.png) no-repeat left top;}
 
 .reservation .section-edu .reserve-wrap.on:hover .reserve-area:after {position:absolute;top:0;left:0;display:block;width:99%;height:99%;border:2px solid #1058a8;content:'';}
@@ -112,7 +108,7 @@ MAIN
 .reservation .section-combine {padding:25px 0;}
 .reservation .combine-inner {max-width:1320px;margin:0 auto;}
 .reservation .combine-inner:after {display:block;clear:both;content:'';}
-.reservation .combine-inner h3 {float:left;width:130px;padding:20px 0 32px;background:url(../images/reservation/main/bg_often_arrow.png) no-repeat bottom left;font-size:23px;line-height:30px;font-family:'NanumSquareB';color:#2b2b2b;}
+.reservation .combine-inner h3 {float:left;width:130px;padding:20px 0 32px;background:url(../images/reservation/main/bg_combine_arrow.png) no-repeat bottom left;font-size:23px;line-height:30px;font-family:'NanumSquareB';color:#2b2b2b;}
 .reservation .combine-inner .combine-list {float:right;width:90%;}
 .reservation .combine-inner .combine-list div[class*="combine"] {float:left;width:12.5%}
 .reservation .combine-inner .combine-list a {display:block;padding-top:103px;font-size:17px;color:#555;text-align:center;}
@@ -283,21 +279,55 @@ MEDIA QUERY
 @media (max-width:1024px){
 	.reservation .view-pc {display:none !important;}
 	.reservation .view-m {display:block !important;}
+	.reservation .slide-wrap .view-m {display:inline-block !important;}
+	.reservation .slide-wrap .view-pc {display:none !important;}
 
 	.reservation .section-visual {height:auto;}
 	.reservation .banner-wrap *[class*="btn-main"],
 	.reservation .banner-wrap .custom-paging {display:none !important;}
-	.reservation .notice-wrap {top:auto;right:0;bottom:3.8rem;width:-webkit-calc(100% - 3.2rem);width:-moz-calc(100% - 3.2rem);width:-o-calc(100% - 3.2rem);width:calc(100% - 3.2rem);height:16.6rem;margin:0 1.6rem;}
-	.reservation .notice-wrap h2 {padding:1.3rem 0 .9rem 2rem;font-size:1.5rem;}
+	.reservation .notice-wrap {top:auto;right:0;bottom:1rem;width:-webkit-calc(100% - 3.2rem);width:-moz-calc(100% - 3.2rem);width:-o-calc(100% - 3.2rem);width:calc(100% - 3.2rem);height:16.6rem;margin:0 1.6rem;}
+	.reservation .notice-wrap h2 {padding:1rem 0 .9rem 2rem;font-size:1.5rem;}
 	.reservation .notice-wrap .btn-detail {width:4rem;height:4rem;background:url(../images/reservation/main/btn_plus_m.png) no-repeat center center;background-size:2rem 2rem;}
-	.reservation .notice-wrap .date {width:10.1rem;padding-top:3.5rem;font-size:1.3rem;}
+	.reservation .notice-wrap .date {width:10.1rem;height:12.6rem;padding-top:3.5rem;font-size:1.3rem;}
 	.reservation .notice-wrap .date .day {font-size:4.7rem;}
 	.reservation .notice-wrap .js-scroll {height:12.6rem;}
 	.reservation .notice-wrap .comp-lst_dotted {width:100%;padding:1.4rem 0 1.4rem .8rem;}
+	.reservation .notice-wrap .comp-lst_dotted li {margin-top:.7rem;}
 	.reservation .notice-wrap .comp-lst_dotted .txt {width:-webkit-calc(100% - 8.2rem);width:-moz-calc(100% - 8.2rem);width:-o-calc(100% - 8.2rem);width:calc(100% - 8.2rem);}
 	.reservation .notice-wrap .comp-lst_dotted time {width:7rem;margin-right:1.2rem;font-size:1.2rem;}
+	.reservation .tab-wrap .scroll-wrap {overflow-x:scroll;}
+	.reservation .tab-wrap .scroll-wrap .tab-tit {width:-webkit-calc(12.7rem * 7);width:-moz-calc(12.7rem * 7);width:-o-calc(12.7rem * 7);width:calc(12.7rem * 7);}
+	.reservation .section-edu .guide-wrap {display:none;}
+	.reservation .section-edu {height:auto;padding:1rem 0 3.5rem;background-image:url(../images/reservation/main/bg_main_edu_m.png);}
+	.reservation .section-edu h3 {margin:0 1.2rem 1.2rem 1.8rem;}
+	.reservation .slide-wrap {max-width:inherit;}
+	.reservation .slide-wrap .tit {font-size:1.5rem;}
+	.reservation .slide-wrap .txt {font-size:1.2rem;}
+	.reservation .section-edu .tab-wrap:after {display:none;}
+	.reservation .section-edu .tab-tit li {width:12.5rem;}
+	.reservation .section-edu .tab-tit a {height:3.7rem;line-height:3.7rem;font-size:1.5rem;}
+	.reservation .slide-wrap .slick-list {margin-left:0;}
+	.reservation .reserve-area {width:95%;height:auto;margin:0;padding-top:1.5rem;}
+	.reservation .reserve-inner {padding:0 .9rem;}
+	.reservation .info-list li {font-size:1.2rem;}
+	.reservation .btn-reserve {position:static;padding:.7rem 0;}
+	.reservation .btn-reserve span {font-size:1.2rem;}
+	.reservation .util-area,
+	.reservation .slick-arrow {display:none !important;}
+	.reservation .section-combine {padding:2rem .9rem 2rem;}
+	.reservation .combine-inner {max-width:inherit;}
+	.reservation .combine-inner h3 {width:9rem;padding:1.2rem 0 2rem;font-size:1.6rem;background:url(../images/reservation/main/bg_combine_arrow_m.png) no-repeat left bottom;background-size:8.4rem;line-height:2rem;}
+	.reservation .combine-inner .combine-list {width:-webkit-calc(100% - 9rem);width:-moz-calc(100% - 9rem);width:-o-calc(100% - 9rem);width:calc(100% - 9rem);}
+	.reservation .combine-inner .combine-list .slick-list {width:100%;}
+	.reservation .combine-inner .combine-list a {padding-top:6rem;font-size:1.2rem;background-size:5.5rem !important;}
+	.reservation .section-rental {padding:3.8rem 0;background-image:url(../images/reservation/main/bg_main_rental_m.png);}
+	.reservation .section-rental:after {display:none;}
+	.reservation .section-rental h3 {margin:0 2.7rem 3rem 2.4rem;}
+
 } @media (max-width:768px){
-} @media (max-width:321px){}
+} @media (max-width:321px){
+	.reservation .notice-wrap {bottom:1rem;}
+}
 
 
 

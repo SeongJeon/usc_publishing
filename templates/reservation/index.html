@@ -111,31 +111,37 @@
 								</div>
 							</div>
 							<div class="slide-wrap">
-								<h3><img src="../../static/images/reservation/main/txt_main_edu.png" alt="교육 및 체험이 다양한 교육&middot;강좌 다양한 학습이 가득!!"></h3>
+								<h3>
+									<img src="../../static/images/reservation/main/txt_main_edu.png" alt="교육 및 체험이 다양한 교육&middot;강좌 다양한 학습이 가득!!" class="view-pc">
+									<img src="../../static/images/reservation/main/txt_main_edu_m.png" alt="교육 및 체험이 다양한 교육&middot;강좌 다양한 학습이 가득!!" class="view-m">
+								</h3>
 								<div class="tab-wrap">
-									<ul class="tab-tit" role="tablist" aria-label="교육,강좌 분류 메뉴">
-										<li role="presentation" class="current">
-											<a href="#tabId1" role="tab" aria-controls="tabId1" aria-selected="true">전체</a>
-										</li>
-										<li role="presentation">
-											<a href="#tabId2" role="tab" aria-controls="tabId2" >평생학습</a>
-										</li>
-										<li role="presentation">
-											<a href="#tabId3" role="tab" aria-controls="tabId3" >정보교육센터</a>
-										</li>
-										<li role="presentation">
-											<a href="#tabId4" role="tab" aria-controls="tabId4" >청소년센터</a>
-										</li>
-										<li role="presentation">
-											<a href="#tabId5" role="tab" aria-controls="tabId5" >종합복지관</a>
-										</li>
-										<li role="presentation">
-											<a href="#tabId6" role="tab" aria-controls="tabId6" >안계군립도서관</a>
-										</li>
-										<li role="presentation">
-											<a href="#tabId7" role="tab" aria-controls="tabId7" >농업기술센터</a>
-										</li>
-									</ul>
+									<div class="scroll-wrap">
+										<ul class="tab-tit" role="tablist" aria-label="교육,강좌 분류 메뉴">
+											<li role="presentation" class="current">
+												<a href="#tabId1" role="tab" aria-controls="tabId1" aria-selected="true">전체</a>
+											</li>
+											<li role="presentation">
+												<a href="#tabId2" role="tab" aria-controls="tabId2" >평생학습</a>
+											</li>
+											<li role="presentation">
+												<a href="#tabId3" role="tab" aria-controls="tabId3" >정보교육센터</a>
+											</li>
+											<li role="presentation">
+												<a href="#tabId4" role="tab" aria-controls="tabId4" >청소년센터</a>
+											</li>
+											<li role="presentation">
+												<a href="#tabId5" role="tab" aria-controls="tabId5" >종합복지관</a>
+											</li>
+											<li role="presentation">
+												<a href="#tabId6" role="tab" aria-controls="tabId6" >안계군립도서관</a>
+											</li>
+											<li role="presentation">
+												<a href="#tabId7" role="tab" aria-controls="tabId7" >농업기술센터</a>
+											</li>
+										</ul>
+									</div>
+									
 
 									<div class="tab-contents">
 										<div id="tabId1" role="tabpanel" style="display:block;">
@@ -1041,7 +1047,10 @@
 
 						<div class="section-rental">
 							<div class="slide-wrap">
-								<h3><img src="../../static/images/reservation/main/txt_main_rental.png" alt="군민의 활동적인 취미생활을 위한 대여&middot;대관"></h3>
+								<h3>
+									<img src="../../static/images/reservation/main/txt_main_rental.png" alt="군민의 활동적인 취미생활을 위한 대여&middot;대관" class="view-pc">
+									<img src="../../static/images/reservation/main/txt_main_rental.png" alt="군민의 활동적인 취미생활을 위한 대여&middot;대관" class="view-m">
+								</h3>
 								<div class="util-area">
 									<div class="util-inner">
 										<a href="#" class="btn-detail">더보기</a>
@@ -1198,7 +1207,7 @@
 				 {
 					breakpoint: 1024,
 					settings: {
-						autoplay: false					
+						autoplay: false	
 					}
 				}
 			]
@@ -1208,11 +1217,19 @@
 		$('.js-slide01, .js-slide02, .js-slide03, .js-slide04, .js-slide05, .js-slide06, .js-slide07').slick({
 			arrows: true,
 			slidesToShow: 5,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			responsive: [
+				 {
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 2
+					}
+				}
+			]
 		});
 
 		$('.tab-wrap .tab-tit a').on('click', function () {
-			$('.tab-contents .slick-slider').slick('setPosition');
+			$('.tab-wrap .slick-slider').slick('setPosition');
 		});
 		
 		$('.notice-wrap .js-scroll').each(function() {
@@ -1230,7 +1247,15 @@
 		$('.js-slide-rental').slick({
 			arrows: true,
 			slidesToShow: 5,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			responsive: [
+				 {
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 2
+					}
+				}
+			]
 		});
 		
 		// 통합예약 이용안내
@@ -1264,7 +1289,7 @@
 				else{
 					if (!$carousel.hasClass('slick-initialized')) {
 						$carousel.slick({
-							slidesToShow: 4,
+							slidesToShow: 3,
 							slidesToScroll: 1,
 							mobileFirst: true,
 							arrows: false

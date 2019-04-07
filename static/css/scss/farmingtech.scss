@@ -51,9 +51,9 @@ LAYOUT
 		&.header-type2.open .header-bottom {border-bottom-color: #ff9900;}
 	}
 }
-
-
-
+ 
+ 
+   
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -167,9 +167,9 @@ MAIN
 		.slider {
 			position: absolute; left:0; top:58px; width:100%;
 			.slide {width:660px; }
-			.slick-list {overflow:visible;}
+			.slick-list {overflow:visible;  transition: 0.2s ease;}
 			a[class^=top] {
-				display: inline-block; position: relative; text-indent: -999em; width:320px; height:320px; text-align: left; 
+				display: inline-block; position: relative; text-indent: -999em; width:320px; height:320px; text-align: left;
 				&:after {position: absolute; display: block; content: ""; left:50%; top:50%; }
 				&[class^=top1]:after {width:320px; height:374px; margin:-187px 0 0 -160px; @include background("farmingtech/main/img_top1.png",no-repeat 50% 50%); }
 				&[class^=top2]:after {width:377px; height:374px; margin:-187px 0 0 -188.5px; @include background("farmingtech/main/img_top2.png",no-repeat 50% 50%); }
@@ -184,17 +184,18 @@ MAIN
 				&[class^=top4]:after {@include background("farmingtech/main/img_top4_hover.png",no-repeat 50% 50%); }
 				&[class^=top5]:after {@include background("farmingtech/main/img_top5_hover.png",no-repeat 50% 50%); }
 			}
-			.slick-slide {outline:none;}
+			.slick-slide {
+				outline:none; text-align:right;
+				.slide {padding-right:100px }
+				&.prev {text-align: left;}
+			}
 			.slick-current {
-				text-align: right; 
+				text-align: right;  
+				.slide {padding-right: 0;}
 				& ~ .slick-active {text-align: left; }
 				& ~ .slick-active .slide {padding-left:100px }
 			}
-			.slick-cloned {
-				text-align: right; 
-				&:nth-of-type(3) {text-align: left;}
-				.slide {padding-right:100px }
-			}
+			
 		}
 	}
 	// 일정 행사 
@@ -638,9 +639,9 @@ MEDIA QUERY
 	}
 	// 일정 행사 
 	.main-event-zone {
-		height:auto; padding-left: 0; margin-top: 1.2rem;
+		height:auto; padding-left: 0; margin-top: 1.2rem; border-top:0; 
 		.tit-zone {
-			position:static; width:100%; height:3.3rem; padding-left:0; line-height: 3.3rem; text-align: center;
+			position:static; width:100%; height:3.3rem; margin:0 -1px;padding:0 1px; line-height: 3.3rem; text-align: center; box-sizing:content-box;
 			* {float: none; display: inline-block; vertical-align: middle;}
 			.tit {font-size:1.2rem;}
 			.month {
@@ -650,10 +651,10 @@ MEDIA QUERY
 		}
 		.js-event {overflow-x:auto; overflow-y:hidden; height: 3.3rem;  width:100%;  }
 		.days {
-			width:1000%; border:1px solid #dddbdb;
-			> li {float: left; height: 3.1rem; width:5.6vw !important }
+			width:300%; 
+			> li {float: left; border-top:1px solid #dddbdb; border-bottom: 1px solid #dddbdb; height:3.3rem; width:auto !important }
 
-			a {height:auto; border-width:2px; margin:-1px 0; text-align: center;line-height:3.1rem; box-sizing: content-box;}
+			a {height: 3rem; width:5.4vw; border-width:2px; margin:-1px 0; text-align: center;line-height:3.1rem; box-sizing: content-box;}
 			.popup {display: none !important; }
 			.num {display: inline; position: static; margin:0; font-size:1rem; width:auto; height:auto;  line-height: auto; border-radius:0; background:none !important; }
 			.have .num, .today .num {font-family: $font2; }

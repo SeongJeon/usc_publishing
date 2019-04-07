@@ -289,12 +289,15 @@
 <script type="text/javascript" src="../../static/js/common.js"></script>
 <script>
 	// 상단 슬라이드
+	$('.main-visual-zone .slider').on('init', function(event, slick){
+		$(this).find(".top2").closest(".slick-slide").addClass("prev");
+	})
 	$('.main-visual-zone .slider').slick({
 		dots: false,
 		infinite: true,
 		speed: 400,
 		slidesToShow: 2,
-		centerPadding: '300px',
+		centerPadding: '17%',
 		centerMode: true,
 		arrows:false,
 		responsive: [
@@ -306,7 +309,9 @@
 			   }
 			}
 		]
-	});
+	}).on("afterChange", function(slick, currentSlide){
+		$(this).find(".slick-current").prev().addClass("prev").siblings(".prev").removeClass("prev");
+	})
 
 	// 알림존
 	$('.js-popup-slider .slider').slick({

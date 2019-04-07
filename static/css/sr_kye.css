@@ -30,7 +30,7 @@ SUB PAGE
 .course .comp-tbl_boardtype time {display:block;}
 .course .comp-tbl_boardtype .ask {font-family:'NanumSquareB';color:#016dae;}
 .course .comp-tbl_boardtype .btn-check {display:block;width:100%;height:32px;line-height:32px;font-size:16px;border:1px solid;border-radius:8px;text-align:center;background:#eff9fe;border-color:#d4e0f2;color:#527cb8;box-sizing:border-box;}
-.course .comp-tbl_boardtype *[class*='comm-btn'] {display:block;height:100%;padding-top:10px;border-radius:8px;font-family:'NanumSqaureB';line-height:1.2;}
+.course table[class^=comp-tbl] *[class*='comm-btn'] {display:block;height:100%;padding-top:10px;border-radius:8px;font-family:'NanumSqaureB';line-height:1.2;}
 .course .culture-wrap {position:relative;padding:30px 25px;border:1px solid #d1d1d1;border-top:2px solid #3f889a;}
 .course .culture-wrap .tit {margin-bottom:32px;font-size:19px;font-family:'NanumSquareB';color:#2e2e2e;}
 .course .culture-wrap .culture-info li {overflow:hidden;font-family:'NanumSquareB';}
@@ -45,13 +45,14 @@ SUB PAGE
 .course .culture-wrap .culture-info li .txt {position:relative;display:inline-block;padding-left:17px;color:#939393;}
 .course .culture-wrap .culture-info li .txt:before {position:absolute;top:3px;left:0;font-size:10px;color:#939393;font-family:'NanumSaureR';content:'/';}
 .course .receipt-area {position:absolute;top:-2px;right:0;width:90px;height:90px;padding-top:20px;text-align:center;background:#155764;}
+.course .receipt-area.not {background:#797979;}
 .course .receipt-area em {position:relative;display:block;padding-bottom:23px;font-size:17px;color:#fff;}
 .course .receipt-area em:after {position:absolute;bottom:10px;left:50%;display:block;width:18px;height:6px;margin-left:-9px;background:url(../images/usclib/subpage/bg_receipt.png) no-repeat left top;content:'';}
 .course .receipt-area span {display:block;font-size:14px;color:#fff475;}
 .course table[class^=comp-tbl][class*=_blue] {border-top-color:#3b596a}
 .course table[class^=comp-tbl][class*=_blue] thead th {background:#eff9fe;}
 .course .comp-btn-zone *[class*="comm-btn_type4"] {width:150px;}
-.course .comp-tbl_boardtype .comm-btn_check_lightgray2 {width:100%;padding:0;font-size:16px;border:1px solid #d2d2d2;}
+.course table[class^=comp-tbl] .comm-btn_check_lightgray2 {width:100%;padding:0;font-size:16px;border:1px solid #d2d2d2;}
 .course table[class^=comp-tbl][class*=_blue] .txt-notice {display:inline-block;margin-left:10px;font-size:15px;color:#ff4e00;}
 .course .board-title {color:#4b4b4b;font-size:18px;font-family:'NanumSquareEB';text-align:center;line-height:50px;border-top:2px solid #155764;background: #eff9fe;}
 .course .board-title + table[class^=comp-tbl][class*=_formtype] {border-top:1px solid #d9d6d5;}
@@ -76,7 +77,7 @@ MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
 	.course .comp-tbl_boardtype .btn-check {height:auto;margin-top:.5rem;padding:.5rem 0;line-height:1.2rem;border-radius:0.4rem;font-size:1.2rem;}
-	.course .comp-tbl_boardtype *[class*='comm-btn'] {padding-top:.7rem;}
+	.course table[class^=comp-tbl] *[class*='comm-btn'] {padding-top:.7rem;}
 	.course .culture-wrap {padding:1.5rem 1.3rem;}
 	.course .culture-wrap .tit {margin-bottom:1.6rem;font-size:1.4rem;}
 	.course .culture-wrap .culture-info li + li {margin-top:.8rem;}
@@ -89,13 +90,15 @@ MEDIA QUERY
 	.course .receipt-area em:after {bottom:.3rem;}
 	.course .receipt-area span {font-size:1.2rem;}
 	.course .comp-btn-zone *[class*="comm-btn_type4"] {width:auto;}
-	.course .comp-tbl_boardtype .comm-btn_check_lightgray2 {padding:0;font-size:1.2rem;}
+	.course table[class^=comp-tbl] .comm-btn_check_lightgray2 {padding:0;font-size:1.2rem;}
 	.course table[class^=comp-tbl][class*=_blue] .txt-notice {display:block;margin:0.5rem 0 0 0;font-size:1.2rem;}
 	.course table[class^=comp-tbl][class*=_formtype][class*=_blue] thead th {height:4.3rem;padding:1.2rem .5rem;font-size:1.2rem;line-height:1.8rem;}
 	.course .board-title {font-size:1.5rem;padding:1.2rem 1rem 1rem;line-height:2.2rem;}
 
 } @media (max-width:768px){
-} @media (max-width:321px){}
+} @media (max-width:321px){
+	.course table[class^=comp-tbl] *[class*='comm-btn'] {padding-top:1rem;}
+}
 
 
 

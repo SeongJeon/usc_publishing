@@ -2,40 +2,63 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
-#wrap.uscmuseum #footer { background: #302c26; }
-#wrap.uscmuseum #footer .footer-selectgroup .footer-comp-select dt button { border-color: #221f1b; color: #fff; background: #221f1b url("../../static/images/uscmuseum/form_select.png") no-repeat 100% 50%; }
-#wrap.uscmuseum #footer .footer-utilegroup { padding-left: 0; color: #a9a9a9; }
-#wrap.uscmuseum #footer .footer-utilegroup .footer-utile a { color: rgba(255, 255, 255, 0.7); }
-#wrap.uscmuseum #footer .footer-utilegroup .footer-addr li strong { color: #fff; }
-#wrap.uscmuseum #footer .footer-notice .number { color: #ee9166; }
-#wrap.uscmuseum #footer .footer-notice .number .call { background: url("../../static/images/uscmuseum/icon_footer_call.png") no-repeat 50% 50%; background-size: 100% 100%; }
-#wrap.uscmuseum #footer .footer-notice .txt { color: #bababa; }
+#wrap.farmingtech #footer .footer-utilegroup { padding-left: 0; }
+#wrap.farmingtech #footer .footer-utilegroup .footer-utile a strong { color: #333; }
+#wrap.farmingtech #footer .footer-utilegroup .footer-addr li strong { color: #333; }
 
-#wrap.uscmuseum #container { padding-top: 130px; }
+#wrap.farmingtech #container { padding-top: 130px; }
 
-@media (min-width: 1025px) { body.pc .uscmuseum #header .header-middle .title a { width: 250px; height: 48px; background: url("../../static/images/uscmuseum/img_logo.png") no-repeat 50% 50%; }
-  body.pc .uscmuseum #header .header-bottom .sitemap { background: #c3893a; }
-  body.pc .uscmuseum #header.header-type2 #gnb h2.over a:before, body.pc .uscmuseum #header.header-type2 #gnb h2 a:hover:before { background: #733f2c; }
-  body.pc .uscmuseum #header.header-type2 #gnb h2.over a:after, body.pc .uscmuseum #header.header-type2 #gnb h2 a:hover:after { border-color: #733f2c; }
-  body.pc .uscmuseum #header.header-type2 #gnb p a:hover { background: #dcb725; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-  body.pc .uscmuseum #header.header-type2 #gnb h3 a:before { background: #1e4363; }
-  body.pc .uscmuseum #header.header-type2.open { border-bottom-color: #c3893a; }
-  body.pc .uscmuseum #header.header-type2.open .header-bottom { border-bottom-color: #edc834; }
-  body.pc .uscmuseum #header.header-type2 .header-middle .title { top: 22px; }
-  body.pc .uscmuseum #header.header-type2 #gnb p a { background: #ffeda9; color: #2d2d2d; }
-  body.pc .uscmuseum #gnb { margin-left: 330px; }
-  body.pc .uscmuseum #gnb h2 a { width: 150px; }
-  body.pc .uscmuseum #gnb .depth2menu { width: 226px; height: 420px; padding-left: 36px; }
-  body.pc .uscmuseum #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }
-  body.pc .uscmuseum #gnb .gnb > li:nth-child(2) .depth2menu { left: 190px; }
-  body.pc .uscmuseum #gnb .gnb > li:nth-child(3) .depth2menu { left: 416px; }
-  body.pc .uscmuseum #gnb .gnb > li:nth-child(4) .depth2menu { left: 642px; }
-  body.pc .uscmuseum #gnb .gnb > li:nth-child(5) .depth2menu { left: 868px; }
-  body.pc .uscmuseum #gnb .gnb > li:nth-child(6) .depth2menu { left: 1094px; }
-  body.pc .uscmuseum #gnb .gnb > li:nth-child(1) .depth2menu { width: 190px; padding-left: 0; } }
+@media (min-width: 1025px) { body.pc .farmingtech #header .header-middle { border-bottom: 1px solid #c2c0bf; }
+  body.pc .farmingtech #header .header-middle .title { top: 20px; }
+  body.pc .farmingtech #header .header-middle .title a { width: 253px; height: 51px; background: url("../../static/images/farmingtech/img_logo.png") no-repeat 50% 50%; }
+  body.pc .farmingtech #header .header-bottom .sitemap { background: #f27405; }
+  body.pc .farmingtech #header.header-type2 #gnb { margin-left: 330px; }
+  body.pc .farmingtech #header.header-type2 #gnb h2 a { width: 150px; }
+  body.pc .farmingtech #header.header-type2 #gnb p a { background: #ffeda9; }
+  body.pc .farmingtech #header.header-type2 #gnb .depth2menu { width: 226px; height: 340px; padding-left: 36px; padding-top: 22px; }
+  body.pc .farmingtech #header.header-type2 #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }
+  body.pc .farmingtech #header.header-type2 #gnb .gnb > li:nth-child(2) .depth2menu { left: 190px; }
+  body.pc .farmingtech #header.header-type2 #gnb .gnb > li:nth-child(3) .depth2menu { left: 416px; }
+  body.pc .farmingtech #header.header-type2 #gnb .gnb > li:nth-child(4) .depth2menu { left: 642px; }
+  body.pc .farmingtech #header.header-type2 #gnb .gnb > li:nth-child(5) .depth2menu { left: 868px; }
+  body.pc .farmingtech #header.header-type2 #gnb .gnb > li:nth-child(6) .depth2menu { left: 1094px; }
+  body.pc .farmingtech #header.header-type2 #gnb .gnb > li:nth-child(1) .depth2menu { width: 190px; padding-left: 0; }
+  body.pc .farmingtech #header.header-type2 #gnb h2.over a:before, body.pc .farmingtech #header.header-type2 #gnb h2 a:hover:before { background: #f0412c; }
+  body.pc .farmingtech #header.header-type2 #gnb h2.over a:after, body.pc .farmingtech #header.header-type2 #gnb h2 a:hover:after { border-color: #f0412c; }
+  body.pc .farmingtech #header.header-type2 #gnb p a:hover { background: #f27405; }
+  body.pc .farmingtech #header.header-type2 #gnb h3 a:before { background: #1e4363; }
+  body.pc .farmingtech #header.header-type2.open { border-bottom-color: #f27405; }
+  body.pc .farmingtech #header.header-type2.open .header-middle { border-bottom: 0; }
+  body.pc .farmingtech #header.header-type2.open .header-bottom { border-bottom-color: #ff9900; } }
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
+#wrap.farmingtech #container.main .inner { width: 1320px; position: relative; margin: 0 auto; padding-bottom: 55px; }
+#wrap.farmingtech #container.main .main-cont-zone { background: url("../../static/images/farmingtech/main/bg_main.jpg") no-repeat 100% 50%; background-size: cover; }
+#wrap.farmingtech #container.main .main-cont-zone .inner { padding-top: 160px; }
+#wrap.farmingtech #container.main .main-middle-zone { overflow: hidden; position: absolute; left: 0; top: -170px; width: 100%; z-index: 1; background: #fff; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone { float: left; position: relative; width: 50%; height: 330px; padding: 20px 20px 0; background: #fff url("../../static/images/farmingtech/main/bg_board.jpg") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone ul[role=tablist] { overflow: hidden; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone ul[role=tablist] li { float: left; margin-left: 20px; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone ul[role=tablist] li:first-child { margin-left: 0; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone ul[role=tablist] a { display: inline-block; padding: 0 10px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 22px; color: #222; line-height: 38px; border-bottom: 3px solid #fff; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone ul[role=tablist] a[aria-selected=true] { border-bottom: 3px solid #ff712c; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] { display: none; padding-top: 25px; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl { position: relative; padding-left: 100px; min-height: 92px; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl dt { font-size: 20px; color: #222; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-top: 3px; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl dt .date { position: absolute; left: 0; top: 0; display: block; width: 90px; height: 92px; padding-top: 21px; border: 1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color: #666; text-align: center; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl dt .date strong { display: block; margin-top: 1px; color: #ff712c; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 28px; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl dd { display: -webkit-box; overflow: hidden; max-height: 52px; margin-top: 11px; font-size: 16px; color: #666; line-height: 26px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst { padding: 20px 0 0 6px; border-top: 1px solid #e2e2e2; margin-top: 15px; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst li + li { margin-top: 15px; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst a:before { display: inline-block; content: ""; vertical-align: middle; width: 3px; height: 3px; background: #000; margin-right: 7px; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst a .cont { display: inline-block; overflow: hidden; max-width: 80%; color: #222; font-size: 16px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst a .date { float: right; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .btn-more { position: absolute; right: 20px; top: 24px; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .btn-more a { display: block; width: 30px; height: 30px; border: 1px solid #ccc; background: url("../../static/images/farmingtech/btn_more.jpg") no-repeat 50% 50%; text-indent: -999em; }
+#wrap.farmingtech #container.main .main-middle-zone .goto-zone { float: left; width: 50%; height: 330px; }
+#wrap.farmingtech #container.main .main-visual-zone { height: 600px; background: #555; }
+
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
@@ -47,26 +70,17 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width: 1024px) { /* ------------------------------------------------------ - LAYOUT ------------------------------------------------------ */
-  #wrap.uscmuseum #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/uscmuseum/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
-  #wrap.uscmuseum #header .header-bottom .header-utilegroup .header-utile .icon-join:before { background: url("../../static/images/uscmuseum/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
-  #wrap.uscmuseum #header .header-bottom .gnb-mo-title { background: #dcb725; }
-  #wrap.uscmuseum #header .header-bottom .header-utilegroup { background: #f5f3df; }
-  #wrap.uscmuseum #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #d8cf6c; }
-  #wrap.uscmuseum #header .header-middle .btn-menu-open button { background-color: #c3893a; }
-  #wrap.uscmuseum #header .header-middle .title a { width: 20.8rem; background: url("../../static/images/uscmuseum/img_logo_m.png") no-repeat 50% 50%; }
-  #wrap.uscmuseum #gnb .category { display: none; }
-  #wrap.uscmuseum #gnb .gnb .clicked, #wrap.uscmuseum #gnb .gnb .current, #wrap.uscmuseum #gnb .gnb .clicked h3 a, #wrap.uscmuseum #gnb .gnb h2 a:hover, #wrap.uscmuseum #gnb .gnb h3 a:hover, #wrap.uscmuseum #gnb .gnb h4 a:hover { color: #c3893a; }
-  #wrap.uscmuseum #gnb .gnb h4 a:hover:before { background: #c3893a; }
+  #wrap.farmingtech #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/farmingtech/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.farmingtech #header .header-bottom .header-utilegroup .header-utile .icon-join:before { background: url("../../static/images/farmingtech/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.farmingtech #header .header-bottom .gnb-mo-title { background: #ff6600; }
+  #wrap.farmingtech #header .header-bottom .header-utilegroup { background: #f5e8df; }
+  #wrap.farmingtech #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #e2ccbd; }
+  #wrap.farmingtech #header .header-middle .btn-menu-open button { background-color: #7f652b; }
+  #wrap.farmingtech #header .header-middle .title a { width: 20.7rem; background: url("../../static/images/farmingtech/img_logo_m.png") no-repeat 50% 50%; }
+  #wrap.farmingtech #gnb .category { display: none; }
+  #wrap.farmingtech #gnb .gnb .clicked, #wrap.farmingtech #gnb .gnb .current, #wrap.farmingtech #gnb .gnb .clicked h3 a, #wrap.farmingtech #gnb .gnb h2 a:hover, #wrap.farmingtech #gnb .gnb h3 a:hover, #wrap.farmingtech #gnb .gnb h4 a:hover { color: #ff6600; }
+  #wrap.farmingtech #gnb .gnb h4 a:hover:before { background: #ff6600; }
   /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
   /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */ }
 @media (max-width: 768px) { /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
-  #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] { padding: 2rem 0; }
   /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */ }
-@media (max-width: 360px) { /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
-  #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu a { width: 6rem; height: 6rem; }
-  #wrap.uscmuseum #container.main .main-group-zone .tit .small { display: block; } }
-@media (max-width: 321px) { /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
-  #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] .tit { font-size: 1.7rem; }
-  #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .information-lst { padding-left: 10rem; }
-  #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu { padding-left: 12rem; }
-  #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu a { width: 5.5rem; height: 5.5rem; } }

@@ -6,59 +6,49 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
-#wrap.uscmuseum #footer {
-	background:#302c26;
-	.footer-selectgroup {
-		.footer-comp-select dt button {border-color: #221f1b; color:#fff; background:#221f1b url("../../static/images/uscmuseum/form_select.png") no-repeat 100% 50%;}
-	}
+#wrap.farmingtech #footer {
 	.footer-utilegroup {
-		padding-left: 0; color:#a9a9a9;
-		.footer-utile a {color:rgba(256,256,256,0.7);}
-		.footer-addr li strong {color:#fff;}
-
-	}
-	.footer-notice {
-		.number {
-			color:#ee9166;
-			.call {@include background("uscmuseum/icon_footer_call.png",no-repeat 50% 50%); background-size: 100% 100%;}
-		}
-		.txt {color:#bababa;}
+		padding-left: 0;
+		.footer-utile a strong {color:#333;}
+		.footer-addr li strong {color:#333;}
 	}
 }
-#wrap.uscmuseum #container {padding-top: 130px; }
+#wrap.farmingtech #container {padding-top: 130px; }
 @media (min-width:1025px){
-	body.pc .uscmuseum #header {
-		.header-middle .title a {width: 250px; height:48px; background:url("../../static/images/uscmuseum/img_logo.png") no-repeat 50% 50%;}
-		.header-bottom .sitemap {background: #c3893a}
+	body.pc .farmingtech #header {
+		.header-middle {
+			border-bottom: 1px solid #c2c0bf;
+			.title {
+				top:20px;
+				a {width: 253px; height: 51px; background:url("../../static/images/farmingtech/img_logo.png") no-repeat 50% 50%;}
+			}
+		}
+		.header-bottom .sitemap {background: #f27405}
 		&.header-type2 #gnb {
+			margin-left: 330px;
+			h2 a {width: 150px}
+			p a {background:#ffeda9;}	
+			.depth2menu {width: 226px; height: 340px; padding-left: 36px; padding-top: 22px;}
+
+			.gnb > li:nth-child(1) .depth2menu {left:0;}
+			.gnb > li:nth-child(2) .depth2menu {left:190px;}
+			.gnb > li:nth-child(3) .depth2menu {left:416px;}
+			.gnb > li:nth-child(4) .depth2menu {left:642px}
+			.gnb > li:nth-child(5) .depth2menu {left:868px}
+			.gnb > li:nth-child(6) .depth2menu {left:1094px}
+			.gnb > li:nth-child(1) .depth2menu {width:190px; padding-left: 0}
+
 			h2.over a:before,
-			h2 a:hover:before {background: #733f2c; }
+			h2 a:hover:before {background: #f0412c; }
 			h2.over a:after,
-			h2 a:hover:after {border-color:#733f2c;}
-			p a:hover {background: #dcb725; color:#fff; font-family: $font2;}
+			h2 a:hover:after {border-color:#f0412c;}
+			p a:hover {background: #f27405;}
 			h3 a:before{background: #1e4363;}
 		}
 
-		&.header-type2.open {border-bottom-color:#c3893a;}
-		&.header-type2.open .header-bottom {border-bottom-color: #edc834;}
-		&.header-type2 {
-			.header-middle .title {
-				top:22px;
-			}
-			#gnb p a {background:#ffeda9; color:#2d2d2d;}
-		}
-	}
-	body.pc .uscmuseum #gnb {
-		margin-left: 330px;
-		h2 a {width: 150px}
-		.depth2menu {width: 226px; height: 420px; padding-left: 36px;}
-		.gnb > li:nth-child(1) .depth2menu {left:0;}
-		.gnb > li:nth-child(2) .depth2menu {left:190px;}
-		.gnb > li:nth-child(3) .depth2menu {left:416px;}
-		.gnb > li:nth-child(4) .depth2menu {left:642px}
-		.gnb > li:nth-child(5) .depth2menu {left:868px}
-		.gnb > li:nth-child(6) .depth2menu {left:1094px}
-		.gnb > li:nth-child(1) .depth2menu {width:190px; padding-left: 0}
+		&.header-type2.open {border-bottom-color:#f27405;}
+		&.header-type2.open .header-middle {border-bottom: 0;}
+		&.header-type2.open .header-bottom {border-bottom-color: #ff9900;}
 	}
 }
 
@@ -68,7 +58,63 @@ LAYOUT
 MAIN
 ------------------------------------------------------ */
 #wrap.farmingtech #container.main {
+	.inner {width:1320px; position: relative; margin:0 auto; padding-bottom: 55px;}
+	// 게시판 간략보기
+	.main-cont-zone {
+		@include background("farmingtech/main/bg_main.jpg",no-repeat 100% 50%); background-size: cover;
+		.inner {padding-top: 160px;}
+	}
+	.main-middle-zone {
+		overflow: hidden;	position: absolute; left:0; top:-170px; width:100%; z-index: 1; background:#fff;
+		.board-zone {
+			float: left; position: relative; width:50%; height:330px; padding:20px 20px 0; background:#fff url("../../static/images/farmingtech/main/bg_board.jpg") no-repeat 50% 50%; 
 
+			ul[role=tablist] {
+				overflow: hidden; 
+				li {float: left; margin-left: 20px;}
+				li:first-child {margin-left: 0;}
+				a {
+					display:inline-block; padding:0 10px; font-family: $font2; font-size: 22px; color:#222; line-height: 38px;border-bottom:3px solid #fff;
+					&[aria-selected=true] {border-bottom:3px solid #ff712c; }
+				}
+			}
+			div[role=tabpanel] {
+				display: none ;padding-top: 25px;
+				dl {
+					position: relative; padding-left: 100px; min-height: 92px;
+					dt {
+						font-size: 20px; color:#222; font-family: $font2;  padding-top: 3px;
+						.date {
+							position: absolute; left:0; top:0;
+							display: block; width:90px; height: 92px; padding-top: 21px; border:1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color:#666; text-align: center;
+							strong {display:block; margin-top: 1px; color:#ff712c; font-family: $font2; font-size: 28px; }
+						}
+					}
+					dd {display:-webkit-box; overflow:hidden; max-height:52px; margin-top: 11px; font-size: 16px; color:#666; line-height: 26px; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis;}
+				}
+				.lst {
+					padding:20px 0 0 6px; border-top: 1px solid #e2e2e2; margin-top: 15px;
+					li + li {margin-top: 15px;}
+					a {
+						&:before{display: inline-block; content: ""; vertical-align: middle; width:3px; height: 3px; background:#000; margin-right: 7px;}
+						.cont {display: inline-block; overflow:hidden; max-width:80%;  color:#222; font-size: 16px; text-overflow:ellipsis; white-space: nowrap; vertical-align: middle;}
+						.date {float: right;}
+					}
+				}
+				.btn-more {
+					position: absolute; right: 20px;top:24px;
+					a {display: block; width: 30px; height: 30px; border:1px solid #ccc; @include background("farmingtech/btn_more.jpg",no-repeat 50% 50%); text-indent: -999em;}
+				}
+			}
+		}
+		.goto-zone {
+			float: left; width:50%; height:330px;
+		}
+	}
+	// 슬라이드
+	.main-visual-zone {
+		height: 600px; background:#555;
+	}
 }
 
 
@@ -78,6 +124,67 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,35 +306,44 @@ MEDIA QUERY
 /* ------------------------------------------------------
 - LAYOUT
 ------------------------------------------------------ */
-#wrap.uscmuseum #header {
+#wrap.farmingtech #header {
 	.header-bottom {
 		.header-utilegroup .header-utile {
-			.icon-login:before {@include background("uscmuseum/icon_gnb_login.png",no-repeat 50% 50%); background-size:auto 100%;}		
-			.icon-join:before {@include background("uscmuseum/icon_gnb_join.png",no-repeat 50% 50%); background-size:auto 100%;}
+			.icon-login:before {@include background("farmingtech/icon_gnb_login.png",no-repeat 50% 50%); background-size:auto 100%;}		
+			.icon-join:before {@include background("farmingtech/icon_gnb_join.png",no-repeat 50% 50%); background-size:auto 100%;}
 		}
-		.gnb-mo-title {background: #dcb725}
-		.header-utilegroup {background: #f5f3df;}
-		.header-utilegroup .header-utile li + li {border-color:#d8cf6c;}
+		.gnb-mo-title {background: #ff6600}
+		.header-utilegroup {background: #f5e8df;}
+		.header-utilegroup .header-utile li + li {border-color:#e2ccbd;}
 	}
 	.header-middle {
-		.btn-menu-open button {background-color:#c3893a}
-		.title a {width: 20.8rem; @include background("uscmuseum/img_logo_m.png",no-repeat 50% 50%); }
+		.btn-menu-open button {background-color:#7f652b}
+		.title a {width: 20.7rem; @include background("farmingtech/img_logo_m.png",no-repeat 50% 50%); }
 	}
 }
-#wrap.uscmuseum #gnb {
+#wrap.farmingtech #gnb {
 	.category {display: none}
 	.gnb .clicked, 
 	.gnb .current, 
 	.gnb .clicked h3 a, 
 	.gnb h2 a:hover, 
 	.gnb h3 a:hover, 
-	.gnb h4 a:hover {color:#c3893a;}
-	.gnb h4 a:hover:before {background:#c3893a;}
+	.gnb h4 a:hover {color:#ff6600;}
+	.gnb h4 a:hover:before {background:#ff6600;}
 }
 /* ------------------------------------------------------
 - MAIN
 ------------------------------------------------------ */
+#wrap.farmingtech .main {
 
+
+
+
+
+
+
+
+}
 
 
 
@@ -257,11 +373,8 @@ MEDIA QUERY
 /* ------------------------------------------------------
 - MAIN
 ------------------------------------------------------ */
-#wrap.uscmuseum #container.main {
-	// main visual
-	.main-visual-zone {
-		.museum-information div[class^=l-] {padding:2rem 0;}
-	}
+#wrap.farmingtech #container.main {
+	
 }
 /* ------------------------------------------------------
 - SUB PAGE
@@ -271,37 +384,8 @@ MEDIA QUERY
 //-------------------------------------------------------------------------------
 }
 @media (max-width:360px){
-/* ------------------------------------------------------
-- MAIN
------------------------------------------------------- */
-#wrap.uscmuseum #container.main {
-	// main visual
-	.main-visual-zone {
-		.museum-information .l-right .reservation-menu a {width: 6rem; height: 6rem;}
-	}
-	// 진행중인 행사
-	.main-group-zone .tit .small {display: block;}
-}
-//-------------------------------------------------------------------------------
 }
 @media (max-width:321px){
-/* ------------------------------------------------------
-- MAIN
------------------------------------------------------- */
-#wrap.uscmuseum #container.main {
-	// main visual
-	.main-visual-zone {
-		.museum-information {
-			div[class^=l-] .tit {font-size: 1.7rem;}
-			.l-left .information-lst {padding-left:  10rem;}
-			.l-right .reservation-menu {
-				padding-left: 12rem;
-				a {width: 5.5rem; height:5.5rem;}
-			}
-		}
-	}
-}
-//-------------------------------------------------------------------------------	
 }
 
 

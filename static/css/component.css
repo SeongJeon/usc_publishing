@@ -1337,7 +1337,7 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   #header.header-type2 .header-bottom .header-utilegroup .header-utile a.icon-join:before { -webkit-background-size: 100% 100% !important; background-size: 100% 100% !important; }
   #header.header-type2 .header-middle .title a { margin: 0 auto 0 1.4rem; -webkit-background-size: 100% auto !important; background-size: 100% auto !important; }
   #header.header-type2 #gnb .menugroup p { display: none; }
-  #header.header-type2 #gnb .gnb > li:first-child .depth2menu { height: calc(100vh - 4.3rem); }
+  #header.header-type2 #gnb .gnb > li .depth2menu { height: calc(100vh - 10.3rem); }
   #header.header-type2 #gnb .gnb h2 a { display: table; line-height: 1.4rem; }
   #header.header-type2 #gnb .gnb h2 a span { display: table-cell; vertical-align: middle; padding: 0 0.5rem; }
   /* POINT TEXT & BR tag */

@@ -2481,7 +2481,7 @@ div[class^=tp-survey] {
 	.header-middle .title a {margin:0 auto 0 1.4rem; -webkit-background-size: 100% auto !important; background-size: 100% auto !important; }
 	#gnb {
 		.menugroup p {display: none}
-		.gnb > li:first-child .depth2menu {height: calc(100vh - 4.3rem)}
+		.gnb > li .depth2menu {height: calc(100vh - 10.3rem)}
 		.gnb h2 a {display: table; line-height: 1.4rem; }
 		.gnb h2 a span {display: table-cell; vertical-align: middle; padding:0 0.5rem;}
 	}

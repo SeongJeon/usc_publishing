@@ -228,7 +228,7 @@ MEDIA QUERY
   #wrap.lifeedu #header .header-middle .title a { width: 17rem; background: url("../../static/images/lifeedu/img_logo.png") no-repeat 50% 50%; background-size: 100% auto; }
   #wrap.lifeedu #header .header-middle .comp-search .form .btn button { background: #2e56bd; }
   #wrap.lifeedu #header .header-middle .comp-search .form input { border-color: #2e56bd; }
-  #wrap.lifeedu #gnb .gnb .depth2menu { height: calc(100vh - 4.3rem); }
+  #wrap.lifeedu #gnb .gnb .depth2menu { height: calc(100vh - 10.3rem); }
   #wrap.lifeedu #gnb .gnb .clicked, #wrap.lifeedu #gnb .gnb .current, #wrap.lifeedu #gnb .gnb .clicked h3 a, #wrap.lifeedu #gnb .gnb h2 a:hover, #wrap.lifeedu #gnb .gnb h3 a:hover, #wrap.lifeedu #gnb .gnb h4 a:hover { color: #168039; }
   #wrap.lifeedu #gnb .gnb h4 a:hover:before { background: #168039; }
   #wrap.lifeedu #container { padding-top: 0; }

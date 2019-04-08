@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" >
+	<meta name="format-detection" content="telephone=no" >
+	<title>의성군 문화관광</title>
+	<meta name="Subject" content="의성군 문화관광" >
+	<meta name="title" content="의성군 문화관광" >
+	<meta name="keywords" content="의성군 문화관광" >
+	<meta name="description" content="의성군 문화관광" >
+
+	<!-- <link rel="shortcut icon" href="../../" > -->
+	<!-- <link rel="icon" href="../../static/images/usc/favicon.png" > -->
+	<link rel="stylesheet" href="../../static/css/common.css" >
+</head>
+<body>
+	<div id="skipnavi">
+		<a href="#container">주내용으로 이동</a>
+		<a href="#gnb">메뉴로 이동</a>
+		<a href="#footer">하단 정보로 이동</a>
+	</div>
+	<div id="wrap" class="culture">
+		<!-- HEADER -->
+		<header><!-- culture/header.html  --></header>
+		<!-- //HEADER -->
+
+		<!-- CONTAINER -->
+		<main>
+			<div id="container" class="main">
+				<section>
+					
+				</section>
+
+				<section>
+					
+				</section>
+
+				<section>
+					
+				</section>
+			</div>
+		</main>
+		<!-- //CONTAINER -->
+
+		<!-- FOOTER -->
+		<footer><!-- culture/footer.html  --></footer>
+		<!-- //FOOTER -->
+	</div>
+
+<script type="text/javascript" src="../../static/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../static/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../static/js/slick.min.js"></script>
+<script type="text/javascript" src="../../static/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="../../static/js/iscroll.js"></script>
+<script type="text/javascript" src="../../static/js/common.js"></script>
+<script>
+	//메인 비주얼
+	var mainSlider = (function(){
+		$(".js-main-slider .slide .img").each(function(){
+			$(this).css({"background":"url("+$(this).find("img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
+		})
+
+		$('.js-main-slider .slider').slick({
+			dots: true,
+			infinite: true,
+			speed: 400,
+			ltr: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			fade:true,
+			autoplay: true, // 오토 플레이 안할경우 false로 속성 값 변경
+			autoplaySpeed: 3000,
+			nextArrow : $('.js-main-slider .btn-prev'),
+			prevArrow : $('.js-main-slider .btn-next') ,
+			swipe:false,
+			customPaging :  function(slick,index) {
+				var i = index + 1
+	         return '<em class="current">' + i + '</em><span class="division">/</span>' + slick.slideCount;
+	      }
+		});
+	})();
+
+
+	// 민원서비스 신청
+	$(".js-main-service .slider").slick({
+		dots: false,
+		infinite: true,
+		speed: 400,
+		ltr: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		rows:7,
+		swipe:false,
+		arrows:true,
+		nextArrow : $('.js-main-service .btn-prev'),
+		prevArrow : $('.js-main-service .btn-next') ,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					swipe:true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					rows:5
+			   }
+			}
+		]
+	});
+
+	// 자주찾는 서비스
+	$(".js-favorit-service").slick({
+		dots: false,
+		infinite: true,
+		speed: 400,
+		ltr: true,
+		slidesToShow: 9,
+		slidesToScroll: 1,
+		swipe:false,
+		arrows:false,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					swipe:true,
+					slidesToShow: 3
+			   }
+			}
+		]
+	});
+
+
+</script>
+</body>
+</html>

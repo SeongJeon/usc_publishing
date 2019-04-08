@@ -40,11 +40,11 @@ var usc = {
 				$this.closest("h2").addClass("over");
 				$("h2", gnb).not($this.closest("h2")).removeClass("over");
 
-				if(ifval==true) $("h2", gnb).not("h2.over").next(".depth2menu").hide();
+				if(ifval==true) $("h2", gnb).not("h2.over").next(".depth2menu").stop().hide();
 				
 				header.addClass("open").stop().animate({"padding-bottom": ary[_idx]+'px'}, spd, 'swing', function(){
-					if(ifval==true) $this.closest("h2").next(".depth2menu").fadeIn(100);
-					else $('.depth2menu').fadeIn(100);
+					if(ifval==true) $this.closest("h2").next(".depth2menu").stop().fadeIn(100);
+					else $('.depth2menu').stop().fadeIn(100);
 				});
 			})
 			gnb.on("mouseleave", function(){
@@ -56,6 +56,7 @@ var usc = {
 						header.removeClass("open");
 					})
 				});
+			
 			})
 
 			pc++, mo=0;

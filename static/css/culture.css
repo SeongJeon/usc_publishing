@@ -1,187 +1,93 @@
-@charset "utf-8";
- 
-
-
-/* ------------------------------------------------------
-[ FONT WEIGHT ]
-기본 공통 폰트 - 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
- 
-나눔스퀘어 
-'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font0
-'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font1
-'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font2
-'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font3
------------------------------------------------------- */
-
+@charset "UTF-8";
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
+@media (min-width: 1025px) { body.pc .culture #header { background: transparent; }
+  body.pc .culture #header .header-middle { background: #fff; }
+  body.pc .culture #header .header-middle .title { top: 26px; }
+  body.pc .culture #header .header-middle .title a { width: 265px; height: 45px; background: url("../../static/images/culture/img_logo.png") no-repeat 50% 50%; }
+  body.pc .culture #header .header-middle .comp-search .form { border-color: #ff877d; }
+  body.pc .culture #header .header-middle .comp-search > button { background: #ff877d; }
+  body.pc .culture #header .header-bottom { background: transparent; min-height: 60px; border-bottom: 1px solid rgba(255, 255, 255, 0.5); transition: background 0.3s ease; }
+  body.pc .culture #header .header-bottom .sitemap { top: 4px; background: transparent; }
+  body.pc .culture #header .header-bottom .sitemap a { border: 1px solid #fff; box-sizing: border-box; }
+  body.pc .culture #header #gnb .gnb > li { float: left; }
+  body.pc .culture #header #gnb .gnb h2 { position: relative; display: inline-block; vertical-align: top; }
+  body.pc .culture #header #gnb .gnb h2:before { display: inline-block; position: absolute; left: 0; top: 50%; margin-top: -11px; content: ""; width: 1px; height: 20px; background: rgba(255, 255, 255, 0.5); vertical-align: middle; }
+  body.pc .culture #header #gnb .gnb h2 a { display: block; position: relative; width: 180px; line-height: 59px; font-size: 18px; color: #fff; text-align: center; }
+  body.pc .culture #header #gnb .gnb h2.over a, body.pc .culture #header #gnb .gnb h2 a:hover { font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+  body.pc .culture #header #gnb .gnb h2.over a:before, body.pc .culture #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: 0px; left: 0; width: 100%; content: ""; background: #d94343; height: 6px; z-index: 1000; }
+  body.pc .culture #header #gnb .gnb h2.over a:after, body.pc .culture #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -10px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #d94343; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
+  body.pc .culture #header #gnb .depth2menu { display: none; position: absolute; top: 100%; left: 0; padding-top: 37px; background: #fff; }
+  body.pc .culture #header #gnb .menu { overflow: hidden; width: 1320px; height: 364px; }
+  body.pc .culture #header #gnb .menugroup { float: left; width: 333px; padding-left: 12px; }
+  body.pc .culture #header #gnb .menugroup:first-of-type { width: 321px; padding-left: 0; }
+  body.pc .culture #header #gnb h3 a { display: block; padding: 0 14px; font-size: 17px; color: #333; line-height: 42px; background: #fde8e6; }
+  body.pc .culture #header #gnb h3 a:before { display: inline-block; content: ""; vertical-align: middle; width: 9px; height: 18px; margin-right: 12px; background: url("../../static/images/culture/icon_gnb.png") no-repeat 50% 50%; }
+  body.pc .culture #header #gnb h3 a:hover { background: #d94343; color: #fff; }
+  body.pc .culture #header #gnb h4 a { color: #828282; font-size: 15px; }
+  body.pc .culture #header #gnb h4 a:before { display: inline-block; content: ""; width: 3px; height: 3px; border-radius: 100px; background: #888; margin-right: 8px; vertical-align: middle; }
+  body.pc .culture #header #gnb h4 a:hover { color: #ff5864; }
+  body.pc .culture #header #gnb h4 a:hover:before { background: #ff5864; }
+  body.pc .culture #header #gnb .depth3menu { height: 292px; padding: 14px 15px 0; box-sizing: border-box; }
+  body.pc .culture #header #gnb .depth3menu li + li { margin-top: 12px; }
+  body.pc .culture #header #gnb .festival { position: relative; width: 100%; z-index: 1; background: #f6ded8; }
+  body.pc .culture #header #gnb .festival .tit-zone { position: absolute; top: 0; left: -134px; padding: 26px 0 0 134px; width: 448px; height: 210px; background: url("../../static/images/culture/bg_festival.png") no-repeat 50% 50%; }
+  body.pc .culture #header #gnb .festival .tit-zone .tit { width: 215px; height: 50px; background: url("../../static/images/culture/img_gnbtxt.png") no-repeat 0 50%; text-indent: -999em; }
+  body.pc .culture #header #gnb .festival .tit-zone .desc { margin-top: 19px; font-size: 15px; color: #555; line-height: 22px; text-align: left; }
+  body.pc .culture #header #gnb .festival .lst { position: relative; height: 210px; padding: 25px 0 0 296px; box-sizing: border-box; z-index: 1; }
+  body.pc .culture #header #gnb .festival .lst:after { display: block; clear: both; content: ""; }
+  body.pc .culture #header #gnb .festival .lst li { float: left; margin-left: 20px; }
+  body.pc .culture #header #gnb .festival .lst li:first-child { margin-left: 0; }
+  body.pc .culture #header #gnb .festival .lst .icon { width: 110px; height: 110px; overflow: hidden; margin: 0 auto; border-radius: 100px; }
+  body.pc .culture #header #gnb .festival .lst .name { display: table; width: 100%; height: 62px; font-size: 15px; color: #555; line-height: 20px; text-align: center; }
+  body.pc .culture #header #gnb .festival .lst .name span { display: table-cell; vertical-align: middle; }
+  body.pc .culture #header #gnb .menugroup.hover .h3 a { color: #ff5864; }
+  body.pc .culture #header #gnb .menugroup.hover .h3 a:before { background: #ff5864; }
+  body.pc .culture #header #gnb .menugroup.hover .depth3menu { background: #f4f7f9; }
+  body.pc .culture #header #gnb h2.over a, body.pc .culture #header #gnb h2 a:hover { font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
+  body.pc .culture #header.open { border-bottom: 0; background: url("../../static/images/culture/bg_gnb.png") repeat-x 0 100%; }
+  body.pc .culture #header.open .header-bottom { border-bottom-color: #fff; background: #ff877d; }
+  body.pc .culture #header.open .festival { display: block !important; } }
+.culture #container { padding-top: 190px; }
 
-
-
-
+.culture #container.main { padding-top: 130px; }
 
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
-
-
-
+.culture .main { background: #555; min-height: 1000px; }
+.culture .main:before { display: none !important; }
+.culture .main .inner { width: 1320px; margin: 0 auto; }
 
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------
-BROWSER HACK
------------------------------------------------------- */
-@media screen and (-webkit-min-device-pixel-ratio:0){ } /* webkit hack*/
-@-moz-document url-prefix() { } /* firefox hack */
-
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width:1024px){
-} @media (max-width:768px){
-} @media (max-width:321px){}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 1024px) { /* ------------------------------------------------------ LAYOUT ------------------------------------------------------ */
+  #wrap.culture #header .header-bottom .header-utilegroup { height: 4.3rem; }
+  #wrap.culture #header .header-bottom .header-utilegroup .header-utile { border-bottom: 0; }
+  #wrap.culture #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/culture/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.culture #header .header-bottom .header-utilegroup .header-utile .icon-join:before { background: url("../../static/images/culture/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.culture #header .header-bottom .gnb-mo-title { background: #d94343; }
+  #wrap.culture #header .header-bottom .header-utilegroup { background: #feeeed; }
+  #wrap.culture #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #ffcbc7; }
+  #wrap.culture #header .header-middle .btn-search-open button { background-color: #ff877d; }
+  #wrap.culture #header .header-middle .btn-menu-open button { background-color: #d94343; }
+  #wrap.culture #header .header-middle .title a { width: 20rem; background: url("../../static/images/culture/img_logo.png") no-repeat 50% 50%; background-size: 100% auto; }
+  #wrap.culture #header .header-middle .comp-search .form .btn button { background: #ff877d; }
+  #wrap.culture #header .header-middle .comp-search .form input { border-color: #ff9d94; }
+  #wrap.culture #header #gnb .gnb h2 a { display: table; }
+  #wrap.culture #header #gnb .gnb h2 a span { display: table-cell; vertical-align: middle; line-height: 1.2; padding: 0 0.5rem; }
+  #wrap.culture #header .festival { display: none; }
+  #wrap.culture #gnb .gnb .depth2menu { height: calc(100vh - 10.3rem); }
+  #wrap.culture #gnb .gnb .clicked, #wrap.culture #gnb .gnb .current, #wrap.culture #gnb .gnb .clicked h3 a, #wrap.culture #gnb .gnb h2 a:hover, #wrap.culture #gnb .gnb h3 a:hover, #wrap.culture #gnb .gnb h4 a:hover { color: #d94343; }
+  #wrap.culture #gnb .gnb h4 a:hover:before { background: #d94343; }
+  #wrap.culture #container { padding-top: 0; }
+  /* ------------------------------------------------------ COMMON ------------------------------------------------------ */
+  /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
+  .culture .main .inner { width: 100%; padding: 0 1rem; }
+  /* ------------------------------------------------------ SUBPATE ------------------------------------------------------ */ }
+@media (max-width: 320px) { #wrap.culture #header .header-middle .title a { width: 15rem; } }

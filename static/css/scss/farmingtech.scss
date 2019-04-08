@@ -163,19 +163,26 @@ MAIN
 			padding:33px 0 10px 107px; @include background("farmingtech/main/img_top.png",no-repeat 0 0); 
 			span {display: block; margin-bottom: 3px;}
 		}
-		.scroll {width:211px; height: 32px; margin: 35px auto 0; text-indent: -999em; @include background("farmingtech/main/img_scroll.png",no-repeat 50% 50%); }
+		.indicator {
+			width:211px; margin:35px auto 0; position: relative; z-index: 2;
+			.scroll {display:inline-block; width:107px; height: 32px; margin:0 50px 0 55px; text-indent: -999em; @include background("farmingtech/main/img_scroll.png",no-repeat 50% 50%); }
+			button[class^=btn-] {position:absolute; top:0; width:28px; height:32px; text-indent: -999em;}
+			.btn-prev {left:0; @include background("farmingtech/main/btn_prev.png",no-repeat 50% 50%);}
+			.btn-next {right:0; @include background("farmingtech/main/btn_next.png",no-repeat 50% 50%);}
+		}
 		.slider {
 			position: absolute; left:0; top:58px; width:100%;
-			.slide {width:660px; }
-			.slick-list {overflow:visible;  transition: 0.2s ease;}
+			.slide {position: relative; width:660px;  height:320px;}
+			.slick-list {overflow:visible;  }
 			a[class^=top] {
-				display: inline-block; position: relative; text-indent: -999em; width:320px; height:320px; text-align: left;
+				display: inline-block; position: absolute; top:0; right:0;  width:350px; height:320px; text-indent: -999em; text-align: left; 
+				-ms-transition: 0.1s ease; -webkit-transition: 0.1s ease; -moz-transition: 0.1s ease; transition: 0.1s ease;
 				&:after {position: absolute; display: block; content: ""; left:50%; top:50%; }
-				&[class^=top1]:after {width:320px; height:374px; margin:-187px 0 0 -160px; @include background("farmingtech/main/img_top1.png",no-repeat 50% 50%); }
-				&[class^=top2]:after {width:377px; height:374px; margin:-187px 0 0 -188.5px; @include background("farmingtech/main/img_top2.png",no-repeat 50% 50%); }
-				&[class^=top3]:after {width:374px; height:374px; margin:-187px 0 0 -187px; @include background("farmingtech/main/img_top3.png",no-repeat 50% 50%); }
-				&[class^=top4]:after {width:320px; height:374px; margin:-187px 0 0 -160px; @include background("farmingtech/main/img_top4.png",no-repeat 50% 50%); }
-				&[class^=top5]:after {width:320px; height:374px; margin:-187px 0 0 -160px; @include background("farmingtech/main/img_top5.png",no-repeat 50% 50%); }
+				&[class^=top1]:after {width:350px; height:374px; margin:-187px 0 0 -175px; @include background("farmingtech/main/img_top1.png",no-repeat 50% 50%); }
+				&[class^=top2]:after {width:338px; height:374px; margin:-187px 0 0 -169px; @include background("farmingtech/main/img_top2.png",no-repeat 50% 50%); }
+				&[class^=top3]:after {width:350px; height:374px; margin:-187px 0 0 -175px; @include background("farmingtech/main/img_top3.png",no-repeat 50% 50%); }
+				&[class^=top4]:after {width:350px; height:374px; margin:-187px 0 0 -175px; @include background("farmingtech/main/img_top4.png",no-repeat 50% 50%); }
+				&[class^=top5]:after {width:350px; height:374px; margin:-187px 0 0 -175px; @include background("farmingtech/main/img_top5.png",no-repeat 50% 50%); }
 			}
 			a[class^=top]:hover {
 				&[class^=top1]:after {@include background("farmingtech/main/img_top1_hover.png",no-repeat 50% 50%); }
@@ -186,14 +193,17 @@ MAIN
 			}
 			.slick-slide {
 				outline:none; text-align:right;
-				.slide {padding-right:100px }
-				&.prev {text-align: left;}
+				a[class^=top] {margin-right:100px }
+				&.prev {
+					a[class^=top] {right:45%; margin-right: 0;}
+				}
+				&.not {
+					a[class^=top] {transition: none;}
+				}
 			}
 			.slick-current {
-				text-align: right;  
-				.slide {padding-right: 0;}
-				& ~ .slick-active {text-align: left; }
-				& ~ .slick-active .slide {padding-left:100px }
+				a[class^=top] {margin-right:0}
+				& ~ * a[class^=top] {margin-right:150px}
 			}
 			
 		}
@@ -612,17 +622,21 @@ MEDIA QUERY
 			padding:2.2rem 0 1rem 7.1rem; background-size: auto 100%;
 			img {height: 4rem; }
 		}
-		.scroll {width:15.2rem; height: 2.2rem; margin: 2.5rem auto 0; background-size: 100% auto;}
+		.indicator {
+			width:15.2rem; margin:2.5rem auto 0; 
+			.scroll {width:7.5rem; height: 2.2rem; margin:0 4rem; background-size: 100% auto;}
+			button[class^=btn-] { width:1.8rem; height:2.2rem; background-size: 100% auto !important}
+		}
 		.slider {
-			position: absolute; left:0; top:19rem; width:100%;
+			position: absolute; left:0; top:20rem; width:100%;
 			.slide {width:auto; text-align: center;}
 			a[class^=top] {
-				width:12.6rem; height:12.6rem;
-				&[class^=top1]:after {width:13rem; height:14.1rem; margin:-7.05rem 0 0 -6.5rem; @include background("farmingtech/main/img_top1_m.png",no-repeat 50% 50%); background-size: 100% 100%;}
-				&[class^=top2]:after {width:13.5rem; height:14.1rem; margin:-7.05rem 0 0 -6.75rem; @include background("farmingtech/main/img_top2_m.png",no-repeat 50% 50%); background-size: 100% 100%;}
-				&[class^=top3]:after {width:14.4rem; height:14.1rem; margin:-7.05rem 0 0 -7.2rem; @include background("farmingtech/main/img_top3_m.png",no-repeat 50% 50%); background-size: 100% 100%;}
-				&[class^=top4]:after {width:15.3rem; height:14.1rem; margin:-7.05rem 0 0 -7.6rem; @include background("farmingtech/main/img_top4_m.png",no-repeat 50% 50%); background-size: 100% 100%;}
-				&[class^=top5]:after {width:15.3rem; height:14.1rem; margin:-7.05rem 0 0 -7.6rem; @include background("farmingtech/main/img_top5_m.png",no-repeat 50% 50%); background-size: 100% 100%;}
+				width:12.6rem; height:12.6rem; position: relative; right:inherit !important;
+				&[class^=top1]:after {width:14rem; height:14.1rem; margin:-7rem 0 0 -7rem; @include background("farmingtech/main/img_top1_m.png",no-repeat 50% 50%); background-size: 100% 100%;}
+				&[class^=top2]:after {width:14rem; height:14.1rem; margin:-7rem 0 0 -7rem; @include background("farmingtech/main/img_top2_m.png",no-repeat 50% 50%); background-size: 100% 100%;}
+				&[class^=top3]:after {width:14rem; height:14.1rem; margin:-7rem 0 0 -7rem; @include background("farmingtech/main/img_top3_m.png",no-repeat 50% 50%); background-size: 100% 100%;}
+				&[class^=top4]:after {width:14rem; height:14.1rem; margin:-7rem 0 0 -7rem; @include background("farmingtech/main/img_top4_m.png",no-repeat 50% 50%); background-size: 100% 100%;}
+				&[class^=top5]:after {width:14rem; height:14.1rem; margin:-7rem 0 0 -7rem; @include background("farmingtech/main/img_top5_m.png",no-repeat 50% 50%); background-size: 100% 100%;}
 			}
 			a[class^=top]:hover {
 				&[class^=top1]:after {@include background("farmingtech/main/img_top1_m_hover.png",no-repeat 50% 50%); background-size: 100% 100%;}
@@ -632,6 +646,7 @@ MEDIA QUERY
 				&[class^=top5]:after {@include background("farmingtech/main/img_top5_m_hover.png",no-repeat 50% 50%); background-size: 100% 100%;}
 			}
 			.slick-slide {
+				a[class^=top] {margin-right: 0;}
 				text-align: center !important; 
 				.slide {padding:0 !important;}
 			}

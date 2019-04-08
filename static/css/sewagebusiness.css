@@ -1,159 +1,233 @@
-@charset "utf-8";
- 
-
-/* ------------------------------------------------------
-[ FONT WEIGHT ]
-기본 공통 폰트 - 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
- 
-나눔스퀘어 
-'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font0
-'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font1
-'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font2
-'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font3
------------------------------------------------------- */
-
+@charset "UTF-8";
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
+#wrap.sewagebusiness #footer .footer-utilegroup { padding-left: 0; }
+#wrap.sewagebusiness #footer .footer-utilegroup .footer-utile a strong { color: #333; }
+#wrap.sewagebusiness #footer .footer-utilegroup .footer-addr li strong { color: #333; }
 
+#wrap.sewagebusiness #container { padding-top: 130px; }
+
+@media (min-width: 1025px) { body.pc .sewagebusiness #header .header-middle { border-bottom: 1px solid #c2c0bf; }
+  body.pc .sewagebusiness #header .header-middle .title { top: 20px; }
+  body.pc .sewagebusiness #header .header-middle .title a { width: 281px; height: 51px; background: url("../../static/images/sewagebusiness/img_logo.png") no-repeat 50% 50%; }
+  body.pc .sewagebusiness #header .header-bottom .sitemap { background: #2952b9; }
+  body.pc .sewagebusiness #header.header-type2 #gnb { margin-left: 325px; }
+  body.pc .sewagebusiness #header.header-type2 #gnb h2 a { width: 130px; }
+  body.pc .sewagebusiness #header.header-type2 #gnb p a { background: #dbf0f5; }
+  body.pc .sewagebusiness #header.header-type2 #gnb .depth2menu { width: 191px; height: 370px; padding-left: 17px; padding-top: 22px; }
+  body.pc .sewagebusiness #header.header-type2 #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }
+  body.pc .sewagebusiness #header.header-type2 #gnb .gnb > li:nth-child(2) .depth2menu { left: 191px; }
+  body.pc .sewagebusiness #header.header-type2 #gnb .gnb > li:nth-child(3) .depth2menu { left: 382px; }
+  body.pc .sewagebusiness #header.header-type2 #gnb .gnb > li:nth-child(4) .depth2menu { left: 573px; }
+  body.pc .sewagebusiness #header.header-type2 #gnb .gnb > li:nth-child(5) .depth2menu { left: 764px; }
+  body.pc .sewagebusiness #header.header-type2 #gnb .gnb > li:nth-child(6) .depth2menu { left: 955px; }
+  body.pc .sewagebusiness #header.header-type2 #gnb .gnb > li:nth-child(7) .depth2menu { left: 1146px; }
+  body.pc .sewagebusiness #header.header-type2 #gnb .gnb > li:nth-child(1) .depth2menu { width: 190px; padding-left: 0; }
+  body.pc .sewagebusiness #header.header-type2 #gnb h2.over a:before, body.pc .sewagebusiness #header.header-type2 #gnb h2 a:hover:before { background: #2a3b65; }
+  body.pc .sewagebusiness #header.header-type2 #gnb h2.over a:after, body.pc .sewagebusiness #header.header-type2 #gnb h2 a:hover:after { border-color: #2a3b65; }
+  body.pc .sewagebusiness #header.header-type2 #gnb p a:hover { background: #47aedd; }
+  body.pc .sewagebusiness #header.header-type2 #gnb h3 a:before { background: #1e4363; }
+  body.pc .sewagebusiness #header.header-type2.open { border-bottom-color: #2952b9; }
+  body.pc .sewagebusiness #header.header-type2.open .header-middle { border-bottom: 0; }
+  body.pc .sewagebusiness #header.header-type2.open .header-bottom { border-bottom-color: #2ba1d8; } }
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
+#wrap.sewagebusiness #container.main { /* 즐겨찾는 메뉴 영역 */ /* 게시판 */ /* 안내 */ /* 우측슬라이드  */ /* 민원서비스신청 */ }
+#wrap.sewagebusiness #container.main .inner { width: 1320px; margin: 0 auto; }
+#wrap.sewagebusiness #container.main .main-favorit-zone { padding: 30px 0; overflow: hidden; margin-top: 20px; background: url("../../static/images/sewagebusiness/main/bg_favoritzone.png") repeat 0 0; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .inner { position: relative; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .tit { position: absolute; left: 0; top: 0; font-size: 23px; color: #2e364a; line-height: 30px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-top: 18px; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .tit:after { display: block; content: ""; width: 81px; height: 19px; background: url("../../static/images/sewagebusiness/main/bg_favorit.png") no-repeat 50% 50%; margin-top: 5px; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service { padding-left: 100px; overflow: hidden; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service li { float: left; position: relative; width: 150px; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service .slick-slide:last-of-type a:after { display: none; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a { display: block; position: relative; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a:before { display: block; content: ""; position: relative; width: 90px; height: 90px; overflow: hidden; border-radius: 100px; margin: 0 auto; background-color: #fff !important; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a .name { display: block; font-size: 17px; text-align: center; color: #555; margin-top: 12px; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f1:before { background: url("../../static/images/sewagebusiness/main/icon_favorit1.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f2:before { background: url("../../static/images/sewagebusiness/main/icon_favorit2.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f3:before { background: url("../../static/images/sewagebusiness/main/icon_favorit3.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f4:before { background: url("../../static/images/sewagebusiness/main/icon_favorit4.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f5:before { background: url("../../static/images/sewagebusiness/main/icon_favorit5.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f6:before { background: url("../../static/images/sewagebusiness/main/icon_favorit6.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f7:before { background: url("../../static/images/sewagebusiness/main/icon_favorit7.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f8:before { background: url("../../static/images/sewagebusiness/main/icon_favorit8.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f9:before { background: url("../../static/images/sewagebusiness/main/icon_favorit9.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f1:hover:before { background: url("../../static/images/sewagebusiness/main/icon_favorit1_on.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f2:hover:before { background: url("../../static/images/sewagebusiness/main/icon_favorit2_on.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f3:hover:before { background: url("../../static/images/sewagebusiness/main/icon_favorit3_on.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f4:hover:before { background: url("../../static/images/sewagebusiness/main/icon_favorit4_on.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f5:hover:before { background: url("../../static/images/sewagebusiness/main/icon_favorit5_on.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f6:hover:before { background: url("../../static/images/sewagebusiness/main/icon_favorit6_on.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f7:hover:before { background: url("../../static/images/sewagebusiness/main/icon_favorit7_on.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f8:hover:before { background: url("../../static/images/sewagebusiness/main/icon_favorit8_on.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f9:hover:before { background: url("../../static/images/sewagebusiness/main/icon_favorit9_on.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a.f8 .name { position: relative; left: -10px; width: 120%; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a:hover:before { background-color: #2952b9 !important; }
+#wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a:hover .name { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #2952b9; }
+#wrap.sewagebusiness #container.main .main-middle-zone { overflow: hidden; width: 1320px; margin: 20px auto 0; }
+#wrap.sewagebusiness #container.main .board-zone { float: left; position: relative; width: 650px; height: 330px; padding: 20px 20px 0; border: 1px solid #d6d5d5; background: #fff url("../../static/images/sewagebusiness/main/bg_board.jpg") no-repeat 100% 100%; }
+#wrap.sewagebusiness #container.main .board-zone ul[role=tablist] { overflow: hidden; }
+#wrap.sewagebusiness #container.main .board-zone ul[role=tablist] li { float: left; margin-left: 20px; }
+#wrap.sewagebusiness #container.main .board-zone ul[role=tablist] li:first-child { margin-left: 0; }
+#wrap.sewagebusiness #container.main .board-zone ul[role=tablist] a { display: inline-block; padding: 0 10px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 22px; color: #222; line-height: 38px; border-bottom: 3px solid #fff; }
+#wrap.sewagebusiness #container.main .board-zone ul[role=tablist] a[aria-selected=true] { border-bottom: 3px solid #2952b9; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] { display: none; padding-top: 25px; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] dl { position: relative; padding-left: 100px; min-height: 92px; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] dl dt { font-size: 20px; color: #222; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-top: 3px; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] dl dt .date { position: absolute; left: 0; top: 0; display: block; width: 90px; height: 92px; padding-top: 21px; border: 1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color: #666; text-align: center; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] dl dt .date strong { display: block; margin-top: 1px; color: #2952b9; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 28px; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] dl dd { display: -webkit-box; overflow: hidden; max-height: 52px; margin-top: 11px; font-size: 16px; color: #666; line-height: 26px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .lst { padding: 20px 0 0 6px; border-top: 1px solid #e2e2e2; margin-top: 15px; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .lst li + li { margin-top: 15px; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .lst a:before { display: inline-block; content: ""; vertical-align: middle; width: 3px; height: 3px; background: #000; margin-right: 7px; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .lst a .cont { display: inline-block; overflow: hidden; max-width: 80%; color: #222; font-size: 16px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .lst a .date { float: right; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .btn-more { position: absolute; right: 20px; top: 24px; }
+#wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .btn-more a { display: block; width: 30px; height: 30px; border: 1px solid #ccc; background: url("../../static/images/farmingtech/btn_more.jpg") no-repeat 50% 50%; text-indent: -999em; }
+#wrap.sewagebusiness #container.main .goto-zone { float: right; overflow: hidden; width: 650px; }
+#wrap.sewagebusiness #container.main .goto-zone .tit { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; font-size: 22px; }
+#wrap.sewagebusiness #container.main .goto-zone .desc { margin-top: 7px; color: rgba(255, 255, 255, 0.4); font-size: 15px; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-complaint { float: right; width: 315px; height: 330px; padding: 22px 20px 0; background: #4561a8; color: #fff; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-complaint .call { margin-top: 11px; font-size: 24px; line-height: 30px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding: 5px 0 8px 72px; background: url("../../static/images/sewagebusiness/main/icon_call.png") no-repeat 0% 0%; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-complaint .call-lst { font-size: 16px; line-height: 34px; margin-top: 1px; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-complaint .call-lst li { border-bottom: 1px solid rgba(255, 255, 255, 0.3); padding: 0 10px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-complaint .call-lst li:before { display: inline-block; content: "·"; margin-right: 5px; vertical-align: middle; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-complaint .call-lst .num { float: right; }
+#wrap.sewagebusiness #container.main .goto-zone .group { float: left; width: 315px; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-cutwater { position: relative; height: 155px; padding: 22px 17px 0; background: #2a3b65; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-cutwater .date { position: absolute; right: 17px; top: 28px; font-size: 16px; color: #fff; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-cutwater .btn { margin-top: 19px; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-cutwater .btn a { display: block; overflow: hidden; padding: 0 22px 0 10px; line-height: 40px; font-size: 16px; color: #333; background: #fff; white-space: nowrap; text-overflow: ellipsis; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-cutwater .btn.donthave a { color: #a0a0a0; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-tax { margin-top: 19px; padding: 26px 17px 0; height: 155px; background: #2f9abd url("../../static/images/sewagebusiness/main/img_tax.png") no-repeat 245px 22px; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-tax .btn { margin-top: 19px; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-tax .btn a { display: block; padding: 0 22px 0 10px; line-height: 40px; font-size: 16px; color: #333; background: #fff; }
+#wrap.sewagebusiness #container.main .goto-zone .infor-tax .btn a:before { display: block; float: right; content: ""; width: 7px; height: 40px; background: url("../../static/images/sewagebusiness/icon_arrow.png") no-repeat 50% 50%; background-size: 100% auto; }
+#wrap.sewagebusiness #container.main .main-top-zone { overflow: hidden; min-width: 1320px; }
+#wrap.sewagebusiness #container.main .main-top-zone { min-width: auto; }
+#wrap.sewagebusiness #container.main .main-slider { float: left; width: 60%; height: 430px; position: relative; }
+#wrap.sewagebusiness #container.main .main-slider .indicator { position: absolute; right: 12px; top: 50%; margin-top: -74px; z-index: 1; }
+#wrap.sewagebusiness #container.main .main-slider .indicator li + li { margin-top: 8px; }
+#wrap.sewagebusiness #container.main .main-slider .indicator button { width: 70px; height: 70px; background-color: rgba(0, 0, 0, 0.3) !important; border: 1px solid #fff; text-indent: -9999em; }
+#wrap.sewagebusiness #container.main .main-slider .indicator .btn-prev { background: url("../../static/images/sewagebusiness/btn_prev2.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-slider .indicator .btn-next { background: url("../../static/images/sewagebusiness/btn_next2.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-slider .img { height: 430px; }
+#wrap.sewagebusiness #container.main .main-slider .img img { display: none; }
+#wrap.sewagebusiness #container.main .main-slider .img.mo { display: none; }
+#wrap.sewagebusiness #container.main .main-slider .slick-dots { position: absolute; right: 12px; top: 300px; z-index: 2; }
+#wrap.sewagebusiness #container.main .main-slider .slick-dots li { display: none; width: 70px; color: #fff; font-size: 15px; text-align: center; }
+#wrap.sewagebusiness #container.main .main-slider .slick-dots li .current { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 18px; }
+#wrap.sewagebusiness #container.main .main-slider .slick-dots li.slick-active { display: block; }
+#wrap.sewagebusiness #container.main .main-service { float: right; width: 40%; height: 430px; border: 30px solid #2ba1d8; border-right: 0; background: url("../../static/images/sewagebusiness/main/bg_service.jpg") no-repeat 50% 50%; background-size: cover; }
+#wrap.sewagebusiness #container.main .main-service .main-service-inner { position: relative; width: 420px; padding: 24px 24px 0; }
+#wrap.sewagebusiness #container.main .main-service .tit { font-size: 22px; color: #000; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.sewagebusiness #container.main .main-service .indicator { position: absolute; right: 0; top: 19px; overflow: hidden; border: 1px solid #d6d5d5; }
+#wrap.sewagebusiness #container.main .main-service .indicator li { float: left; }
+#wrap.sewagebusiness #container.main .main-service .indicator li + li { border-left: 1px solid #d6d5d5; }
+#wrap.sewagebusiness #container.main .main-service .indicator li > * { display: block; width: 35px; height: 35px; background-color: #fff !important; text-indent: -999em; }
+#wrap.sewagebusiness #container.main .main-service .indicator .btn-prev { background: url("../../static/images/sewagebusiness/btn_prev.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-service .indicator .btn-next { background: url("../../static/images/sewagebusiness/btn_next.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-service .indicator .btn-more { background: url("../../static/images/sewagebusiness/btn_more.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-service .slider { margin-top: 28px; }
+#wrap.sewagebusiness #container.main .main-service .slider li { line-height: 25px; margin-top: 15px; }
+#wrap.sewagebusiness #container.main .main-service .slider a { display: block; font-size: 16px; color: #525252; }
+#wrap.sewagebusiness #container.main .main-service .slider a:before { display: inline-block; content: ""; width: 5px; height: 5px; background: #898989; margin-right: 7px; vertical-align: middle; }
+#wrap.sewagebusiness #container.main .main-service .slider a .down { float: right; display: block; width: 98px; line-height: 23px; font-size: 14px; color: #a2a2a2; border: 1px solid #bbb; background-color: #fff; text-align: center; }
+#wrap.sewagebusiness #container.main .main-service .slider a .down:after { display: inline-block; content: ""; width: 15px; height: 14px; vertical-align: middle; margin-left: 5px; background: url("../../static/images/sewagebusiness/btn_down.png") no-repeat 50% 50%; }
+#wrap.sewagebusiness #container.main .main-service .slider a:hover { color: #2952b9; }
+#wrap.sewagebusiness #container.main .main-service .slider a:hover .down { border-color: #2952b9; color: #2952b9; }
+#wrap.sewagebusiness #container.main .main-service .slider a:hover .down:after { background: url("../../static/images/sewagebusiness/btn_down_hover.png") no-repeat 50% 50%; }
 
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
-@media screen and (-webkit-min-device-pixel-ratio:0){ } /*// webkit hack*/
-@-moz-document url-prefix() { } /*firefox hack*/
-
-
+@-moz-document url-prefix() {}
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width:1024px){
-} @media (max-width:768px){
-} @media (max-width:321px){
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 1024px) { /* ------------------------------------------------------ LAYOUT ------------------------------------------------------ */
+  #wrap.sewagebusiness #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/sewagebusiness/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.sewagebusiness #header .header-bottom .header-utilegroup .header-utile .icon-join:before { background: url("../../static/images/sewagebusiness/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
+  #wrap.sewagebusiness #header .header-bottom .gnb-mo-title { background: #2952b9; }
+  #wrap.sewagebusiness #header .header-bottom .header-utilegroup { background: #eff9fe; }
+  #wrap.sewagebusiness #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #bad8e6; }
+  #wrap.sewagebusiness #header .header-middle .btn-menu-open button { background-color: #2952b9; }
+  #wrap.sewagebusiness #header .header-middle .title a { width: 23.3rem; background: url("../../static/images/sewagebusiness/img_logo_m.png") no-repeat 50% 50%; }
+  #wrap.sewagebusiness #gnb .category { display: none; }
+  #wrap.sewagebusiness #gnb .gnb .clicked, #wrap.sewagebusiness #gnb .gnb .current, #wrap.sewagebusiness #gnb .gnb .clicked h3 a, #wrap.sewagebusiness #gnb .gnb h2 a:hover, #wrap.sewagebusiness #gnb .gnb h3 a:hover, #wrap.sewagebusiness #gnb .gnb h4 a:hover { color: #2952b9; }
+  #wrap.sewagebusiness #gnb .gnb h4 a:hover:before { background: #2952b9; }
+  #wrap.sewagebusiness #container { padding-top: 0; }
+  /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
+  #wrap.sewagebusiness #container.main { /* 게시판 */ /* 안내 */ /* 민원서비스신청 */ /* 우측슬라이드  */ }
+  #wrap.sewagebusiness #container.main .inner { width: 100%; }
+  #wrap.sewagebusiness #container.main .main-favorit-zone { padding: 1.8rem 1.1rem; margin-top: 1.1rem; }
+  #wrap.sewagebusiness #container.main .main-favorit-zone .tit { font-size: 1.5rem; line-height: 2rem; padding-top: 1rem; }
+  #wrap.sewagebusiness #container.main .main-favorit-zone .tit:after { width: 5.4rem; height: 1.2rem; background-size: 100% auto; margin-top: 0.5rem; }
+  #wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service { padding-left: 6.6rem; }
+  #wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a:after { height: 7.2rem; top: 0.8rem; }
+  #wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a:before { width: 6rem; height: 6rem; background-size: 100% auto !important; }
+  #wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a .name { font-size: 1.1rem; margin-top: 0.9rem; }
+  #wrap.sewagebusiness #container.main .main-favorit-zone .lst-favorit-service a:hover .icon img { top: -6rem; }
+  #wrap.sewagebusiness #container.main .main-middle-zone { width: 100%; padding: 0 1.1rem; margin-top: 1rem; }
+  #wrap.sewagebusiness #container.main .board-zone { float: none; width: 100%; height: auto; padding: 1.1rem 1.2rem 1.5rem; background-position: 100% 100%; background-size: auto 100%; }
+  #wrap.sewagebusiness #container.main .board-zone ul[role=tablist] li { margin-left: 1rem; }
+  #wrap.sewagebusiness #container.main .board-zone ul[role=tablist] a { padding: 0 0.6rem; font-size: 1.2rem; line-height: 2.2rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] { padding-top: 1.4rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] dl { padding-left: 5.6rem; min-height: 5.2rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] dl dt { font-size: 1.1rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] dl dt .date { width: 5rem; height: 5.2rem; padding-top: 1.2rem; font-size: 0.9rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] dl dt .date strong { font-size: 1.6rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] dl dd { max-height: 2.8rem; margin-top: 1rem; font-size: 1rem; line-height: 1.4rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .lst { padding: 1rem 0 0 0.4rem; margin-top: 0.9rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .lst li + li { margin-top: 0.7rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .lst a:before { width: 2px; height: 2px; margin-right: 0.5rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .lst a .cont { max-width: 70%; font-size: 1rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .btn-more { right: 1.3rem; top: 1.4rem; }
+  #wrap.sewagebusiness #container.main .board-zone div[role=tabpanel] .btn-more a { width: 1.7rem; height: 1.7rem; background-size: 50% 50%; }
+  #wrap.sewagebusiness #container.main .goto-zone { float: none; width: 100%; margin-top: 1rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .tit { font-size: 1.4rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .desc { margin-top: 0.5rem; font-size: 1rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-complaint { float: none; width: 100%; height: auto; padding: 1.6rem 1.2rem 1rem; margin-top: 1rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-complaint .call { margin-top: 1.1rem; font-size: 1.6rem; line-height: 2rem; padding: 0.3rem 0 0.6rem 6rem; background-size: auto 100%; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-complaint .call-lst { font-size: 1.1rem; line-height: 2.2rem; margin-top: 0.7rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-complaint .call-lst li { padding: 0 0.6rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-complaint .call-lst li:before { margin-right: 0.3rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .group { float: none; width: 100%; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-cutwater { height: auto; padding: 1.6rem 1.2rem 1.4rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-cutwater .date { right: 1.2rem; top: 1.8rem; font-size: 1rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-cutwater .btn { margin-top: 1.3rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-cutwater .btn a { padding: 0 0.8rem; line-height: 2.6rem; font-size: 1rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-tax { margin-top: 1rem; padding: 1.6rem 1.2rem 1.4rem; height: auto; background-position: 95% 20%; background-size: auto 30%; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-tax .btn { margin-top: 1.3rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-tax .btn a { padding: 0 1.5rem 0 0.8rem; line-height: 2.6rem; font-size: 1rem; }
+  #wrap.sewagebusiness #container.main .goto-zone .infor-tax .btn a:before { width: 7px; height: 2.6rem; }
+  #wrap.sewagebusiness #container.main .main-top-zone { min-width: auto; }
+  #wrap.sewagebusiness #container.main .main-service { float: none; width: 100%; height: auto; border: 1.6rem solid #2ba1d8; background: #fff; }
+  #wrap.sewagebusiness #container.main .main-service .main-service-inner { width: 100%; padding: 1.8rem 1.5rem 1.5rem; }
+  #wrap.sewagebusiness #container.main .main-service .tit { font-size: 1.5rem; }
+  #wrap.sewagebusiness #container.main .main-service .indicator { right: 1.5rem; top: 1.4rem; }
+  #wrap.sewagebusiness #container.main .main-service .indicator li > * { width: 2.4rem; height: 2.4rem; background-size: 30% auto !important; }
+  #wrap.sewagebusiness #container.main .main-service .indicator li > *.btn-more { background-size: 40% auto !important; }
+  #wrap.sewagebusiness #container.main .main-service .slider { margin-top: 2.2rem; }
+  #wrap.sewagebusiness #container.main .main-service .slider li { line-height: 2rem; margin-top: 0.6rem; }
+  #wrap.sewagebusiness #container.main .main-service .slider a { font-size: 1.2rem; }
+  #wrap.sewagebusiness #container.main .main-service .slider a:before { width: 2px; height: 2px; margin-right: 0.7rem; }
+  #wrap.sewagebusiness #container.main .main-service .slider a .down { width: 6.5rem; line-height: 2rem; font-size: 1rem; }
+  #wrap.sewagebusiness #container.main .main-service .slider a .down:after { width: 1rem; height: 2rem; margin-left: 0.5rem; background-size: 100% auto !important; }
+  #wrap.sewagebusiness #container.main .main-slider { float: none; width: 100%; height: 24.5rem; }
+  #wrap.sewagebusiness #container.main .main-slider .indicator { right: 0.9rem; margin-top: -5.1rem; }
+  #wrap.sewagebusiness #container.main .main-slider .indicator li + li { margin-top: 0.5rem; }
+  #wrap.sewagebusiness #container.main .main-slider .indicator button { width: 4.6rem; height: 4.6rem; background-size: 25% auto !important; }
+  #wrap.sewagebusiness #container.main .main-slider .img { height: 24.6rem; }
+  #wrap.sewagebusiness #container.main .main-slider .img.mo { display: block; }
+  #wrap.sewagebusiness #container.main .main-slider .img.pc { display: none; }
+  #wrap.sewagebusiness #container.main .main-slider .slick-dots { right: 0.9rem; top: 50%; margin-top: 5.1rem; }
+  #wrap.sewagebusiness #container.main .main-slider .slick-dots li { width: 4.6rem; font-size: 1rem; }
+  #wrap.sewagebusiness #container.main .main-slider .slick-dots li .current { font-size: 1.2rem; }
+  /* ------------------------------------------------------ SUB PAGE ------------------------------------------------------ */ }

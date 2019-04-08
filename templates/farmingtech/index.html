@@ -5,11 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" >
 	<meta name="format-detection" content="telephone=no" >
-	<title>의성군청</title>
-	<meta name="Subject" content="의성군청" >
-	<meta name="title" content="의성군청" >
-	<meta name="keywords" content="의성군청" >
-	<meta name="description" content="의성군청" >
+	<title>의성군 농업기술센터</title>
+	<meta name="Subject" content="의성군 농업기술센터" >
+	<meta name="title" content="의성군 농업기술센터" >
+	<meta name="keywords" content="의성군 농업기술센터" >
+	<meta name="description" content="의성군 농업기술센터" >
 
 	<!-- <link rel="shortcut icon" href="../../" > -->
 	<!-- <link rel="icon" href="../../static/images/usc/favicon.png" > -->
@@ -37,7 +37,11 @@
 							농업의 미래, 선진농업기술의 현장 <br>
 							의성군농업기술센터가 농업인들과 함께합니다.
 						</p>
-						<p class="scroll">SCROLL</p>
+						<div class="indicator">
+							<span class="scroll">SCROLL</span>
+							<button type="button" class="btn-prev"><span>이전 슬라이드로 이동</span></button>
+							<button type="button" class="btn-next"><span>다음 슬라이드로 이동</span></button>
+						</div>
 					</div>
 					<div class="slider">
 						<div class="slide"><a href="#" class="top3"><span>의성 사과</span></a></div>
@@ -64,12 +68,12 @@
 								</ul>
 								<!-- 탭 컨텐츠 - 공지사항 -->
 								<div id="tabboard1" role="tabpanel" style="display: block">
-									<h2 class="hidden">공지사항</h2>
+									<h3 class="hidden">공지사항</h3>
 									<dl class="cont">
-										<dt><span class="date">2019 <strong>06.28</strong></span>맞춤형 귀농인의 집 입주희망자 신청 안내(안사면)</dt>
+										<dt><a href="#"><span class="date">2019 <strong>06.28</strong></span>맞춤형 귀농인의 집 입주희망자 신청 안내(안사면)</a></dt>
 										<dd>
-											의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의
-											집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임시거...
+											<a href="#">의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의
+												집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임시거...</a>
 										</dd>
 									</dl>
 									<ul class="lst">
@@ -81,12 +85,12 @@
 								</div>
 								<!-- 탭 컨텐츠 - 묻고답하기 -->
 								<div id="tabboard2" role="tabpanel">
-									<h2 class="hidden">묻고답하기</h2>
+									<h3 class="hidden">묻고답하기</h3>
 									<dl class="cont">
-										<dt><span class="date">2019 <strong>06.29</strong></span>맞춤형 귀농인의 집 입주희망자 신청 안내(안사면)</dt>
+										<dt><a href="#"><span class="date">2019 <strong>06.29</strong></span>맞춤형 귀농인의 집 입주희망자 신청 안내(안사면)</a></dt>
 										<dd>
-											의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의
-											집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임시거...
+											<a href="#">의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의
+												집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임시거...</a>
 										</dd>
 									</dl>
 									<ul class="lst">
@@ -98,12 +102,12 @@
 								</div>
 								<!-- 탭 컨텐츠 - 자유게시판 -->
 								<div id="tabboard3" role="tabpanel">
-									<h2 class="hidden">자유게시판</h2>
+									<h3 class="hidden">자유게시판</h3>
 									<dl class="cont">
-										<dt><span class="date">2019 <strong>06.30</strong></span>맞춤형 귀농인의 집 입주희망자 신청 안내(안사면)</dt>
+										<dt><a href="#"><span class="date">2019 <strong>06.2</strong></span>맞춤형 귀농인의 집 입주희망자 신청 안내(안사면)</a></dt>
 										<dd>
-											의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의
-											집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임시거...
+											<a href="#">의성군에서는 귀농을 희망하는 도시민들이 의성군 정착을 위해 일정동안 귀농인의
+												집에 거주 하면서 영농기술을 배우고 주택 및 농지 구입 등을 할 수 있도록 임시거...</a>
 										</dd>
 									</dl>
 									<ul class="lst">
@@ -295,11 +299,17 @@
 	$('.main-visual-zone .slider').slick({
 		dots: false,
 		infinite: true,
-		speed: 400,
+		speed: 500,
 		slidesToShow: 2,
 		centerPadding: '17%',
 		centerMode: true,
-		arrows:false,
+		swipe:false,
+		arrows:true,
+		autoplay:true,
+		// autoplay:false,
+		autoplaySpeed: 2000,
+		nextArrow : $('.main-visual-zone .btn-next'),
+		prevArrow : $('.main-visual-zone .btn-prev'),
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -310,7 +320,15 @@
 			}
 		]
 	}).on("afterChange", function(slick, currentSlide){
-		$(this).find(".slick-current").prev().addClass("prev").siblings(".prev").removeClass("prev");
+		$this = $(this).find(".slick-current").prev();
+
+		if($this.find("a").hasClass("top2")) $this.addClass("prev not").siblings(".prev").removeClass("prev").removeClass('not');
+		else $this.addClass("prev").siblings(".prev").removeClass("prev");
+
+	}).on("beforeChange", function(slick, currentSlide, nextSlide){
+		var nextPanel = $('[data-slick-index=' + nextSlide + ']');
+		nextPanel.addClass("prev").siblings(".prev").removeClass("prev");
+		nextPanel.siblings(".not").removeClass("not");
 	})
 
 	// 알림존
@@ -320,8 +338,7 @@
 		speed: 400,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// autoplay: true,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 1000,
 		nextArrow : $('.js-popup-slider .btn-next'),
 		prevArrow : $('.js-popup-slider .btn-prev')

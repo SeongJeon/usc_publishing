@@ -90,30 +90,32 @@ MAIN
 #wrap.farmingtech #container.main .main-visual-zone .inner { text-align: center; padding-top: 100px; }
 #wrap.farmingtech #container.main .main-visual-zone .txt { display: inline-block; font-size: 17px; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 24px; text-align: left; padding: 33px 0 10px 107px; background: url("../../static/images/farmingtech/main/img_top.png") no-repeat 0 0; }
 #wrap.farmingtech #container.main .main-visual-zone .txt span { display: block; margin-bottom: 3px; }
-#wrap.farmingtech #container.main .main-visual-zone .scroll { width: 211px; height: 32px; margin: 35px auto 0; text-indent: -999em; background: url("../../static/images/farmingtech/main/img_scroll.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .main-visual-zone .indicator { width: 211px; margin: 35px auto 0; position: relative; z-index: 2; }
+#wrap.farmingtech #container.main .main-visual-zone .indicator .scroll { display: inline-block; width: 107px; height: 32px; margin: 0 50px 0 55px; text-indent: -999em; background: url("../../static/images/farmingtech/main/img_scroll.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .main-visual-zone .indicator button[class^=btn-] { position: absolute; top: 0; width: 28px; height: 32px; text-indent: -999em; }
+#wrap.farmingtech #container.main .main-visual-zone .indicator .btn-prev { left: 0; background: url("../../static/images/farmingtech/main/btn_prev.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .main-visual-zone .indicator .btn-next { right: 0; background: url("../../static/images/farmingtech/main/btn_next.png") no-repeat 50% 50%; }
 #wrap.farmingtech #container.main .main-visual-zone .slider { position: absolute; left: 0; top: 58px; width: 100%; }
-#wrap.farmingtech #container.main .main-visual-zone .slider .slide { width: 660px; }
-#wrap.farmingtech #container.main .main-visual-zone .slider .slick-list { overflow: visible; transition: 0.2s ease; }
-#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top] { display: inline-block; position: relative; text-indent: -999em; width: 320px; height: 320px; text-align: left; }
+#wrap.farmingtech #container.main .main-visual-zone .slider .slide { position: relative; width: 660px; height: 320px; }
+#wrap.farmingtech #container.main .main-visual-zone .slider .slick-list { overflow: visible; }
+#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top] { display: inline-block; position: absolute; top: 0; right: 0; width: 350px; height: 320px; text-indent: -999em; text-align: left; -ms-transition: 0.1s ease; -webkit-transition: 0.1s ease; -moz-transition: 0.1s ease; transition: 0.1s ease; }
 #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:after { position: absolute; display: block; content: ""; left: 50%; top: 50%; }
-#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top1]:after { width: 320px; height: 374px; margin: -187px 0 0 -160px; background: url("../../static/images/farmingtech/main/img_top1.png") no-repeat 50% 50%; }
-#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top2]:after { width: 377px; height: 374px; margin: -187px 0 0 -188.5px; background: url("../../static/images/farmingtech/main/img_top2.png") no-repeat 50% 50%; }
-#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top3]:after { width: 374px; height: 374px; margin: -187px 0 0 -187px; background: url("../../static/images/farmingtech/main/img_top3.png") no-repeat 50% 50%; }
-#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top4]:after { width: 320px; height: 374px; margin: -187px 0 0 -160px; background: url("../../static/images/farmingtech/main/img_top4.png") no-repeat 50% 50%; }
-#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top5]:after { width: 320px; height: 374px; margin: -187px 0 0 -160px; background: url("../../static/images/farmingtech/main/img_top5.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top1]:after { width: 350px; height: 374px; margin: -187px 0 0 -175px; background: url("../../static/images/farmingtech/main/img_top1.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top2]:after { width: 338px; height: 374px; margin: -187px 0 0 -169px; background: url("../../static/images/farmingtech/main/img_top2.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top3]:after { width: 350px; height: 374px; margin: -187px 0 0 -175px; background: url("../../static/images/farmingtech/main/img_top3.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top4]:after { width: 350px; height: 374px; margin: -187px 0 0 -175px; background: url("../../static/images/farmingtech/main/img_top4.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top5]:after { width: 350px; height: 374px; margin: -187px 0 0 -175px; background: url("../../static/images/farmingtech/main/img_top5.png") no-repeat 50% 50%; }
 #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:hover[class^=top1]:after { background: url("../../static/images/farmingtech/main/img_top1_hover.png") no-repeat 50% 50%; }
 #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:hover[class^=top2]:after { background: url("../../static/images/farmingtech/main/img_top2_hover.png") no-repeat 50% 50%; }
 #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:hover[class^=top3]:after { background: url("../../static/images/farmingtech/main/img_top3_hover.png") no-repeat 50% 50%; }
 #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:hover[class^=top4]:after { background: url("../../static/images/farmingtech/main/img_top4_hover.png") no-repeat 50% 50%; }
 #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:hover[class^=top5]:after { background: url("../../static/images/farmingtech/main/img_top5_hover.png") no-repeat 50% 50%; }
-#wrap.farmingtech #container.main .main-visual-zone .slider .top_2 { text-align: left; }
 #wrap.farmingtech #container.main .main-visual-zone .slider .slick-slide { outline: none; text-align: right; }
-#wrap.farmingtech #container.main .main-visual-zone .slider .slick-slide .slide { padding-right: 100px; }
-#wrap.farmingtech #container.main .main-visual-zone .slider .slick-slide.prev { text-align: left; }
-#wrap.farmingtech #container.main .main-visual-zone .slider .slick-current { text-align: right; }
-#wrap.farmingtech #container.main .main-visual-zone .slider .slick-current .slide { padding-right: 0; }
-#wrap.farmingtech #container.main .main-visual-zone .slider .slick-current ~ .slick-active { text-align: left; }
-#wrap.farmingtech #container.main .main-visual-zone .slider .slick-current ~ .slick-active .slide { padding-left: 100px; }
+#wrap.farmingtech #container.main .main-visual-zone .slider .slick-slide a[class^=top] { margin-right: 100px; }
+#wrap.farmingtech #container.main .main-visual-zone .slider .slick-slide.prev a[class^=top] { right: 45%; margin-right: 0; }
+#wrap.farmingtech #container.main .main-visual-zone .slider .slick-slide.not a[class^=top] { transition: none; }
+#wrap.farmingtech #container.main .main-visual-zone .slider .slick-current a[class^=top] { margin-right: 0; }
+#wrap.farmingtech #container.main .main-visual-zone .slider .slick-current ~ * a[class^=top] { margin-right: 150px; }
 #wrap.farmingtech #container.main .main-event-zone { position: relative; height: 60px; padding-left: 270px; margin-top: 15px; border: 1px solid #dddbdb; background: #fff; }
 #wrap.farmingtech #container.main .main-event-zone .tit-zone { position: absolute; left: 0; top: 0; overflow: hidden; width: 270px; height: 60px; padding-left: 18px; background: #ff712c; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 60px; }
 #wrap.farmingtech #container.main .main-event-zone .tit-zone * { float: left; }
@@ -242,21 +244,24 @@ MEDIA QUERY
   #wrap.farmingtech #container.main .main-visual-zone .inner { padding-top: 2.6rem; }
   #wrap.farmingtech #container.main .main-visual-zone .txt { font-size: 1rem; line-height: 1.5rem; padding: 2.2rem 0 1rem 7.1rem; background-size: auto 100%; }
   #wrap.farmingtech #container.main .main-visual-zone .txt img { height: 4rem; }
-  #wrap.farmingtech #container.main .main-visual-zone .scroll { width: 15.2rem; height: 2.2rem; margin: 2.5rem auto 0; background-size: 100% auto; }
-  #wrap.farmingtech #container.main .main-visual-zone .slider { position: absolute; left: 0; top: 19rem; width: 100%; }
+  #wrap.farmingtech #container.main .main-visual-zone .indicator { width: 15.2rem; margin: 2.5rem auto 0; }
+  #wrap.farmingtech #container.main .main-visual-zone .indicator .scroll { width: 7.5rem; height: 2.2rem; margin: 0 4rem; background-size: 100% auto; }
+  #wrap.farmingtech #container.main .main-visual-zone .indicator button[class^=btn-] { width: 1.8rem; height: 2.2rem; background-size: 100% auto !important; }
+  #wrap.farmingtech #container.main .main-visual-zone .slider { position: absolute; left: 0; top: 20rem; width: 100%; }
   #wrap.farmingtech #container.main .main-visual-zone .slider .slide { width: auto; text-align: center; }
-  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top] { width: 12.6rem; height: 12.6rem; }
-  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top1]:after { width: 13rem; height: 14.1rem; margin: -7.05rem 0 0 -6.5rem; background: url("../../static/images/farmingtech/main/img_top1_m.png") no-repeat 50% 50%; background-size: 100% 100%; }
-  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top2]:after { width: 13.5rem; height: 14.1rem; margin: -7.05rem 0 0 -6.75rem; background: url("../../static/images/farmingtech/main/img_top2_m.png") no-repeat 50% 50%; background-size: 100% 100%; }
-  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top3]:after { width: 14.4rem; height: 14.1rem; margin: -7.05rem 0 0 -7.2rem; background: url("../../static/images/farmingtech/main/img_top3_m.png") no-repeat 50% 50%; background-size: 100% 100%; }
-  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top4]:after { width: 15.3rem; height: 14.1rem; margin: -7.05rem 0 0 -7.6rem; background: url("../../static/images/farmingtech/main/img_top4_m.png") no-repeat 50% 50%; background-size: 100% 100%; }
-  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top5]:after { width: 15.3rem; height: 14.1rem; margin: -7.05rem 0 0 -7.6rem; background: url("../../static/images/farmingtech/main/img_top5_m.png") no-repeat 50% 50%; background-size: 100% 100%; }
+  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top] { width: 12.6rem; height: 12.6rem; position: relative; right: inherit !important; }
+  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top1]:after { width: 14rem; height: 14.1rem; margin: -7rem 0 0 -7rem; background: url("../../static/images/farmingtech/main/img_top1_m.png") no-repeat 50% 50%; background-size: 100% 100%; }
+  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top2]:after { width: 14rem; height: 14.1rem; margin: -7rem 0 0 -7rem; background: url("../../static/images/farmingtech/main/img_top2_m.png") no-repeat 50% 50%; background-size: 100% 100%; }
+  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top3]:after { width: 14rem; height: 14.1rem; margin: -7rem 0 0 -7rem; background: url("../../static/images/farmingtech/main/img_top3_m.png") no-repeat 50% 50%; background-size: 100% 100%; }
+  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top4]:after { width: 14rem; height: 14.1rem; margin: -7rem 0 0 -7rem; background: url("../../static/images/farmingtech/main/img_top4_m.png") no-repeat 50% 50%; background-size: 100% 100%; }
+  #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top][class^=top5]:after { width: 14rem; height: 14.1rem; margin: -7rem 0 0 -7rem; background: url("../../static/images/farmingtech/main/img_top5_m.png") no-repeat 50% 50%; background-size: 100% 100%; }
   #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:hover[class^=top1]:after { background: url("../../static/images/farmingtech/main/img_top1_m_hover.png") no-repeat 50% 50%; background-size: 100% 100%; }
   #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:hover[class^=top2]:after { background: url("../../static/images/farmingtech/main/img_top2_m_hover.png") no-repeat 50% 50%; background-size: 100% 100%; }
   #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:hover[class^=top3]:after { background: url("../../static/images/farmingtech/main/img_top3_m_hover.png") no-repeat 50% 50%; background-size: 100% 100%; }
   #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:hover[class^=top4]:after { background: url("../../static/images/farmingtech/main/img_top4_m_hover.png") no-repeat 50% 50%; background-size: 100% 100%; }
   #wrap.farmingtech #container.main .main-visual-zone .slider a[class^=top]:hover[class^=top5]:after { background: url("../../static/images/farmingtech/main/img_top5_m_hover.png") no-repeat 50% 50%; background-size: 100% 100%; }
   #wrap.farmingtech #container.main .main-visual-zone .slider .slick-slide { text-align: center !important; }
+  #wrap.farmingtech #container.main .main-visual-zone .slider .slick-slide a[class^=top] { margin-right: 0; }
   #wrap.farmingtech #container.main .main-visual-zone .slider .slick-slide .slide { padding: 0 !important; }
   #wrap.farmingtech #container.main .main-event-zone { height: auto; padding-left: 0; margin-top: 1.2rem; border-top: 0; }
   #wrap.farmingtech #container.main .main-event-zone .tit-zone { position: static; width: 100%; height: 3.3rem; margin: 0 -1px; padding: 0 1px; line-height: 3.3rem; text-align: center; box-sizing: content-box; }

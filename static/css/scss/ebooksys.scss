@@ -595,6 +595,60 @@ SUB PAGE
 		.btn-group *[class^=comm-btn] {font-family: $font2;}
 	}
 }
+/* 이용안내 */
+.ebook_part02 {
+	.contents-zone {
+		.comp-lst_important { color:#fc0000; }
+		.img1 { width: 956px; height: 511px; background-color:#f1f1f1; }
+	}
+	#tab-1 {
+		table tbody { border-bottom: 1px solid #7a7a7a; }
+		table tbody td:first-child{ width:226px; background-color:#f4f7f9; color:#4b4b4b; }
+		table tbody td+td { padding-left:20px; }
+	}
+	#tab-2 {
+		.comp-tab li { width:168px; }
+		.comp-tab li:nth-child(n+6) a { border-top: 1px solid #d1d1d1; border-left:0;}
+	}
+	#tab-3 {
+		#pc_ver {
+			.pc_txt { width:435px; letter-spacing:1px;}
+			.info-viewer { position: relative; width: 956px; height:181px; padding:20px 20px; background-color: #f1f1f1; box-sizing: border-box;}
+			.info-viewer:before { display: inline-block; position: absolute; top:-232px; right:109px; width:302px; height:232px; background: url(../images/ebooksys/subpage/img_viewer_dwn.jpg) no-repeat center center; content:''; }
+			.info-viewer h5 { font-size:18px; color:#4b4b4b;}
+			.info-viewer a { width:250px; }
+		}
+		#mo_ver {
+			.ver-tab { 
+				height:154px; 
+				&:after { display:block; clear:both; content:'';}
+				li { 
+					float:left; width: 50%; height: 154px; border-top:1px solid #a9a9a9; 
+					&+li { border-left:0; }
+					a { 
+						display: block; position: relative; height: 100%; border-bottom:1px solid #a9a9a9; border-right:1px solid #a9a9a9; text-align: center;
+						&:before { display: inline-block; position: absolute; bottom:33px; content: '';}
+						&[aria-selected=true]:after {display: block; position: absolute; top:-1px; width:494px; height:146px;  border: 5px solid #f27405; ; content: ''; }
+					}
+					&:nth-child(1) {
+						span{ right:134px; }
+						a { border-left:1px solid #a9a9a9;}
+						a:before { left:109px; width:261px; height:91px; background: url(../images/ebooksys/subpage/icon_viewer_ard.png) no-repeat 0 0; }
+						a[aria-selected=true]:after {left:-1px;}	
+					}
+					&:nth-child(2) {
+						span{ right:56px; }
+						a:before { left:67px; width:188px; height:87px; background: url(../images/ebooksys/subpage/icon_viewer_ios.png) no-repeat 0 0; }
+						a[aria-selected=true]:after {right:-1px; width:495px;}
+					}
+					span { display: inline-block; position: absolute; bottom:33px; width:169px; border:1px solid #f27405; color:#1c1c1c; line-height:43px; }
+				}
+			}
+		}
+	}
+}
+
+
 
 
 
@@ -1036,6 +1090,44 @@ SUBPATE
 		}
 	}
 }
+/* 이용안내 */
+.ebook_part02 {
+	.contents-zone .img1 { width:100%; height:0; padding-top: 53.45%; margin-left:0 !important;}
+	#tab-1 table tbody tr td:first-child { width:10rem; }
+	#tab-2 {
+		.comp-tab li { width: 25%; border-left:0;}
+		.comp-tab li:nth-child(n+6) a { border-top:0;}
+	}
+	#tab-3 {
+		#pc_ver {
+			p { font-size: 1.2rem; line-height: 1.6rem; }
+			.info-viewer { width:100%; height:100%; margin-left:0 !important; }
+			.info-viewer:before { display: none;}
+			.info-viewer a { width:100%; }
+			.pc_txt { width:100%; letter-spacing: 0;}
+		}
+		#mo_ver {
+			.ver-tab {
+				height:auto; 
+				li {
+					height: 14rem !important;
+					a {
+						padding:1rem;box-sizing: border-box;
+						&:before {position:static; width:100% !important; height: 8rem !important; margin:0; }
+						&[aria-selected=true]:after {top:0; left:0 !important; right:inherit !important; border-width:2px; width:100% !important; height: 100% !important; box-sizing: border-box}
+						span {position:static; width:100%; margin-top: 0.5rem; line-height: 3rem; }
+					}
+					&:nth-child(1) a:before {background-size:auto 60%; background-position: 50% 50%}
+					&:nth-child(2) a:before { background-size:auto 60%; background-position: 50% 30% }
+				}
+			}
+		}
+	}
+}
+
+
+
+
 
 
 

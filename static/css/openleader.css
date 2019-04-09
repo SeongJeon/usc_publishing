@@ -51,8 +51,8 @@ LAYOUT
 MAIN
 ------------------------------------------------------ */
 .openleader .main {}
-	.openleader #container > .inner {width:auto;}
-	.openleader #container:before {display:none;}
+	.openleader #container.main > .inner {width:auto;}
+	.openleader #container.main:before {display:none;}
 	.openleader .main-visual {font-size:0;}
 	.openleader .main-visual .section-01 {background:url(../images/openleader/main/bg_main_visual01.png) no-repeat center top; background-size:cover;}
 	.openleader .main-visual [class*=section-] > .inner {position:relative; width:1320px; height:750px; margin:0 auto;}
@@ -219,7 +219,36 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-
+/* 주요정책 */
+.openleader .policy .title-intro .tit {text-align:center; margin:50px 0 40px;}
+.openleader .policy .title-intro .tit > * {display:block;}
+.openleader .policy .title-intro .tit .en {font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; color:#979c9c;}
+.openleader .policy .title-intro .tit .big {margin:18px 0 23px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:50px; color:#343642;}
+.openleader .policy .title-intro .tit .big em {font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;color:#3f4972;}
+.openleader .policy .title-intro .tit .txt {font-size:30px; color:#343642;}
+.openleader .policy .title-intro .tit .txt em {font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#962d3e;}
+.openleader .policy .category-zone {}
+.openleader .policy .category-zone ul {display:table; width:100%; border:1px solid #cfd3d5;}
+.openleader .policy .category-zone ul > li {display:table-cell; width:20%; border-left:1px solid #cfd3d5; text-align:center; vertical-align:middle;}
+.openleader .policy .category-zone ul > li a {display:block; padding:36px 0 9px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; line-height:25px; color:#343642; }
+.openleader .policy .category-zone ul > li:first-child {border-left:none;}
+.openleader .policy .category-zone ul > li a[class^=category]:before {display:block; content:""; width:110px; height:110px; margin:0 auto 22px auto;}
+.openleader .policy .category-1:before {background:url(../../static/images/openleader/subpage/ico_category_01.png) no-repeat; background-size:100%;}
+.openleader .policy .category-2:before {background:url(../../static/images/openleader/subpage/ico_category_02.png) no-repeat; background-size:100%;}
+.openleader .policy .category-3:before {background:url(../../static/images/openleader/subpage/ico_category_03.png) no-repeat; background-size:100%;}
+.openleader .policy .category-4:before {background:url(../../static/images/openleader/subpage/ico_category_04.png) no-repeat; background-size:100%;}
+.openleader .policy .category-5:before {background:url(../../static/images/openleader/subpage/ico_category_05.png) no-repeat; background-size:100%;}
+.openleader .policy .category-zone ul > li a[class^=category]:after {display:block; content:""; width:0; height:0; margin:31px auto 0 auto; border-style:solid; border-width:23px 13px; border-color:#c4c4c4 transparent transparent transparent; border-radius:3px;}
+.openleader .policy .category-zone ul > li a strong {display:block; color:#f87c20;}
+.openleader .policy .category-list {margin-top:20px;}
+.openleader .policy .category-list > ul {}
+.openleader .policy .category-list > ul > li {position:relative; padding:91px 0 45px 235px; border-top:1px solid #cfd3d5;}
+.openleader .policy .category-list > ul > li[class^=category]:before {position:absolute; left:0; top:50px; display:block; content:""; width:155px; height:152px;}
+.openleader .policy .category-list > ul > li:first-child {border-top:none;}
+.openleader .policy .category-list > ul > li .tit {font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:34px; color:#343642;}
+.openleader .policy .category-list > ul > li .tit strong {color:#f87c20;}
+.openleader .policy .category-list > ul > li *[class^=comp-lst][class*=_dotted] {margin:26px 0 0; padding:0 0 0 15px;}
+.openleader .policy .category-list > ul > li *[class^=comp-lst][class*=_dotted] > li {line-height:30px;}
 
 
 
@@ -261,7 +290,20 @@ SUB PAGE
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width: 1024px) {
-
+/* 주요정책 */
+.openleader .policy .title-intro .tit {margin:1.2rem 0 1rem;}
+.openleader .policy .title-intro .tit .en {font-size:1.2rem;}
+.openleader .policy .title-intro .tit .big {margin:1rem 0; font-size:2.5rem;}
+.openleader .policy .title-intro .tit .txt {font-size:1.3rem;}
+.openleader .policy .category-zone ul > li a {padding:1rem 0; font-size:1rem; line-height:1.4rem; letter-spacing:-2px;}
+.openleader .policy .category-zone ul > li a[class^=category]:before {width:5rem; height:5rem; margin:0 auto 1rem auto;}
+.openleader .policy .category-zone ul > li a[class^=category]:after {margin:1rem auto -1.5rem auto; border-width:1.4rem 1rem;}
+.openleader .policy .category-list {margin-top:1rem;}
+.openleader .policy .category-list > ul > li {padding:1.5rem 0 1.5rem 7rem;}
+.openleader .policy .category-list > ul > li[class^=category]:before {top:2rem; width:5.5rem; height:5.5rem;}
+.openleader .policy .category-list > ul > li .tit {font-size:1.5rem;}
+.openleader .policy .category-list > ul > li *[class^=comp-lst][class*=_dotted] {margin:0.5rem 0 0; padding:0 0 0 0.2rem;}
+.openleader .policy .category-list > ul > li *[class^=comp-lst][class*=_dotted] > li {line-height:1.6rem;}
 
 
 

@@ -166,18 +166,20 @@
 							<div class="contents-zone">
 								<!-- D : 해당 부분에 서브페이지 작업 -->
 								<ul class="comp-tab_row" role="tablist">
-									<li role="presentation"><a href="#" role="tab" aria-controls="tab-1" aria-selected="true"><span>대출정책</span></a></li>
-									<li role="presentation"><a href="#" role="tab" aria-controls="tab-2"><span>이용안내</span></a></li>
-									<li role="presentation"><a href="#" role="tab" aria-controls="tab-3"><span>뷰어설치</span></a></li>
+									<li role="presentation"><a href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><span>대출정책</span></a></li>
+									<li role="presentation"><a href="#tab-2" role="tab" aria-controls="tab-2"><span>이용안내</span></a></li>
+									<li role="presentation"><a href="#tab-3" role="tab" aria-controls="tab-3"><span>뷰어설치</span></a></li>
 								</ul>
-								<div id="tab-1" role="tabpanel" style="display:none">
+
+								<!-- 대출정책 -->
+								<div id="tab-1" role="tabpanel">
 									<h3 class="heading-h3">전자책이란?</h3>
-									<p class="comp-lst_dotted mt20 ml40"><span class="cont">전자책[electronic book]은 도서(<span class="chinese">圖書</span>)로 간행 되었거나 간행 될 수 있는 저작물의 내용을 디지털 형태로 가공하여 PC,모바일 기기,전용 단말기 등을 통해 그 내용을 읽고 보고 들을 수 있도록 한 디지털 도서를 말합니다.</span></p>
+									<p class="comp-lst_dotted mt20 ml3"><span class="cont">전자책[electronic book]은 도서(<span class="chinese">圖書</span>)로 간행 되었거나 간행 될 수 있는 저작물의 내용을 디지털 형태로 가공하여 PC,모바일 기기,전용 단말기 등을 통해 그 내용을 읽고 보고 들을 수 있도록 한 디지털 도서를 말합니다.</span></p>
 									<h3 class="heading-h3 mt40">전자책 도서관이란?</h3>
-									<p class="comp-lst_dotted mt20 ml40"><span class="cont">전자책 도서관(Ebook Library)은 인터넷을 통하여 언제 어디서나 전자책을 대출, 반납, 예약, 연장 할 수 있는 도서관 입니다.</span></p>
+									<p class="comp-lst_dotted mt20 ml3"><span class="cont">전자책 도서관(Ebook Library)은 인터넷을 통하여 언제 어디서나 전자책을 대출, 반납, 예약, 연장 할 수 있는 도서관 입니다.</span></p>
 									<h3 class="heading-h3 mt40">참고!</h3>
-									<table class="comp-tbl_boardtype mt20">
-										<caption>전자책 대출 정책 참고사항</caption>
+									<table class="comp-tbl_datatype mt20">
+										<caption>전자책 대출 정책 참고사항 - 대출, 기간, 희망, 연장, 연장횟수, 예약, 대기</caption>
 										<colgroup>
 											<col>
 											<col>
@@ -214,16 +216,21 @@
 										</tbody>
 									</table>
 								</div>
+								<!--// 대출정책 -->
+								
+								<!-- 이용안내 -->
 								<div id="tab-2" role="tabpanel" style="display:none">
 									<h3 class="heading-h3">이용안내</h3>
+
 									<ul class="comp-tab mt25" role="tablist">
-										<li role="presentation"><a href="#" role="tab" aria-controls="small_tab-1" aria-selected="true"><span>대출하기</span></a></li>
-										<li role="presentation"><a href="#" role="tab"><span>반납하기</span></a></li>
-										<li role="presentation"><a href="#" role="tab"><span>예약하기</span></a></li>
-										<li role="presentation"><a href="#" role="tab"><span>연장하기</span></a></li>
-										<li role="presentation"><a href="#" role="tab"><span>희망도서 신청</span></a></li>
-										<li role="presentation"><a href="#" role="tab"><span>열람하기</span></a></li>
+										<li role="presentation"><a href="#small_tab-1" role="tab" aria-controls="small_tab-1" aria-selected="true"><span>대출하기</span></a></li>
+										<li role="presentation"><a href="#small_tab-2" role="tab" aria-controls="small_tab-2"><span>반납하기</span></a></li>
+										<li role="presentation"><a href="#small_tab-3" role="tab" aria-controls="small_tab-3"><span>예약하기</span></a></li>
+										<li role="presentation"><a href="#small_tab-4" role="tab" aria-controls="small_tab-4"><span>연장하기</span></a></li>
+										<li role="presentation"><a href="#small_tab-5" role="tab" aria-controls="small_tab-5"><span>희망도서 신청</span></a></li>
+										<li role="presentation"><a href="#small_tab-6" role="tab" aria-controls="small_tab-6"><span>열람하기</span></a></li>
 									</ul>
+									<!-- 대출하기 -->
 									<div id="small_tab-1" role="tabpanel">
 										<h4 class="heading-h4">대출하기</h4>
 										<ul class="comp-lst_dotted mt10 ml50">
@@ -231,67 +238,172 @@
 											<li><span class="cont">② [대출하기] 버튼을 통해 대출 할 수 있습니다.</span></li>
 											<li><span class="cont">③ 표지 또는 서명 선택시 상세보기를 통해 좀 더 자세한 정보를 확인 할 수 있습니다.</span></li>
 										</ul>
-										<p class="comp-lst_important mt10 ml6 cont">[예약하기] 버튼이 활성화 된 경우 해당 도서는 동시 대출자 초과로 대출할 수 없습니다.</p>
+										<p class="comp-lst_important mt10 ml6">[예약하기] 버튼이 활성화 된 경우 해당 도서는 동시 대출자 초과로 대출할 수 없습니다.</p>
+										<div class="img1 mt10 ml50"></div>
+									</div>
+									<!-- 반납하기 -->
+									<div id="small_tab-2" role="tabpanel" style="display:none;">
+										<h4 class="heading-h4">반납하기</h4>
+										<ul class="comp-lst_dotted mt10 ml50">
+											<li><span class="cont">① 원하는 전자책을 선택 합니다.</span></li>
+											<li><span class="cont">② [대출하기] 버튼을 통해 대출 할 수 있습니다.</span></li>
+											<li><span class="cont">③ 표지 또는 서명 선택시 상세보기를 통해 좀 더 자세한 정보를 확인 할 수 있습니다.</span></li>
+										</ul>
+										<p class="comp-lst_important mt10 ml6">[예약하기] 버튼이 활성화 된 경우 해당 도서는 동시 대출자 초과로 대출할 수 없습니다.</p>
+										<div class="img1 mt10 ml50"></div>
+									</div>
+									<!-- 예약하기 -->
+									<div id="small_tab-3" role="tabpanel" style="display:none;">
+										<h4 class="heading-h4">예약하기</h4>
+										<ul class="comp-lst_dotted mt10 ml50">
+											<li><span class="cont">① 원하는 전자책을 선택 합니다.</span></li>
+											<li><span class="cont">② [대출하기] 버튼을 통해 대출 할 수 있습니다.</span></li>
+											<li><span class="cont">③ 표지 또는 서명 선택시 상세보기를 통해 좀 더 자세한 정보를 확인 할 수 있습니다.</span></li>
+										</ul>
+										<p class="comp-lst_important mt10 ml6">[예약하기] 버튼이 활성화 된 경우 해당 도서는 동시 대출자 초과로 대출할 수 없습니다.</p>
+										<div class="img1 mt10 ml50"></div>
+									</div>
+									<!-- 연장하기 -->
+									<div id="small_tab-4" role="tabpanel" style="display:none;">
+										<h4 class="heading-h4">연장하기</h4>
+										<ul class="comp-lst_dotted mt10 ml50">
+											<li><span class="cont">① 원하는 전자책을 선택 합니다.</span></li>
+											<li><span class="cont">② [대출하기] 버튼을 통해 대출 할 수 있습니다.</span></li>
+											<li><span class="cont">③ 표지 또는 서명 선택시 상세보기를 통해 좀 더 자세한 정보를 확인 할 수 있습니다.</span></li>
+										</ul>
+										<p class="comp-lst_important mt10 ml6">[예약하기] 버튼이 활성화 된 경우 해당 도서는 동시 대출자 초과로 대출할 수 없습니다.</p>
+										<div class="img1 mt10 ml50"></div>
+									</div>
+									<!-- 희망도서 신청 -->
+									<div id="small_tab-5" role="tabpanel" style="display:none;">
+										<h4 class="heading-h4">희망도서 신청</h4>
+										<ul class="comp-lst_dotted mt10 ml50">
+											<li><span class="cont">① 원하는 전자책을 선택 합니다.</span></li>
+											<li><span class="cont">② [대출하기] 버튼을 통해 대출 할 수 있습니다.</span></li>
+											<li><span class="cont">③ 표지 또는 서명 선택시 상세보기를 통해 좀 더 자세한 정보를 확인 할 수 있습니다.</span></li>
+										</ul>
+										<p class="comp-lst_important mt10 ml6">[예약하기] 버튼이 활성화 된 경우 해당 도서는 동시 대출자 초과로 대출할 수 없습니다.</p>
+										<div class="img1 mt10 ml50"></div>
+									</div>
+									<!-- 열람하기 -->
+									<div id="small_tab-6" role="tabpanel" style="display:none;">
+										<h4 class="heading-h4">열람하기</h4>
+										<ul class="comp-lst_dotted mt10 ml50">
+											<li><span class="cont">① 원하는 전자책을 선택 합니다.</span></li>
+											<li><span class="cont">② [대출하기] 버튼을 통해 대출 할 수 있습니다.</span></li>
+											<li><span class="cont">③ 표지 또는 서명 선택시 상세보기를 통해 좀 더 자세한 정보를 확인 할 수 있습니다.</span></li>
+										</ul>
+										<p class="comp-lst_important mt10 ml6">[예약하기] 버튼이 활성화 된 경우 해당 도서는 동시 대출자 초과로 대출할 수 없습니다.</p>
 										<div class="img1 mt10 ml50"></div>
 									</div>
 								</div>
-								<div id="tab-3" role="tabpanel">
+								<!--// 이용안내 -->
+
+								<!-- 뷰어설치 -->
+								<div id="tab-3" role="tabpanel" style="display:none">
 									<h3 class="heading-h3">뷰어설치</h3>
+
 									<ul class="comp-tab mt20" role="tablist">
-										<li role="presentation"><a href="#" role="tab" aria-controls="pc_ver"><span>PC 뷰어설치</span></a></li>
-										<li role="presentation"><a href="#" role="tab" aria-controls="mo_ver" aria-selected="true"><span>Mobile 뷰어설치</span></a></li>
+										<li role="presentation"><a href="#" role="tab" aria-controls="pc_ver" aria-selected="true"><span>PC 뷰어설치</span></a></li>
+										<li role="presentation"><a href="#" role="tab" aria-controls="mo_ver"><span>Mobile 뷰어설치</span></a></li>
 									</ul>
-									<div id="pc_ver" role="tabpanel" style="display:none">
+
+									<!-- PC 뷰어설치 -->
+									<div id="pc_ver" role="tabpanel" >
 										<h4 class="heading-h4 ml30">북큐브 전자책 뷰어 설치하기</h4>
-										<img src="../../static/images/ebooksys/subpage/img_viewer_txt.png" alt="" class="mt30 ml50">
+										<img src="../../static/images/ebooksys/subpage/img_viewer_txt.png" alt="북플레이어 다운받기" class="mt30 ml50">
 										<p class="pc_txt cont mt15 ml50">전자책을 이용하시기 위해서는 북플레이어를 설치해야 합니다. 북플레이어는 전자책을 가장 쉽고 빠른 방법으로 볼 수 있도록 제공하는 전자책 프로그램입니다.</p>
-										<p class="comp-lst_important bold mt35 ml50">BOOKCUBE의 북플레이어는 윈도우 XP 이상 버전을 지원합니다.</p>
+										<p class="comp-lst_important bold mt35 ml4">BOOKCUBE의 북플레이어는 윈도우 XP 이상 버전을 지원합니다.</p>
 										<div class="info-viewer mt25 ml50">
 											<h5 class="bold">간단한 설치 안내</h5>
 											<p class="mt10">아래 북플레이어 수동 설치를 이용해 주세요. 북플레이어 수동 설치를 클릭하시고 내 PC에 다운로드하신 후, 이를 실행하면 북플레이어가 설치됩니다. 혹은 아래 수동 설치를 클릭하시고 실행 버튼을 클릭하세요!</p>
 											<a href="#" class="comm-btn_type4_whiteorange comm-btn_download1 mt20" title="새창으로 열림" target="_blank"><span>북플레이어 수동설치</span></a>
 										</div>
+
 										<h4 class="heading-h4 mt50">전자책의 대출</h4>
-										<p class="comp-lst_dotted mt10 ml50"><span class="cont">전자책 도서관에서 검색, 카테고리 열람 등 을 통해 원하는 전자책을 대출합니다.</span></p>
-										<div class="img1 mt15 ml50"></div>
+										<p class="comp-lst_dotted mt10 ml4"><span class="cont">전자책 도서관에서 검색, 카테고리 열람 등 을 통해 원하는 전자책을 대출합니다.</span></p>
+										<div class="img1 mt15 ml50">
+											<!-- 이미지가 들어갑니다 -->
+										</div>
+										
 										<h4 class="heading-h4 mt50">대출한 전자책 읽기</h4>
-										<p class="comp-lst_dotted mt20 ml50"><span class="cont">대출 직후 나오는 바로보기와 내서재에 책읽기를 통해 전자책을 읽을 수 있습니다.</span></p>
-										<div class="img1 mt15 ml50"></div>
+										<p class="comp-lst_dotted mt20 ml4"><span class="cont">대출 직후 나오는 바로보기와 내서재에 책읽기를 통해 전자책을 읽을 수 있습니다.</span></p>
+										<div class="img1 mt15 ml50">
+											<!-- 이미지가 들어갑니다 -->
+										</div>
+										
 										<h4 class="heading-h4 mt50">북플레이어(전자책 뷰어) 설치</h4>
-										<ul class="comp-lst_dotted mt20 ml50">
+										<ul class="comp-lst_dotted mt20 ml4">
 											<li><span class="cont">① 대출 직후 나오는 바로보기와 내서재에 책읽기를 통해 전자책을 읽을 수 있습니다.</span></li>
 											<li><span class="cont">② 북플레이어가 설치되어 있는 경우 자동 실행 후 이용 가능하며 북플레이어가 설치 되어 있지 않을 경우 팝업창의 '북플레이어 다운로드'를 통해 북플레이어를 설치합니다.</span></li>
 											<li><span class="cont">③ 설치 완료 후 다시 책읽기를 누르시면 전자책 다운로드와 함께 북플레이어가 실행됩니다.</span></li>
 										</ul>
-										<div class="img1 mt15 ml50"></div>
+										<div class="img1 mt15 ml50">
+											<!-- 이미지가 들어갑니다 -->
+										</div>
+										
 										<h4 class="heading-h4 mt50">북플레이어 이용방법</h4>
-										<div class="img1 mt15 ml50"></div>
+										<div class="img1 mt15 ml50">
+											<!-- 이미지가 들어갑니다 -->
+										</div>
 									</div>
-									<div id="mo_ver" role="tabpanel">
+									<!--// PC 뷰어설치 -->
+
+									<!-- Mobile 뷰어설치 -->
+									<div id="mo_ver" role="tabpanel" style="display:none">
 										<!-- <ul class="ver-tab">
 											<li><img src="../../static/images/ebooksys/subpage/icon_viewer_ard.png" alt="">안드로이드 설치방법</li>
 											<li><img src="../../static/images/ebooksys/subpage/icon_viewer_ios.png" alt="">IOS 설치방법</li>
 										</ul> -->
 										<ul class="ver-tab" role="tablist">
-											<li role="presentation"><a href="#" role="tab" aria-controls="inst_android" aria-selected="true"><span>안드로이드 설치방법</span></a></li>
-											<li role="presentation"><a href="#" role="tab"><span>IOS 설치방법</span></a></li>
+											<li role="presentation"><a href="#inst_android" role="tab" aria-controls="inst_android" aria-selected="true"><span>안드로이드 설치방법</span></a></li>
+											<li role="presentation"><a href="#inst_ios" role="tab" aria-controls="inst_ios" ><span>IOS 설치방법</span></a></li>
 										</ul>
-										<div id="inst_android">
+										<!-- 안드로이드 설치방법 -->
+										<div id="inst_android" role="tabpanel">
 											<h4 class="heading-h4 mt35">1. Android용 앱 설치</h4>
-											<ul class="comp-lst_dotted mt10 ml50">
+											<ul class="comp-lst_dotted mt10 ml4">
 												<li><span class="cont">안드로이드용 앱을 다운로드 받습니다.</span></li>
 												<li><span class="cont">검색창에 "북큐브 전자도서관"을 검색하시거나 아래 QR코드를 스캔하시면 무료로 다운로드 받을 수 있습니다.</span></li>
 											</ul>
-											<div class="img1 mt10 ml50"></div>
+											<div class="img1 mt10 ml50">
+												<!-- 이미지가 들어갑니다 -->
+											</div>
 											<h4 class="heading-h4 mt45">2. 설치된 북큐브 전자도서관을 실행합니다.</h4>
-											<ul class="comp-lst_dotted mt10 ml50">
+											<ul class="comp-lst_dotted mt10 ml4">
 												<li><span class="cont">① “북큐브 전자도서관” 앱을 실행합니다.</span></li>
 												<li><span class="cont">② 전자도서관 탭으로 이동 합니다.</span></li>
 											</ul>
-											<div class="img1 mt15 ml50"></div>
+											<div class="img1 mt15 ml50">
+												<!-- 이미지가 들어갑니다 -->
+											</div>
 										</div>
+										<!-- //안드로이드 설치방법 -->
+
+										<!-- IOS 설치방법 -->
+										<div id="inst_ios" role="tabpanel" style="display: none">
+											<h4 class="heading-h4 mt35">1. IOS용 앱 설치</h4>
+											<ul class="comp-lst_dotted mt10 ml4">
+												<li><span class="cont">안드로이드용 앱을 다운로드 받습니다.</span></li>
+												<li><span class="cont">검색창에 "북큐브 전자도서관"을 검색하시거나 아래 QR코드를 스캔하시면 무료로 다운로드 받을 수 있습니다.</span></li>
+											</ul>
+											<div class="img1 mt10 ml50">
+												<!-- 이미지가 들어갑니다 -->
+											</div>
+											<h4 class="heading-h4 mt45">2. 설치된 북큐브 전자도서관을 실행합니다.</h4>
+											<ul class="comp-lst_dotted mt10 ml4">
+												<li><span class="cont">① “북큐브 전자도서관” 앱을 실행합니다.</span></li>
+												<li><span class="cont">② 전자도서관 탭으로 이동 합니다.</span></li>
+											</ul>
+											<div class="img1 mt15 ml50">
+												<!-- 이미지가 들어갑니다 -->
+											</div>
+										</div>
+										<!--// IOS 설치방법 -->
 									</div>
+									<!--// Mobile 뷰어설치 -->
 								</div>
+								<!--// 뷰어설치 -->
 							</div>
 							<!--// 개별 컨텐츠 영역 -->
 						</section>

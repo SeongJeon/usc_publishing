@@ -219,6 +219,9 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+/* 공통 */
+table[class^=comp-tbl][class*=_datatype] tbody .border-b-none{border-bottom:none;}
+
 /* 주요정책 */
 .openleader .policy .title-intro .tit {text-align:center; margin:50px 0 40px;}
 .openleader .policy .title-intro .tit > * {display:block;}

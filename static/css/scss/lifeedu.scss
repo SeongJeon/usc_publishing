@@ -421,10 +421,121 @@ SUB PAGE
 		}
 	}
 } 
+/* 강좌신청 */
+// 일반강사목록
+.teacher_lst {
+	overflow: hidden; margin-top: 25px;
+	> li {
+		float: left; width:490px; height:210px;
+		&:nth-child(even) {margin-left: 30px;}
+		&:nth-child(2) ~ li {margin-top: 20px;}
+	}
+	a {
+		display: block; position: relative; width:100%; height: 100%; padding:20px 25px 20px 20px; border:1px solid #d1d1d1; border-top-color:#014099; box-sizing: border-box; 
+		&:hover {
+			border-color:#014099; border-top-color: #00a388;
+			.infor .btn {background:#417ff2; color:#fff;}
+			.infor .btn:after {@include background("lifeedu/subpage/icon_arrow1_hover.png",no-repeat 50% 50%);}
+			&:after {display: block; position: absolute; left:0; top:0; width:484px; height:204px; border:2px solid #014099; border-top-width:2px; content: "";}
+		}
+	}
+	.img {
+		float: left; overflow:hidden; width:130px; height:168px; background:#eaeaea;
+		img {width: 100%; height: 100%}
+	}
+	.infor {
+		padding-left: 145px; padding-top: 20px;
+		.name {
+			color:#222; font-size: 19px;
+			em {font-family: $font2;}
+		}
+		.lst {
+			margin-top: 25px;
+			li {font-size: 16px; color:#939393; line-height: 30px;}
+			li:before {display:inline-block; width:4px; height: 4px; background:#797979; content: ""; margin-right: 10px; vertical-align: middle;}
+			.tit {display: inline-block; width:65px; color:#222; vertical-align: middle; text-align: left; font-family: $font2;}
+			.tit:after {display: inline-block; content: "/"; vertical-align: middle; color:#939393;}
+		}
+		.btn {display:inline-block; position: absolute; right:25px; top:35px; width:145px; line-height: 30px; font-family: $font2; font-size: 16px; color:#417ff2; border:2px solid #417ff2; border-radius: 100px;  text-align: center;}
+		.btn:after {display: inline-block; vertical-align: middle; content: ""; width:12px; height: 5px; margin-left: 13px; @include background("lifeedu/subpage/icon_arrow1.png",no-repeat 50% 50%);}
+	}
+}
+// 강사 상세
+.teacher_detail_infor {
+	padding:20px 19px; border:1px solid #d1d1d1; border-top:2px solid #014099;
+	.img {
+		float: left; overflow:hidden; width:130px; height:167px;
+		img {width: 100%; height: 100%}
+	}
+	.infor {padding-left: 155px; height: 167px;}
+	.name {
+		font-size: 19px; color:#222; padding-top: 20px;
+		em {font-family: $font2; }
+	}
+	.lst {
+		margin-top: 25px;
+		&:after {display:block; clear:both; content:""}
+		li {float: left; width:50%; color:#939393; font-size: 16px; line-height: 30px;}
+		.tit {display: inline-block; margin-right: 18px; color:#222; font-family: $font2; vertical-align: middle; width: 80px;}
+		.tit:before {display: inline-block; content: ""; width:4px; height: 4px; background:#797979; margin-right: 10px; vertical-align: middle;}
+		.tit:after {display: inline-block; content: "/"; float: right; color:#939393; font-size: 10px;}
+	}
+}
+// 본인 인증
+.ui-certification-zone { 
+	overflow: hidden; padding: 31px 0 28px; margin-top: 40px; border: 3px solid #d6d5d5; border-radius: 17px;  
+	& > div { 
+		position: relative; float: left; width: 33.33%; padding: 0 15px 55px; border-left: 1px solid #d6d5d5; box-sizing: border-box; 
+		&:first-child { border-left: none; }
+	}
+	h4.tit { 
+		font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 24px; color: #262626; text-align: center; 
+		&:before { display: block; content: ""; width: 165px; height: 165px; margin: 13px auto 25px auto; background-size: 100% 100% !important; }
+	}
+	.txt { margin-top: 13px;height:130px; line-height: 22px; font-size: 14px; color: #262626; letter-spacing: -1px; text-align: center; }
+	.btn-bottom { 
+		position: absolute; left: 50%; bottom: 15px; margin-left: -83px; 
+		.btn { display: block; width: 165px; height: 40px; margin: 0 auto; line-height:40px; border-radius:100px; font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 15px; color: #fff; text-align: center; }
+	}
+	.sns-zone { 
+		padding: 0 33px 0 36px; 
+		.tit:before { background: url("../../static/images/usc/subpage/bg_login_zone.png") no-repeat; }
+		.tit .point { color: #00a54f; }
+		.sns {
+			overflow: hidden; margin-top: 30px; display: inline-block;
+			li {float: left;}
+			li+li {margin-left: 10px;}
+			*[class^=btn-sns] {
+				display: block; width: 45px; height: 45px; text-indent: -999em; background-size: 100% 100% !important;
+				&[class*=_facebook] {@include background("common/icon_sns_facebook2.png",no-repeat 50% 50%);}
+				&[class*=_twitter] {@include background("common/icon_sns_twitter2.png",no-repeat 50% 50%);}
+				&[class*=_blog] {@include background("common/icon_sns_blog2.png",no-repeat 50% 50%);}
+				&[class*=_kakao] {@include background("common/icon_sns_kakao2.png",no-repeat 50% 50%);}
+				&[class*=_instar] {@include background("common/icon_sns_instar2.png",no-repeat 50% 50%);}
+			}
 
-
-
-
+		}
+	}
+	.cell-phone {
+		.tit:before { background: url("../../static/images/usc/subpage/bg_cell_phone.png") no-repeat; }
+		.tit .point { color: #ff7200; }
+		.btn-cell-phone .btn { background: #ff7200; }
+	}
+	.i-pin {
+		.tit:before { background: url("../../static/images/usc/subpage/bg_i_pin.png") no-repeat; }
+		.tit .point { color: #1556b0; }
+		.btn-i-pin .btn { background: #1556b0; }
+	}
+}
+.certification-notice-zone { 
+	line-height: 25px; margin-top:30px; font-size: 15px; color: #333; text-align: center; 
+	p.txt { 
+		position: relative; display: inline-block; padding: 0 0 0 33px; 
+		&:before { position: absolute; left: 0; top: 0; display: block; content: "!"; width: 24px; height: 24px; line-height: 24px; background: #ee3106; border-radius: 100%; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; }
+		.point {display: inline-block; background: #fcecbd; line-height: 1.1;  }
+		.point:before{display: inline-block; content: "※"; margin-right: 5px; vertical-align: middle;}
+	}
+}
 
 
 
@@ -841,6 +952,80 @@ SUBPATE
 		}
 	}
 } 
+/* 강좌신청 */
+// 일반강사목록
+.teacher_lst {
+	margin-top: 2rem;
+	> li {
+		width:49%; height:auto;
+		&:nth-child(even) {margin-left:2%;}
+		&:nth-child(2) ~ li {margin-top:1rem;}
+	}
+	a {
+		padding:1rem 1rem 2rem;
+		&:hover:after {left:0; top:0; height: 100%; width: 100%; box-sizing: border-box;}
+	}
+	.img {
+		float: none; width:100%; height:18rem;
+		img {width: 100%; height: 100%}
+	}
+	.infor {
+		padding:1.5rem 0 0;
+		.name {font-size: 1.2rem; }
+		.lst {
+			margin-top: 1rem;
+			li {font-size:1.1rem; line-height:1.8rem;}
+			li+li {margin-top: 0.5rem}
+			li:before {width:2px; height: 2px; margin-right:0.5rem;}
+			.tit {width:4.5rem;}
+			.tit:after {float: right; margin-right: 0.5rem;}
+		}
+		.btn { position:static; width:100%; border-width:2px; margin-top: 1rem; line-height:2.5rem; font-size:1.2rem;}
+	}
+}
+// 강사 상세
+.teacher_detail_infor {
+	padding:1.5rem 1rem;
+	.img {width: 40%; margin:0 auto; height:auto; }
+	.infor {padding:0.5rem 0 0 40%; height:auto;}
+	.name {font-size:1.5rem; padding:0 0 0 1rem; }
+	.lst {
+		margin-top:1rem; padding-left: 1rem;
+		li {float: none; width:100%; font-size: 1.2rem; line-height:2rem;}
+		.tit {margin-right:1rem;width:5.5rem;}
+		.tit:before {width:2px; height: 2px; margin-right:0.5rem;}
+		.tit:after {font-size:1rem;}
+	}
+}
+// 본인 인증
+.ui-certification-zone { 
+	padding:0 1rem; margin-top:2rem; border:2px solid #d6d5d5; 
+	& > div {float:none; width:100%; padding:3rem 0 !important; border-top: 1px solid #d5d5d5; border-left: 0;}
+	h4.tit { 
+		font-size:2rem; 
+		&:before { display:none;}
+	}
+	.txt { margin-top:1rem; height:auto; line-height:1.8rem; font-size:1.2rem; letter-spacing: 0;}
+	.btn-bottom { 
+		position: static; margin-left:0; text-align: center; margin-top: 1rem;
+		.btn { width: 15rem; height:3.5rem; line-height:3.5rem; font-size: 1.2rem;}
+	}
+	.sns-zone { 
+		border-top: 0; text-align: center;
+		.sns {
+			margin-top: 1.5rem; 
+			li+li {margin-left:1rem;}
+			*[class^=btn-sns] {width: 3.5rem; height: 3.5rem; }
+		}
+	}
+}
+.certification-notice-zone { 
+	line-height: 1.8rem; margin-top:1rem; font-size:1.1rem;
+	p.txt { 
+		padding: 0 0 0 2.5rem; text-align: left;
+		&:before { width: 2rem; height: 2rem; line-height:2rem;  }
+	}
+}
 
 
 

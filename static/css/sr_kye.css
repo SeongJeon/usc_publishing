@@ -140,7 +140,7 @@ MEDIA QUERY
 
 	.vision .vision-wrap {padding:1.8rem 2rem;}
 	.vision .vision-wrap .tit {margin-bottom:.8rem;padding-bottom:2.5rem;font-size:1.6rem;}
-	.vision .vision-wrap .tit:after {left:5.5rem;height:2rem;}
+	.vision .vision-wrap .tit:after {left:5rem;height:2rem;}
 	.vision .vision-list > li {padding:1.7rem 0;}
 	.vision .vision-list .keyword {display:block;width:9rem;height:4rem;margin-bottom:1.5rem;line-height:4rem;font-size:1.6rem;}
 	.vision .vision-list .vision-detail {display:block;width:100%;}
@@ -168,6 +168,7 @@ MEDIA QUERY
 	.vision .vision-list .list02 li {display:block;margin:1rem 0;}
 	.vision .vision-list .list02 li:first-child {margin:0;}
 } @media (max-width:321px){
+	.vision .vision-wrap .tit:after {left:4.5rem;}
 	.vision .vision-list .vision-detail .tit-txt p {padding:1rem 1rem 0;font-size:1.2rem;}
 	.vision .vision-list .vision-detail .tit-txt p:before,
 	.vision .vision-list .vision-detail .tit-txt p:after {width:1rem;height:1rem;}

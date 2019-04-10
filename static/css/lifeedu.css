@@ -2,7 +2,8 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
-@media (min-width: 1025px) { body.pc .lifeedu #header .header-middle .title { top: 22px; }
+@media (min-width: 1025px) { body.pc .lifeedu #header { height: 190px; }
+  body.pc .lifeedu #header .header-middle .title { top: 22px; }
   body.pc .lifeedu #header .header-middle .title a { width: 205px; height: 51px; background: url("../../static/images/lifeedu/img_logo.png") no-repeat 50% 50%; }
   body.pc .lifeedu #header .header-middle .comp-search .form { border-color: #2e56bd; }
   body.pc .lifeedu #header .header-middle .comp-search > button { background: #2e56bd; }

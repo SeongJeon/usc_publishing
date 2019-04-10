@@ -16,7 +16,8 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
-#wrap.foreign #container.main {padding-top: 130px;}
+#wrap.foreign #container {padding-top: 130px;}
+#wrap.foreign #container:before {top:315px;}
 @media (min-width: 1025px) { 
 	body.pc .foreign #header .header-middle { border-bottom: 1px solid #dddbdb; }
 	body.pc .foreign #header .header-middle .title { top: 25px; }

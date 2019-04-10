@@ -17,6 +17,7 @@
 LAYOUT
 ------------------------------------------------------ */
 @media (min-width: 1025px) { 
+	body.pc .reservation #header {height:190px;}
 	body.pc .reservation #header .header-middle .title { top: 20px; }
 	body.pc .reservation #header .header-middle .title a { width: 281px; height: 51px; background: url("../../static/images/reservation/img_logo.png") no-repeat 50% 50%; }
 	body.pc .reservation #header .header-middle .comp-search .form { border-color: #1667c1; }
@@ -57,10 +58,20 @@ LAYOUT
 	body.pc .reservation #header.open .header-bottom { border-bottom: 1px solid #3cb7cd; } 
 }
 #wrap.reservation #footer { height: 290px; }
-#wrap.reservation #footer .footer-utilegroup { padding-left: 0; }
-#wrap.reservation #footer .footer-utilegroup .footer-utile a strong, #wrap.reservation #footer .footer-utilegroup .footer-addr li strong { color: #333; }
-
-
+	#wrap.reservation #footer .footer-utilegroup { padding-left: 0; }
+	#wrap.reservation #footer .footer-utilegroup .footer-utile a strong, 
+	#wrap.reservation #footer .footer-utilegroup .footer-addr li strong { color: #333; }
+#wrap.reservation #container {padding-top: 190px}
+	#wrap.reservation #container:before {top:375px;}
+.reservation #lnb { }
+	.reservation #lnb .title-depth h2 { background: #014099; }
+	.reservation #lnb .menu h2 a.open, 
+	.reservation #lnb .menu h2 a:hover { background: #dce8f6; color: #000; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+	.reservation #lnb .menu h2 a.open:after, 
+	.reservation #lnb .menu h2 a:hover:after { background-color: #417ff2; }
+	.reservation #lnb .menu .smallmenu ul { background: #f1f6fc; }
+	.lifeedu #lnb .menu .smallmenu ul a[aria-current=page]:before, 
+	.lifeedu #lnb .menu .smallmenu ul a:hover:before { border-color: #014099; }
 
 
 

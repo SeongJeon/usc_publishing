@@ -7,7 +7,7 @@ LAYOUT
 ------------------------------------------------------ */ 
 @media (min-width:1025px){
 	body.pc .culture #header {
-		background:transparent;
+		background:transparent; height: 190px;
 		.header-middle {
 			background:#fff;
 			.title {
@@ -38,7 +38,7 @@ LAYOUT
 				}
 			}
 			.depth2menu {display:none; position: absolute; top:100%; left:0; padding-top: 37px; background: #fff; }
-			.menu {overflow:hidden; width:1320px; height:364px; }
+			.menu {overflow:hidden; width:1320px; height:374px; }
 			.menugroup {float: left;width:333px; padding-left: 12px;}
 			.menugroup:first-of-type {width:321px; padding-left: 0;}
 
@@ -95,10 +95,22 @@ LAYOUT
 			.festival {display: block !important; }
 		}
 	}
+	body.pc .culture.subpage #header {
+		background:#fff;
+		.header-bottom {
+			background:#ff877d; border-bottom: 1px solid #ff877d;
+		}
+		&.open {
+			border-bottom:0; @include background("culture/bg_gnb.png",repeat-x 0 100%);
+		}
+	}
 
 	.culture .main .sec-culture .slider-nav .slider {display: inline-block;}
 }
-.culture #container {padding-top: 190px; }
+.culture #container {
+	padding-top: 190px; 
+	&:before {top:375px;}
+}
 .culture #container.main {padding-top: 130px; }
 
 /* ------------------------------------------------------

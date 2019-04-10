@@ -2,7 +2,7 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
-@media (min-width: 1025px) { body.pc .culture #header { background: transparent; }
+@media (min-width: 1025px) { body.pc .culture #header { background: transparent; height: 190px; }
   body.pc .culture #header .header-middle { background: #fff; }
   body.pc .culture #header .header-middle .title { top: 26px; }
   body.pc .culture #header .header-middle .title a { width: 265px; height: 45px; background: url("../../static/images/culture/img_logo.png") no-repeat 50% 50%; }
@@ -19,7 +19,7 @@ LAYOUT
   body.pc .culture #header #gnb .gnb h2.over a:before, body.pc .culture #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: 0px; left: 0; width: 100%; content: ""; background: #d94343; height: 6px; z-index: 1000; }
   body.pc .culture #header #gnb .gnb h2.over a:after, body.pc .culture #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -10px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #d94343; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
   body.pc .culture #header #gnb .depth2menu { display: none; position: absolute; top: 100%; left: 0; padding-top: 37px; background: #fff; }
-  body.pc .culture #header #gnb .menu { overflow: hidden; width: 1320px; height: 364px; }
+  body.pc .culture #header #gnb .menu { overflow: hidden; width: 1320px; height: 374px; }
   body.pc .culture #header #gnb .menugroup { float: left; width: 333px; padding-left: 12px; }
   body.pc .culture #header #gnb .menugroup:first-of-type { width: 321px; padding-left: 0; }
   body.pc .culture #header #gnb h3 a { display: block; padding: 0 14px; font-size: 17px; color: #333; line-height: 42px; background: #fde8e6; }
@@ -49,8 +49,12 @@ LAYOUT
   body.pc .culture #header.open { border-bottom: 0; background: url("../../static/images/culture/bg_gnb.png") repeat-x 0 100%; }
   body.pc .culture #header.open .header-bottom { border-bottom-color: #fff; background: #ff877d; }
   body.pc .culture #header.open .festival { display: block !important; }
+  body.pc .culture.subpage #header { background: #fff; }
+  body.pc .culture.subpage #header .header-bottom { background: #ff877d; border-bottom: 1px solid #ff877d; }
+  body.pc .culture.subpage #header.open { border-bottom: 0; background: url("../../static/images/culture/bg_gnb.png") repeat-x 0 100%; }
   .culture .main .sec-culture .slider-nav .slider { display: inline-block; } }
 .culture #container { padding-top: 190px; }
+.culture #container:before { top: 375px; }
 
 .culture #container.main { padding-top: 130px; }
 

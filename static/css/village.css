@@ -15,6 +15,7 @@
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
+.village #footer .footer-utilegroup {padding-left: 0;}
 @media (min-width: 1025px) { 
 	body.pc #wrap.village #header { height: 245px; }
 	body.pc #wrap.village #header .header-middle .title a { width: 179px; height: 51px; background: url("../../static/images/village/img_logo.png") no-repeat 50% 50%; background-size: 100% auto; }
@@ -61,15 +62,14 @@ LAYOUT
 	body.pc #wrap.village #container:before {top:430px;}
 	body.pc #wrap.village #container .top-visual-zone p {background:url("../../static/images/commonbg/img_villagetxt.png") no-repeat 50% 50%;}
 }
-.village #footer .footer-utilegroup {padding-left: 0;}
 .village #lnb .title-depth h2 {background: #45bf55}
-.village #lnb .menu h2 a.open, 
-.village #lnb .menu h2 a:hover {background-color: #5f9c74}
-.village #lnb .menu h2 a.open:after, 
-.village #lnb .menu h2 a:hover:after {background-color: #1d4027}
-.village #lnb .menu .smallmenu ul {background: #f8fbf2}
-.village #lnb .menu .smallmenu ul a[aria-current=page]:before, 
-.village #lnb .menu .smallmenu ul a:hover:before {border-color:#5f9c74;}
+	.village #lnb .menu h2 a.open, 
+	.village #lnb .menu h2 a:hover {background-color: #5f9c74}
+	.village #lnb .menu h2 a.open:after, 
+	.village #lnb .menu h2 a:hover:after {background-color: #1d4027}
+	.village #lnb .menu .smallmenu ul {background: #f8fbf2}
+	.village #lnb .menu .smallmenu ul a[aria-current=page]:before, 
+	.village #lnb .menu .smallmenu ul a:hover:before {border-color:#5f9c74;}
 /* ------------------------------------------------------
 COMMON
 ------------------------------------------------------ */

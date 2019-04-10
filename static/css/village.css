@@ -58,8 +58,23 @@ LAYOUT
 	body.pc #wrap.village #gnb .gnb li:nth-child(9) ~ li h2.over + .depth2menu {margin-top:0;}
 
 	body.pc #wrap.village #container { padding-top: 245px; } 
+	body.pc #wrap.village #container:before {top:430px;}
+	body.pc #wrap.village #container .top-visual-zone p {background:url("../../static/images/commonbg/img_villagetxt.png") no-repeat 50% 50%;}
 }
 .village #footer .footer-utilegroup {padding-left: 0;}
+.village #lnb .title-depth h2 {background: #45bf55}
+.village #lnb .menu h2 a.open, 
+.village #lnb .menu h2 a:hover {background-color: #5f9c74}
+.village #lnb .menu h2 a.open:after, 
+.village #lnb .menu h2 a:hover:after {background-color: #1d4027}
+.village #lnb .menu .smallmenu ul {background: #f8fbf2}
+.village #lnb .menu .smallmenu ul a[aria-current=page]:before, 
+.village #lnb .menu .smallmenu ul a:hover:before {border-color:#5f9c74;}
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+.village *[class^=heading][class*=-h3]:before {height:24px; background: url("../../static/images/village/bul_h3.png") no-repeat 50% 50%};
+
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -366,6 +381,11 @@ MEDIA QUERY
 
 	.village #header .header-middle .comp-search .form .btn button {background: #45bf55}
 	.village #header .header-middle .comp-search .form input {border-color:#45bf55;}
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+.village *[class^=heading][class*=-h3]:before {height:1.5rem;}
+
 /* ------------------------------------------------------
 - MAIN
 ------------------------------------------------------ */

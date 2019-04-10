@@ -12,6 +12,18 @@ LAYOUT
 #wrap.uscmuseum #footer .footer-notice .txt { color: #bababa; }
 
 #wrap.uscmuseum #container { padding-top: 130px; }
+#wrap.uscmuseum #container:before { top: 315px; background: #d6d5d5; }
+#wrap.uscmuseum #container .breadcrumb-zone { background: #d6d5d5; }
+#wrap.uscmuseum #container .breadcrumb-zone .breadcrumb > li { border-right-color: #c4bebd; }
+#wrap.uscmuseum #container .breadcrumb-zone .breadcrumb > li > a { color: #666; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; }
+#wrap.uscmuseum #container .breadcrumb-zone .breadcrumb > li:first-child > a { color: #8e8886; }
+#wrap.uscmuseum #container .breadcrumb-zone .breadcrumb a:after { background: url("../../static/images/uscmuseum/icon_arrow_lnb.png") no-repeat 50% 50%; }
+#wrap.uscmuseum #container .breadcrumb-zone .breadcrumb a.open { background: #383b3b; color: #fff; }
+#wrap.uscmuseum #container .breadcrumb-zone .breadcrumb a.open:after { background: url("../../static/images/common/sp_icon.png") no-repeat -250px -100px; }
+#wrap.uscmuseum #container .breadcrumb-zone .page-zoom button[class^=btn-] { width: 23px; }
+#wrap.uscmuseum #container .breadcrumb-zone .page-zoom button[class^=btn-].btn-zoomup { background: url("../../static/images/uscmuseum/btn_zoom_up.png") no-repeat 50% 50%; }
+#wrap.uscmuseum #container .breadcrumb-zone .page-zoom button[class^=btn-].btn-zoomdown { background: url("../../static/images/uscmuseum/btn_zoom_down.png") no-repeat 50% 50%; }
+#wrap.uscmuseum #container .breadcrumb-zone .page-zoom dt { color: rgba(72, 72, 72, 0.6); }
 
 @media (min-width: 1025px) { body.pc .uscmuseum #header .header-middle .title a { width: 250px; height: 48px; background: url("../../static/images/uscmuseum/img_logo.png") no-repeat 50% 50%; }
   body.pc .uscmuseum #header .header-bottom .sitemap { background: #c3893a; }
@@ -33,6 +45,22 @@ LAYOUT
   body.pc .uscmuseum #gnb .gnb > li:nth-child(5) .depth2menu { left: 868px; }
   body.pc .uscmuseum #gnb .gnb > li:nth-child(6) .depth2menu { left: 1094px; }
   body.pc .uscmuseum #gnb .gnb > li:nth-child(1) .depth2menu { width: 190px; padding-left: 0; } }
+#wrap.uscmuseum #lnb { border-top-color: #d6d5d5; }
+#wrap.uscmuseum #lnb .title-depth h2 { background: #edc834; }
+#wrap.uscmuseum #lnb .menu h2 a.open, #wrap.uscmuseum #lnb .menu h2 a:hover { background: #be8538; }
+#wrap.uscmuseum #lnb .menu h2 a.open:after, #wrap.uscmuseum #lnb .menu h2 a:hover:after { background-color: #3e3932; }
+#wrap.uscmuseum #lnb .menu .smallmenu ul a[aria-current=page]:before, #wrap.uscmuseum #lnb .menu .smallmenu ul a:hover:before { border-color: #be8538; }
+
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+#wrap.uscmuseum *[class^=comp-iconbox] { border-top-color: #8c4f2b; }
+#wrap.uscmuseum *[class^=comp-iconbox]:before { background: #8c4f2b; }
+#wrap.uscmuseum *[class^=comp-iconbox] .icon { background: #8c4f2b; }
+#wrap.uscmuseum *[class^=heading][class*=-h3]:before { width: 26px; background: url("../../static/images/uscmuseum/bul_h3.png") no-repeat 50% 50%; }
+#wrap.uscmuseum *[class^=comp-tab] a[aria-selected=true]:after { background: #8c4f2b; }
+#wrap.uscmuseum *[class^=comp-tab][class*=_row] a[aria-selected=true] span { color: #8c4f2b; }
+
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */

@@ -378,6 +378,7 @@
 				&:hover:after {right: 1px}
 			}
 			&.single {
+				padding-right: 15px;
 				&:after {display:none;}
 			}
 		}
@@ -1144,7 +1145,7 @@ input.w_password {width:135px;}
 .customer-zone {
 	border:1px solid #cfcfcf;
 	.customer-top {
-		position: relative; overflow: hidden; height: 45px; padding:0 15px; border-bottom: 1px solid #cfcfcf; line-height: 44px;
+		position: relative; overflow: hidden; height: 45px; padding:0 15px;line-height: 44px;
 		.addr {
 			float: left;
 			&:after {display:block; clear:both; content:""}
@@ -1161,7 +1162,7 @@ input.w_password {width:135px;}
 		}
 	}
 	.customer-bottom {
-		background:#eff0f1; padding-top:14px;
+		background:#eff0f1; padding-top:14px;  border-top: 1px solid #cfcfcf; 
 		.agreebox {
 			padding:0 13px;
 			&:after {display:block; clear:both; content:""}

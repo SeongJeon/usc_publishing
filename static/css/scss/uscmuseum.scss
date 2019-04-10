@@ -25,7 +25,32 @@ LAYOUT
 		.txt {color:#bababa;}
 	}
 }
-#wrap.uscmuseum #container {padding-top: 130px; }
+#wrap.uscmuseum #container {
+	padding-top: 130px; 
+	&:before {top:315px; background:#d6d5d5;}
+
+	.breadcrumb-zone {
+		background:#d6d5d5;
+		.breadcrumb {
+			& > li {border-right-color: #c4bebd}
+			& > li > a {color:#666; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease;}
+			& > li:first-child > a {color:#8e8886;}
+			a:after {@include background("uscmuseum/icon_arrow_lnb.png",no-repeat 50% 50%);}
+			a.open {
+				background:#383b3b; color:#fff;
+				&:after {@include background("common/sp_icon.png",no-repeat -250px -100px);}
+			} 
+		}
+		.page-zoom {
+			button[class^=btn-] {
+				width: 23px;
+				&.btn-zoomup {@include background("uscmuseum/btn_zoom_up.png",no-repeat 50% 50%);}
+				&.btn-zoomdown {@include background("uscmuseum/btn_zoom_down.png",no-repeat 50% 50%);}
+			}
+			dt {color:rgba(72,72,72,0.6);}
+		}
+	}
+}
 @media (min-width:1025px){
 	body.pc .uscmuseum #header {
 		.header-middle .title a {width: 250px; height:48px; background:url("../../static/images/uscmuseum/img_logo.png") no-repeat 50% 50%;}
@@ -61,9 +86,36 @@ LAYOUT
 		.gnb > li:nth-child(1) .depth2menu {width:190px; padding-left: 0}
 	}
 }
+#wrap.uscmuseum #lnb {
+	border-top-color: #d6d5d5; 
+	.title-depth h2 {background:#edc834;}
+	.menu {
+		h2 a.open, 
+		h2 a:hover {background:#be8538;}
+		h2 a.open:after, 
+		h2 a:hover:after {background-color:#3e3932;}
+		.smallmenu ul a[aria-current=page]:before, 
+		.smallmenu ul a:hover:before {border-color:#be8538;}
+	}
+}
 
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+#wrap.uscmuseum {
+	*[class^=comp-iconbox] {
+		border-top-color:#8c4f2b;
+		&:before {background:#8c4f2b}
+		.icon {background:#8c4f2b}
+	}
+	*[class^=heading][class*=-h3]:before {width:26px; @include background("uscmuseum/bul_h3.png",no-repeat 50% 50%);}
 
+	*[class^=comp-tab]{
+		a[aria-selected=true]:after {background:#8c4f2b;}
+		&[class*=_row] a[aria-selected=true] span {color:#8c4f2b;}
 
+	}
+}
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */

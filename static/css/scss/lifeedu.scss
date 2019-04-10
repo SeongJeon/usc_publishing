@@ -130,6 +130,18 @@ COMMON
 ------------------------------------------------------ */
 .lifeedu {
 	.top-search-zone.bgcolor {background: #f1f6fc;}
+
+	*[class^=comp-iconbox] {
+		border-top-color: #014099;
+		&:before {background:#014099;}
+		.icon {background:#e1eef9;}
+	}
+	*[class^=comp-tab] {
+		a[aria-selected=true]:after {background:#2e56bd;}
+	}
+
+	*[class^=heading][class*=-h3]:before {@include background("lifeedu/bul_h3.png",no-repeat 50% 50%); }
+	*[class^=heading][class*=-h4]:before {@include background("lifeedu/bul_h4.png",no-repeat 50% 50%); }
 }
 
 /* ------------------------------------------------------

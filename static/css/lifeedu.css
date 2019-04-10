@@ -62,6 +62,12 @@ LAYOUT
 COMMON
 ------------------------------------------------------ */
 .lifeedu .top-search-zone.bgcolor { background: #f1f6fc; }
+.lifeedu *[class^=comp-iconbox] { border-top-color: #014099; }
+.lifeedu *[class^=comp-iconbox]:before { background: #014099; }
+.lifeedu *[class^=comp-iconbox] .icon { background: #e1eef9; }
+.lifeedu *[class^=comp-tab] a[aria-selected=true]:after { background: #2e56bd; }
+.lifeedu *[class^=heading][class*=-h3]:before { background: url("../../static/images/lifeedu/bul_h3.png") no-repeat 50% 50%; }
+.lifeedu *[class^=heading][class*=-h4]:before { background: url("../../static/images/lifeedu/bul_h4.png") no-repeat 50% 50%; }
 
 /* ------------------------------------------------------
 MAIN

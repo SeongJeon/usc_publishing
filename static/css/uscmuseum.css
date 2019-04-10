@@ -203,6 +203,8 @@ MEDIA QUERY
   #wrap.uscmuseum #gnb .category { display: none; }
   #wrap.uscmuseum #gnb .gnb .clicked, #wrap.uscmuseum #gnb .gnb .current, #wrap.uscmuseum #gnb .gnb .clicked h3 a, #wrap.uscmuseum #gnb .gnb h2 a:hover, #wrap.uscmuseum #gnb .gnb h3 a:hover, #wrap.uscmuseum #gnb .gnb h4 a:hover { color: #c3893a; }
   #wrap.uscmuseum #gnb .gnb h4 a:hover:before { background: #c3893a; }
+  /* ------------------------------------------------------ COMMON ------------------------------------------------------ */
+  #wrap.uscmuseum *[class^=heading][class*=-h3]:before { width: 1.5rem; }
   /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
   #wrap.uscmuseum #container.main { padding-top: 0; }
   #wrap.uscmuseum #container.main .inner { width: 100%; }

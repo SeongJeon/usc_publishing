@@ -7,6 +7,8 @@ LAYOUT
 #wrap.farmingtech #footer .footer-utilegroup .footer-addr li strong { color: #333; }
 
 #wrap.farmingtech #container { padding-top: 130px; }
+#wrap.farmingtech #container:before { top: 315px; }
+#wrap.farmingtech #container .top-visual-zone p { width: 577px; background: url("../../static/images/commonbg/img_farmingtechtxt.png") no-repeat 50% 50%; }
 
 @media (min-width: 1025px) { body.pc .farmingtech #header .header-middle { border-bottom: 1px solid #c2c0bf; }
   body.pc .farmingtech #header .header-middle .title { top: 20px; }
@@ -30,6 +32,11 @@ LAYOUT
   body.pc .farmingtech #header.header-type2.open { border-bottom-color: #f27405; }
   body.pc .farmingtech #header.header-type2.open .header-middle { border-bottom: 0; }
   body.pc .farmingtech #header.header-type2.open .header-bottom { border-bottom-color: #ff9900; } }
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+#wrap.farmingtech *[class^=heading][class*=-h3]:before { height: 24px; background: url("../../static/images/farmingtech/bul_h3.png") no-repeat 50% 50%; }
+
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -198,6 +205,8 @@ MEDIA QUERY
   #wrap.farmingtech #gnb .gnb .clicked, #wrap.farmingtech #gnb .gnb .current, #wrap.farmingtech #gnb .gnb .clicked h3 a, #wrap.farmingtech #gnb .gnb h2 a:hover, #wrap.farmingtech #gnb .gnb h3 a:hover, #wrap.farmingtech #gnb .gnb h4 a:hover { color: #ff6600; }
   #wrap.farmingtech #gnb .gnb h4 a:hover:before { background: #ff6600; }
   #wrap.farmingtech #container { padding-top: 0; }
+  /* ------------------------------------------------------ COMMON ------------------------------------------------------ */
+  #wrap.farmingtech *[class^=heading][class*=-h3]:before { height: 1.5rem; }
   /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
   #wrap.farmingtech #container.main .inner { width: 100%; }
   #wrap.farmingtech #container.main .main-cont-zone { background: url("../../static/images/farmingtech/main/bg_main_m.jpg") no-repeat 50% 100%; background-size: cover; }

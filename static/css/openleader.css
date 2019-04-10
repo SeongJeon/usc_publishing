@@ -59,9 +59,9 @@ LAYOUT
 /* ------------------------------------------------------
 COMMON
 ------------------------------------------------------ */
-*[class^=heading][class*=-h3]:before {background: url(../../static/images/openleader/bul_h3.png) no-repeat 50% 50%; }
-*[class^=heading][class*=-h4]:before {background: url(../../static/images/openleader/bul_h4.png) no-repeat 50% 50%;}
-*[class^=heading][class*=-h4][class*=_type2]:before {background: url(../../static/images/openleader/bul_h4_2.png) no-repeat 50% 50%;}
+.openleader *[class^=heading][class*=-h3]:before {background: url(../../static/images/openleader/bul_h3.png) no-repeat 50% 50%; }
+.openleader *[class^=heading][class*=-h4]:before {background: url(../../static/images/openleader/bul_h4.png) no-repeat 50% 50%;}
+.openleader *[class^=heading][class*=-h4][class*=_type2]:before {background: url(../../static/images/openleader/bul_h4_2.png) no-repeat 50% 50%;}
 
 /* ------------------------------------------------------
 MAIN

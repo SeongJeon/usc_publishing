@@ -13,7 +13,11 @@ LAYOUT
 		.footer-addr li strong {color:#333;}
 	}
 }
-#wrap.farmingtech #container {padding-top: 130px; }
+#wrap.farmingtech #container {
+	&:before {top:315px;}
+	padding-top: 130px;  
+	.top-visual-zone p {width:577px; @include background("commonbg/img_farmingtechtxt.png",no-repeat 50% 50%);}
+}
 @media (min-width:1025px){
 	body.pc .farmingtech #header {
 		.header-middle {
@@ -52,8 +56,14 @@ LAYOUT
 	}
 }
  
- 
-   
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */ 
+#wrap.farmingtech  {
+	*[class^=heading][class*=-h3]:before {height:24px; @include background("farmingtech/bul_h3.png",no-repeat 50% 50%);}   
+
+}
+
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -530,6 +540,15 @@ MEDIA QUERY
 	.gnb h4 a:hover:before {background:#ff6600;}
 }
 #wrap.farmingtech #container {padding-top: 0;}
+ 
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */ 
+#wrap.farmingtech  {
+	*[class^=heading][class*=-h3]:before {height: 1.5rem;} 
+
+}
+
 /* ------------------------------------------------------
 - MAIN
 ------------------------------------------------------ */

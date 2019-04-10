@@ -290,6 +290,7 @@ $(document).ready(function(){
 				 lnb = $("#lnb .menu");
 
 			if($this.hasClass('outlnk')) return;
+			if($this.hasClass('single')) return;
 
 			$this.closest("li").siblings().find(".open").removeClass("open");
 			$this.closest("li").siblings().find(".smallmenu").slideUp(spd);

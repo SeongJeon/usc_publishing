@@ -220,7 +220,7 @@
 #lnb .menu .smallmenu ul a { font-size: 15px; color: #000; }
 #lnb .menu .smallmenu ul a:before { display: inline-block; content: "-"; margin-right: 10px; }
 #lnb .menu .smallmenu ul a[aria-current=page] span, #lnb .menu .smallmenu ul a:hover span { text-decoration: underline; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-#lnb .menu .smallmenu ul a[aria-current=page]:before, #lnb .menu .smallmenu ul a:hover:before { content: ""; position: relative; top: -1px; width: 14px; height: 14px; margin-right: 5px; margin-left: -4px; background: url("../../static/images/common/sp_icon.png") no-repeat -200px -200px; vertical-align: middle; }
+#lnb .menu .smallmenu ul a[aria-current=page]:before, #lnb .menu .smallmenu ul a:hover:before { content: ""; position: relative; top: -1px; width: 14px; height: 14px; margin-right: 5px; margin-left: -4px; border: 4px solid #f27405; background: #fff; border-radius: 100px; box-sizing: border-box; vertical-align: middle; }
 #lnb .menu.single h2 a:after { display: none; }
 
 @media (min-width: 1025px) { body.pc #header.header-type2 { height: 130px; }
@@ -1379,9 +1379,9 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   .ml-30 { margin-left: -2rem !important; }
   /* TITLE */
   *[class^=heading][class*=-h3] { font-size: 1.5rem; }
-  *[class^=heading][class*=-h3]:before { width: 1.5rem; height: 1.5rem; margin-right: 0.6rem; background-size: 100% 100%; }
+  *[class^=heading][class*=-h3]:before { width: 1.5rem; height: 1.5rem; margin-right: 0.6rem; background-size: 100% 100% !important; }
   *[class^=heading][class*=-h4] { padding-left: 1.3rem; font-size: 1.3rem; margin-left: 1.5rem; }
-  *[class^=heading][class*=-h4]:before { width: 0.7rem; height: 1.2rem; background-size: 100% 100%; }
+  *[class^=heading][class*=-h4]:before { width: 0.7rem; height: 1.2rem; background-size: 100% 100% !important; }
   *[class^=heading][class*=_tab] { margin-bottom: 2rem; font-size: 1.2rem; line-height: 4rem; }
   *[class^=heading][class*=_tab] span { width: 10rem; }
   *[class^=heading] + .scrollzone { margin-top: 1rem; }

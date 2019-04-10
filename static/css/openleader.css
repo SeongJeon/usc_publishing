@@ -22,6 +22,7 @@ LAYOUT
 	.openleader #footer .footer-utilegroup .footer-utile a {color:rgba(256,256,256,0.7);}
 	.openleader #footer .footer-utilegroup .footer-addr li strong {color:#fff;}
 .openleader #container {padding-top: 130px}
+.openleader #container .top-visual-zone p {background: none;}
 @media (min-width:1025px){
 	body.pc .openleader #header .header-middle .title a {width: 224px; height: 52px; background:url("../../static/images/openleader/img_logo.png") no-repeat 50% 50%;}
 	body.pc .openleader #header .header-bottom .sitemap {background: #1058a8}
@@ -47,6 +48,21 @@ LAYOUT
 	body.pc .openleader #header.header-type2.open {border-bottom-color:#1058a8;}
 	body.pc .openleader #header.header-type2.open .header-bottom {border-bottom-color: #54c2d8;}
 }
+.openleader #lnb .title-depth h2 {background: #348899}
+	.openleader #lnb .menu h2 a.open, 
+	.openleader #lnb .menu h2 a:hover {background: #1058a8}
+	.openleader #lnb .menu h2 a.open:after, 
+	.openleader #lnb .menu h2 a:hover:after {background-color:#2c2c43 }
+	.openleader #lnb .menu .smallmenu ul {background: #f1fafe}
+	.openleader #lnb .menu .smallmenu ul a[aria-current=page]:before, 
+	.openleader #lnb .menu .smallmenu ul a:hover:before {border-color:#1058a8;}
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+*[class^=heading][class*=-h3]:before {background: url(../../static/images/openleader/bul_h3.png) no-repeat 50% 50%; }
+*[class^=heading][class*=-h4]:before {background: url(../../static/images/openleader/bul_h4.png) no-repeat 50% 50%;}
+*[class^=heading][class*=-h4][class*=_type2]:before {background: url(../../static/images/openleader/bul_h4_2.png) no-repeat 50% 50%;}
+
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -220,6 +236,7 @@ MAIN
 SUB PAGE
 ------------------------------------------------------ */
 /* 공통 */
+.openleader #container:before {top:315px;}
 table[class^=comp-tbl][class*=_datatype] tbody .border-b-none{border-bottom:none;}
 
 /* 주요정책 */

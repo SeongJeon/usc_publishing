@@ -80,7 +80,7 @@ LAYOUT
 			ul {background:#eff9fe;}
 			a {
 				&[aria-current=page], &:hover{
-					&:before {@include background("usclib/bul_lnb.png",no-repeat 50% 50%);}
+					&:before {border-color:#155764;}
 				}
 			}
 		}

@@ -38,7 +38,7 @@ LAYOUT
 #wrap.usclib #lnb .menu h2 a.open, #wrap.usclib #lnb .menu h2 a:hover { background: #3f889a; }
 #wrap.usclib #lnb .menu h2 a.open:after, #wrap.usclib #lnb .menu h2 a:hover:after { background-color: #155764; }
 #wrap.usclib #lnb .menu .smallmenu ul { background: #eff9fe; }
-#wrap.usclib #lnb .menu .smallmenu a[aria-current=page]:before, #wrap.usclib #lnb .menu .smallmenu a:hover:before { background: url("../../static/images/usclib/bul_lnb.png") no-repeat 50% 50%; }
+#wrap.usclib #lnb .menu .smallmenu a[aria-current=page]:before, #wrap.usclib #lnb .menu .smallmenu a:hover:before { border-color: #155764; }
 
 /* ------------------------------------------------------
 COMMON

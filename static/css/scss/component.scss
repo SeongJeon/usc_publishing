@@ -391,7 +391,7 @@
 					&:before {display: inline-block; content: "-"; margin-right: 10px; }
 					&[aria-current=page], &:hover{
 						span {text-decoration: underline; font-family: $font3;}
-						&:before {content: ""; position: relative; top:-1px; width:14px; height: 14px; margin-right: 5px; margin-left: -4px; @include background("common/sp_icon.png",no-repeat -200px -200px); vertical-align: middle;}
+						&:before {content: ""; position: relative; top:-1px; width:14px; height: 14px; margin-right: 5px; margin-left: -4px; border:4px solid #f27405; background:#fff; border-radius: 100px; box-sizing: border-box; vertical-align: middle;}
 					}
 				}
 
@@ -2539,11 +2539,11 @@ br.m {display:inherit}
 *[class^=heading] {
 	&[class*=-h3] {
 		font-size: 1.5rem; 
-		&:before {width: 1.5rem; height: 1.5rem; margin-right: 0.6rem; background-size: 100% 100%;}
+		&:before {width: 1.5rem; height: 1.5rem; margin-right: 0.6rem; background-size: 100% 100% !important;}
 	}
 	&[class*=-h4] {
 		padding-left: 1.3rem; font-size: 1.3rem; margin-left: 1.5rem;
-		&:before {width: 0.7rem; height: 1.2rem;background-size: 100% 100%;}
+		&:before {width: 0.7rem; height: 1.2rem;background-size: 100% 100% !important;}
 	}
 
 

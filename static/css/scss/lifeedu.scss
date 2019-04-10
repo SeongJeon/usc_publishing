@@ -116,7 +116,13 @@ LAYOUT
 				&:after {background-color:#417ff2 }
 			}
 		}
+		.smallmenu ul {
+			background:#f1f6fc;
+			a[aria-current=page]:before, 
+			a:hover:before {border-color:#014099;}
+		}
 	}
+
 }
 
 /* ------------------------------------------------------

@@ -430,6 +430,22 @@ $(document).on("click", ".comp-filefind .comp-btn_filefind", function(){
 })
 
 
+var vbm = 100;
+$(document).on("click", ".btn-zoomup", function(e){
+	vbm = vbm + 20;
+	if(vbm >= 500) vbm = 500;
+	document.body.style.zoom = vbm + '%';
+})
+$(document).on("click", ".btn-zoomdown", function(e){
+	vbm = vbm - 10;
+	document.body.style.zoom = vbm + '%';
+})
+$(document).on("click", ".btn-zoom100", function(e){
+	vbm = 100;
+	document.body.style.zoom = vbm + '%';
+})
+
+
 //-------------------------------------------------------------------------
 // LOAD
 // ----------------------------------------------------------------------- //

@@ -54,11 +54,11 @@ SUB PAGE
 .institute .btn-go:hover {border:0;}
 .institute .btn-go:hover:after {position:absolute;left:-1px;top:-1px;display:block;width:100%;height:100%;border:2px solid #417ff2;content:'';}
 
-.vision .vision-wrap {padding:36px 40px;border:1px solid #e2e1e1}
+.vision .vision-wrap {padding:36px 40px 0;border:1px solid #e2e1e1}
 .vision .vision-wrap .tit {position:relative;margin-bottom:17px;padding-bottom:50px;font-size:24px;color:#787878;font-family:'NanumSquareEB';}
 .vision .vision-wrap .tit:after {position:absolute;bottom:0;left:79px;display:inline-block;width:1px;height:32px;background:#c7c1bf;content:'';}
-.vision .vision-list > li {overflow:hidden;padding:34px 0;border-bottom:1px dotted #a19e9f;}
-.vision .vision-list > li:first-child {padding-top:0;}
+.vision .vision-list > li {overflow:hidden;padding:34px 0;border-top:1px dotted #a19e9f;}
+.vision .vision-list > li:first-child {padding-top:0;border-top:0;}
 .vision .vision-list .keyword {position:relative;display:inline-block;width:156px;height:56px;line-height:56px;font-family:'NanumSquareEB';color:#fff;vertical-align:top;text-align:center;font-size:24px;}
 .vision .vision-list .keyword:before {position:absolute;left:7px;top:-3px;display:inline-block;width:1px;height:22px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);content:'';}
 .vision .vision-list .vision-detail {display:inline-block;width:-webkit-calc(100% - 165px);width:-moz-calc(100% - 165px);width:-o-calc(100% - 165px);width:calc(100% - 165px);}
@@ -138,13 +138,12 @@ MEDIA QUERY
 	.institute .map-wrap[data-map=map18] {background-size:100%;}
 	.institute .btn-go {height:2rem;padding:0 .7rem;font-size:1.2rem;line-height:2.2rem}
 
-	.vision .vision-wrap {padding:1.8rem 2rem;}
+	.vision .vision-wrap {padding:1.8rem 2rem 0;}
 	.vision .vision-wrap .tit {margin-bottom:.8rem;padding-bottom:2.5rem;font-size:1.6rem;}
 	.vision .vision-wrap .tit:after {left:5rem;height:2rem;}
 	.vision .vision-list > li {padding:1.7rem 0;}
 	.vision .vision-list .keyword {display:block;width:9rem;height:4rem;margin-bottom:1.5rem;line-height:4rem;font-size:1.6rem;}
 	.vision .vision-list .vision-detail {display:block;width:100%;}
-	.vision .vision-list .vision-detail .tit-txt {text-align:left;}
 	.vision .vision-list .vision-detail .tit-txt p {padding:1rem 2rem 0;font-size:1.2rem;}
 	.vision .vision-list .vision-detail .tit-txt .ebold,
 	.vision .vision-list .vision-detail .tit-txt .point {font-size:1.4rem;}
@@ -152,21 +151,18 @@ MEDIA QUERY
 	.vision .vision-list .vision-detail .tit-txt p:after {width:1.8rem;height:2rem;background-size:100%;}
 	.vision .vision-list .list02 .vision-detail {text-align:left;}
 	.vision .vision-list .list02 .vision-detail .txt-box {margin-bottom:0;line-height:3rem;}
-	.vision .vision-list .list02 .vision-detail .txt {font-size:1.4rem;vertical-align:inherit;}
+	.vision .vision-list .list02 .vision-detail .txt {display:block;font-size:1.4rem;vertical-align:inherit;}
 	.vision .vision-list .list02 .vision-detail .bold {padding:0 .5rem;font-size:1.6rem}
 	.vision .vision-list .list02 .vision-detail span[class*='txt-img'] {width:2.5rem;height:2.2rem;background-size:100% !important;}
-	.vision .vision-list .list02 li {width:14rem;height:4rem;margin-left:.5rem;line-height:4rem;font-size:1.8rem;text-align:center;}
+	.vision .vision-list .list02 li {display:block;width:14rem;height:4rem;margin:.5rem auto 0;line-height:4rem;font-size:1.8rem;text-align:center;}
+	.vision .vision-list .list02 li:first-child {margin:0 auto;}
 	.vision .vision-list .list02 .slogan span[class*='txt-img'] {width:2.7rem;height:100%;margin:0 2px 0 4px;background-size:100% !important;background-position-y:.7rem !important;}
 	.vision .vision-list .vision-detail .num-list {margin:.8rem 0 0 0;}
 	.vision .vision-list .vision-detail .num-list li {overflow:hidden;margin-top:.6rem;}
 	.vision .vision-list .vision-detail .num-list li .num {width:2rem;height:2rem;line-height:2rem;font-size:1.2rem;vertical-align:top;}
 	.vision .vision-list .vision-detail .num-list li .txt {width:-webkit-calc(100% - 2.5rem);width:-moz-calc(100% - 2.5rem);width:-o-calc(100% - 2.5rem);width:calc(100% - 2.5rem);padding-left:.5rem;font-size:1.4rem;line-height:1.2;}
 
-}  @media (max-width:500px){
-	.vision .vision-list .list02 .vision-detail .txt {display:block;font-size:1.6rem;vertical-align:inherit;}
-	.vision .vision-list .list02 .vision-detail .bold {padding:0 .9rem 0 0;}
-	.vision .vision-list .list02 li {display:block;margin:1rem 0;}
-	.vision .vision-list .list02 li:first-child {margin:0;}
+}  @media (max-width:781px){
 } @media (max-width:321px){
 	.vision .vision-wrap .tit:after {left:4.5rem;}
 	.vision .vision-list .vision-detail .tit-txt p {padding:1rem 1rem 0;font-size:1.2rem;}

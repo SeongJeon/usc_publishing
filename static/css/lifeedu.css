@@ -290,6 +290,15 @@ SUB PAGE
 .certification-notice-zone p.txt .point { display: inline-block; background: #fcecbd; line-height: 1.1; }
 .certification-notice-zone p.txt .point:before { display: inline-block; content: "※"; margin-right: 5px; vertical-align: middle; }
 
+.application_process_lst { margin-top: 20px; border: 1px solid #d6d5d5; padding: 30px 0 28px; border-radius: 5px; text-align: center; }
+.application_process_lst ol { display: inline-block; }
+.application_process_lst ol:after { display: block; clear: both; content: ""; }
+.application_process_lst li { float: left; position: relative; width: 220px; padding-left: 62px; border: 2px solid #7c9ddb; border-radius: 100px; line-height: 46px; color: #111; font-size: 17px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; letter-spacing: -1px; text-align: left; box-sizing: border-box; }
+.application_process_lst li + li { margin-left: 30px; }
+.application_process_lst li + li:before { display: inline-block; position: absolute; left: -20px; top: 50%; width: 9px; height: 14px; background: url("../../static/images/lifeedu/subpage/icon_arrow2.png") no-repeat 50% 50%; margin-top: -7px; content: ""; }
+.application_process_lst .step { display: inline-block; position: absolute; left: -2px; top: -2px; width: 50px; height: 50px; padding-top: 13px; font-size: 11px; text-align: center; border-radius: 100px; background: #7c9ddb; line-height: 1; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; box-sizing: border-box; }
+.application_process_lst .step em { display: block; font-size: 17px; }
+
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
@@ -450,4 +459,11 @@ MEDIA QUERY
   .ui-certification-zone .sns-zone .sns *[class^=btn-sns] { width: 3.5rem; height: 3.5rem; }
   .certification-notice-zone { line-height: 1.8rem; margin-top: 1rem; font-size: 1.1rem; }
   .certification-notice-zone p.txt { padding: 0 0 0 2.5rem; text-align: left; }
-  .certification-notice-zone p.txt:before { width: 2rem; height: 2rem; line-height: 2rem; } }
+  .certification-notice-zone p.txt:before { width: 2rem; height: 2rem; line-height: 2rem; }
+  .application_process_lst { margin-top: 1rem; padding: 1.5rem 0; }
+  .application_process_lst li { width: 23%; height: 8rem; padding-left: 0; line-height: 1; font-size: 1.2rem; border-radius: 0; text-align: center; }
+  .application_process_lst li + li { margin-left: 2%; }
+  .application_process_lst li + li:before { display: none; }
+  .application_process_lst .step { position: static; width: 100%; height: 3rem; padding-top: 0; font-size: 1rem; border-radius: 0; line-height: 3rem; }
+  .application_process_lst .step em { display: inline; margin-left: 0.5rem; font-size: 1.2rem; }
+  .application_process_lst .cont { display: block; padding-top: 0.7rem; word-break: keep-all; line-height: 1.6rem; } }

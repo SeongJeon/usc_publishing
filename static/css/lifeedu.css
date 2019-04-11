@@ -295,6 +295,8 @@ SUB PAGE
 .application_process_lst ol:after { display: block; clear: both; content: ""; }
 .application_process_lst li { float: left; position: relative; width: 220px; padding-left: 62px; border: 2px solid #7c9ddb; border-radius: 100px; line-height: 46px; color: #111; font-size: 17px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; letter-spacing: -1px; text-align: left; box-sizing: border-box; }
 .application_process_lst li + li { margin-left: 30px; }
+.application_process_lst li:nth-child(even) { border-color: #2e56bd; }
+.application_process_lst li:nth-child(even) .step { background: #2e56bd; }
 .application_process_lst li + li:before { display: inline-block; position: absolute; left: -20px; top: 50%; width: 9px; height: 14px; background: url("../../static/images/lifeedu/subpage/icon_arrow2.png") no-repeat 50% 50%; margin-top: -7px; content: ""; }
 .application_process_lst .step { display: inline-block; position: absolute; left: -2px; top: -2px; width: 50px; height: 50px; padding-top: 13px; font-size: 11px; text-align: center; border-radius: 100px; background: #7c9ddb; line-height: 1; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; box-sizing: border-box; }
 .application_process_lst .step em { display: block; font-size: 17px; }

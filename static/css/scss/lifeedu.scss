@@ -543,6 +543,10 @@ SUB PAGE
 	ol:after {display:block; clear:both; content:""}
 	li {float: left; position: relative; width:220px; padding-left: 62px;border:2px solid #7c9ddb; border-radius: 100px; line-height: 46px; color:#111; font-size: 17px; font-family: $font2; letter-spacing: -1px; text-align: left; box-sizing: border-box; }
 	li+li {margin-left: 30px;}
+	li:nth-child(even) {
+		border-color: #2e56bd;
+		.step {background:#2e56bd;}
+	}
 	li+li:before {display: inline-block; position: absolute; left:-20px; top:50%; width:9px; height: 14px; @include background("lifeedu/subpage/icon_arrow2.png", no-repeat 50% 50%); margin-top: -7px; content: "";}
 	.step {
 		display:inline-block; position: absolute; left:-2px; top:-2px; width:50px; height: 50px; padding-top: 13px; font-size: 11px; text-align: center; border-radius: 100px;background:#7c9ddb; line-height: 1; font-family: $font2; color:#fff; box-sizing: border-box;

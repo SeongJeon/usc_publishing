@@ -298,10 +298,52 @@ SUB PAGE
 .openleader .practice *[class^=heading-table] *[class^=num-case][class*=_type1] > li {color:#962d3e;}
 
 
-.openleader .practice table[class^=comp-tbl][class*=_datatype] tbody tr:first-child *[rowspan]{border-top:1px solid #7a7a7a;}
-.openleader .practice table[class^=comp-tbl][class*=_datatype] tbody *[rowspan]{border-top:1px solid #d9d6d5; border-bottom:none;}
+.openleader .practice table[class^=comp-tbl][class*=_datatype] tbody tr:first-child *[rowspan],
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody tr:first-child *[rowspan] {border-top:1px solid #7a7a7a;}
+.openleader .practice table[class^=comp-tbl][class*=_datatype] tbody *[rowspan],
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody *[rowspan] {border-top:1px solid #d9d6d5; border-bottom:none;}
 .openleader .practice table[class^=comp-tbl][class*=_datatype] tbody .btn-download {display:block; width:85px; height:85px; margin:0 auto; background:url(../../static/images/openleader/subpage/btn_download.png) no-repeat; text-indent:-9999em;}
 
+/* 공약사항 추진목록 */
+.openleader .pledge .list-propulsion {}
+.openleader .pledge .list-propulsion .list > li[class^=ball] {display:table; width:855px; height:48px; margin-top:10px; background:#d7d7d7; border:3px solid #ececec; border-radius:24px; box-sizing:border-box;}
+.openleader .pledge .list-propulsion .list > li[class^=ball]:first-child {margin-top:0;}
+.openleader .pledge .list-propulsion .list > li[class^=ball] > * {display:table-cell; height:42px; line-height:42px; vertical-align:middle; border-radius:21px;}
+.openleader .pledge .list-propulsion .list > li[class^=ball] .txt {position:relative; width:210px; padding-left:50px; background:#3f4972; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:18px; color:#fff; box-sizing:border-box;}
+.openleader .pledge .list-propulsion .list > li[class^=ball] .txt:before {position:absolute; left:15px; top:50%; display:block; content:""; width:16px; height:16px; margin-top:-8px; border-radius:100%;}
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color0] .txt:before,
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color0] .graph .inner {background:#348899;}
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color1] .txt:before,
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color1] .graph .inner,
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball][class*=-color1]:before {background:#4cd700;}
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color2] .txt:before,
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color2] .graph .inner,
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball][class*=-color2]:before  {background:#bfe50d;}
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color3] .txt:before,
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color3] .graph .inner,
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball][class*=-color3]:before   {background:#00a8ff;}
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color4] .txt:before,
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color4] .graph .inner,
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball][class*=-color4]:before  {background:#ff7e00;}
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color5] .txt:before,
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color5] .graph .inner,
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball][class*=-color5]:before  {background:#df0000;}
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color6] .txt:before,
+.openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color6] .graph .inner,
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball][class*=-color6]:before  {background:#95661d;}
+.openleader .pledge .list-propulsion .list > li[class^=ball] .graph .inner {height:18px; margin-left:-5px; background:#348899; border-radius:0 9px 9px 0;}
+.openleader .pledge .tbl-top-utile *[class^=heading] + .l-right {top:3px;}
+.openleader .pledge .tbl-top-utile *[class^=heading] {margin-left:0;}
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball] {position:relative; display:inline-block; padding:0 0 0 20px; line-height:18px;}
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball]:before {position:absolute; left:0; top:50%; display:block; content:""; width:16px; height:16px; margin-top:-8px; border-radius:100%;}
+
+
+
+ 
+
+ 
+ 
+ 
 
 
 
@@ -374,6 +416,17 @@ MEDIA QUERY
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li {height:3rem; line-height:3rem; font-size:1.2rem; letter-spacing:-1.5px;}
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li .num {padding-left:0;}
 .openleader .practice table[class^=comp-tbl][class*=_datatype] tbody .btn-download {width:8rem; height:8rem; background-size:100%;}
+
+/* 공약사항 추진목록 */
+
+.openleader .pledge .list-propulsion .list > li[class^=ball] {width:100%; height:3rem;}
+.openleader .pledge .list-propulsion .list > li[class^=ball] > * {height:2.4rem; line-height:2.4rem;}
+.openleader .pledge .list-propulsion .list > li[class^=ball] .txt {width:12rem; padding-left:2rem; font-size:1.2rem;}
+.openleader .pledge .list-propulsion .list > li[class^=ball] .txt:before {left:0.8rem; width:0.8rem; height:0.8rem; margin-top:-0.5rem;}
+.openleader .pledge .list-propulsion .list > li[class^=ball] .graph .inner {height:1.4rem; border-radius:0 0.7rem 0.7rem 0;}
+.openleader .pledge .tbl-top-utile *[class^=heading] + .l-right {top:0.1rem;}
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball] {padding:0 0 0 1.2rem; line-height:1.4rem;}
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball]:before {width:0.8rem; height:0.8rem; margin-top:-0.4rem;}
 
 
 

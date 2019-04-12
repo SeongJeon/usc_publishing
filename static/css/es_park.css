@@ -47,6 +47,27 @@ SUB PAGE
 
 
 
+.fm_part05 .contents-zone { position: relative;}
+.fm_part05 .contents-zone .info { position: relative; padding:18px 20px 18px 12px; width:1012px; border:1px solid #dddbda;}
+.fm_part05 .contents-zone .info:before { display: block; background:url(../images/farmingtech/subpage/bg_border.png) no-repeat center center; width:978px; height:209px; content: '';}
+
+.fm_part05 .contents-zone ul.comp-lst_dotted { display: inline-block; position: absolute; top:56px; left:76px; }
+.fm_part05 .contents-zone ul.comp-lst_dotted:before { display:inline-block; position: absolute; top:0; left:0; width:96px; height:140px; background: url(../images/farmingtech/subpage/bg_medal.png) no-repeat 0 0; content:'';}
+.fm_part05 .contents-zone ul.comp-lst_dotted li { margin-left:125px;}
+.fm_part05 .contents-zone ul.comp-lst_dotted li:before { background-color: #cfcfcf}
+
+.fm_part05 .contents-zone .comp-tbl_boardtype .txt { text-align: left;}
+.fm_part05 .contents-zone table tbody tr img { vertical-align: middle;}
+.fm_part05 .contents-zone table select {margin-left:0; width:377px; background-color: #f4f7f9; }
+.fm_part05 .contents-zone table input { width:379px; }
+
+.fm_part05 .contents-zone .form_btn { position: absolute; top:357px; right:0;  width: 144px; height:136px;  background-color: #fff;}
+.fm_part05 .contents-zone .form_btn button { width:138px; height:136px; line-height:136px; font-size: 17px;}
+
+
+
+
+
 
 
 
@@ -87,6 +108,15 @@ MEDIA QUERY
 .fm_part01 .img { width:40%; }
 .fm_part01 .img img { width:100%; height: auto; }
 
+.fm_part05 .contents-zone .info {width:100%;}
+.fm_part05 .contents-zone .info:before { width:100%; background-position: -65px -166px;}
+.fm_part05 .contents-zone ul.comp-lst_dotted { top:0; left:0; }
+.fm_part05 .contents-zone ul.comp-lst_dotted:before { width:100%; background-size: contain;}
+
+.fm_part05 .contents-zone table select { width:100%; }
+.fm_part05 .contents-zone table input { width:100%; }
+.fm_part05 .contents-zone .form_btn { position: static;  width:100%; height: 3.5rem; margin-top:1rem;}
+.fm_part05 .contents-zone .form_btn button{ width:100%; height:100%; line-height: 3.5rem; font-size: 1.3rem; }
 } @media (max-width:768px){
 } @media (max-width:321px){}
 

@@ -280,17 +280,17 @@ SUB PAGE
 .openleader .practice *[class^=heading-table] *[class^=heading][class*=-h4]:before {top:50%; margin-top:-11px;}
 .openleader .practice *[class^=heading-table] *[class^=heading][class*=-h4][class*=color1] {color:#1058a8;}
 .openleader .practice *[class^=heading-table] *[class^=heading][class*=-h4][class*=color2] {color:#962d3e;}
-.openleader .practice *[class^=heading-table] .graph-border {position:relative; width:506px; height:45px; background:#d7d7d7; border:3px solid #ececec; border-radius:24px; line-height:45px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; color:#fff;}
-.openleader .practice *[class^=heading-table] .graph-border:before {position:absolute; top:-3px; display:block; content:"100%"; width:100%; text-align:center;}
-.openleader .practice *[class^=heading-table] .graph-border .inner {position:relative; min-width:45px; background:#1058a8; border-radius:21px; text-align:center; z-index:5;}
+.openleader .practice *[class^=heading-table] .graph-border {position:relative; overflow:hidden; width:506px; height:45px; background:#d7d7d7; border:3px solid #ececec; border-radius:24px; line-height:45px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; color:#fff;}
+.openleader .practice *[class^=heading-table] .graph-border:before {position:absolute; top:0px; display:block; content:"100%"; width:100%; text-align:center;}
+.openleader .practice *[class^=heading-table] .graph-border .inner {position:relative; min-width:45px; background:#1058a8; border-radius:21px; text-align:center; z-index:5; animation:graph_motion 0.5s ease-out;}
 .openleader .practice *[class^=heading-table] .graph-dl {margin-top:40px;}
 .openleader .practice *[class^=heading-table] .graph-dl dl {display:table; width:100%; margin-top:20px;}
 .openleader .practice *[class^=heading-table] .graph-dl dl:first-child {margin-top:0;}
 .openleader .practice *[class^=heading-table] .graph-dl dl:after {display:block; content:""; clear:both;}
-.openleader .practice *[class^=heading-table] .graph-dl dl > * {display:table-cell;}
+.openleader .practice *[class^=heading-table] .graph-dl dl > * {display:table-cell; overflow:hidden;}
 .openleader .practice *[class^=heading-table] .graph-dl dl > dt {width:160px;}
 .openleader .practice *[class^=heading-table] .graph-dl dl > dd.graph {}
-.openleader .practice *[class^=heading-table] .graph-dl dl > dd.graph .inner {min-width:45px; width:0; height:42px; line-height:42px; background:#962d3e; border-radius:21px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; color:#fff; text-align:center;}
+.openleader .practice *[class^=heading-table] .graph-dl dl > dd.graph .inner {min-width:45px; width:0; height:42px; line-height:42px; background:#962d3e; border-radius:21px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; color:#fff; text-align:center; animation:graph_motion 0.5s ease-out;}
 .openleader .practice *[class^=heading-table] *[class^=num-case]{overflow:hidden; margin-top:13px; border:1px solid #dddbdb;}
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li {float:left; width:25%; height:50px; line-height:50px; border-left:1px solid #dddbdb; box-sizing:border-box; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:18px; color:#1058a8; text-align:center;}
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li:first-child {border-left:none;}
@@ -302,7 +302,10 @@ SUB PAGE
 .openleader .practice .charge-info .list > li:first-child {margin-left:0;}
 .openleader .practice .charge-info .list > li .box {display:table-cell; height:26px; padding:0 15px; background:#ededed; border:1px solid #d7d7d7; border-radius:2px; line-height:26px; color:#949494; vertical-align:middle;}
 .openleader .practice .charge-info .list > li .txt {display:table-cell; padding-left:13px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#545454;  vertical-align:middle;}
-
+@keyframes graph_motion{
+	0% {margin-left:-100%;}
+	100% {margin-left:0;}
+}
 .openleader .practice table[class^=comp-tbl][class*=_datatype] tbody tr:first-child *[rowspan],
 .openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody tr:first-child *[rowspan] {border-top:1px solid #7a7a7a;}
 .openleader .practice table[class^=comp-tbl][class*=_datatype] tbody *[rowspan],

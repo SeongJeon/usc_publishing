@@ -349,6 +349,22 @@ SUB PAGE
 	100% {margin-left:-5px;}
 }
 
+/* 공약사항 추진목록 */
+.openleader .planner .heading-table {display:table;}
+.openleader .planner .heading-table .heading-h4 {display:table-cell; vertical-align:middle;}
+.openleader .planner *[class^=heading-table] *[class^=heading][class*=-h4]:before {top:50%; margin-top:-11px;}
+.openleader .planner .heading-table .graph {display:table-cell; padding-left:15px;}
+.openleader .planner .heading-table .graph .inner {display:table; overflow:hidden; width:815px; height:42px; background:#ececec; border:3px solid #ececec; border-radius:24px;}
+.openleader .planner .heading-table .graph .inner > li {display:table-cell; height:42px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#fff; vertical-align:middle; text-align:center;}
+.openleader .planner .heading-table .graph .inner > li:first-child {border-radius:21px 0 0 21px;}
+.openleader .planner .heading-table .graph .inner > li:last-child {border-radius:0 21px 21px 0;}
+.openleader .planner .heading-table .graph .inner > li.color-1 {background:#348899;}
+.openleader .planner .heading-table .graph .inner > li.color-2 {background:#00a8ff;}
+.openleader .planner .heading-table .graph .inner > li.color-3 {background:#3ca900;}
+.openleader .planner .heading-table .graph .inner > li.color-4 {background:#cd661b;}
+.openleader .planner .tbl-top-utile *[class^=heading] + .l-right {top:3px;}
+.openleader .planner table[class^=comp-tbl][class*=_datatype] tbody .btn-download {display:block; width:85px; height:85px; margin:0 auto; background:url(../../static/images/openleader/subpage/btn_download.png) no-repeat; text-indent:-9999em;}
+
 
 
  
@@ -415,7 +431,7 @@ MEDIA QUERY
 .openleader .practice *[class^=heading-table] > * {display:block;}
 .openleader .practice *[class^=heading-table][class*=_auto] {width:100%;}
 .openleader .practice *[class^=heading-table] *[class^=heading][class*=-h4] {width:auto; margin-left:0;} 
-.openleader .practice *[class^=heading-table] *[class^=heading][class*=-h4]:before {margin-top:-0.6rem;}
+.openleader .practice *[class^=heading-table] *[class^=heading][class*=-h4]:before {margin-top:-0.7rem;}
 .openleader .practice *[class^=heading-table] .graph-border {width:100%; height:3rem; margin-top:1rem; line-height:3rem; font-size:1.3rem;}
 .openleader .practice *[class^=heading-table] .graph-border .inner {height:2.4rem; line-height:2.4rem;}
 .openleader .practice *[class^=heading-table][class*=_al-top] *[class^=heading][class*=-h4] {padding-top:0;}
@@ -429,7 +445,7 @@ MEDIA QUERY
 .openleader .practice *[class^=heading-table] *[class^=num-case] {margin-top:1rem;}
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li {height:auto; padding:0.5rem 0; line-height:1.6rem; font-size:1rem;}
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li .num {display:block; padding-left:0;}
-.openleader .practice table[class^=comp-tbl][class*=_datatype] tbody .btn-download {width:8rem; height:8rem; background-size:100%;}
+/*.openleader .practice table[class^=comp-tbl][class*=_datatype] tbody .btn-download {width:8rem; height:8rem; background-size:100%;}*/
 .openleader .practice .charge-info {margin-top:4rem; padding:1rem;}
 .openleader .practice .charge-info .list {display:block;}
 .openleader .practice .charge-info .list > li {overflow:hidden; float:none; margin:1rem 0 0; padding:0; font-size:1.2rem;}
@@ -446,6 +462,15 @@ MEDIA QUERY
 .openleader .pledge .tbl-top-utile *[class^=heading] + .l-right {top:0.1rem;}
 .openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball] {padding:0 0 0 1.2rem; line-height:1.4rem;}
 .openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody td [class^=ball]:before {width:0.8rem; height:0.8rem; margin-top:-0.4rem;}
+
+/* 재원투자 계획표 */
+.openleader .planner .heading-table {display:block; margin-left:0 !important;}
+.openleader .planner .heading-table .heading-h4 {display:block;}
+.openleader .planner .heading-table .graph {display:block; margin:0.5rem 0 0 1.3rem; padding:0;}
+.openleader .planner .heading-table .graph .inner {width:100%; height:3rem;}
+.openleader .planner .heading-table .graph .inner > li {height:2.4rem; padding-left:0.5rem; text-align:left;}
+.openleader .planner .tbl-top-utile *[class^=heading] + .l-right {top:0.1rem;}
+.openleader .planner *[class^=heading-table] *[class^=heading][class*=-h4]:before {margin-top:-0.7rem;}
 
 
 

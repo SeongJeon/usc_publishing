@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" >
 	<meta name="format-detection" content="telephone=no" >
-	<title>강사 등록안내  &lt; 평생학습</title>
+	<title>강사 등록  &lt; 평생학습</title>
 	<meta name="Subject" content="평생학습" >
 	<meta name="title" content="평생학습" >
 	<meta name="keywords" content="평생학습" >
@@ -186,6 +186,7 @@
 							<!-- 개별 컨텐츠 영역 -->
 							<div class="contents-zone">
 								<h3 class="heading-h3">일반강사등록</h3>
+							
 								<table class="comp-tbl_formtype">
 									<caption>일반강사등록 - 강사명, 강사 이미지, 연락처, 주소, 이메일, 지원분야, 강사지원서, 자격증 및 면허, 경력 및 활동 내역</caption>
 									<colgroup>
@@ -272,11 +273,148 @@
 										</tr>
 										<tr>
 											<th scope="row">자격증 및 면허 <span class="important">*</span></th>
-											<td></td>
+											<td>
+												<div class="tbl-lifeedu">
+													<div class="scrollzone ">
+														<div class="scrollzoneinner">
+															<table class="tbl">
+																<caption>자격증 및 면허 - 자격명, 발행기관, 	발행일, 자격증/면허 번호</caption>
+																<colgroup>
+																	<col style="width:26%">
+																	<col>
+																	<col style="width:20%">
+																	<col style="width:20%">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">자격명</th>
+																		<th scope="col">발행기관</th>
+																		<th scope="col">발행일</th>
+																		<th scope="col">자격증/면허 번호</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><input type="text" title="자격명 입력"  class="comp-input " placeholder="입력해주세요."></td>
+																		<td>
+																			<div class="w_form">
+																				<input type="text" title="발행기관 입력"  class="comp-input ">
+																				<a href="#" class="comm-btn_type2_blue"><span>기관검색</span></a>
+																			</div>
+																		</td>
+																		<td><input type="text" title="발행일 입력"  class="comp-input_calendar js-datepicker "></td>
+																		<td><input type="text" title="자격증/면허 번호 입력"  class="comp-input "></td>
+																	</tr>
+																	<tr>
+																		<td><input type="text" title="자격명 입력"  class="comp-input " placeholder="입력해주세요."></td>
+																		<td>
+																			<div class="w_form">
+																				<input type="text" title="발행기관 입력"  class="comp-input ">
+																				<a href="#" class="comm-btn_type2_blue"><span>기관검색</span></a>
+																			</div>
+																		</td>
+																		<td><input type="text" title="발행일 입력"  class="comp-input_calendar js-datepicker "></td>
+																		<td><input type="text" title="자격증/면허 번호 입력"  class="comp-input "></td>
+																	</tr>
+																	<tr>
+																		<td><input type="text" title="자격명 입력"  class="comp-input " placeholder="입력해주세요."></td>
+																		<td>
+																			<div class="w_form">
+																				<input type="text" title="발행기관 입력"  class="comp-input ">
+																				<a href="#" class="comm-btn_type2_blue"><span>기관검색</span></a>
+																			</div>
+																		</td>
+																		<td><input type="text" title="발행일 입력"  class="comp-input_calendar js-datepicker "></td>
+																		<td><input type="text" title="자격증/면허 번호 입력"  class="comp-input "></td>
+																	</tr>
+																</tbody>
+															</table>	
+														</div>
+													</div>
+													<div class="add-btn-position">
+														<button class="comm-btn_type2__green"><span>자격증 면허 추가 +</span></button>
+													</div>
+												</div>
+											</td>
 										</tr>
 										<tr>
 											<th scope="row">경력 및 	활동 내역 <span class="important">*</span></th>
-											<td></td>
+											<td>
+												<div class="tbl-lifeedu">
+													<div class="scrollzone ">
+														<div class="scrollzoneinner">
+															<table class="tbl">
+																<caption>경력 및 활동 내역 - 자격명, 발행기관, 	발행일, 자격증/면허 번호</caption>
+																<colgroup>
+																	<col style="width:30%">
+																	<col>
+																	<col style="width:35%">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">경력 및 활동 내용</th>
+																		<th scope="col">주관기간</th>
+																		<th scope="col">활동기간</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><input type="text" title="경력 및 활동 내용 입력"  class="comp-input " placeholder="입력해주세요."></td>
+																		<td>
+																			<div class="w_form">
+																				<input type="text" title="주관기간 입력"  class="comp-input ">
+																				<a href="#" class="comm-btn_type2_blue"><span>기관검색</span></a>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="w_activity">
+																				<input type="text" title="활동기간 시작일 입력"  class="comp-input_calendar js-datepicker ">
+																				<span class="txt">~</span>
+																				<input type="text" title="활동기간 마지막 입력"  class="comp-input_calendar js-datepicker ">
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><input type="text" title="경력 및 활동 내용 입력"  class="comp-input " placeholder="입력해주세요."></td>
+																		<td>
+																			<div class="w_form">
+																				<input type="text" title="주관기간 입력"  class="comp-input ">
+																				<a href="#" class="comm-btn_type2_blue"><span>기관검색</span></a>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="w_activity">
+																				<input type="text" title="활동기간 시작일 입력"  class="comp-input_calendar js-datepicker ">
+																				<span class="txt">~</span>
+																				<input type="text" title="활동기간 마지막 입력"  class="comp-input_calendar js-datepicker ">
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td><input type="text" title="경력 및 활동 내용 입력"  class="comp-input " placeholder="입력해주세요."></td>
+																		<td>
+																			<div class="w_form">
+																				<input type="text" title="주관기간 입력"  class="comp-input ">
+																				<a href="#" class="comm-btn_type2_blue"><span>기관검색</span></a>
+																			</div>
+																		</td>
+																		<td>
+																			<div class="w_activity">
+																				<input type="text" title="활동기간 시작일 입력"  class="comp-input_calendar js-datepicker ">
+																				<span class="txt">~</span>
+																				<input type="text" title="활동기간 마지막 입력"  class="comp-input_calendar js-datepicker ">
+																			</div>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>	
+														</div>
+													</div>
+													<div class="add-btn-position">
+														<button class="comm-btn_type2__green"><span>경력 및 활동 추가 +</span></button>
+													</div>
+												</div>
+											</td>
 										</tr>
 									</tbody>
 								</table>

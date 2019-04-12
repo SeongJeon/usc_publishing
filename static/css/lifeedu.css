@@ -301,6 +301,17 @@ SUB PAGE
 .application_process_lst .step { display: inline-block; position: absolute; left: -2px; top: -2px; width: 50px; height: 50px; padding-top: 13px; font-size: 11px; text-align: center; border-radius: 100px; background: #7c9ddb; line-height: 1; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; box-sizing: border-box; }
 .application_process_lst .step em { display: block; font-size: 17px; }
 
+.tbl-lifeedu { padding: 10px 3px 10px; margin: 4px 0; min-height: 230px; border: 1px solid #d9d6d5; }
+.tbl-lifeedu th { height: 30px; text-align: center; color: #787878; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; }
+.tbl-lifeedu th:nth-child(2) { text-align: left; padding-left: 66px; }
+.tbl-lifeedu td { padding: 3px 3px 2px; }
+.tbl-lifeedu .w_form input { width: 185px; }
+.tbl-lifeedu .w_form *[class^=comm-btn] { width: auto; padding: 0 10px; }
+.tbl-lifeedu .w_activity input { width: 127px; }
+.tbl-lifeedu .w_activity .txt { color: #787878; }
+.tbl-lifeedu .add-btn-position { text-align: right; margin-top: 5px; }
+.tbl-lifeedu .add-btn-position *[class^=comm-btn] { width: 145px; }
+
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
@@ -468,4 +479,16 @@ MEDIA QUERY
   .application_process_lst li + li:before { display: none; }
   .application_process_lst .step { position: static; width: 100%; height: 3rem; padding-top: 0; font-size: 1rem; border-radius: 0; line-height: 3rem; }
   .application_process_lst .step em { display: inline; margin-left: 0.5rem; font-size: 1.2rem; }
-  .application_process_lst .cont { display: block; padding-top: 0.7rem; word-break: keep-all; line-height: 1.6rem; } }
+  .application_process_lst .cont { display: block; padding-top: 0.7rem; word-break: keep-all; line-height: 1.6rem; }
+  .tbl-lifeedu { padding: 0.5rem 0.3rem; margin: 0.3rem 0; min-height: 24rem; }
+  .tbl-lifeedu th { height: 3rem; font-size: 1.1rem; }
+  .tbl-lifeedu th:nth-child(2) { padding-left: 66px; }
+  .tbl-lifeedu td { padding: 0.2rem; }
+  .tbl-lifeedu .w_form { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .tbl-lifeedu .w_form input { width: 100%; -webkit-flex: 1; flex: 1; }
+  .tbl-lifeedu .w_form *[class^=comm-btn] { width: auto; margin-left: 0.3rem; padding: 0 0.5rem; }
+  .tbl-lifeedu .w_activity { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .tbl-lifeedu .w_activity input { width: 100%; -webkit-flex: 1; flex: 1; }
+  .tbl-lifeedu .w_activity .txt { margin: 0 0.5rem; }
+  .tbl-lifeedu .add-btn-position { margin-top: 0.5rem; }
+  .tbl-lifeedu .add-btn-position *[class^=comm-btn] { width: 12rem; } }

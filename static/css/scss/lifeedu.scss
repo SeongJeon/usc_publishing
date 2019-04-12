@@ -553,6 +553,26 @@ SUB PAGE
 		em {display: block; font-size: 17px;}
 	}
 }
+// 등록폼
+.tbl-lifeedu {
+	padding:10px 3px 10px; margin:4px 0; min-height: 230px; border:1px solid #d9d6d5;
+	th {height:30px; text-align: center; color:#787878; font-family: $font2; font-size: 16px;}
+	th:nth-child(2) {text-align: left; padding-left: 66px;}
+	td {padding:3px 3px 2px;}
+	.w_form {
+		input {width:185px;}
+		*[class^=comm-btn] {width:auto; padding:0 10px;}
+	}
+	.w_activity {
+		input {width: 127px;}
+		.txt {color:#787878;}
+	}
+
+	.add-btn-position {
+		text-align: right; margin-top: 5px;
+		*[class^=comm-btn] {width:145px;}
+	}
+}
 
 
 
@@ -1054,6 +1074,30 @@ SUBPATE
 	}
 	.cont {display:block; padding-top:0.7rem; word-break: keep-all; line-height: 1.6rem;}
 }
+// 등록폼
+.tbl-lifeedu {
+	padding:0.5rem 0.3rem; margin:0.3rem 0; min-height: 24rem;
+	th {height:3rem; font-size: 1.1rem;}
+	th:nth-child(2) {padding-left: 66px;}
+	td {padding:0.2rem;}
+	.w_form {
+		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+		input {width:100%; -webkit-flex:1; flex:1; }
+		*[class^=comm-btn] {width:auto;margin-left: 0.3rem; padding:0 0.5rem;}
+	}
+	.w_activity {
+		display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex;
+		input {width: 100%; -webkit-flex:1; flex:1; }
+		.txt {margin:0 0.5rem;}
+	}
+
+	.add-btn-position {
+		margin-top: 0.5rem;
+		*[class^=comm-btn] {width:12rem;}
+	}
+}
+
+
 
 
 

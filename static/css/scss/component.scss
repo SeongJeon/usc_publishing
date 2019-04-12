@@ -670,6 +670,7 @@ br.m {display:none}
 	// ETC BUTTON
 	&[class*=_prev] {width: 39px; height: 39px; border:1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; @include background("common/btn_prev1.png",no-repeat 50% 50%);}
 	&[class*=_next] {width: 39px; height: 39px; border:1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; @include background("common/btn_next1.png",no-repeat 50% 50%);}
+
 } 
 
 
@@ -897,12 +898,12 @@ table[class^=comp-tbl] {
 	}
 	&[class*=_formtype] {
 		border-top: 2px solid #7a7a7a; color:#4b4b4b;
-		tbody{
-			th {
+		> tbody{
+			> tr > th {
 				height: 50px; padding:6px 13px 6px 23px; width:180px; border-bottom: 1px solid #d9d6d5; background:#f4f7f9; 
 				font-size: 16px; font-family: $font2;text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px; 
 			}
-			td {
+			> tr > td {
 				height: 50px; padding:6px 15px; font-size: 15px; border-bottom: 1px solid #d9d6d5; text-align: center; box-sizing: border-box; text-align: left;
 			}
 		}
@@ -937,6 +938,7 @@ input[class^=comp-input] {
 	&[class*=_h42] {height: 42px;}
 	&[class*=_h50] {height: 50px;}
 	&[disabled=disabled] {background:#f4f7f9;}
+	&[class*=_calendar] {background:#fff url("../../static/images/common/icon_cal.png") no-repeat 100% 50%;}
 }
 *[class^=comp-radio] {
 	input {outline: none}
@@ -1031,7 +1033,7 @@ select.w_select {width:155px;}
 	overflow: hidden; display: inline-block; vertical-align: middle;
 	li {position: relative; float: left; }
 	li+li {margin-left: 5px;}
-	label {display: inline-block; min-width:63px; padding:0 5px; line-height: 33px; border:1px solid #d9d6d5; text-align: center; font-size: 15px; color:#787878; cursor: pointer;}
+	label {display: inline-block; min-width:63px; padding:0 5px; line-height: 33px; border:1px solid #d9d6d5; text-align: center; font-size: 15px; color:#787878; cursor: pointer; background:#f4f7f9;}
 	input:checked + label {background:#2e56bd; color:#fff; }
 }
 .imp-txt {
@@ -2711,12 +2713,12 @@ table[class^=comp-tbl] {
 	}
 
 	&[class*=_formtype] {
-		tbody{
-			th {
+		> tbody{
+			> tr > th {
 				position: relative; height:4.3rem; padding:1.2rem 1rem 0.5rem 0.7rem; width:27%; word-break: keep-all;
 				font-size:1.2rem; line-height: 1.8rem;
 			}
-			td {
+			> tr > td {
 				height:4.3rem; padding:0.5rem 0.7rem; font-size:1.2rem;
 			}
 		}
@@ -2854,6 +2856,7 @@ textarea[class^=comp-textarea] {
 }
 
 /* INPUT SIZE */
+.imp-txt {float: none; margin-top: 0.5rem; line-height: 1.2; }
 input.w_writer {width:100%;}
 input.w_term {width:100%;}
 input.w_password {width:100%;}
@@ -2907,6 +2910,11 @@ select.w_select {width:100%;}
 		display: inline-block; margin-left: 2rem; vertical-align: top;
 		li {float: left; margin-left: 1.5rem; line-height: 1.5rem}
 	}
+}
+.w_radio2 {
+	margin-top: 0.5rem; 
+	label {min-width:5rem; line-height: 3rem; font-size: 1.1rem;}
+
 }
 
 

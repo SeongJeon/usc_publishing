@@ -548,8 +548,8 @@ table[class^=comp-tbl][class*=_boardtype] tbody td:first-child { border-left: 0;
 table[class^=comp-tbl][class*=_boardtype] tbody tr:last-child > * { border-bottom: 0; }
 table[class^=comp-tbl][class*=_boardtype] tbody tr:first-child > * { border-top: 1px solid #7a7a7a; }
 table[class^=comp-tbl][class*=_formtype] { border-top: 2px solid #7a7a7a; color: #4b4b4b; }
-table[class^=comp-tbl][class*=_formtype] tbody th { height: 50px; padding: 6px 13px 6px 23px; width: 180px; border-bottom: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px; }
-table[class^=comp-tbl][class*=_formtype] tbody td { height: 50px; padding: 6px 15px; font-size: 15px; border-bottom: 1px solid #d9d6d5; text-align: center; box-sizing: border-box; text-align: left; }
+table[class^=comp-tbl][class*=_formtype] > tbody > tr > th { height: 50px; padding: 6px 13px 6px 23px; width: 180px; border-bottom: 1px solid #d9d6d5; background: #f4f7f9; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px; }
+table[class^=comp-tbl][class*=_formtype] > tbody > tr > td { height: 50px; padding: 6px 15px; font-size: 15px; border-bottom: 1px solid #d9d6d5; text-align: center; box-sizing: border-box; text-align: left; }
 table[class^=comp-tbl][class*=_formtype] .important { float: right; color: #ff4e00; }
 table[class^=comp-tbl][class*=_formtype] .txt { line-height: 35px; }
 table[class^=comp-tbl] .bnone { border-left: 0 !important; }
@@ -567,6 +567,7 @@ input[class^=comp-input] { width: 100%; padding: 0 10px; height: 35px; border: 1
 input[class^=comp-input][class*=_h42] { height: 42px; }
 input[class^=comp-input][class*=_h50] { height: 50px; }
 input[class^=comp-input][disabled=disabled] { background: #f4f7f9; }
+input[class^=comp-input][class*=_calendar] { background: #fff url("../../static/images/common/icon_cal.png") no-repeat 100% 50%; }
 
 *[class^=comp-radio] input { outline: none; }
 *[class^=comp-radio] label { display: inline-block; position: relative; font-size: 16px; color: #333; cursor: pointer; }
@@ -639,7 +640,7 @@ select.w_select { width: 155px; }
 .w_radio2 { overflow: hidden; display: inline-block; vertical-align: middle; }
 .w_radio2 li { position: relative; float: left; }
 .w_radio2 li + li { margin-left: 5px; }
-.w_radio2 label { display: inline-block; min-width: 63px; padding: 0 5px; line-height: 33px; border: 1px solid #d9d6d5; text-align: center; font-size: 15px; color: #787878; cursor: pointer; }
+.w_radio2 label { display: inline-block; min-width: 63px; padding: 0 5px; line-height: 33px; border: 1px solid #d9d6d5; text-align: center; font-size: 15px; color: #787878; cursor: pointer; background: #f4f7f9; }
 .w_radio2 input:checked + label { background: #2e56bd; color: #fff; }
 
 .imp-txt { color: #e91010; float: right; line-height: 35px; }
@@ -1461,8 +1462,8 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   table[class^=comp-tbl][class*=_boardtype] thead th { height: 3.3rem; font-size: 1.2rem; }
   table[class^=comp-tbl][class*=_boardtype] tbody td { height: 3.3rem; font-size: 1.2rem; line-height: 1.6rem; padding: 0.5rem; }
   table[class^=comp-tbl][class*=_boardtype] .pc + * { border-left: 0; }
-  table[class^=comp-tbl][class*=_formtype] tbody th { position: relative; height: 4.3rem; padding: 1.2rem 1rem 0.5rem 0.7rem; width: 27%; word-break: keep-all; font-size: 1.2rem; line-height: 1.8rem; }
-  table[class^=comp-tbl][class*=_formtype] tbody td { height: 4.3rem; padding: 0.5rem 0.7rem; font-size: 1.2rem; }
+  table[class^=comp-tbl][class*=_formtype] > tbody > tr > th { position: relative; height: 4.3rem; padding: 1.2rem 1rem 0.5rem 0.7rem; width: 27%; word-break: keep-all; font-size: 1.2rem; line-height: 1.8rem; }
+  table[class^=comp-tbl][class*=_formtype] > tbody > tr > td { height: 4.3rem; padding: 0.5rem 0.7rem; font-size: 1.2rem; }
   table[class^=comp-tbl][class*=_formtype] .txt { line-height: 3.3rem; }
   table[class^=comp-tbl][class*=_formtype] .important { position: absolute; right: 0.5rem; line-height: 4.3rem; top: 0; }
   table[class^=comp-tbl] .pc { display: none; }
@@ -1521,6 +1522,7 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   *[class^=comp-check] input:checked ~ label:before { background-size: auto 100%; }
   textarea[class^=comp-textarea] { padding: 1rem; height: 15rem; font-size: 1.2rem; }
   /* INPUT SIZE */
+  .imp-txt { float: none; margin-top: 0.5rem; line-height: 1.2; }
   input.w_writer { width: 100%; }
   input.w_term { width: 100%; }
   input.w_password { width: 100%; }
@@ -1555,6 +1557,8 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   .w_radio .tit { font-size: 1.2rem; line-height: 1.5rem; }
   .w_radio .lst-radio { display: inline-block; margin-left: 2rem; vertical-align: top; }
   .w_radio .lst-radio li { float: left; margin-left: 1.5rem; line-height: 1.5rem; }
+  .w_radio2 { margin-top: 0.5rem; }
+  .w_radio2 label { min-width: 5rem; line-height: 3rem; font-size: 1.1rem; }
   /* UI - PAGING */
   *[class^=comp-paging] { margin-top: 4rem; }
   *[class^=comp-paging] > div { padding: 0 6rem; }

@@ -190,43 +190,43 @@
 									<p class="comp-lst_dotted ml2 mt10">2018. 7. 2. ~ 2022. 6. 30.(4년)</p>
 								</div>
 								<h3 class="heading-h3">공약사항</h3>
-								<div class="heading-table_auto mt35">
+								<div class="heading-table_auto mt35 js-propulsion">
 									<h4 class="heading-h4">공약 추진율</h4>
 									<div class="graph-border">
-										<div class="inner" style="width:20%">20%</div>
+										<div class="inner"></div>
 									</div>
 								</div>
-								<div class="heading-table_al-top mt40">
+								<div class="heading-table_al-top mt40 js_field">
 									<h4 class="heading-h4">분야별 비중</h4>
 									<div class="graph-dl">
 										<dl>
 											<dt>교육 및 사회복지 사업</dt>
 											<dd class="graph">
-												<div class="inner" style="width:10%">14건</div>
+												<div class="inner"><span class="num">14</span>건</div>
 											</dd>
 										</dl>
 										<dl>
 											<dt>문화/체육/관광 사업</dt>
 											<dd class="graph">
-												<div class="inner" style="width:22%">15건</div>
+												<div class="inner"><span class="num">15</span>건</div>
 											</dd>
 										</dl>
 										<dl>
 											<dt>도시재생사업</dt>
 											<dd class="graph">
-												<div class="inner" style="width:24%">16건</div>
+												<div class="inner"><span class="num">16</span>건</div>
 											</dd>
 										</dl>
 										<dl>
 											<dt>신성장 동력산업</dt>
 											<dd class="graph">
-												<div class="inner" style="width:26%">17건</div>
+												<div class="inner"><span class="num">17</span>건</div>
 											</dd>
 										</dl>
 									</div>
 								</div>
-								<div class="heading-table mt55">
-									<h4 class="heading-h4_color1">완료 : 0건</h4>
+								<div class="heading-table mt55 js-completion">
+									<h4 class="heading-h4_color1">완료 : <span class="num">10</span>건</h4>
 									<ul class="num-case">
 										<li>신성장동력<span class="num">0</span></li>
 										<li>도시재생<span class="num">0</span></li>
@@ -234,8 +234,8 @@
 										<li>교육 및 복지<span class="num">0</span></li>
 									</ul>
 								</div>
-								<div class="heading-table mt15">
-									<h4 class="heading-h4_type2_color2">추진중 : 62건</h4>
+								<div class="heading-table mt15 js-process">
+									<h4 class="heading-h4_type2_color2">추진중 : <span class="num">62</span>건</h4>
 									<ul class="num-case_type1">
 										<li>신성장동력<span class="num">17</span></li>
 										<li>도시재생<span class="num">16</span></li>
@@ -529,6 +529,30 @@
 										</table>
 									</div>
 								</div>
+								<div class="charge-info">
+									<ul class="list">
+										<li>
+											<div class="box">담당부서</div>
+											<div class="txt">땡땡땡</div>
+										</li>
+										<li>
+											<div class="box">담당자명</div>
+											<div class="txt">홍길동</div>
+										</li>
+										<li>
+											<div class="box">담당전화번호</div>
+											<div class="txt">000-0000-0000</div>
+										</li>
+										<li>
+											<div class="box">이메일</div>
+											<div class="txt">ddd@naver.com</div>
+										</li>
+										<li>
+											<div class="box">조회</div>
+											<div class="txt">0000</div>
+										</li>
+									</ul>
+								</div>
 								<!-- //D : 해당 부분에 서브페이지 작업 -->
 							</div>
 							<!--// 개별 컨텐츠 영역 -->
@@ -581,5 +605,24 @@
 <script type="text/javascript" src="../../static/js/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="../../static/js/iscroll.js"></script>
 <script type="text/javascript" src="../../static/js/common.js"></script>
+<script>
+	$(document).ready(function(){
+		var js_process = $('.js-process *[class^=heading] .num').html(), // 추진중
+			js_field = $('.js_field .graph-dl > dl')// 분야별 비중
+			js_completion = $('.js-completion *[class^=heading] .num').html(), // 완료
+			js_propulsion = $('.js-propulsion .inner'), // 공약별추진율
+			total = Math.ceil(js_process / (100 / js_completion));
+		js_propulsion.text(total + '%'); //공약별추진율 퍼센트
+		js_propulsion.css('width', total + '%'); //공약별추진율 그래프 넓이
+		
+		//분야별 비중 그래프
+		js_field.each(function(){
+			var num_tag = $(this).find('.num'),
+				num = num_tag.html();
+				graph_width = num / (100 / js_process);
+			$(this).find('.inner').css('width', graph_width + '%') // 분야별 비중 그래프 넓이
+		});
+	});
+</script>
 </body>
 </html>

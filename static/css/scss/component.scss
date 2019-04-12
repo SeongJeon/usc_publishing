@@ -913,7 +913,7 @@ table[class^=comp-tbl] {
 	.bnone {border-left:0 !important;}
 	.m {display: none;}
 	.subject {overflow:hidden; display: inline-block; max-width: 100%; text-overflow:ellipsis; white-space: nowrap; position: relative; top:4px;}
-	.file {display: inline-block; width: 26px; height: 26px; background:#eff0f1 url("../../static/images/common/btn_download.png") no-repeat 50% 50%; background-size: 14px auto; border:1px solid #d9d6d5; box-sizing: border-box; text-indent: -999em;}
+	span.file {display: inline-block; width: 26px; height: 26px; background:#eff0f1 url("../../static/images/common/btn_download.png") no-repeat 50% 50%; background-size: 14px auto; border:1px solid #d9d6d5; box-sizing: border-box; text-indent: -999em;}
 }
 
 
@@ -971,6 +971,7 @@ textarea[class^=comp-textarea] {
 /* INPUT SIZE */
 input.w_writer {width:220px; }
 input.w_password {width:135px;}
+select.w_select {width:155px;}
 .w_addr {
 	overflow: hidden;
 	& > * {float: left;}
@@ -1026,7 +1027,17 @@ input.w_password {width:135px;}
 		li:first-child {margin-left: 0;}
 	}
 }
-
+.w_radio2 {
+	overflow: hidden; display: inline-block; vertical-align: middle;
+	li {position: relative; float: left; }
+	li+li {margin-left: 5px;}
+	label {display: inline-block; min-width:63px; padding:0 5px; line-height: 33px; border:1px solid #d9d6d5; text-align: center; font-size: 15px; color:#787878; cursor: pointer;}
+	input:checked + label {background:#2e56bd; color:#fff; }
+}
+.imp-txt {
+	color:#e91010; float: right; line-height: 35px;
+	&:before {display: inline-block; content: "*"; margin-right: 3px; font-size: 16px;} 
+}
 
 
 /* UI - PAGING */
@@ -2846,6 +2857,7 @@ textarea[class^=comp-textarea] {
 input.w_writer {width:100%;}
 input.w_term {width:100%;}
 input.w_password {width:100%;}
+select.w_select {width:100%;}
 .w_addr {
 	& > * + * {margin-left: 0}
 	*[class^=comm-btn_type2] {width: 40%; margin-left: 2%}

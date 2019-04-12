@@ -555,7 +555,7 @@ table[class^=comp-tbl][class*=_formtype] .txt { line-height: 35px; }
 table[class^=comp-tbl] .bnone { border-left: 0 !important; }
 table[class^=comp-tbl] .m { display: none; }
 table[class^=comp-tbl] .subject { overflow: hidden; display: inline-block; max-width: 100%; text-overflow: ellipsis; white-space: nowrap; position: relative; top: 4px; }
-table[class^=comp-tbl] .file { display: inline-block; width: 26px; height: 26px; background: #eff0f1 url("../../static/images/common/btn_download.png") no-repeat 50% 50%; background-size: 14px auto; border: 1px solid #d9d6d5; box-sizing: border-box; text-indent: -999em; }
+table[class^=comp-tbl] span.file { display: inline-block; width: 26px; height: 26px; background: #eff0f1 url("../../static/images/common/btn_download.png") no-repeat 50% 50%; background-size: 14px auto; border: 1px solid #d9d6d5; box-sizing: border-box; text-indent: -999em; }
 
 /* INPUT */
 select[class^=comp-select] { width: 100%; padding: 0 10px; height: 35px; border: 1px solid #d9d6d5; box-sizing: border-box; line-height: 33px; font-size: 15px; color: #787878; background: #fff url("../../static/images/common/form_select3.png") no-repeat 100% 50%; }
@@ -588,6 +588,8 @@ textarea[class^=comp-textarea] { width: 100%; padding: 10px; height: 385px; bord
 input.w_writer { width: 220px; }
 
 input.w_password { width: 135px; }
+
+select.w_select { width: 155px; }
 
 .w_addr { overflow: hidden; }
 .w_addr > * { float: left; }
@@ -633,6 +635,15 @@ input.w_password { width: 135px; }
 .w_radio .lst-radio:after { display: block; clear: both; content: ""; }
 .w_radio .lst-radio li { float: left; margin-left: 18px; }
 .w_radio .lst-radio li:first-child { margin-left: 0; }
+
+.w_radio2 { overflow: hidden; display: inline-block; vertical-align: middle; }
+.w_radio2 li { position: relative; float: left; }
+.w_radio2 li + li { margin-left: 5px; }
+.w_radio2 label { display: inline-block; min-width: 63px; padding: 0 5px; line-height: 33px; border: 1px solid #d9d6d5; text-align: center; font-size: 15px; color: #787878; cursor: pointer; }
+.w_radio2 input:checked + label { background: #2e56bd; color: #fff; }
+
+.imp-txt { color: #e91010; float: right; line-height: 35px; }
+.imp-txt:before { display: inline-block; content: "*"; margin-right: 3px; font-size: 16px; }
 
 /* UI - PAGING */
 *[class^=comp-paging] { margin-top: 60px; text-align: center; }
@@ -1513,6 +1524,7 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   input.w_writer { width: 100%; }
   input.w_term { width: 100%; }
   input.w_password { width: 100%; }
+  select.w_select { width: 100%; }
   .w_addr > * + * { margin-left: 0; }
   .w_addr *[class^=comm-btn_type2] { width: 40%; margin-left: 2%; }
   .w_addr input:first-of-type { width: 58%; }

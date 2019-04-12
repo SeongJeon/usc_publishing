@@ -186,6 +186,100 @@
 							<!-- 개별 컨텐츠 영역 -->
 							<div class="contents-zone">
 								<h3 class="heading-h3">일반강사등록</h3>
+								<table class="comp-tbl_formtype">
+									<caption>일반강사등록 - 강사명, 강사 이미지, 연락처, 주소, 이메일, 지원분야, 강사지원서, 자격증 및 면허, 경력 및 활동 내역</caption>
+									<colgroup>
+										<col>
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">강사명 <span class="important">*</span></th>
+											<td>
+												<input type="text" title="작성자 입력"  class="comp-input w_password">
+												<ul class="w_radio2">
+													<li><input type="radio" name="sex" id="female" checked="checked"><label for="female">여자</label></li>
+													<li><input type="radio" name="sex" id="men"><label for="men">남자</label></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">강사 이미지 <span class="important">*</span></th>
+											<td>
+												<div class="comp-filefind">
+													<input type="file" name="" id="">
+													<button type="button" class="comm-btn_type2 comp-btn_filefind"><span>이미지 첨부</span></button>
+													<p class="file-upload">홍길동.jpg (320 kb)</p>
+													<p class="imp-txt">500mb 이하로 첨부해주시기 바랍니다.</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">연락처</th>
+											<td>
+												<div class="w_phone">
+													<select name="" id="" title="집 전화번호 지역번호 2~3자리 선택" class="comp-select">
+														<option value="">054</option>
+													</select>
+													<span class="txt">-</span>
+													<input type="text" title="집 전화번호 중간 4자리 입력" class="comp-input">
+													<span class="txt">-</span>
+													<input type="text" title="집 전화번호 끝 4자리 입력" class="comp-input">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">주소 <span class="important">*</span></th>
+											<td>
+												<div class="w_addr">
+													<input type="text" title="우편번호 입력" class="comp-input">
+													<a href="#" class="comm-btn_type2_blue"><span>우편번호</span></a>
+													<input type="text" title="주소 입력" class="comp-input">
+													<input type="text" title="상세주소 입력" class="comp-input" placeholder="상세주소를 입력하세요.">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">이메일 <span class="important">*</span></th>
+											<td>
+												<div class="w_email">
+													<input type="text" title="이메일 아이디 입력" class="comp-input">
+													<span class="txt">@</span>
+													<input type="text" title="이메일 도메인 입력" class="comp-input">
+													<select name="" id="" title="이메일 도메인 선택" class="comp-select">
+														<option value="">직접입력</option>
+													</select>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">지원분야 <span class="important">*</span></th>
+											<td>
+												<select name="" id="" title="지원분야 선택" class="comp-select w_select">
+													<option value="">기초문해</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">강사지원서 <span class="important">*</span></th>
+											<td>
+												<div class="comp-filefind">
+													<input type="file" name="" id="">
+													<button type="button" class="comm-btn_type2 comp-btn_filefind"><span>파일첨부</span></button>
+													<p class="file-upload">홍길동 강사지원서.pdf (320 kb)</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">자격증 및 면허 <span class="important">*</span></th>
+											<td></td>
+										</tr>
+										<tr>
+											<th scope="row">경력 및 	활동 내역 <span class="important">*</span></th>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
 							
 								<div class="comp-btn-zone">
 									<button type="submit" class="comm-btn_type1__deeporange"><span>신청하기</span></button>

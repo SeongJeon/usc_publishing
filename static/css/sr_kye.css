@@ -101,6 +101,11 @@ SUB PAGE
 .vision .vision-list .list04 .vision-detail .num {background:#016dae;}
 
 .farm .comp-lst_dotted + .comp-tbl_datatype {margin-left:65px;}
+.farm .img-list {margin:15px 0 0 65px;}
+.farm .img-list li {margin-top:25px;}
+.farm .img-list li:first-child {margin-top:0;}
+.farm .img-list li .txt {font-size:18px;color:#333;}
+.farm .img-list li .tit {display:inline-block;width:112px;height:30px;margin:0 11px 27px 0;background:#f75100;color:#fff;text-align:center;line-height:30px;border-radius:30px;}
 
 .summary .comp-lst_dotted .point {color:#44af27;}
 .summary .comp-lst_dotted .point:before {background:#44af27}

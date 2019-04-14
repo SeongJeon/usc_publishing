@@ -390,7 +390,8 @@ MEDIA QUERY
   .summary .usc .tp-organization .part:before { width: 6px; height: 6px; margin: -4px; }
   .summary .usc .tp-organization .part-area li { width: 15rem; height: 3rem; font-size: 1.2rem; line-height: 3rem; }
   .summary .usc .tp-organization .part-area li:after { width: 6px; height: 6px; margin-left: -4px; }
-  .summary .tp-organization .organization-chart .part { width: 15rem; height: 3rem; min-height: auto; font-size: 1.2rem; line-height: 3rem; } }
+  .summary .tp-organization .organization-chart .part { width: 15rem; height: 3rem; min-height: auto; font-size: 1.2rem; line-height: 3rem; }
+  /* 의성농업현황 */ }
 @media (max-width: 768px) { /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */
   /* 이수증 */
   .fm_part05 ul.comp-lst_dotted_grey { height: auto; }

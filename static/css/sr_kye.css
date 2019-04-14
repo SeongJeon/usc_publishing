@@ -102,7 +102,7 @@ SUB PAGE
 
 .farm .img-area {margin-top:18px;}
 .farm .comp-lst_dotted + .comp-tbl_datatype {margin-left:65px;}
-.farm .img-list {margin:15px 0 0 65px;}
+.farm .img-list {margin:15px 0 0 50px;}
 .farm .img-list li {margin-top:25px;}
 .farm .img-list li:first-child {margin-top:0;}
 .farm .img-list li .txt {margin-bottom:27px;font-size:18px;color:#333;}

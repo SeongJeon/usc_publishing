@@ -189,32 +189,32 @@
 								<div class="list-propulsion mt20 ml20">
 									<ul class="list">
 										<li class="ball-color0">
-											<div class="txt">총 공약수 62</div>
-											<div class="graph"><div class="inner" style="width:calc(62% + 4px);"></div></div>
+											<div class="txt">총 공약수 <span class="num">62</span></div> <!-- num에 건수 입력시 자동계산됩니다. -->
+											<div class="graph"><div class="inner" style="width:100%"></div></div>
 										</li>
 										<li class="ball-color1">
-											<div class="txt">완료 0</div>
-											<div class="graph"><div class="inner" style="width:calc(0% + 4px);"></div></div>
+											<div class="txt">완료 <span class="num">0</span></div><!-- num에 건수 입력시 자동계산됩니다. -->
+											<div class="graph"><div class="inner"></div></div>
 										</li>
 										<li class="ball-color2">
-											<div class="txt">완료 후 계속추진 0</div>
-											<div class="graph"><div class="inner" style="width:calc(0% + 4px);"></div></div>
+											<div class="txt">완료 후 계속추진 <span class="num">0</span></div><!-- num에 건수 입력시 자동계산됩니다. -->
+											<div class="graph"><div class="inner"></div></div>
 										</li>
 										<li class="ball-color3">
-											<div class="txt">정상추진 61</div>
-											<div class="graph"><div class="inner" style="width:calc(61% + 4px);"></div></div>
+											<div class="txt">정상추진 <span class="num">61</span></div><!-- num에 건수 입력시 자동계산됩니다. -->
+											<div class="graph"><div class="inner"></div></div>
 										</li>
 										<li class="ball-color4">
-											<div class="txt">일부추진 1</div>
-											<div class="graph"><div class="inner" style="width:calc(1% + 4px);"></div></div>
+											<div class="txt">일부추진 <span class="num">1</span></div><!-- num에 건수 입력시 자동계산됩니다. -->
+											<div class="graph"><div class="inner"></div></div>
 										</li>
 										<li class="ball-color5">
-											<div class="txt">보류 0</div>
-											<div class="graph"><div class="inner" style="width:calc(0% + 4px);"></div></div>
+											<div class="txt">보류 <span class="num">0</span></div><!-- num에 건수 입력시 자동계산됩니다. -->
+											<div class="graph"><div class="inner"></div></div>
 										</li>
 										<li class="ball-color6">
-											<div class="txt">기타 0</div>
-											<div class="graph"><div class="inner" style="width:calc(0% + 4px);"></div></div>
+											<div class="txt">기타 <span class="num">0</span></div><!-- num에 건수 입력시 자동계산됩니다. -->
+											<div class="graph"><div class="inner"></div></div>
 										</li>
 									</ul>
 								</div>
@@ -792,43 +792,9 @@
 										</table>
 									</div>
 								</div>
-
-								
-								
-
-
 								<!-- //D : 해당 부분에 서브페이지 작업 -->
 							</div>
 							<!--// 개별 컨텐츠 영역 -->
-
-							<!-- 고객 만족도 영역 -->
-							<div class="customer-zone">
-								<div class="customer-top">
-									<ul class="addr">
-										<li class="icon-part">담당부서 : 토지관리팀</li>
-										<li class="icon-person">담당자 : 홍길동</li>
-										<li class="icon-number">연락처 : 054-123-1234</li>
-									</ul>
-									<p class="date">최종수정일 : <time>2019-01-01</time></p>
-								</div>
-								<div class="customer-bottom">
-									<div class="agreebox">
-										<p class="txt">이 페이지에서 제공하는 정보와 사용편의성에  만족하시나요?</p>
-										<ul class="radio-lst" role="radiogroup">
-											<li><input type="radio" name="agree" id="agree1"><label for="agree1">매우만족</label></li>
-											<li><input type="radio" name="agree" id="agree2"><label for="agree2">만족</label></li>
-											<li><input type="radio" name="agree" id="agree3"><label for="agree3">보통</label></li>
-											<li><input type="radio" name="agree" id="agree4"><label for="agree4">불만족</label></li>
-											<li><input type="radio" name="agree" id="agree5"><label for="agree5">매우불만족</label></li>
-										</ul>
-									</div>
-									<div class="form">
-										<input type="text" name="" title="의견 입력" id="" placeholder="여러분의 소중한 의견을 남겨주세요">
-										<button type="submit"><span>의견 반영하기</span></button>
-									</div>
-								</div>
-							</div>
-							<!--// 고객 만족도 영역 -->
 						</section>
 					</div>
 					<!--// CONTENTS -->
@@ -851,3 +817,17 @@
 <script type="text/javascript" src="../../static/js/common.js"></script>
 </body>
 </html>
+<script>
+	var total = parseInt($(".ball-color0 .num").text());
+
+	$(".list li").each(function(){
+		if($(this).index() == 0) return;
+
+		var num = Math.ceil(parseInt($(this).find(".num").text()) / (total / 100)), 
+			 inner = $(this).find(".inner");
+
+		inner.css({"width": num+"%"});
+	})
+
+
+</script>

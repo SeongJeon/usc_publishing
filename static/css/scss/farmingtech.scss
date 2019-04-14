@@ -382,7 +382,7 @@ SUB PAGE
 			width:635px;height:322px;
 			&:before {height:134px;}
 			&:after {width:404px;margin-left:-203px;}
-			p[class^=lnk].lnk1 {background:#ffd401;font-family:"NanumSquareEB","Malgun Gothic","굴림",Gulim,"돋움",Dotum,Sans-serif;line-height:148px;border:0;font-size:18px;border-radius:50%;}
+			p[class^=lnk].lnk1 {font-family:"NanumSquareEB","Malgun Gothic","굴림",Gulim,"돋움",Dotum,Sans-serif;line-height:148px;border:0;font-size:18px;border-radius:50%; @include background("farmingtech/subpage/bg_round.png",no-repeat 50% 50%); background-size: 100% 100%;}
 			p[class^=lnk].lnk2 {top:195px;width:238px;margin-left:-119px;background:#dea12f;line-height:50px;font-family:"NanumSquareEB","Malgun Gothic","굴림",Gulim,"돋움",Dotum,Sans-serif;border:0;font-size:18px;border-radius:30px;}
 		}
 		.partgroup {
@@ -402,6 +402,12 @@ SUB PAGE
 	}
 	.comp-lst_important.point {color:#f4620a}
 	.comp-lst_important.point:before {background:none;}
+}
+/* 의성농업현황 */
+// 주요농산물 
+.h-img {
+	position: relative; top:-7px; margin-left: 3px;
+	img {vertical-align: top}
 }
 
 
@@ -898,6 +904,12 @@ COMMON
 		.part-area li:after {width:6px;height:6px;margin-left:-4px;}
 	}
 	.tp-organization .organization-chart .part {width:15rem;height:3rem;min-height:auto;font-size:1.2rem;line-height:3rem;}
+}
+/* 의성농업현황 */
+// 주요농산물 
+.h-img {
+	position: relative; top:-7px; margin-left: 3px;
+	img {vertical-align: top}
 }
 
 //-------------------------------------------------------------------------------

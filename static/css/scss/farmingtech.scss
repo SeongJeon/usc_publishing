@@ -332,6 +332,107 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+/* 센터소개 - 주요업무 */
+.fm_part01 {
+	.f_box { 
+		padding-bottom:30px; border-bottom:1px solid #d6d8ed; 
+		&:last-of-type {border-bottom: 0; }
+		.txt { padding:5px 0 0 420px; }
+		.txt .heading-h4 { margin-left:0; }
+	}
+	.img { 
+		float: left;
+		img{ width:400px; height: 280px;}
+	}
+}
+/* 이수증 */
+.fm_part05 {
+	.info { 
+		position: relative; width:1012px; padding:18px 20px 18px 12px; border:1px solid #dddbda;
+		&:before { display: block; width:978px; height:209px; background:url(../images/farmingtech/subpage/bg_border.png) no-repeat center center; content: '';}
+	}
+	ul.comp-lst_dotted_grey { 
+		display: inline-block; position: absolute; top:56px; left:76px; 
+		&:before { display:inline-block; position: absolute; top:0; left:0; width:96px; height:140px; background: url(../images/farmingtech/subpage/bg_medal.png) no-repeat 0 0; content:'';}
+		li { margin-left:125px;}
+	}
+	.fm_part05 .comp-tbl_boardtype .txt { text-align: left;}
+}
+.form_zone {
+	position: relative;
+	select { width:377px; margin-left:0; background-color: #f4f7f9; }
+	input { width:379px; }
+	.form_btn { 
+		position: absolute; top:7px; right:0; width: 144px; height:136px; background-color: #fff;
+		button { width:138px; height:136px; line-height:136px; font-size: 17px;}
+	}
+}
+/* 의성농업대학 - 기본개요 */
+.summary {
+	.comp-lst_dotted {
+		.point {color:#44af27;} 
+		.point:before {background:#44af27}
+		.usc:before {background:none;}
+	}
+	.usc {margin:20px 0 30px -50px;}
+	.usc .tp-organization , 
+	.tp-organization .organization-chart {overflow:hidden;}
+	.usc .tp-organization {
+		.chartimg {
+			width:635px;height:322px;
+			&:before {height:134px;}
+			&:after {width:404px;margin-left:-203px;}
+			p[class^=lnk].lnk1 {background:#ffd401;font-family:"NanumSquareEB","Malgun Gothic","굴림",Gulim,"돋움",Dotum,Sans-serif;line-height:148px;border:0;font-size:18px;border-radius:50%;}
+			p[class^=lnk].lnk2 {top:195px;width:238px;margin-left:-119px;background:#dea12f;line-height:50px;font-family:"NanumSquareEB","Malgun Gothic","굴림",Gulim,"돋움",Dotum,Sans-serif;border:0;font-size:18px;border-radius:30px;}
+		}
+		.partgroup {
+			width:635px;margin:0 auto;
+			.part-area {float:left;}
+			.part-area + .part-area {float:right;}
+		}
+		.part {
+			width:230px;height:40px;min-height:40px;font-size: 17px; line-height: 38px; text-align: center; background: #fe970e; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif;border:0;
+			&:before {background:#fe970e;}
+		}
+		.part-area li {
+			position:relative;height:40px;margin-top:20px;line-height:38px;background:#cbcaca;font-size:16px;font-family:'NanumSquareR';
+			&:before {position:absolute;top:-20px;left:50%;display:inline-block;width:1px;height:11px;background:#cbcaca;content:'';}
+			&:after {position:absolute;top:-8px;left:50%;display:inline-block;width:10px;height:10px;margin-left:-6px;background:#cbcaca;border:2px solid #fff;border-radius:50%;z-index:10;content:'';}
+		}
+	}
+	.comp-lst_important.point {color:#f4620a}
+	.comp-lst_important.point:before {background:none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -546,7 +647,6 @@ COMMON
 ------------------------------------------------------ */ 
 #wrap.farmingtech  {
 	*[class^=heading][class*=-h3]:before {height: 1.5rem;} 
-
 }
 
 /* ------------------------------------------------------
@@ -749,34 +849,78 @@ COMMON
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------
 - SUB PAGE
 ------------------------------------------------------ */
-
-
-
-
+/* 센터소개 - 주요업무 */
+.fm_part01 {
+	.f_box .txt { padding-left:45%; }
+	.img { 
+		width:40%; 
+		img { width:100%; height: auto; }
+	}
+}
+/* 이수증 */
+.form_zone{
+	select { width:100%; }
+	input { width:100%; }
+	.form_btn {
+		position: static; width:100%; height: 3.5rem; margin-top:1rem;
+		button{ width:100%; height:100%; line-height: 3.5rem; font-size: 1.3rem; }
+	}
+}
+.fm_part05 {
+	.info { 
+		width:100%; padding: 1rem;
+		&:before { 
+			width:100%; background: url(../images/farmingtech/subpage/bg_left.png) no-repeat, url(../images/farmingtech/subpage/bg_right.png) no-repeat 100% 0, url(../images/farmingtech/subpage/repeat-x.png) repeat-x;
+			background-size:auto 100%, auto 100%;
+		}
+	}
+	ul.comp-lst_dotted_grey { 
+		top:5rem; left:5rem; max-height:12rem;
+		&:before { width:6rem; background-size: contain;}
+		li { margin-left:8rem; margin-right:5rem; line-height: 2rem;}
+	}
+}
+/* 의성농업대학 - 기본개요 */
+.summary {
+	.usc .tp-organization {
+		margin-left: 2rem;
+		.chartimg {width:100%;height:24rem;}
+		.chartimg:before {top:9rem;height:50%;}
+		.chartimg p[class^=lnk].lnk1 {line-height:10rem;font-size:1.5rem;}
+		.chartimg p[class^=lnk].lnk2 {top:14rem;width:19rem;margin-left:-9.5rem;font-size:1.2rem;line-height:3rem;}
+		.chartimg:after {width:calc(100% - 15rem);margin-left:calc(-50% + 7.5rem);}
+		.partgroup {display:block;width:100%;}
+		.part:before {width:6px;height:6px;margin:-4px;}
+		.part-area li {width:15rem;height:3rem;font-size:1.2rem;line-height:3rem;}
+		.part-area li:after {width:6px;height:6px;margin-left:-4px;}
+	}
+	.tp-organization .organization-chart .part {width:15rem;height:3rem;min-height:auto;font-size:1.2rem;line-height:3rem;}
+}
 
 //-------------------------------------------------------------------------------
 } @media (max-width:768px){
+/* ------------------------------------------------------
+- SUB PAGE
+------------------------------------------------------ */
+/* 이수증 */
+.fm_part05 {
+	ul.comp-lst_dotted_grey {
+		height: auto;
+		li { margin-left:6.5rem; font-size: 1.1rem; line-height: 1.5rem;}
+		li:first-child { margin-top:0 !important;}
+		li:last-child { margin-bottom:1rem !important;}
+	}
+}
+/* 의성농업대학 - 기본개요 */
+.summary {
+	.usc .tp-organization .partgroup {width:100%;}
+	.usc .tp-organization .part-area li {width:13rem;}
+	.usc .tp-organization .chartimg:after {width:calc(100% - 13rem);margin-left:calc(-50% + 6.5rem);}
+	.tp-organization .organization-chart .part {width:13rem;}
+}
 } @media (max-width:360px){
 } @media (max-width:321px){
 /* ------------------------------------------------------
@@ -797,6 +941,10 @@ COMMON
 		.curr-weather {float: none; width: 100%;}
 	}
 }
+/* ------------------------------------------------------
+- SUB PAGE
+------------------------------------------------------ */
+
 //-------------------------------------------------------------------------------
 }
 

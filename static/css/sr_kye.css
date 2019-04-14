@@ -107,26 +107,97 @@ SUB PAGE
 .farm .img-list li .txt {font-size:18px;color:#333;}
 .farm .img-list li .tit {display:inline-block;width:112px;height:30px;margin:0 11px 27px 0;background:#f75100;color:#fff;text-align:center;line-height:30px;border-radius:30px;}
 
-.summary .comp-lst_dotted .point {color:#44af27;}
-.summary .comp-lst_dotted .point:before {background:#44af27}
-.summary .comp-lst_dotted .usc:before {background:none;}
-.summary .usc {margin:20px 0 30px -50px;}
-.summary .usc .tp-organization , .summary .tp-organization .organization-chart {overflow:hidden;}
-.summary .usc .tp-organization .chartimg {width:635px;height:322px;}
-.summary .usc .tp-organization .chartimg:before {height:134px;}
-.summary .usc .tp-organization .chartimg:after {width:404px;margin-left:-203px;}
-.summary .usc .tp-organization .chartimg p[class^=lnk].lnk1 {background:#ffd401;font-family:"NanumSquareEB","Malgun Gothic","굴림",Gulim,"돋움",Dotum,Sans-serif;line-height:148px;border:0;font-size:18px;border-radius:50%;}
-.summary .usc .tp-organization .chartimg p[class^=lnk].lnk2 {top:195px;width:238px;margin-left:-119px;background:#dea12f;line-height:50px;font-family:"NanumSquareEB","Malgun Gothic","굴림",Gulim,"돋움",Dotum,Sans-serif;border:0;font-size:18px;border-radius:30px;}
-.summary .usc .tp-organization .partgroup {width:635px;margin:0 auto;}
-.summary .usc .tp-organization .partgroup .part-area {float:left;}
-.summary .usc .tp-organization .partgroup .part-area + .part-area {float:right;}
-.summary .tp-organization .organization-chart .part {width:230px;height:40px;min-height:40px;font-size: 17px; line-height: 38px; text-align: center; background: #fe970e; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif;border:0;}
-.summary .usc .tp-organization .part:before {background:#fe970e;}
-.summary .usc .tp-organization .part-area li {position:relative;height:40px;margin-top:20px;line-height:38px;background:#cbcaca;font-size:16px;font-family:'NanumSquareR';}
-.summary .usc .tp-organization .part-area li:before {position:absolute;top:-20px;left:50%;display:inline-block;width:1px;height:11px;background:#cbcaca;content:'';}
-.summary .usc .tp-organization .part-area li:after {position:absolute;top:-8px;left:50%;display:inline-block;width:10px;height:10px;margin-left:-6px;background:#cbcaca;border:2px solid #fff;border-radius:50%;z-index:10;content:'';}
-.summary .comp-lst_important.point {color:#f4620a}
-.summary .comp-lst_important.point:before {background:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------
 BROWSER HACK
@@ -187,22 +258,7 @@ MEDIA QUERY
 	.vision .vision-list .vision-detail .num-list li .num {width:2rem;height:2rem;line-height:2rem;font-size:1.2rem;vertical-align:top;}
 	.vision .vision-list .vision-detail .num-list li .txt {width:-webkit-calc(100% - 2.5rem);width:-moz-calc(100% - 2.5rem);width:-o-calc(100% - 2.5rem);width:calc(100% - 2.5rem);padding-left:.5rem;font-size:1.4rem;line-height:1.2;}
 
-	.summary .usc .tp-organization .chartimg {width:100%;height:24rem;}
-	.summary .usc .tp-organization .chartimg:before {top:9rem;height:50%;}
-	.summary .usc .tp-organization .chartimg p[class^=lnk].lnk1 {line-height:10rem;font-size:1.5rem;}
-	.summary .usc .tp-organization .chartimg p[class^=lnk].lnk2 {top:14rem;width:19rem;margin-left:-9.5rem;font-size:1.2rem;line-height:3rem;}
-	.summary .usc .tp-organization .chartimg:after {width:calc(100% - 15rem);margin-left:calc(-50% + 7.5rem);}
-	.summary .usc .tp-organization .partgroup {display:block;width:100%;}
-	.summary .tp-organization .organization-chart .part {width:15rem;height:3rem;min-height:auto;font-size:1.2rem;line-height:3rem;}
-	.summary .usc .tp-organization .part:before {width:6px;height:6px;margin:-4px;}
-	.summary .usc .tp-organization .part-area li {width:15rem;height:3rem;font-size:1.2rem;line-height:3rem;}
-	.summary .usc .tp-organization .part-area li:after {width:6px;height:6px;margin-left:-4px;}
-
 } @media (max-width:781px){
-	.summary .usc .tp-organization .partgroup {width:100%;}
-	.summary .tp-organization .organization-chart .part {width:13rem;}
-	.summary .usc .tp-organization .part-area li {width:13rem;}
-	.summary .usc .tp-organization .chartimg:after {width:calc(100% - 13rem);margin-left:calc(-50% + 6.5rem);}
 } @media (max-width:321px){
 	.vision .vision-wrap .tit:after {left:4.5rem;}
 	.vision .vision-list .vision-detail .tit-txt p {padding:1rem 1rem 0;font-size:1.2rem;}

@@ -308,9 +308,8 @@ MEDIA QUERY
 	.summary .usc .tp-organization .part-area li {width:15rem;height:3rem;font-size:1.2rem;line-height:3rem;}
 	.summary .usc .tp-organization .part-area li:after {width:6px;height:6px;margin-left:-4px;}
 	.techniques .heading-h3 + .img-area {margin:.9rem 0;}
-	.techniques .heading-h3 + .img-area .btn-pdf {bottom:9rem;left:50%;right:auto;margin-left:7rem;width:10rem;height:3rem;line-height:3rem;}
+	.techniques .heading-h3 + .img-area .btn-pdf {bottom:auto;left:50%;top:50%;right:auto;margin:9vw 0 0 10vw;width:10rem;height:3rem;line-height:3rem;}
 	.techniques .pdf-txt {height:inherit;margin-bottom:.8rem;padding:.7rem;line-height:inherit;}
-
 	.techniques .btn-wrap li {width:-webkit-calc((100% / 3) - 9px);width:-moz-webkit-calc((100% / 3) - 9px);width:-o-webkit-calc((100% / 3) - 9px);width:-webkit-calc((100% / 3) - 9px);}
 	.techniques .btn-wrap .btn-pdf {height:3rem;padding-left:1rem;line-height:3rem;}
 	.techniques .btn-wrap .comm-btn_download2:after {width:3rem;height:3rem;}

@@ -241,6 +241,30 @@ SUB PAGE
 .farm .heading-h4.type_img:before { top: 7px; }
 .farm .txt-img { display: inline-block; width: 117px; height: 33px; margin-left: 2px; vertical-align: 8px; background: url(../images/farmingtech/subpage/txt_farm.png) no-repeat left top; text-indent: -999em; }
 
+.cooking .cooking-wrap { overflow: hidden; padding-bottom: 12px; border-bottom: 1px solid #c7c1bf; }
+.cooking .cooking-wrap .heading-h3 { padding-bottom: 20px; margin-bottom: 12px; border-bottom: 2px solid #fe970e; }
+.cooking .cooking-wrap .img-area { float: left; margin-right: 23px; }
+.cooking .cooking-wrap .img-area img { display: inline-block; width: 370px; }
+.cooking .cooking-wrap .cooking-info { float: left; width: 61%; }
+.cooking .cooking-wrap .cooking-info > li { display: table; width: 100%; height: 183px; border: 1px solid #dddbdb; }
+.cooking .cooking-wrap .cooking-info > li + li { margin-top: -1px; }
+.cooking .cooking-wrap .cooking-info > li .tit { display: table-cell; width: 99px; background: #f1f3f4; vertical-align: middle; text-align: center; font-size: 17px; font-family: 'NanumSquareB'; color: #1c1c1c; }
+.cooking .cooking-wrap .cooking-info > li ol { display: table-cell; padding-left: 18px; vertical-align: middle; }
+.cooking .cooking-wrap .cooking-info > li ul { display: table-cell; padding-left: 18px; vertical-align: middle; }
+.cooking .cooking-wrap .cooking-info > li .num-list li { margin-top: 8px; padding-left: 18px; text-indent: -18px; font-size: 15px; line-height: 1.2; color: #4b4b4b; font-family: 'NanumSquareB'; }
+.cooking .cooking-wrap .cooking-info > li .comp-lst_dotted li { font-size: 15px; }
+.cooking .cooking-wrap .cooking-info > li .num-list li:first-child { margin-top: 0; }
+.cooking .cooking-banner { margin: 40px 0; }
+.cooking .cooking-banner .img-area { display: inline-block; width: 100px; height: 100px; }
+.cooking .cooking-banner .img-area button { position: relative; }
+.cooking .cooking-banner .layer { display: none; position: absolute; top: 0; left: 0; width: 100px; height: 100px; background: rgba(0, 0, 0, 0.6); border-radius: 100%; font-family: 'NanumSquareB'; color: #fff; text-align: center; border: 5px solid #f27405; box-sizing: border-box; }
+.cooking .cooking-banner .layer span { display: block; position: absolute; top: 50%; left: 50%; width: 100%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.cooking .cooking-banner .img-area:hover .layer, .cooking .cooking-banner .slick-current .layer { display: block; }
+.cooking .cooking-banner .slick-list { max-width: 87.2%; margin: 0 auto; }
+.cooking .cooking-banner .slick-arrow { position: absolute; top: 50%; margin-top: -16px; }
+.cooking .cooking-banner .slick-prev { left: 0; width: 18px; height: 32px; background: url(../images/farmingtech/subpage/btn_cooking_prev.png) no-repeat left top; text-indent: -999em; }
+.cooking .cooking-banner .slick-next { right: 0; width: 18px; height: 32px; background: url(../images/farmingtech/subpage/btn_cooking_next.png) no-repeat left top; text-indent: -999em; }
+
 /* 영농정보- 재배기술정보 */
 .techniques .heading-h3 + .img-area { position: relative; margin: 18px 0; }
 .techniques .heading-h3 + .img-area .btn-pdf { position: absolute; bottom: 126px; right: 172px; width: 227px; height: 48px; text-align: center; line-height: 48px; border: 1px solid #fff; background: rgba(255, 255, 255, 0.2); color: #fff; border-radius: 30px; }
@@ -420,6 +444,23 @@ MEDIA QUERY
   .farm .img-list li .tit { width: 5rem; height: 2rem; margin-right: .5rem; line-height: 2rem; text-indent: 0; }
   .farm .heading-h4.type_img:before { top: 7px; }
   .farm .txt-img { width: 7rem; height: 2rem; vertical-align: 6px; background-size: 100%; }
+  .cooking .cooking-wrap { padding-bottom: 0; border-bottom: 0; }
+  .cooking .cooking-wrap .heading-h3 { margin-bottom: .6rem; padding-bottom: 1rem; }
+  .cooking .cooking-wrap .img-area { float: none; margin: 0 0 .5rem 0; text-align: center; }
+  .cooking .cooking-wrap .cooking-info { float: none; width: 99.6%; }
+  .cooking .cooking-wrap .cooking-info > li { height: 15rem; }
+  .cooking .cooking-wrap .cooking-info > li .tit { width: 7rem; font-size: 1.5rem; }
+  .cooking .cooking-wrap .cooking-info > li ol { padding-left: .9rem; }
+  .cooking .cooking-wrap .cooking-info > li ul { padding-left: .9rem; }
+  .cooking .cooking-wrap .cooking-info > li .num-list { padding: 1rem; }
+  .cooking .cooking-wrap .cooking-info > li .num-list li { margin-top: .4rem; padding-left: 1.5rem; text-indent: -1.5rem; font-size: 1.2rem; }
+  .cooking .cooking-wrap .cooking-info > li .comp-lst_dotted li { font-size: 1.2rem; }
+  .cooking .cooking-banner { margin: 2rem 0; }
+  .cooking .cooking-banner .img-area { width: 5rem; height: 5rem; }
+  .cooking .cooking-banner .layer { width: 100%; height: 100%; font-size: 1.2rem; line-height: 1.8rem; }
+  .cooking .cooking-banner .slick-list { max-width: -webkit-calc(100% - 5rem); max-width: -moz-calc(100% - 5rem); max-width: -o-calc(100% - 5rem); max-width: calc(100% - 5rem); padding-left: .9rem; text-align: center; }
+  .cooking .cooking-banner .slick-track { margin-left: -1rem; }
+  .cooking .cooking-banner .slick-slide { margin-left: 1rem; }
   /* 영농정보- 재배기술정보 */
   .techniques .heading-h3 + .img-area { margin: .9rem 0; }
   .techniques .heading-h3 + .img-area .btn-pdf { bottom: auto; left: 50%; top: 50%; right: auto; margin: 9vw 0 0 10vw; width: 10rem; height: 3rem; line-height: 3rem; }
@@ -447,4 +488,5 @@ MEDIA QUERY
   #wrap.farmingtech #container.main .weather-zone .goto a { height: auto; padding: 1rem; }
   #wrap.farmingtech #container.main .weather-zone .goto a:after { display: inline-block; margin: 0 0 0 0.5rem; }
   #wrap.farmingtech #container.main .weather-zone .curr-weather { float: none; width: 100%; }
-  /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */ }
+  /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */
+  .cooking .cooking-wrap .img-area img { width: 100%; } }

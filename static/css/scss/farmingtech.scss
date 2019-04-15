@@ -405,12 +405,35 @@ SUB PAGE
 }
 /* 의성농업현황 */
 // 주요농산물 
-.h-img {
-	position: relative; top:-7px; margin-left: 3px;
-	img {vertical-align: top}
+.farm  {
+	.img-area {margin-top:18px;}
+	.comp-lst_dotted + .comp-tbl_datatype {margin-left:65px;}
+	.img-list {
+		margin:15px 0 0 50px;
+		li {
+			margin-top:25px;
+			&:first-child {margin-top:0;}
+			.txt {margin-bottom:27px;font-size:18px;color:#333;}
+			.tit {display:inline-block;width:112px;height:30px;margin-right:11px;background:#f75100;color:#fff;text-align:center;line-height:30px;border-radius:30px;}
+		}
+	}
+	.heading-h4.type_img:before {top:7px;}
+	.txt-img {display:inline-block;width:117px;height:33px;margin-left:2px;vertical-align:8px;background:url(../images/farmingtech/subpage/txt_farm.png) no-repeat left top;text-indent:-999em;}
 }
 
-
+/* 영농정보- 재배기술정보 */
+.techniques {
+	.heading-h3 + .img-area {position:relative;margin:18px 0;}
+	.heading-h3 + .img-area .btn-pdf {position:absolute;bottom:126px;right:172px;width:227px;height:48px;text-align:center;line-height:48px;border:1px solid #fff;background:rgba(255,255,255,0.2);color:#fff;border-radius:30px;}
+	.pdf-txt {height:46px;margin-bottom:16px;line-height:46px;border:2px solid #dddbdb;text-align:center;}
+	.pdf-txt .comp-lst_important {display:inline-block;color:#4b4b4b;font-family:'NanumSquareB'}
+	.btn-wrap {margin:-7px 0 0 -7px;}
+	.btn-wrap li {display:inline-block;width:24%;margin:7px 0 0 7px;}
+	.btn-wrap .btn-pdf {position:relative;display:block;height:50px;padding-left:23px;line-height:50px;background:#fff3e9;color:#4a4a4a;box-sizing:border-box;}
+	.btn-wrap .comm-btn_download2:after {position:absolute;right:0;top:0;display:block;width:50px;height:50px;background-color:#ffd67e;content:'';}
+	.btn-wrap .btn-pdf:hover:before {position:absolute;top:0;left:0;display:block;width:99%;height:96%;border:2px solid #ffb007;content:'';}
+	.btn-wrap .comm-btn_download2:hover:after {background-color:#ffb007;}
+}
 
 
 
@@ -907,7 +930,29 @@ COMMON
 }
 /* 의성농업현황 */
 // 주요농산물 
+.farm {
+	.img-area {margin-top:.9rem; margin-left: -2rem;}
+	.heading-h3 + .img-area {margin-left: 0;}
+	// .comp-lst_dotted + .comp-tbl_datatype {width:95%;margin-left:3rem;}
+	.comp-lst_dotted + .comp-tbl_datatype {margin-left:0;}
+	.img-list {margin:.7rem 0 0 2rem;}
+	.img-list li {margin-top:1.8rem;}
+	.img-list li .txt {margin-bottom:1.4rem;padding-left:5rem;text-indent:-5.5rem;font-size:1.2rem;}
+	.img-list li .tit {width:5rem;height:2rem;margin-right:.5rem;line-height:2rem;text-indent:0;}
+	.heading-h4.type_img:before {top:7px;}
+	.txt-img {width:7rem;height:2rem;vertical-align:6px;background-size:100%;}
+}
 
+/* 영농정보- 재배기술정보 */
+.techniques {
+	.heading-h3 + .img-area {margin:.9rem 0;}
+	.heading-h3 + .img-area .btn-pdf {bottom:auto;left:50%;top:50%;right:auto;margin:9vw 0 0 10vw;width:10rem;height:3rem;line-height:3rem;}
+	.pdf-txt {height:inherit;margin-bottom:.8rem;padding:.7rem;line-height:inherit;}
+	.btn-wrap li {width:-webkit-calc((100% / 3) - 9px);width:-moz-webkit-calc((100% / 3) - 9px);width:-o-webkit-calc((100% / 3) - 9px);width:-webkit-calc((100% / 3) - 9px);}
+	.btn-wrap .btn-pdf {height:3rem;padding-left:1rem;line-height:3rem;}
+	.btn-wrap .comm-btn_download2:after {width:3rem;height:3rem;}
+	.btn-wrap .btn-pdf:hover:before {width:-webkit-calc(100% - 4px);width:-moz-webkit-calc(100% - 4px);width:-o-webkit-calc(100% - 4px);width:-webkit-calc(100% - 4px);height:-webkit-calc(100% - 4px);height:-moz-webkit-calc(100% - 4px);height:-o-webkit-calc(100% - 4px);height:-webkit-calc(100% - 4px);}
+}
 
 //-------------------------------------------------------------------------------
 } @media (max-width:768px){

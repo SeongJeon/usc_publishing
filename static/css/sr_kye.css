@@ -1,11 +1,11 @@
 @charset "utf-8";
- 
+
 
 
 /* ------------------------------------------------------
 [ FONT WEIGHT ]
 기본 공통 폰트 - 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
- 
+
 나눔스퀘어 
 'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font0
 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font1
@@ -132,8 +132,14 @@ SUB PAGE
 .summary .comp-lst_important.point:before {background:none;}
 .techniques .heading-h3 + .img-area {position:relative;margin:18px 0;}
 .techniques .heading-h3 + .img-area .btn-pdf {position:absolute;bottom:126px;right:172px;width:227px;height:48px;text-align:center;line-height:48px;border:1px solid #fff;background:rgba(255,255,255,0.2);color:#fff;border-radius:30px;}
-.techniques .pdf-txt {height:46px;line-height:46px;border:2px solid #dddbdb;text-align:center;}
-
+.techniques .pdf-txt {height:46px;margin-bottom:16px;line-height:46px;border:2px solid #dddbdb;text-align:center;}
+.techniques .pdf-txt .comp-lst_important {display:inline-block;color:#4b4b4b;font-family:'NanumSquareB'}
+.techniques .btn-wrap {margin:-7px 0 0 -7px;}
+.techniques .btn-wrap li {display:inline-block;width:24%;margin:7px 0 0 7px;}
+.techniques .btn-wrap .btn-pdf {position:relative;display:block;height:50px;padding-left:23px;line-height:50px;background:#fff3e9;color:#4a4a4a;box-sizing:border-box;}
+.techniques .btn-wrap .comm-btn_download2:after {position:absolute;right:0;top:0;display:block;width:50px;height:50px;background-color:#ffd67e;content:'';}
+.techniques .btn-wrap .btn-pdf:hover:before {position:absolute;top:0;left:0;display:block;width:99%;height:96%;border:2px solid #ffb007;content:'';}
+.techniques .btn-wrap .comm-btn_download2:hover:after {background-color:#ffb007;}
 
 
 
@@ -258,7 +264,7 @@ MEDIA QUERY
 	.institute .map-wrap[data-map=map17],
 	.institute .map-wrap[data-map=map18] {background-size:100%;}
 	.institute .btn-go {height:2rem;padding:0 .7rem;font-size:1.2rem;line-height:2.2rem}
-
+	
 	.vision .vision-wrap {padding:1.8rem 2rem 0;}
 	.vision .vision-wrap .tit {margin-bottom:.8rem;padding-bottom:2.5rem;font-size:1.6rem;}
 	.vision .vision-wrap .tit:after {left:5rem;height:2rem;}
@@ -301,7 +307,15 @@ MEDIA QUERY
 	.summary .usc .tp-organization .part:before {width:6px;height:6px;margin:-4px;}
 	.summary .usc .tp-organization .part-area li {width:15rem;height:3rem;font-size:1.2rem;line-height:3rem;}
 	.summary .usc .tp-organization .part-area li:after {width:6px;height:6px;margin-left:-4px;}
+	.techniques .heading-h3 + .img-area {margin:.9rem 0;}
+	.techniques .heading-h3 + .img-area .btn-pdf {bottom:9rem;left:50%;right:auto;margin-left:7rem;width:10rem;height:3rem;line-height:3rem;}
+	.techniques .pdf-txt {height:inherit;margin-bottom:.8rem;padding:.7rem;line-height:inherit;}
 
+	.techniques .btn-wrap li {width:-webkit-calc((100% / 3) - 9px);width:-moz-webkit-calc((100% / 3) - 9px);width:-o-webkit-calc((100% / 3) - 9px);width:-webkit-calc((100% / 3) - 9px);}
+	.techniques .btn-wrap .btn-pdf {height:3rem;padding-left:1rem;line-height:3rem;}
+	.techniques .btn-wrap .comm-btn_download2:after {width:3rem;height:3rem;}
+	.techniques .btn-wrap .btn-pdf:hover:before {width:-webkit-calc(100% - 4px);width:-moz-webkit-calc(100% - 4px);width:-o-webkit-calc(100% - 4px);width:-webkit-calc(100% - 4px);height:-webkit-calc(100% - 4px);height:-moz-webkit-calc(100% - 4px);height:-o-webkit-calc(100% - 4px);height:-webkit-calc(100% - 4px);}
+	
 } @media (max-width:781px){
 	.summary .usc .tp-organization .partgroup {width:100%;}
 	.summary .tp-organization .organization-chart .part {width:13rem;}

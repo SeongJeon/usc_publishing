@@ -140,6 +140,16 @@ SUB PAGE
 .techniques .btn-wrap .comm-btn_download2:after {position:absolute;right:0;top:0;display:block;width:50px;height:50px;background-color:#ffd67e;content:'';}
 .techniques .btn-wrap .btn-pdf:hover:before {position:absolute;top:0;left:0;display:block;width:99%;height:96%;border:2px solid #ffb007;content:'';}
 .techniques .btn-wrap .comm-btn_download2:hover:after {background-color:#ffb007;}
+.cooking .cooking-wrap {overflow:hidden;padding:12px 0;border-top:2px solid #fe970e;border-bottom:1px solid #c7c1bf}
+.cooking .cooking-wrap .img-area {float:left;margin-right:23px;}
+.cooking .cooking-wrap .cooking-info {float:left;width:61%}
+.cooking .cooking-wrap .cooking-info > li {display:table;width:100%;height:183px;border:1px solid #dddbdb;}
+.cooking .cooking-wrap .cooking-info > li .tit {display:table-cell;width:99px;background:#f1f3f4;vertical-align:middle;text-align:center;font-size:17px;font-family:'NanumSquareB';color:#1c1c1c;}
+.cooking .cooking-wrap .cooking-info > li ul {display:table-cell;padding-left:18px;vertical-align:middle;}
+.cooking .cooking-wrap .cooking-info > li .num-list li {margin-top:8px;padding-left:18px;text-indent:-18px;font-size:15px;line-height:1.2;color:#4b4b4b;font-family:'NanumSquareB';}
+.cooking .cooking-wrap .cooking-info > li .comp-lst_dotted li {font-size:15px;}
+.cooking .cooking-wrap .cooking-info > li .num-list li:first-child {margin-top:0;}
+
 
 
 
@@ -314,7 +324,15 @@ MEDIA QUERY
 	.techniques .btn-wrap .btn-pdf {height:3rem;padding-left:1rem;line-height:3rem;}
 	.techniques .btn-wrap .comm-btn_download2:after {width:3rem;height:3rem;}
 	.techniques .btn-wrap .btn-pdf:hover:before {width:-webkit-calc(100% - 4px);width:-moz-webkit-calc(100% - 4px);width:-o-webkit-calc(100% - 4px);width:-webkit-calc(100% - 4px);height:-webkit-calc(100% - 4px);height:-moz-webkit-calc(100% - 4px);height:-o-webkit-calc(100% - 4px);height:-webkit-calc(100% - 4px);}
-	
+	.cooking .cooking-wrap {padding:.6rem 0;}
+	.cooking .cooking-wrap .img-area {float:none;margin:0 0 .5rem 0;text-align:center;}
+	.cooking .cooking-wrap .cooking-info {float:none;width:99.7%}
+	.cooking .cooking-wrap .cooking-info > li {height:15rem;}
+	.cooking .cooking-wrap .cooking-info > li .tit {width:7rem;font-size:1.5rem;}
+	.cooking .cooking-wrap .cooking-info > li ul {padding-left:.9rem;}
+	.cooking .cooking-wrap .cooking-info > li .num-list {padding:1rem}
+	.cooking .cooking-wrap .cooking-info > li .num-list li {margin-top:.4rem;padding-left:1.5rem;text-indent:-1.5rem;font-size:1.2rem;}
+	.cooking .cooking-wrap .cooking-info > li .comp-lst_dotted li {font-size:1.2rem;}
 } @media (max-width:781px){
 	.summary .usc .tp-organization .partgroup {width:100%;}
 	.summary .tp-organization .organization-chart .part {width:13rem;}
@@ -328,6 +346,8 @@ MEDIA QUERY
 	.vision .vision-list .vision-detail .tit-txt p:after {width:1rem;height:1rem;}
 	
 	.farm .comp-lst_dotted + .comp-tbl_datatype {width:87%;}
+
+	.cooking .cooking-wrap .img-area img {width:100%;}
 }
 
 

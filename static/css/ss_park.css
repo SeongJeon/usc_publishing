@@ -27,6 +27,24 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+.vr {}
+.vr .gallery-vr {position:relative; background:#efeeed; padding:562px 40px 40px;}
+.vr .gallery-vr ul[role=tablist] {overflow:hidden; margin:-7px 0 0 -7px;}
+.vr .gallery-vr ul[role=tablist] > li {float:left; width:20%; padding:7px 0 0 7px; box-sizing:border-box;}
+.vr .gallery-vr ul[role=tablist] > li a {position:relative; display:block; height:135px; box-sizing:border-box;}
+.vr .gallery-vr ul[role=tablist] > li a:after {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1;}
+.vr .gallery-vr ul[role=tablist] > li a .thumbnail {position:relative; width:100%; height:100%; font-size:0;}
+.vr .gallery-vr ul[role=tablist] > li a[aria-selected=true] .thumbnail:before {position:relative; display:block; content:""; width:100%; height:100%; border:7px solid #edc834; box-sizing:border-box; z-index:3;}
+.vr .gallery-vr ul[role=tablist] > li a[aria-selected=true] .thumbnail:after {position:absolute; left:0; top:0; z-index:5; display:block; content:""; width:100%; height:100%; background:url(../../static/images/uscmuseum/subpage/bg_gallery_selected.png) no-repeat center; z-index:5;}
+.vr .gallery-vr ul[role=tablist] > li a .thumbnail img {position:absolute; left:0; top:0; width:100%; height:100%;}
+.vr .gallery-vr ul[role=tablist] > li a .txt {position:absolute; left:0; top:0;  display:table; width:100%; height:100%; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#fff; z-index:2;}
+.vr .gallery-vr ul[role=tablist] > li a[aria-selected=true] .txt {z-index:0;}
+
+.vr .gallery-vr ul[role=tablist] > li a .txt span {display:table-cell; vertical-align:middle; text-align:center}
+
+.vr .gallery-vr .cont-gallery {position:absolute; top:40px; right:40px; left:40px; }
+.vr .gallery-vr .cont-gallery .vr_area {width:100%; height:504px;}
+.vr .gallery-vr .cont-gallery .vr_area img {width:100%; height:100%; vertical-align:top;}
 
 
 
@@ -165,6 +183,15 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
+	.vr .gallery-vr {padding:48vw 1rem 1rem;}
+	.vr .gallery-vr .cont-gallery {top:1rem; right:1rem; left:1rem;}
+	.vr .gallery-vr .cont-gallery .vr_area {height:45vw;}
+	.vr .gallery-vr ul[role=tablist] {margin:0 0 0 -0.5rem;}
+	.vr .gallery-vr ul[role=tablist] > li {width:50%; padding:0.5rem 0 0 0.5rem;}
+	.vr .gallery-vr ul[role=tablist] > li a {height:12vw;}
+	.vr .gallery-vr ul[role=tablist] > li a[aria-selected=true] .thumbnail:before {border-width:0.3rem;}
+	.vr .gallery-vr ul[role=tablist] > li a[aria-selected=true] .thumbnail:after {background-size:2rem 1.4rem;}
+	.vr .gallery-vr ul[role=tablist] > li a .txt span {padding:0 1rem;}
 } @media (max-width:768px){
 } @media (max-width:321px){}
 

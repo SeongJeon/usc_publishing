@@ -187,12 +187,14 @@ MEDIA QUERY
 	.vr .gallery-vr .cont-gallery {top:1rem; right:1rem; left:1rem;}
 	.vr .gallery-vr .cont-gallery .vr_area {height:45vw;}
 	.vr .gallery-vr ul[role=tablist] {margin:0 0 0 -0.5rem;}
-	.vr .gallery-vr ul[role=tablist] > li {width:50%; padding:0.5rem 0 0 0.5rem;}
+	.vr .gallery-vr ul[role=tablist] > li {width:25%; padding:0.5rem 0 0 0.5rem;}
 	.vr .gallery-vr ul[role=tablist] > li a {height:12vw;}
 	.vr .gallery-vr ul[role=tablist] > li a[aria-selected=true] .thumbnail:before {border-width:0.3rem;}
 	.vr .gallery-vr ul[role=tablist] > li a[aria-selected=true] .thumbnail:after {background-size:2rem 1.4rem;}
 	.vr .gallery-vr ul[role=tablist] > li a .txt span {padding:0 1rem;}
 } @media (max-width:768px){
+	.vr .gallery-vr ul[role=tablist] > li {width:50%;}
+	.vr .gallery-vr ul[role=tablist] > li a {height:20vw;}
 } @media (max-width:321px){}
 
 

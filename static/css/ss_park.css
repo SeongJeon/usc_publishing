@@ -36,10 +36,8 @@ SUB PAGE
 .exhibition-zone ul[role=tablist] > li {float:left; margin:5px 0 0 5px;}
 .exhibition-zone ul[role=tablist] > li:nth-child(2n+1) {clear:both;}
 .exhibition-zone ul[role=tablist] > li a {position:relative; display:block; width:80px; height:60px;}
-.exhibition-zone ul[role=tablist] > li a:hover:after, 
-.exhibition-zone ul[role=tablist] > li a[aria-selected=true]:after {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:100%; background:url(../../static/images/uscmuseum/subpage/bg_gallery_selected.png) no-repeat center; background-size:25px 20px; z-index: 5;}
-.exhibition-zone ul[role=tablist] > li a:hover:before,
-.exhibition-zone ul[role=tablist] > li a[aria-selected=true]:before {position:relative; display:block; content:""; width:100%; height:100%; border:5px solid #edc834; box-sizing:border-box;
+.exhibition-zone ul[role=tablist] > li a:hover:after, .exhibition-zone ul[role=tablist] > li a[aria-selected=true]:after {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:100%; background:url(../../static/images/uscmuseum/subpage/bg_gallery_selected.png) no-repeat center; background-size:25px 20px; z-index: 5;}
+.exhibition-zone ul[role=tablist] > li a:hover:before, .exhibition-zone ul[role=tablist] > li a[aria-selected=true]:before {position:relative; display:block; content:""; width:100%; height:100%; border:5px solid #edc834; box-sizing:border-box;
     z-index: 3;}
 .exhibition-zone ul[role=tablist] > li a img {position:absolute; left:0; top:0; height:100%; vertical-align:top}
 

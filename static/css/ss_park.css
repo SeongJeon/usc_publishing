@@ -27,7 +27,29 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+.exhibition-zone {position:relative; padding:45px 40px 40px; background:#efeeed;}
+.exhibition-zone img {vertical-align:top;}
+.exhibition-zone .img-contets {padding:0 0 0 187px;}
+.exhibition-zone .img-contets img {width:100%; height:468px;}
+.exhibition-zone ul[role=tablist] {position:absolute; left:40px; top:45px; margin:-5px 0 0 -5px;}
+.exhibition-zone ul[role=tablist]:after {display:block; content:""; clear:both;}
+.exhibition-zone ul[role=tablist] > li {float:left; margin:5px 0 0 5px;}
+.exhibition-zone ul[role=tablist] > li:nth-child(2n+1) {clear:both;}
+.exhibition-zone ul[role=tablist] > li a {position:relative; display:block; width:80px; height:60px;}
+.exhibition-zone ul[role=tablist] > li a:hover:after, 
+.exhibition-zone ul[role=tablist] > li a[aria-selected=true]:after {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:100%; background:url(../../static/images/uscmuseum/subpage/bg_gallery_selected.png) no-repeat center; background-size:25px 20px; z-index: 5;}
+.exhibition-zone ul[role=tablist] > li a:hover:before,
+.exhibition-zone ul[role=tablist] > li a[aria-selected=true]:before {position:relative; display:block; content:""; width:100%; height:100%; border:5px solid #edc834; box-sizing:border-box;
+    z-index: 3;}
+.exhibition-zone ul[role=tablist] > li a img {position:absolute; left:0; top:0; height:100%; vertical-align:top}
 
+.exhibition .list-relic {}
+.exhibition .list-relic ul {overflow:hidden; margin:-35px 0 0 -32px;}
+.exhibition .list-relic ul > li {float:left; width:25%; padding:35px 0 0 32px; box-sizing:border-box;}
+.exhibition .list-relic ul > li a {display:block;}
+.exhibition .list-relic ul > li a .img-area {display:block;}
+.exhibition .list-relic ul > li a .img-area img {vertical-align:top}
+.exhibition .list-relic ul > li a .txt {display:block; margin:10px 0 0 0; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#4b4b4b; text-align:center;}
 
 
 
@@ -152,7 +174,19 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
-
+	.exhibition-zone {padding:1rem;}
+	.exhibition-zone .img-contets {margin:0 0 1rem;padding:0; }
+	.exhibition-zone .img-contets img {height:50vw;}
+	.exhibition-zone ul[role=tablist] {position:static; margin:-0.5rem 0 0 -0.5rem;}
+	.exhibition-zone ul[role=tablist] > li {width:20%; margin:0; padding:0.5rem 0 0 0.5rem; box-sizing:border-box;}
+	.exhibition-zone ul[role=tablist] > li a {width:auto; height:10vw;}
+	.exhibition-zone ul[role=tablist] > li a:hover:before, .exhibition-zone ul[role=tablist] > li a[aria-selected=true]:before {border-width:0.3rem;}
+	.exhibition-zone ul[role=tablist] > li a:hover:after, .exhibition-zone ul[role=tablist] > li a[aria-selected=true]:after {background-size:2rem 1.4rem;}
+	.exhibition-zone ul[role=tablist] > li a img {width:100%;}
+	.exhibition-zone ul[role=tablist] > li:nth-child(2n+1) {clear:none;}
+	.exhibition .list-relic ul {overflow:hidden; margin:-1.5rem 0 0 0.5rem;}
+	.exhibition .list-relic ul > li {padding:1.5rem 0 0 0.5rem; box-sizing:border-box;}
+	.exhibition .list-relic ul > li a .txt {margin:0.5rem 0 0;}
 } @media (max-width:768px){
 } @media (max-width:321px){}
 

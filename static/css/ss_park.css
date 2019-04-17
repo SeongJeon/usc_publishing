@@ -182,7 +182,7 @@ MEDIA QUERY
 	.exhibition-zone ul[role=tablist] > li a:hover:after, .exhibition-zone ul[role=tablist] > li a[aria-selected=true]:after {background-size:2rem 1.4rem;}
 	.exhibition-zone ul[role=tablist] > li a img {width:100%;}
 	.exhibition-zone ul[role=tablist] > li:nth-child(2n+1) {clear:none;}
-	.exhibition .list-relic ul {overflow:hidden; margin:-1.5rem 0 0 0.5rem;}
+	.exhibition .list-relic ul {overflow:hidden; margin:-1.5rem 0 0 -0.5rem;}
 	.exhibition .list-relic ul > li {padding:1.5rem 0 0 0.5rem; box-sizing:border-box;}
 	.exhibition .list-relic ul > li a .txt {margin:0.5rem 0 0;}
 } @media (max-width:768px){

@@ -420,6 +420,61 @@ SUB PAGE
 		}
 	}
 }
+/* 박물관소개 */
+// 박물관로고
+.museumlogo {
+	.symbol-wrap {
+		overflow:hidden;position:relative;
+		& > div {float:left;}
+		.img-area {width:392px;height:289px;margin-right:20px;}
+		.info-area {
+			width:59%; padding-top: 5px;
+			.txt {font-size:15px;color:#4b4b4b;font-family:'NanumSquareB';line-height:1.5;}
+			.txt + .txt {margin-top:30px;}
+			.green {color:#48b512;}
+			.blue {color:#125fb5;}
+			.orange {color:#eb7104;}
+		}
+		.btn-area {position:absolute;right:0;bottom:0;}
+	}
+	.img-area {
+		display:table;background:url(../images/uscmuseum/subpage/bg_img.png) repeat left top;border:16px solid #efeeed;
+		.img {display:table-cell;vertical-align:middle;text-align:center;}
+	}
+	.btn-down {
+		display:inline-block;width:228px;height:43px;border:1px solid #c3c3c3;font-size:15px;color:#4b4b4b;text-align:center;line-height:43px;
+		&:before {display:inline-block;content:""; width: 25px; height: 25px; background: url("../../static/images/uscmuseum/subpage/icon_download4.png") no-repeat 50% 50%; background-size: 100% auto; margin-right: 10px; vertical-align: middle;}
+	}
+	.img-area.full {
+		margin:15px 0 0 40px;width:-webkit-calc(100% - 40px);width:-moz-calc(100% - 40px);width:-o-calc(100% - 40px);width:calc(100% - 40px);
+		.img {height:154px;}
+	}
+	p.comp-lst_dotted {font-size:15px;}
+	.btn-area {margin-top:20px;text-align:right;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -805,10 +860,29 @@ COMMON
 			}
 		}
 	}
-
 }
-
-
+/* 박물관소개 */
+// 박물관로고
+.museumlogo {
+	.symbol-wrap {
+		& > div {float:none;}
+		.img-area {width:100%;height:inherit;margin-right:0;margin-bottom:2rem;padding:2rem;}
+		.info-area {
+			width:100%; padding-top: 0;
+			.txt {font-size:1.3rem;}
+			.txt + .txt {margin-top:1.5rem;}
+		}
+		.btn-area {position:static;text-align:right;}
+	}
+	.img-area {border:.8rem solid #efeeed}
+	.btn-down {width:16rem;height:3.5rem;font-size:1.3rem;line-height:3.5rem;}
+	p.comp-lst_dotted {font-size:1.3rem;}
+	.btn-area {margin-top:1rem;}
+	.img-area.full {
+		margin:.8rem 0 0 0;width:100%;
+		.img {height:10rem;padding:0 2rem;}
+	}
+}
 
 
 //-------------------------------------------------------------------------------

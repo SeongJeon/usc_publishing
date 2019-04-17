@@ -202,6 +202,26 @@ SUB PAGE
 .vr .gallery-vr .cont-gallery .vr_area { width: 100%; height: 504px; }
 .vr .gallery-vr .cont-gallery .vr_area img { width: 100%; height: 100%; vertical-align: top; }
 
+/* 박물관소개 */
+.museumlogo .symbol-wrap { overflow: hidden; position: relative; }
+.museumlogo .symbol-wrap > div { float: left; }
+.museumlogo .symbol-wrap .img-area { width: 392px; height: 289px; margin-right: 20px; }
+.museumlogo .symbol-wrap .info-area { width: 59%; padding-top: 5px; }
+.museumlogo .symbol-wrap .info-area .txt { font-size: 15px; color: #4b4b4b; font-family: 'NanumSquareB'; line-height: 1.5; }
+.museumlogo .symbol-wrap .info-area .txt + .txt { margin-top: 30px; }
+.museumlogo .symbol-wrap .info-area .green { color: #48b512; }
+.museumlogo .symbol-wrap .info-area .blue { color: #125fb5; }
+.museumlogo .symbol-wrap .info-area .orange { color: #eb7104; }
+.museumlogo .symbol-wrap .btn-area { position: absolute; right: 0; bottom: 0; }
+.museumlogo .img-area { display: table; background: url(../images/uscmuseum/subpage/bg_img.png) repeat left top; border: 16px solid #efeeed; }
+.museumlogo .img-area .img { display: table-cell; vertical-align: middle; text-align: center; }
+.museumlogo .btn-down { display: inline-block; width: 228px; height: 43px; border: 1px solid #c3c3c3; font-size: 15px; color: #4b4b4b; text-align: center; line-height: 43px; }
+.museumlogo .btn-down:before { display: inline-block; content: ""; width: 25px; height: 25px; background: url("../../static/images/uscmuseum/subpage/icon_download4.png") no-repeat 50% 50%; background-size: 100% auto; margin-right: 10px; vertical-align: middle; }
+.museumlogo .img-area.full { margin: 15px 0 0 40px; width: -webkit-calc(100% - 40px); width: -moz-calc(100% - 40px); width: -o-calc(100% - 40px); width: calc(100% - 40px); }
+.museumlogo .img-area.full .img { height: 154px; }
+.museumlogo p.comp-lst_dotted { font-size: 15px; }
+.museumlogo .btn-area { margin-top: 20px; text-align: right; }
+
 /* ------------------------------------------------------
 BROWSER HACK
 ------------------------------------------------------ */
@@ -319,7 +339,20 @@ MEDIA QUERY
   .vr .gallery-vr ul[role=tablist] > li a { height: 15vw; font-size: 1.2rem; }
   .vr .gallery-vr ul[role=tablist] > li a .txt span { padding: 0 1rem; line-height: 1.4rem; }
   .vr .gallery-vr ul[role=tablist] > li a:hover .thumbnail:before, .vr .gallery-vr ul[role=tablist] > li a[aria-selected=true] .thumbnail:before { border-width: 0.3rem; }
-  .vr .gallery-vr ul[role=tablist] > li a:hover .thumbnail:after, .vr .gallery-vr ul[role=tablist] > li a[aria-selected=true] .thumbnail:after { background-size: 2rem 1.4rem; } }
+  .vr .gallery-vr ul[role=tablist] > li a:hover .thumbnail:after, .vr .gallery-vr ul[role=tablist] > li a[aria-selected=true] .thumbnail:after { background-size: 2rem 1.4rem; }
+  /* 박물관소개 */
+  .museumlogo .symbol-wrap > div { float: none; }
+  .museumlogo .symbol-wrap .img-area { width: 100%; height: inherit; margin-right: 0; margin-bottom: 2rem; padding: 2rem; }
+  .museumlogo .symbol-wrap .info-area { width: 100%; padding-top: 0; }
+  .museumlogo .symbol-wrap .info-area .txt { font-size: 1.3rem; }
+  .museumlogo .symbol-wrap .info-area .txt + .txt { margin-top: 1.5rem; }
+  .museumlogo .symbol-wrap .btn-area { position: static; text-align: right; }
+  .museumlogo .img-area { border: .8rem solid #efeeed; }
+  .museumlogo .btn-down { width: 16rem; height: 3.5rem; font-size: 1.3rem; line-height: 3.5rem; }
+  .museumlogo p.comp-lst_dotted { font-size: 1.3rem; }
+  .museumlogo .btn-area { margin-top: 1rem; }
+  .museumlogo .img-area.full { margin: .8rem 0 0 0; width: 100%; }
+  .museumlogo .img-area.full .img { height: 10rem; padding: 0 2rem; } }
 @media (max-width: 768px) { /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
   #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] { padding: 2rem 0; }
   /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */

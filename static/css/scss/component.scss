@@ -703,9 +703,10 @@ br.m {display:none}
 	& + .scrollzone {margin-top: 15px;}
 	&.ml0 {margin-left: 0;}
 	&.ml20 {margin-left: 20px;}
-
 }
-
+.heading-zone {
+	*[class^=heading] {display: inline-block; vertical-align: middle;}
+}
 
 
 
@@ -2595,7 +2596,7 @@ br.m {display:inherit}
 }
 
 
-
+ 
 /* LIST */
 h4[class^=comp-lst],
 h5[class^=comp-lst],

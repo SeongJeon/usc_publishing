@@ -453,6 +453,8 @@ br.t, br.m { display: none; }
 *[class^=heading].ml0 { margin-left: 0; }
 *[class^=heading].ml20 { margin-left: 20px; }
 
+.heading-zone *[class^=heading] { display: inline-block; vertical-align: middle; }
+
 /* LIST */
 h4[class^=comp-lst][class*=_dotted], h5[class^=comp-lst][class*=_dotted], p[class^=comp-lst][class*=_dotted] { position: relative; padding-left: 15px; font-size: 16px; color: #4b4b4b; line-height: 24px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 h4[class^=comp-lst][class*=_dotted]:before, h5[class^=comp-lst][class*=_dotted]:before, p[class^=comp-lst][class*=_dotted]:before { display: inline-block; position: absolute; left: 0; top: 9px; content: ""; width: 5px; height: 5px; background: #656565; }

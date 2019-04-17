@@ -13,7 +13,11 @@ LAYOUT
 		.footer-addr li strong {color:#333;}
 	}
 }
-#wrap.sewagebusiness #container {padding-top: 130px; }
+#wrap.sewagebusiness #container {
+	padding-top: 130px;
+	&:before {top:315px;}
+	.top-visual-zone p  {background:none; }
+}
 @media (min-width:1025px){
 	body.pc .sewagebusiness #header {
 		.header-middle {
@@ -52,7 +56,38 @@ LAYOUT
 		&.header-type2.open .header-bottom {border-bottom-color: #2ba1d8;}
 	}
 }
+#wrap.sewagebusiness #lnb {
+	.title-depth h2 {background:#2952b9;}
+	.menu h2 a.open, 
+	.menu h2 a:hover {background:#2f9abd;}
+	.menu h2 a.open:after, 
+	.menu h2 a:hover:after {background-color:#2a3b65;}
+	.menu .smallmenu ul {background:#f2f9fa;}
+	.menu .smallmenu ul a[aria-current=page]:before, 
+	.menu .smallmenu ul a:hover:before {border-color:#2f9abd;}
+}
 
+/* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+#wrap.sewagebusiness {
+	*[class^=comp-iconbox] {
+		border-top-color: #2952b9;
+		&:before {background:#2952b9;}
+	}
+	*[class^=comp-tab] a[aria-selected=true]:after {background:#2952b9;}
+	*[class^=heading][class*=-h3]:before {width:26px; @include background("sewagebusiness/bul_h3.png",no-repeat 50% 50%);}
+	*[class^=heading][class*=-h4]:before {@include background("sewagebusiness/bul_h4.png",no-repeat 50% 50%);}
+	*[class^=comp-txt][class*=_box] {
+		background:#e3fafc; border-color:#bedfe2; 
+		p {font-family: $font3; color:#444;}
+	}
+	table[class^=comp-tbl][class*=_datatype] {border-top-color: #2a3b65}
+
+	.heading-zone {
+		.comm-btn_type2 {width:auto; padding:0 15px; margin-left: 10px;border-color:#2952b9; color:#2952b9;}
+	}
+}
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -252,8 +287,24 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+.calculation-ex-zone {
+	margin-left: 30px; margin-top: 15px; padding:25px; background:#f4f4f4; border:1px solid #cdcdcd;
+	.extit {margin-bottom: 15px; font-family: $font2; color:#111; font-size: 18px;}
+	.extit strong  {color:#2952b9;}
 
- 
+	table[class^=comp-tbl][class*=_datatype] {
+		margin-top: 10px; margin-bottom: 15px; border-top-color: #2a3b65; border-bottom-color: #2a3b65;
+		thead th {border-top-color: #2a3b65; background:#e7eff4;}
+		tbody td {background:#fff; font-family: $font2;}
+	}
+
+	.comp-lst_important {margin-top: 10px; margin-left: 15px;}
+}
+.sewagebusiness-tbl {
+	thead tr:first-child th {background:#e7eff4;}
+	.br{border-right-color:#2a3b65 !important;}
+	.bl, td[rowspan] {border-left-color:#2a3b65 !important;}
+}
 
 
 
@@ -416,6 +467,15 @@ LAYOUT
 #wrap.sewagebusiness #container {padding-top: 0;}
 
 /* ------------------------------------------------------
+COMMON
+------------------------------------------------------ */
+#wrap.sewagebusiness {
+	*[class^=heading][class*=-h3]:before {width:1.5rem;}
+	.heading-zone {
+		.comm-btn_type2 { padding:0 0.5rem; }
+	}
+}
+/* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
 #wrap.sewagebusiness #container.main {
@@ -559,6 +619,24 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
+.calculation-ex-zone {
+	margin-left: 0; margin-top: 1rem; padding:1rem;
+	.extit {margin-bottom: 1rem; font-size: 1.4rem; line-height: 1.8rem}
+
+	table[class^=comp-tbl][class*=_datatype] {
+		margin-top: 10px; margin-bottom: 15px; border-top-color: #2a3b65; border-bottom-color: #2a3b65;
+		thead th {border-top-color: #2a3b65; background:#e7eff4;}
+		tbody td {background:#fff; font-family: $font2;}
+	}
+
+	.comp-lst_important {margin-top: 0.5rem; margin-left: 1rem;}
+}
+.sewagebusiness-tbl {
+	thead tr:first-child th {background:#e7eff4;}
+	.br{border-right-color:#2a3b65 !important;}
+	.bl, td[rowspan] {border-left-color:#2a3b65 !important;}
+}
+
 
 
 

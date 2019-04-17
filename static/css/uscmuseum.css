@@ -31,7 +31,7 @@ LAYOUT
   body.pc .uscmuseum #header.header-type2 #gnb h2.over a:after, body.pc .uscmuseum #header.header-type2 #gnb h2 a:hover:after { border-color: #733f2c; }
   body.pc .uscmuseum #header.header-type2 #gnb p a:hover { background: #dcb725; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
   body.pc .uscmuseum #header.header-type2 #gnb h3 a:before { background: #1e4363; }
-  body.pc .uscmuseum #header.header-type2.open { border-bottom-color: #c3893a; }
+  body.pc .uscmuseum #header.header-type2.open { background: #fff url("../../static/images/uscmuseum/bg_gnb.png") repeat-x 0 100%; }
   body.pc .uscmuseum #header.header-type2.open .header-bottom { border-bottom-color: #edc834; }
   body.pc .uscmuseum #header.header-type2 .header-middle .title { top: 22px; }
   body.pc .uscmuseum #header.header-type2 #gnb p a { background: #ffeda9; color: #2d2d2d; }

@@ -54,7 +54,7 @@ LAYOUT
 	body.pc .reservation #header #gnb .gnb > li:nth-child(1) .part-introduce { left: -220px; }
 	body.pc .reservation #header #gnb h2.over a, body.pc .reservation #header #gnb h2 a:hover { font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
 	body.pc .reservation #header #gnb p a:hover { font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color: #fff; background: #3cb7cd; }
-	body.pc .reservation #header.open { border-bottom: 6px solid #1058a8; }
+	body.pc .reservation #header.open {background:#fff url("../../static/images/reservation/bg_gnb.png") repeat-x 0 100%;}
 	body.pc .reservation #header.open .header-bottom { border-bottom: 1px solid #3cb7cd; } 
 }
 #wrap.reservation #footer { height: 290px; }

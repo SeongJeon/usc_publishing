@@ -47,7 +47,8 @@ LAYOUT
 		}
 
 		&.open {
-			border-bottom: 6px solid #35518f;
+			// border-bottom: 6px solid #35518f;
+			background:#fff url("../../static/images/lifeedu/bg_gnb.png") repeat-x 0 100%;
 			.header-bottom {border-bottom-color:#c2c0bf;}
 		}
 	}

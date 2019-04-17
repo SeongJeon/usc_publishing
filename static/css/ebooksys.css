@@ -19,7 +19,7 @@ LAYOUT
   body.pc .ebooksys #header.header-type2 #gnb { margin-left: 370px; }
   body.pc .ebooksys #header.header-type2 #gnb h2 a { width: 220px; }
   body.pc .ebooksys #header.header-type2 #gnb .depth2menu { display: none; position: absolute; left: 0; top: 100%; padding-left: 40px; padding-top: 0; background: #fff; width: 100%; }
-  body.pc .ebooksys #header.header-type2 #gnb .depth2menu .menu { padding: 33px 30px 30px; }
+  body.pc .ebooksys #header.header-type2 #gnb .depth2menu .menu { padding: 33px 30px 24px; }
   body.pc .ebooksys #header.header-type2 #gnb .depth2menu .menugroup:after { display: block; clear: both; content: ""; }
   body.pc .ebooksys #header.header-type2 #gnb .depth2menu .menugroup h3 a { display: block; text-align: center; font-size: 18px; color: #373737; line-height: 22px; }
   body.pc .ebooksys #header.header-type2 #gnb .depth2menu .menugroup h3 a .number { display: block; font-size: 15px; color: #f25e3d; }
@@ -92,7 +92,7 @@ LAYOUT
   body.pc .ebooksys #header.header-type2 #gnb p a:hover { background: #3cb7cd; }
   body.pc .ebooksys #header.header-type2 #gnb h3 a:before { background: #1e4363; }
   body.pc .ebooksys #header.header-type2 #gnb h2.over a, body.pc .ebooksys #header.header-type2 #gnb h2 a:hover { color: #f27405; }
-  body.pc .ebooksys #header.header-type2.open { border-bottom-color: #f25e3d; }
+  body.pc .ebooksys #header.header-type2.open { border-bottom-color: #f25e3d; background: #fff url("../../static/images/ebooksys/bg_gnb.png") repeat-x 0 100%; }
   body.pc .ebooksys #header.header-type2.open .header-bottom { border-bottom-color: #f27405; } }
 .ebooksys #header .depth2menu .menugroup h3 a[class^=icon-]:before { display: block; content: ""; width: 100px; height: 100px; margin: 0 auto 10px; }
 .ebooksys #header a.icon-gnb1:before { background: url(../../static/images/ebooksys/icon_gnb1.png) no-repeat 50% 50%; }

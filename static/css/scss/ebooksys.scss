@@ -28,7 +28,7 @@ LAYOUT
 
 		#gnb .depth2menu {
 			display: none; position: absolute; left:0; top:100%; padding-left: 40px; padding-top: 0; background: #fff; width: 100%;
-			.menu {padding:33px 30px 30px;}
+			.menu {padding:33px 30px 24px;}
 			.menugroup{
 				&:after {display:block; clear:both; content:""}
 				h3 a {display:block; text-align: center; font-size: 18px; color:#373737; line-height: 22px;}
@@ -121,7 +121,7 @@ LAYOUT
 		#gnb h2.over a,
 		#gnb h2 a:hover {color:#f27405}
 
-		&.open {border-bottom-color:#f25e3d;}
+		&.open {border-bottom-color:#f25e3d; background:#fff url("../../static/images/ebooksys/bg_gnb.png") repeat-x 0 100%;}
 		&.open .header-bottom {border-bottom-color: #f27405;}
 	}
 }

@@ -8,11 +8,11 @@ LAYOUT
   body.pc .usclib #header.header-type2 #gnb h2.over a:after, body.pc .usclib #header.header-type2 #gnb h2 a:hover:after { border-color: #1058a8; }
   body.pc .usclib #header.header-type2 #gnb p a:hover { background: #3cb7cd; }
   body.pc .usclib #header.header-type2 #gnb h3 a:before { background: #1e4363; }
-  body.pc .usclib #header.header-type2.open { border-bottom-color: #1058a8; }
+  body.pc .usclib #header.header-type2.open { background: #fff url("../../static/images/usclib/bg_gnb.png") repeat-x 0 100%; }
   body.pc .usclib #header.header-type2.open .header-bottom { border-bottom-color: #54c2d8; }
   body.pc .usclib #gnb { margin-left: 330px; }
   body.pc .usclib #gnb h2 a { width: 150px; }
-  body.pc .usclib #gnb .depth2menu { width: 226px; height: 420px; padding-left: 36px; }
+  body.pc .usclib #gnb .depth2menu { width: 226px; height: 414px; padding-left: 36px; }
   body.pc .usclib #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }
   body.pc .usclib #gnb .gnb > li:nth-child(2) .depth2menu { left: 190px; }
   body.pc .usclib #gnb .gnb > li:nth-child(3) .depth2menu { left: 416px; }

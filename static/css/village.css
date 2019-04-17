@@ -30,7 +30,7 @@ LAYOUT
 	body.pc #wrap.village #header .depth2menu .part-introduce dt { font-size: 26px; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #3a3a3a; }
 	body.pc #wrap.village #header .depth2menu .part-introduce dt img { margin-top: 11px; }
 	body.pc #wrap.village #header .depth2menu .part-introduce dd { margin-top: 11px; font-size: 16px; color: #3a3a3a; }
-	body.pc #wrap.village #header .depth2menu .menu { float: left; overflow: hidden; min-height: 280px; width: 1075px; padding: 22px 0 30px 0; }
+	body.pc #wrap.village #header .depth2menu .menu { float: left; overflow: hidden; min-height: 274px; width: 1075px; padding: 22px 0 24px 0; }
 	body.pc #wrap.village #header .depth2menu .menu h3 a { display: block; font-size: 18px; color: #2d2d2d; line-height: 35px; background: #ecf3c1; text-align: center; }
 	body.pc #wrap.village #header .depth2menu .menu h3 a:hover, body.pc #wrap.village #header .depth2menu .menu h3 a.current { background: #d1e68f; }
 	body.pc #wrap.village #header .depth2menu .menu h3 a.small { font-size: 15px; }
@@ -45,7 +45,7 @@ LAYOUT
 	body.pc #wrap.village #header .depth2menu .menu .menugroup:after { display: block; clear: both; content: ""; }
 	body.pc #wrap.village #header .depth2menu .menu .menugroup .group { float: left; width: 25%; padding-right: 35px; box-sizing: border-box; }
 
-	body.pc #wrap.village #header.open { border-bottom: 6px solid #2c6019; }
+	body.pc #wrap.village #header.open {/* border-bottom: 6px solid #2c6019; */background:#fff url("../../static/images/village/bg_gnb.png") repeat-x 0 100%;}
 	body.pc #wrap.village #header.open .depth2menu {border-top: 2px solid #45bf55}
 	
 	body.pc #wrap.village #gnb .gnb > li { float: left; width: 11.1%; }

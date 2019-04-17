@@ -17,7 +17,7 @@ LAYOUT
   body.pc .farmingtech #header.header-type2 #gnb { margin-left: 330px; }
   body.pc .farmingtech #header.header-type2 #gnb h2 a { width: 150px; }
   body.pc .farmingtech #header.header-type2 #gnb p a { background: #ffeda9; }
-  body.pc .farmingtech #header.header-type2 #gnb .depth2menu { width: 226px; height: 340px; padding-left: 36px; padding-top: 22px; }
+  body.pc .farmingtech #header.header-type2 #gnb .depth2menu { width: 226px; height: 334px; padding-left: 36px; padding-top: 16px; }
   body.pc .farmingtech #header.header-type2 #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }
   body.pc .farmingtech #header.header-type2 #gnb .gnb > li:nth-child(2) .depth2menu { left: 190px; }
   body.pc .farmingtech #header.header-type2 #gnb .gnb > li:nth-child(3) .depth2menu { left: 416px; }
@@ -29,7 +29,7 @@ LAYOUT
   body.pc .farmingtech #header.header-type2 #gnb h2.over a:after, body.pc .farmingtech #header.header-type2 #gnb h2 a:hover:after { border-color: #f0412c; }
   body.pc .farmingtech #header.header-type2 #gnb p a:hover { background: #f27405; }
   body.pc .farmingtech #header.header-type2 #gnb h3 a:before { background: #1e4363; }
-  body.pc .farmingtech #header.header-type2.open { border-bottom-color: #f27405; }
+  body.pc .farmingtech #header.header-type2.open { background: #fff url("../../static/images/farmingtech/bg_gnb.png") repeat-x 0 100%; }
   body.pc .farmingtech #header.header-type2.open .header-middle { border-bottom: 0; }
   body.pc .farmingtech #header.header-type2.open .header-bottom { border-bottom-color: #ff9900; } }
 /* ------------------------------------------------------

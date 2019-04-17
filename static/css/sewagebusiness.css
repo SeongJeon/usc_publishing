@@ -28,7 +28,7 @@ LAYOUT
   body.pc .sewagebusiness #header.header-type2 #gnb h2.over a:after, body.pc .sewagebusiness #header.header-type2 #gnb h2 a:hover:after { border-color: #2a3b65; }
   body.pc .sewagebusiness #header.header-type2 #gnb p a:hover { background: #47aedd; }
   body.pc .sewagebusiness #header.header-type2 #gnb h3 a:before { background: #1e4363; }
-  body.pc .sewagebusiness #header.header-type2.open { border-bottom-color: #2952b9; }
+  body.pc .sewagebusiness #header.header-type2.open { background: #fff url("../../static/images/sewagebusiness/bg_gnb.png") repeat-x 0 100%; }
   body.pc .sewagebusiness #header.header-type2.open .header-middle { border-bottom: 0; }
   body.pc .sewagebusiness #header.header-type2.open .header-bottom { border-bottom-color: #2ba1d8; } }
 /* ------------------------------------------------------

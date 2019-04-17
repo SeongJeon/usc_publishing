@@ -226,7 +226,7 @@
 
 @media (min-width: 1025px) { body.pc #header.header-type2 { height: 130px; }
   body.pc #header.header-type2 .header-middle .title { z-index: 11; }
-  body.pc #header.header-type2 .header-bottom { position: absolute; left: 0; top: 40px; width: 100%; min-height: inherit; background: none; }
+  body.pc #header.header-type2 .header-bottom { position: absolute; left: 0; top: 40px; width: 100%; min-height: inherit; background: none; background: #fff; }
   body.pc #header.header-type2 .header-bottom .header-utilegroup { display: none; }
   body.pc #header.header-type2 #gnb { padding-top: 35px; height: 90px; }
   body.pc #header.header-type2 #gnb .gnb { padding-right: 50px; }
@@ -251,7 +251,6 @@
   body.pc #header.header-type2 #gnb h2.over a:before, body.pc #header.header-type2 #gnb h2 a:hover:before { display: block; position: absolute; left: 0; top: 52px; content: ""; width: 100%; height: 5px; }
   body.pc #header.header-type2 #gnb h2.over a:after, body.pc #header.header-type2 #gnb h2 a:hover:after { display: block; position: absolute; left: 50%; top: 45px; content: ""; width: 20px; height: 20px; border-width: 5px; border-style: solid; background: #fff; border-radius: 100px; margin-left: -10px; box-sizing: border-box; z-index: 11; }
   body.pc #header.header-type2 #gnb p a:hover { font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color: #fff; }
-  body.pc #header.header-type2.open { border-bottom-width: 6px; border-bottom-style: solid; }
   body.pc #header.header-type2.open .header-bottom { border-bottom-width: 2px; border-bottom-style: solid; } }
 .view-pc { display: inherit; }
 
@@ -863,7 +862,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 #layer.open .layer-container li { line-height: 30px; font-size: 16px; color: #797979; }
 #layer.open .btn { position: absolute; top: 0; right: 0; }
 
-.dimd { position: fixed; left: 0; top: 0; background: rgba(0, 0, 0, 0.5); width: 100%; height: 100%; z-index: 1000; }
+.dimd { position: fixed; left: 0; top: 0; background: rgba(0, 0, 0, 0.5); width: 100%; height: 100%; z-index: 1000; opacity: 0; }
 
 /* 공통페이지 - 사이트맵 */
 .tp-sitemap .sitemap-box { overflow: hidden; padding: 15px 15px 15px 3px; margin: 15px 0 35px; border: 2px solid #e2e1e1; }

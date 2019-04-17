@@ -59,7 +59,7 @@ LAYOUT
 				}			
 			}
 			.menu {
-				float: left; overflow:hidden; min-height:365px; width: 1015px; padding:34px 0 30px 15px; border-left: 1px solid #e2e1e1;
+				float: left; overflow:hidden; min-height:359px; width: 1015px; padding:34px 0 24px 15px; border-left: 1px solid #e2e1e1;
 				h3 a {
 					display: block; font-size: 17px; color:#525252; line-height: 35px; background:#ffeda9; text-align: center;
 					&:hover, &.current {background:#f27405; font-family: $font2; color:#fff;}
@@ -111,7 +111,7 @@ LAYOUT
 				}
 			}
 		}
-		&.open {border-bottom: 6px solid #f27405; }
+		&.open {border-bottom: 0 solid #f27405; background:#fff url("../../static/images/usc/bg_gnb.png") repeat-x 0 100%;}
 	}
 }
 /* ------------------------------------------------------

@@ -250,7 +250,12 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-
+.village-infor {overflow:hidden; position:relative; margin-top: 25px}
+.village-infor .img {float:left;  width:424px; border:18px solid #efeeed;}
+.village-infor .img img {border:5px solid #fff; width:100%; box-sizing: border-box;}
+.village-infor .txt {padding-left: 445px;}
+.village-infor .heading-h4 {margin-left: 0}
+.village-infor .btn {position: absolute; right: 0; bottom:0;}
 
 
 
@@ -484,6 +489,13 @@ COMMON
 /* ------------------------------------------------------
 - SUB PAGE
 ------------------------------------------------------ */
+.village-infor {margin-top:1rem}
+.village-infor .img {float:none; width:100%; border:10px solid #efeeed;}
+.village-infor .img img {border:3px solid #fff;}
+.village-infor .txt {padding-left: 0; margin-top: 1.5rem}
+.village-infor .heading-h4 {margin-left: 0}
+.village-infor .btn {position:static; text-align: right; margin-top: 0.5rem}
+
 
 
 

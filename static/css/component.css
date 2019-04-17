@@ -437,6 +437,8 @@ br.t, br.m { display: none; }
 *[class^=comm-btn][class*=_favorit]:before { display: inline-block; content: ""; width: 18px; height: 17px; background: url("../../static/images/common/icon_favorit.png") no-repeat 50% 50%; background-size: 100% auto; margin-right: 7px; vertical-align: middle; }
 *[class^=comm-btn][class*=_search] { width: 145px; padding: 0; background: #fff; color: #787878; border: 1px solid #cbc6c5; }
 *[class^=comm-btn][class*=_search]:after { display: inline-block; content: ""; width: 17px; height: 17px; background: url("../../static/images/common/icon_search2.png") no-repeat 50% 50%; background-size: 100% auto; margin-left: 9px; vertical-align: middle; position: relative; top: -1px; }
+*[class^=comm-btn][class*=_goto] { width: 180px; }
+*[class^=comm-btn][class*=_goto]:after { display: inline-block; content: ">"; vertical-align: middle; margin-left: 18px; font-size: 10px; color: #444; }
 *[class^=comm-btn][class*=_prev] { width: 39px; height: 39px; border: 1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; background: url("../../static/images/common/btn_prev1.png") no-repeat 50% 50%; }
 *[class^=comm-btn][class*=_next] { width: 39px; height: 39px; border: 1px solid #c7c1bf; background-color: #fff; box-sizing: border-box; text-indent: -999em; background: url("../../static/images/common/btn_next1.png") no-repeat 50% 50%; }
 
@@ -1506,6 +1508,8 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   *[class^=comm-btn][class*=_outlink] { width: auto; padding: 0 1rem; }
   *[class^=comm-btn][class*=_writer] { width: 49%; }
   *[class^=comm-btn][class*=_golist] { width: 49%; }
+  *[class^=comm-btn][class*=_goto] { padding: 0 0.5rem; overflow: hidden; }
+  *[class^=comm-btn][class*=_goto]:after { margin-left: 0.5rem; }
   /* INPUT */
   select[class^=comp-select] { padding: 0 1rem; height: 3.3rem; font-size: 1.2rem; background-size: auto 100%; line-height: 3.1rem; }
   select[class^=comp-select]:focus { background-size: auto 100%; }

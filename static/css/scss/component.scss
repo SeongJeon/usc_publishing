@@ -666,6 +666,10 @@ br.m {display:none}
 		width:145px; padding:0; background:#fff; color:#787878; border:1px solid #cbc6c5;
 		&:after {display: inline-block; content: ""; width:17px; height:17px; @include background("common/icon_search2.png",no-repeat 50% 50%); background-size: 100% auto; margin-left: 9px; vertical-align: middle; position: relative; top:-1px;}
 	}
+	&[class*=_goto]{
+		width:180px;
+		&:after {display: inline-block;  content: ">"; vertical-align: middle; margin-left: 18px; font-size: 10px; color:#444;}
+	}
 
 
 	// ETC BUTTON
@@ -2812,6 +2816,10 @@ table[class^=comp-tbl] {
 	&[class*=_outlink] {width:auto; padding:0 1rem;}
 	&[class*=_writer] {width:49%;}
 	&[class*=_golist] {width:49%;}
+	&[class*=_goto]{
+		padding:0 0.5rem; overflow:hidden;
+		&:after {margin-left: 0.5rem;}
+	}
 }
 
 

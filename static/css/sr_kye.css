@@ -16,31 +16,57 @@
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-/*.museumlogo .symbol-wrap {overflow:hidden;position:relative;}
-.museumlogo .symbol-wrap > div {float:left;}
-.museumlogo .symbol-wrap .img-area {width:392px;height:289px;margin-right:20px;}
-.museumlogo .symbol-wrap .info-area {width:59%;}
-.museumlogo .symbol-wrap .info-area .txt {font-size:15px;color:#4b4b4b;font-family:'NanumSquareB';line-height:1.5;}
-.museumlogo .symbol-wrap .info-area .txt + .txt {margin-top:30px;}
-.museumlogo .symbol-wrap .info-area .green {color:#48b512;}
-.museumlogo .symbol-wrap .info-area .blue {color:#125fb5;}
-.museumlogo .symbol-wrap .info-area .orange {color:#eb7104;}
-.museumlogo .symbol-wrap .btn-area {position:absolute;right:0;bottom:0;}
-.museumlogo .img-area {display:table;background:url(../images/uscmuseum/subpage/bg_img.png) repeat left top;border:16px solid #efeeed}
-.museumlogo .img-area .img {display:table-cell;vertical-align:middle;text-align:center;}
-.museumlogo .btn-down {display:inline-block;width:228px;height:43px;border:1px solid #c3c3c3;font-size:15px;color:#4b4b4b;text-align:center;line-height:43px;}
-.museumlogo .btn-down:before {display:inline-block;content:""; width: 25px; height: 25px; background: url("../../static/images/uscmuseum/subpage/icon_download4.png") no-repeat 50% 50%; background-size: 100% auto; margin-right: 10px; vertical-align: middle;}
-.museumlogo p.comp-lst_dotted {font-size:15px;}
-.museumlogo .img-area.full {margin:15px 0 0 40px;width:-webkit-calc(100% - 40px);width:-moz-calc(100% - 40px);width:-o-calc(100% - 40px);width:calc(100% - 40px);}
-.museumlogo .img-area.full .img {height:154px;}
-.museumlogo .btn-area {margin-top:20px;text-align:right;}*/
-
-
-
-
-
-
-
+.notion .visual-img {position:relative;height:537px;background:url(../images/uscmuseum/subpage/bg_plan.png) no-repeat left top;}
+.notion .visual-img .img-txt01 {position:absolute;top:63px;left:59px;}
+.notion .visual-img .img-txt02 {position:absolute;top:63px;right:234px;}
+.notion .comp-txt_box {margin:0 0 18px 30px;padding:33px 20px 28px;}
+.notion .comp-txt_box .tit {margin-bottom:26px;text-align:center;font-family:'NanumSquareB';color:#1c1c1c;font-size:18px;}
+.notion *[class$="tit"] {font-family:'NanumSquareB';color:#4b4b4b;font-size:17px;text-align:center;}
+.notion .comp-txt_box .tit .green {color:#2e9911;}
+.notion .comp-txt_box .txt {font-size:15px;font-family:'NanumSquareB';color:#4b4b4b;}
+.notion .design-wrap {margin:0 0 24px 30px;}
+.notion .design-wrap:after {display:block;clear:both;content:'';}
+.notion .design-wrap .design-area {display:inline-block;width:308px;height:491px;margin-right:24px;padding:20px 14px;border:1px solid #c7c1bf;vertical-align:top;box-sizing:border-box;}
+.notion .design-wrap .design-area .tit {margin-bottom:15px;}
+.notion .design-wrap .design-area .sub-tit {display:block;height:40px;line-height:40px;}
+.notion .design-wrap .design-area .yellow {background:#ffcf26;}
+.notion .design-wrap .design-area .green {background:#4dd360;}
+.notion .design-wrap .design-area li {position:relative;display:table;width:100%;height:109px;margin-top:15px;padding:14px 10px;text-align:center;background:#f1f3f4;border-radius:10px;box-sizing:border-box;}
+.notion .design-wrap .design-area li:after,
+.notion .design-wrap .design-area.concept:after {position:absolute;top:50%;right:-39px;display:inline-block;margin-top:-18px;font-size:30px;font-family:'NanumSquareB';color:#8f8f8f;content:'>';}
+.notion .design-wrap .design-area li div {display:table-cell;vertical-align:middle;}
+.notion .design-wrap .design-area .design {width:42%;}
+.notion .design-wrap .design-area li p {font-size:15px;font-family:'NanumSquareB';color:#4b4b4b;}
+.notion .design-wrap .design-area .and span {display:inline-block;width:36px;height:36px;line-height:36px;font-size:15px;font-family:'NanumSquareEB';color:#8f8f8f;background:#d6d9db;border-radius:50%;}
+.notion .design-wrap .design-area *[class*="bg"] {margin-bottom:4px;padding-bottom:43px;}
+.notion .design-wrap .design-area .bg01 {background:url(../images/uscmuseum/subpage/bg_goal01.png) no-repeat center bottom;}
+.notion .design-wrap .design-area .bg02 {background:url(../images/uscmuseum/subpage/bg_goal02.png) no-repeat center bottom;}
+.notion .design-wrap .design-area .bg03 {background:url(../images/uscmuseum/subpage/bg_goal03.png) no-repeat center bottom;}
+.notion .design-wrap .design-area .bg04 {background:url(../images/uscmuseum/subpage/bg_goal04.png) no-repeat center bottom;}
+.notion .design-wrap .design-area .bg05 {background:url(../images/uscmuseum/subpage/bg_goal05.png) no-repeat center bottom;}
+.notion .design-wrap .design-area .bg06 {background:url(../images/uscmuseum/subpage/bg_goal06.png) no-repeat center bottom;}
+.notion .design-wrap .design-area.concept {position:relative;}
+.notion .design-wrap .design-area.concept:after {top:59%;right:-24px;}
+.notion .design-wrap .design-area.concept li {padding:10px 34px;}
+.notion .design-wrap .design-area.concept li:after {display:none;}
+.notion .design-wrap .design-area.concept li p {padding:35px 0 35px 110px;}
+.notion .design-wrap .design-area.concept .txt01 {background:url(../images/uscmuseum/subpage/bg_concept01.png) no-repeat left top}
+.notion .design-wrap .design-area.concept .txt02 {background:url(../images/uscmuseum/subpage/bg_concept02.png) no-repeat left top}
+.notion .design-wrap .design-area.concept .txt03 {padding:26px 0 27px 110px;line-height:1.2;background:url(../images/uscmuseum/subpage/bg_concept03.png) no-repeat left top}
+.notion .tree-area {display:inline-block;width:308px;height:489px;background:url(../images/uscmuseum/subpage/bg_tree.png) no-repeat left top;border:1px solid #c7c1bf;text-align:center;box-sizing:border-box;}
+.notion .tree-area .tit {margin-bottom:110px;padding-top:20px;line-height:1.5;}
+.notion .tree-area .tit span {display:block;color:#fe970e;font-family:'NanumSquareEB';font-size:24px;}
+.notion .tree-area .txt {line-height:1.6;color:#fff;font-family:'NanumSquareB';font-size:15px;}
+.notion .plan-list {margin-left:30px;border-top:2px solid #7a7a7a;border-bottom:2px solid #7a7a7a;}
+.notion .plan-list > li {display:table;width:100%;border-top:1px solid #d9d6d5;}
+.notion .plan-list > li:first-child {border-top:0;}
+.notion .plan-list > li .tit {display:table-cell;width:150px;background:#f4f7f9;font-size:16px;vertical-align:middle;line-height:1.5;}
+.notion .plan-list > li .comp-lst_dotted {padding:18px 20px;border-bottom:1px solid #d9d6d5;}
+.notion .plan-list > li .comp-lst_dotted li {font-size:15px;}
+.notion .plan-list > li:first-child .comp-lst_dotted li:last-child {padding-left:95px;text-indent:-80px;}
+.notion .plan-list > li .img-area {padding:25px 0 0 50px;}
+.notion .plan-list > li:nth-child(2) li:first-child,
+.notion .plan-list > li:last-child li:last-child {padding-left:65px;text-indent:-52px;}
 
 
 
@@ -134,9 +160,39 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
-
-/*
-*/
+	.notion .visual-img {height:50vw;background-size:100%;}
+	.notion .visual-img .img-txt01 {top:5vw;left:5vw;width:14rem;}
+	.notion .visual-img .img-txt02 {top:5vw;right:19vw;width:6rem;}
+	.notion .comp-txt_box {margin:0 0 .9rem 0;padding:1.5rem 1rem 1.4rem;}
+	.notion .comp-txt_box .tit {margin-bottom:1.3rem;font-size:1.5rem;}
+	.notion *[class$="tit"] {font-size:1.4rem;}
+	.notion .comp-txt_box .txt {font-size:1.3rem;}
+	.notion .design-wrap {margin:0 0 1.2rem 0;}
+	.notion .design-wrap .design-area {display:block;width:100%;height:inherit;margin:0 0 2rem 0;padding:1rem .7rem;}
+	.notion .design-wrap .design-area .tit {margin-bottom:.8rem;}
+	.notion .design-wrap .design-area .sub-tit {height:3rem;line-height:3rem;}
+	.notion .design-wrap .design-area li {height:inherit;margin-top:.8rem;padding:.7rem 1rem;}
+	.notion .design-wrap .design-area li:after,
+	.notion .design-wrap .design-area.concept:after {display:none;}
+	.notion .design-wrap .design-area .design {width:50%;}
+	.notion .design-wrap .design-area li p {font-size:1.3rem;}
+	.notion .design-wrap .design-area .and span {width:3rem;height:3rem;line-height:3rem;font-size:1.3rem;}
+	.notion .design-wrap .design-area *[class*="bg"] {margin-bottom:.2rem;padding-bottom:2.2rem;background-size:2rem;}
+	.notion .design-wrap .design-area.concept li {padding:1rem 1.7rem;}
+	.notion .design-wrap .design-area.concept li p {display:inline-block;width:24rem;padding:2.8rem 0 2.8rem 5rem;background-size:7rem !important;box-sizing:border-box;}
+	.notion .design-wrap .design-area.concept .txt03 {padding:2rem 0 2rem 5rem;}
+	.notion .tree-area {display:block;width:100%;height:45rem;background-size:100% 45rem;}
+	.notion .tree-area .tit {margin-bottom:6rem;padding-top:2rem;}
+	.notion .tree-area .tit span {font-size:2rem;}
+	.notion .tree-area .txt {font-size:1.2rem;}
+	.notion .plan-list {margin-left:0;}
+	.notion .plan-list > li .tit {width:9rem;font-size:1.3rem;}
+	.notion .plan-list > li .comp-lst_dotted {padding:1rem 1rem;}
+	.notion .plan-list > li .comp-lst_dotted li {font-size:1.2rem;}
+	.notion .plan-list > li .img-area {padding:1.8rem 0 0 2.5rem;}
+	.notion .plan-list > li:first-child .comp-lst_dotted li:last-child,
+	.notion .plan-list > li:nth-child(2) li:first-child,
+	.notion .plan-list > li:last-child li:last-child {padding-left:1rem;text-indent:0;}
 } @media (max-width:781px){
 } @media (max-width:321px){
 }

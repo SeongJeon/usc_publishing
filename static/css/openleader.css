@@ -64,7 +64,7 @@ COMMON
 .openleader *[class^=heading][class*=-h4]:before {background: url(../../static/images/openleader/bul_h4.png) no-repeat 50% 50%;}
 .openleader *[class^=heading][class*=-h4][class*=_type2]:before {background: url(../../static/images/openleader/bul_h4_2.png) no-repeat 50% 50%;}
 
-.openleader .tbl-top-utile .l-right {color:#777; font-family:'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; }
+.openleader .tbl-top-utile .l-right {color:#777; font-weight: normal; }
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
@@ -82,7 +82,7 @@ MAIN
 	.openleader .main-visual .section-01 .inner .calendar .tit {position:relative; margin-bottom:-2px; padding-top:24px; text-align:center; z-index:10;}
 	.openleader .main-visual .section-01 .inner .calendar .inner {height:189px; border-top:1px solid #dbdbdb; vertical-align:top;}
 	.openleader .main-visual .section-01 .inner .calendar .inner .date {float:left; width:151px; height:100%; padding-top:52px; background:#eff0f1; font-size:19px; color:#b4b4b4; font-weight:bold; text-align:center; vertical-align:middle;}
-	.openleader .main-visual .section-01 .inner .calendar .inner .date .day {display:block; font-family: "NanumSquareB"; font-size:70px;  color:#000;}
+	.openleader .main-visual .section-01 .inner .calendar .inner .date .day {display:block; font-weight: bold; font-size:70px;  color:#000;}
 	.openleader .main-visual .section-01 .inner .calendar .inner .list {position:relative; float:left; overflow:hidden; width:440px; height:190px;}
 	.openleader .main-visual .section-01 .inner .calendar .inner .list ul {position:relative; padding:19px 16px;}
 	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li {position:relative;  overflow:hidden; margin-top:14px; padding:0 0 0 15px; box-sizing: border-box;}
@@ -185,7 +185,7 @@ MAIN
 	.openleader .main-visual > .custom-paging {position:absolute; left:50%; top:454px; margin-left:-724px;}
 	.openleader .main-visual > .custom-paging li {display:none; color:#fff; font-size:15px;}
 	.openleader .main-visual > .custom-paging li.slick-active {display:block;}
-	.openleader .main-visual > .custom-paging li.slick-active em {font-size:18px; font-family:"NanumSquareB";}
+	.openleader .main-visual > .custom-paging li.slick-active em {font-size:18px; font-weight: bold;}
 
 	.openleader .inner .list-pledge {height:500px; background:url(../images/openleader/main/bg_list_pledge.png) no-repeat; background-size:cover;}
 	.openleader .inner .list-pledge .inner {position:relative; width:1320px; margin:0 auto; text-align:center;}
@@ -201,13 +201,13 @@ MAIN
 	.openleader .inner .list-pledge .inner .list > li.ico-03 {background:url(../images/openleader/main/bg_list_pledge03.png) no-repeat center top;}
 	.openleader .inner .list-pledge .inner .list > li.ico-04 {background:url(../images/openleader/main/bg_list_pledge04.png) no-repeat center top;}
 	.openleader .inner .list-pledge .inner .list > li.ico-05 {background:url(../images/openleader/main/bg_list_pledge05.png) no-repeat center top;}
-	.openleader .inner .list-pledge .inner .list > li strong {display:block; font-family:"NanumSquareB"; font-size:30px; color:#1058a8;}
+	.openleader .inner .list-pledge .inner .list > li strong {display:block; font-weight: bold; font-size:30px; color:#1058a8;}
 	.openleader .inner .list-pledge .inner .btn {}
 	.openleader .inner .list-pledge .inner .btn {position:absolute; right:80px; top:67px; display:block; width:200px; height:50px; line-height:50px; background:#fff; border:1px solid #d6d5d5; font-size:17px; color:#212121; box-sizing:border-box;}
 	.openleader .inner .list-pledge .inner .btn:before {position:absolute; left:144px; top:25px; display:block; content:""; width:38px; height:1px; background:#3c3c3c;}
 	.openleader .inner .list-pledge .inner .btn:after {position:absolute; left:174px; top:22px; display:block; content:""; width:6px; height:6px; border-top:1px solid #3c3c3c; border-right:1px solid #3c3c3c; -webkit-transform:rotate(180deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
 	.openleader .inner .list-pledge .inner .btn:hover,
-	.openleader .inner .list-pledge .inner .btn:focus {font-family:"NanumSquareB"; color:#1058a8;}
+	.openleader .inner .list-pledge .inner .btn:focus {font-weight: bold; color:#1058a8;}
 	.openleader .inner .list-pledge .inner .btn:hover:before,
 	.openleader .inner .list-pledge .inner .btn:focus:before {background:#1058a8;}
 	.openleader .inner .list-pledge .inner .btn:hover:after,
@@ -243,15 +243,15 @@ SUB PAGE
 /* 주요정책 */
 .openleader .policy .title-intro .tit {text-align:center; margin:50px 0 40px;}
 .openleader .policy .title-intro .tit > * {display:block;}
-.openleader .policy .title-intro .tit .en {font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; color:#979c9c;}
-.openleader .policy .title-intro .tit .big {margin:18px 0 23px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:50px; color:#343642;}
-.openleader .policy .title-intro .tit .big em {font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;color:#3f4972;}
+.openleader .policy .title-intro .tit .en {font-weight: bold; font-size:20px; color:#979c9c;}
+.openleader .policy .title-intro .tit .big {margin:18px 0 23px; font-weight: bold; font-size:50px; color:#343642;}
+.openleader .policy .title-intro .tit .big em {font-weight: bold;color:#3f4972;}
 .openleader .policy .title-intro .tit .txt {font-size:30px; color:#343642;}
-.openleader .policy .title-intro .tit .txt em {font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#962d3e;}
+.openleader .policy .title-intro .tit .txt em {font-weight: bold;color:#962d3e;}
 .openleader .policy .category-zone {}
 .openleader .policy .category-zone ul {display:table; width:100%; border:1px solid #cfd3d5;}
 .openleader .policy .category-zone ul > li {display:table-cell; width:20%; border-left:1px solid #cfd3d5; text-align:center; vertical-align:middle;}
-.openleader .policy .category-zone ul > li a {display:block; padding:36px 0 9px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; line-height:25px; color:#343642; }
+.openleader .policy .category-zone ul > li a {display:block; padding:36px 0 9px; font-weight: bold; font-size:20px; line-height:25px; color:#343642; }
 .openleader .policy .category-zone ul > li:first-child {border-left:none;}
 .openleader .policy .category-zone ul > li a[class^=category]:before {display:block; content:""; width:110px; height:110px; margin:0 auto 22px auto;}
 .openleader .policy .category-1:before {background:url(../../static/images/openleader/subpage/ico_category_01.png) no-repeat; background-size:100%;}
@@ -266,7 +266,7 @@ SUB PAGE
 .openleader .policy .category-list > ul > li {position:relative; padding:91px 0 45px 235px; border-top:1px solid #cfd3d5;}
 .openleader .policy .category-list > ul > li[class^=category]:before {position:absolute; left:0; top:50px; display:block; content:""; width:155px; height:152px;}
 .openleader .policy .category-list > ul > li:first-child {border-top:none;}
-.openleader .policy .category-list > ul > li .tit {font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:34px; color:#343642;}
+.openleader .policy .category-list > ul > li .tit {font-weight: bold; font-size:34px; color:#343642;}
 .openleader .policy .category-list > ul > li .tit strong {color:#f87c20;}
 .openleader .policy .category-list > ul > li *[class^=comp-lst][class*=_dotted] {margin:26px 0 0; padding:0 0 0 15px;}
 .openleader .policy .category-list > ul > li *[class^=comp-lst][class*=_dotted] > li {line-height:30px;}
@@ -282,7 +282,7 @@ SUB PAGE
 .openleader .practice *[class^=heading-table] *[class^=heading][class*=-h4]:before {top:50%; margin-top:-11px;}
 .openleader .practice *[class^=heading-table] *[class^=heading][class*=-h4][class*=color1] {color:#1058a8;}
 .openleader .practice *[class^=heading-table] *[class^=heading][class*=-h4][class*=color2] {color:#962d3e;}
-.openleader .practice *[class^=heading-table] .graph-border {position:relative; overflow:hidden; width:506px; height:45px; background:#d7d7d7; border:3px solid #ececec; border-radius:24px; line-height:45px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; color:#fff;}
+.openleader .practice *[class^=heading-table] .graph-border {position:relative; overflow:hidden; width:506px; height:45px; background:#d7d7d7; border:3px solid #ececec; border-radius:24px; line-height:45px; font-weight: bold; font-size:20px; color:#fff;}
 .openleader .practice *[class^=heading-table] .graph-border:before {position:absolute; top:0px; display:block; content:"100%"; width:100%; text-align:center;}
 .openleader .practice *[class^=heading-table] .graph-border .inner {position:relative; min-width:45px; background:#1058a8; border-radius:21px; text-align:center; z-index:5; -webkit-animation:graph_motion 0.5s ease-out; -moz-animation:graph_motion 0.5s ease-out; -ms-animation:graph_motion 0.5s ease-out; animation:graph_motion 0.5s ease-out;}
 .openleader .practice *[class^=heading-table] .graph-dl {margin-top:40px;}
@@ -292,9 +292,9 @@ SUB PAGE
 .openleader .practice *[class^=heading-table] .graph-dl dl > * {display:table-cell; overflow:hidden;}
 .openleader .practice *[class^=heading-table] .graph-dl dl > dt {width:160px;}
 .openleader .practice *[class^=heading-table] .graph-dl dl > dd.graph {}
-.openleader .practice *[class^=heading-table] .graph-dl dl > dd.graph .inner {min-width:45px; width:0; height:42px; line-height:42px; background:#962d3e; border-radius:21px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:20px; color:#fff; text-align:center; -webkit-animation:graph_motion 0.5s ease-out; -moz-animation:graph_motion 0.5s ease-out; -ms-animation:graph_motion 0.5s ease-out; animation:graph_motion 0.5s ease-out;}
+.openleader .practice *[class^=heading-table] .graph-dl dl > dd.graph .inner {min-width:45px; width:0; height:42px; line-height:42px; background:#962d3e; border-radius:21px; font-weight: bold; font-size:20px; color:#fff; text-align:center; -webkit-animation:graph_motion 0.5s ease-out; -moz-animation:graph_motion 0.5s ease-out; -ms-animation:graph_motion 0.5s ease-out; animation:graph_motion 0.5s ease-out;}
 .openleader .practice *[class^=heading-table] *[class^=num-case]{overflow:hidden; margin-top:13px; border:1px solid #dddbdb;}
-.openleader .practice *[class^=heading-table] *[class^=num-case] > li {float:left; width:25%; height:50px; line-height:50px; border-left:1px solid #dddbdb; box-sizing:border-box; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:18px; color:#1058a8; text-align:center;}
+.openleader .practice *[class^=heading-table] *[class^=num-case] > li {float:left; width:25%; height:50px; line-height:50px; border-left:1px solid #dddbdb; box-sizing:border-box; font-weight: bold; font-size:18px; color:#1058a8; text-align:center;}
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li:first-child {border-left:none;}
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li .num {padding-left:18px;}
 .openleader .practice *[class^=heading-table] *[class^=num-case][class*=_type1] > li {color:#962d3e;}
@@ -303,7 +303,7 @@ SUB PAGE
 .openleader .practice .charge-info .list > li {display:table; float:left; margin-left:30px; padding:15px 0 15px; font-size:15px;}
 .openleader .practice .charge-info .list > li:first-child {margin-left:0;}
 .openleader .practice .charge-info .list > li .box {display:table-cell; height:26px; padding:0 15px; background:#ededed; border:1px solid #d7d7d7; border-radius:2px; line-height:26px; color:#949494; vertical-align:middle;}
-.openleader .practice .charge-info .list > li .txt {display:table-cell; padding-left:13px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#545454;  vertical-align:middle;}
+.openleader .practice .charge-info .list > li .txt {display:table-cell; padding-left:13px; font-weight: bold; color:#545454;  vertical-align:middle;}
 @keyframes graph_motion{ 
 	0% {margin-left:-100%;}
 	100% {margin-left:0;}
@@ -319,7 +319,7 @@ SUB PAGE
 .openleader .pledge .list-propulsion .list > li[class^=ball] {display:table; overflow:hidden; width:855px; height:48px; margin-top:10px; background:#d7d7d7; border:3px solid #ececec; border-radius:24px; box-sizing:border-box;}
 .openleader .pledge .list-propulsion .list > li[class^=ball]:first-child {margin-top:0;}
 .openleader .pledge .list-propulsion .list > li[class^=ball] > * {display:table-cell; height:42px; line-height:42px; vertical-align:middle; border-radius:21px;}
-.openleader .pledge .list-propulsion .list > li[class^=ball] .txt {position:relative; width:210px; padding-left:50px; background:#3f4972; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:18px; color:#fff; box-sizing:border-box;}
+.openleader .pledge .list-propulsion .list > li[class^=ball] .txt {position:relative; width:210px; padding-left:50px; background:#3f4972; font-weight: bold; font-size:18px; color:#fff; box-sizing:border-box;}
 .openleader .pledge .list-propulsion .list > li[class^=ball] .txt:before {position:absolute; left:15px; top:50%; display:block; content:""; width:16px; height:16px; margin-top:-8px; border-radius:100%;}
 .openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color0] .txt:before,
 .openleader .pledge .list-propulsion .list > li[class^=ball][class*=-color0] .graph .inner {background:#348899;}
@@ -357,7 +357,7 @@ SUB PAGE
 .openleader .planner *[class^=heading-table] *[class^=heading][class*=-h4]:before {top:50%; margin-top:-11px;}
 .openleader .planner .heading-table .graph {display:table-cell; padding-left:15px;}
 .openleader .planner .heading-table .graph .inner {display:table; overflow:hidden; width:815px; height:42px; background:#ececec; border:3px solid #ececec; border-radius:24px;}
-.openleader .planner .heading-table .graph .inner > li {display:table-cell; height:42px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#fff; vertical-align:middle; text-align:center;}
+.openleader .planner .heading-table .graph .inner > li {display:table-cell; height:42px; font-weight: bold; color:#fff; vertical-align:middle; text-align:center;}
 .openleader .planner .heading-table .graph .inner > li:first-child {border-radius:21px 0 0 21px;}
 .openleader .planner .heading-table .graph .inner > li:last-child {border-radius:0 21px 21px 0;}
 .openleader .planner .heading-table .graph .inner > li.color-1 {background:#348899;}

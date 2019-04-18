@@ -29,7 +29,7 @@ LAYOUT
   body.pc .uscmuseum #header .header-bottom .sitemap { background: #c3893a; }
   body.pc .uscmuseum #header.header-type2 #gnb h2.over a:before, body.pc .uscmuseum #header.header-type2 #gnb h2 a:hover:before { background: #733f2c; }
   body.pc .uscmuseum #header.header-type2 #gnb h2.over a:after, body.pc .uscmuseum #header.header-type2 #gnb h2 a:hover:after { border-color: #733f2c; }
-  body.pc .uscmuseum #header.header-type2 #gnb p a.current, body.pc .uscmuseum #header.header-type2 #gnb p a:hover { background: #dcb725; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+  body.pc .uscmuseum #header.header-type2 #gnb p a.current, body.pc .uscmuseum #header.header-type2 #gnb p a:hover { background: #dcb725; color: #fff; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
   body.pc .uscmuseum #header.header-type2 #gnb h3 a:before { background: #1e4363; }
   body.pc .uscmuseum #header.header-type2.open { background: #fff url("../../static/images/uscmuseum/bg_gnb.png") repeat-x 0 100%; }
   body.pc .uscmuseum #header.header-type2.open .header-bottom { border-bottom-color: #edc834; }
@@ -69,8 +69,8 @@ MAIN
 #wrap.uscmuseum #container.main .inner:after { display: block; clear: both; content: ""; }
 #wrap.uscmuseum #container.main .main-board-zone { overflow: hidden; height: 80px; background: url("../../static/images/uscmuseum/main/bg_board1.png") no-repeat 0 0, url("../../static/images/uscmuseum/main/bg_board2.png") no-repeat 50% 0; background-size: 50% 100%, 100% 100%; }
 #wrap.uscmuseum #container.main .main-board-zone div[class^=board-] { float: left; width: 50%; position: relative; }
-#wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .tit { float: left; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 80px; }
-#wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .cont { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 80px; }
+#wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .tit { float: left; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 80px; }
+#wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .cont { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 80px; }
 #wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .cont .flag { display: inline-block; margin-right: 3px; vertical-align: top; }
 #wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .cont .txt { display: inline-block; overflow: hidden; max-width: 70%; text-overflow: ellipsis; white-space: nowrap; }
 #wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .btn { position: absolute; right: 15px; top: 21px; }
@@ -86,8 +86,8 @@ MAIN
 #wrap.uscmuseum #container.main .main-group-zone { width: 1320px; margin: 0 auto; padding-top: 30px; }
 #wrap.uscmuseum #container.main .main-group-zone:after { display: block; clear: both; content: ""; }
 #wrap.uscmuseum #container.main .main-group-zone > div[class^=main-] { position: relative; float: left; }
-#wrap.uscmuseum #container.main .main-group-zone .tit { font-size: 24px; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #363636; padding-left: 6px; }
-#wrap.uscmuseum #container.main .main-group-zone .tit .small { font-size: 16px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; margin-left: 5px; }
+#wrap.uscmuseum #container.main .main-group-zone .tit { font-size: 24px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #363636; padding-left: 6px; }
+#wrap.uscmuseum #container.main .main-group-zone .tit .small { font-size: 16px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; margin-left: 5px; }
 #wrap.uscmuseum #container.main .main-group-zone .indicator { position: absolute; overflow: hidden; border-width: 1px; border-style: solid; }
 #wrap.uscmuseum #container.main .main-group-zone .indicator p { float: left; }
 #wrap.uscmuseum #container.main .main-group-zone .indicator p * { display: block; width: 35px; height: 35px; text-indent: -90999em; }
@@ -111,7 +111,7 @@ MAIN
 #wrap.uscmuseum #container.main .main-popup .indicator p .btn-more { background: url("../../static/images/uscmuseum/btn_more3.png") no-repeat 50% 50%; }
 #wrap.uscmuseum #container.main .main-popup .slider { margin-top: 15px; }
 #wrap.uscmuseum #container.main .main-favorit-zone .inner { position: relative; padding: 45px 0 40px; }
-#wrap.uscmuseum #container.main .main-favorit-zone .tit { position: absolute; left: 0; top: 57px; font-size: 23px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #2b2b2b; }
+#wrap.uscmuseum #container.main .main-favorit-zone .tit { position: absolute; left: 0; top: 57px; font-size: 23px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #2b2b2b; }
 #wrap.uscmuseum #container.main .main-favorit-zone .tit:after { display: block; content: ""; width: 82px; height: 19px; margin-top: 10px; background: url("../../static/images/uscmuseum/main/bg_favorit.png") no-repeat 50% 50%; }
 #wrap.uscmuseum #container.main .main-favorit-zone .favorit-service { padding-left: 130px; }
 #wrap.uscmuseum #container.main .main-favorit-zone .favorit-service .icon { display: block; width: 82px; height: 82px; margin: 0 auto; border-radius: 100px; background: #f1f3f4; -ms-transition: background 0.3s ease; -webkit-transition: background 0.3s ease; -moz-transition: background 0.3s ease; transition: background 0.3s ease; }
@@ -120,7 +120,7 @@ MAIN
 #wrap.uscmuseum #container.main .main-favorit-zone .favorit-service .slide { position: relative; }
 #wrap.uscmuseum #container.main .main-favorit-zone .favorit-service .slide:before { display: block; content: ""; width: 1px; height: 92px; background: #e2e1e1; position: absolute; left: 0; top: 14px; }
 #wrap.uscmuseum #container.main .main-favorit-zone .favorit-service a:hover .icon { background: #fac60e; }
-#wrap.uscmuseum #container.main .main-favorit-zone .favorit-service a:hover .name { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.uscmuseum #container.main .main-favorit-zone .favorit-service a:hover .name { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 #wrap.uscmuseum #container.main .main-favorit-zone .favorit-service .slick-current .slide:before { display: none; }
 #wrap.uscmuseum #container.main .main-visual-zone { position: relative; overflow: hidden; }
 #wrap.uscmuseum #container.main .main-visual-zone .visual-slider { height: 700px; }
@@ -130,8 +130,8 @@ MAIN
 #wrap.uscmuseum #container.main .main-visual-zone .visual-slider .slick-arrow { position: absolute; left: 50%; top: 0; width: 68px; height: 68px; border: 1px solid #fff; text-indent: -999em; margin-left: 660px; z-index: 11; }
 #wrap.uscmuseum #container.main .main-visual-zone .visual-slider .slick-arrow.slick-prev { top: 290px; background: url("../../static/images/uscmuseum/main/btn_prev.png") no-repeat 50% 50%; }
 #wrap.uscmuseum #container.main .main-visual-zone .visual-slider .slick-arrow.slick-next { top: 368px; background: url("../../static/images/uscmuseum/main/btn_next.png") no-repeat 50% 50%; }
-#wrap.uscmuseum #container.main .main-visual-zone .visual-slider .slick-dots { position: absolute; left: 50%; margin-left: 680px; top: 450px; color: #fff; font-size: 15px; font-family: "NanumSquareL", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-#wrap.uscmuseum #container.main .main-visual-zone .visual-slider .slick-dots .current { font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 18px; }
+#wrap.uscmuseum #container.main .main-visual-zone .visual-slider .slick-dots { position: absolute; left: 50%; margin-left: 680px; top: 450px; color: #fff; font-size: 15px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.uscmuseum #container.main .main-visual-zone .visual-slider .slick-dots .current { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 18px; }
 #wrap.uscmuseum #container.main .main-visual-zone .visual-slider .slick-dots li { display: none; }
 #wrap.uscmuseum #container.main .main-visual-zone .visual-slider .slick-dots li.slick-active { display: block; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-group { position: absolute; left: 0; top: 0; width: 100%; }
@@ -140,8 +140,8 @@ MAIN
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information { margin-top: 55px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] { float: left; width: 50%; height: 120px; box-sizing: border-box; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] + div { border-left: 1px solid #fff; }
-#wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] .tit { float: left; font-size: 30px; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; }
-#wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] .tit .small { font-size: 16px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] .tit { float: left; font-size: 30px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; }
+#wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] .tit .small { font-size: 16px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .tit { padding-top: 22px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .tit .small { margin-left: 5px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .information-lst { padding-left: 190px; padding-top: 13px; }
@@ -196,12 +196,12 @@ SUB PAGE
 .uscmuseum-view-zone ul[role="tablist"]:after { display: block; clear: both; content: ""; }
 .uscmuseum-view-zone ul[role="tablist"] li { float: left; margin-left: 8px; margin-bottom: 10px; }
 .uscmuseum-view-zone ul[role="tablist"] li:nth-child(3n+1) { clear: both; margin-left: 0; }
-.uscmuseum-view-zone ul[role="tablist"] a { display: block; width: 50px; height: 50px; color: #fff; font-size: 18px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; line-height: 40px; background: #6c1b31; border: 5px solid #6c1b31; box-sizing: border-box; }
+.uscmuseum-view-zone ul[role="tablist"] a { display: block; width: 50px; height: 50px; color: #fff; font-size: 18px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; line-height: 40px; background: #6c1b31; border: 5px solid #6c1b31; box-sizing: border-box; }
 .uscmuseum-view-zone ul[role="tablist"] a[aria-controls^=imgothertab] { background: #1fbbee; border-color: #1fbbee; }
 .uscmuseum-view-zone ul[role="tablist"] a:hover, .uscmuseum-view-zone ul[role="tablist"] a[aria-selected=true] { border-color: #fac60e; }
 .uscmuseum-view-zone .img-tabconts { position: relative; padding-left: 186px; }
 .uscmuseum-view-zone .img-tabconts div[role="tabpanel"] { display: none; }
-.uscmuseum-view-zone .img-tabconts .imgtxt { position: absolute; left: 186px; bottom: 0; width: 280px; height: 50px; font-size: 16px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #222; line-height: 50px; background: #fff; }
+.uscmuseum-view-zone .img-tabconts .imgtxt { position: absolute; left: 186px; bottom: 0; width: 280px; height: 50px; font-size: 16px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #222; line-height: 50px; background: #fff; }
 .uscmuseum-view-zone .img-tabconts .imgtxt .num { display: inline-block; width: 50px; margin-right: 15px; vertical-align: top; color: #fff; text-align: center; background: #6c1b31; font-size: 18px; }
 .uscmuseum-view-zone .img-tabconts div[id^=imgothertab] .num { background: #1fbbee; }
 

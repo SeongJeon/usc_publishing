@@ -13,7 +13,7 @@ LAYOUT
   body.pc .lifeedu #header #gnb .gnb h2 { position: relative; }
   body.pc .lifeedu #header #gnb .gnb h2:before { display: inline-block; position: absolute; left: 0; top: 50%; margin-top: -11px; content: ""; width: 1px; height: 20px; background: #6280ac; vertical-align: middle; }
   body.pc .lifeedu #header #gnb .gnb h2 a { display: block; position: relative; width: 250px; line-height: 58px; font-size: 20px; color: #fff; text-align: center; }
-  body.pc .lifeedu #header #gnb .gnb h2.over a, body.pc .lifeedu #header #gnb .gnb h2 a:hover { font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+  body.pc .lifeedu #header #gnb .gnb h2.over a, body.pc .lifeedu #header #gnb .gnb h2 a:hover { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
   body.pc .lifeedu #header #gnb .gnb h2.over a:before, body.pc .lifeedu #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: -1px; left: 0; width: 100%; content: ""; background: #ff7a39; height: 6px; z-index: 1000; }
   body.pc .lifeedu #header #gnb .gnb h2.over a:after, body.pc .lifeedu #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -10px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #ff7a39; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
   body.pc .lifeedu #header #gnb .depth2menu { display: none; position: absolute; top: 100%; width: 250px; height: 200px; padding-top: 17px; }
@@ -54,7 +54,7 @@ LAYOUT
 
 .lifeedu #lnb { border-top-color: #d6d5d5; }
 .lifeedu #lnb .title-depth h2 { background: #014099; }
-.lifeedu #lnb .menu h2 a.open, .lifeedu #lnb .menu h2 a:hover { background: #dce8f6; color: #000; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu #lnb .menu h2 a.open, .lifeedu #lnb .menu h2 a:hover { background: #dce8f6; color: #000; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .lifeedu #lnb .menu h2 a.open:after, .lifeedu #lnb .menu h2 a:hover:after { background-color: #417ff2; }
 .lifeedu #lnb .menu .smallmenu ul { background: #f1f6fc; }
 .lifeedu #lnb .menu .smallmenu ul a[aria-current=page]:before, .lifeedu #lnb .menu .smallmenu ul a:hover:before { border-color: #014099; }
@@ -77,10 +77,10 @@ MAIN
 .lifeedu .main .main-board-zone { overflow: hidden; margin-top: 20px; }
 .lifeedu .main .main-board-zone div[class^=board-zone] { float: left; width: 650px; border: 1px solid #c9c8c8; border-top: 0; background: url("../../static/images/lifeedu/main/bg_board.png") no-repeat 100% 100%; }
 .lifeedu .main .main-board-zone div[class^=board-zone]:after { display: block; clear: both; content: ""; }
-.lifeedu .main .main-board-zone .tit { margin: 0 -1px; text-align: center; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 22px; line-height: 50px; }
-.lifeedu .main .main-board-zone .tit .sm { font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu .main .main-board-zone .tit { margin: 0 -1px; text-align: center; color: #fff; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 22px; line-height: 50px; }
+.lifeedu .main .main-board-zone .tit .sm { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .lifeedu .main .main-board-zone .board { height: 250px; float: left; width: 50%; position: relative; }
-.lifeedu .main .main-board-zone .board .subtit { color: #111; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; line-height: 50px; }
+.lifeedu .main .main-board-zone .board .subtit { color: #111; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; line-height: 50px; }
 .lifeedu .main .main-board-zone .board + .board { border-left: 1px dashed #c9c8c8; }
 .lifeedu .main .main-board-zone .board .btn-more { position: absolute; right: 22px; top: 9px; text-indent: -999em; width: 32px; height: 32px; border: 1px solid #ccc; background: rgba(255, 255, 255, 0.5) url("../../static/images/lifeedu/icon_plus.png") no-repeat 50% 50%; }
 .lifeedu .main .main-board-zone .lst { padding: 17px 0 0 24px; }
@@ -96,7 +96,7 @@ MAIN
 .lifeedu .main .main-board-zone .board-zone2 .subtit { background: #fde4e1; }
 .lifeedu .main .main-gotolink-zone { overflow: hidden; margin-top: 20px; }
 .lifeedu .main .main-gotolink-zone .quick-zone { float: left; height: 300px; width: 650px; padding: 28px 50px 0; margin-left: 20px; background: url("../../static/images/lifeedu/main/bg_quick.jpg") no-repeat 50% 50%; background-size: 100% 100%; border: 1px solid #ccc; }
-.lifeedu .main .main-gotolink-zone .quick-zone .tit { font-size: 22px; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu .main .main-gotolink-zone .quick-zone .tit { font-size: 22px; color: #fff; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .lifeedu .main .main-gotolink-zone .quick-zone .menu { margin-top: 40px; overflow: hidden; }
 .lifeedu .main .main-gotolink-zone .quick-zone .menu li { margin-left: 16px; float: left; width: 125px; }
 .lifeedu .main .main-gotolink-zone .quick-zone .menu li:first-child { margin-left: 0; }
@@ -108,7 +108,7 @@ MAIN
 .lifeedu .main .main-gotolink-zone .quick-zone .menu .icon { display: block; text-align: center; padding-top: 25px; }
 .lifeedu .main .main-gotolink-zone .quick-zone .menu .name { display: block; margin-top: 24px; color: #fff; font-size: 18px; text-align: center; line-height: 24px; }
 .lifeedu .main .main-gotolink-zone .wearea-zone { float: left; position: relative; width: 650px; height: 300px; background: url("../../static/images/lifeedu/main/bg_wearea.png") repeat 0 0, url("../../static/images/lifeedu/main/bg_map.png") no-repeat 0 0; }
-.lifeedu .main .main-gotolink-zone .wearea-zone .tit { overflow: hidden; position: absolute; right: 7px; top: 17px; padding: 0 20px; font-size: 22px; color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; line-height: 50px; background: #ff7a39; border-radius: 100px; }
+.lifeedu .main .main-gotolink-zone .wearea-zone .tit { overflow: hidden; position: absolute; right: 7px; top: 17px; padding: 0 20px; font-size: 22px; color: #fff; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; line-height: 50px; background: #ff7a39; border-radius: 100px; }
 .lifeedu .main .main-gotolink-zone .wearea-zone .desc { position: absolute; right: 24px; top: 84px; text-align: right; color: #fff; font-size: 16px; line-height: 24px; }
 .lifeedu .main .main-gotolink-zone .wearea-zone .map { padding: 15px 0 0 30px; position: relative; z-index: 1; background: url("../../static/images/lifeedu/main/bg_map.png") no-repeat 0 0; }
 .lifeedu .main .main-gotolink-zone .wearea-zone .map[data-map=map1] { background: url("../../static/images/lifeedu/main/img_map1.png") no-repeat 0 0; }
@@ -132,9 +132,9 @@ MAIN
 .lifeedu .main .main-visual-zone { height: 390px; background: url("../../static/images/lifeedu/main/bg_mainslider.png") no-repeat 50% 0; background-size: cover; }
 .lifeedu .main .main-visual-zone .inner { position: relative; }
 .lifeedu .main .main-visual-zone .popupzone { position: absolute; left: 0; top: 40px; width: 420px; height: 310px; }
-.lifeedu .main .main-visual-zone .popupzone .tit { color: #fff; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 22px; line-height: 50px; padding-left: 16px; background: #35518f; }
+.lifeedu .main .main-visual-zone .popupzone .tit { color: #fff; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 22px; line-height: 50px; padding-left: 16px; background: #35518f; }
 .lifeedu .main .main-visual-zone .popupzone .slick-dots { position: absolute; top: -50px; right: 88px; font-size: 16px; color: #fff; line-height: 50px; }
-.lifeedu .main .main-visual-zone .popupzone .slick-dots .current { font-size: 18px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu .main .main-visual-zone .popupzone .slick-dots .current { font-size: 18px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .lifeedu .main .main-visual-zone .popupzone .slick-dots li { display: none; }
 .lifeedu .main .main-visual-zone .popupzone .slick-dots li.slick-active { display: block; }
 .lifeedu .main .main-visual-zone .popupzone .indicator { position: absolute; overflow: hidden; right: 10px; top: 9px; border: 1px solid #fff; }
@@ -149,17 +149,17 @@ MAIN
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
-.lifeedu-class-search .flag { padding: 0 20px; color: #417ff2; font-size: 16px; display: inline-block; border: 2px solid #417ff2; line-height: 30px; border-radius: 100px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu-class-search .flag { padding: 0 20px; color: #417ff2; font-size: 16px; display: inline-block; border: 2px solid #417ff2; line-height: 30px; border-radius: 100px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .lifeedu-class-search .flag:before { display: inline-block; vertical-align: middle; width: 26px; height: 17px; background: #417ff2 url("../../static/images/lifeedu/subpage/icon_class.png") no-repeat 50% 50%; margin-right: 7px; content: ""; }
 
 /* 강좌 상세 */
 .class-simple-infor { padding: 15px 20px 28px; position: relative; border: 1px solid #d1d1d1; border-top: 2px solid #014099; }
-.class-simple-infor .class-name .name { display: block; margin-top: 14px; color: #222; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 19px; padding-right: 85px; }
-.class-simple-infor .booking-state { position: absolute; right: -1px; top: -2px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; background: #014099; font-size: 17px; }
+.class-simple-infor .class-name .name { display: block; margin-top: 14px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 19px; padding-right: 85px; }
+.class-simple-infor .booking-state { position: absolute; right: -1px; top: -2px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; background: #014099; font-size: 17px; }
 .class-simple-infor .booking-state .sm { color: #fff475; font-size: 14px; display: block; padding-top: 23px; background: url("../../static/images/lifeedu/subpage/bg_txt.png") no-repeat 50% 9px; }
 .class-simple-infor .booking-state.not { background: #797979; }
 .class-simple-infor .class-lst { overflow: hidden; margin-top: 26px; }
-.class-simple-infor .class-lst li { position: relative; float: left; width: 50%; padding-left: 12px; box-sizing: border-box; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.class-simple-infor .class-lst li { position: relative; float: left; width: 50%; padding-left: 12px; box-sizing: border-box; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .class-simple-infor .class-lst li:before { display: inline-block; position: absolute; left: 0; top: 7px; width: 3px; height: 3px; background: #797979; content: ""; vertical-align: middle; }
 .class-simple-infor .class-lst li:nth-child(2) ~ li { margin-top: 12px; }
 .class-simple-infor .class-lst .tit { display: inline-block; width: 85px; float: left; color: #222; }
@@ -179,7 +179,7 @@ SUB PAGE
 .lifeedu .search-box-detail .ebooksys-search-form li.pl:last-of-type .tit { width: 150px; }
 .lifeedu .search-box-detail .ebooksys-search-form li.pl:last-of-type .form { padding-left: 150px; }
 .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(1) .tit, .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(4) .tit, .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(6) .tit { color: #014099; }
-.lifeedu .search-box-detail .ebooksys-search-form .tit { float: left; width: 95px; color: #111; font-size: 18px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 35px; }
+.lifeedu .search-box-detail .ebooksys-search-form .tit { float: left; width: 95px; color: #111; font-size: 18px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 35px; }
 .lifeedu .search-box-detail .ebooksys-search-form .form { padding-left: 95px; }
 .lifeedu .search-box-detail .ebooksys-search-form .block + .block { margin-top: 12px; }
 .lifeedu .search-box-detail .ebooksys-search-form .term input { width: 153px; }
@@ -190,12 +190,12 @@ SUB PAGE
 .lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(even) { margin-left: 30px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(2) ~ li { margin-top: 20px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li a { display: block; padding: 15px 20px 28px; width: 100%; height: 100%; position: relative; border: 1px solid #d1d1d1; border-top: 1px solid #014099; box-sizing: border-box; }
-.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-name .name { display: block; margin-top: 14px; color: #222; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 19px; padding-right: 85px; }
-.lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state { position: absolute; right: -1px; top: -1px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; background: #014099; font-size: 17px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-name .name { display: block; margin-top: 14px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 19px; padding-right: 85px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state { position: absolute; right: -1px; top: -1px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; background: #014099; font-size: 17px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state .sm { color: #fff475; font-size: 14px; display: block; padding-top: 23px; background: url("../../static/images/lifeedu/subpage/bg_txt.png") no-repeat 50% 9px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state.not { background: #797979; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst { overflow: hidden; margin-top: 26px; }
-.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li { position: relative; padding-left: 12px; box-sizing: border-box; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li { position: relative; padding-left: 12px; box-sizing: border-box; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:before { display: inline-block; position: absolute; left: 0; top: 7px; width: 3px; height: 3px; background: #797979; content: ""; vertical-align: middle; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:nth-child(1) ~ li { margin-top: 12px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst .tit { display: inline-block; width: 85px; float: left; color: #222; }
@@ -203,7 +203,7 @@ SUB PAGE
 .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover { border: 3px solid #014099; padding: 13px 18px 26px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover .booking-state { top: -3px; right: -3px; }
 .lifeedu *[class^=class-lst][class*=_listtype] { margin-top: 30px; }
-.lifeedu *[class^=class-lst][class*=_listtype] .classflag { font-size: 15px; display: inline-block; vertical-align: middle; color: #fff; text-align: center; width: 22px; height: 22px; border-radius: 100px; line-height: 22px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu *[class^=class-lst][class*=_listtype] .classflag { font-size: 15px; display: inline-block; vertical-align: middle; color: #fff; text-align: center; width: 22px; height: 22px; border-radius: 100px; line-height: 22px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .lifeedu *[class^=class-lst][class*=_listtype] .classflag.recruit { background: #f0102a; }
 .lifeedu *[class^=class-lst][class*=_listtype] .classflag.term { background: #fd9807; }
 .lifeedu *[class^=class-lst][class*=_listtype] .classflag.online { background: #00a388; }
@@ -211,7 +211,7 @@ SUB PAGE
 .lifeedu *[class^=class-lst][class*=_listtype] .flag { padding: 0 10px; line-height: 22px; font-size: 12px; border-color: #79bd8f; color: #79bd8f; }
 .lifeedu *[class^=class-lst][class*=_listtype] .flag:before { width: 19px; height: 13px; margin-right: 5px; background-size: 100% 100%; background-color: #79bd8f; }
 .lifeedu *[class^=class-lst][class*=_listtype] .flag-lst { float: right; }
-.lifeedu *[class^=class-lst][class*=_listtype] .flag-lst li { float: left; font-size: 15px; color: #787878; margin-left: 10px; font-family: "NanumSquareR", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu *[class^=class-lst][class*=_listtype] .flag-lst li { float: left; font-size: 15px; color: #787878; margin-left: 10px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .lifeedu *[class^=class-lst][class*=_listtype] .flag-lst .classflag { margin-right: 6px; }
 .lifeedu *[class^=class-lst][class*=_listtype] td { letter-spacing: -1px; }
 .lifeedu *[class^=class-lst][class*=_listtype] td .name { display: block; margin-top: 6px; }
@@ -236,13 +236,13 @@ SUB PAGE
 .teacher_lst .img img { width: 100%; height: 100%; }
 .teacher_lst .infor { padding-left: 145px; padding-top: 20px; }
 .teacher_lst .infor .name { color: #222; font-size: 19px; }
-.teacher_lst .infor .name em { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.teacher_lst .infor .name em { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .teacher_lst .infor .lst { margin-top: 25px; }
 .teacher_lst .infor .lst li { font-size: 16px; color: #939393; line-height: 30px; }
 .teacher_lst .infor .lst li:before { display: inline-block; width: 4px; height: 4px; background: #797979; content: ""; margin-right: 10px; vertical-align: middle; }
-.teacher_lst .infor .lst .tit { display: inline-block; width: 65px; color: #222; vertical-align: middle; text-align: left; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.teacher_lst .infor .lst .tit { display: inline-block; width: 65px; color: #222; vertical-align: middle; text-align: left; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .teacher_lst .infor .lst .tit:after { display: inline-block; content: "/"; vertical-align: middle; color: #939393; }
-.teacher_lst .infor .btn { display: inline-block; position: absolute; right: 25px; top: 35px; width: 145px; line-height: 30px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; color: #417ff2; border: 2px solid #417ff2; border-radius: 100px; text-align: center; }
+.teacher_lst .infor .btn { display: inline-block; position: absolute; right: 25px; top: 35px; width: 145px; line-height: 30px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; color: #417ff2; border: 2px solid #417ff2; border-radius: 100px; text-align: center; }
 .teacher_lst .infor .btn:after { display: inline-block; vertical-align: middle; content: ""; width: 12px; height: 5px; margin-left: 13px; background: url("../../static/images/lifeedu/subpage/icon_arrow1.png") no-repeat 50% 50%; }
 
 .teacher_detail_infor { padding: 20px 19px; border: 1px solid #d1d1d1; border-top: 2px solid #014099; }
@@ -250,11 +250,11 @@ SUB PAGE
 .teacher_detail_infor .img img { width: 100%; height: 100%; }
 .teacher_detail_infor .infor { padding-left: 155px; height: 167px; }
 .teacher_detail_infor .name { font-size: 19px; color: #222; padding-top: 20px; }
-.teacher_detail_infor .name em { font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.teacher_detail_infor .name em { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
 .teacher_detail_infor .lst { margin-top: 25px; }
 .teacher_detail_infor .lst:after { display: block; clear: both; content: ""; }
 .teacher_detail_infor .lst li { float: left; width: 50%; color: #939393; font-size: 16px; line-height: 30px; }
-.teacher_detail_infor .lst .tit { display: inline-block; margin-right: 18px; color: #222; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; vertical-align: middle; width: 80px; }
+.teacher_detail_infor .lst .tit { display: inline-block; margin-right: 18px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; vertical-align: middle; width: 80px; }
 .teacher_detail_infor .lst .tit:before { display: inline-block; content: ""; width: 4px; height: 4px; background: #797979; margin-right: 10px; vertical-align: middle; }
 .teacher_detail_infor .lst .tit:after { display: inline-block; content: "/"; float: right; color: #939393; font-size: 10px; }
 
@@ -294,16 +294,16 @@ SUB PAGE
 .application_process_lst { margin-top: 20px; border: 1px solid #d6d5d5; padding: 30px 0 28px; border-radius: 5px; text-align: center; }
 .application_process_lst ol { display: inline-block; }
 .application_process_lst ol:after { display: block; clear: both; content: ""; }
-.application_process_lst li { float: left; position: relative; width: 220px; padding-left: 62px; border: 2px solid #7c9ddb; border-radius: 100px; line-height: 46px; color: #111; font-size: 17px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; letter-spacing: -1px; text-align: left; box-sizing: border-box; }
+.application_process_lst li { float: left; position: relative; width: 220px; padding-left: 62px; border: 2px solid #7c9ddb; border-radius: 100px; line-height: 46px; color: #111; font-size: 17px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; letter-spacing: -1px; text-align: left; box-sizing: border-box; }
 .application_process_lst li + li { margin-left: 30px; }
 .application_process_lst li:nth-child(even) { border-color: #2e56bd; }
 .application_process_lst li:nth-child(even) .step { background: #2e56bd; }
 .application_process_lst li + li:before { display: inline-block; position: absolute; left: -20px; top: 50%; width: 9px; height: 14px; background: url("../../static/images/lifeedu/subpage/icon_arrow2.png") no-repeat 50% 50%; margin-top: -7px; content: ""; }
-.application_process_lst .step { display: inline-block; position: absolute; left: -2px; top: -2px; width: 50px; height: 50px; padding-top: 13px; font-size: 11px; text-align: center; border-radius: 100px; background: #7c9ddb; line-height: 1; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; box-sizing: border-box; }
+.application_process_lst .step { display: inline-block; position: absolute; left: -2px; top: -2px; width: 50px; height: 50px; padding-top: 13px; font-size: 11px; text-align: center; border-radius: 100px; background: #7c9ddb; line-height: 1; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; box-sizing: border-box; }
 .application_process_lst .step em { display: block; font-size: 17px; }
 
 .tbl-lifeedu { padding: 10px 3px 10px; margin: 4px 0; min-height: 230px; border: 1px solid #d9d6d5; }
-.tbl-lifeedu th { height: 30px; text-align: center; color: #787878; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; }
+.tbl-lifeedu th { height: 30px; text-align: center; color: #787878; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; }
 .tbl-lifeedu th:nth-child(2) { text-align: left; padding-left: 66px; }
 .tbl-lifeedu td { padding: 3px 3px 2px; }
 .tbl-lifeedu .w_form input { width: 185px; }

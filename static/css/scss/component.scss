@@ -672,7 +672,7 @@ br.m {display:none}
 	}
 	&[class*=_goto]{
 		width:180px;
-		&:after {display: inline-block;  content: ">"; vertical-align: middle; margin-left: 18px; font-size: 10px; color:#444;}
+		&:after {display: inline-block;  content: ">"; vertical-align: 0; margin-left: 18px;  color:#444;position: relative; top:-2px;}
 	}
 
 

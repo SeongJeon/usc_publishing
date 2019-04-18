@@ -84,7 +84,7 @@ MAIN
 .lifeedu .main .main-board-zone .board + .board { border-left: 1px dashed #c9c8c8; }
 .lifeedu .main .main-board-zone .board .btn-more { position: absolute; right: 22px; top: 9px; text-indent: -999em; width: 32px; height: 32px; border: 1px solid #ccc; background: rgba(255, 255, 255, 0.5) url("../../static/images/lifeedu/icon_plus.png") no-repeat 50% 50%; }
 .lifeedu .main .main-board-zone .lst { padding: 17px 0 0 24px; }
-.lifeedu .main .main-board-zone .lst li { margin-top: 16px; }
+.lifeedu .main .main-board-zone .lst li { margin-top: 12px; }
 .lifeedu .main .main-board-zone .lst li:first-child { margin-top: 0; }
 .lifeedu .main .main-board-zone .lst li:before { display: inline-block; content: ""; width: 3px; height: 3px; background: #000; margin-right: 10px; vertical-align: middle; }
 .lifeedu .main .main-board-zone .lst a { display: inline-block; overflow: hidden; color: #000; font-size: 16px; max-width: 90%; white-space: nowrap; text-overflow: ellipsis; vertical-align: middle; }
@@ -109,7 +109,7 @@ MAIN
 .lifeedu .main .main-gotolink-zone .quick-zone .menu .name { display: block; margin-top: 24px; color: #fff; font-size: 18px; text-align: center; line-height: 24px; }
 .lifeedu .main .main-gotolink-zone .wearea-zone { float: left; position: relative; width: 650px; height: 300px; background: url("../../static/images/lifeedu/main/bg_wearea.png") repeat 0 0, url("../../static/images/lifeedu/main/bg_map.png") no-repeat 0 0; }
 .lifeedu .main .main-gotolink-zone .wearea-zone .tit { overflow: hidden; position: absolute; right: 7px; top: 17px; padding: 0 20px; font-size: 22px; color: #fff; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; text-align: center; line-height: 50px; background: #ff7a39; border-radius: 100px; }
-.lifeedu .main .main-gotolink-zone .wearea-zone .desc { position: absolute; right: 24px; top: 84px; text-align: right; color: #fff; font-size: 16px; line-height: 24px; }
+.lifeedu .main .main-gotolink-zone .wearea-zone .desc { position: absolute; right: 24px; top: 84px; text-align: right; color: #fff; font-size: 15px; line-height: 24px; }
 .lifeedu .main .main-gotolink-zone .wearea-zone .map { padding: 15px 0 0 30px; position: relative; z-index: 1; background: url("../../static/images/lifeedu/main/bg_map.png") no-repeat 0 0; }
 .lifeedu .main .main-gotolink-zone .wearea-zone .map[data-map=map1] { background: url("../../static/images/lifeedu/main/img_map1.png") no-repeat 0 0; }
 .lifeedu .main .main-gotolink-zone .wearea-zone .map[data-map=map2] { background: url("../../static/images/lifeedu/main/img_map2.png") no-repeat 0 0; }
@@ -182,7 +182,7 @@ SUB PAGE
 .lifeedu .search-box-detail .ebooksys-search-form .tit { float: left; width: 95px; color: #111; font-size: 18px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; line-height: 35px; }
 .lifeedu .search-box-detail .ebooksys-search-form .form { padding-left: 95px; }
 .lifeedu .search-box-detail .ebooksys-search-form .block + .block { margin-top: 12px; }
-.lifeedu .search-box-detail .ebooksys-search-form .term input { width: 153px; }
+.lifeedu .search-box-detail .ebooksys-search-form .term input { width: 151px; }
 .lifeedu .search-box-detail .comp-btn-zone *[class^=comm-btn] { width: 150px; }
 
 .lifeedu *[class^=class-lst][class*=_simpletype] { overflow: hidden; margin-top: 30px; }
@@ -191,13 +191,13 @@ SUB PAGE
 .lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(2) ~ li { margin-top: 20px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li a { display: block; padding: 15px 20px 28px; width: 100%; height: 100%; position: relative; border: 1px solid #d1d1d1; border-top: 1px solid #014099; box-sizing: border-box; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-name .name { display: block; margin-top: 14px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 19px; padding-right: 85px; }
-.lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state { position: absolute; right: -1px; top: -1px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; text-align: center; background: #014099; font-size: 17px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state { position: absolute; right: -1px; top: -1px; width: 90px; height: 90px; padding-top: 16px; box-sizing: border-box; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; text-align: center; background: #014099; font-size: 17px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state .sm { color: #fff475; font-size: 14px; display: block; padding-top: 23px; background: url("../../static/images/lifeedu/subpage/bg_txt.png") no-repeat 50% 9px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state.not { background: #797979; }
-.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst { overflow: hidden; margin-top: 26px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst { overflow: hidden; margin-top: 24px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li { position: relative; padding-left: 12px; box-sizing: border-box; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:before { display: inline-block; position: absolute; left: 0; top: 7px; width: 3px; height: 3px; background: #797979; content: ""; vertical-align: middle; }
-.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:nth-child(1) ~ li { margin-top: 12px; }
+.lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:nth-child(1) ~ li { margin-top: 10px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst .tit { display: inline-block; width: 85px; float: left; color: #222; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst .cont { padding-left: 85px; color: #939393; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover { border: 3px solid #014099; padding: 13px 18px 26px; }
@@ -263,9 +263,9 @@ SUB PAGE
 .ui-certification-zone > div:first-child { border-left: none; }
 .ui-certification-zone h4.tit { font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 24px; color: #262626; text-align: center; }
 .ui-certification-zone h4.tit:before { display: block; content: ""; width: 165px; height: 165px; margin: 13px auto 25px auto; background-size: 100% 100% !important; }
-.ui-certification-zone .txt { margin-top: 13px; height: 130px; line-height: 22px; font-size: 14px; color: #262626; letter-spacing: -1px; text-align: center; }
+.ui-certification-zone .txt { margin-top: 13px; height: 130px; line-height: 22px; font-size: 13px; color: #262626; letter-spacing: -1px; text-align: center; }
 .ui-certification-zone .btn-bottom { position: absolute; left: 50%; bottom: 15px; margin-left: -83px; }
-.ui-certification-zone .btn-bottom .btn { display: block; width: 165px; height: 40px; margin: 0 auto; line-height: 40px; border-radius: 100px; font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 15px; color: #fff; text-align: center; }
+.ui-certification-zone .btn-bottom .btn { display: block; width: 165px; height: 40px; margin: 0 auto; padding-bottom: 2px; line-height: 38px; border-radius: 100px; font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 15px; color: #fff; text-align: center; }
 .ui-certification-zone .sns-zone { padding: 0 33px 0 36px; }
 .ui-certification-zone .sns-zone .tit:before { background: url("../../static/images/usc/subpage/bg_login_zone.png") no-repeat; }
 .ui-certification-zone .sns-zone .tit .point { color: #00a54f; }
@@ -306,12 +306,12 @@ SUB PAGE
 .tbl-lifeedu th { height: 30px; text-align: center; color: #787878; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 16px; }
 .tbl-lifeedu th:nth-child(2) { text-align: left; padding-left: 66px; }
 .tbl-lifeedu td { padding: 3px 3px 2px; }
-.tbl-lifeedu .w_form input { width: 185px; }
+.tbl-lifeedu .w_form input { width: 180px; }
 .tbl-lifeedu .w_form *[class^=comm-btn] { width: auto; padding: 0 10px; }
 .tbl-lifeedu .w_activity input { width: 127px; }
 .tbl-lifeedu .w_activity .txt { color: #787878; }
 .tbl-lifeedu .add-btn-position { text-align: right; margin-top: 5px; }
-.tbl-lifeedu .add-btn-position *[class^=comm-btn] { width: 145px; }
+.tbl-lifeedu .add-btn-position *[class^=comm-btn] { width: 150px; }
 
 /* 평생네트워크 */
 .institute .map-institute { position: relative; overflow: hidden; padding: 35px 0 50px; background: #f4f4f4; border: 1px solid #d1d1d1; border-top: 2px solid #014099; border-bottom: 1px solid #014099; }

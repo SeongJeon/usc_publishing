@@ -116,8 +116,8 @@ MAIN
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-right li:before { display: inline-block; vertical-align: middle; content: ""; width: 4px; height: 4px; background: #acacac; margin-right: 10px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-right li + li { margin-top: 10px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .flag { display: inline-block; width: 68px; padding-bottom: 2px; line-height: 20px; color: #fff; border-radius: 100px; text-align: center; vertical-align: middle; font-size: 14px; }
-#wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .cont { display: inline-block; vertical-align: middle; overflow: hidden; max-width: 420px; padding-left: 10px; color: #666; font-size: 15px; line-height: 22px; text-overflow: ellipsis; white-space: nowrap; }
-#wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .date { display: inline-block; float: right; color: #666; font-size: 15px; line-height: 22px; }
+#wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .cont { display: inline-block; position: relative; vertical-align: middle; overflow: hidden; max-width: 420px; padding-left: 10px; color: #666; font-size: 15px; line-height: 22px; text-overflow: ellipsis; white-space: nowrap; top: -2px; }
+#wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .date { display: inline-block; position: relative; top: -2px; float: right; color: #666; font-size: 15px; line-height: 22px; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 { padding-top: 15px; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture:after { display: block; clear: both; content: ""; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture > li { float: left; width: 25%; padding: 0 17px; box-sizing: border-box; letter-spacing: -0.5px; }
@@ -193,17 +193,17 @@ MAIN
 #wrap.usclib #container.main .main-etc-zone .inner > div { width: 420px; float: left; background: #fff; }
 #wrap.usclib #container.main .main-etc-zone .inner > div + div { margin-left: 30px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone { position: relative; padding: 70px 20px 0; height: 380px; }
-#wrap.usclib #container.main .main-etc-zone .calendar-zone .tit { font-size: 23px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #2b2b2b; position: absolute; left: 28px; top: 22px; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .tit { font-size: 23px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #2b2b2b; position: absolute; left: 28px; top: 20px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .btn-more { position: absolute; right: 20px; top: 17px; border: 1px solid #adc1d1; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .btn-more a { display: inline-block; width: 35px; height: 35px; background: url("../../static/images/usclib/main/icon_more.png") no-repeat 50% 50%; text-indent: -999em; }
-#wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator { position: absolute; right: 74px; top: 23px; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator { position: absolute; right: 74px; top: 19px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .month { font-size: 22px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #2b2b2b; padding: 0 28px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .month em { color: #ec560c; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow { position: absolute; top: 0; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow button { width: 12px; height: 23px; text-indent: -999em; }
-#wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow.btn-prev { left: 0; top: 0; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow.btn-prev { left: 0; top: 4px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow.btn-prev button { background: url("../../static/images/usclib/main/icon_prev1.png") no-repeat 50% 50%; }
-#wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow.btn-next { right: 0; top: 0; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow.btn-next { right: 0; top: 4px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow.btn-next button { background: url("../../static/images/usclib/main/icon_next1.png") no-repeat 50% 50%; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl { width: 100%; table-layout: fixed; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl thead th { font-size: 15px; color: #484848; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
@@ -220,7 +220,7 @@ MAIN
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti .bullet.today { background: #fb5706; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti .bullet.event { background: #136dc1; }
 #wrap.usclib #container.main .main-etc-zone .books-zone { position: relative; padding: 75px 20px 0; height: 380px; }
-#wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] { position: absolute; left: 20px; top: 22px; }
+#wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] { position: absolute; left: 20px; top: 20px; }
 #wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist]:after { display: block; clear: both; content: ""; }
 #wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] button { font-size: 23px; color: #c7c1bf; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 #wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] button[aria-selected=true] { color: #2b2b2b; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
@@ -236,7 +236,7 @@ MAIN
 #wrap.usclib #container.main .main-etc-zone .books-zone .slick-dots button { width: 14px; height: 14px; background: #c7c1bf; border-radius: 100px; text-indent: -999em; }
 #wrap.usclib #container.main .main-etc-zone .books-zone .slick-dots .slick-active button { background: #136dc1; }
 #wrap.usclib #container.main .main-etc-zone .popup-zone { position: relative; height: 380px; padding: 80px 13px 0; }
-#wrap.usclib #container.main .main-etc-zone .popup-zone .tit { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 23px; color: #2b2b2b; position: absolute; left: 15px; top: 22px; }
+#wrap.usclib #container.main .main-etc-zone .popup-zone .tit { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 23px; color: #2b2b2b; position: absolute; left: 15px; top: 20px; }
 #wrap.usclib #container.main .main-etc-zone .popup-zone a { display: block; overflow: hidden; width: 100%; height: 270px; }
 #wrap.usclib #container.main .main-etc-zone .popup-zone a img { width: 100%; height: 100%; }
 #wrap.usclib #container.main .main-etc-zone .books-zone .indicator, #wrap.usclib #container.main .main-etc-zone .popup-zone .indicator { border: 1px solid #adc1d1; overflow: hidden; position: absolute; right: 19px; top: 17px; height: 37px; }

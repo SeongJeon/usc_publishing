@@ -162,7 +162,7 @@ MAIN
 	.village .phone-inner h3 {margin-bottom:14px;font-weight: bold;font-size:22px;color:#fff;}
 	.village .phone-inner h3 span {font-weight: bold;font-size:16px;color:#d3e570;}
 	.village .phone-inner .time-area {display:inline-block;width:353px;height:125px;padding:30px 14px 0 102px;background:#ecf3c1 url(../images/village/main/bg_phone.png) no-repeat left bottom;vertical-align:top;border-radius:20px;box-sizing:border-box;}
-	.village .phone-inner .time-area .time {margin-bottom:13px;font-size:22px;font-weight: bold;color:#2d2d2d;}
+	.village .phone-inner .time-area .time {margin-bottom:13px;font-size:20px;font-weight: bold;color:#2d2d2d;}
 	.village .phone-inner .time-area .rest {height:35px;line-height:35px;text-align:center;background:#7ab66c;color:#fff;border-radius:30px;}
 	.village .phone-inner .number-area {margin-left:30px;}
 	.village .phone-inner .number-area.view-pc {display:inline-block !important;}
@@ -221,7 +221,7 @@ MAIN
 	.village .service-inner .service-list {float:left;width:90%;}
 	.village .service-inner .service-list div[class*="service"] {float:left;width:10%}
 	.village .service-inner .service-list .service07 span {position: relative; margin-left: -10%}
-	.village .service-inner .service-list a {display:block;padding-top:103px;font-size:17px;color:#555;text-align:center;}
+	.village .service-inner .service-list a {display:block;padding-top:103px;font-size:16px;color:#555;text-align:center;}
 
 	/* 자주찾는 서비스 ico */
 	.village .service-inner .service-list .service01 a {background:url(../images/village/main/ico_service01_off.png) no-repeat center top;}

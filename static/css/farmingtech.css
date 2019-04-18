@@ -67,7 +67,7 @@ MAIN
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone { float: left; overflow: hidden; width: 50%; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu { float: left; overflow: hidden; width: 510px; height: 330px; padding: 35px 20px 0; background: #cdc090; box-sizing: border-box; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu li { float: left; position: relative; width: 25%; text-align: center; }
-#wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu a { display: inline-block; color: #222; font-size: 16px; }
+#wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu a { display: inline-block; color: #222; font-size: 15px; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu a:before { display: block; content: ""; width: 78px; height: 78px; margin: 0 auto; border-width: 5px; border-style: solid; border-color: transparent; border-radius: 100px; box-sizing: border-box; -webkit-transition: 0.2s ease; -ms-transition: 0.2s ease; -moz-transition: 0.2s ease; transition: 0.2s ease; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu a:hover:before { border-color: #362501; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu a .name { display: block; margin-top: 18px; }
@@ -166,8 +166,8 @@ MAIN
 #wrap.farmingtech #container.main .farming-zone .menu { margin-top: 13px; }
 #wrap.farmingtech #container.main .farming-zone .menu li { padding: 7px 8px 8px 10px; height: 40px; background: #fff; border-radius: 3px; }
 #wrap.farmingtech #container.main .farming-zone .menu li + li { margin-top: 12px; }
-#wrap.farmingtech #container.main .farming-zone .menu strong { color: #373737; font-size: 16px; line-height: 40px; }
-#wrap.farmingtech #container.main .farming-zone .menu select { float: right; width: 220px; height: 40px; padding: 0 24px 0 9px; border: 1px solid #d4c5b4; color: #868686; font-size: 16px; line-height: 38px; background: url("../../static/images/farmingtech/main/form_select.png") no-repeat 100% 50%; background-size: auto 100%; }
+#wrap.farmingtech #container.main .farming-zone .menu strong { color: #373737; font-size: 14px; line-height: 40px; }
+#wrap.farmingtech #container.main .farming-zone .menu select { float: right; width: 220px; height: 40px; padding: 0 24px 0 9px; border: 1px solid #d4c5b4; color: #868686; font-size: 14px; line-height: 38px; background: url("../../static/images/farmingtech/main/form_select.png") no-repeat 100% 50%; background-size: auto 100%; }
 #wrap.farmingtech #container.main .weather-zone { position: relative; width: 422px; padding: 29px 28px 0; background: #ffca59; }
 #wrap.farmingtech #container.main .weather-zone .curr-time { color: #fff; font-size: 16px; position: absolute; right: 30px; top: 30px; }
 #wrap.farmingtech #container.main .weather-zone .goto { margin-top: 10px; }
@@ -247,11 +247,11 @@ SUB PAGE
 .cooking .cooking-wrap .img-area { float: left; margin-right: 23px; }
 .cooking .cooking-wrap .img-area img { display: inline-block; width: 370px; }
 .cooking .cooking-wrap .cooking-info { float: left; width: 61%; }
-.cooking .cooking-wrap .cooking-info > li { display: table; width: 100%; height: 183px; border: 1px solid #dddbdb; }
+.cooking .cooking-wrap .cooking-info > li { display: table; width: 100%; min-height: 183px; border: 1px solid #dddbdb; }
 .cooking .cooking-wrap .cooking-info > li + li { margin-top: -1px; }
 .cooking .cooking-wrap .cooking-info > li .tit { display: table-cell; width: 99px; background: #f1f3f4; vertical-align: middle; text-align: center; font-size: 17px; font-family: 'NanumSquareB'; color: #1c1c1c; }
-.cooking .cooking-wrap .cooking-info > li ol { display: table-cell; padding-left: 18px; vertical-align: middle; }
-.cooking .cooking-wrap .cooking-info > li ul { display: table-cell; padding-left: 18px; vertical-align: middle; }
+.cooking .cooking-wrap .cooking-info > li ol { display: table-cell; padding: 10px 10px 10px 18px; vertical-align: middle; }
+.cooking .cooking-wrap .cooking-info > li ul { display: table-cell; padding: 10px 10px 10px 18px; vertical-align: middle; }
 .cooking .cooking-wrap .cooking-info > li .num-list li { margin-top: 8px; padding-left: 18px; text-indent: -18px; font-size: 15px; line-height: 1.2; color: #4b4b4b; font-family: 'NanumSquareB'; }
 .cooking .cooking-wrap .cooking-info > li .comp-lst_dotted li { font-size: 15px; }
 .cooking .cooking-wrap .cooking-info > li .num-list li:first-child { margin-top: 0; }
@@ -271,8 +271,8 @@ SUB PAGE
 .techniques .heading-h3 + .img-area .btn-pdf { position: absolute; bottom: 126px; right: 172px; width: 227px; height: 48px; text-align: center; line-height: 48px; border: 1px solid #fff; background: rgba(255, 255, 255, 0.2); color: #fff; border-radius: 30px; }
 .techniques .pdf-txt { height: 46px; margin-bottom: 16px; line-height: 46px; border: 2px solid #dddbdb; text-align: center; }
 .techniques .pdf-txt .comp-lst_important { display: inline-block; color: #4b4b4b; font-family: 'NanumSquareB'; }
-.techniques .btn-wrap { margin: -7px 0 0 -7px; }
-.techniques .btn-wrap li { display: inline-block; width: 24%; margin: 7px 0 0 7px; }
+.techniques .btn-wrap { overflow: hidden; margin: -7px 0 0 -7px; }
+.techniques .btn-wrap li { float: left; display: inline-block; width: 24%; margin: 7px 0 0 7px; }
 .techniques .btn-wrap .btn-pdf { position: relative; display: block; height: 50px; padding-left: 23px; line-height: 50px; background: #fff3e9; color: #4a4a4a; box-sizing: border-box; }
 .techniques .btn-wrap .comm-btn_download2:after { position: absolute; right: 0; top: 0; display: block; width: 50px; height: 50px; background-color: #ffd67e; content: ''; }
 .techniques .btn-wrap .btn-pdf:hover:before { position: absolute; top: 0; left: 0; display: block; width: 99%; height: 96%; border: 2px solid #ffb007; content: ''; }

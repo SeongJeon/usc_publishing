@@ -234,7 +234,8 @@ SUB PAGE
 .muse_part01_02 .flow-chart li:after { display: block; position: absolute; left: -52px; top: 50%; width: 18px; height: 19px; margin-top: -10px; background: url(../images/uscmuseum/subpage/bg_flow_chart_arrow.png) no-repeat; content: ''; }
 .muse_part01_02 .flow-chart li:first-child:after, .muse_part01_02 .flow-chart li:last-child:before { display: none; }
 .muse_part01_02 .comm-btn_type4_whitegray:before { display: inline-block; width: 26px; height: 26px; margin-right: 10px; background: url(../images/uscmuseum/subpage/icon_download4.png) no-repeat 50% 50%; background-size: 100% auto; vertical-align: middle; content: ''; }
-.muse_part01_02 .btn_box a { width: 320px; }
+.muse_part01_02 .btn_box { overflow: hidden; }
+.muse_part01_02 .btn_box a { width: 320px; float: left; }
 .muse_part01_02 table tbody tr:nth-of-type(2) td, .muse_part01_02 table tbody tr:nth-of-type(3) td { padding: 15px 10px; }
 .muse_part01_02 .comp-lst_important { color: #4b4b4b; }
 
@@ -306,7 +307,7 @@ SUB PAGE
 .notion *[class$="tit"] { font-weight: bold; color: #4b4b4b; font-size: 17px; text-align: center; }
 .notion .design-wrap { margin: 0 0 24px 30px; }
 .notion .design-wrap:after { display: block; clear: both; content: ''; }
-.notion .design-wrap .design-area { display: inline-block; width: 308px; height: 491px; margin-right: 24px; padding: 20px 14px; border: 1px solid #c7c1bf; vertical-align: top; box-sizing: border-box; }
+.notion .design-wrap .design-area { display: inline-block; width: 306px; height: 520px; margin-right: 24px; padding: 20px 14px; border: 1px solid #c7c1bf; vertical-align: top; box-sizing: border-box; }
 .notion .design-wrap .design-area .tit { margin-bottom: 15px; }
 .notion .design-wrap .design-area .sub-tit { display: block; height: 40px; line-height: 40px; }
 .notion .design-wrap .design-area .yellow { background: #ffcf26; }
@@ -332,7 +333,7 @@ SUB PAGE
 .notion .design-wrap .design-area.concept .txt01 { background: url(../images/uscmuseum/subpage/bg_concept01.png) no-repeat left top; }
 .notion .design-wrap .design-area.concept .txt02 { background: url(../images/uscmuseum/subpage/bg_concept02.png) no-repeat left top; }
 .notion .design-wrap .design-area.concept .txt03 { padding: 26px 0 27px 110px; line-height: 1.2; background: url(../images/uscmuseum/subpage/bg_concept03.png) no-repeat left top; }
-.notion .tree-area { display: inline-block; width: 308px; height: 489px; background: url(../images/uscmuseum/subpage/bg_tree.png) no-repeat left top; border: 1px solid #c7c1bf; text-align: center; box-sizing: border-box; }
+.notion .tree-area { display: inline-block; width: 308px; height: 520px; background: url(../images/uscmuseum/subpage/bg_tree.png) no-repeat 50% 100%; border: 1px solid #c7c1bf; text-align: center; box-sizing: border-box; }
 .notion .tree-area .tit { margin-bottom: 110px; padding-top: 20px; line-height: 1.5; }
 .notion .tree-area .tit span { display: block; color: #fe970e; font-weight: bold; font-size: 24px; }
 .notion .tree-area .txt { line-height: 1.6; color: #fff; font-weight: bold; font-size: 15px; }

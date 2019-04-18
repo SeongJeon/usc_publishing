@@ -72,7 +72,7 @@ LAYOUT
 				top:22px;
 			}
 			#gnb p a {background:#ffeda9; color:#2d2d2d;}
-		}
+		} 
 	}
 	body.pc .uscmuseum #gnb {
 		margin-left: 330px;
@@ -126,7 +126,7 @@ MAIN
 		width: 1320px; margin:0 auto;
 		&:after {display:block; clear:both; content:""}
 	}
-
+ 
 	// 게시판
 	.main-board-zone {
 		overflow:hidden; height: 80px; background:url('../../static/images/uscmuseum/main/bg_board1.png') no-repeat 0 0, url('../../static/images/uscmuseum/main/bg_board2.png') no-repeat 50% 0; background-size:50% 100%, 100% 100%;
@@ -476,7 +476,8 @@ SUB PAGE
 		}
 	}
 	.comm-btn_type4_whitegray:before { display: inline-block; width: 26px; height: 26px; margin-right: 10px; background: url(../images/uscmuseum/subpage/icon_download4.png) no-repeat 50% 50%; background-size: 100% auto; vertical-align: middle; content: '';}
-	.btn_box a { width: 320px; }
+	.btn_box {overflow: hidden;}
+	.btn_box a { width: 320px; float: left;}
 	table tbody tr:nth-of-type(2) td,
 	table tbody tr:nth-of-type(3) td { padding:15px 10px;}
 	.comp-lst_important { color:#4b4b4b;}
@@ -597,7 +598,7 @@ SUB PAGE
 		margin:0 0 24px 30px;
 		&:after {display:block;clear:both;content:'';}
 		.design-area {
-			display:inline-block;width:308px;height:491px;margin-right:24px;padding:20px 14px;border:1px solid #c7c1bf;vertical-align:top;box-sizing:border-box;
+			display:inline-block;width:306px;height:520px; margin-right:24px;padding:20px 14px;border:1px solid #c7c1bf;vertical-align:top;box-sizing:border-box;
 			.tit {margin-bottom:15px;}
 			.sub-tit {display:block;height:40px;line-height:40px;}
 			.yellow {background:#ffcf26;}
@@ -633,7 +634,7 @@ SUB PAGE
 		}
 	}
 	.tree-area {
-		display:inline-block;width:308px;height:489px;background:url(../images/uscmuseum/subpage/bg_tree.png) no-repeat left top;border:1px solid #c7c1bf;text-align:center;box-sizing:border-box;
+		display:inline-block;width:308px;height:520px;background:url(../images/uscmuseum/subpage/bg_tree.png) no-repeat 50% 100%;border:1px solid #c7c1bf;text-align:center;box-sizing:border-box; 
 		.tit {margin-bottom:110px;padding-top:20px;line-height:1.5;}
 		.tit span {display:block;color:#fe970e;font-weight: bold;font-size:24px;}
 		.txt {line-height:1.6;color:#fff;font-weight: bold;font-size:15px;}

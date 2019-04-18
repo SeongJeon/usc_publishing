@@ -174,7 +174,7 @@ MAIN
 		.lst {
 			padding:17px 0 0 24px;
 			li {
-				margin-top: 16px;
+				margin-top: 12px;
 				&:first-child {margin-top: 0}
 				&:before {display: inline-block; content: ""; width: 3px; height: 3px; background:#000; margin-right: 10px; vertical-align: middle;}
 			}
@@ -221,7 +221,7 @@ MAIN
 			float: left; position: relative; width:650px; height: 300px; background: url("../../static/images/lifeedu/main/bg_wearea.png") repeat 0 0, url("../../static/images/lifeedu/main/bg_map.png") no-repeat 0 0;
 
 			.tit {overflow: hidden; position: absolute; right: 7px; top:17px; padding:0 20px; font-size: 22px; color:#fff; font-family: $font2; font-weight: bold; text-align: center; line-height: 50px; background:#ff7a39; border-radius: 100px;}
-			.desc {position:absolute; right:24px; top: 84px; text-align: right; color:#fff; font-size: 16px; line-height: 24px;}
+			.desc {position:absolute; right:24px; top: 84px; text-align: right; color:#fff; font-size: 15px; line-height: 24px;}
 			.map {
 				padding:15px 0 0 30px; position: relative; z-index: 1;
 				@include background("lifeedu/main/bg_map.png",no-repeat 0 0);
@@ -345,7 +345,7 @@ SUB PAGE
 		.form {padding-left: 95px;}
 		.block + .block {margin-top: 12px}
 		.term {
-			input {width:153px;}
+			input {width:151px;}
 		}
 	}
 	.comp-btn-zone {
@@ -365,17 +365,17 @@ SUB PAGE
 				.name {display:block; margin-top: 14px; color:#222; font-family: $font2; font-weight: bold; font-size: 19px; padding-right: 85px;}
 			}
 			.booking-state {
-				position: absolute; right: -1px; top:-1px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: $font2; font-weight: bold; color:#fff; text-align: center; background:#014099; font-size: 17px;
+				position: absolute; right: -1px; top:-1px; width: 90px; height: 90px; padding-top: 16px; box-sizing: border-box; font-family: $font2; font-weight: bold; color:#fff; text-align: center; background:#014099; font-size: 17px;
 				.sm {color:#fff475; font-size: 14px; display: block; padding-top: 23px; @include background("lifeedu/subpage/bg_txt.png", no-repeat 50% 9px);}
 
 				&.not {background:#797979; }
 			}
 			.class-lst {
-				overflow: hidden; margin-top: 26px;
+				overflow: hidden; margin-top: 24px;
 				li {
 					position: relative; padding-left: 12px; box-sizing: border-box; font-family: $font2; font-weight: bold;
 					&:before {display: inline-block; position: absolute; left:0; top:7px; width: 3px; height: 3px; background:#797979; content: ""; vertical-align: middle;}
-					&:nth-child(1) ~ li {margin-top: 12px}
+					&:nth-child(1) ~ li {margin-top: 10px}
 				}
 				.tit {display:inline-block; width:85px; float: left;color:#222}
 				.cont {padding-left: 85px; color:#939393;}
@@ -494,10 +494,10 @@ SUB PAGE
 		font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 24px; color: #262626; text-align: center; 
 		&:before { display: block; content: ""; width: 165px; height: 165px; margin: 13px auto 25px auto; background-size: 100% 100% !important; }
 	}
-	.txt { margin-top: 13px;height:130px; line-height: 22px; font-size: 14px; color: #262626; letter-spacing: -1px; text-align: center; }
+	.txt { margin-top: 13px;height:130px; line-height: 22px; font-size: 13px; color: #262626; letter-spacing: -1px; text-align: center; }
 	.btn-bottom { 
 		position: absolute; left: 50%; bottom: 15px; margin-left: -83px; 
-		.btn { display: block; width: 165px; height: 40px; margin: 0 auto; line-height:40px; border-radius:100px; font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 15px; color: #fff; text-align: center; }
+		.btn { display: block; width: 165px; height: 40px; margin: 0 auto; padding-bottom: 2px; line-height:38px; border-radius:100px; font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 15px; color: #fff; text-align: center; }
 	}
 	.sns-zone { 
 		padding: 0 33px 0 36px; 
@@ -562,7 +562,7 @@ SUB PAGE
 	th:nth-child(2) {text-align: left; padding-left: 66px;}
 	td {padding:3px 3px 2px;}
 	.w_form {
-		input {width:185px;}
+		input {width:180px;}
 		*[class^=comm-btn] {width:auto; padding:0 10px;}
 	}
 	.w_activity {
@@ -572,7 +572,7 @@ SUB PAGE
 
 	.add-btn-position {
 		text-align: right; margin-top: 5px;
-		*[class^=comm-btn] {width:145px;}
+		*[class^=comm-btn] {width:150px;}
 	}
 }
 /* 평생네트워크 */

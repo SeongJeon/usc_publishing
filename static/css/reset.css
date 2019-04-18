@@ -5,7 +5,7 @@
 @font-face { font-family: 'NanumSquareB'; font-weight: 700; src: url("../fonts/NanumSquareB.eot"); src: url("../fonts/NanumSquareB.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareB.woff") format("woff"), url("../fonts/NanumSquareB.ttf") format("truetype"); }
 @font-face { font-family: 'NanumSquareEB'; font-weight: 800; src: url("../fonts/NanumSquareEB.eot"); src: url("../fonts/NanumSquareEB.eot?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareEB.woff") format("woff"), url("../fonts/NanumSquareEB.ttf") format("truetype"); }
 /* RESET */
-html { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #797979; -webkit-text-size-adjust: none; font-size: 16px; letter-spacing: -0.5px; font-weight: 400; -webkit-overflow-scrolling: touch; }
+html { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #797979; -webkit-text-size-adjust: none; font-size: 16px; letter-spacing: -0.5px; -webkit-overflow-scrolling: touch; }
 
 html body { min-width: 320px; }
 

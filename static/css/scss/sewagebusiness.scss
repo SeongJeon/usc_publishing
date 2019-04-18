@@ -100,7 +100,7 @@ MAIN
 
 		.inner {position: relative;}
 		.tit {
-			position:absolute; left:0; top:0; font-size: 23px; color:#2e364a; line-height: 30px; font-family: $font2; padding-top: 18px;
+			position:absolute; left:0; top:0; font-size: 23px; color:#2e364a; line-height: 30px; font-family: $font2;font-weight: bold; padding-top: 18px;
 			&:after {display: block; content: ""; width: 81px; height: 19px; @include background("sewagebusiness/main/bg_favorit.png",no-repeat 50% 50%); margin-top: 5px;}
 		}
 		.lst-favorit-service {
@@ -138,7 +138,7 @@ MAIN
 			a.f8 .name {position: relative; left:-10px; width:120%;}
 			a:hover {
 				&:before {background-color: #2952b9 !important;}
-				.name {font-family: $font2; color:#2952b9;}
+				.name {font-family: $font2;font-weight: bold; color:#2952b9;}
 			}
 		}
 	}
@@ -152,7 +152,7 @@ MAIN
 			li {float: left; margin-left: 20px;}
 			li:first-child {margin-left: 0;}
 			a {
-				display:inline-block; padding:0 10px; font-family: $font2; font-size: 22px; color:#222; line-height: 38px;border-bottom:3px solid #fff;
+				display:inline-block; padding:0 10px; font-family: $font2;font-weight: bold; font-size: 22px; color:#222; line-height: 38px;border-bottom:3px solid #fff;
 				&[aria-selected=true] {border-bottom:3px solid #2952b9; }
 			}
 		}
@@ -161,11 +161,11 @@ MAIN
 			dl {
 				position: relative; padding-left: 100px; min-height: 92px;
 				dt {
-					font-size: 20px; color:#222; font-family: $font2;  padding-top: 3px;
+					font-size: 20px; color:#222; font-family: $font2;font-weight: bold;  padding-top: 3px;
 					.date {
 						position: absolute; left:0; top:0;
 						display: block; width:90px; height: 92px; padding-top: 21px; border:1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color:#666; text-align: center;
-						strong {display:block; margin-top: 1px; color:#2952b9; font-family: $font2; font-size: 28px; }
+						strong {display:block; margin-top: 1px; color:#2952b9; font-family: $font2;font-weight: bold; font-size: 28px; }
 					}
 				}
 				dd {display:-webkit-box; overflow:hidden; max-height:52px; margin-top: 11px; font-size: 16px; color:#666; line-height: 26px; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis;}
@@ -188,17 +188,17 @@ MAIN
 	/* 안내 */
 	.goto-zone {
 		float: right; overflow: hidden; width:650px; 
-		.tit {font-family: $font2; color:#fff; font-size: 22px;}
+		.tit {font-family: $font2;font-weight: bold; color:#fff; font-size: 22px;}
 		.desc {margin-top: 7px; color:rgba(256,256,256,0.4); font-size: 15px;}; 
 		.infor-complaint {
 			float: right;width:315px; height:330px; padding:22px 20px 0; background:#4561a8; color:#fff;
 			.call {
-				margin-top: 11px; font-size: 24px; line-height: 30px; font-family: $font2; padding:5px 0 8px 72px;
+				margin-top: 11px; font-size: 24px; line-height: 30px; font-family: $font2; font-weight: bold; padding:5px 0 8px 72px;
 				@include background("sewagebusiness/main/icon_call.png",no-repeat 0% 0%);
 			}
 			.call-lst {
 				font-size: 16px; line-height: 34px; margin-top: 1px;
-				li {border-bottom: 1px solid rgba(256,256,256,0.3); padding:0 10px; font-family: $font2;}
+				li {border-bottom: 1px solid rgba(256,256,256,0.3); padding:0 10px; font-family: $font2; font-weight: bold;}
 				li:before{display: inline-block; content: "·"; margin-right: 5px; vertical-align: middle;}
 				.num {float: right;}
 			}
@@ -244,7 +244,7 @@ MAIN
 			position: absolute; right: 12px; top:300px; z-index: 2;
 			li {
 				display: none; width:70px; color:#fff; font-size: 15px; text-align: center;
-				.current {font-family: $font2; font-size: 18px;} 
+				.current {font-family: $font2;font-weight: bold; font-size: 18px;} 
 			}
 			li.slick-active {display: block;}
 		}
@@ -253,7 +253,7 @@ MAIN
 	.main-service {
 		float: right; width:40%; height:430px; border:30px solid #2ba1d8; border-right: 0; @include background("sewagebusiness/main/bg_service.jpg",no-repeat 50% 50%); background-size: cover;
 		.main-service-inner {position:relative; width:420px; padding:24px 24px 0; }
-		.tit {font-size: 22px; color:#000; font-family: $font2; }
+		.tit {font-size: 22px; color:#000; font-family: $font2;font-weight: bold; }
 		.indicator {
 			position: absolute; right: 0; top:19px; overflow: hidden; border:1px solid #d6d5d5;
 			li {float: left;}
@@ -290,13 +290,13 @@ SUB PAGE
 ------------------------------------------------------ */
 .calculation-ex-zone {
 	margin-left: 30px; margin-top: 15px; padding:25px; background:#f4f4f4; border:1px solid #cdcdcd;
-	.extit {margin-bottom: 15px; font-family: $font2; color:#111; font-size: 18px;}
+	.extit {margin-bottom: 15px; font-family: $font2;font-weight: bold; color:#111; font-size: 18px;}
 	.extit strong  {color:#2952b9;}
 
 	table[class^=comp-tbl][class*=_datatype] {
 		margin-top: 10px; margin-bottom: 15px; border-top-color: #2a3b65; border-bottom-color: #2a3b65;
 		thead th {border-top-color: #2a3b65; background:#e7eff4;}
-		tbody td {background:#fff; font-family: $font2;}
+		tbody td {background:#fff; font-family: $font2; font-weight: bold;}
 	}
 
 	.comp-lst_important {margin-top: 10px; margin-left: 15px;}
@@ -627,7 +627,7 @@ SUB PAGE
 	table[class^=comp-tbl][class*=_datatype] {
 		margin-top: 10px; margin-bottom: 15px; border-top-color: #2a3b65; border-bottom-color: #2a3b65;
 		thead th {border-top-color: #2a3b65; background:#e7eff4;}
-		tbody td {background:#fff; font-family: $font2;}
+		tbody td {background:#fff; font-family: $font2; font-weight: bold;}
 	}
 
 	.comp-lst_important {margin-top: 0.5rem; margin-left: 1rem;}

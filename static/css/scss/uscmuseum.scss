@@ -61,7 +61,7 @@ LAYOUT
 			h2.over a:after,
 			h2 a:hover:after {border-color:#733f2c;}
 			p a.current ,
-			p a:hover {background: #dcb725; color:#fff; font-family: $font2;}
+			p a:hover {background: #dcb725; color:#fff; font-family: $font2;font-weight: bold;}
 			h3 a:before{background: #1e4363;}
 		}
 
@@ -133,9 +133,9 @@ MAIN
 
 		div[class^=board-] {
 			float: left; width: 50%; position: relative;
-			.tit {float: left;font-family: $font3; line-height: 80px;}	
+			.tit {float: left;font-family: $font3;font-weight: bold; line-height: 80px;}	
 			.cont {
-				font-family: $font2; line-height: 80px;
+				font-family: $font2;font-weight: bold; line-height: 80px;
 				.flag {display:inline-block;margin-right: 3px;vertical-align: top;}
 				.txt {display: inline-block; overflow:hidden; max-width: 70%; text-overflow: ellipsis; white-space: nowrap;}
 			}
@@ -168,7 +168,7 @@ MAIN
 		&:after {display:block; clear:both; content:""}
 		& > div[class^=main-] {position: relative; float: left;}
 		.tit {
-			font-size: 24px; font-family: $font3; color:#363636; padding-left: 6px;
+			font-size: 24px; font-family: $font3;font-weight: bold; color:#363636; padding-left: 6px;
 			.small {font-size:16px; font-family: $font1; margin-left: 5px;}
 		}
 		.indicator {
@@ -224,7 +224,7 @@ MAIN
 		.inner {position: relative; padding:45px 0 40px; }
 		.tit {
 			position: absolute; left:0; top:57px;
-			font-size: 23px; font-family: $font2; color:#2b2b2b;
+			font-size: 23px; font-family: $font2;font-weight: bold; color:#2b2b2b;
 			&:after {display: block; content: ""; width:82px; height: 19px; margin-top: 10px; @include background("uscmuseum/main/bg_favorit.png",no-repeat 50% 50%);}
 		}
 		.favorit-service {
@@ -242,7 +242,7 @@ MAIN
 
 			a:hover {
 				.icon {background:#fac60e;}
-				.name {font-family: $font2;}
+				.name {font-family: $font2;font-weight: bold;}
 			}
 			.slick-current .slide:before {display: none}
 		}
@@ -405,7 +405,7 @@ SUB PAGE
 		li {float: left; margin-left: 8px; margin-bottom: 10px;}
 		li:nth-child(3n+1){clear:both; margin-left: 0;}
 		a {
-			display: block; width: 50px; height:50px; color:#fff; font-size: 18px; font-family: $font2; text-align: center; line-height: 40px; background:#6c1b31; border:5px solid #6c1b31; box-sizing: border-box;
+			display: block; width: 50px; height:50px; color:#fff; font-size: 18px; font-family: $font2;font-weight: bold; text-align: center; line-height: 40px; background:#6c1b31; border:5px solid #6c1b31; box-sizing: border-box;
 			&[aria-controls^=imgothertab] {background:#1fbbee; border-color:#1fbbee;}
 			&:hover, &[aria-selected=true] {border-color:#fac60e;}
 		}

@@ -205,7 +205,7 @@ MAIN
 			background:#016dae; position: relative; z-index: 1;
 			&:after {display:block; clear:both; content:""}
 			li {float:  left; width: 25%;}
-			a {display: block; font-size: 22px; line-height: 55px; height: 55px; font-family: $font2; color:#fff; text-align: center;}
+			a {display: block; font-size: 22px; line-height: 55px; height: 55px; font-family: $font2;font-weight: bold; color:#fff; text-align: center;}
 			a[aria-selected=true], a:hover {background:#fff; color:#222;}
 		}
 		.tab-cont {display: none; overflow:hidden; height: 230px; background: #fff; box-shadow:0 5px 10px rgba(24,24,24,0.1); }
@@ -229,7 +229,7 @@ MAIN
 					height: 190px; position: relative; padding:0 30px 0 160px; 
 					&:after{display: block; position: absolute; right: 0; top:4px; width: 1px; height: 188px; content: ""; background: #d6d5d5;}
 					dt {
-						font-size: 20px; font-family: $font2; color:#222; line-height: 30px;
+						font-size: 20px; font-family: $font2;font-weight: bold; color:#222; line-height: 30px;
 						.flag {width: 80px; display: inline-block; line-height: 30px; font-size: 17px; text-align: center; border-radius: 100px; margin-right: 5px;}
 					}
 					.txt {
@@ -258,10 +258,10 @@ MAIN
 				&:after {display:block; clear:both; content:""}
 				& > li {float: left; width: 25%; padding:0 17px; box-sizing: border-box; letter-spacing: -0.5px;}
 				& > li + li {border-left: 1px solid #d6d5d5;}
-				h3.tit {font-family: $font2; font-size: 20px; color:#222; text-align: center;}
+				h3.tit {font-family: $font2;font-weight: bold; font-size: 20px; color:#222; text-align: center;}
 				.lst {
 					font-size: 16px; color:#666; line-height: 22px; margin-top: 13px;
-					.tit {color:#222; font-family: $font2;}
+					.tit {color:#222; font-family: $font2;font-weight: bold;}
 					.total {color:#df1111;}
 					.current {color:#016dae;}
 					li {
@@ -283,7 +283,7 @@ MAIN
 			padding:20px 25px 20px;
 			.l-left {
 				float: left; width:50%; height: 190px; border-right:1px solid #d6d5d5;
-				.tit {font-size: 20px; color:#222; font-family: $font2;}
+				.tit {font-size: 20px; color:#222; font-family: $font2;font-weight: bold;}
 				.cont {
 					display:-webkit-box; overflow:hidden; font-size: 16px; line-height: 24px; max-height: 144px; margin-top: 17px; padding-right: 10px; -webkit-line-clamp:6; -webkit-box-orient:vertical; text-overflow:ellipsis; color:#666;
 				}
@@ -302,7 +302,7 @@ MAIN
 			padding:20px 25px 20px;
 			.l-left {
 				float: left; position: relative; width:50%; height: 190px; border-right:1px solid #d6d5d5;
-				.tit {font-size: 20px; color:#222; font-family: $font2;}
+				.tit {font-size: 20px; color:#222; font-family: $font2; font-weight: bold;}
 				.cont {
 					display:-webkit-box; overflow:hidden; font-size: 16px; line-height: 24px; max-height: 120px; margin-top: 17px; padding-right: 10px; -webkit-line-clamp:5; -webkit-box-orient:vertical; text-overflow:ellipsis; color:#666;
 				}
@@ -327,7 +327,7 @@ MAIN
 		background: #eff0f1; padding:24px 0 50px; overflow:hidden;
 		.inner {position: relative;}
 		.tit {
-			position:absolute; left:0; top:0; font-size: 23px; color:#2b2b2b; line-height: 30px; font-family: $font2; padding-top: 20px;
+			position:absolute; left:0; top:0; font-size: 23px; color:#2b2b2b; line-height: 30px; font-family: $font2;font-weight: bold; padding-top: 20px;
 			&:after {display: block; content: ""; width: 81px; height: 19px; @include background("usclib/main/bg_favorit.png",no-repeat 50% 50%); margin-top: 11px;}
 		}
 		.lst-favorit-service {
@@ -345,7 +345,7 @@ MAIN
 			}
 			a:hover {
 				.icon img {top:-90px;}				
-				.name {font-family: $font2;}
+				.name {font-family: $font2;font-weight: bold;}
 			}
 		}
 	}
@@ -356,13 +356,13 @@ MAIN
 		.closeday-zone {
 			overflow:hidden;
 			.tit {
-				float: left;font-family: $font2; font-size: 23px; color:#2b2b2b; line-height: 70px;
+				float: left;font-family: $font2;font-weight: bold; font-size: 23px; color:#2b2b2b; line-height: 70px;
 				strong {color:#dc1010;}
 			}
 			.indicator {
 				overflow:hidden; position: relative; float: left;margin-left: 26px; 
 				.month {
-					font-family: $font3; color:#2b2b2b; font-size: 26px; padding:0 30px; line-height: 70px;
+					font-family: $font3;font-weight: bold; color:#2b2b2b; font-size: 26px; padding:0 30px; line-height: 70px;
 					em {font-size: 30px;}
 				}
 				.btn-arrow {
@@ -387,7 +387,7 @@ MAIN
 		.btn-librarian {
 			position: absolute; right: 80px; top:0; background:#3f9a82; border-top-left-radius: 100px; border-bottom-left-radius: 100px; 
 			a {
-				display: inline-block; position: relative; line-height: 70px; color:#fff; font-size: 20px; font-family: $font2; padding:0 48px 0 125px; @include background("usclib/main/icon_librarian.png",no-repeat 29px 50%);
+				display: inline-block; position: relative; line-height: 70px; color:#fff; font-size: 20px; font-family: $font2;font-weight: bold; padding:0 48px 0 125px; @include background("usclib/main/icon_librarian.png",no-repeat 29px 50%);
 				&:before {display: block; position: absolute; right:-80px; top:9px; content: ""; width: 102px; height: 42px; background:#fff; border:5px solid #27738c;}
 				&:after {display: block; position: absolute; right:-18px; top:50%; margin-top: -9px; content: ""; width: 36px; height: 18px; @include background("usclib/main/bg_librarian_arrow.png",no-repeat 50% 50%); 
 					-ms-animation: arrowMove 1s ease-out; -webkit-animation: arrowMove 1s ease-out; -moz-animation: arrowMove 1s ease-out; animation: arrowMove 1s ease-out;
@@ -407,7 +407,7 @@ MAIN
 		// 행사일정
 		.calendar-zone {
 			position: relative;  padding:70px 20px 0;  height: 380px;
-			.tit {font-size: 23px; font-family: $font2; color:#2b2b2b; position: absolute; left:28px; top: 22px}
+			.tit {font-size: 23px; font-family: $font2;font-weight: bold; color:#2b2b2b; position: absolute; left:28px; top: 22px}
 			.btn-more {
 				position: absolute; right: 20px; top:17px;border:1px solid #adc1d1;
 				a {display:inline-block; width:35px;height: 35px;@include background("usclib/main/icon_more.png",no-repeat 50% 50%); text-indent: -999em;}
@@ -415,7 +415,7 @@ MAIN
 			.indicator {
 				position: absolute; right: 74px; top:23px;
 				.month {
-					font-size: 22px; font-family: $font3; color:#2b2b2b; padding:0 28px;
+					font-size: 22px; font-family: $font3;font-weight: bold; color:#2b2b2b; padding:0 28px;
 					em {color:#ec560c;}
 				}
 				.btn-arrow {
@@ -435,7 +435,7 @@ MAIN
 				.tbl {
 					width: 100%; table-layout: fixed; 
 					thead {
-						th {font-size: 15px; color:#484848; font-family: $font2;}
+						th {font-size: 15px; color:#484848; font-family: $font2;font-weight: bold;}
 						th:first-child {color:#dc1010;}
 					}
 					tbody {
@@ -445,10 +445,10 @@ MAIN
 						tr:first-child td {padding-top:11px;}
 					}
 				}
-				.txt {margin-top: 10px; color:#787878; font-size: 15px; font-family: $font2; text-align: center;}
+				.txt {margin-top: 10px; color:#787878; font-size: 15px; font-family: $font2;font-weight: bold; text-align: center;}
 				.noti {
 					background: #eff0f1; text-align: center; height: 30px; line-height: 30px; margin-top: 8px;
-					p {display: inline-block; font-size: 16px; color:#484848; font-family: $font2;}
+					p {display: inline-block; font-size: 16px; color:#484848; font-family: $font2;font-weight: bold;}
 					p + p {margin-left: 20px;}
 					.bullet {
 						display: inline-block; width: 16px; height: 16px; border-radius: 100px; text-indent: -999em; margin-right: 6px; vertical-align: middle; position: relative; top:-2px;
@@ -465,8 +465,8 @@ MAIN
 				position: absolute; left:20px; top:22px;
 				&:after {display:block; clear:both; content:""}
 				button {
-					font-size: 23px; color:#c7c1bf; font-family: $font2;
-					&[aria-selected=true] {color:#2b2b2b; font-family: $font3;}
+					font-size: 23px; color:#c7c1bf; font-family: $font2;font-weight: bold;
+					&[aria-selected=true] {color:#2b2b2b; font-family: $font3;font-weight: bold;}
 				}
 				li {float: left;}
 				li + li:before {display: inline-block; content: ""; width: 19px; height: 19px; @include background("usclib/main/icon_arrow.png",no-repeat 50% 50%);margin:0 15px; vertical-align: middle; position: relative; top:-3px;}
@@ -490,7 +490,7 @@ MAIN
 		// 팝업존
 		.popup-zone {
 			position: relative; height: 380px;padding:80px 13px 0; 
-			.tit {font-family: $font2; font-size: 23px; color:#2b2b2b; position: absolute; left:15px; top:22px;}
+			.tit {font-family: $font2;font-weight: bold; font-size: 23px; color:#2b2b2b; position: absolute; left:15px; top:22px;}
 			a {
 				display: block; overflow: hidden; width: 100%; height: 270px; 
 				img {width: 100%; height: 100%;}
@@ -523,7 +523,7 @@ SUB PAGE
 .usclib table[class^=tbl-lst] {
 	.flag {display: block; position: absolute; left:0; top:0; color:#fff; text-align: center; background:#588681; font-family: $font1; border-radius: 4px}
 	.td-btn {
-		*[class^=btn-] {display:inline-block; text-align: center; border-radius: 3px; border-width:1px; border-style: solid; font-family: $font2; color:#333; vertical-align: top; box-sizing: border-box}
+		*[class^=btn-] {display:inline-block; text-align: center; border-radius: 3px; border-width:1px; border-style: solid; font-family: $font2;font-weight: bold; color:#333; vertical-align: top; box-sizing: border-box}
 		.btn-booking,
 		.btn-borrow {border-color:#a2b9e0; background:#d4e7f7;}
 		.btn-notbooking {border-color:#db91a6; background:#f5ced9;}
@@ -553,7 +553,7 @@ SUB PAGE
 
 		.td-name {
 			width: 340px; padding:0 10px 0 7px; vertical-align: top;
-			.name {display: block;  position: relative; padding-left: 68px; font-size: 16px; color:#333; font-family: $font2; line-height: 24px; text-align: left;}
+			.name {display: block;  position: relative; padding-left: 68px; font-size: 16px; color:#333; font-family: $font2;font-weight: bold; line-height: 24px; text-align: left;}
 			.flag {width: 58px; line-height: 20px; font-size: 12px;}
 			.writer {display:block; font-size: 14px; color:rgba(52,52,52,0.7); line-height: 20px; text-align: left;}
 		}
@@ -565,7 +565,7 @@ SUB PAGE
 		}
 		.td-company {width:115px;}
 		.td-code {width:150px;}
-		.td-category {width:80px; color:#336ac0; font-family: $font3;}
+		.td-category {width:80px; color:#336ac0; font-family: $font3;font-weight: bold;}
 		.td-year {width:100px;}
 		.td-btn {
 			width:225px;
@@ -589,7 +589,7 @@ SUB PAGE
 		.tdlayout {position: relative; height: 240px; padding-left: 195px;}
 		.td-name {
 			padding-top: 9px;
-			.name {display:block; position: relative; padding-left: 78px; font-size: 20px; font-family: $font2; color:#333;}
+			.name {display:block; position: relative; padding-left: 78px; font-size: 20px; font-family: $font2;font-weight: bold; color:#333;}
 			.flag {width: 70px; line-height: 25px; font-size: 15px;}
 			.writer {display: block; font-size: 16px; color:#333; margin-top: 12px;}
 		}
@@ -606,7 +606,7 @@ SUB PAGE
 			}
 		}
 		.td-category {
-			.cont {color:#336ac0; font-family: $font3;}
+			.cont {color:#336ac0; font-family: $font3;font-weight: bold;}
 		}
 		.td-thumb {
 			position: absolute; left:0; top:0; width: 172px; height: 238px; @include background("usclib/subpage/img_book.png",no-repeat 0 0);
@@ -614,7 +614,7 @@ SUB PAGE
 		}
 		.td-btn {
 			margin-top: 35px;
-			*[class^=btn-] {font-size: 17px; font-family: $font2; height: 45px; line-height: 43px}
+			*[class^=btn-] {font-size: 17px; font-family: $font2;font-weight: bold; height: 45px; line-height: 43px}
 			.btn-booking,
 			.btn-notbooking,
 			.btn-borrow {width:120px; margin-right: 4px;}
@@ -636,7 +636,7 @@ SUB PAGE
 	table[class^=comp-tbl][class*=_formtype] {
 		margin-top: 15px; border-top: 1px solid #d0cdcd;
 		tr > * {height: 55px}
-		th {font-family: $font2; font-size: 17px; width:130px; line-height: 42px; color:#333; background:#d8e9f2; }
+		th {font-family: $font2;font-weight: bold; font-size: 17px; width:130px; line-height: 42px; color:#333; background:#d8e9f2; }
 		td {padding:5px 10px;}
 	}
 	.w_year {
@@ -658,7 +658,7 @@ SUB PAGE
 	.infor {
 		padding-left: 265px; padding-top: 20px;
 		.book-name {
-			margin-bottom: 15px; font-size: 20px; color:#333; font-family: $font2; line-height: 27px;
+			margin-bottom: 15px; font-size: 20px; color:#333; font-family: $font2;font-weight: bold; line-height: 27px;
 			.flag {display:inline-block; min-width:75px; padding:0 20px; margin-right: 4px; font-family: $font1; color:#fff; text-align: center; box-sizing: border-box; line-height: 27px; border-radius: 4px; background:#588681; font-size: 16px;} 
 		}
 		.lst {
@@ -671,7 +671,7 @@ SUB PAGE
 		thead th {height: 45px; border-bottom: 1px solid #c7c1bf; font-size: 18px; color:#333; background:#f4f4f4;}
 		thead th:last-child {text-align: left; padding-left: 30px;}
 		td {padding:10px 0; font-size: 16px; color:#333; text-align: center; border-bottom: 1px solid #c7c1bf;}
-		td:first-child {font-family: $font2;}
+		td:first-child {font-family: $font2;font-weight: bold;}
 		td:last-child {text-align: left; padding-left: 10px;}
 
 		tr> *:nth-child(1) {width:145px;}
@@ -683,12 +683,12 @@ SUB PAGE
 
 		.tit {display: none}
 		*[class^=state-] {
-			display: inline-block; width:96px; font-family: $font2; text-align: center; line-height: 38px; border-radius: 3px; border-width:1px; border-style: solid; box-sizing: border-box;
+			display: inline-block; width:96px; font-family: $font2;font-weight: bold; text-align: center; line-height: 38px; border-radius: 3px; border-width:1px; border-style: solid; box-sizing: border-box;
 			&.state-data {background:#f5ced9; border-color:#dd95a9;}
 			&.state-booking {background:#d4e7f7; border-color:#aec2e4;}
 		}
 		.btn-put {
-			display: inline-block; width:135px; margin-left: 15px; font-family: $font2; text-align: center; line-height: 38px; border-radius: 3px; border:1px solid #d5d5d5; box-sizing: border-box; background:#ededed;
+			display: inline-block; width:135px; margin-left: 15px; font-family: $font2;font-weight: bold; text-align: center; line-height: 38px; border-radius: 3px; border:1px solid #d5d5d5; box-sizing: border-box; background:#ededed;
 			&:before {display: inline-block; width:19px; height: 16px; margin-right: 5px; vertical-align: middle; content: ""; @include background("usclib/subpage/btn_list.png",no-repeat 50% 50%); background-size: 100% 100%;}
 		}
 	}
@@ -1215,7 +1215,7 @@ MAIN
 			}
 			.indicator {
 				top:1.4rem; right:5rem;
-				.month {font-family: $font3; font-size: 1.4rem; padding:0 1.8rem;}
+				.month {font-family: $font3;font-weight: bold; font-size: 1.4rem; padding:0 1.8rem;}
 				.btn-arrow {
 					button {width: 0.8rem; height: 1.5rem; background-size: 100% auto !important;}
 					&.btn-prev button {@include background("usclib/main/icon_prev1_m.png",no-repeat 50% 50%);}

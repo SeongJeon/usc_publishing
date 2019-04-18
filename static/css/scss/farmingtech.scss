@@ -85,7 +85,7 @@ MAIN
 				li {float: left; margin-left: 20px;}
 				li:first-child {margin-left: 0;}
 				a {
-					display:inline-block; padding:0 10px; font-family: $font2; font-size: 22px; color:#222; line-height: 38px;border-bottom:3px solid #fff;
+					display:inline-block; padding:0 10px; font-family: $font2; font-weight: bold; font-size: 22px; color:#222; line-height: 38px;border-bottom:3px solid #fff;
 					&[aria-selected=true] {border-bottom:3px solid #ff712c; }
 				}
 			}
@@ -94,11 +94,11 @@ MAIN
 				dl {
 					position: relative; padding-left: 100px; min-height: 92px;
 					dt {
-						font-size: 20px; color:#222; font-family: $font2;  padding-top: 3px;
+						font-size: 20px; color:#222; font-family: $font2; font-weight: bold;  padding-top: 3px;
 						.date {
 							position: absolute; left:0; top:0;
 							display: block; width:90px; height: 92px; padding-top: 21px; border:1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color:#666; text-align: center;
-							strong {display:block; margin-top: 1px; color:#ff712c; font-family: $font2; font-size: 28px; }
+							strong {display:block; margin-top: 1px; color:#ff712c; font-family: $font2; font-weight: bold; font-size: 28px; }
 						}
 					}
 					dd {display:-webkit-box; overflow:hidden; max-height:52px; margin-top: 11px; font-size: 16px; color:#666; line-height: 26px; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis;}
@@ -154,7 +154,7 @@ MAIN
 					&:before {display: block; position: absolute; left:50%; top:-32px; content: ""; width: 44px; height: 3px; margin-left: -22px; background:#362501;}
 				}
 				.tit {
-					display: block; font-size: 18px; font-family: $font2;
+					display: block; font-size: 18px; font-family: $font2; font-weight: bold;
 					&:before {display: block; content: ""; height:64px; width:100%; margin-bottom: 18px; @include background("farmingtech/main/icon_edu.png",no-repeat 58% 50%); }
 				}
 				a {
@@ -170,7 +170,7 @@ MAIN
 		overflow: hidden; min-width:1320px; height: 600px; position: relative; @include background("farmingtech/main/bg_top.jpg",no-repeat 50% 50%); background-size: cover;
 		.inner {text-align: center; padding-top: 100px;}
 		.txt {
-			display: inline-block; font-size: 17px; color:#fff; font-family: $font2; line-height: 24px; text-align: left;
+			display: inline-block; font-size: 17px; color:#fff; font-family: $font2; font-weight: bold; line-height: 24px; text-align: left;
 			padding:33px 0 10px 107px; @include background("farmingtech/main/img_top.png",no-repeat 0 0); 
 			span {display: block; margin-bottom: 3px;}
 		}
@@ -223,7 +223,7 @@ MAIN
 	.main-event-zone {
 		position: relative; height: 60px; padding-left: 270px; margin-top: 15px; border:1px solid #dddbdb; background:#fff;
 		.tit-zone {
-			position: absolute; left:0; top:0; overflow: hidden; width:270px; height:60px; padding-left: 18px; background:#ff712c; color:#fff; font-family: $font2; line-height: 60px; 
+			position: absolute; left:0; top:0; overflow: hidden; width:270px; height:60px; padding-left: 18px; background:#ff712c; color:#fff; font-family: $font2; font-weight: bold; line-height: 60px; 
 			* {float: left;}
 			.tit {font-size: 20px;}
 			.month {
@@ -252,13 +252,13 @@ MAIN
 				&:before {display: block; position: absolute; left:0; top:-18px; content: ""; width:19px; height:18px; @include background("farmingtech/main/bg_arrow.png",no-repeat 50% 50%);}
 				li {line-height: 26px; }
 				li:before {display: inline-block; content: "-"; margin-right: 4px;}
-				em {font-family: $font2; }
+				em {font-family: $font2; font-weight: bold; }
 			}
 			.num {display: inline-block; position: absolute; left:50%; top:50%; margin: -13px 0 0 -13px; font-size: 16px; text-align: center; width: 26px; height: 26px; color:#666; border-radius: 100px; line-height: 26px}
 			.have .num, .today .num {background:#ffca59; }
 			.today {border-color: #ffb007;}
 			a:hover {
-				border-color: #ffb007; font-family: $font2;
+				border-color: #ffb007; font-family: $font2; font-weight: bold;
 				.popup {display: block;}
 			}
 		}
@@ -266,7 +266,7 @@ MAIN
 	// 하단
 	.main-bottom-zone {
 		margin-top: 15px; overflow: hidden;
-		.tit {font-size: 22px; color:#222; font-family: $font2; text-align: left;}
+		.tit {font-size: 22px; color:#222; font-family: $font2; font-weight: bold; text-align: left;}
 		& > div {float: left;height: 350px;}
 	}
 	.popup-zone {
@@ -860,7 +860,7 @@ COMMON
 			a {height: 3rem; width:5.4vw; border-width:2px; margin:-1px 0; text-align: center;line-height:3.1rem; box-sizing: content-box;}
 			.popup {display: none !important; }
 			.num {display: inline; position: static; margin:0; font-size:1rem; width:auto; height:auto;  line-height: auto; border-radius:0; background:none !important; }
-			.have .num, .today .num {font-family: $font2; }
+			.have .num, .today .num {font-family: $font2; font-weight: bold; }
 		}
 	}
 	// 하단

@@ -7,7 +7,7 @@ LAYOUT
   body.pc #wrap.usc #header #gnb .gnb h2:before { display: inline-block; position: absolute; left: 0; top: 50%; margin-top: -10px; content: ""; width: 1px; height: 19px; background: #e0c58b; vertical-align: middle; }
   body.pc #wrap.usc #header #gnb .gnb h2 a { display: block; position: relative; width: 210px; line-height: 50px; font-size: 20px; color: #fff; text-align: center; }
   body.pc #wrap.usc #header #gnb .gnb h2 a span { position: relative; top: -2px; }
-  body.pc #wrap.usc #header #gnb .gnb h2.over a, body.pc #wrap.usc #header #gnb .gnb h2 a:hover { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+  body.pc #wrap.usc #header #gnb .gnb h2.over a, body.pc #wrap.usc #header #gnb .gnb h2 a:hover { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
   body.pc #wrap.usc #header #gnb .gnb h2.over a:before, body.pc #wrap.usc #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: 0; left: 0; width: 100%; content: ""; background: #f0412c; height: 6px; z-index: 1000; }
   body.pc #wrap.usc #header #gnb .gnb h2.over a:after, body.pc #wrap.usc #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -9px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #f0412c; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
   body.pc #wrap.usc #header #gnb .category .btn { position: absolute; right: 0; top: 5px; }

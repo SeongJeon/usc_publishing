@@ -214,7 +214,7 @@ MAIN
 			li:nth-child(3) a:before {@include background("culture/main/icon_trip3.png",no-repeat 50% 50%);}
 			li:nth-child(4) a:before {@include background("culture/main/icon_trip4.png",no-repeat 50% 50%);}
 
-			a:hover {background:#fff; border-color:#ff877d; color:#333; font-family: $font2;}
+			a:hover {background:#fff; border-color:#ff877d; color:#333; font-family: $font2; font-weight: bold;}
 			li:nth-child(1) a:hover:before {@include background("culture/main/icon_trip1_over.png",no-repeat 50% 50%);}
 			li:nth-child(2) a:hover:before {@include background("culture/main/icon_trip2_over.png",no-repeat 50% 50%);}
 			li:nth-child(3) a:hover:before {@include background("culture/main/icon_trip3_over.png",no-repeat 50% 50%);}
@@ -237,7 +237,7 @@ MAIN
 					display: block; width:82px; height: 82px; margin:0 auto 18px; content: ""; border-radius: 100px; border:1px solid #fff; box-sizing: border-box;
 					-ms-transition:0.2s ease; -webkit-transition:0.2s ease; -moz-transition:0.2s ease; transition:0.2s ease;
 				}
-				span {display: block; font-family: $font2; text-align: center; color:#fff; font-size: 17px;}
+				span {display: block; font-family: $font2; font-weight: bold; text-align: center; color:#fff; font-size: 17px;}
 				li:nth-child(1) a:before {background: url("../../static/images/culture/main/icon_sec2_tab1.png") no-repeat 50% 50%;}
 				li:nth-child(2) a:before {background: url("../../static/images/culture/main/icon_sec2_tab2.png") no-repeat 50% 50%;}
 				li:nth-child(3) a:before {background: url("../../static/images/culture/main/icon_sec2_tab3.png") no-repeat 50% 50%;}
@@ -274,11 +274,11 @@ MAIN
 					position: relative; overflow:hidden; height:325px; border-top-right-radius: 20px; border-top-left-radius: 20px;
 					img {width: 100%; height: 100%;}
 					.hover {display: none; position: absolute; left:0; top:0; width:100%; height: 100%; background:rgba(0,0,0,0.5); color:#fff;}
-					.hover span {display:table-cell; vertical-align: middle; text-align: center; font-family: $font2; font-size: 16px; @include background("culture/main/bg_a.png",no-repeat 50% 50%);}
+					.hover span {display:table-cell; vertical-align: middle; text-align: center; font-family: $font2; font-weight: bold; font-size: 16px; @include background("culture/main/bg_a.png",no-repeat 50% 50%);}
 				}
 				.infor {
 					color:#333; text-align: center; border-top: 2px solid #d68684; 
-					.name {display: block; padding:19px 0 12px; font-size: 19px; font-family: $font2;}
+					.name {display: block; padding:19px 0 12px; font-size: 19px; font-family: $font2; font-weight: bold;}
 					.category {display: block; width: 220px; margin:0 auto; line-height: 40px; background:#f6ded8;}
 					.desc {display:block; display:-webkit-box; overflow: hidden; max-height: 48px; padding:0 10px; margin-top: 15px; font-size: 16px; line-height: 24px; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
 				}
@@ -297,7 +297,7 @@ MAIN
 			height: 60px; background:#fff; position: relative;
 			&:after {display: block; content: ""; position: absolute; left:34px; top:-14px; width:71px; height: 55px; @include background("culture/main/icon_notice.png",no-repeat 50% 50%); background-size: 100% auto;}
 			.tit {
-				position: absolute; left:0; top:0; width:325px; padding-left: 122px; font-size: 18px; color:#333; line-height: 60px; font-family: $font2; box-sizing: border-box;
+				position: absolute; left:0; top:0; width:325px; padding-left: 122px; font-size: 18px; color:#333; line-height: 60px; font-family: $font2; font-weight: bold; box-sizing: border-box;
 				&:after {display:inline-block; content:""; width:16px; height: 60px; margin-left: 25px; @include background("culture/main/bg_bar.png",no-repeat 50% 50%); vertical-align: middle;}
 			}
 			.slider {
@@ -327,14 +327,14 @@ MAIN
 			.cultural-zone {
 				float: left;width:415px; height: 296px;  padding:23px 30px 0; margin-left: 20px; @include background("culture/main/bg_cultural.png",no-repeat 50% 50%);
 				.tit {
-					font-size: 22px; font-family: $font2; color:#fff; line-height: 28px; 
+					font-size: 22px; font-family: $font2; font-weight: bold; color:#fff; line-height: 28px; 
 					&:after {display: inline-block; content: ""; width: 53px; height: 28px; margin-left: 12px; vertical-align: middle; @include background("culture/main/icon_cultural.png",no-repeat 50% 50%);}
 				}
 				.lst {
 					margin-top: 30px;
 					li+li{margin-top: 20px;}
 					a {
-						display: block; padding:0 18px 0 15px; line-height: 45px; font-family: $font2; font-size: 16px; color:#fff; background:rgba(256,256,256,0.3);
+						display: block; padding:0 18px 0 15px; line-height: 45px; font-family: $font2; font-weight: bold; font-size: 16px; color:#fff; background:rgba(256,256,256,0.3);
 						.go {float: right;height:45px; width:44px; @include background("culture/main/btn_cultural.png",no-repeat 50% 50%); text-indent: -999em;}
 					}
 					a:hover {
@@ -346,7 +346,7 @@ MAIN
 			.infor-zone {
 				float: left; position: relative; width:415px; height: 296px; padding:23px 0 0 48px;  @include background("culture/main/bg_infor.png",no-repeat 50% 50%);
 				&:after {position: absolute; left:-35px; top:26px; width:70px; height: 70px; display: block; content: ""; @include background("culture/main/icon_infor.png",no-repeat 50% 50%);}
-				.tit {font-family: $font2; font-size: 22px; color:#333; }
+				.tit {font-family: $font2; font-weight: bold; font-size: 22px; color:#333; }
 				.desc {margin-top: 2px;font-size: 15px; color:#333; line-height: 24px;}
 				.btn {
 					position: absolute; right: 20px; bottom:20px; 
@@ -373,14 +373,14 @@ MAIN
 		}
 		.quick-zone {
 			height:138px; width:850px; position: absolute; left:0; bottom:0; background:#735360 url("../../static/images/culture/main/bg_quick.png") no-repeat 0 0; color:#fff;
-			.tit {position:absolute; left:0; top:0; font-size: 20px; line-height: 26px; font-family: $font2; padding:22px 0 0 35px;}
+			.tit {position:absolute; left:0; top:0; font-size: 20px; line-height: 26px; font-family: $font2; font-weight: bold; padding:22px 0 0 35px;}
 			.lst {
 				overflow: hidden; padding:23px 35px 0 226px;
 				li {float: left; width:25%;}
 				a {
 					display: block; 
 					&:before {display: block; width: 71px; height: 71px; margin:0 auto; content: ""}
-					.name {display: block; margin-top: 9px; font-family: $font2; font-size: 16px; text-align: center;}
+					.name {display: block; margin-top: 9px; font-family: $font2; font-weight: bold; font-size: 16px; text-align: center;}
 				}
 				li:nth-child(1) a:before {@include background("culture/main/icon_quick1.png",no-repeat 50% 50%);}
 				li:nth-child(2) a:before {@include background("culture/main/icon_quick2.png",no-repeat 50% 50%);}

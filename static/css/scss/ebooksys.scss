@@ -470,7 +470,7 @@ SUB PAGE
 	.infor {
 		position: relative; padding: 20px 0 0 265px;
 		.book-name {
-			margin-bottom: 15px; font-size: 20px; color:#333; font-family: $font2; line-height: 27px;
+			margin-bottom: 15px; font-size: 20px; color:#333; font-family: $font2; font-weight: bold; line-height: 27px;
 			.flag {display:inline-block; min-width:75px; padding:0 20px; margin-right: 4px; font-family: $font1; color:#fff; text-align: center; box-sizing: border-box; line-height: 27px; border-radius:100px; background:#cc9966; font-size: 16px;} 
 		}
 		.lst {
@@ -496,7 +496,7 @@ SUB PAGE
 }
 .ebooksys .books-button-zone {
 	text-align: center; margin-top: 35px;
-	*[class^=comm-btn_type4] {width: 120px; font-family: $font2;}
+	*[class^=comm-btn_type4] {width: 120px; font-family: $font2; font-weight: bold;}
 	*[class^=comm-btn_type4] + * {margin-left: 3px;}
 }
 .ebooksys .books-detail-contents {display: none; padding:0 20px; }
@@ -524,7 +524,7 @@ SUB PAGE
 			.hoverlink {display: block; padding:15px 13px 13px; }
 			.namegroup {
 				margin-top: 20px;
-				.name {display:block; overflow:hidden; width:100%; font-size: 18px; font-family: $font2; text-align: center; white-space: nowrap; text-overflow:ellipsis;}
+				.name {display:block; overflow:hidden; width:100%; font-size: 18px; font-family: $font2; font-weight: bold; text-align: center; white-space: nowrap; text-overflow:ellipsis;}
 				.flag {display: none}
 			}
 			.thumb {
@@ -546,7 +546,7 @@ SUB PAGE
 				.cont {display: inline-block; vertical-align: middle; max-width: 75%; overflow: hidden; white-space: nowrap; text-overflow:ellipsis; }
 			}
 			.state-lst {
-				background:#ededed; color:#f27405; font-family: $font2; padding:0 15px; margin-top: 6px;
+				background:#ededed; color:#f27405; font-family: $font2; font-weight: bold; padding:0 15px; margin-top: 6px;
 				li {display: none; line-height: 35px;}
 				li:first-child {display: block;}
 				.num {float: right;}
@@ -566,7 +566,7 @@ SUB PAGE
 				padding-left: 216px; padding-right: 165px;
 				.namegroup {
 					padding-top: 8px;
-					.name {display: block; overflow: hidden; width: 100%; margin-top: 8px; font-size: 20px; font-family: $font2; white-space: nowrap; text-overflow:ellipsis;}
+					.name {display: block; overflow: hidden; width: 100%; margin-top: 8px; font-size: 20px; font-family: $font2; font-weight: bold; white-space: nowrap; text-overflow:ellipsis;}
 					.flag {display: inline-block; font-size: 17px; color:#fff; line-height: 28px; background:#cc9966; min-width:70px; padding:0 12px; box-sizing: border-box; border-radius: 100px; text-align: center;}
 				}
 			}
@@ -593,7 +593,7 @@ SUB PAGE
 			}
 			.desc {display:-webkit-box; overflow:hidden; max-height: 40px; font-size: 14px; color:#8a8a8a; line-height: 20px; margin-top: 14px;-webkit-line-clamp:2; -webkit-box-orient:vertical;}
 		}
-		.btn-group *[class^=comm-btn] {font-family: $font2;}
+		.btn-group *[class^=comm-btn] {font-family: $font2; font-weight: bold;}
 	}
 }
 /* 이용안내 */

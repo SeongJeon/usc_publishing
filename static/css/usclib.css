@@ -92,7 +92,7 @@ MAIN
 #wrap.usclib #container.main .main-board-zone .tab { background: #016dae; position: relative; z-index: 1; }
 #wrap.usclib #container.main .main-board-zone .tab:after { display: block; clear: both; content: ""; }
 #wrap.usclib #container.main .main-board-zone .tab li { float: left; width: 25%; }
-#wrap.usclib #container.main .main-board-zone .tab a { display: block; font-size: 22px; line-height: 55px; height: 55px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; }
+#wrap.usclib #container.main .main-board-zone .tab a { display: block; font-size: 22px; line-height: 55px; height: 55px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; text-align: center; }
 #wrap.usclib #container.main .main-board-zone .tab a[aria-selected=true], #wrap.usclib #container.main .main-board-zone .tab a:hover { background: #fff; color: #222; }
 #wrap.usclib #container.main .main-board-zone .tab-cont { display: none; overflow: hidden; height: 230px; background: #fff; box-shadow: 0 5px 10px rgba(24, 24, 24, 0.1); }
 #wrap.usclib #container.main .main-board-zone #boardTab1 { padding: 20px; }
@@ -106,7 +106,7 @@ MAIN
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-left .thumb img { width: 100%; height: 100%; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl { height: 190px; position: relative; padding: 0 30px 0 160px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl:after { display: block; position: absolute; right: 0; top: 4px; width: 1px; height: 188px; content: ""; background: #d6d5d5; }
-#wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl dt { font-size: 20px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #222; line-height: 30px; }
+#wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl dt { font-size: 20px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #222; line-height: 30px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl dt .flag { width: 80px; display: inline-block; line-height: 30px; font-size: 17px; text-align: center; border-radius: 100px; margin-right: 5px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl .txt { display: -webkit-box; overflow: hidden; font-size: 16px; line-height: 24px; max-height: 120px; margin-top: 14px; -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; color: #666; padding-left: 7px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl .date { position: absolute; left: 160px; bottom: 0; color: #666; font-size: 16px; }
@@ -121,9 +121,9 @@ MAIN
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture:after { display: block; clear: both; content: ""; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture > li { float: left; width: 25%; padding: 0 17px; box-sizing: border-box; letter-spacing: -0.5px; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture > li + li { border-left: 1px solid #d6d5d5; }
-#wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture h3.tit { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 20px; color: #222; text-align: center; }
+#wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture h3.tit { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 20px; color: #222; text-align: center; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst { font-size: 16px; color: #666; line-height: 22px; margin-top: 13px; }
-#wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst .tit { color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst .tit { color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst .total { color: #df1111; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst .current { color: #016dae; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst li { margin-top: 10px; padding-left: 14px; position: relative; }
@@ -135,7 +135,7 @@ MAIN
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .btn a { display: block; text-align: center; font-size: 16px; color: #fff; line-height: 34px; background: #707070; border-radius: 4px; }
 #wrap.usclib #container.main .main-board-zone #boardTab3 { padding: 20px 25px 20px; }
 #wrap.usclib #container.main .main-board-zone #boardTab3 .l-left { float: left; width: 50%; height: 190px; border-right: 1px solid #d6d5d5; }
-#wrap.usclib #container.main .main-board-zone #boardTab3 .l-left .tit { font-size: 20px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usclib #container.main .main-board-zone #boardTab3 .l-left .tit { font-size: 20px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 #wrap.usclib #container.main .main-board-zone #boardTab3 .l-left .cont { display: -webkit-box; overflow: hidden; font-size: 16px; line-height: 24px; max-height: 144px; margin-top: 17px; padding-right: 10px; -webkit-line-clamp: 6; -webkit-box-orient: vertical; text-overflow: ellipsis; color: #666; }
 #wrap.usclib #container.main .main-board-zone #boardTab3 .l-right { float: right; width: 50%; height: 190px; }
 #wrap.usclib #container.main .main-board-zone #boardTab3 .l-right .lst li { padding-left: 20px; }
@@ -143,7 +143,7 @@ MAIN
 #wrap.usclib #container.main .main-board-zone #boardTab3 .l-right .lst li:before { display: inline-block; content: ""; width: 4px; height: 4px; background: #acacac; vertical-align: middle; margin-right: 15px; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 { padding: 20px 25px 20px; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-left { float: left; position: relative; width: 50%; height: 190px; border-right: 1px solid #d6d5d5; }
-#wrap.usclib #container.main .main-board-zone #boardTab4 .l-left .tit { font-size: 20px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usclib #container.main .main-board-zone #boardTab4 .l-left .tit { font-size: 20px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-left .cont { display: -webkit-box; overflow: hidden; font-size: 16px; line-height: 24px; max-height: 120px; margin-top: 17px; padding-right: 10px; -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; color: #666; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-left .date { position: absolute; left: 0; bottom: 0; color: #666; font-size: 16px; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-left .date:before { display: inline-block; content: ""; width: 18px; height: 18px; background: url("../../static/images/usclib/main/icon_date.png") no-repeat 50% 50%; margin-right: 9px; vertical-align: middle; position: relative; top: -1px; }
@@ -154,7 +154,7 @@ MAIN
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-right .lst .date { font-size: 16px; color: #666; float: right; line-height: 32px; }
 #wrap.usclib #container.main .main-favorit-zone { background: #eff0f1; padding: 24px 0 50px; overflow: hidden; }
 #wrap.usclib #container.main .main-favorit-zone .inner { position: relative; }
-#wrap.usclib #container.main .main-favorit-zone .tit { position: absolute; left: 0; top: 0; font-size: 23px; color: #2b2b2b; line-height: 30px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding-top: 20px; }
+#wrap.usclib #container.main .main-favorit-zone .tit { position: absolute; left: 0; top: 0; font-size: 23px; color: #2b2b2b; line-height: 30px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; padding-top: 20px; }
 #wrap.usclib #container.main .main-favorit-zone .tit:after { display: block; content: ""; width: 81px; height: 19px; background: url("../../static/images/usclib/main/bg_favorit.png") no-repeat 50% 50%; margin-top: 11px; }
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service { padding-left: 120px; overflow: hidden; }
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service li { float: left; position: relative; width: 150px; }
@@ -165,14 +165,14 @@ MAIN
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service a .icon img { position: absolute; left: 0; top: 0; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; }
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service a .name { display: block; font-size: 17px; text-align: center; color: #555; margin-top: 12px; }
 #wrap.usclib #container.main .main-favorit-zone .lst-favorit-service a:hover .icon img { top: -90px; }
-#wrap.usclib #container.main .main-favorit-zone .lst-favorit-service a:hover .name { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usclib #container.main .main-favorit-zone .lst-favorit-service a:hover .name { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 #wrap.usclib #container.main .main-closedays-zone { height: 70px; background: #fff; }
 #wrap.usclib #container.main .main-closedays-zone .inner { position: relative; }
 #wrap.usclib #container.main .main-closedays-zone .closeday-zone { overflow: hidden; }
-#wrap.usclib #container.main .main-closedays-zone .closeday-zone .tit { float: left; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 23px; color: #2b2b2b; line-height: 70px; }
+#wrap.usclib #container.main .main-closedays-zone .closeday-zone .tit { float: left; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 23px; color: #2b2b2b; line-height: 70px; }
 #wrap.usclib #container.main .main-closedays-zone .closeday-zone .tit strong { color: #dc1010; }
 #wrap.usclib #container.main .main-closedays-zone .closeday-zone .indicator { overflow: hidden; position: relative; float: left; margin-left: 26px; }
-#wrap.usclib #container.main .main-closedays-zone .closeday-zone .indicator .month { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #2b2b2b; font-size: 26px; padding: 0 30px; line-height: 70px; }
+#wrap.usclib #container.main .main-closedays-zone .closeday-zone .indicator .month { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #2b2b2b; font-size: 26px; padding: 0 30px; line-height: 70px; }
 #wrap.usclib #container.main .main-closedays-zone .closeday-zone .indicator .month em { font-size: 30px; }
 #wrap.usclib #container.main .main-closedays-zone .closeday-zone .indicator .btn-arrow { position: absolute; top: 50%; margin-top: -12px; }
 #wrap.usclib #container.main .main-closedays-zone .closeday-zone .indicator .btn-arrow button { text-indent: -999em; width: 12px; height: 23px; }
@@ -184,7 +184,7 @@ MAIN
 #wrap.usclib #container.main .main-closedays-zone .closeday-zone .closeday li { width: 42px !important; height: 42px; line-height: 42px; color: #fff; text-align: center; font-size: 18px; background: #36659f; margin-left: 12px; border-radius: 100px; }
 #wrap.usclib #container.main .main-closedays-zone .closeday-zone .closeday li:first-child { margin-left: 0; }
 #wrap.usclib #container.main .main-closedays-zone .btn-librarian { position: absolute; right: 80px; top: 0; background: #3f9a82; border-top-left-radius: 100px; border-bottom-left-radius: 100px; }
-#wrap.usclib #container.main .main-closedays-zone .btn-librarian a { display: inline-block; position: relative; line-height: 70px; color: #fff; font-size: 20px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; padding: 0 48px 0 125px; background: url("../../static/images/usclib/main/icon_librarian.png") no-repeat 29px 50%; }
+#wrap.usclib #container.main .main-closedays-zone .btn-librarian a { display: inline-block; position: relative; line-height: 70px; color: #fff; font-size: 20px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; padding: 0 48px 0 125px; background: url("../../static/images/usclib/main/icon_librarian.png") no-repeat 29px 50%; }
 #wrap.usclib #container.main .main-closedays-zone .btn-librarian a:before { display: block; position: absolute; right: -80px; top: 9px; content: ""; width: 102px; height: 42px; background: #fff; border: 5px solid #27738c; }
 #wrap.usclib #container.main .main-closedays-zone .btn-librarian a:after { display: block; position: absolute; right: -18px; top: 50%; margin-top: -9px; content: ""; width: 36px; height: 18px; background: url("../../static/images/usclib/main/bg_librarian_arrow.png") no-repeat 50% 50%; -ms-animation: arrowMove 1s ease-out; -webkit-animation: arrowMove 1s ease-out; -moz-animation: arrowMove 1s ease-out; animation: arrowMove 1s ease-out; -webkit-animation-iteration-count: infinite; -ms-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; animation-iteration-count: infinite; }
 #wrap.usclib #container.main .main-etc-zone { padding: 40px 0; background: url("../../static/images/usclib/main/bg_etczone.png") repeat 0 0; }
@@ -192,11 +192,11 @@ MAIN
 #wrap.usclib #container.main .main-etc-zone .inner > div { width: 420px; float: left; background: #fff; }
 #wrap.usclib #container.main .main-etc-zone .inner > div + div { margin-left: 30px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone { position: relative; padding: 70px 20px 0; height: 380px; }
-#wrap.usclib #container.main .main-etc-zone .calendar-zone .tit { font-size: 23px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #2b2b2b; position: absolute; left: 28px; top: 22px; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .tit { font-size: 23px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #2b2b2b; position: absolute; left: 28px; top: 22px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .btn-more { position: absolute; right: 20px; top: 17px; border: 1px solid #adc1d1; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .btn-more a { display: inline-block; width: 35px; height: 35px; background: url("../../static/images/usclib/main/icon_more.png") no-repeat 50% 50%; text-indent: -999em; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator { position: absolute; right: 74px; top: 23px; }
-#wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .month { font-size: 22px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #2b2b2b; padding: 0 28px; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .month { font-size: 22px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #2b2b2b; padding: 0 28px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .month em { color: #ec560c; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow { position: absolute; top: 0; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow button { width: 12px; height: 23px; text-indent: -999em; }
@@ -205,15 +205,15 @@ MAIN
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow.btn-next { right: 0; top: 0; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow.btn-next button { background: url("../../static/images/usclib/main/icon_next1.png") no-repeat 50% 50%; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl { width: 100%; table-layout: fixed; }
-#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl thead th { font-size: 15px; color: #484848; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl thead th { font-size: 15px; color: #484848; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl thead th:first-child { color: #dc1010; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl tbody td { font-size: 15px; color: #484848; text-align: center; padding: 5px 0; height: 24px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl tbody a { display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; color: #fff; background: #136dc1; border-radius: 100px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl tbody .today { display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; color: #fff; background: #fb5706; border-radius: 100px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .tbl tbody tr:first-child td { padding-top: 11px; }
-#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .txt { margin-top: 10px; color: #787878; font-size: 15px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .txt { margin-top: 10px; color: #787878; font-size: 15px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; text-align: center; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti { background: #eff0f1; text-align: center; height: 30px; line-height: 30px; margin-top: 8px; }
-#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti p { display: inline-block; font-size: 16px; color: #484848; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti p { display: inline-block; font-size: 16px; color: #484848; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti p + p { margin-left: 20px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti .bullet { display: inline-block; width: 16px; height: 16px; border-radius: 100px; text-indent: -999em; margin-right: 6px; vertical-align: middle; position: relative; top: -2px; }
 #wrap.usclib #container.main .main-etc-zone .calendar-zone .calendar .noti .bullet.today { background: #fb5706; }
@@ -221,8 +221,8 @@ MAIN
 #wrap.usclib #container.main .main-etc-zone .books-zone { position: relative; padding: 75px 20px 0; height: 380px; }
 #wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] { position: absolute; left: 20px; top: 22px; }
 #wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist]:after { display: block; clear: both; content: ""; }
-#wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] button { font-size: 23px; color: #c7c1bf; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-#wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] button[aria-selected=true] { color: #2b2b2b; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+#wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] button { font-size: 23px; color: #c7c1bf; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
+#wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] button[aria-selected=true] { color: #2b2b2b; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 #wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] li { float: left; }
 #wrap.usclib #container.main .main-etc-zone .books-zone > ul[role=tablist] li + li:before { display: inline-block; content: ""; width: 19px; height: 19px; background: url("../../static/images/usclib/main/icon_arrow.png") no-repeat 50% 50%; margin: 0 15px; vertical-align: middle; position: relative; top: -3px; }
 #wrap.usclib #container.main .main-etc-zone .books-zone .tab-contents .tab-cont { display: none; }
@@ -235,7 +235,7 @@ MAIN
 #wrap.usclib #container.main .main-etc-zone .books-zone .slick-dots button { width: 14px; height: 14px; background: #c7c1bf; border-radius: 100px; text-indent: -999em; }
 #wrap.usclib #container.main .main-etc-zone .books-zone .slick-dots .slick-active button { background: #136dc1; }
 #wrap.usclib #container.main .main-etc-zone .popup-zone { position: relative; height: 380px; padding: 80px 13px 0; }
-#wrap.usclib #container.main .main-etc-zone .popup-zone .tit { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 23px; color: #2b2b2b; position: absolute; left: 15px; top: 22px; }
+#wrap.usclib #container.main .main-etc-zone .popup-zone .tit { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 23px; color: #2b2b2b; position: absolute; left: 15px; top: 22px; }
 #wrap.usclib #container.main .main-etc-zone .popup-zone a { display: block; overflow: hidden; width: 100%; height: 270px; }
 #wrap.usclib #container.main .main-etc-zone .popup-zone a img { width: 100%; height: 100%; }
 #wrap.usclib #container.main .main-etc-zone .books-zone .indicator, #wrap.usclib #container.main .main-etc-zone .popup-zone .indicator { border: 1px solid #adc1d1; overflow: hidden; position: absolute; right: 19px; top: 17px; height: 37px; }
@@ -254,7 +254,7 @@ SUB PAGE
 ------------------------------------------------------ */
 /* 자료검색  */
 .usclib table[class^=tbl-lst] .flag { display: block; position: absolute; left: 0; top: 0; color: #fff; text-align: center; background: #588681; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; border-radius: 4px; }
-.usclib table[class^=tbl-lst] .td-btn *[class^=btn-] { display: inline-block; text-align: center; border-radius: 3px; border-width: 1px; border-style: solid; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #333; vertical-align: top; box-sizing: border-box; }
+.usclib table[class^=tbl-lst] .td-btn *[class^=btn-] { display: inline-block; text-align: center; border-radius: 3px; border-width: 1px; border-style: solid; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #333; vertical-align: top; box-sizing: border-box; }
 .usclib table[class^=tbl-lst] .td-btn .btn-booking, .usclib table[class^=tbl-lst] .td-btn .btn-borrow { border-color: #a2b9e0; background: #d4e7f7; }
 .usclib table[class^=tbl-lst] .td-btn .btn-notbooking { border-color: #db91a6; background: #f5ced9; }
 .usclib table[class^=tbl-lst] .td-btn .btn-put { border-color: #d2d2d2; background: #ededed; }
@@ -271,7 +271,7 @@ SUB PAGE
 .usclib table[class^=tbl-lst][class*=_list] .tdlayout { display: table; }
 .usclib table[class^=tbl-lst][class*=_list] .tdlayout > div[class^=td-] { display: table-cell; font-size: 15px; color: #333; text-align: center; vertical-align: middle; }
 .usclib table[class^=tbl-lst][class*=_list] .td-name { width: 340px; padding: 0 10px 0 7px; vertical-align: top; }
-.usclib table[class^=tbl-lst][class*=_list] .td-name .name { display: block; position: relative; padding-left: 68px; font-size: 16px; color: #333; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 24px; text-align: left; }
+.usclib table[class^=tbl-lst][class*=_list] .td-name .name { display: block; position: relative; padding-left: 68px; font-size: 16px; color: #333; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; line-height: 24px; text-align: left; }
 .usclib table[class^=tbl-lst][class*=_list] .td-name .flag { width: 58px; line-height: 20px; font-size: 12px; }
 .usclib table[class^=tbl-lst][class*=_list] .td-name .writer { display: block; font-size: 14px; color: rgba(52, 52, 52, 0.7); line-height: 20px; text-align: left; }
 .usclib table[class^=tbl-lst][class*=_list] .td-group { width: 445px; }
@@ -280,7 +280,7 @@ SUB PAGE
 .usclib table[class^=tbl-lst][class*=_list] .td-group .tit { display: none; }
 .usclib table[class^=tbl-lst][class*=_list] .td-company { width: 115px; }
 .usclib table[class^=tbl-lst][class*=_list] .td-code { width: 150px; }
-.usclib table[class^=tbl-lst][class*=_list] .td-category { width: 80px; color: #336ac0; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.usclib table[class^=tbl-lst][class*=_list] .td-category { width: 80px; color: #336ac0; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 .usclib table[class^=tbl-lst][class*=_list] .td-year { width: 100px; }
 .usclib table[class^=tbl-lst][class*=_list] .td-btn { width: 225px; }
 .usclib table[class^=tbl-lst][class*=_list] .td-btn *[class^=btn-] { font-size: 16px; height: 40px; line-height: 38px; }
@@ -293,7 +293,7 @@ SUB PAGE
 .usclib table[class^=tbl-lst][class*=_gallery] tbody td { padding: 25px 20px 20px; border-bottom: 1px solid #c7c1bf; }
 .usclib table[class^=tbl-lst][class*=_gallery] .tdlayout { position: relative; height: 240px; padding-left: 195px; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-name { padding-top: 9px; }
-.usclib table[class^=tbl-lst][class*=_gallery] .td-name .name { display: block; position: relative; padding-left: 78px; font-size: 20px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #333; }
+.usclib table[class^=tbl-lst][class*=_gallery] .td-name .name { display: block; position: relative; padding-left: 78px; font-size: 20px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #333; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-name .flag { width: 70px; line-height: 25px; font-size: 15px; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-name .writer { display: block; font-size: 16px; color: #333; margin-top: 12px; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-group { margin-top: 20px; padding: 15px 14px; background: #eff0f1; color: #333; font-size: 16px; line-height: 24px; }
@@ -302,11 +302,11 @@ SUB PAGE
 .usclib table[class^=tbl-lst][class*=_gallery] .td-group > div[class^=td-].td-year:after { display: none; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-group > div[class^=td-].td-category { float: none; clear: both; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-group > div[class^=td-].td-category:after { display: none; }
-.usclib table[class^=tbl-lst][class*=_gallery] .td-category .cont { color: #336ac0; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.usclib table[class^=tbl-lst][class*=_gallery] .td-category .cont { color: #336ac0; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-thumb { position: absolute; left: 0; top: 0; width: 172px; height: 238px; background: url("../../static/images/usclib/subpage/img_book.png") no-repeat 0 0; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-thumb img { width: 160px; height: 225px; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-btn { margin-top: 35px; }
-.usclib table[class^=tbl-lst][class*=_gallery] .td-btn *[class^=btn-] { font-size: 17px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; height: 45px; line-height: 43px; }
+.usclib table[class^=tbl-lst][class*=_gallery] .td-btn *[class^=btn-] { font-size: 17px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; height: 45px; line-height: 43px; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-booking, .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-notbooking, .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-borrow { width: 120px; margin-right: 4px; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-put { width: 145px; }
 .usclib table[class^=tbl-lst][class*=_gallery] .td-btn .btn-put:before { width: 21px; height: 17px; margin-right: 8px; }
@@ -317,7 +317,7 @@ SUB PAGE
 .usclib .search-box-detail .form-base-search input { width: 775px; margin-left: 15px; }
 .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] { margin-top: 15px; border-top: 1px solid #d0cdcd; }
 .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] tr > * { height: 55px; }
-.usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] th { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 17px; width: 130px; line-height: 42px; color: #333; background: #d8e9f2; }
+.usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] th { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 17px; width: 130px; line-height: 42px; color: #333; background: #d8e9f2; }
 .usclib .search-box-detail table[class^=comp-tbl][class*=_formtype] td { padding: 5px 10px; }
 .usclib .search-box-detail .w_year input { width: 115px; }
 .usclib .search-box-detail .w_year .txt { font-size: 17px; color: #333; margin: 0 5px; }
@@ -327,7 +327,7 @@ SUB PAGE
 .usclib .books-infor-zone .thumb { position: absolute; left: 0; top: 0; width: 241px; height: 335px; background: url("../../static/images/usclib/subpage/img_book2.png") no-repeat 0 0; }
 .usclib .books-infor-zone .thumb img { width: 225px; height: 315px; }
 .usclib .books-infor-zone .infor { padding-left: 265px; padding-top: 20px; }
-.usclib .books-infor-zone .infor .book-name { margin-bottom: 15px; font-size: 20px; color: #333; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 27px; }
+.usclib .books-infor-zone .infor .book-name { margin-bottom: 15px; font-size: 20px; color: #333; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; line-height: 27px; }
 .usclib .books-infor-zone .infor .book-name .flag { display: inline-block; min-width: 75px; padding: 0 20px; margin-right: 4px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; text-align: center; box-sizing: border-box; line-height: 27px; border-radius: 4px; background: #588681; font-size: 16px; }
 .usclib .books-infor-zone .infor .lst li { padding: 10px 5px; border-bottom: 1px solid #d6d5d5; color: #333; font-size: 16px; line-height: 25px; }
 .usclib .books-infor-zone .infor .lst .tit { display: inline-block; width: 105px; box-sizing: border-box; line-height: 23px; color: #336ac0; font-size: 15px; border: 1px solid #336ac0; border-radius: 3px; text-align: center; margin-right: 10px; }
@@ -335,7 +335,7 @@ SUB PAGE
 .usclib .books-infor-zone .tbl-book-infor thead th { height: 45px; border-bottom: 1px solid #c7c1bf; font-size: 18px; color: #333; background: #f4f4f4; }
 .usclib .books-infor-zone .tbl-book-infor thead th:last-child { text-align: left; padding-left: 30px; }
 .usclib .books-infor-zone .tbl-book-infor td { padding: 10px 0; font-size: 16px; color: #333; text-align: center; border-bottom: 1px solid #c7c1bf; }
-.usclib .books-infor-zone .tbl-book-infor td:first-child { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.usclib .books-infor-zone .tbl-book-infor td:first-child { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 .usclib .books-infor-zone .tbl-book-infor td:last-child { text-align: left; padding-left: 10px; }
 .usclib .books-infor-zone .tbl-book-infor tr > *:nth-child(1) { width: 145px; }
 .usclib .books-infor-zone .tbl-book-infor tr > *:nth-child(2) { width: 152px; }
@@ -344,10 +344,10 @@ SUB PAGE
 .usclib .books-infor-zone .tbl-book-infor tr > *:nth-child(5) { width: 135px; }
 .usclib .books-infor-zone .tbl-book-infor tr > *:nth-child(6) { width: 100px; }
 .usclib .books-infor-zone .tbl-book-infor .tit { display: none; }
-.usclib .books-infor-zone .tbl-book-infor *[class^=state-] { display: inline-block; width: 96px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; line-height: 38px; border-radius: 3px; border-width: 1px; border-style: solid; box-sizing: border-box; }
+.usclib .books-infor-zone .tbl-book-infor *[class^=state-] { display: inline-block; width: 96px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; text-align: center; line-height: 38px; border-radius: 3px; border-width: 1px; border-style: solid; box-sizing: border-box; }
 .usclib .books-infor-zone .tbl-book-infor *[class^=state-].state-data { background: #f5ced9; border-color: #dd95a9; }
 .usclib .books-infor-zone .tbl-book-infor *[class^=state-].state-booking { background: #d4e7f7; border-color: #aec2e4; }
-.usclib .books-infor-zone .tbl-book-infor .btn-put { display: inline-block; width: 135px; margin-left: 15px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; text-align: center; line-height: 38px; border-radius: 3px; border: 1px solid #d5d5d5; box-sizing: border-box; background: #ededed; }
+.usclib .books-infor-zone .tbl-book-infor .btn-put { display: inline-block; width: 135px; margin-left: 15px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; text-align: center; line-height: 38px; border-radius: 3px; border: 1px solid #d5d5d5; box-sizing: border-box; background: #ededed; }
 .usclib .books-infor-zone .tbl-book-infor .btn-put:before { display: inline-block; width: 19px; height: 16px; margin-right: 5px; vertical-align: middle; content: ""; background: url("../../static/images/usclib/subpage/btn_list.png") no-repeat 50% 50%; background-size: 100% 100%; }
 
 .usclib .books-detail-contents { padding: 0 20px; }
@@ -566,7 +566,7 @@ MEDIA QUERY
   #wrap.usclib #container.main .main-etc-zone .calendar-zone .btn-more { right: 1rem; top: 1.1rem; }
   #wrap.usclib #container.main .main-etc-zone .calendar-zone .btn-more a { width: 2.3rem; height: 2.3rem; background-size: 40% 40%; }
   #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator { top: 1.4rem; right: 5rem; }
-  #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .month { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 1.4rem; padding: 0 1.8rem; }
+  #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .month { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 1.4rem; padding: 0 1.8rem; }
   #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow button { width: 0.8rem; height: 1.5rem; background-size: 100% auto !important; }
   #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow.btn-prev button { background: url("../../static/images/usclib/main/icon_prev1_m.png") no-repeat 50% 50%; }
   #wrap.usclib #container.main .main-etc-zone .calendar-zone .indicator .btn-arrow.btn-next button { background: url("../../static/images/usclib/main/icon_next1_m.png") no-repeat 50% 50%; }

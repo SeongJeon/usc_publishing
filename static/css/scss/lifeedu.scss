@@ -159,12 +159,12 @@ MAIN
 			&:after {display:block; clear:both; content:""}
 		}
 		.tit {
-			margin: 0 -1px; text-align: center; color:#fff; font-family: $font2; font-size: 22px; line-height: 50px; 
+			margin: 0 -1px; text-align: center; color:#fff; font-family: $font2; font-weight: bold; font-size: 22px; line-height: 50px; 
 			.sm {font-family: $font1;}
 		}
 		.board {
 			height: 250px; float: left; width:50%; position: relative; 
-			.subtit {color:#111; font-family: $font2; text-align: center; line-height: 50px;}
+			.subtit {color:#111; font-family: $font2; font-weight: bold; text-align: center; line-height: 50px;}
 			& + .board {border-left:1px dashed #c9c8c8;}
 			.btn-more {
 				position: absolute; right: 22px; top:9px; text-indent: -999em;
@@ -198,7 +198,7 @@ MAIN
 		// 퀵메뉴
 		.quick-zone {
 			float:left; height: 300px; width:650px; padding:28px 50px 0; margin-left: 20px; @include background("lifeedu/main/bg_quick.jpg",no-repeat 50% 50%); background-size: 100% 100%; border:1px solid #ccc;
-			.tit {font-size: 22px; color:#fff; font-family: $font2; }
+			.tit {font-size: 22px; color:#fff; font-family: $font2; font-weight: bold; }
 			.menu {
 				margin-top: 40px; overflow: hidden;
 				li {
@@ -220,7 +220,7 @@ MAIN
 		.wearea-zone {
 			float: left; position: relative; width:650px; height: 300px; background: url("../../static/images/lifeedu/main/bg_wearea.png") repeat 0 0, url("../../static/images/lifeedu/main/bg_map.png") no-repeat 0 0;
 
-			.tit {overflow: hidden; position: absolute; right: 7px; top:17px; padding:0 20px; font-size: 22px; color:#fff; font-family: $font2; text-align: center; line-height: 50px; background:#ff7a39; border-radius: 100px;}
+			.tit {overflow: hidden; position: absolute; right: 7px; top:17px; padding:0 20px; font-size: 22px; color:#fff; font-family: $font2; font-weight: bold; text-align: center; line-height: 50px; background:#ff7a39; border-radius: 100px;}
 			.desc {position:absolute; right:24px; top: 84px; text-align: right; color:#fff; font-size: 16px; line-height: 24px;}
 			.map {
 				padding:15px 0 0 30px; position: relative; z-index: 1;
@@ -252,11 +252,11 @@ MAIN
 		.inner {position: relative;}
 		.popupzone {
 			position: absolute; left:0; top:40px; width: 420px; height: 310px;
-			.tit {color:#fff; font-family: $font2; font-size: 22px; line-height: 50px; padding-left: 16px; background:#35518f;}
+			.tit {color:#fff; font-family: $font2; font-weight: bold; font-size: 22px; line-height: 50px; padding-left: 16px; background:#35518f;}
 			.slick-dots {
 				position: absolute; top:-50px; right:88px;
 				font-size: 16px; color:#fff;  line-height: 50px;
-				.current {font-size: 18px; font-family: $font2; }
+				.current {font-size: 18px; font-family: $font2; font-weight: bold; }
 				li {
 					display: none; 
 					&.slick-active {display: block;}
@@ -285,7 +285,7 @@ SUB PAGE
 ------------------------------------------------------ */
 .lifeedu-class-search {
 	.flag {
-		padding:0 20px; color:#417ff2; font-size: 16px; display: inline-block; border:2px solid #417ff2; line-height: 30px; border-radius: 100px; font-family: $font2;
+		padding:0 20px; color:#417ff2; font-size: 16px; display: inline-block; border:2px solid #417ff2; line-height: 30px; border-radius: 100px; font-family: $font2; font-weight: bold;
 		&:before {display: inline-block; vertical-align: middle; width:26px; height: 17px; background:#417ff2 url("../../static/images/lifeedu/subpage/icon_class.png") no-repeat 50% 50%; margin-right: 7px; content: ""; }
 	}
 }
@@ -293,18 +293,18 @@ SUB PAGE
 .class-simple-infor {
 	padding:15px 20px 28px; position: relative; border:1px solid #d1d1d1; border-top: 2px solid #014099;
 	.class-name {
-		.name {display:block; margin-top: 14px; color:#222; font-family: $font2; font-size: 19px; padding-right: 85px;}
+		.name {display:block; margin-top: 14px; color:#222; font-family: $font2; font-weight: bold; font-size: 19px; padding-right: 85px;}
 	}
 	.booking-state {
 		position: absolute; right: -1px; top:-2px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box;
-		font-family: $font2; color:#fff; text-align: center; background:#014099; font-size: 17px;
+		font-family: $font2; font-weight: bold; color:#fff; text-align: center; background:#014099; font-size: 17px;
 		.sm {color:#fff475; font-size: 14px; display: block; padding-top: 23px; @include background("lifeedu/subpage/bg_txt.png", no-repeat 50% 9px);}
 		&.not {background:#797979; }
 	}
 	.class-lst {
 		overflow: hidden; margin-top: 26px;
 		li {
-			position: relative; float: left; width: 50%;  padding-left: 12px; box-sizing: border-box; font-family: $font2;
+			position: relative; float: left; width: 50%;  padding-left: 12px; box-sizing: border-box; font-family: $font2;font-weight: bold;
 			&:before {display: inline-block; position: absolute; left:0; top:7px; width: 3px; height: 3px; background:#797979; content: ""; vertical-align: middle;}
 			&:nth-child(2) ~ li {margin-top: 12px}
 		}
@@ -341,7 +341,7 @@ SUB PAGE
 				.tit {color:#014099;}
 			}
 		}
-		.tit {float: left;width:95px; color:#111; font-size: 18px; font-family: $font2; line-height: 35px;}		
+		.tit {float: left;width:95px; color:#111; font-size: 18px; font-family: $font2; font-weight: bold; line-height: 35px;}		
 		.form {padding-left: 95px;}
 		.block + .block {margin-top: 12px}
 		.term {
@@ -362,10 +362,10 @@ SUB PAGE
 			&:nth-child(2) ~ li {margin-top: 20px}
 			a {display:block; padding:15px 20px 28px; width: 100%; height: 100%; position: relative; border:1px solid #d1d1d1; border-top: 1px solid #014099; box-sizing: border-box;}
 			.class-name {
-				.name {display:block; margin-top: 14px; color:#222; font-family: $font2; font-size: 19px; padding-right: 85px;}
+				.name {display:block; margin-top: 14px; color:#222; font-family: $font2; font-weight: bold; font-size: 19px; padding-right: 85px;}
 			}
 			.booking-state {
-				position: absolute; right: -1px; top:-1px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: $font2; color:#fff; text-align: center; background:#014099; font-size: 17px;
+				position: absolute; right: -1px; top:-1px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: $font2; font-weight: bold; color:#fff; text-align: center; background:#014099; font-size: 17px;
 				.sm {color:#fff475; font-size: 14px; display: block; padding-top: 23px; @include background("lifeedu/subpage/bg_txt.png", no-repeat 50% 9px);}
 
 				&.not {background:#797979; }
@@ -373,7 +373,7 @@ SUB PAGE
 			.class-lst {
 				overflow: hidden; margin-top: 26px;
 				li {
-					position: relative; padding-left: 12px; box-sizing: border-box; font-family: $font2;
+					position: relative; padding-left: 12px; box-sizing: border-box; font-family: $font2; font-weight: bold;
 					&:before {display: inline-block; position: absolute; left:0; top:7px; width: 3px; height: 3px; background:#797979; content: ""; vertical-align: middle;}
 					&:nth-child(1) ~ li {margin-top: 12px}
 				}
@@ -449,16 +449,16 @@ SUB PAGE
 		padding-left: 145px; padding-top: 20px;
 		.name {
 			color:#222; font-size: 19px;
-			em {font-family: $font2;}
+			em {font-family: $font2; font-weight: bold;}
 		}
 		.lst {
 			margin-top: 25px;
 			li {font-size: 16px; color:#939393; line-height: 30px;}
 			li:before {display:inline-block; width:4px; height: 4px; background:#797979; content: ""; margin-right: 10px; vertical-align: middle;}
-			.tit {display: inline-block; width:65px; color:#222; vertical-align: middle; text-align: left; font-family: $font2;}
+			.tit {display: inline-block; width:65px; color:#222; vertical-align: middle; text-align: left; font-family: $font2; font-weight: bold;}
 			.tit:after {display: inline-block; content: "/"; vertical-align: middle; color:#939393;}
 		}
-		.btn {display:inline-block; position: absolute; right:25px; top:35px; width:145px; line-height: 30px; font-family: $font2; font-size: 16px; color:#417ff2; border:2px solid #417ff2; border-radius: 100px;  text-align: center;}
+		.btn {display:inline-block; position: absolute; right:25px; top:35px; width:145px; line-height: 30px; font-family: $font2; font-weight: bold; font-size: 16px; color:#417ff2; border:2px solid #417ff2; border-radius: 100px;  text-align: center;}
 		.btn:after {display: inline-block; vertical-align: middle; content: ""; width:12px; height: 5px; margin-left: 13px; @include background("lifeedu/subpage/icon_arrow1.png",no-repeat 50% 50%);}
 	}
 }
@@ -472,13 +472,13 @@ SUB PAGE
 	.infor {padding-left: 155px; height: 167px;}
 	.name {
 		font-size: 19px; color:#222; padding-top: 20px;
-		em {font-family: $font2; }
+		em {font-family: $font2; font-weight: bold; }
 	}
 	.lst {
 		margin-top: 25px;
 		&:after {display:block; clear:both; content:""}
 		li {float: left; width:50%; color:#939393; font-size: 16px; line-height: 30px;}
-		.tit {display: inline-block; margin-right: 18px; color:#222; font-family: $font2; vertical-align: middle; width: 80px;}
+		.tit {display: inline-block; margin-right: 18px; color:#222; font-family: $font2; font-weight: bold; vertical-align: middle; width: 80px;}
 		.tit:before {display: inline-block; content: ""; width:4px; height: 4px; background:#797979; margin-right: 10px; vertical-align: middle;}
 		.tit:after {display: inline-block; content: "/"; float: right; color:#939393; font-size: 10px;}
 	}
@@ -543,7 +543,7 @@ SUB PAGE
 	margin-top: 20px; border:1px solid #d6d5d5; padding: 30px 0 28px;border-radius:5px; text-align: center;
 	ol {display: inline-block;}
 	ol:after {display:block; clear:both; content:""}
-	li {float: left; position: relative; width:220px; padding-left: 62px;border:2px solid #7c9ddb; border-radius: 100px; line-height: 46px; color:#111; font-size: 17px; font-family: $font2; letter-spacing: -1px; text-align: left; box-sizing: border-box; }
+	li {float: left; position: relative; width:220px; padding-left: 62px;border:2px solid #7c9ddb; border-radius: 100px; line-height: 46px; color:#111; font-size: 17px; font-family: $font2; font-weight: bold; letter-spacing: -1px; text-align: left; box-sizing: border-box; }
 	li+li {margin-left: 30px;}
 	li:nth-child(even) {
 		border-color: #2e56bd;
@@ -551,14 +551,14 @@ SUB PAGE
 	}
 	li+li:before {display: inline-block; position: absolute; left:-20px; top:50%; width:9px; height: 14px; @include background("lifeedu/subpage/icon_arrow2.png", no-repeat 50% 50%); margin-top: -7px; content: "";}
 	.step {
-		display:inline-block; position: absolute; left:-2px; top:-2px; width:50px; height: 50px; padding-top: 13px; font-size: 11px; text-align: center; border-radius: 100px;background:#7c9ddb; line-height: 1; font-family: $font2; color:#fff; box-sizing: border-box;
+		display:inline-block; position: absolute; left:-2px; top:-2px; width:50px; height: 50px; padding-top: 13px; font-size: 11px; text-align: center; border-radius: 100px;background:#7c9ddb; line-height: 1; font-family: $font2; font-weight: bold; color:#fff; box-sizing: border-box;
 		em {display: block; font-size: 17px;}
 	}
 }
 // 등록폼
 .tbl-lifeedu {
 	padding:10px 3px 10px; margin:4px 0; min-height: 230px; border:1px solid #d9d6d5;
-	th {height:30px; text-align: center; color:#787878; font-family: $font2; font-size: 16px;}
+	th {height:30px; text-align: center; color:#787878; font-family: $font2; font-weight: bold; font-size: 16px;}
 	th:nth-child(2) {text-align: left; padding-left: 66px;}
 	td {padding:3px 3px 2px;}
 	.w_form {

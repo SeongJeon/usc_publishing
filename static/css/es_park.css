@@ -21,80 +21,29 @@ LAYOUT
 SUB PAGE
 ------------------------------------------------------ */
 
-/*-----------muse_part01_01-------*/
-
-.muse_part01_01 .contents-zone .txt { background:#ffe293; }
-
-
-.muse_part01_01 .contents-zone ol li:nth-child(1) h4 { position: relative; width:250px; height:45px; color:#fff; background-color: #f3c716; border-radius: 50px; line-height: 45px; text-align: center; }
-
-	.muse_part01_01 .contents-zone ol li:nth-child(1) h4:before { display: inline-block; position: absolute; top: 13px; right: -9px; width: 9px; height:9px; border: 4px solid #fff; border-radius: 100px; z-index: 1;  background-color: #f3c716; content:''; }
-	.muse_part01_01 .contents-zone ol li:nth-child(1) h4:after { display: inline-block; position: absolute; top:20px; right:-35px; width:34px; height:2px; background-color: #f3c716; content:''; }
-
-.muse_part01_01 .contents-zone ol li:nth-child(2) h4 { position: relative; width:250px; height:45px; color:#fff; background-color: #ec9601; border-radius: 50px; line-height: 45px; text-align: center; }
-
-	.muse_part01_01 .contents-zone ol li:nth-child(2) h4:before { display: inline-block; position: absolute; top: 13px; right: -9px; width: 9px; height:9px; border: 4px solid #fff; border-radius: 100px; z-index: 1;  background-color: #ec9601; content:''; }
-	.muse_part01_01 .contents-zone ol li:nth-child(2) h4:after { display: inline-block; position: absolute; top:20px; right:-35px; width:34px; height:2px; background-color: #ec9601; content:''; }
-
-.muse_part01_01 .contents-zone ol li:nth-child(3) h4 { position: relative; width:250px; height:45px; color:#fff; background-color: #d96007; border-radius: 50px; line-height: 45px; text-align: center; }
-
-	.muse_part01_01 .contents-zone ol li:nth-child(3) h4:before { display: inline-block; position: absolute; top: 13px; right: -9px; width: 9px; height:9px; border: 4px solid #fff; border-radius: 100px; z-index: 1;  background-color: #d96007; content:''; }
-	.muse_part01_01 .contents-zone ol li:nth-child(3) h4:after { display: inline-block; position: absolute; top:20px; right:-35px; width:34px; height:2px; background-color: #d96007; content:''; }
-
-.muse_part01_01 .contents-zone ol li:nth-child(4) h4 { position: relative; width:250px; height:45px; color:#fff; background-color: #cb483e; border-radius: 50px; line-height: 45px; text-align: center; }
-
-	.muse_part01_01 .contents-zone ol li:nth-child(4) h4:before { display: inline-block; position: absolute; top: 13px; right: -9px; width: 9px; height:9px; border: 4px solid #fff; border-radius: 100px; z-index: 1;  background-color: #cb483e; content:''; }
-	.muse_part01_01 .contents-zone ol li:nth-child(4) h4:after { display: inline-block; position: absolute; top:20px; right:-35px; width:34px; height:2px; background-color: #cb483e; content:''; }
-
-.muse_part01_01 .contents-zone ol > li { overflow: hidden; }
-.muse_part01_01 .contents-zone ol > li:after { display: block;	clear:both; content:'';}
-.muse_part01_01 .contents-zone ol li > h4 { float:left; }
-.muse_part01_01 .contents-zone ol li > ul { padding-left:295px; color:#4b4b4b; line-height: 28px; }
-
-
-
-
-/*-----------muse_part01_02-------*/
-
-
-.muse_part01_02 .flow-chart { overflow: hidden; }
-
-.muse_part01_02 .flow-chart li { position: relative; float:left; width:134px; height:134px; margin-left:85px; padding-top: 59px; color:#3b3b3b; background: url(../images/uscmuseum/subpage/ico_chart.png) no-repeat; text-align: center; box-sizing: border-box;}
-	.muse_part01_02 .flow-chart li:first-child { margin-left: 0; }
-	.muse_part01_02 .flow-chart li:last-of-type { padding-top:50px;}
-	.muse_part01_02 .flow-chart li:before { display: block; position: absolute; left: 134px; top: 50%; width: 86px; height: 1px; margin-top: -1px; background: #d6d3d2; content: '';}
-	.muse_part01_02 .flow-chart li:after { display: block; position: absolute; left: -52px; top: 50%; width: 18px; height: 19px; margin-top: -10px; background: url(../images/uscmuseum/subpage/bg_flow_chart_arrow.png) no-repeat; content: ''; }
-	.muse_part01_02 .flow-chart li:first-child:after,
-	.muse_part01_02 .flow-chart li:last-child:before { display: none; }
-
-
-
-
-.muse_part01_02 .comm-btn_type4_whitegray:before { display: inline-block; width: 26px; height: 26px; margin-right: 10px; background: url(../images/uscmuseum/subpage/icon_download4.png) no-repeat 50% 50%; background-size: 100% auto; vertical-align: middle; content: '';}
-
-
-.muse_part01_02 .btn_box button { width: 320px; }
-
-.muse_part01_02 .contents-zone table tbody tr:nth-of-type(2) td,
-.muse_part01_02 .contents-zone table tbody tr:nth-of-type(3) td { padding:15px 10px;}
-.muse_part01_02 .contents-zone .comp-lst_important { color:#4b4b4b;}
 
 
 
 
 
 
-/*-------------muse_part03_03--------------*/
 
 
 
-.muse_part03_03 .contents-zone .bg { position: relative; z-index: 1; }
-.muse_part03_03 .contents-zone .txt { display: block; margin:0 auto;}
 
-.muse_part03_03 .contents-zone .txt_box {position: relative;}
-.muse_part03_03 .contents-zone .txt_box:before { display: inline-block; position: absolute; top:-52px; left:0; width:194px; height:153px; background: url(../images/uscmuseum/subpage/ico_info.png) no-repeat center center; opacity:0.1; content:'';}
 
-.muse_part03_03 .contents-zone p { padding: 0 10px; color:#4b4b4b; line-height: 24px;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -158,44 +107,7 @@ BROWSER HACK
 MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1024px){
-.muse_part01_01 .contents-zone ol li h4.bold { width: 24%; }
-.muse_part01_01 .contents-zone ol li h4.bold:after { right:-2rem; width:10%;}
-.muse_part01_01 .contents-zone ol li > ul { padding-left:29.2%; }
-
-
-
-.muse_part01_02 .flow-chart { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
-.muse_part01_02 .flow-chart li { -webkit-flex: 1; flex: 1; width:auto;  margin-left: 1.6rem; background-size: contain; background-position: center; }
-
-.muse_part01_02 .flow-chart li:before { display: none; }
-.muse_part01_02 .flow-chart li:after { left: -0.5rem; width: 1.6rem; height: 1.6rem; margin-left: -1rem; background-size: 100%; }
-.muse_part01_02 .flow-chart li span { font-size: 1.2rem; line-height: 1.8rem; }
-
-.muse_part01_02 .btn_box { width:100%;}
-.muse_part01_02 .btn_box button { width:33%; margin-left:0 !important; }
-.muse_part01_02 .btn_box button span { font-size: 1rem; }
-
-
-.muse_part03_03 .contents-zone .txt_box:before { left:-3rem; background-size: 50% auto; }
-
-
-
 } @media (max-width:768px){
-
-
-.muse_part01_01 .contents-zone ol li h4.bold { font-size: 0.8rem; }
-.muse_part01_01 .contents-zone ol li h4.bold:after { right:-1rem;}
-
-
-.muse_part01_02 .flow-chart li { height:auto; padding-top:2rem;}
-.muse_part01_02 .flow-chart li:last-of-type { padding-top:1.5rem;}
-.muse_part01_02 .flow-chart li span { font-size: 1rem;}
-
-.muse_part01_02 .btn_box { text-align: center;}
-.muse_part01_02 .btn_box button { width:90%; margin-top:1rem;}
-.muse_part01_02 .btn_box button span { font-size: 1rem; }
-
-
 } @media (max-width:321px){}
 
 

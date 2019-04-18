@@ -421,6 +421,65 @@ SUB PAGE
 		}
 	}
 }
+// 관람안내
+.muse_part01_01 {
+	.txt { background:#ffe293; }
+	ol {
+		li {
+			h4 { 
+				position: relative; width:250px; height:45px; color:#fff;border-radius: 50px; line-height: 45px; text-align: center; 
+				&:before {display: inline-block; position: absolute; top: 13px; right: -9px; width: 9px; height:9px; border: 4px solid #fff; border-radius: 100px; z-index: 1; content:'';}
+				&:after {display: inline-block; position: absolute; top:20px; right:-35px; width:34px; height:2px;content:'';}
+			}
+			&:nth-child(1) {
+				h4 {background-color: #f3c716;}
+				h4:before {background-color: #f3c716; }
+				h4:after {background-color: #f3c716; }
+			}
+			&:nth-child(2) {
+				h4 {background-color: #ec9601;}
+				h4:before {background-color: #ec9601; }
+				h4:after {background-color: #ec9601; }
+			}
+			&:nth-child(3) {
+				h4 {background-color: #d96007;}
+				h4:before {background-color: #d96007; }
+				h4:after {background-color: #d96007; }
+			}
+			&:nth-child(4) {
+				h4 {background-color: #cb483e;}
+				h4:before {background-color: #cb483e; }
+				h4:after {background-color: #cb483e; }
+			}
+			& > h4 { float:left; }
+			& > ul { padding-left:295px; color:#4b4b4b; line-height: 28px; font-family: 'NanumSquareB'; }
+		}
+		& > li {
+			overflow: hidden; 
+			&:after { display: block;	clear:both;}
+		}
+	} 
+}
+// 시설대관안내
+.muse_part01_02 {
+	.flow-chart { 
+		overflow: hidden; 
+		li { 
+			position: relative; float:left; width:134px; height:134px; margin-left:85px; padding-top: 59px; color:#3b3b3b; background: url(../images/uscmuseum/subpage/ico_chart.png) no-repeat; text-align: center; box-sizing: border-box;
+			&:first-child { margin-left: 0; }
+			&:last-of-type { padding-top:50px;}
+			&:before { display: block; position: absolute; left: 134px; top: 50%; width: 86px; height: 1px; margin-top: -1px; background: #d6d3d2; content: '';}
+			&:after { display: block; position: absolute; left: -52px; top: 50%; width: 18px; height: 19px; margin-top: -10px; background: url(../images/uscmuseum/subpage/bg_flow_chart_arrow.png) no-repeat; content: ''; }
+			&:first-child:after,
+			&:last-child:before { display: none; }
+		}
+	}
+	.comm-btn_type4_whitegray:before { display: inline-block; width: 26px; height: 26px; margin-right: 10px; background: url(../images/uscmuseum/subpage/icon_download4.png) no-repeat 50% 50%; background-size: 100% auto; vertical-align: middle; content: '';}
+	.btn_box a { width: 320px; }
+	table tbody tr:nth-of-type(2) td,
+	table tbody tr:nth-of-type(3) td { padding:15px 10px;}
+	.comp-lst_important { color:#4b4b4b;}
+}
 /* 전시안내 */
 // 가상체험vr
 .vr {
@@ -456,6 +515,37 @@ SUB PAGE
 		}
 	}
 }
+// 상설전시회
+.exhibition-zone {
+	position:relative; padding:45px 40px 40px; background:#efeeed;
+	img {vertical-align:top;}
+	.img-contets {padding:0 0 0 187px;}
+	.img-contets img {width:100%; height:468px;}
+	ul[role=tablist] {position:absolute; left:40px; top:45px; margin:-5px 0 0 -5px;}
+	ul[role=tablist]:after {display:block; content:""; clear:both;}
+	ul[role=tablist] > li {float:left; margin:5px 0 0 5px;}
+	ul[role=tablist] > li:nth-child(2n+1) {clear:both;}
+	ul[role=tablist] > li a {position:relative; display:block; width:80px; height:60px;}
+	ul[role=tablist] > li a:hover:after, 
+	ul[role=tablist] > li a[aria-selected=true]:after {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:100%; background:url(../../static/images/uscmuseum/subpage/bg_gallery_selected.png) no-repeat center; background-size:25px 20px; z-index: 5;}
+	ul[role=tablist] > li a:hover:before, 
+	ul[role=tablist] > li a[aria-selected=true]:before {position:relative; display:block; content:""; width:100%; height:100%; border:5px solid #edc834; box-sizing:border-box;
+	    z-index: 3;}
+	ul[role=tablist] > li a img {position:absolute; left:0; top:0; height:100%; vertical-align:top}
+}
+.exhibition {
+	.list-relic {
+		margin-top: 15px; margin-left: 50px;
+		ul {
+			overflow:hidden; margin:-35px 0 0 -32px;
+			& > li {float:left; width:25%; padding:35px 0 0 32px; box-sizing:border-box;}
+			& > li a {display:block;}
+			& > li a .img-area {display:block;}
+			& > li a .img-area img {vertical-align:top}
+			& > li a .txt {display:block; margin:10px 0 0 0; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#4b4b4b; text-align:center;}
+		}
+	}
+}
 /* 박물관소개 */
 // 박물관로고
 .museumlogo {
@@ -488,7 +578,89 @@ SUB PAGE
 	p.comp-lst_dotted {font-size:15px;}
 	.btn-area {margin-top:20px;text-align:right;}
 }
+//	건축계획개념
+.notion {
+	.visual-img {
+		position:relative;height:537px;background:url(../images/uscmuseum/subpage/bg_plan.png) no-repeat left top;
+		.img-txt01 {position:absolute;top:63px;left:59px;}
+		.img-txt02 {position:absolute;top:63px;right:234px;}
+	}
+	.comp-txt_box {
+		margin:0 0 18px 30px;padding:33px 20px 28px;
+		.tit {margin-bottom:26px;text-align:center;font-family:'NanumSquareB';color:#1c1c1c;font-size:18px;}
+		.tit .green {color:#2e9911;}
+		.txt {font-size:15px;font-family:'NanumSquareB';color:#4b4b4b;}
+	}
+	*[class$="tit"] {font-family:'NanumSquareB';color:#4b4b4b;font-size:17px;text-align:center;}
+	.design-wrap {
+		margin:0 0 24px 30px;
+		&:after {display:block;clear:both;content:'';}
+		.design-area {
+			display:inline-block;width:308px;height:491px;margin-right:24px;padding:20px 14px;border:1px solid #c7c1bf;vertical-align:top;box-sizing:border-box;
+			.tit {margin-bottom:15px;}
+			.sub-tit {display:block;height:40px;line-height:40px;}
+			.yellow {background:#ffcf26;}
+			.green {background:#4dd360;}
+			li {
+				position:relative;display:table;width:100%;height:109px;margin-top:15px;padding:14px 10px;text-align:center;background:#f1f3f4;border-radius:10px;box-sizing:border-box;
+				div {display:table-cell;vertical-align:middle;}
+				p {font-size:15px;font-family:'NanumSquareB';color:#4b4b4b;}
+			}
+			li:after,
+			&.concept:after {position:absolute;top:50%;right:-39px;display:inline-block;margin-top:-18px;font-size:30px;font-family:'NanumSquareB';color:#8f8f8f;content:'>';}
+			.design {width:42%;}
+			.and span {display:inline-block;width:36px;height:36px;line-height:36px;font-size:15px;font-family:'NanumSquareEB';color:#8f8f8f;background:#d6d9db;border-radius:50%;}
+			*[class*="bg"] {
+				margin-bottom:4px;padding-bottom:43px;
+				&.bg01 {background:url(../images/uscmuseum/subpage/bg_goal01.png) no-repeat center bottom;}
+				&.bg02 {background:url(../images/uscmuseum/subpage/bg_goal02.png) no-repeat center bottom;}
+				&.bg03 {background:url(../images/uscmuseum/subpage/bg_goal03.png) no-repeat center bottom;}
+				&.bg04 {background:url(../images/uscmuseum/subpage/bg_goal04.png) no-repeat center bottom;}
+				&.bg05 {background:url(../images/uscmuseum/subpage/bg_goal05.png) no-repeat center bottom;}
+				&.bg06 {background:url(../images/uscmuseum/subpage/bg_goal06.png) no-repeat center bottom;}
+			}
+			&.concept {
+				position:relative;
+				&:after {top:59%;right:-24px;}
+				li {padding:10px 34px;}
+				li:after {display:none;}
+				li p {padding:35px 0 35px 110px;}
+				.txt01 {background:url(../images/uscmuseum/subpage/bg_concept01.png) no-repeat left top}
+				.txt02 {background:url(../images/uscmuseum/subpage/bg_concept02.png) no-repeat left top}
+				.txt03 {padding:26px 0 27px 110px;line-height:1.2;background:url(../images/uscmuseum/subpage/bg_concept03.png) no-repeat left top}
+			}
+		}
+	}
+	.tree-area {
+		display:inline-block;width:308px;height:489px;background:url(../images/uscmuseum/subpage/bg_tree.png) no-repeat left top;border:1px solid #c7c1bf;text-align:center;box-sizing:border-box;
+		.tit {margin-bottom:110px;padding-top:20px;line-height:1.5;}
+		.tit span {display:block;color:#fe970e;font-family:'NanumSquareEB';font-size:24px;}
+		.txt {line-height:1.6;color:#fff;font-family:'NanumSquareB';font-size:15px;}
+	}
+	.plan-list {
+		margin-left:30px;border-top:2px solid #7a7a7a;border-bottom:2px solid #7a7a7a;
+		& > li {
+			display:table;width:100%;border-top:1px solid #d9d6d5;
+			&:first-child {border-top:0;}
+			&:first-child .comp-lst_dotted li:last-child {padding-left:95px;text-indent:-80px;}
+			&:nth-child(2) li:first-child,
+			&:last-child li:last-child {padding-left:65px;text-indent:-52px;}
 
+			.tit {display:table-cell;width:150px;background:#f4f7f9;font-size:16px;vertical-align:middle;line-height:1.5;}
+			.comp-lst_dotted {padding:18px 20px;border-bottom:1px solid #d9d6d5;}
+			.comp-lst_dotted li {font-size:15px;}
+			.img-area {padding:25px 0 0 50px;}
+		}
+	}
+}
+// 인사말
+.muse_part03_03 {
+	.bg { position: relative; z-index: 1; }
+	.txt { display: block; margin:0 auto;}
+	.txt_box {position: relative; margin-top: 30px; margin-bottom: 15px; padding:0;}
+	.txt_box:before { display: inline-block; position: absolute; top:-52px; left:0; width:194px; height:153px; background: url(../images/uscmuseum/subpage/ico_info.png) no-repeat center center; opacity:0.1; content:'';}
+	p { padding: 0 10px; color:#4b4b4b; line-height: 24px; font-family: 'NanumSquareB'; font-size: 15px;}
+}
 
 
 
@@ -899,6 +1071,32 @@ COMMON
 		}
 	}
 }
+// 관람안내
+.muse_part01_01 {
+	ol li{
+		h4.bold { width: 35%; line-height: 3rem; height: 3rem;}
+		h4.bold:before{right:-0.5rem; width:1rem; height: 1rem; top:50%; margin-top: -0.5rem; box-sizing: border-box; border-width: 2px}
+		h4.bold:after { right:inherit; left:100%; width:15%; top:50%; margin-top: -1px;}
+		& > ul { padding-left:42%; line-height: 1.8rem; }
+	}
+}
+// 시설대관안내
+.muse_part01_02 {
+	.flow-chart { 
+		display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; 
+		li { 
+			-webkit-flex: 1; flex: 1; width:auto;  margin-left: 1.6rem; background-size: contain; background-position: center; 
+			&:before { display: none; }
+			&:after { left: -0.5rem; width: 1.6rem; height: 1.6rem; margin-left: -1rem; background-size: 100%; }
+			span { font-size: 1.2rem; line-height: 1.8rem; }
+		}
+	}
+	.btn_box { 
+		width:100%;
+		a { width:33%; margin-left:0 !important; }
+		a span { font-size: 1rem; }
+	}
+}
 /* 전시안내 */
 // 가상체험vr
 .vr {
@@ -946,8 +1144,64 @@ COMMON
 		.img {height:10rem;padding:0 2rem;}
 	}
 }
-
-
+//	건축계획개념
+.notion {
+	.visual-img {
+		height:50vw;background-size:100%;
+		.img-txt01 {top:5vw;left:5vw;width:14rem;}
+		.img-txt02 {top:5vw;right:19vw;width:6rem;}
+	}
+	.comp-txt_box {
+		margin:0 0 .9rem 0;padding:1.5rem 1rem 1.4rem;
+		.tit {margin-bottom:1.3rem;font-size:1.5rem;}
+		.txt {font-size:1.3rem;}
+	}
+	*[class$="tit"] {font-size:1.4rem;}
+	.design-wrap {
+		margin:0 0 1.2rem 0;
+		.design-area {
+			display:block;width:100%;height:inherit;margin:0 0 2rem 0;padding:1rem .7rem;
+			.tit {margin-bottom:.8rem;}
+			.sub-tit {height:3rem;line-height:3rem;}
+			li {height:inherit;margin-top:.8rem;padding:.7rem 1rem;}
+			li p {font-size:1.3rem;}
+			li:after,
+			&.concept:after {display:none;}
+			.design {width:50%;}
+			.and span {width:3rem;height:3rem;line-height:3rem;font-size:1.3rem;}
+			*[class*="bg"] {margin-bottom:.2rem;padding-bottom:2.2rem;background-size:2rem;}
+			&.concept{
+				li {padding:1rem 1.7rem;}
+				li p {display:inline-block;width:24rem;padding:2.8rem 0 2.8rem 5rem;background-size:7rem !important;box-sizing:border-box;}
+				.txt03 {padding:2rem 0 2rem 5rem;}
+			} 
+		}
+	}
+	.tree-area {
+		display:block;width:100%;height:45rem;background-size:100% 45rem;
+		.tit {margin-bottom:6rem;padding-top:2rem;}
+		.tit span {font-size:2rem;}
+		.txt {font-size:1.8rem;}
+	}
+	.plan-list {
+		margin-left:0;
+		& > li{
+			.tit {width:9rem;font-size:1.3rem;}
+			.comp-lst_dotted {padding:1rem 1rem;}
+			.comp-lst_dotted li {font-size:1.2rem;}
+			.img-area {padding:1.8rem 0 0 2.5rem;}
+			&:first-child .comp-lst_dotted li:last-child,
+			&:nth-child(2) li:first-child,
+			&:last-child li:last-child {padding-left:1rem;text-indent:0;}	
+		} 
+	}
+}
+// 인사말
+.muse_part03_03  {
+	.txt_box {margin-top: 1.5rem; margin-bottom: 1rem;}
+	.txt_box:before { left:-3rem; background-size: 50% auto; }
+	p {font-size: 1.2rem; line-height: 1.8rem;}
+}
 //-------------------------------------------------------------------------------
 }
 @media (max-width:768px){
@@ -968,7 +1222,44 @@ COMMON
 .vr {
 	.gallery-vr ul[role=tablist] > li {width:50%;}
 }
-
+// 상설전시회
+.exhibition-zone {
+	padding:1rem;
+	.img-contets {margin:0 0 1rem;padding:0; }
+	.img-contets img {height:50vw;}
+	ul[role=tablist] {position:static; margin:-0.5rem 0 0 -0.5rem;}
+	ul[role=tablist] > li {width:20%; margin:0; padding:0.5rem 0 0 0.5rem; box-sizing:border-box;}
+	ul[role=tablist] > li a {width:auto; height:10vw;}
+	ul[role=tablist] > li a:hover:before, 
+	ul[role=tablist] > li a[aria-selected=true]:before {border-width:0.3rem;}
+	ul[role=tablist] > li a:hover:after, 
+	ul[role=tablist] > li a[aria-selected=true]:after {background-size:2rem 1.4rem;}
+	ul[role=tablist] > li a img {width:100%;}
+	ul[role=tablist] > li:nth-child(2n+1) {clear:none;}
+}
+.exhibition {
+	.list-relic{
+		margin-top: 1rem; margin-left: 0;
+		ul {
+			overflow:hidden; margin:-1.5rem 0 0 -0.5rem;
+			& > li {padding:1.5rem 0 0 0.5rem; box-sizing:border-box;}
+			& > li a .txt {margin:0.5rem 0 0;}
+		}
+	} 
+}
+//시설대관안내
+.muse_part01_02 {
+	.flow-chart {
+		li { height:auto; padding-top:2rem;}
+		li:last-of-type { padding-top:1.5rem;}
+		li span { font-size: 1rem;}
+	} 
+	.btn_box { 
+		text-align: center;
+		a { width:90%; margin-top:1rem;}
+		a span { font-size: 1rem; }
+	}
+}
 
 //-------------------------------------------------------------------------------
 } @media (max-width:360px){

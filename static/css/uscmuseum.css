@@ -205,6 +205,39 @@ SUB PAGE
 .uscmuseum-view-zone .img-tabconts .imgtxt .num { display: inline-block; width: 50px; margin-right: 15px; vertical-align: top; color: #fff; text-align: center; background: #6c1b31; font-size: 18px; }
 .uscmuseum-view-zone .img-tabconts div[id^=imgothertab] .num { background: #1fbbee; }
 
+.muse_part01_01 .txt { background: #ffe293; }
+.muse_part01_01 ol li h4 { position: relative; width: 250px; height: 45px; color: #fff; border-radius: 50px; line-height: 45px; text-align: center; }
+.muse_part01_01 ol li h4:before { display: inline-block; position: absolute; top: 13px; right: -9px; width: 9px; height: 9px; border: 4px solid #fff; border-radius: 100px; z-index: 1; content: ''; }
+.muse_part01_01 ol li h4:after { display: inline-block; position: absolute; top: 20px; right: -35px; width: 34px; height: 2px; content: ''; }
+.muse_part01_01 ol li:nth-child(1) h4 { background-color: #f3c716; }
+.muse_part01_01 ol li:nth-child(1) h4:before { background-color: #f3c716; }
+.muse_part01_01 ol li:nth-child(1) h4:after { background-color: #f3c716; }
+.muse_part01_01 ol li:nth-child(2) h4 { background-color: #ec9601; }
+.muse_part01_01 ol li:nth-child(2) h4:before { background-color: #ec9601; }
+.muse_part01_01 ol li:nth-child(2) h4:after { background-color: #ec9601; }
+.muse_part01_01 ol li:nth-child(3) h4 { background-color: #d96007; }
+.muse_part01_01 ol li:nth-child(3) h4:before { background-color: #d96007; }
+.muse_part01_01 ol li:nth-child(3) h4:after { background-color: #d96007; }
+.muse_part01_01 ol li:nth-child(4) h4 { background-color: #cb483e; }
+.muse_part01_01 ol li:nth-child(4) h4:before { background-color: #cb483e; }
+.muse_part01_01 ol li:nth-child(4) h4:after { background-color: #cb483e; }
+.muse_part01_01 ol li > h4 { float: left; }
+.muse_part01_01 ol li > ul { padding-left: 295px; color: #4b4b4b; line-height: 28px; font-family: 'NanumSquareB'; }
+.muse_part01_01 ol > li { overflow: hidden; }
+.muse_part01_01 ol > li:after { display: block; clear: both; }
+
+.muse_part01_02 .flow-chart { overflow: hidden; }
+.muse_part01_02 .flow-chart li { position: relative; float: left; width: 134px; height: 134px; margin-left: 85px; padding-top: 59px; color: #3b3b3b; background: url(../images/uscmuseum/subpage/ico_chart.png) no-repeat; text-align: center; box-sizing: border-box; }
+.muse_part01_02 .flow-chart li:first-child { margin-left: 0; }
+.muse_part01_02 .flow-chart li:last-of-type { padding-top: 50px; }
+.muse_part01_02 .flow-chart li:before { display: block; position: absolute; left: 134px; top: 50%; width: 86px; height: 1px; margin-top: -1px; background: #d6d3d2; content: ''; }
+.muse_part01_02 .flow-chart li:after { display: block; position: absolute; left: -52px; top: 50%; width: 18px; height: 19px; margin-top: -10px; background: url(../images/uscmuseum/subpage/bg_flow_chart_arrow.png) no-repeat; content: ''; }
+.muse_part01_02 .flow-chart li:first-child:after, .muse_part01_02 .flow-chart li:last-child:before { display: none; }
+.muse_part01_02 .comm-btn_type4_whitegray:before { display: inline-block; width: 26px; height: 26px; margin-right: 10px; background: url(../images/uscmuseum/subpage/icon_download4.png) no-repeat 50% 50%; background-size: 100% auto; vertical-align: middle; content: ''; }
+.muse_part01_02 .btn_box a { width: 320px; }
+.muse_part01_02 table tbody tr:nth-of-type(2) td, .muse_part01_02 table tbody tr:nth-of-type(3) td { padding: 15px 10px; }
+.muse_part01_02 .comp-lst_important { color: #4b4b4b; }
+
 /* 전시안내 */
 .vr .gallery-vr { position: relative; background: #efeeed; padding: 562px 40px 40px; }
 .vr .gallery-vr ul[role=tablist] { overflow: hidden; margin: -7px 0 0 -7px; }
@@ -221,6 +254,27 @@ SUB PAGE
 .vr .gallery-vr .cont-gallery { position: absolute; top: 40px; right: 40px; left: 40px; }
 .vr .gallery-vr .cont-gallery .vr_area { width: 100%; height: 504px; }
 .vr .gallery-vr .cont-gallery .vr_area img { width: 100%; height: 100%; vertical-align: top; }
+
+.exhibition-zone { position: relative; padding: 45px 40px 40px; background: #efeeed; }
+.exhibition-zone img { vertical-align: top; }
+.exhibition-zone .img-contets { padding: 0 0 0 187px; }
+.exhibition-zone .img-contets img { width: 100%; height: 468px; }
+.exhibition-zone ul[role=tablist] { position: absolute; left: 40px; top: 45px; margin: -5px 0 0 -5px; }
+.exhibition-zone ul[role=tablist]:after { display: block; content: ""; clear: both; }
+.exhibition-zone ul[role=tablist] > li { float: left; margin: 5px 0 0 5px; }
+.exhibition-zone ul[role=tablist] > li:nth-child(2n+1) { clear: both; }
+.exhibition-zone ul[role=tablist] > li a { position: relative; display: block; width: 80px; height: 60px; }
+.exhibition-zone ul[role=tablist] > li a:hover:after, .exhibition-zone ul[role=tablist] > li a[aria-selected=true]:after { position: absolute; left: 0; top: 0; display: block; content: ""; width: 100%; height: 100%; background: url(../../static/images/uscmuseum/subpage/bg_gallery_selected.png) no-repeat center; background-size: 25px 20px; z-index: 5; }
+.exhibition-zone ul[role=tablist] > li a:hover:before, .exhibition-zone ul[role=tablist] > li a[aria-selected=true]:before { position: relative; display: block; content: ""; width: 100%; height: 100%; border: 5px solid #edc834; box-sizing: border-box; z-index: 3; }
+.exhibition-zone ul[role=tablist] > li a img { position: absolute; left: 0; top: 0; height: 100%; vertical-align: top; }
+
+.exhibition .list-relic { margin-top: 15px; margin-left: 50px; }
+.exhibition .list-relic ul { overflow: hidden; margin: -35px 0 0 -32px; }
+.exhibition .list-relic ul > li { float: left; width: 25%; padding: 35px 0 0 32px; box-sizing: border-box; }
+.exhibition .list-relic ul > li a { display: block; }
+.exhibition .list-relic ul > li a .img-area { display: block; }
+.exhibition .list-relic ul > li a .img-area img { vertical-align: top; }
+.exhibition .list-relic ul > li a .txt { display: block; margin: 10px 0 0 0; font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color: #4b4b4b; text-align: center; }
 
 /* 박물관소개 */
 .museumlogo .symbol-wrap { overflow: hidden; position: relative; }
@@ -241,6 +295,62 @@ SUB PAGE
 .museumlogo .img-area.full .img { height: 154px; }
 .museumlogo p.comp-lst_dotted { font-size: 15px; }
 .museumlogo .btn-area { margin-top: 20px; text-align: right; }
+
+.notion .visual-img { position: relative; height: 537px; background: url(../images/uscmuseum/subpage/bg_plan.png) no-repeat left top; }
+.notion .visual-img .img-txt01 { position: absolute; top: 63px; left: 59px; }
+.notion .visual-img .img-txt02 { position: absolute; top: 63px; right: 234px; }
+.notion .comp-txt_box { margin: 0 0 18px 30px; padding: 33px 20px 28px; }
+.notion .comp-txt_box .tit { margin-bottom: 26px; text-align: center; font-family: 'NanumSquareB'; color: #1c1c1c; font-size: 18px; }
+.notion .comp-txt_box .tit .green { color: #2e9911; }
+.notion .comp-txt_box .txt { font-size: 15px; font-family: 'NanumSquareB'; color: #4b4b4b; }
+.notion *[class$="tit"] { font-family: 'NanumSquareB'; color: #4b4b4b; font-size: 17px; text-align: center; }
+.notion .design-wrap { margin: 0 0 24px 30px; }
+.notion .design-wrap:after { display: block; clear: both; content: ''; }
+.notion .design-wrap .design-area { display: inline-block; width: 308px; height: 491px; margin-right: 24px; padding: 20px 14px; border: 1px solid #c7c1bf; vertical-align: top; box-sizing: border-box; }
+.notion .design-wrap .design-area .tit { margin-bottom: 15px; }
+.notion .design-wrap .design-area .sub-tit { display: block; height: 40px; line-height: 40px; }
+.notion .design-wrap .design-area .yellow { background: #ffcf26; }
+.notion .design-wrap .design-area .green { background: #4dd360; }
+.notion .design-wrap .design-area li { position: relative; display: table; width: 100%; height: 109px; margin-top: 15px; padding: 14px 10px; text-align: center; background: #f1f3f4; border-radius: 10px; box-sizing: border-box; }
+.notion .design-wrap .design-area li div { display: table-cell; vertical-align: middle; }
+.notion .design-wrap .design-area li p { font-size: 15px; font-family: 'NanumSquareB'; color: #4b4b4b; }
+.notion .design-wrap .design-area li:after, .notion .design-wrap .design-area.concept:after { position: absolute; top: 50%; right: -39px; display: inline-block; margin-top: -18px; font-size: 30px; font-family: 'NanumSquareB'; color: #8f8f8f; content: '>'; }
+.notion .design-wrap .design-area .design { width: 42%; }
+.notion .design-wrap .design-area .and span { display: inline-block; width: 36px; height: 36px; line-height: 36px; font-size: 15px; font-family: 'NanumSquareEB'; color: #8f8f8f; background: #d6d9db; border-radius: 50%; }
+.notion .design-wrap .design-area *[class*="bg"] { margin-bottom: 4px; padding-bottom: 43px; }
+.notion .design-wrap .design-area *[class*="bg"].bg01 { background: url(../images/uscmuseum/subpage/bg_goal01.png) no-repeat center bottom; }
+.notion .design-wrap .design-area *[class*="bg"].bg02 { background: url(../images/uscmuseum/subpage/bg_goal02.png) no-repeat center bottom; }
+.notion .design-wrap .design-area *[class*="bg"].bg03 { background: url(../images/uscmuseum/subpage/bg_goal03.png) no-repeat center bottom; }
+.notion .design-wrap .design-area *[class*="bg"].bg04 { background: url(../images/uscmuseum/subpage/bg_goal04.png) no-repeat center bottom; }
+.notion .design-wrap .design-area *[class*="bg"].bg05 { background: url(../images/uscmuseum/subpage/bg_goal05.png) no-repeat center bottom; }
+.notion .design-wrap .design-area *[class*="bg"].bg06 { background: url(../images/uscmuseum/subpage/bg_goal06.png) no-repeat center bottom; }
+.notion .design-wrap .design-area.concept { position: relative; }
+.notion .design-wrap .design-area.concept:after { top: 59%; right: -24px; }
+.notion .design-wrap .design-area.concept li { padding: 10px 34px; }
+.notion .design-wrap .design-area.concept li:after { display: none; }
+.notion .design-wrap .design-area.concept li p { padding: 35px 0 35px 110px; }
+.notion .design-wrap .design-area.concept .txt01 { background: url(../images/uscmuseum/subpage/bg_concept01.png) no-repeat left top; }
+.notion .design-wrap .design-area.concept .txt02 { background: url(../images/uscmuseum/subpage/bg_concept02.png) no-repeat left top; }
+.notion .design-wrap .design-area.concept .txt03 { padding: 26px 0 27px 110px; line-height: 1.2; background: url(../images/uscmuseum/subpage/bg_concept03.png) no-repeat left top; }
+.notion .tree-area { display: inline-block; width: 308px; height: 489px; background: url(../images/uscmuseum/subpage/bg_tree.png) no-repeat left top; border: 1px solid #c7c1bf; text-align: center; box-sizing: border-box; }
+.notion .tree-area .tit { margin-bottom: 110px; padding-top: 20px; line-height: 1.5; }
+.notion .tree-area .tit span { display: block; color: #fe970e; font-family: 'NanumSquareEB'; font-size: 24px; }
+.notion .tree-area .txt { line-height: 1.6; color: #fff; font-family: 'NanumSquareB'; font-size: 15px; }
+.notion .plan-list { margin-left: 30px; border-top: 2px solid #7a7a7a; border-bottom: 2px solid #7a7a7a; }
+.notion .plan-list > li { display: table; width: 100%; border-top: 1px solid #d9d6d5; }
+.notion .plan-list > li:first-child { border-top: 0; }
+.notion .plan-list > li:first-child .comp-lst_dotted li:last-child { padding-left: 95px; text-indent: -80px; }
+.notion .plan-list > li:nth-child(2) li:first-child, .notion .plan-list > li:last-child li:last-child { padding-left: 65px; text-indent: -52px; }
+.notion .plan-list > li .tit { display: table-cell; width: 150px; background: #f4f7f9; font-size: 16px; vertical-align: middle; line-height: 1.5; }
+.notion .plan-list > li .comp-lst_dotted { padding: 18px 20px; border-bottom: 1px solid #d9d6d5; }
+.notion .plan-list > li .comp-lst_dotted li { font-size: 15px; }
+.notion .plan-list > li .img-area { padding: 25px 0 0 50px; }
+
+.muse_part03_03 .bg { position: relative; z-index: 1; }
+.muse_part03_03 .txt { display: block; margin: 0 auto; }
+.muse_part03_03 .txt_box { position: relative; margin-top: 30px; margin-bottom: 15px; padding: 0; }
+.muse_part03_03 .txt_box:before { display: inline-block; position: absolute; top: -52px; left: 0; width: 194px; height: 153px; background: url(../images/uscmuseum/subpage/ico_info.png) no-repeat center center; opacity: 0.1; content: ''; }
+.muse_part03_03 p { padding: 0 10px; color: #4b4b4b; line-height: 24px; font-family: 'NanumSquareB'; font-size: 15px; }
 
 /* ------------------------------------------------------
 BROWSER HACK
@@ -363,6 +473,18 @@ MEDIA QUERY
   .uscmuseum-view-zone .img-tabconts { padding-left: 0; }
   .uscmuseum-view-zone .img-tabconts .imgtxt { left: 0; width: 15rem; height: 3rem; font-size: 1.2rem; line-height: 3rem; text-align: left; }
   .uscmuseum-view-zone .img-tabconts .imgtxt .num { width: 3rem; margin-right: 1rem; font-size: 1.5rem; }
+  .muse_part01_01 ol li h4.bold { width: 35%; line-height: 3rem; height: 3rem; }
+  .muse_part01_01 ol li h4.bold:before { right: -0.5rem; width: 1rem; height: 1rem; top: 50%; margin-top: -0.5rem; box-sizing: border-box; border-width: 2px; }
+  .muse_part01_01 ol li h4.bold:after { right: inherit; left: 100%; width: 15%; top: 50%; margin-top: -1px; }
+  .muse_part01_01 ol li > ul { padding-left: 42%; line-height: 1.8rem; }
+  .muse_part01_02 .flow-chart { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+  .muse_part01_02 .flow-chart li { -webkit-flex: 1; flex: 1; width: auto; margin-left: 1.6rem; background-size: contain; background-position: center; }
+  .muse_part01_02 .flow-chart li:before { display: none; }
+  .muse_part01_02 .flow-chart li:after { left: -0.5rem; width: 1.6rem; height: 1.6rem; margin-left: -1rem; background-size: 100%; }
+  .muse_part01_02 .flow-chart li span { font-size: 1.2rem; line-height: 1.8rem; }
+  .muse_part01_02 .btn_box { width: 100%; }
+  .muse_part01_02 .btn_box a { width: 33%; margin-left: 0 !important; }
+  .muse_part01_02 .btn_box a span { font-size: 1rem; }
   /* 전시안내 */
   .vr .gallery-vr { padding: 48vw 1rem 1rem; }
   .vr .gallery-vr .cont-gallery { top: 1rem; right: 1rem; left: 1rem; }
@@ -385,12 +507,65 @@ MEDIA QUERY
   .museumlogo p.comp-lst_dotted { font-size: 1.3rem; }
   .museumlogo .btn-area { margin-top: 1rem; }
   .museumlogo .img-area.full { margin: .8rem 0 0 0; width: 100%; }
-  .museumlogo .img-area.full .img { height: 10rem; padding: 0 2rem; } }
+  .museumlogo .img-area.full .img { height: 10rem; padding: 0 2rem; }
+  .notion .visual-img { height: 50vw; background-size: 100%; }
+  .notion .visual-img .img-txt01 { top: 5vw; left: 5vw; width: 14rem; }
+  .notion .visual-img .img-txt02 { top: 5vw; right: 19vw; width: 6rem; }
+  .notion .comp-txt_box { margin: 0 0 .9rem 0; padding: 1.5rem 1rem 1.4rem; }
+  .notion .comp-txt_box .tit { margin-bottom: 1.3rem; font-size: 1.5rem; }
+  .notion .comp-txt_box .txt { font-size: 1.3rem; }
+  .notion *[class$="tit"] { font-size: 1.4rem; }
+  .notion .design-wrap { margin: 0 0 1.2rem 0; }
+  .notion .design-wrap .design-area { display: block; width: 100%; height: inherit; margin: 0 0 2rem 0; padding: 1rem .7rem; }
+  .notion .design-wrap .design-area .tit { margin-bottom: .8rem; }
+  .notion .design-wrap .design-area .sub-tit { height: 3rem; line-height: 3rem; }
+  .notion .design-wrap .design-area li { height: inherit; margin-top: .8rem; padding: .7rem 1rem; }
+  .notion .design-wrap .design-area li p { font-size: 1.3rem; }
+  .notion .design-wrap .design-area li:after, .notion .design-wrap .design-area.concept:after { display: none; }
+  .notion .design-wrap .design-area .design { width: 50%; }
+  .notion .design-wrap .design-area .and span { width: 3rem; height: 3rem; line-height: 3rem; font-size: 1.3rem; }
+  .notion .design-wrap .design-area *[class*="bg"] { margin-bottom: .2rem; padding-bottom: 2.2rem; background-size: 2rem; }
+  .notion .design-wrap .design-area.concept li { padding: 1rem 1.7rem; }
+  .notion .design-wrap .design-area.concept li p { display: inline-block; width: 24rem; padding: 2.8rem 0 2.8rem 5rem; background-size: 7rem !important; box-sizing: border-box; }
+  .notion .design-wrap .design-area.concept .txt03 { padding: 2rem 0 2rem 5rem; }
+  .notion .tree-area { display: block; width: 100%; height: 45rem; background-size: 100% 45rem; }
+  .notion .tree-area .tit { margin-bottom: 6rem; padding-top: 2rem; }
+  .notion .tree-area .tit span { font-size: 2rem; }
+  .notion .tree-area .txt { font-size: 1.8rem; }
+  .notion .plan-list { margin-left: 0; }
+  .notion .plan-list > li .tit { width: 9rem; font-size: 1.3rem; }
+  .notion .plan-list > li .comp-lst_dotted { padding: 1rem 1rem; }
+  .notion .plan-list > li .comp-lst_dotted li { font-size: 1.2rem; }
+  .notion .plan-list > li .img-area { padding: 1.8rem 0 0 2.5rem; }
+  .notion .plan-list > li:first-child .comp-lst_dotted li:last-child, .notion .plan-list > li:nth-child(2) li:first-child, .notion .plan-list > li:last-child li:last-child { padding-left: 1rem; text-indent: 0; }
+  .muse_part03_03 .txt_box { margin-top: 1.5rem; margin-bottom: 1rem; }
+  .muse_part03_03 .txt_box:before { left: -3rem; background-size: 50% auto; }
+  .muse_part03_03 p { font-size: 1.2rem; line-height: 1.8rem; } }
 @media (max-width: 768px) { /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
   #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] { padding: 2rem 0; }
   /* ------------------------------------------------------ - SUB PAGE ------------------------------------------------------ */
   /* 전시안내 */
-  .vr .gallery-vr ul[role=tablist] > li { width: 50%; } }
+  .vr .gallery-vr ul[role=tablist] > li { width: 50%; }
+  .exhibition-zone { padding: 1rem; }
+  .exhibition-zone .img-contets { margin: 0 0 1rem; padding: 0; }
+  .exhibition-zone .img-contets img { height: 50vw; }
+  .exhibition-zone ul[role=tablist] { position: static; margin: -0.5rem 0 0 -0.5rem; }
+  .exhibition-zone ul[role=tablist] > li { width: 20%; margin: 0; padding: 0.5rem 0 0 0.5rem; box-sizing: border-box; }
+  .exhibition-zone ul[role=tablist] > li a { width: auto; height: 10vw; }
+  .exhibition-zone ul[role=tablist] > li a:hover:before, .exhibition-zone ul[role=tablist] > li a[aria-selected=true]:before { border-width: 0.3rem; }
+  .exhibition-zone ul[role=tablist] > li a:hover:after, .exhibition-zone ul[role=tablist] > li a[aria-selected=true]:after { background-size: 2rem 1.4rem; }
+  .exhibition-zone ul[role=tablist] > li a img { width: 100%; }
+  .exhibition-zone ul[role=tablist] > li:nth-child(2n+1) { clear: none; }
+  .exhibition .list-relic { margin-top: 1rem; margin-left: 0; }
+  .exhibition .list-relic ul { overflow: hidden; margin: -1.5rem 0 0 -0.5rem; }
+  .exhibition .list-relic ul > li { padding: 1.5rem 0 0 0.5rem; box-sizing: border-box; }
+  .exhibition .list-relic ul > li a .txt { margin: 0.5rem 0 0; }
+  .muse_part01_02 .flow-chart li { height: auto; padding-top: 2rem; }
+  .muse_part01_02 .flow-chart li:last-of-type { padding-top: 1.5rem; }
+  .muse_part01_02 .flow-chart li span { font-size: 1rem; }
+  .muse_part01_02 .btn_box { text-align: center; }
+  .muse_part01_02 .btn_box a { width: 90%; margin-top: 1rem; }
+  .muse_part01_02 .btn_box a span { font-size: 1rem; } }
 @media (max-width: 360px) { /* ------------------------------------------------------ - MAIN ------------------------------------------------------ */
   #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu a { width: 6rem; height: 6rem; }
   #wrap.uscmuseum #container.main .main-group-zone .tit .small { display: block; } }

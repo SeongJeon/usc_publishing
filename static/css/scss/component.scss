@@ -94,7 +94,7 @@
 		.usc-snsgroup {
 			position: absolute; right: 0; top:0; height: 90px; padding-top: 20px; padding-right: 89px; 
 			@include background("usc/bg_header.png",no-repeat 100% 100%);
-			.txt {font-size: 15px; font-family: $font2; color:#2d2d2d; text-align: right;}
+			.txt {font-size: 15px; font-family: $font2;font-weight: bold; color:#2d2d2d; text-align: right;}
 			.sns { 
 				overflow: hidden; margin-top: 10px;
 				li {float: left; margin-left: 8px; }
@@ -186,7 +186,7 @@
 				}
 				a {
 					font-size: 15px; color:#666;
-					&:hover {font-family: $font2;}
+					&:hover {font-family: $font2;font-weight: bold;}
 				}	
 			}
 			& + .footer-comp-select {margin-left: 17px;}
@@ -206,7 +206,7 @@
 			}
 			a {
 				font-size: 15px; color:#666; 
-				strong {font-family: $font2;}
+				strong {font-family: $font2;font-weight: bold;}
 			}
 		}
 		.footer-addr {
@@ -215,7 +215,7 @@
 			li {
 				float: left;
 				&+li:before {display: inline-block; position: relative; top:-1px; content: ""; width:1px; height: 10px; vertical-align: middle; margin:0 12px; background:#b7b7b7;}
-				strong {font-family: $font2;}
+				strong {font-family: $font2;font-weight: bold;}
 			}
 		}
 		.footer-txt {color:#c0c0c0;}
@@ -227,7 +227,7 @@
 	.footer-notice {
 		position: absolute; right:0; top:82px; text-align: right;
 		.number {
-			font-size: 23px; color:#ff6942; font-family: $font2; line-height: 35px;
+			font-size: 23px; color:#ff6942; font-family: $font2;font-weight: bold; line-height: 35px;
 			.call {display: inline-block; overflow:hidden; width: 35px; height: 35px; @include background("common/icon_footer_call.png",no-repeat 50% 50%); text-indent: 9999em; vertical-align: middle;} 
 		}
 		.txt {margin-top: 6px; font-size: 17px; line-height: 26px; color:#888;}
@@ -259,7 +259,7 @@
 			& > li {
 				float: left; position: relative;  border-right: 1px solid #606262;
 				&:first-child > a {
-					width: 50px; padding:0; font-family: $font3; text-align: center;
+					width: 50px; padding:0; font-family: $font3;font-weight: bold; text-align: center;
 					&:after {display: none}
 				}
 				& > a {
@@ -292,7 +292,7 @@
 	.title-zone {
 		position: relative; height: 120px; padding-top: 50px; border-bottom:1px solid $bd1;
 		&:after {display: block; position: absolute; bottom:3px; left:0; content: ""; width: 100%; height: 1px; background:$bd1;}
-		.page-title {display: inline-block;color:#111; font-size: 34px; font-family: $font2; }
+		.page-title {display: inline-block;color:#111; font-size: 34px; font-family: $font2;font-weight: bold; }
 		.page-utile {
 			position: absolute; right: 0; top:53px; border:1px solid #d6d5d5;
 			&:after {display:block; clear:both; content:""}
@@ -348,7 +348,7 @@
 			}
 		}
 		.page-dsec {
-			display: inline-block; color:#111; font-size: 18px; font-family: $font2; 
+			display: inline-block; color:#111; font-size: 18px; font-family: $font2;font-weight: bold; 
 			&:before {display: inline-block; margin:0 9px 0 13px; content: ""; vertical-align: middle; width: 15px; height: 15px; @include background("common/img_slash.png",no-repeat 50% 50%); }
 		}
 	}
@@ -359,7 +359,7 @@
 #lnb {
 	border-top: 6px solid #383b3b; 
 	.title-depth {
-		h2 {line-height: 114px; background:#fe970e; text-align: center; color:#fff; font-size: 14px; font-size: 24px; font-family: $font3;}
+		h2 {line-height: 114px; background:#fe970e; text-align: center; color:#fff; font-size: 14px; font-size: 24px; font-family: $font3;font-weight: bold;}
 	}
 	.menu {
 		position: relative; z-index: 1; border:1px solid #cfd3d5;
@@ -370,7 +370,7 @@
 			&:after {display: block; position: absolute; right:0; top:0; width: 54px; height:100%; @include background("common/icon_lnb_off.png",no-repeat 50% 50%); content: "";}
 			span {position: relative; z-index: 1}
 			&.open, &:hover {
-				background:#f27405;color:#fff; font-family: $font3; margin: -1px -1px 0; padding: 1px 35px 0 16px;
+				background:#f27405;color:#fff; font-family: $font3;font-weight: bold; margin: -1px -1px 0; padding: 1px 35px 0 16px;
 				&:after {background:#b64926 url("../../static/images/common/icon_lnb_on.png") no-repeat 50% 50%; }
 			}
 			&.outlnk {
@@ -391,7 +391,7 @@
 					font-size: 14px; color:#000; 
 					&:before {display: inline-block; content: "-"; margin-right: 10px; }
 					&[aria-current=page], &:hover{
-						span {text-decoration: underline; font-family: $font3;}
+						span {text-decoration: underline; font-family: $font3;font-weight: bold;}
 						&:before {content: ""; position: relative; top:-1px; width:14px; height: 14px; margin-right: 5px; margin-left: -4px; border:4px solid #f27405; background:#fff; border-radius: 100px; box-sizing: border-box; vertical-align: middle;}
 					}
 				}
@@ -489,8 +489,8 @@ br.t,
 br.m {display:none}
 
 .chinese {font-family:'Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;}
-.bold {font-family: $font2 !important;;}
-.ebold {font-family: $font3 !important;;}
+.bold {font-weight: bold !important;;}
+.ebold {font-weight: bold !important;;}
 .line {text-decoration: underline !important;;}
 .point1 {color:#ff4000 !important;}
 .point2 {color:#ee1c25 !important;;}
@@ -590,7 +590,7 @@ br.m {display:none}
 
 *[class^=comm-btn] { // COMMON BUTTON
 	&>span {position: relative; top:-2px;}
-	&[class*=_type1] {display: inline-block; width: 190px; height: 50px; line-height: 50px; vertical-align: middle; text-align: center;  font-size: 18px; font-family: $font2; box-sizing: border-box;}
+	&[class*=_type1] {display: inline-block; width: 190px; height: 50px; line-height: 50px; vertical-align: middle; text-align: center;  font-size: 18px; font-family: $font2; font-weight: bold; box-sizing: border-box;}
 	&[class*=_type2] {display: inline-block; width: 100px; height: 35px; line-height: 33px; vertical-align: middle; text-align: center;  font-size: 15px; border:1px solid #d9d6d5; color:#787878; box-sizing: border-box;}
 	&[class*=_type3] {display: inline-block; min-width: 120px; height: 42px; line-height: 40px; vertical-align: middle; text-align: center;  font-size: 15px; border-width:1px; border-style:solid; box-sizing: border-box;}
 	&[class*=_type4] {display: inline-block; height: 45px; padding:0 25px; line-height: 43px; vertical-align: middle; text-align: center;  font-size: 16px; border-width:1px; border-style:solid; box-sizing: border-box;}
@@ -686,16 +686,16 @@ br.m {display:none}
 /* TITLE */
 *[class^=heading] {
 	&[class*=-h3] {
-		font-size: 24px;font-family: $font2; color:#111;
+		font-size: 24px;font-family: $font2; font-weight: bold; color:#111;
 		&:before {display: inline-block; position: relative; top: -1px; content: ""; width: 24px; height: 26px; margin-right: 10px; @include background("common/bul_h3.png",no-repeat 50% 50%);vertical-align: middle;}
 	}
 	&[class*=-h4] {
-		position: relative; padding-left: 18px; font-size: 18px;font-family: $font2; color:#111; margin-left: 30px;
+		position: relative; padding-left: 18px; font-size: 18px;font-family: $font2; font-weight: bold;color:#111; margin-left: 30px;
 		&:before {display: inline-block; position: absolute; left:0; top:0; content: ""; width: 12px; height: 19px;  @include background("common/bul_h4.png",no-repeat 50% 50%); }
 	}
 
 	&[class*=_tab] {
-		margin-bottom: 30px; font-size: 20px; color:#336ac0; font-family: $font2; text-align:left; line-height: 60px; border-bottom: 1px solid #000;
+		margin-bottom: 30px; font-size: 20px; color:#336ac0; font-family: $font2; font-weight: bold; text-align:left; line-height: 60px; border-bottom: 1px solid #000;
 		span {display: inline-block; width:240px; margin-bottom: -1px; background:#fff; border:1px solid #000; border-bottom-color: #fff; text-align: center; }
 	}
 
@@ -717,12 +717,12 @@ h4[class^=comp-lst],
 h5[class^=comp-lst], 
 p[class^=comp-lst] {
 	&[class*=_dotted] {
-		position: relative; padding-left: 15px; font-size: 16px; color:#4b4b4b; line-height: 24px; font-family: $font2;
+		position: relative; padding-left: 15px; font-size: 16px; color:#4b4b4b; line-height: 24px; font-family: $font2; font-weight: bold;
 		&:before {display: inline-block; position: absolute; left:0; top:9px; content: ""; width: 5px; height: 5px; background:#656565; }
-		.cont {font-family: $font1;}
+		.cont {font-family: $font1;font-weight: normal;}
 
 		&[class*=_small] {
-			color:#7f7f7f; font-size: 15px; padding-left: 10px; font-family: $font1;
+			color:#7f7f7f; font-size: 15px; padding-left: 10px; font-family: $font1;font-weight: normal;
 			&:before {top:10px; width: 1px; height: 1px; background:#7f7f7f;}
 		}
 		&[class*=_grey] {
@@ -762,17 +762,17 @@ p[class^=comp-lst] {
 *[class^=comp-lst] {
 	&[class*=_dotted] {
 		& > li {
-			position: relative; padding-left: 15px; font-size: 16px; color:#4b4b4b; line-height: 24px; font-family: $font2;
+			position: relative; padding-left: 15px; font-size: 16px; color:#4b4b4b; line-height: 24px; font-family: $font2; font-weight: bold;
 			&:before {display: inline-block; position: absolute; left:0; top:9px; content: ""; width: 5px; height: 5px; background:#656565; }
-			.cont {font-family: $font1;}
+			.cont {font-family: $font1;font-weight: normal;}
 		}
 
 		&[class*=_small] {
-			& > li {color:#7f7f7f; font-size: 15px; padding-left: 10px; font-family: $font1;}
+			& > li {color:#7f7f7f; font-size: 15px; padding-left: 10px; font-family: $font1;font-weight: normal;}
 			& > li:before {top:10px; width: 1px; height: 1px; background:#7f7f7f;}
 		}
 		&[class*=_grey] {
-			& > li {color:#1c1c1c; font-family: $font1;}
+			& > li {color:#1c1c1c; font-family: $font1;font-weight: normal;}
 			& > li:before {background:#cfcfcf;}				
 		}
 	}
@@ -825,7 +825,7 @@ p[class^=comp-lst] {
 		* {font-size: 16px; line-height: 26px; }
 	}
 	&[class*=_box_center] {
-		padding: 22px 5px 20px; background: #f5f8f8; border: 1px solid #dfdfdf; color: #39290c; text-align: center; font-family: $font1;
+		padding: 22px 5px 20px; background: #f5f8f8; border: 1px solid #dfdfdf; color: #39290c; text-align: center; font-family: $font1;font-weight: normal;
 		p {font-size: 20px; line-height: 26px; }
 	}
 	&[class*=_searchbox] {
@@ -846,7 +846,7 @@ p[class^=comp-lst] {
 .tbl-top-utile {
 	overflow:hidden; margin-bottom: 12px; 
 	// &:after {display:block; clear:both; content:""}
-	.l-right {font-family: $font2; color:#1c1c1c; font-size: 15px; text-align: right;}
+	.l-right {font-family: $font2;font-weight: bold; color:#1c1c1c; font-size: 15px; text-align: right;}
 
 	*[class^=heading] {float: left;}
 	*[class^=heading] + .l-right {float:right; position: relative; top:12px;}
@@ -864,7 +864,7 @@ table[class^=comp-tbl] {
 	&[class*=_datatype] {
 		border-top: 2px solid #7a7a7a; color:#787878; border-bottom: 1px solid #d9d6d5;
 		thead {
-			th {height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2; text-align: center; color:#4b4b4b;}
+			th {height: 50px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2;font-weight: bold; text-align: center; color:#4b4b4b;}
 			th[rowspan] {border-right:1px solid #d9d6d5;}
 			th:last-child {border-right:0;}
 			th:first-child {border-left: 0;}
@@ -873,7 +873,7 @@ table[class^=comp-tbl] {
 		}
 		tbody{
 			th {
-				height: 50px;padding:5px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 15px; font-family: $font2; text-align: center; color:#4b4b4b; line-height: 24px; box-sizing: border-box; 
+				height: 50px;padding:5px 10px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 15px; font-family: $font2;font-weight: bold; text-align: center; color:#4b4b4b; line-height: 24px; box-sizing: border-box; 
 				&.bg-none {background:none;}
 			}
 			td {height: 50px;padding:5px 10px; font-size: 15px; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; text-align: center;line-height: 24px; word-break: break-all; box-sizing: border-box; }
@@ -885,7 +885,7 @@ table[class^=comp-tbl] {
 			td + th:first-of-type {border-left:1px solid #d9d6d5 ;}
 		}
 		tfoot {
-			tr * {height: 50px; background:#f4f7f9; font-size: 16px; font-family: $font2; color:#1c1c1c; text-align: center; border-top: 1px solid #666; border-left: 1px solid #d7d7d9;} 
+			tr * {height: 50px; background:#f4f7f9; font-size: 16px; font-family: $font2;font-weight: bold; color:#1c1c1c; text-align: center; border-top: 1px solid #666; border-left: 1px solid #d7d7d9;} 
 			tr *:first-child {border-left: 0;}
 		}
 
@@ -894,7 +894,7 @@ table[class^=comp-tbl] {
 	&[class*=_boardtype] {
 		border-top: 2px solid #7a7a7a; color:#787878; border-bottom: 1px solid #d9d6d5;
 		thead {
-			th {height: 48px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2; text-align: center; color:#4b4b4b;}
+			th {height: 48px; border-top: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; background:#f4f7f9; font-size: 16px; font-family: $font2;font-weight: bold; text-align: center; color:#4b4b4b;}
 			th:first-child {border-left: 0;}
 		}
 		tbody{
@@ -909,7 +909,7 @@ table[class^=comp-tbl] {
 		> tbody{
 			> tr > th {
 				height: 50px; padding:6px 13px 6px 23px; width:180px; border-bottom: 1px solid #d9d6d5; background:#f4f7f9; 
-				font-size: 16px; font-family: $font2;text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px; 
+				font-size: 16px; font-family: $font2; font-weight: bold; text-align: left; box-sizing: border-box; vertical-align: top; line-height: 35px; 
 			}
 			> tr > td {
 				height: 50px; padding:6px 15px; font-size: 15px; border-bottom: 1px solid #d9d6d5; text-align: center; box-sizing: border-box; text-align: left;
@@ -958,8 +958,8 @@ input[class^=comp-input] {
 
 	&[class*=_big] {
 		label {
-			font-size: 24px; font-family: $font2; color:#222;
-			.sm {font-size:18px; font-family: $font1;}
+			font-size: 24px; font-family: $font2;font-weight: bold; color:#222;
+			.sm {font-size:18px; font-family: $font1;font-weight: normal;}
 			&:before {width:32px; height:32px; margin-right:14px; content: ""; @include background("common/form_radio3_off.png",no-repeat 50% 50%); background-size: 100% 100%;}
 		} 
 		input:checked ~ label:before {@include background("common/form_radio3_on.png",no-repeat 50% 50%); background-size: 100% 100%;}
@@ -975,7 +975,7 @@ input[class^=comp-input] {
 }
 textarea[class^=comp-textarea] {
 	width: 100%; padding:10px; height: 385px; border:1px solid #d9d6d5; box-sizing: border-box; font-size: 15px; color:#787878;
-	resize:none; font-family: $font1;
+	resize:none; font-family: $font1;font-weight: normal;
 }
 
 /* INPUT SIZE */
@@ -1100,7 +1100,7 @@ select.w_select {width:155px;}
 		display: block; position: relative; text-align: center; line-height: 50px; font-size: 17px; color:#111; background:#f4f4f4; border-right:1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1;
 		span {position: relative; top:-2px;}
 		&[aria-selected=true]:after {display: block; position:absolute; left:-1px; top:-1px; width: 100%; height: 100%; background:#f27405; content: ""; padding:1px; }
-		&[aria-selected=true] span {position: relative; z-index: 1; color:#fff; font-family: $font2; }
+		&[aria-selected=true] span {position: relative; z-index: 1; color:#fff; font-family: $font2;font-weight: bold; }
 	}
 
 	li:first-child:nth-last-of-type(2),
@@ -1116,7 +1116,7 @@ select.w_select {width:155px;}
 	&[class*=_row] {
 		overflow:visible; height: 60px; margin-bottom: 35px;
 		a {
-			color:#a9a9a9; font-family: $font2; font-size: 20px; border-bottom-color:#000; line-height: 58px; 
+			color:#a9a9a9; font-family: $font2;font-weight: bold; font-size: 20px; border-bottom-color:#000; line-height: 58px; 
 			&[aria-selected=true]{
 				background:#fff;  border-color:#000; border-bottom-color:#fff; 
 				&:after {padding:0; background:#fff !important; border:1px solid #000; border-bottom-color:#fff;}
@@ -1160,7 +1160,7 @@ select.w_select {width:155px;}
 	}
 	& > .cont {
 		padding-left: 164px;
-		.tit {margin-bottom: 13px; color:#1c1c1c; font-size: 20px; font-family: $font2; }
+		.tit {margin-bottom: 13px; color:#1c1c1c; font-size: 20px; font-family: $font2;font-weight: bold; }
 	}
 
 	&[class*=_iconnone] {
@@ -1323,7 +1323,7 @@ div[class^=comp-public-area] {
 	li {
 		border-bottom: 1px solid #d9d6d5; font-size: 16px; color:#999; line-height: 49px;
 		.txt {
-			display: block; float: left; width:130px; color:#4b4b4b; font-family: $font2; background:#f4f7f9; text-align: center;
+			display: block; float: left; width:130px; color:#4b4b4b; font-family: $font2;font-weight: bold; background:#f4f7f9; text-align: center;
 			&:after {display: inline-block; vertical-align: middle; content: ""; width: 16px; height: 9px; margin-left:17px;}
 			&.up:after {@include background("common/icon_arrow_up.png",no-repeat 50% 50%); }
 			&.down:after {@include background("common/icon_arrow_down.png",no-repeat 50% 50%); }
@@ -1339,7 +1339,7 @@ div[class^=comp-public-area] {
 .comp-sorting-zone {
 	overflow: hidden; margin-top: 50px; margin-bottom: 25px;
 	.txt-result {
-		position: relative; float: left; padding-left: 34px; font-size: 18px; font-family: $font2; color:#111; line-height: 42px;
+		position: relative; float: left; padding-left: 34px; font-size: 18px; font-family: $font2;font-weight: bold; color:#111; line-height: 42px;
 		.word {font-size: 20px;}
 		.total {color:#3f889a; text-decoration: underline;}
 		&:before {position: absolute; left:0; top:10px; display: block; content: ""; width: 22px; height: 23px; @include background("common/bul_h5.png",no-repeat 50% 50%);}
@@ -1427,7 +1427,7 @@ div[class^=comp-public-area] {
 		}
 		h4 {
 			a {display: block; width: 100%; font-size: 16px; color:#1c1c1c; text-align: center; line-height: 38px; border:1px solid #e8ba60; box-sizing: border-box;}
-			a:hover {background:#fe970e; border-color:#fe970e; color:#fff; font-family: $font2;}
+			a:hover {background:#fe970e; border-color:#fe970e; color:#fff; font-family: $font2;font-weight: bold;}
 		}
 		&.othersize {
 			padding-left:0;
@@ -1441,7 +1441,7 @@ div[class^=comp-public-area] {
 		padding:35px 40px 40px; border:2px solid #e2e1e1; text-align: center;
 		.part {
 			display:inline-block; width: 180px; min-height: 242px; border:2px solid #dcdcdc; color:#202020; vertical-align: top; background:#fff;
-			dt a {display:block; font-size: 17px; line-height: 38px; text-align: center; background:#dcdcdc; font-family: $font2;}
+			dt a {display:block; font-size: 17px; line-height: 38px; text-align: center; background:#dcdcdc; font-family: $font2;font-weight: bold;}
 			dd {
 				li {border-bottom: 1px solid #dcdcdc;}
 				li:nth-child(5) {border-bottom:0}
@@ -1457,7 +1457,7 @@ div[class^=comp-public-area] {
 	 		&:first-child {margin-top: 0}
 			.tit {
 				position: absolute; left:15px; top:15px;
-				a {display: block; width: 180px; font-family: $font2; font-size: 17px; color:#1c1c1c; text-align: center; line-height: 40px;background:#f5cf66;}
+				a {display: block; width: 180px; font-family: $font2;font-weight: bold; font-size: 17px; color:#1c1c1c; text-align: center; line-height: 40px;background:#f5cf66;}
 			}
 			.lst {
 				overflow:hidden; padding-left: 179px;
@@ -1470,8 +1470,8 @@ div[class^=comp-public-area] {
 	.tbl-organization {
 		margin-top: 15px;border-top: 2px solid #fe970e; font-size: 16px; text-align: center; table-layout: fixed; line-height: 20px;
 		tr > * {height: 49px; padding:0 14px; border-bottom: 1px solid #b5b5b5; border-left: 1px solid #b5b5b5;}
-		th {width: 160px; background:#fff4e1; color:#4b4b4b; font-family: $font2; border-left: 0;}
-		td:nth-of-type(1) {width:180px; background:#fbf9f9; color:#4b4b4b; font-family: $font2; border-left: 0;}
+		th {width: 160px; background:#fff4e1; color:#4b4b4b; font-family: $font2;font-weight: bold; border-left: 0;}
+		td:nth-of-type(1) {width:180px; background:#fbf9f9; color:#4b4b4b; font-family: $font2; font-weight: bold;border-left: 0;}
 		td:nth-of-type(2) {width:170px; background:#fbf9f9; color:#4b4b4b; }
 		td:nth-of-type(3) {text-align: left; font-size: 15px;}
 		.callnumber {display: inline-block; vertical-align: middle; width: 18px; height: 15px; @include background("common/icon_callnumber.png",no-repeat 50% 50%); text-indent: -999em; margin-right: 8px;}
@@ -1490,7 +1490,7 @@ div[class^=comp-public-area] {
 
 		.thumb {
 			position: absolute; left:10px; top:12px; width: 328px; height: 234px;
-			.showthemovie {display: none; position: absolute; left:50%; top:50%; width:150px; margin:-20px 0 0 -75px; font-size: 16px; text-align: center; font-family: $font2; color:#fff; line-height: 38px; border:1px solid rgba(203,203,204,0.8); background:rgba(254,179,45,0.8); box-sizing: border-box; z-index: 1}
+			.showthemovie {display: none; position: absolute; left:50%; top:50%; width:150px; margin:-20px 0 0 -75px; font-size: 16px; text-align: center; font-family: $font2;font-weight: bold; color:#fff; line-height: 38px; border:1px solid rgba(203,203,204,0.8); background:rgba(254,179,45,0.8); box-sizing: border-box; z-index: 1}
 			.flag {
 				display: inline-block; position: absolute; right:-25px; top:13px; z-index: 2; 
 				width: 50px;height: 50px; text-indent: -999em;
@@ -1500,7 +1500,7 @@ div[class^=comp-public-area] {
 		}
 		.contbox {
 			position:relative; padding-left: 370px; height: 234px; 
-			.tit {display: block; padding-top: 16px; font-size: 17px; font-family: $font2;color:#4b4b4b; }
+			.tit {display: block; padding-top: 16px; font-size: 17px; font-family: $font2;font-weight: bold;color:#4b4b4b; }
 			.cont {
 				display:block; display:-webkit-box; overflow:hidden; max-height:144px; margin-top: 14px; font-size: 15px; line-height:24px; color:#7b7b7b; 
 				-webkit-line-clamp:6; -webkit-box-orient:vertical; text-overflow:ellipsis;
@@ -1544,14 +1544,14 @@ div[class^=comp-public-area] {
 
 			.cont {
 				position: relative; height: 100%; padding-right: 235px; z-index: 1;
-				.tit {font-family: $font2; font-size: 17px; color:#4b4b4b; line-height: 24px;}
+				.tit {font-family: $font2;font-weight: bold; font-size: 17px; color:#4b4b4b; line-height: 24px;}
 				.date {font-size: 15px; color:#7b7b7b; position: absolute; left:0; bottom:20px;}
 				.pdf-menu {
 					width: 170px; margin-top: 16px; border:1px solid #cbc6c5; 
 					li {border-top: 1px solid #cbc6c5;}
 					li:first-child {border-top: 0;}
 					a {
-						display: block; position: relative; padding:0 20px; font-size: 16px; color:#5d5d5d; font-family: $font2; line-height: 42px;
+						display: block; position: relative; padding:0 20px; font-size: 16px; color:#5d5d5d; font-family: $font2;font-weight: bold; line-height: 42px;
 						&:after {display: inline-block; content: ""; float: right; height: 42px;}
 						&.btn-nowshow:after {width: 18px; @include background("common/btn_search.png",no-repeat 50% 50%);}
 						&.btn-pdfdown:after {width: 20px; @include background("common/btn_download.png",no-repeat 50% 50%);}
@@ -1587,7 +1587,7 @@ div[class^=comp-public-area] {
 		.thumb {
 			position:relative; overflow:hidden; width:100%; height: 214px; border-bottom: 1px solid #d6d7d8;
 			img {width: 100%; height: 100%}
-			.showthemovie {display: none; position: absolute; left:50%; top:50%; width:150px; margin:-20px 0 0 -75px; font-size: 16px; text-align: center; font-family: $font2; color:#fff; line-height: 38px; border:1px solid rgba(203,203,204,0.8); background:rgba(254,179,45,0.8); box-sizing: border-box; z-index: 1}
+			.showthemovie {display: none; position: absolute; left:50%; top:50%; width:150px; margin:-20px 0 0 -75px; font-size: 16px; text-align: center; font-family: $font2;font-weight: bold; color:#fff; line-height: 38px; border:1px solid rgba(203,203,204,0.8); background:rgba(254,179,45,0.8); box-sizing: border-box; z-index: 1}
 		}
 		.flag {
 			display:block; position: absolute; right:17px; top:-25px; z-index: 2; 
@@ -1595,7 +1595,7 @@ div[class^=comp-public-area] {
 		}
 		.contbox {
 			position:relative; padding:34px 15px 10px; height: 154px; 
-			.tit {display: block; overflow: hidden; text-overflow:ellipsis; width: 100%; font-size: 17px; font-family: $font2; color:#4b4b4b; white-space: nowrap;}
+			.tit {display: block; overflow: hidden; text-overflow:ellipsis; width: 100%; font-size: 17px; font-family: $font2;font-weight: bold; color:#4b4b4b; white-space: nowrap;}
 			.cont {
 				display:block; display:-webkit-box; overflow:hidden; 
 				max-height:44px; margin-top: 12px; font-size: 15px; line-height:22px; color:#7b7b7b; 
@@ -1629,7 +1629,7 @@ div[class^=comp-public-area] {
 }
 /* 공통페이지 - 게시판 상세 */
 .tp-bd-detail {
-	.board-title {color:#4b4b4b; font-size: 20px; font-family: $font2; text-align: center; line-height: 58px; border-top: 2px solid #fe970e; border-bottom: 1px solid #ffbd65; background:#fcf8e3; }
+	.board-title {color:#4b4b4b; font-size: 20px; font-family: $font2;font-weight: bold; text-align: center; line-height: 58px; border-top: 2px solid #fe970e; border-bottom: 1px solid #ffbd65; background:#fcf8e3; }
 	table[class^=comp-tbl] {
 		border-top: 0 !important; border-bottom: 0 !important;
 		tbody tr:first-child > * {border-top: 0;}
@@ -1704,7 +1704,7 @@ div[class^=comp-public-area] {
 		line-height:30px; margin:50px 0 0; font-size:18px; color:#303030; text-align:center;
 		p.txt {
 			position:relative; display:inline-block; padding:0 0 0 37px;
-			&:before {position:absolute; left:0; top:0; display:block; content:"!"; width:30px; height:30px; line-height:30px; background:#ee3106; border-radius:100%; font-family:$font2; color:#fff; text-align:center;}
+			&:before {position:absolute; left:0; top:0; display:block; content:"!"; width:30px; height:30px; line-height:30px; background:#ee3106; border-radius:100%; font-family:$font2;font-weight: bold; color:#fff; text-align:center;}
 			.point {
 				display:block;
 				em {display:inline-block; padding-left:20px; background:#fcecbd; text-indent:-20px;}
@@ -1713,8 +1713,8 @@ div[class^=comp-public-area] {
 		dl.txt {
 			text-align: center;
 			dt {
-				position:relative; font-family: $font2; font-size: 18px;
-				&:before {display:inline-block; content:"!"; width:30px; height:30px; margin-right: 7px; line-height:30px; background:#ee3106; border-radius:100%; font-family:$font2; color:#fff; text-align:center; font-size: 16px;}
+				position:relative; font-family: $font2;font-weight: bold; font-size: 18px;
+				&:before {display:inline-block; content:"!"; width:30px; height:30px; margin-right: 7px; line-height:30px; background:#ee3106; border-radius:100%; font-family:$font2;font-weight: bold; color:#fff; text-align:center; font-size: 16px;}
 			}
 			dd {margin-top: 14px;}
 			.point {display:inline-block; background:#fcecbd; line-height:1.2;}
@@ -1731,7 +1731,7 @@ div[class^=comp-public-area] {
 			li {float: left; width: 33%; border-left: 1px solid #ff9c00; box-sizing:border-box;}
 			li:nth-child(2) {width: 34%}
 			li:first-child {border-left: 0;}
-			a {display: block; width: 100%; font-size: 30px; color:#1e1e1e; text-align: center; line-height: 84px; background:#fff;font-family: $font2;}
+			a {display: block; width: 100%; font-size: 30px; color:#1e1e1e; text-align: center; line-height: 84px; background:#fff;font-family: $font2;font-weight: bold;}
 			a[aria-selected="true"] {background:#ff9c00; color:#fff;}
 		}
 	}
@@ -1745,9 +1745,9 @@ div[class^=comp-public-area] {
 			&:before {display: inline-block; width: 200px; height: 200px; @include background("usc/subpage/bg_login_zone.png",no-repeat 50% 50%); content: ""; vertical-align: middle;}
 			.login-form-group {
 				display: inline-block; height:235px; padding-left: 65px; padding-top: 40px; margin-left: 65px; border-left:1px solid #d6d5d5; vertical-align: middle; 
-				button {width:120px; height:110px; line-height:110px; background:#00a54f; font-family:$font2; font-size:18px; color:#fff; text-align:center; vertical-align: top;}
+				button {width:120px; height:110px; line-height:110px; background:#00a54f; font-family:$font2;font-weight: bold; font-size:18px; color:#fff; text-align:center; vertical-align: top;}
 				.tit {
-					font-size: 24px; color:#262626; font-family: $font2; margin-bottom: 20px; text-align: left;
+					font-size: 24px; color:#262626; font-family: $font2;font-weight: bold; margin-bottom: 20px; text-align: left;
 					em {color:#00a54f;}
 				}
 				.form {
@@ -1762,7 +1762,7 @@ div[class^=comp-public-area] {
 			overflow:hidden; padding:30px 0;
 			.find-zone {float: left; position: relative; height:325px; width: 50%; padding:0 50px; text-align: center; border-left: 1px solid #d6d5d5;}
 			.find-zone:first-child {border-left: 0;}
-			.tit {padding-top: 28px; font-family: $font2; font-size: 24px; color:#222;} 
+			.tit {padding-top: 28px; font-family: $font2;font-weight: bold; font-size: 24px; color:#222;} 
 			.txt {margin-top: 26px; font-size: 15px; color:#222; line-height: 26px; }
 			.form {
 				margin-top: 40px;
@@ -1776,7 +1776,7 @@ div[class^=comp-public-area] {
 			li {display: inline-block; margin-left: 12px;}
 			li:first-child {margin-left: 0;}
 			a[class^=btn-] {
-				display: inline-block; width: 200px; line-height: 50px; color:#fff; font-family: $font2; font-size: 18px; text-align: center; border-radius: 100px;
+				display: inline-block; width: 200px; line-height: 50px; color:#fff; font-family: $font2;font-weight: bold; font-size: 18px; text-align: center; border-radius: 100px;
 				&.btn-phone {background:#ff7200;}
 				&.btn-ipin {background:#1556b0;}
 			}
@@ -1805,7 +1805,7 @@ div[class^=comp-public-area] {
 			.btn-zone {margin-top: 25px;}
 			.agree-certification {
 				margin-bottom: 10px; text-align: center;
-				dt {display: inline-block; margin-right:25px; vertical-align: middle; line-height:50px; font-family: $font2; font-size: 18px; color:#363636; text-align: right; vertical-align: top}
+				dt {display: inline-block; margin-right:25px; vertical-align: middle; line-height:50px; font-family: $font2;font-weight: bold; font-size: 18px; color:#363636; text-align: right; vertical-align: top}
 				dd {
 					display: inline-block; vertical-align: top;
 					.btn-zone {margin-top: 0}
@@ -1813,7 +1813,7 @@ div[class^=comp-public-area] {
 			}
 			.agree-relation {
 				margin-top: 20px; padding:15px; border:1px solid #cbc8c7; text-align: center;
-				dt {display: inline-block; margin-right:25px; vertical-align: middle; font-family: $font2; font-size: 18px; color:#363636; text-align: right; vertical-align: top; line-height:40px}
+				dt {display: inline-block; margin-right:25px; vertical-align: middle; font-family: $font2;font-weight: bold; font-size: 18px; color:#363636; text-align: right; vertical-align: top; line-height:40px}
 				dd {
 					display: inline-block; vertical-align: top;
 					ul {
@@ -1837,13 +1837,13 @@ div[class^=comp-public-area] {
 				}
 				.infor-txt {
 					margin-top: 25px; margin-left: 18px;
-					dt {font-size: 18px; font-family: $font2; color:#000; }
+					dt {font-size: 18px; font-family: $font2;font-weight: bold; color:#000; }
 					dd {margin-top: 13px}
 				} 
 				.join-form {
 					padding:10px 20px 25px; margin-top: 15px;
 					&.important {padding:21px 16px; border:2px solid #fe970e;}
-					& > .tit {font-size: 18px; color:#000; font-family: $font2; }
+					& > .tit {font-size: 18px; color:#000; font-family: $font2;font-weight: bold; }
 				}
 				table[class^=comp-tbl] {
 					*[class^=comm-btn].confirm {background:#1a50ca; border-color:#1a50ca;}
@@ -1853,7 +1853,7 @@ div[class^=comp-public-area] {
 			}
 			&.step3 {
 				.complete-box {height: 378px; padding:60px 100px 0; background:#f7f7f7; border:1px solid #eee; border-top: 2px solid #f27405; text-align: center;}
-				.tit {font-size: 22px; color:#f27405; font-family: $font2;}
+				.tit {font-size: 22px; color:#f27405; font-family: $font2;font-weight: bold;}
 				.txt {margin-top: 8px; font-size: 16px;}
 				ul[class^=comp-lst][class*=_hyphen] {
 					margin-top: 30px; text-align: left;
@@ -2260,7 +2260,7 @@ div[class^=tp-survey] {
 		display: none;
 		position: fixed; right:-100%; top:0; max-width: 30rem; width:72vw; height: 100vh; background: #fff; z-index: 1001;
 		
-		.gnb-mo-title {display:block; font-size: 2rem; line-height: 6rem; background:#785719;font-family: $font2; padding-left: 1.6rem; box-sizing: border-box; color:#fff;}
+		.gnb-mo-title {display:block; font-size: 2rem; line-height: 6rem; background:#785719;font-family: $font2;font-weight: bold; padding-left: 1.6rem; box-sizing: border-box; color:#fff;}
 		& > .btn {
 			display: block; position: absolute; right: 0; top:0;
 			button {
@@ -2365,7 +2365,7 @@ div[class^=tp-survey] {
 				&:first-child {display: block;}
 				&:nth-child(2):before {display: none}
 				& + li:before {height: 0.8rem; margin:0 0.6rem;}
-				strong {font-family: $font1; color:#333;}
+				strong {font-family: $font1;font-weight: normal; color:#333;}
 			}
 		}
 	}
@@ -2462,7 +2462,7 @@ div[class^=tp-survey] {
 	.gnb {
 		position: relative;
 		h2 {
-			a {display:block; height: 7.2rem; width: 7.2rem;  font-size: 1.2rem; font-family: $font2; color:#393939; text-align: center; border-bottom: 1px solid #eaeced; line-height: 7.2rem;}
+			a {display:block; height: 7.2rem; width: 7.2rem;  font-size: 1.2rem; font-family: $font2;font-weight: bold; color:#393939; text-align: center; border-bottom: 1px solid #eaeced; line-height: 7.2rem;}
 		}
 		h3 {
 			a {
@@ -2472,7 +2472,7 @@ div[class^=tp-survey] {
 			}
 		}
 		h4 a {
-			color:#818181; font-size: 1rem; font-family: $font1; 
+			color:#818181; font-size: 1rem; font-family: $font1;font-weight: normal; 
 			&:before {display: inline-block; content: ""; vertical-align: middle;  margin-right: 0.6rem; width: 0.3rem; height: 0.3rem; background:#818181; border-radius: 100px;}
 			&:hover:before {background:#ff6826;}
 		}
@@ -2505,7 +2505,7 @@ div[class^=tp-survey] {
 
 		.clicked, .current, 
 		.clicked h3 a,
-		h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {color:#ff6826; font-family: $font2; font-weight: bold;}
+		h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {color:#ff6826; font-family: $font2;font-weight: bold; font-weight: bold;}
 		& > li:first-child .depth2menu {display: block;}
 	}
 }

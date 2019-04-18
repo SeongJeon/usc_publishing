@@ -264,7 +264,7 @@
 				}
 				& > a {
 					width: 235px; position: relative; padding:0 35px 0 15px; line-height:50px; color:#fff; font-size: 14px; 
-					&:after {display:inline-block; position: absolute; right: 15px; top:50%; margin-top: -5px; content:""; width: 17px; height: 9px; }
+					&:after {display:inline-block; position: absolute; right: 15px; top:50%; margin-top: -4px; content:""; width: 17px; height: 9px; }
 					&.open:after {background-position: -250px -100px;}
 					// &.open + .menu {display: block;} // temp
 				}
@@ -280,7 +280,7 @@
 		}
 		.page-zoom {
 			position: absolute; right: 2px; top:14px; overflow:hidden;
-			dt {float: left;font-size: 14px; color:rgba(256,256,256,0.4); line-height: 22px;}
+			dt {float: left; position: relative; top:-1px; font-size: 14px; color:rgba(256,256,256,0.4); line-height: 22px;}
 			dd {float: left; margin-left: 8px;}
 			button[class^=btn-] {
 				width: 22px; height: 22px; text-indent: -999em; @include background("common/sp_icon.png",no-repeat 0 0);
@@ -366,7 +366,7 @@
 		& > li {border-top: 1px solid #cfd3d5;}
 		& > li:first-child {border-top: 0;}
 		h2 a {
-			display: block; position: relative; padding:0 35px 0 15px; font-size: 17px; line-height: 53px; color:#000; box-sizing:border-box; letter-spacing: -1px;
+			display: block; position: relative; padding:0 35px 0 15px; font-size: 15px; line-height: 53px; color:#000; box-sizing:border-box; letter-spacing: -1px;
 			&:after {display: block; position: absolute; right:0; top:0; width: 54px; height:100%; @include background("common/icon_lnb_off.png",no-repeat 50% 50%); content: "";}
 			span {position: relative; z-index: 1}
 			&.open, &:hover {
@@ -422,11 +422,11 @@
 			.group {padding-left:15px;}
 			.group:first-of-type {margin-top: 10px;}
 			.group h3 {line-height: 26px; position: relative;}
-			.depth2menu {display:none; position: absolute; top:100%; padding-top: 24px;background: #fff; margin-top: 2px; }
+			.depth2menu {display:none; position: absolute; top:100%; margin-top:-2px; padding-top: 26px;background:transparent; }
 			.depth3menu {background: #f4f4f4; margin-left: -15px; padding:6px 0 5px 25px; margin-top: 5px;}
 			.depth3menu > li {line-height: 22px}
 			h2 {display: inline-block; vertical-align: top; }
-			h2 a {display: block; position: relative; font-size: 18px; color:#343434; text-align: center; }
+			h2 a {display: block; position: relative; font-size: 19px; color:#343434; text-align: center; }
 			p a {display: block; width:100%; font-size: 17px; color:#2d2d2d; text-align: center; line-height: 35px; background: #d6eef0}
 			h3 a {font-size: 15px; color:#525252; }
 			h3 a.outlnk:after {position: absolute; right: 8px; top:3px; width:18px; height: 19px; content: ""; @include background("common/icon_outlnk2.png",no-repeat 50% 50%); }
@@ -440,7 +440,8 @@
 			h2 a:hover:before {display: block; position: absolute; left:0; top:52px; content: ""; width: 100%; height: 5px;}
 			h2.over a:after,
 			h2 a:hover:after {display: block; position: absolute; left:50%; top:45px; content: ""; width:20px; height:20px; border-width:5px; border-style:solid; background: #fff; border-radius: 100px; margin-left: -10px; box-sizing: border-box;z-index: 11;}
-			p a:hover {font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#fff;}
+			p a.current {color:#fff; font-weight: bold;}
+			p a:hover {color:#fff; font-weight: bold;}
 		}
 
 		&.open {
@@ -588,6 +589,7 @@ br.m {display:none}
 }
 
 *[class^=comm-btn] { // COMMON BUTTON
+	&>span {position: relative; top:-2px;}
 	&[class*=_type1] {display: inline-block; width: 190px; height: 50px; line-height: 50px; vertical-align: middle; text-align: center;  font-size: 18px; font-family: $font2; box-sizing: border-box;}
 	&[class*=_type2] {display: inline-block; width: 100px; height: 35px; line-height: 33px; vertical-align: middle; text-align: center;  font-size: 15px; border:1px solid #d9d6d5; color:#787878; box-sizing: border-box;}
 	&[class*=_type3] {display: inline-block; min-width: 120px; height: 42px; line-height: 40px; vertical-align: middle; text-align: center;  font-size: 15px; border-width:1px; border-style:solid; box-sizing: border-box;}
@@ -1096,6 +1098,7 @@ select.w_select {width:155px;}
 	li {float: left; width: 20%; box-sizing: border-box; border-top: 1px solid #d1d1d1; }
 	a {
 		display: block; position: relative; text-align: center; line-height: 50px; font-size: 17px; color:#111; background:#f4f4f4; border-right:1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1;
+		span {position: relative; top:-2px;}
 		&[aria-selected=true]:after {display: block; position:absolute; left:-1px; top:-1px; width: 100%; height: 100%; background:#f27405; content: ""; padding:1px; }
 		&[aria-selected=true] span {position: relative; z-index: 1; color:#fff; font-family: $font2; }
 	}
@@ -2210,37 +2213,37 @@ div[class^=tp-survey] {
 	.inner {width:auto;}
 	.header-top {height: auto; display: none; }
 	.header-middle {
-		height: 7.4rem;
+		height: 6rem; // height: 7.4rem;
 		.title {
 			position: static; text-align: center; 
-			a {width:13.5rem; height:7.4rem; margin:0 auto; @include background("usc/img_logo_m.png", no-repeat 50% 50%); background-size: 100% auto;}
+			a {width:10rem; height:6rem; margin:0 auto; @include background("usc/img_logo_m.png", no-repeat 50% 50%); background-size: 100% auto;}
 		}	
 		.btn-search-open {
 			position: absolute; left:0; top:0; 
-			button {display:block; height: 7.4rem; width:7.4rem; background:#ffb00d url("../../static/images/common/icon_search.png") no-repeat 50% 50%; background-size: 40% auto; text-indent: -999em;}
+			button {display:block; height:6rem; width:6rem; background:#ffb00d url("../../static/images/common/icon_search.png") no-repeat 50% 50%; background-size: 40% auto; text-indent: -999em;}
 		}
 		.btn-menu-open {
 			position: absolute; right:0; top:0; 
-			button {display:block; height: 7.4rem; width:7.4rem; background:#785719 url("../../static/images/common/icon_gnb.png") no-repeat 50% 50%; background-size: 40% auto; text-indent: -999em;}
+			button {display:block; height:6rem; width:6rem; background:#785719 url("../../static/images/common/icon_gnb.png") no-repeat 50% 50%; background-size: 40% auto; text-indent: -999em;}
 		}
 		.usc-snsgroup,
 		.currentlanguage {display: none}
 		.comp-search {
-			display: none; width: 100%; position: absolute; top:0; left:-100%; height: 7.4rem;
+			display: none; width: 100%; position: absolute; top:0; left:-100%; height: 6rem;
 			// transition: 0.3s ease;
 			.form {
 				display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-webkit-flex; display:flex; border-radius: 0;border:0;
 				select {display: none;}
-				input {-webkit-flex:1; flex:1; height: 7.4rem; border:2px solid #ffb00d; font-size: 1.4rem;}
+				input {-webkit-flex:1; flex:1; height: 6rem; border:2px solid #ffb00d; font-size: 1.4rem;}
 				.btn {
-					display: block; width: 7.3rem;
+					display: block; width: 6rem;
 					button {
 						position:relative; width: 100%; height: 100%; background:#ffb00d; text-indent:-999em;
 						&:before {
-							display: block; content: ""; position:absolute; top:3.5rem; left:1.5rem; width: 4rem; height: 2px; background:#fff; -ms-transform:rotate(45deg); -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); transform:rotate(45deg);
+							display: block; content: ""; position:absolute; top:3rem; left:1rem; width: 4rem; height: 2px; background:#fff; -ms-transform:rotate(45deg); -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); transform:rotate(45deg);
 						}
 						&:after {
-							display: block; content: ""; position:absolute; top:3.5rem; left:1.5rem; width: 4rem; height: 2px; background:#fff; 
+							display: block; content: ""; position:absolute; top:3rem; left:1rem; width: 4rem; height: 2px; background:#fff; 
 							-moz-transform:rotate(-45deg); -ms-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); transform:rotate(-45deg);
 						}
 						span {display: inline-block; text-indent: -999em;}
@@ -2297,7 +2300,7 @@ div[class^=tp-survey] {
 	.inner {width: 100%;}
 	
 	.btn-gototop {
-		top:inherit;bottom:90px; position: fixed;
+		top:inherit;bottom:0; position: fixed;
 		a {width: 5rem; height:5rem; font-size: 1.3rem; background:#4f4f4f; line-height: 1.1; box-sizing: border-box; padding-top: 1.3rem;}
 		a:after {display: none}
 		a:before {display: block; content: "^"; }
@@ -2459,11 +2462,11 @@ div[class^=tp-survey] {
 	.gnb {
 		position: relative;
 		h2 {
-			a {display:block; height: 7.2rem; width: 7.2rem;  font-size: 1.2rem; font-family: $font2; color:#393939; text-align: center; border-bottom: 1px solid #c5c5c5; line-height: 7.2rem;}
+			a {display:block; height: 7.2rem; width: 7.2rem;  font-size: 1.2rem; font-family: $font2; color:#393939; text-align: center; border-bottom: 1px solid #eaeced; line-height: 7.2rem;}
 		}
 		h3 {
 			a {
-				display:block; position: relative; padding:0 2rem 0 0.3rem; font-size: 1.3rem; color:#383838;line-height: 3.1rem; border-bottom: 1px solid #d6d5d5; 
+				display:block; position: relative; padding:0 2rem 0 0.3rem; font-size: 1.3rem; color:#383838;line-height: 4.1rem; border-bottom: 1px solid #eaeced; 
 				&:before {display: block; position: absolute; right: 0.7rem; top:50%; margin-top: -0.5px; content: ""; width: 1.2rem; height: 1px; background:#3b3b3b; }
 				&:after {display: block; position: absolute; right: 0.7rem; top:50%; margin-top: -0.5px; content: ""; width: 1.2rem; height: 1px; background:#3b3b3b; transform: rotate(90deg)}
 			}
@@ -2480,7 +2483,7 @@ div[class^=tp-survey] {
 		.part-introduce {display: none}
 		.menu {padding-top: 0.3rem;}
 		.depth2menu {
-			display: none; overflow-y:auto; position: absolute; left:7.2rem; top:0; width: calc(100% - 7.2rem); height: calc(100vh - 16.1rem); border-left: 1px solid #c5c5c5; 
+			display: none; overflow-y:auto; position: absolute; left:7.2rem; top:0; width: calc(100% - 7.2rem); height: calc(100vh - 16.1rem); border-left: 1px solid #eaeced; 
 			.group {padding:0 1.4rem; }
 			.group + .gropu {margin-top: 0.7rem;}
 			.group h3:only-child a {

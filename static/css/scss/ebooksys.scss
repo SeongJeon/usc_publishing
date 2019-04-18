@@ -27,7 +27,7 @@ LAYOUT
 		#gnb h2 a {width: 220px}
 
 		#gnb .depth2menu {
-			display: none; position: absolute; left:0; top:100%; padding-left: 40px; padding-top: 0; background: #fff; width: 100%;
+			display: none; position: absolute; left:0; top:100%; padding-left: 40px; padding-top: 2px;  width: 100%;
 			.menu {padding:33px 30px 24px;}
 			.menugroup{
 				&:after {display:block; clear:both; content:""}
@@ -116,6 +116,7 @@ LAYOUT
 		#gnb h2 a:hover:before {background: #ffca3c; }
 		#gnb h2.over a:after,
 		#gnb h2 a:hover:after {border-color:#ffca3c;}
+		#gnb p a.current {background: #3cb7cd;}
 		#gnb p a:hover {background: #3cb7cd;}
 		#gnb h3 a:before{background: #1e4363;}
 		#gnb h2.over a,

@@ -60,6 +60,7 @@ LAYOUT
 			h2 a:hover:before {background: #733f2c; }
 			h2.over a:after,
 			h2 a:hover:after {border-color:#733f2c;}
+			p a.current ,
 			p a:hover {background: #dcb725; color:#fff; font-family: $font2;}
 			h3 a:before{background: #1e4363;}
 		}

@@ -220,8 +220,7 @@ MAIN
 	.village .service-inner h3 {float:left;width:120px;padding:20px 0 32px;background:url(../images/village/main/bg_service_arrow.png) no-repeat bottom left;font-size:23px;line-height:30px;font-family:'NanumSquareB';color:#2b2b2b;}
 	.village .service-inner .service-list {float:left;width:90%;}
 	.village .service-inner .service-list div[class*="service"] {float:left;width:10%}
-	.village .service-inner .service-list .service01 {width:9% !important;}
-	.village .service-inner .service-list .service07 {width:11% !important;}
+	.village .service-inner .service-list .service07 span {position: relative; margin-left: -10%}
 	.village .service-inner .service-list a {display:block;padding-top:103px;font-size:17px;color:#555;text-align:center;}
 
 	/* 자주찾는 서비스 ico */
@@ -386,6 +385,11 @@ MEDIA QUERY
 
 	.village #header .header-middle .comp-search .form .btn button {background: #45bf55}
 	.village #header .header-middle .comp-search .form input {border-color:#45bf55;}
+.village nav {position:relative;}
+.village #gnb {overflow-y:auto; height: calc(100vh - 10.3rem) }
+.village #gnb .gnb {position: static}
+.village #gnb .gnb > li:last-child h2 a {border-bottom: 0;}
+.village .header-bottom:before {display: block; content: ""; position: absolute; left:7.2rem; top:10.3rem; width: 1px; height:calc(100vh - 10.3rem); background: #eaeced; }
 /* ------------------------------------------------------
 COMMON
 ------------------------------------------------------ */

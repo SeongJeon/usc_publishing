@@ -24,6 +24,7 @@ LAYOUT
   body.pc .culture #header #gnb .menugroup:first-of-type { width: 321px; padding-left: 0; }
   body.pc .culture #header #gnb h3 a { display: block; padding: 0 14px; font-size: 17px; color: #333; line-height: 42px; background: #fde8e6; }
   body.pc .culture #header #gnb h3 a:before { display: inline-block; content: ""; vertical-align: middle; width: 9px; height: 18px; margin-right: 12px; background: url("../../static/images/culture/icon_gnb.png") no-repeat 50% 50%; }
+  body.pc .culture #header #gnb h3 a.current { background: #d94343; color: #fff; }
   body.pc .culture #header #gnb h3 a:hover { background: #d94343; color: #fff; }
   body.pc .culture #header #gnb h4 a { color: #828282; font-size: 15px; }
   body.pc .culture #header #gnb h4 a:before { display: inline-block; content: ""; width: 3px; height: 3px; border-radius: 100px; background: #888; margin-right: 8px; vertical-align: middle; }
@@ -113,12 +114,17 @@ MAIN
 .culture .main .sec-culture .goto-zone { overflow: hidden; position: absolute; left: 50%; top: 318px; margin-left: 185px; }
 .culture .main .sec-culture .goto-zone li { float: left; }
 .culture .main .sec-culture .goto-zone li + li { margin-left: 25px; }
-.culture .main .sec-culture .goto-zone a { display: block; overflow: hidden; width: 100px; height: 100px; border-radius: 100px; background: rgba(0, 0, 0, 0.1); font-size: 17px; color: #fff; text-align: center; }
+.culture .main .sec-culture .goto-zone a { display: block; overflow: hidden; width: 100px; height: 100px; border-radius: 100px; background: rgba(0, 0, 0, 0.1); border: 6px solid transparent; font-size: 17px; color: #fff; text-align: center; -ms-transition: 0.2s ease; -webkit-transition: 0.2s ease; -moz-transition: 0.2s ease; transition: 0.2s ease; }
 .culture .main .sec-culture .goto-zone a:before { display: block; content: ""; width: 100%; height: 31px; margin: 22px auto 9px; background-size: auto 100% !important; }
 .culture .main .sec-culture .goto-zone li:nth-child(1) a:before { background: url("../../static/images/culture/main/icon_trip1.png") no-repeat 50% 50%; }
 .culture .main .sec-culture .goto-zone li:nth-child(2) a:before { background: url("../../static/images/culture/main/icon_trip2.png") no-repeat 50% 50%; }
 .culture .main .sec-culture .goto-zone li:nth-child(3) a:before { background: url("../../static/images/culture/main/icon_trip3.png") no-repeat 50% 50%; }
 .culture .main .sec-culture .goto-zone li:nth-child(4) a:before { background: url("../../static/images/culture/main/icon_trip4.png") no-repeat 50% 50%; }
+.culture .main .sec-culture .goto-zone a:hover { background: #fff; border-color: #ff877d; color: #333; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.culture .main .sec-culture .goto-zone li:nth-child(1) a:hover:before { background: url("../../static/images/culture/main/icon_trip1_over.png") no-repeat 50% 50%; }
+.culture .main .sec-culture .goto-zone li:nth-child(2) a:hover:before { background: url("../../static/images/culture/main/icon_trip2_over.png") no-repeat 50% 50%; }
+.culture .main .sec-culture .goto-zone li:nth-child(3) a:hover:before { background: url("../../static/images/culture/main/icon_trip3_over.png") no-repeat 50% 50%; }
+.culture .main .sec-culture .goto-zone li:nth-child(4) a:hover:before { background: url("../../static/images/culture/main/icon_trip4_over.png") no-repeat 50% 50%; }
 .culture .main .sec-course { background: url("../../static/images/culture/main/bg_course.jpg") no-repeat 50% 0%; background-size: cover; }
 .culture .main .sec-course .inner { position: relative; padding-top: 179px; }
 .culture .main .sec-course .tit-zone { width: 450px; margin: 0 auto 0 0; position: absolute; left: 0; top: 190px; }

@@ -46,6 +46,7 @@ LAYOUT
 			h2 a:hover:before {background: #f0412c; }
 			h2.over a:after,
 			h2 a:hover:after {border-color:#f0412c;}
+			p a.current {background: #f27405;}
 			p a:hover {background: #f27405;}
 			h3 a:before{background: #1e4363;}
 		}

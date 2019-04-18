@@ -16,7 +16,7 @@ LAYOUT
   body.pc .lifeedu #header #gnb .gnb h2.over a, body.pc .lifeedu #header #gnb .gnb h2 a:hover { font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
   body.pc .lifeedu #header #gnb .gnb h2.over a:before, body.pc .lifeedu #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: -1px; left: 0; width: 100%; content: ""; background: #ff7a39; height: 6px; z-index: 1000; }
   body.pc .lifeedu #header #gnb .gnb h2.over a:after, body.pc .lifeedu #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -10px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #ff7a39; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
-  body.pc .lifeedu #header #gnb .depth2menu { display: none; position: absolute; top: 100%; width: 250px; height: 200px; padding-top: 17px; background: #fff; }
+  body.pc .lifeedu #header #gnb .depth2menu { display: none; position: absolute; top: 100%; width: 250px; height: 200px; padding-top: 17px; }
   body.pc .lifeedu #header #gnb h2 { display: inline-block; vertical-align: top; }
   body.pc .lifeedu #header #gnb h2 a { display: block; position: relative; font-size: 18px; color: #343434; text-align: center; }
   body.pc .lifeedu #header #gnb h3 a { font-size: 15px; color: #525252; }
@@ -88,6 +88,7 @@ MAIN
 .lifeedu .main .main-board-zone .lst li:first-child { margin-top: 0; }
 .lifeedu .main .main-board-zone .lst li:before { display: inline-block; content: ""; width: 3px; height: 3px; background: #000; margin-right: 10px; vertical-align: middle; }
 .lifeedu .main .main-board-zone .lst a { display: inline-block; overflow: hidden; color: #000; font-size: 16px; max-width: 90%; white-space: nowrap; text-overflow: ellipsis; vertical-align: middle; }
+.lifeedu .main .main-board-zone .lst a:hover { text-decoration: underline; }
 .lifeedu .main .main-board-zone .board-zone1 .tit { background: #2e56bd; }
 .lifeedu .main .main-board-zone .board-zone1 .subtit { background: #dce8f6; }
 .lifeedu .main .main-board-zone .board-zone2 { margin-left: 20px; }
@@ -402,11 +403,14 @@ MEDIA QUERY
   #wrap.lifeedu #header .header-middle .title a { width: 17rem; background: url("../../static/images/lifeedu/img_logo.png") no-repeat 50% 50%; background-size: 100% auto; }
   #wrap.lifeedu #header .header-middle .comp-search .form .btn button { background: #2e56bd; }
   #wrap.lifeedu #header .header-middle .comp-search .form input { border-color: #2e56bd; }
+  #wrap.lifeedu #gnb h2 a { display: table; line-height: 1.8rem; }
+  #wrap.lifeedu #gnb h2 a span { display: table-cell; vertical-align: middle; }
   #wrap.lifeedu #gnb .gnb .depth2menu { height: calc(100vh - 10.3rem); }
   #wrap.lifeedu #gnb .gnb .clicked, #wrap.lifeedu #gnb .gnb .current, #wrap.lifeedu #gnb .gnb .clicked h3 a, #wrap.lifeedu #gnb .gnb h2 a:hover, #wrap.lifeedu #gnb .gnb h3 a:hover, #wrap.lifeedu #gnb .gnb h4 a:hover { color: #168039; }
   #wrap.lifeedu #gnb .gnb h4 a:hover:before { background: #168039; }
   #wrap.lifeedu #container { padding-top: 0; }
   #wrap.lifeedu #container .breadcrumb-zone { border-top-color: #d6d5d5; }
+  #wrap.lifeedu #footer { height: auto; }
   /* ------------------------------------------------------ COMMON ------------------------------------------------------ */
   /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
   .lifeedu .main div[class^=main-] > .inner { width: 100%; padding: 0 1rem; }

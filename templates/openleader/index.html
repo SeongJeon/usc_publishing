@@ -349,6 +349,8 @@
 		// 메인비쥬얼
 		$('.js-main-visual').slick({
 			dots: true,
+			autoplay: true, //  20190418 추가
+			autoplaySpeed: 10000,//  20190418 추가
 			dotsClass: 'custom-paging',
 			customPaging: function(slider, i) {
 				return '<em>' + (i + 1) + '</em>' + "/" + slider.slideCount;

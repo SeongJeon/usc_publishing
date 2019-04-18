@@ -45,6 +45,7 @@ LAYOUT
 			h3 a {
 				display:block; padding:0 14px; font-size: 17px; color:#333; line-height: 42px; background:#fde8e6;
 				&:before {display: inline-block; content: ""; vertical-align: middle; width:9px; height:18px; margin-right: 12px; @include background("culture/icon_gnb.png",no-repeat 50% 50%);}
+				&.current {background: #d94343; color:#fff;}
 				&:hover {background: #d94343; color:#fff;}
 			}
 			h4 a {
@@ -203,12 +204,21 @@ MAIN
 			overflow: hidden; position: absolute; left:50%; top:318px; margin-left: 185px;
 			li {float: left;}
 			li+li {margin-left: 25px;}
-			a {display: block; overflow: hidden; width:100px; height: 100px; border-radius: 100px; background:rgba(0,0,0,0.1); font-size: 17px; color:#fff; text-align: center;}
+			a {
+				display: block; overflow: hidden; width:100px; height: 100px; border-radius: 100px; background:rgba(0,0,0,0.1); border:6px solid transparent; font-size: 17px; color:#fff; text-align: center;
+				-ms-transition: 0.2s ease; -webkit-transition: 0.2s ease; -moz-transition: 0.2s ease; transition: 0.2s ease;
+			}
 			a:before {display: block; content: ""; width: 100%; height: 31px; margin:22px auto 9px; background-size: auto 100% !important;}
 			li:nth-child(1) a:before {@include background("culture/main/icon_trip1.png",no-repeat 50% 50%);}
 			li:nth-child(2) a:before {@include background("culture/main/icon_trip2.png",no-repeat 50% 50%);}
 			li:nth-child(3) a:before {@include background("culture/main/icon_trip3.png",no-repeat 50% 50%);}
 			li:nth-child(4) a:before {@include background("culture/main/icon_trip4.png",no-repeat 50% 50%);}
+
+			a:hover {background:#fff; border-color:#ff877d; color:#333; font-family: $font2;}
+			li:nth-child(1) a:hover:before {@include background("culture/main/icon_trip1_over.png",no-repeat 50% 50%);}
+			li:nth-child(2) a:hover:before {@include background("culture/main/icon_trip2_over.png",no-repeat 50% 50%);}
+			li:nth-child(3) a:hover:before {@include background("culture/main/icon_trip3_over.png",no-repeat 50% 50%);}
+			li:nth-child(4) a:hover:before {@include background("culture/main/icon_trip4_over.png",no-repeat 50% 50%);}
 		}
 	}
 	/* SECTION 2 */

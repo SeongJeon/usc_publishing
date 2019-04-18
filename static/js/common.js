@@ -11,7 +11,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 var usc = {
 	// GNB
 	gnbEvent: function(num, vv){
-		var spd = 300,  pc=0, mo=0, ifval,
+		var spd = 200,  pc=0, mo=0, ifval,
 		 	header = $("#header"), gnb = $("#gnb"), _idx, 
 		 	ary = num.split(",");
 		 	dim = "<span class='dimd'></span>";
@@ -40,7 +40,16 @@ var usc = {
 				$this.closest("h2").addClass("over");
 				$("h2", gnb).not($this.closest("h2")).removeClass("over");
 
-				if(ifval==true) $("h2", gnb).not("h2.over").next(".depth2menu").stop().hide();
+				if(ifval==false) {
+					$(this).closest("li").find("p a").addClass("current");
+					$(this).closest("li").siblings("li").find("p a").removeClass("current");
+				}else {
+					$("h2", gnb).not("h2.over").next(".depth2menu").stop().hide();
+					$(this).closest("li").siblings("li").find("h3 a").removeClass("current");
+
+				}
+
+				// if(ifval==true) $("h2", gnb).not("h2.over").next(".depth2menu").stop().hide();
 				
 				header.stop().animate({"padding-bottom": ary[_idx]+'px'}, spd, 'swing', function(){
 					$("#wrap .dimd").stop().animate({"opacity": 1}, spd);
@@ -60,6 +69,37 @@ var usc = {
 						header.removeClass("open");
 					})
 				});
+			})
+
+			$("h3 a", gnb).on("mouseenter", function(){
+				$(this).addClass("current");
+
+				if(ifval==true) {
+					$(this).closest(".group").siblings(".group").find("h3 a").removeClass("current");
+					$(this).closest(".menugroup").siblings(".menugroup").find("h3 a").removeClass("current");
+				}else{
+					$(this).closest(".depth2menu").prev("h2").addClass("over");
+					$(this).closest(".group").siblings("p").find("a").addClass("current");
+					$(this).closest("li").siblings("li").find("h2").removeClass("over");
+					$(this).closest("li").siblings("li").find("p a").removeClass("current");
+				}
+			})
+			$("p a", gnb).on("mouseenter", function(){
+				$(this).addClass("current").closest("li").siblings("li").find("p a").removeClass("current");
+				$(this).closest(".depth2menu").prev("h2").addClass("over");
+				$(this).closest("li").siblings("li").find("h2").removeClass("over");
+			})
+			$("h4 a", gnb).on("mouseenter", function(){
+				if(ifval==true) {
+					$(this).closest(".depth3menu").siblings("h3").find("a").addClass("current");
+					$(this).closest(".group").siblings(".group").find("h3 a").removeClass("current");
+					$(this).closest(".menugroup").siblings(".menugroup").find("h3 a").removeClass("current");
+				}else {
+					$(this).closest(".menugroup").find("p a").addClass("current");
+					$(this).closest("li[role=treeitem]").find("h2").addClass("over");
+					$(this).closest("li[role=treeitem]").siblings("li").find("h2").removeClass("over");
+					$(this).closest("li[role=treeitem]").siblings("li").find("p a").removeClass("current");
+				}
 			})
 
 			pc++, mo=0;

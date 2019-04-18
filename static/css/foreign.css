@@ -26,6 +26,7 @@ LAYOUT
 	body.pc .foreign #header.header-type2 #gnb p a { background: #ffeda9; }
 	body.pc .foreign #header.header-type2 #gnb h2.over a:before, body.pc .foreign #header.header-type2 #gnb h2 a:hover:before { background: #f0412c; }
 	body.pc .foreign #header.header-type2 #gnb h2.over a:after, body.pc .foreign #header.header-type2 #gnb h2 a:hover:after { border-color: #f0412c; }
+	body.pc .foreign #header.header-type2 #gnb p a.current { background: #f27405; }
 	body.pc .foreign #header.header-type2 #gnb p a:hover { background: #f27405; }
 	body.pc .foreign #header.header-type2 #gnb h3 a:before { background: #1e4363; }
 	body.pc .foreign #header.header-type2.open { border-bottom-color: #f27405; background:#fff url("../../static/images/foreign/bg_gnb.png") repeat-x 0 100%;}

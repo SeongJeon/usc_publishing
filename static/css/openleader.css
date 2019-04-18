@@ -42,6 +42,7 @@ LAYOUT
 	body.pc .openleader #header.header-type2 #gnb h2 a:hover:before {background: #1058a8; }
 	body.pc .openleader #header.header-type2 #gnb h2.over a:after,
 	body.pc .openleader #header.header-type2 #gnb h2 a:hover:after {border-color:#1058a8;}
+	body.pc .openleader #header.header-type2 #gnb p a.current {background: #3cb7cd;}
 	body.pc .openleader #header.header-type2 #gnb p a:hover {background: #3cb7cd;}
 	body.pc .openleader #header.header-type2 #gnb h3 a:before{background: #1e4363;}
 
@@ -652,7 +653,7 @@ MAIN
 	.openleader .main-visual > .slick-prev {width:6rem; height:6rem; left:auto; right:8.2rem; top:5rem; margin:0; background-size:100%;}
 	.openleader .main-visual > .slick-next {width:6rem; height:6rem; left:auto; right:20px; top:5rem; margin:0; background-size:100%;}
 	.openleader .main-visual > .custom-paging {left:auto; right:30px; top:2.6rem; margin:0; }
-	.openleader .main-visual .section-01 {    background: url(../images/openleader/main/bg_main_visual01_m.png) no-repeat center top; background-size:cover;}
+	.openleader .main-visual .section-01 {background: url(../images/openleader/main/bg_main_visual01_m.png) no-repeat center top; background-size:cover}
 	.openleader .main-visual .section-01 .inner > .tit {float:none; margin:0; padding:66vw 3.8rem 1.4rem;}
 	.openleader .main-visual .section-01 .inner > .tit img {margin:0 auto;}
 	.openleader .main-visual .section-01 .inner .calendar {overflow:hidden; width:100%; height:auto;}
@@ -687,6 +688,7 @@ MAIN
 	.openleader .main-visual .section-01 .inner .list-quick .list > li a .after {font-size:1rem; border-width:3px;}
 	.openleader .main-visual .section-01 .inner .list-quick .list > li a .after em {width:4.5rem; height:2rem; line-height:2rem; margin-top:7rem; padding:0; }
 
+	.openleader .main-visual .section-02 {background: url(../../static/images/openleader/main/bg_main_visual02_m.png) no-repeat center top; background-size:cover;}
 	.openleader .main-visual .section-02 .inner > .tit {padding:3.8rem 0 0;}
 	.openleader .main-visual .section-02 .inner > .tit img {width:30rem; margin:0;}
 	.openleader .main-visual .section-02 .inner .list-banner {overflow:hidden; float:none; width:100%; height:auto;}

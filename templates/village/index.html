@@ -267,34 +267,34 @@
 								<h3>자주찾는<br>서비스</h3>
 								<div class="service-list js-service">
 									<div class="service01">
-										<a href="#">전자민원</a>
+										<a href="#"><span>전자민원</span></a><!--  20190418  span 추가 -->
 									</div>
 									<div class="service02">
-										<a href="#">농업기술센터</a>
+										<a href="#"><span>농업기술센터</span></a><!--  20190418  span 추가 -->
 									</div>
 									<div class="service03">
-										<a href="#">관광지도</a>
+										<a href="#"><span>관광지도</span></a><!--  20190418  span 추가 -->
 									</div>
 									<div class="service04">
-										<a href="#">문화재</a>
+										<a href="#"><span>문화재</span></a><!--  20190418  span 추가 -->
 									</div>
 									<div class="service05">
-										<a href="#">금봉자연휴양림</a>
+										<a href="#"><span>금봉자연휴양림</span></a><!--  20190418  span 추가 -->
 									</div>
 									<div class="service06">
-										<a href="#">의성장날</a>
+										<a href="#"><span>의성장날</span></a><!--  20190418  span 추가 -->
 									</div>
 									<div class="service07">
-										<a href="#">의성토종마늘마을</a>
+										<a href="#"><span>의성토종마늘마을</span></a><!--  20190418  span 추가 -->
 									</div>
 									<div class="service08">
-										<a href="#">모흥황토마을</a>
+										<a href="#"><span>모흥황토마을</span></a><!--  20190418  span 추가 -->
 									</div>
 									<div class="service09">
-										<a href="#">안평자두마을</a>
+										<a href="#"><span>안평자두마을</span></a><!--  20190418  span 추가 -->
 									</div>
 									<div class="service10">
-										<a href="#">의성청학마을</a>
+										<a href="#"><span>의성청학마을</span></a><!--  20190418  span 추가 -->
 									</div>
 								</div>
 							</div>
@@ -392,14 +392,6 @@
 			}
 		});
 		
-		// $('.time-wrap').on('mouseleave', function () {
-		// 	if($('.section-info .js-hover').hasClass('on') == false) return false;
-			
-		// 	$('.js-hover').stop().animate({height : 120 +'px'}, function () {
-		// 		$(this).removeClass('on').addClass('animation');
-		// 	});
-		// 	$('.phone-wrap').stop().slideUp();
-		// });
 		
 		$('.number-area .last li:last a').on('blur', function () {
 			$('.js-hover').stop().animate({height : 120 +'px'}, function () {
@@ -409,27 +401,52 @@
 			$('.section-info .js-hover a').focus();
 		});
 		
-		//자주찾는 서비스
-		$(window).on('load resize orientationchange', function() {
-			$('.js-service').each(function(){
-				var $carousel = $(this);
-				if ($(window).width() > 1024) {
-					if ($carousel.hasClass('slick-initialized')) {
-						$carousel.slick('unslick');
-					}
-				}
-				else{
-					if (!$carousel.hasClass('slick-initialized')) {
-						$carousel.slick({
-							slidesToShow: 4,
-							slidesToScroll: 1,
-							mobileFirst: true,
-							arrows: false
-						});
-					}
-				}
-			});
-		});
+		//자주찾는 서비스  20190418 기존꺼 삭제
+		// $(window).on('load resize orientationchange', function() {
+		// 	$('.js-service').each(function(){
+		// 		var $carousel = $(this);
+		// 		if ($(window).width() > 1024) {
+		// 			if ($carousel.hasClass('slick-initialized')) {
+		// 				$carousel.slick('unslick');
+		// 			}
+		// 		}
+		// 		else{
+		// 			if (!$carousel.hasClass('slick-initialized')) {
+		// 				$carousel.slick({
+		// 					slidesToShow: 4,
+		// 					slidesToScroll: 1,
+		// 					mobileFirst: true,
+		// 					arrows: false, 
+		// 					autoplay: true,
+		// 					autoplaySpeed: 2000,
+		// 				});
+		// 			}
+		// 		}
+		// 	});
+		// });
+	
+	// 자주찾는 서비스  20190418 수정
+	$(".js-service").slick({
+		dots: false,
+		infinite: true,
+		speed: 400,
+		ltr: true,
+		slidesToShow: 10,
+		slidesToScroll: 1,
+		swipe:false,
+		arrows:false,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					swipe:true,
+					slidesToShow: 3,
+					autoplay: true,
+					autoplaySpeed: 3000
+			   }
+			}
+		]
+	});
 	</script>
 </body>
 </html>

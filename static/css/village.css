@@ -27,7 +27,7 @@ LAYOUT
 	body.pc #wrap.village #header .depth2menu > div {width: 1320px; margin:0 auto;}
 	body.pc #wrap.village #header .depth2menu .part-introduce { float: left; width: 245px; }
 	body.pc #wrap.village #header .depth2menu .part-introduce dl { margin-top: 24px; }
-	body.pc #wrap.village #header .depth2menu .part-introduce dt { font-size: 26px; font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #3a3a3a; }
+	body.pc #wrap.village #header .depth2menu .part-introduce dt { font-size: 26px; font-weight: bold; color: #3a3a3a; }
 	body.pc #wrap.village #header .depth2menu .part-introduce dt img { margin-top: 11px; }
 	body.pc #wrap.village #header .depth2menu .part-introduce dd { margin-top: 11px; font-size: 16px; color: #3a3a3a; }
 	body.pc #wrap.village #header .depth2menu .menu { float: left; overflow: hidden; min-height: 274px; width: 1075px; padding: 22px 0 24px 0; }
@@ -36,7 +36,7 @@ LAYOUT
 	body.pc #wrap.village #header .depth2menu .menu h3 a.small { font-size: 15px; }
 	body.pc #wrap.village #header .depth2menu .menu h4 a { font-size: 15px; color: #525252; line-height: 26px; }
 	body.pc #wrap.village #header .depth2menu .menu h4 a:before { display: inline-block; content: ""; width: 4px; height: 4px; background: #1e4363; margin-right: 7px; vertical-align: middle; }
-	body.pc #wrap.village #header .depth2menu .menu h4 a:hover, body.pc #wrap.village #header .depth2menu .menu h4 a.current { color: #168039; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+	body.pc #wrap.village #header .depth2menu .menu h4 a:hover, body.pc #wrap.village #header .depth2menu .menu h4 a.current { color: #168039; font-weight: bold; }
 	body.pc #wrap.village #header .depth2menu .menu h4 a:hover:before, body.pc #wrap.village #header .depth2menu .menu h4 a.current:before { background: #168039; }
 	body.pc #wrap.village #header .depth2menu .menu h5 a { color: #525252; font-size: 14px; line-height: 22px; }
 	body.pc #wrap.village #header .depth2menu .menu h5 a:before { display: inline-block; content: "-"; margin-right: 3px; }
@@ -53,7 +53,7 @@ LAYOUT
 	body.pc #wrap.village #gnb .gnb h2 { position: relative; }
 	body.pc #wrap.village #gnb .gnb h2:before { display: inline-block; position: absolute; left: 0; top: 50%; margin-top: -10px; content: ""; width: 1px; height: 20px; background: #e0dfdf; vertical-align: middle; }
 	body.pc #wrap.village #gnb .gnb h2 a { display: block; position: relative; width: 100%; line-height: 57px; font-size: 18px; color: #313131; text-align: center; }
-	body.pc #wrap.village #gnb .gnb h2.over a, body.pc #wrap.village #gnb .gnb h2 a:hover { font-family: "NanumSquareEB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; color: #fff; background: #45bf55; }
+	body.pc #wrap.village #gnb .gnb h2.over a, body.pc #wrap.village #gnb .gnb h2 a:hover { font-weight: bold; color: #fff; background: #45bf55; }
 	body.pc #wrap.village #gnb .gnb h2.over a:before, body.pc #wrap.village #gnb .gnb h2 a:hover:before { display: none; }
 	body.pc #wrap.village #gnb .gnb h2.over a:after, body.pc #wrap.village #gnb .gnb h2 a:hover:after { display: none; }
 	body.pc #wrap.village #gnb .gnb li:nth-child(9) ~ li h2.over + .depth2menu {margin-top:0;}
@@ -82,7 +82,7 @@ MAIN
 .village .view-m {display:none !important;}
 
 /* LOCAL COLOR */
-.village em[class*='local-'] {display:inline-block;width:56px;height:26px;margin-right:5px;text-align:center;font-size:14px;font-family:'NanumSquareB';line-height:26px;vertical-align:top;color:#fff;border-radius:20px;}
+.village em[class*='local-'] {display:inline-block;width:56px;height:26px;margin-right:5px;text-align:center;font-size:14px;font-weight: bold;line-height:26px;vertical-align:top;color:#fff;border-radius:20px;}
 .village em[class*='local-'][class*='01'] {background:#eba4a4}
 .village em[class*='local-'][class*='02'] {background:#e89d28}
 .village em[class*='local-'][class*='03'] {background:#5f9c74}
@@ -110,16 +110,16 @@ MAIN
 	.village .section-visual .btn-main-prev {top:157px;background:url(../images/village/btn_main_prev.png) no-repeat left top;}
 	.village .section-visual .btn-main-next {bottom:126px;background:url(../images/village/btn_main_next.png) no-repeat left top;}
 	.village .section-visual .custom-paging {position:absolute;bottom:100px;right:35px;}
-	.village .section-visual .custom-paging > li {display:none;font-family:'NanumSquareL';font-size:15px;color:#fff;}
-	.village .section-visual .custom-paging > li em {font-size:18px;font-family:'NanumSquareEB';}
+	.village .section-visual .custom-paging > li {display:none;font-weight: normal;font-size:15px;color:#fff;}
+	.village .section-visual .custom-paging > li em {font-size:18px;font-weight: bold;}
 	.village .section-visual .custom-paging > li.slick-active {display:block;}
 
 	.village .plan-wrap {float:left;width:37.4%;height:430px;padding:26px 0 0 18px;;background:url(../images/village/main/bg_plan.png) no-repeat left top;background-size:cover;border:30px solid #45bf55;border-right:0;box-sizing:border-box;}
 	.village .plan-wrap .month-wrap {position:relative;width:364px;}
 	.village .plan-wrap .month-wrap:after {position:absolute;top:43px;left:0;display:block;width:100%;height:57px;border:1px solid #d6d5d5;content:'';}
-	.village .plan-wrap h2 {margin-bottom:17px;font-size:22px;font-family:'NanumSquareB';color:#000;text-align:center;}
+	.village .plan-wrap h2 {margin-bottom:17px;font-size:22px;font-weight: bold;color:#000;text-align:center;}
 	.village .plan-wrap .month-area {text-align:center;}
-	.village .plan-wrap .month-area > em {display:block;height:57px;margin-bottom:18px;line-height:59px;font-size:24px;color:#2c2c2c;font-family:'NanumSquareB';}
+	.village .plan-wrap .month-area > em {display:block;height:57px;margin-bottom:18px;line-height:59px;font-size:24px;color:#2c2c2c;font-weight: bold;}
 	.village .month-list .tit {vertical-align:-4px;}
 	.village .plan-wrap .js-scroll {overflow:hidden;position:relative;height:200px;}
 	.village .plan-wrap .month-area .month-list {text-align:left;color:#525252;}
@@ -159,10 +159,10 @@ MAIN
 
 	.village .phone-wrap {display: none}
 	.village .phone-inner {position:relative;margin:0 auto;padding:20px 0;box-sizing:border-box;}
-	.village .phone-inner h3 {margin-bottom:14px;font-family:'NanumSquareEB';font-size:22px;color:#fff;}
-	.village .phone-inner h3 span {font-family:'NanumSquareB';font-size:16px;color:#d3e570;}
+	.village .phone-inner h3 {margin-bottom:14px;font-weight: bold;font-size:22px;color:#fff;}
+	.village .phone-inner h3 span {font-weight: bold;font-size:16px;color:#d3e570;}
 	.village .phone-inner .time-area {display:inline-block;width:353px;height:125px;padding:30px 14px 0 102px;background:#ecf3c1 url(../images/village/main/bg_phone.png) no-repeat left bottom;vertical-align:top;border-radius:20px;box-sizing:border-box;}
-	.village .phone-inner .time-area .time {margin-bottom:13px;font-size:22px;font-family:'NanumSquarEB';color:#2d2d2d;}
+	.village .phone-inner .time-area .time {margin-bottom:13px;font-size:22px;font-weight: bold;color:#2d2d2d;}
 	.village .phone-inner .time-area .rest {height:35px;line-height:35px;text-align:center;background:#7ab66c;color:#fff;border-radius:30px;}
 	.village .phone-inner .number-area {margin-left:30px;}
 	.village .phone-inner .number-area.view-pc {display:inline-block !important;}
@@ -173,17 +173,17 @@ MAIN
 	.village .phone-inner .number-area ul.last:after {display:none;}
 	.village .phone-inner .number-area li {font-size:15px;color:#fff;}
 	.village .phone-inner .number-area li + li {margin-top:10px;}
-	.village .phone-inner .number-area em {display:inline-block;margin-right:18px;color:#ecf3c1;font-size:16px;font-family:'NanumSquareEB';}
+	.village .phone-inner .number-area em {display:inline-block;margin-right:18px;color:#ecf3c1;font-size:16px;font-weight: bold;}
 
 	.village .news-wrap {max-width:1320px;margin:0 auto;padding-top:22px;}
 	.village .news-wrap .notice-wrap {position:relative;float:left;width:648px;height:328px;padding:28px;border:1px solid #d6d5d5;background:url(../images/village/main/bg_notice.png) no-repeat left top;background-size:cover;box-sizing:border-box;}
-	.village .news-wrap .notice-wrap h3 {margin-bottom:30px;font-family:'NanumSquareB';font-size:22px;color:#222;}
+	.village .news-wrap .notice-wrap h3 {margin-bottom:30px;font-weight: bold;font-size:22px;color:#222;}
 	.village .news-wrap .notice-wrap h3 span {padding-bottom:3px;border-bottom:3px solid #45bf55;}
 	.village .news-wrap .notice-wrap .notice-preview {margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid #d6d5d5;}
 	.village .news-wrap .notice-preview .date {display:inline-block;width:87px;height:92px;padding-top:23px;text-align:center;border:1px solid #d6d5d5;font-size:17px;color:#666;vertical-align:top;}
-	.village .news-wrap .notice-preview .date em {display:block;font-size:28px;font-family:'NanumSquareB';color:#45bf55;}
+	.village .news-wrap .notice-preview .date em {display:block;font-size:28px;font-weight: bold;color:#45bf55;}
 	.village .news-wrap .notice-wrap .notice-con {display:inline-block;width:480px;margin-left:5px;}
-	.village .news-wrap .notice-wrap .notice-con dt {margin-bottom:12px;font-family:'NanumSquareB';font-size:20px;color:#222;}
+	.village .news-wrap .notice-wrap .notice-con dt {margin-bottom:12px;font-weight: bold;font-size:20px;color:#222;}
 	.village .news-wrap .notice-wrap .notice-con .tit {vertical-align:-2px;}
 	.village .news-wrap .notice-wrap .notice-con em {font-size:16px;}
 	.village .news-wrap .notice-wrap .notice-con dd {overflow:hidden;display: -webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;width:100%;max-height:52px;line-height:26px;}
@@ -198,7 +198,7 @@ MAIN
 	.village .popup-wrap {height:329px;}
 	.village .popup-wrap:after {display:block;clear:both;content:'';}
 	.village .popup-tit {position:relative;float:left;width:214px;height:100%;padding:18px 20px 0;box-sizing:border-box;}
-	.village .popup-tit h3 {margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid #d8d8d8;font-size:22px;font-family:'NanumSquareB';color:#222;line-height:34px;}
+	.village .popup-tit h3 {margin-bottom:15px;padding-bottom:15px;border-bottom:1px solid #d8d8d8;font-size:22px;font-weight: bold;color:#222;line-height:34px;}
 	.village .popup-tit h3 span {display:block;color:#7ab66c;}
 	.village .popup-tit .txt {color:#666;line-height:26px;}
 	.village .popup-area {float:left;width:456px;}
@@ -210,14 +210,14 @@ MAIN
 	.village .popup-wrap .btn-popup-stop {background:url(../images/village/btn_popup_stop.png) no-repeat center center;}
 	.village .popup-wrap .btn-popup-stop.play {background:url(../images/village/btn_popup_play.png) no-repeat center center;}
 	.village .popup-wrap .custom-paging {position:absolute;bottom:0;left:-46px;}
-	.village .popup-wrap .custom-paging > li {display:none;font-family:'NanumSquareL';font-size:16px;color:#666;}
-	.village .popup-wrap .custom-paging > li em {font-size:18px;font-family:'NanumSquareEB';}
+	.village .popup-wrap .custom-paging > li {display:none;font-weight: normal;font-size:16px;color:#666;}
+	.village .popup-wrap .custom-paging > li em {font-size:18px;font-weight: bold;}
 	.village .popup-wrap .custom-paging > li.slick-active {display:block;}
 
 	.village .section-service {padding:30px 0;background:url(../images/village/main/bg_service.png) no-repeat left top;background-size:cover;}
 	.village .service-inner {max-width:1320px;margin:0 auto;}
 	.village .service-inner:after {display:block;clear:both;content:'';}
-	.village .service-inner h3 {float:left;width:120px;padding:20px 0 32px;background:url(../images/village/main/bg_service_arrow.png) no-repeat bottom left;font-size:23px;line-height:30px;font-family:'NanumSquareB';color:#2b2b2b;}
+	.village .service-inner h3 {float:left;width:120px;padding:20px 0 32px;background:url(../images/village/main/bg_service_arrow.png) no-repeat bottom left;font-size:23px;line-height:30px;font-weight: bold;color:#2b2b2b;}
 	.village .service-inner .service-list {float:left;width:90%;}
 	.village .service-inner .service-list div[class*="service"] {float:left;width:10%}
 	.village .service-inner .service-list .service07 span {position: relative; margin-left: -10%}
@@ -234,7 +234,7 @@ MAIN
 	.village .service-inner .service-list .service08 a {background:url(../images/village/main/ico_service08_off.png) no-repeat center top;}
 	.village .service-inner .service-list .service09 a {background:url(../images/village/main/ico_service09_off.png) no-repeat center top;}
 	.village .service-inner .service-list .service10 a {background:url(../images/village/main/ico_service10_off.png) no-repeat center top;}
-	.village .service-inner .service-list a:hover {font-family:'NanumSquareB';-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease}
+	.village .service-inner .service-list a:hover {font-weight: bold;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease}
 	.village .service-inner .service-list .service01 a:hover {background:url(../images/village/main/ico_service01_on.png) no-repeat center top;}
 	.village .service-inner .service-list .service02 a:hover {background:url(../images/village/main/ico_service02_on.png) no-repeat center top;}
 	.village .service-inner .service-list .service03 a:hover {background:url(../images/village/main/ico_service03_on.png) no-repeat center top;}

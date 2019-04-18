@@ -453,7 +453,7 @@ SUB PAGE
 				h4:after {background-color: #cb483e; }
 			}
 			& > h4 { float:left; }
-			& > ul { padding-left:295px; color:#4b4b4b; line-height: 28px; font-family: 'NanumSquareB'; }
+			& > ul { padding-left:295px; color:#4b4b4b; line-height: 28px; font-weight: bold; }
 		}
 		& > li {
 			overflow: hidden; 
@@ -498,7 +498,7 @@ SUB PAGE
 						img {position:absolute; left:0; top:0; width:100%; height:100%;}
 					}
 					.txt {
-						position:absolute; left:0; top:0;  display:table; width:100%; height:100%; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#fff; z-index:2;
+						position:absolute; left:0; top:0;  display:table; width:100%; height:100%; font-weight: bold;color:#fff; z-index:2;
 						span {display:table-cell; vertical-align:middle; text-align:center; line-height:20px;}
 					}
 				}
@@ -543,7 +543,7 @@ SUB PAGE
 			& > li a {display:block;}
 			& > li a .img-area {display:block;}
 			& > li a .img-area img {vertical-align:top}
-			& > li a .txt {display:block; margin:10px 0 0 0; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#4b4b4b; text-align:center;}
+			& > li a .txt {display:block; margin:10px 0 0 0; font-weight: bold; color:#4b4b4b; text-align:center;}
 		}
 	}
 }
@@ -556,7 +556,7 @@ SUB PAGE
 		.img-area {width:392px;height:289px;margin-right:20px;}
 		.info-area {
 			width:59%; padding-top: 5px;
-			.txt {font-size:15px;color:#4b4b4b;font-family:'NanumSquareB';line-height:1.5;}
+			.txt {font-size:15px;color:#4b4b4b;font-weight: bold;line-height:1.5;}
 			.txt + .txt {margin-top:30px;}
 			.green {color:#48b512;}
 			.blue {color:#125fb5;}
@@ -588,11 +588,11 @@ SUB PAGE
 	}
 	.comp-txt_box {
 		margin:0 0 18px 30px;padding:33px 20px 28px;
-		.tit {margin-bottom:26px;text-align:center;font-family:'NanumSquareB';color:#1c1c1c;font-size:18px;}
+		.tit {margin-bottom:26px;text-align:center;font-weight: bold;color:#1c1c1c;font-size:18px;}
 		.tit .green {color:#2e9911;}
-		.txt {font-size:15px;font-family:'NanumSquareB';color:#4b4b4b;}
+		.txt {font-size:15px;font-weight: bold;color:#4b4b4b;}
 	}
-	*[class$="tit"] {font-family:'NanumSquareB';color:#4b4b4b;font-size:17px;text-align:center;}
+	*[class$="tit"] {font-weight: bold;color:#4b4b4b;font-size:17px;text-align:center;}
 	.design-wrap {
 		margin:0 0 24px 30px;
 		&:after {display:block;clear:both;content:'';}
@@ -605,12 +605,12 @@ SUB PAGE
 			li {
 				position:relative;display:table;width:100%;height:109px;margin-top:15px;padding:14px 10px;text-align:center;background:#f1f3f4;border-radius:10px;box-sizing:border-box;
 				div {display:table-cell;vertical-align:middle;}
-				p {font-size:15px;font-family:'NanumSquareB';color:#4b4b4b;}
+				p {font-size:15px;font-weight: bold;color:#4b4b4b;}
 			}
 			li:after,
-			&.concept:after {position:absolute;top:50%;right:-39px;display:inline-block;margin-top:-18px;font-size:30px;font-family:'NanumSquareB';color:#8f8f8f;content:'>';}
+			&.concept:after {position:absolute;top:50%;right:-39px;display:inline-block;margin-top:-18px;font-size:30px;font-weight: bold;color:#8f8f8f;content:'>';}
 			.design {width:42%;}
-			.and span {display:inline-block;width:36px;height:36px;line-height:36px;font-size:15px;font-family:'NanumSquareEB';color:#8f8f8f;background:#d6d9db;border-radius:50%;}
+			.and span {display:inline-block;width:36px;height:36px;line-height:36px;font-size:15px;font-weight: bold;color:#8f8f8f;background:#d6d9db;border-radius:50%;}
 			*[class*="bg"] {
 				margin-bottom:4px;padding-bottom:43px;
 				&.bg01 {background:url(../images/uscmuseum/subpage/bg_goal01.png) no-repeat center bottom;}
@@ -635,8 +635,8 @@ SUB PAGE
 	.tree-area {
 		display:inline-block;width:308px;height:489px;background:url(../images/uscmuseum/subpage/bg_tree.png) no-repeat left top;border:1px solid #c7c1bf;text-align:center;box-sizing:border-box;
 		.tit {margin-bottom:110px;padding-top:20px;line-height:1.5;}
-		.tit span {display:block;color:#fe970e;font-family:'NanumSquareEB';font-size:24px;}
-		.txt {line-height:1.6;color:#fff;font-family:'NanumSquareB';font-size:15px;}
+		.tit span {display:block;color:#fe970e;font-weight: bold;font-size:24px;}
+		.txt {line-height:1.6;color:#fff;font-weight: bold;font-size:15px;}
 	}
 	.plan-list {
 		margin-left:30px;border-top:2px solid #7a7a7a;border-bottom:2px solid #7a7a7a;
@@ -660,7 +660,7 @@ SUB PAGE
 	.txt { display: block; margin:0 auto;}
 	.txt_box {position: relative; margin-top: 30px; margin-bottom: 15px; padding:0;}
 	.txt_box:before { display: inline-block; position: absolute; top:-52px; left:0; width:194px; height:153px; background: url(../images/uscmuseum/subpage/ico_info.png) no-repeat center center; opacity:0.1; content:'';}
-	p { padding: 0 10px; color:#4b4b4b; line-height: 24px; font-family: 'NanumSquareB'; font-size: 15px;}
+	p { padding: 0 10px; color:#4b4b4b; line-height: 24px; font-weight: bold; font-size: 15px;}
 }
 
 

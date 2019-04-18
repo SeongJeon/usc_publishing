@@ -241,13 +241,15 @@
   body.pc #header.header-type2 #gnb .depth3menu > li { line-height: 22px; }
   body.pc #header.header-type2 #gnb h2 { display: inline-block; vertical-align: top; }
   body.pc #header.header-type2 #gnb h2 a { display: block; position: relative; font-size: 19px; color: #343434; text-align: center; }
+  body.pc #header.header-type2 #gnb h2 a span { position: relative; top: -4px; }
   body.pc #header.header-type2 #gnb p a { display: block; width: 100%; font-size: 17px; color: #2d2d2d; text-align: center; line-height: 35px; background: #d6eef0; }
-  body.pc #header.header-type2 #gnb h3 a { font-size: 15px; color: #525252; }
+  body.pc #header.header-type2 #gnb p a span { position: relative; top: -2px; }
+  body.pc #header.header-type2 #gnb h3 a { font-size: 14px; color: #525252; }
   body.pc #header.header-type2 #gnb h3 a.outlnk:after { position: absolute; right: 8px; top: 3px; width: 18px; height: 19px; content: ""; background: url("../../static/images/common/icon_outlnk2.png") no-repeat 50% 50%; }
   body.pc #header.header-type2 #gnb h3 a:before { display: inline-block; position: relative; content: ""; vertical-align: middle; width: 4px; height: 4px; margin-right: 10px; top: -2px; }
-  body.pc #header.header-type2 #gnb h4 a { font-size: 14px; color: #525252; }
-  body.pc #header.header-type2 #gnb h4 a:before { display: inline-block; content: "-"; vertical-align: middle; margin-right: 3px; }
-  body.pc #header.header-type2 #gnb h2.over a, body.pc #header.header-type2 #gnb h2 a:hover { font-weight: bold; }
+  body.pc #header.header-type2 #gnb h4 a { font-size: 12px; color: #525252; }
+  body.pc #header.header-type2 #gnb h4 a:before { display: inline-block; content: "-"; vertical-align: top; margin-right: 3px; }
+  body.pc #header.header-type2 #gnb h2.over a span, body.pc #header.header-type2 #gnb h2 a:hover span { font-weight: bold; }
   body.pc #header.header-type2 #gnb h2.over a:before, body.pc #header.header-type2 #gnb h2 a:hover:before { display: block; position: absolute; left: 0; top: 52px; content: ""; width: 100%; height: 5px; }
   body.pc #header.header-type2 #gnb h2.over a:after, body.pc #header.header-type2 #gnb h2 a:hover:after { display: block; position: absolute; left: 50%; top: 45px; content: ""; width: 20px; height: 20px; border-width: 5px; border-style: solid; background: #fff; border-radius: 100px; margin-left: -10px; box-sizing: border-box; z-index: 11; }
   body.pc #header.header-type2 #gnb p a.current { color: #fff; font-weight: bold; }

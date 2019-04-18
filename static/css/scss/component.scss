@@ -423,7 +423,7 @@
 			.group:first-of-type {margin-top: 10px;}
 			.group h3 {line-height: 26px; position: relative;}
 			.depth2menu {display:none; position: absolute; top:100%; margin-top:-2px; padding-top: 26px;background:transparent; }
-			.depth3menu {background: #f4f4f4; margin-left: -15px; padding:6px 0 5px 25px; margin-top: 5px;}
+			.depth3menu {background: #f4f4f4; margin-left: -15px; padding:4px 0 7px 25px; margin-top: 5px;}
 			.depth3menu > li {line-height: 22px}
 			h2 {display: inline-block; vertical-align: top; }
 			h2 a {display: block; position: relative; font-size: 19px; color:#343434; text-align: center; }
@@ -433,7 +433,7 @@
 			h3 a {font-size: 14px; color:#525252; }
 			h3 a.outlnk:after {position: absolute; right: 8px; top:3px; width:18px; height: 19px; content: ""; @include background("common/icon_outlnk2.png",no-repeat 50% 50%); }
 			h3 a:before{display: inline-block; position: relative; content: ""; vertical-align: middle; width: 4px; height: 4px; margin-right: 10px; top:-2px;}
-			h4 a {font-size: 12px; color:#525252; }
+			h4 a {font-size: 13px; color:#525252; }
 			h4 a:before{display: inline-block;content: "-"; vertical-align: top; margin-right: 3px;}
 		
 			h2.over a span,
@@ -854,7 +854,7 @@ p[class^=comp-lst] {
 	*[class^=heading] + .l-right {float:right; position: relative; top:12px;}
 }
 .tbl-bottom-utile {
-	overflow: hidden; margin-top: 13px;
+	overflow: hidden; margin-bottom: 5px; margin-top: 13px;
 	.l-right {float: right; color:#4b4b4b; font-size: 15px; }
 }
 .tbl-zone {

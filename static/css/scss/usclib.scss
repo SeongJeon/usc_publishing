@@ -3,7 +3,7 @@
 @import 'base';
 
 
-/* ------------------------------------------------------
+/* ------------------------------------------------------ 
 LAYOUT
 ------------------------------------------------------ */
 @media (min-width:1025px){
@@ -207,6 +207,7 @@ MAIN
 			li {float:  left; width: 25%;}
 			a {display: block; font-size: 22px; line-height: 55px; height: 55px; font-family: $font2;font-weight: bold; color:#fff; text-align: center;}
 			a[aria-selected=true], a:hover {background:#fff; color:#222;}
+			span {position: relative; top:-2px;}
 		}
 		.tab-cont {display: none; overflow:hidden; height: 230px; background: #fff; box-shadow:0 5px 10px rgba(24,24,24,0.1); }
 		//공지사항
@@ -229,15 +230,15 @@ MAIN
 					height: 190px; position: relative; padding:0 30px 0 160px; 
 					&:after{display: block; position: absolute; right: 0; top:4px; width: 1px; height: 188px; content: ""; background: #d6d5d5;}
 					dt {
-						font-size: 20px; font-family: $font2;font-weight: bold; color:#222; line-height: 30px;
-						.flag {width: 80px; display: inline-block; line-height: 30px; font-size: 17px; text-align: center; border-radius: 100px; margin-right: 5px;}
+						overflow:hidden; font-size: 20px; font-family: $font2;font-weight: bold; color:#222; line-height: 30px; text-overflow: ellipsis; white-space: nowrap;
+						.flag {width: 80px; display: inline-block; padding-bottom: 2px; line-height: 28px; font-size: 16px; text-align: center; border-radius: 100px; margin-right: 5px;}
 					}
 					.txt {
-						display:-webkit-box; overflow:hidden; font-size: 16px; line-height: 24px; max-height: 120px; margin-top: 14px;
+						display:-webkit-box; overflow:hidden; font-size: 15px; line-height: 24px; max-height: 120px; margin-top: 14px;
 						-webkit-line-clamp:5; -webkit-box-orient:vertical; text-overflow:ellipsis; color:#666; padding-left: 7px;
 					}
 					.date {
-						position: absolute; left:160px; bottom:0; color:#666; font-size: 16px;
+						position: absolute; left:160px; bottom:0; color:#666; font-size: 15px;
 						&:before {display: inline-block; content: ""; width: 18px; height: 18px; @include background("usclib/main/icon_date.png",no-repeat 50% 50%); margin-right: 9px; vertical-align: middle; position: relative; top:-1px;}
 					}
 				}
@@ -246,9 +247,9 @@ MAIN
 				float: left; width: 640px; padding-left: 20px; padding-top: 5px;
 				li:before {display: inline-block; vertical-align: middle; content: ""; width: 4px; height: 4px; background:#acacac; margin-right: 10px;}
 				li + li {margin-top: 10px;}
-				.flag {display: inline-block; width: 68px; line-height: 22px; color:#fff; border-radius: 100px; text-align: center; vertical-align: middle;}
-				.cont {display: inline-block; vertical-align: middle; overflow:hidden; max-width: 420px; padding-left: 10px; color:#666; font-size: 16px; line-height: 22px; text-overflow:ellipsis; white-space: nowrap;}
-				.date {display: inline-block; float: right; color:#666; font-size: 16px; line-height: 22px;}
+				.flag {display: inline-block; width: 68px; padding-bottom: 2px; line-height: 20px; color:#fff; border-radius: 100px; text-align: center; vertical-align: middle; font-size: 14px;}
+				.cont {display: inline-block; vertical-align: middle; overflow:hidden; max-width: 420px; padding-left: 10px; color:#666; font-size: 15px; line-height: 22px; text-overflow:ellipsis; white-space: nowrap;}
+				.date {display: inline-block; float: right; color:#666; font-size: 15px; line-height: 22px;}
 			}
 		}
 		// 문화강좌
@@ -260,7 +261,7 @@ MAIN
 				& > li + li {border-left: 1px solid #d6d5d5;}
 				h3.tit {font-family: $font2;font-weight: bold; font-size: 20px; color:#222; text-align: center;}
 				.lst {
-					font-size: 16px; color:#666; line-height: 22px; margin-top: 13px;
+					font-size: 15px; color:#666; line-height: 22px; margin-top: 13px;
 					.tit {color:#222; font-family: $font2;font-weight: bold;}
 					.total {color:#df1111;}
 					.current {color:#016dae;}
@@ -285,14 +286,14 @@ MAIN
 				float: left; width:50%; height: 190px; border-right:1px solid #d6d5d5;
 				.tit {font-size: 20px; color:#222; font-family: $font2;font-weight: bold;}
 				.cont {
-					display:-webkit-box; overflow:hidden; font-size: 16px; line-height: 24px; max-height: 144px; margin-top: 17px; padding-right: 10px; -webkit-line-clamp:6; -webkit-box-orient:vertical; text-overflow:ellipsis; color:#666;
+					display:-webkit-box; overflow:hidden; font-size: 15px; line-height: 24px; max-height: 144px; margin-top: 15px; padding-right: 10px; -webkit-line-clamp:6; -webkit-box-orient:vertical; text-overflow:ellipsis; color:#666;
 				}
 			}
 			.l-right {
 				float: right; width:50%; height: 190px;
 				.lst {
 					li {padding-left: 20px;}
-					li a {display: inline-block; overflow:hidden; max-width: 90%; line-height: 32px; color:#666; font-size: 16px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle;}
+					li a {display: inline-block; overflow:hidden; max-width: 90%; line-height: 32px; color:#666; font-size: 15px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle;}
 					li:before {display: inline-block; content: ""; width: 4px; height: 4px; background:#acacac; vertical-align: middle; margin-right: 15px;}
 				}
 			}
@@ -304,7 +305,7 @@ MAIN
 				float: left; position: relative; width:50%; height: 190px; border-right:1px solid #d6d5d5;
 				.tit {font-size: 20px; color:#222; font-family: $font2; font-weight: bold;}
 				.cont {
-					display:-webkit-box; overflow:hidden; font-size: 16px; line-height: 24px; max-height: 120px; margin-top: 17px; padding-right: 10px; -webkit-line-clamp:5; -webkit-box-orient:vertical; text-overflow:ellipsis; color:#666;
+					display:-webkit-box; overflow:hidden; font-size: 15px; line-height: 24px; max-height: 120px; margin-top: 17px; padding-right: 10px; -webkit-line-clamp:5; -webkit-box-orient:vertical; text-overflow:ellipsis; color:#666;
 				}
 				.date {
 					position: absolute; left:0; bottom:0; color:#666; font-size: 16px;
@@ -316,8 +317,8 @@ MAIN
 				.lst {
 					li {padding-left: 20px;}
 					li:before {display: inline-block; content: ""; width: 4px; height: 4px; background:#acacac; vertical-align: middle; margin-right: 15px;}
-					.cont {display: inline-block; overflow:hidden; max-width: 80%; line-height: 32px; color:#666; font-size: 16px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle;}
-					.date {font-size: 16px; color:#666; float: right; line-height: 32px;	}
+					.cont {display: inline-block; overflow:hidden; max-width: 80%; line-height: 32px; color:#666; font-size: 15px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle;}
+					.date {font-size: 15px; color:#666; float: right; line-height: 32px;	}
 				}
 			}
 		}
@@ -718,7 +719,7 @@ SUB PAGE
 	.calander_tbl {
 		border-top: 2px solid #7a7a7a; 
 		th {
-			height: 49px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; text-align: center; color: #444; background: #f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; 
+			height: 49px; font-weight: bold; font-size: 16px; text-align: center; color: #444; background: #f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; 
 			&:first-child { color: #ea0909; border-left: 0; }
 			&:last-child { color: #1277cd; }
 		}
@@ -743,7 +744,7 @@ SUB PAGE
 		td:first-child {border-left:1px solid #d9d6d5;}
 		th {background:none; color:#787878;}
 		td {padding:0;}
-		td[class^=education] {line-height:20px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color:#fff;}
+		td[class^=education] {line-height:20px; font-weight: bold; color:#fff;}
 		td[class^=education].bg-01 {background:#f67280;}
 		td[class^=education].bg-02 {background:#02a3b0;}
 		td[class^=education].bg-03 {background:#ed553b;}
@@ -768,14 +769,14 @@ SUB PAGE
 // 문화강좌 신청
 .course  {
 	.comp-tbl_boardtype time {display:block;}
-	.comp-tbl_boardtype .ask {font-family:'NanumSquareB';color:#016dae;}
+	.comp-tbl_boardtype .ask {font-weight: bold;color:#016dae;}
 	.comp-tbl_boardtype .btn-check {display:block;width:100%;height:32px;line-height:32px;font-size:16px;border:1px solid;border-radius:8px;text-align:center;background:#eff9fe;border-color:#d4e0f2;color:#527cb8;box-sizing:border-box;}
-	table[class^=comp-tbl] *[class*='comm-btn'] {display:block;height:100%;padding-top:10px;border-radius:8px;font-family:'NanumSqaureB';line-height:1.2;}
+	table[class^=comp-tbl] *[class*='comm-btn'] {display:block;height:100%;padding-top:10px;border-radius:8px;font-weight: bold;line-height:1.2;}
 	.culture-wrap {
 		position:relative;padding:30px 25px;border:1px solid #d1d1d1;border-top:2px solid #3f889a;
-		.tit {margin-bottom:32px;font-size:19px;font-family:'NanumSquareB';color:#2e2e2e;}
+		.tit {margin-bottom:32px;font-size:19px;font-weight: bold;color:#2e2e2e;}
 		.culture-info li {
-			overflow:hidden;font-family:'NanumSquareB';
+			overflow:hidden;font-weight: bold;
 			& + li {margin-top:5px;}
 			& > div {float:left;}
 			.l-left {width:51%;}
@@ -800,7 +801,7 @@ SUB PAGE
 	.comp-btn-zone *[class*="comm-btn_type4"] {width:150px;}
 	table[class^=comp-tbl] .comm-btn_check_lightgray2 {width:100%;padding:0;font-size:16px;border:1px solid #d2d2d2;}
 	table[class^=comp-tbl][class*=_blue] .txt-notice {display:inline-block;margin-left:10px;font-size:15px;color:#ff4e00;}
-	.board-title {color:#4b4b4b;font-size:18px;font-family:'NanumSquareEB';text-align:center;line-height:50px;border-top:2px solid #155764;background: #eff9fe;}
+	.board-title {color:#4b4b4b;font-size:18px;font-weight: bold;text-align:center;line-height:50px;border-top:2px solid #155764;background: #eff9fe;}
 	.board-title + table[class^=comp-tbl][class*=_formtype] {border-top:1px solid #d9d6d5;}
 }
 

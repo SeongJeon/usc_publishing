@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* ------------------------------------------------------
+/* ------------------------------------------------------ 
 LAYOUT
 ------------------------------------------------------ */
 @media (min-width: 1025px) { body.pc .usclib #header .header-middle .title a { width: 224px; height: 52px; background: url("../../static/images/usclib/img_logo.png") no-repeat 50% 50%; }
@@ -94,6 +94,7 @@ MAIN
 #wrap.usclib #container.main .main-board-zone .tab li { float: left; width: 25%; }
 #wrap.usclib #container.main .main-board-zone .tab a { display: block; font-size: 22px; line-height: 55px; height: 55px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; text-align: center; }
 #wrap.usclib #container.main .main-board-zone .tab a[aria-selected=true], #wrap.usclib #container.main .main-board-zone .tab a:hover { background: #fff; color: #222; }
+#wrap.usclib #container.main .main-board-zone .tab span { position: relative; top: -2px; }
 #wrap.usclib #container.main .main-board-zone .tab-cont { display: none; overflow: hidden; height: 230px; background: #fff; box-shadow: 0 5px 10px rgba(24, 24, 24, 0.1); }
 #wrap.usclib #container.main .main-board-zone #boardTab1 { padding: 20px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .flag { color: #fff; }
@@ -106,23 +107,23 @@ MAIN
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-left .thumb img { width: 100%; height: 100%; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl { height: 190px; position: relative; padding: 0 30px 0 160px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl:after { display: block; position: absolute; right: 0; top: 4px; width: 1px; height: 188px; content: ""; background: #d6d5d5; }
-#wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl dt { font-size: 20px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #222; line-height: 30px; }
-#wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl dt .flag { width: 80px; display: inline-block; line-height: 30px; font-size: 17px; text-align: center; border-radius: 100px; margin-right: 5px; }
-#wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl .txt { display: -webkit-box; overflow: hidden; font-size: 16px; line-height: 24px; max-height: 120px; margin-top: 14px; -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; color: #666; padding-left: 7px; }
-#wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl .date { position: absolute; left: 160px; bottom: 0; color: #666; font-size: 16px; }
+#wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl dt { overflow: hidden; font-size: 20px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #222; line-height: 30px; text-overflow: ellipsis; white-space: nowrap; }
+#wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl dt .flag { width: 80px; display: inline-block; padding-bottom: 2px; line-height: 28px; font-size: 16px; text-align: center; border-radius: 100px; margin-right: 5px; }
+#wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl .txt { display: -webkit-box; overflow: hidden; font-size: 15px; line-height: 24px; max-height: 120px; margin-top: 14px; -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; color: #666; padding-left: 7px; }
+#wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl .date { position: absolute; left: 160px; bottom: 0; color: #666; font-size: 15px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-left dl .date:before { display: inline-block; content: ""; width: 18px; height: 18px; background: url("../../static/images/usclib/main/icon_date.png") no-repeat 50% 50%; margin-right: 9px; vertical-align: middle; position: relative; top: -1px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-right { float: left; width: 640px; padding-left: 20px; padding-top: 5px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-right li:before { display: inline-block; vertical-align: middle; content: ""; width: 4px; height: 4px; background: #acacac; margin-right: 10px; }
 #wrap.usclib #container.main .main-board-zone #boardTab1 .l-right li + li { margin-top: 10px; }
-#wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .flag { display: inline-block; width: 68px; line-height: 22px; color: #fff; border-radius: 100px; text-align: center; vertical-align: middle; }
-#wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .cont { display: inline-block; vertical-align: middle; overflow: hidden; max-width: 420px; padding-left: 10px; color: #666; font-size: 16px; line-height: 22px; text-overflow: ellipsis; white-space: nowrap; }
-#wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .date { display: inline-block; float: right; color: #666; font-size: 16px; line-height: 22px; }
+#wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .flag { display: inline-block; width: 68px; padding-bottom: 2px; line-height: 20px; color: #fff; border-radius: 100px; text-align: center; vertical-align: middle; font-size: 14px; }
+#wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .cont { display: inline-block; vertical-align: middle; overflow: hidden; max-width: 420px; padding-left: 10px; color: #666; font-size: 15px; line-height: 22px; text-overflow: ellipsis; white-space: nowrap; }
+#wrap.usclib #container.main .main-board-zone #boardTab1 .l-right .date { display: inline-block; float: right; color: #666; font-size: 15px; line-height: 22px; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 { padding-top: 15px; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture:after { display: block; clear: both; content: ""; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture > li { float: left; width: 25%; padding: 0 17px; box-sizing: border-box; letter-spacing: -0.5px; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture > li + li { border-left: 1px solid #d6d5d5; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture h3.tit { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 20px; color: #222; text-align: center; }
-#wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst { font-size: 16px; color: #666; line-height: 22px; margin-top: 13px; }
+#wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst { font-size: 15px; color: #666; line-height: 22px; margin-top: 13px; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst .tit { color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst .total { color: #df1111; }
 #wrap.usclib #container.main .main-board-zone #boardTab2 .lst-culture .lst .current { color: #016dae; }
@@ -136,22 +137,22 @@ MAIN
 #wrap.usclib #container.main .main-board-zone #boardTab3 { padding: 20px 25px 20px; }
 #wrap.usclib #container.main .main-board-zone #boardTab3 .l-left { float: left; width: 50%; height: 190px; border-right: 1px solid #d6d5d5; }
 #wrap.usclib #container.main .main-board-zone #boardTab3 .l-left .tit { font-size: 20px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
-#wrap.usclib #container.main .main-board-zone #boardTab3 .l-left .cont { display: -webkit-box; overflow: hidden; font-size: 16px; line-height: 24px; max-height: 144px; margin-top: 17px; padding-right: 10px; -webkit-line-clamp: 6; -webkit-box-orient: vertical; text-overflow: ellipsis; color: #666; }
+#wrap.usclib #container.main .main-board-zone #boardTab3 .l-left .cont { display: -webkit-box; overflow: hidden; font-size: 15px; line-height: 24px; max-height: 144px; margin-top: 15px; padding-right: 10px; -webkit-line-clamp: 6; -webkit-box-orient: vertical; text-overflow: ellipsis; color: #666; }
 #wrap.usclib #container.main .main-board-zone #boardTab3 .l-right { float: right; width: 50%; height: 190px; }
 #wrap.usclib #container.main .main-board-zone #boardTab3 .l-right .lst li { padding-left: 20px; }
-#wrap.usclib #container.main .main-board-zone #boardTab3 .l-right .lst li a { display: inline-block; overflow: hidden; max-width: 90%; line-height: 32px; color: #666; font-size: 16px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; }
+#wrap.usclib #container.main .main-board-zone #boardTab3 .l-right .lst li a { display: inline-block; overflow: hidden; max-width: 90%; line-height: 32px; color: #666; font-size: 15px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; }
 #wrap.usclib #container.main .main-board-zone #boardTab3 .l-right .lst li:before { display: inline-block; content: ""; width: 4px; height: 4px; background: #acacac; vertical-align: middle; margin-right: 15px; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 { padding: 20px 25px 20px; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-left { float: left; position: relative; width: 50%; height: 190px; border-right: 1px solid #d6d5d5; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-left .tit { font-size: 20px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
-#wrap.usclib #container.main .main-board-zone #boardTab4 .l-left .cont { display: -webkit-box; overflow: hidden; font-size: 16px; line-height: 24px; max-height: 120px; margin-top: 17px; padding-right: 10px; -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; color: #666; }
+#wrap.usclib #container.main .main-board-zone #boardTab4 .l-left .cont { display: -webkit-box; overflow: hidden; font-size: 15px; line-height: 24px; max-height: 120px; margin-top: 17px; padding-right: 10px; -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; color: #666; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-left .date { position: absolute; left: 0; bottom: 0; color: #666; font-size: 16px; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-left .date:before { display: inline-block; content: ""; width: 18px; height: 18px; background: url("../../static/images/usclib/main/icon_date.png") no-repeat 50% 50%; margin-right: 9px; vertical-align: middle; position: relative; top: -1px; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-right { float: right; width: 50%; height: 190px; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-right .lst li { padding-left: 20px; }
 #wrap.usclib #container.main .main-board-zone #boardTab4 .l-right .lst li:before { display: inline-block; content: ""; width: 4px; height: 4px; background: #acacac; vertical-align: middle; margin-right: 15px; }
-#wrap.usclib #container.main .main-board-zone #boardTab4 .l-right .lst .cont { display: inline-block; overflow: hidden; max-width: 80%; line-height: 32px; color: #666; font-size: 16px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; }
-#wrap.usclib #container.main .main-board-zone #boardTab4 .l-right .lst .date { font-size: 16px; color: #666; float: right; line-height: 32px; }
+#wrap.usclib #container.main .main-board-zone #boardTab4 .l-right .lst .cont { display: inline-block; overflow: hidden; max-width: 80%; line-height: 32px; color: #666; font-size: 15px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; }
+#wrap.usclib #container.main .main-board-zone #boardTab4 .l-right .lst .date { font-size: 15px; color: #666; float: right; line-height: 32px; }
 #wrap.usclib #container.main .main-favorit-zone { background: #eff0f1; padding: 24px 0 50px; overflow: hidden; }
 #wrap.usclib #container.main .main-favorit-zone .inner { position: relative; }
 #wrap.usclib #container.main .main-favorit-zone .tit { position: absolute; left: 0; top: 0; font-size: 23px; color: #2b2b2b; line-height: 30px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; padding-top: 20px; }
@@ -362,7 +363,7 @@ SUB PAGE
 .usclib_part05_01 .flow-chart li span { display: block; width: 110px; margin: 7px auto 0; padding: 7px 0 0; border-top: 1px solid #e9e8e7; font-size: 16px; color: #336ac0; line-height: 20px; }
 
 .seminar-guide .calander_tbl { border-top: 2px solid #7a7a7a; }
-.seminar-guide .calander_tbl th { height: 49px; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-size: 16px; text-align: center; color: #444; background: #f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; }
+.seminar-guide .calander_tbl th { height: 49px; font-weight: bold; font-size: 16px; text-align: center; color: #444; background: #f4f7f9; border-left: 1px solid #d9d6d5; border-bottom: 1px solid #d9d6d5; }
 .seminar-guide .calander_tbl th:first-child { color: #ea0909; border-left: 0; }
 .seminar-guide .calander_tbl th:last-child { color: #1277cd; }
 .seminar-guide .calander_tbl td { height: 100px; padding: 10px 12px; border-bottom: 1px solid #d9d6d5; border-left: 1px solid #d9d6d5; color: #303030; font-size: 18px; vertical-align: top; box-sizing: border-box; }
@@ -379,7 +380,7 @@ SUB PAGE
 .course-info table[class^=comp-tbl][class*=_datatype] tbody td:first-child { border-left: 1px solid #d9d6d5; }
 .course-info table[class^=comp-tbl][class*=_datatype] tbody th { background: none; color: #787878; }
 .course-info table[class^=comp-tbl][class*=_datatype] tbody td { padding: 0; }
-.course-info table[class^=comp-tbl][class*=_datatype] tbody td[class^=education] { line-height: 20px; font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; color: #fff; }
+.course-info table[class^=comp-tbl][class*=_datatype] tbody td[class^=education] { line-height: 20px; font-weight: bold; color: #fff; }
 .course-info table[class^=comp-tbl][class*=_datatype] tbody td[class^=education].bg-01 { background: #f67280; }
 .course-info table[class^=comp-tbl][class*=_datatype] tbody td[class^=education].bg-02 { background: #02a3b0; }
 .course-info table[class^=comp-tbl][class*=_datatype] tbody td[class^=education].bg-03 { background: #ed553b; }
@@ -401,12 +402,12 @@ SUB PAGE
 .course-info table[class^=comp-tbl][class*=_datatype] tbody td[class^=education].bg-19 { background: #c06c84; }
 
 .course .comp-tbl_boardtype time { display: block; }
-.course .comp-tbl_boardtype .ask { font-family: 'NanumSquareB'; color: #016dae; }
+.course .comp-tbl_boardtype .ask { font-weight: bold; color: #016dae; }
 .course .comp-tbl_boardtype .btn-check { display: block; width: 100%; height: 32px; line-height: 32px; font-size: 16px; border: 1px solid; border-radius: 8px; text-align: center; background: #eff9fe; border-color: #d4e0f2; color: #527cb8; box-sizing: border-box; }
-.course table[class^=comp-tbl] *[class*='comm-btn'] { display: block; height: 100%; padding-top: 10px; border-radius: 8px; font-family: 'NanumSqaureB'; line-height: 1.2; }
+.course table[class^=comp-tbl] *[class*='comm-btn'] { display: block; height: 100%; padding-top: 10px; border-radius: 8px; font-weight: bold; line-height: 1.2; }
 .course .culture-wrap { position: relative; padding: 30px 25px; border: 1px solid #d1d1d1; border-top: 2px solid #3f889a; }
-.course .culture-wrap .tit { margin-bottom: 32px; font-size: 19px; font-family: 'NanumSquareB'; color: #2e2e2e; }
-.course .culture-wrap .culture-info li { overflow: hidden; font-family: 'NanumSquareB'; }
+.course .culture-wrap .tit { margin-bottom: 32px; font-size: 19px; font-weight: bold; color: #2e2e2e; }
+.course .culture-wrap .culture-info li { overflow: hidden; font-weight: bold; }
 .course .culture-wrap .culture-info li + li { margin-top: 5px; }
 .course .culture-wrap .culture-info li > div { float: left; }
 .course .culture-wrap .culture-info li .l-left { width: 51%; }
@@ -427,7 +428,7 @@ SUB PAGE
 .course .comp-btn-zone *[class*="comm-btn_type4"] { width: 150px; }
 .course table[class^=comp-tbl] .comm-btn_check_lightgray2 { width: 100%; padding: 0; font-size: 16px; border: 1px solid #d2d2d2; }
 .course table[class^=comp-tbl][class*=_blue] .txt-notice { display: inline-block; margin-left: 10px; font-size: 15px; color: #ff4e00; }
-.course .board-title { color: #4b4b4b; font-size: 18px; font-family: 'NanumSquareEB'; text-align: center; line-height: 50px; border-top: 2px solid #155764; background: #eff9fe; }
+.course .board-title { color: #4b4b4b; font-size: 18px; font-weight: bold; text-align: center; line-height: 50px; border-top: 2px solid #155764; background: #eff9fe; }
 .course .board-title + table[class^=comp-tbl][class*=_formtype] { border-top: 1px solid #d9d6d5; }
 
 /* ------------------------------------------------------

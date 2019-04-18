@@ -44,7 +44,7 @@
 // * {outline:none}
 html {font-family:$font1; color:$color3; -webkit-text-size-adjust:none; font-size:16px;  letter-spacing:-0.5px; -webkit-overflow-scrolling:touch; }
 html body {min-width:320px;}
-html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, span, form, fieldset, input, select, label, textarea, table, caption, thead, tfoot, tbody, tr, th, td {margin:0;padding:0;-webkit-text-size-adjust:none; font-weight:normal;}
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, form, fieldset, input, select, label, textarea, table, caption, thead, tfoot, tbody, tr, th, td {margin:0;padding:0;-webkit-text-size-adjust:none; font-weight:normal;}
 address {font-stretch:normal;}
 b, span, strong, input, a, button{font-size:inherit;font-family:inherit;color:inherit;  line-height:inherit;}
 article, aside, dialog, footer, header, section, footer, nav, figure, hgroup, details, summary, figure, figcaption {display: block;}

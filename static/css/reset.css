@@ -5,7 +5,7 @@ html { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-seri
 
 html body { min-width: 320px; }
 
-html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, span, form, fieldset, input, select, label, textarea, table, caption, thead, tfoot, tbody, tr, th, td { margin: 0; padding: 0; -webkit-text-size-adjust: none; font-weight: normal; }
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, form, fieldset, input, select, label, textarea, table, caption, thead, tfoot, tbody, tr, th, td { margin: 0; padding: 0; -webkit-text-size-adjust: none; font-weight: normal; }
 
 address { font-stretch: normal; }
 

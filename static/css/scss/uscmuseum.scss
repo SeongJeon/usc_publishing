@@ -133,7 +133,7 @@ MAIN
 
 		div[class^=board-] {
 			float: left; width: 50%; position: relative;
-			.tit {float: left;font-family: $font3;font-weight: bold; line-height: 80px;}	
+			.tit {float: left;font-family: $font3;font-weight: bold; line-height: 78px; font-size: 20px;} 	
 			.cont {
 				font-family: $font2;font-weight: bold; line-height: 80px;
 				.flag {display:inline-block;margin-right: 3px;vertical-align: top;}
@@ -280,7 +280,7 @@ MAIN
 				float: left; width: 50%; height: 120px; box-sizing: border-box; 
 				& + div {border-left: 1px solid #fff;}
 				.tit {
-					float: left; font-size: 30px; font-family: $font3;font-weight: bold; color:#fff;
+					float: left; font-size: 28px; font-family: $font3;font-weight: bold; color:#fff;
 					.small {font-size: 16px; font-family: $font1;font-weight: normal;}
 				}
 			}
@@ -293,14 +293,14 @@ MAIN
 					padding-left: 190px; padding-top: 13px;
 					li {position: relative; padding-left:14px; font-size: 16px; line-height: 24px; color:#fff;}
 					li:before {display:block; position: absolute; left: 0; top:0; content: "-"; }
-					.sm {font-size: 14px;}
+					.sm {font-size: 12px;}
 					.lp {letter-spacing: 4px;}
 				}
 			}
 			.l-right {
 				.tit {
 					padding-left: 25px; margin-top: 15px;
-					.small {display: inline-block; margin-bottom:10px;}
+					.small {display: inline-block; margin-bottom:8px;}
 				}
 				.reservation-menu {
 					padding-left: 260px; padding-top: 6px;
@@ -308,7 +308,7 @@ MAIN
 					li {float: left; margin-left: 12px;}
 					li:first-child {margin-left: 0;}
 					a {
-						display:table; width: 105px; height: 105px; border-radius: 100px; border:1px solid #fff; box-sizing: border-box; color:#fff; font-size: 16px; line-height: 24px; text-align: center; box-sizing:border-box;
+						display:table; width: 105px; height: 105px; border-radius: 100px; border:1px solid #fff; box-sizing: border-box; color:#fff; font-size: 15px; line-height: 24px; text-align: center; box-sizing:border-box;
 						-ms-transition:0.3s ease; -webkit-transition:0.3s ease; -moz-transition:0.3s ease; transition:0.3s ease;
 						span {display: table-cell; vertical-align: middle;}
 						&:hover {background:#b47e35; border-color:#b47e35;}

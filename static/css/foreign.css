@@ -31,7 +31,7 @@ LAYOUT
 	body.pc .foreign #header.header-type2 #gnb h3 a:before { background: #1e4363; }
 	body.pc .foreign #header.header-type2.open { border-bottom-color: #f27405; background:#fff url("../../static/images/foreign/bg_gnb.png") repeat-x 0 100%;}
 	body.pc .foreign #header.header-type2.open .header-bottom { border-bottom-color: #ff9900; }
-	body.pc .foreign #gnb { margin-left: 390px; }
+	body.pc .foreign #gnb { margin-left: 388px; }
 	body.pc .foreign #gnb h2 a { width: 170px; }
 	body.pc .foreign #gnb .depth2menu { width: 272px; height: 230px; padding-left: 40px; }
 	body.pc .foreign #gnb .gnb > li:nth-child(1) .depth2menu { left: 0; }

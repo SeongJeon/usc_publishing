@@ -210,7 +210,7 @@ COMMON
 	input { position: absolute; overflow: hidden; left: 3px; top: 50%; width: 1px; height: 1px; visibility: hidden; }
 	label { display: inline-block; position: relative; font-size: 14px; color: #777; cursor: pointer; line-height: 18px; letter-spacing: -0.5px; }
 	label:before { display: inline-block; content: ""; width: 20px; height: 20px; background: url("../images/ebooksys/main/ipt_radio.png") no-repeat 0 0; vertical-align: middle; }
-	label span { margin-left: 6px; font-size:16px; color:#363636;}
+	label span { margin-left: 6px; font-size:14px; color:#363636;}
 	input:checked + label:before { background: url("../images/ebooksys/main/ipt_radio_checked.png") no-repeat 0 0; }
 }
 .ebooksys {
@@ -406,7 +406,7 @@ MAIN
 				.after {
 					display:none; position:absolute; left:0; top:0; width:100%; height:100%; padding:70px 10px 0; z-index: 1; background:#f2b263;
 					ul {
-						& > li {float:none; margin:0; font-size:15px; line-height:32px; color:#fff; font-weight:bold;}
+						& > li {float:none; margin:0; font-size:14px; line-height:32px; color:#fff; font-weight:bold;}
 						& > li:before {display:inline-block; content:"-"; margin-right:3px;}
 					}
 					.btn {display:block; height:40px; line-height:40px; margin-top:6px; color:#fff; background:#edd698; font-weight:bold; text-align:center;}
@@ -445,15 +445,15 @@ MAIN
 				&:after {display:block; content:""; clear:both;}
 				&:first-child {margin-top:0;}
 				& > * {float:left;}
-				.label {padding:13px 30px 13px 15px; background:url(../images/ebooksys/main/bg_detail-search_label.png) no-repeat right 50%; font-size:17px; color:#535353;}
-				input[type="text"] {width:300px; height:43px; line-height:43px; margin:0 0 0 10px; padding:0 0 0 10px; font-size:16px; -webkit-box-sizing:border-box;box-sizing:border-box; }
+				.label {padding:13px 30px 13px 15px; background:url(../images/ebooksys/main/bg_detail-search_label.png) no-repeat right 50%; font-size:16px; color:#535353;}
+				input[type="text"] {width:300px; height:43px; line-height:43px; margin:0 0 0 10px; padding:0 0 0 10px; font-size:14px; -webkit-box-sizing:border-box;box-sizing:border-box; }
 				.radio {padding:13px 0 13px 10px;}
 				.radio:after {display:block; content:""; clear:both;}
 				.radio > li {float:left; width:100px;}
 			} 
 		} 
 	}
-	.btn {width:100%; height: 45px; margin:18px 0 0; background:#ffa13d; border:1px solid #dddbdb; border-radius:5px; font-size:18px; font-weight:bold; color:#fff;}
+	.btn {width:100%; height: 45px; padding-bottom: 3px; margin:18px 0 0; background:#ffa13d; border:1px solid #dddbdb; border-radius:5px; font-size:18px; font-weight:bold; color:#fff;box-sizing: border-box;}
 	.close {position:absolute; right:18px; top:18px; width:23px; height:23px; background:url(../images/ebooksys/main/btn_layer_close.png) no-repeat; text-indent:-9999em;}
 }
 /* ------------------------------------------------------

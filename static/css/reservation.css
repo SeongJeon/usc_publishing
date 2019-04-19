@@ -29,6 +29,7 @@ LAYOUT
 	body.pc .reservation #header #gnb .gnb h2 { position: relative; }
 	body.pc .reservation #header #gnb .gnb h2:before { display: inline-block; position: absolute; left: 0; top: 50%; margin-top: -11px; content: ""; width: 1px; height: 20px; background: #e0dfdf; vertical-align: middle; }
 	body.pc .reservation #header #gnb .gnb h2 a { display: block; position: relative; width: 250px; line-height: 59px; font-size: 20px; color: #333; text-align: center; }
+	body.pc .reservation #header #gnb .gnb h2 a span {position: relative; top:-2px;}
 	body.pc .reservation #header #gnb .gnb h2.over a, body.pc .reservation #header #gnb .gnb h2 a:hover { font-weight: bold;}
 	body.pc .reservation #header #gnb .gnb h2.over a:before, body.pc .reservation #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: -1px; left: 0; width: 100%; content: ""; background: #3cb7cd; height: 6px; z-index: 1000; }
 	body.pc .reservation #header #gnb .gnb h2.over a:after, body.pc .reservation #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -10px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #3cb7cd; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
@@ -135,15 +136,15 @@ MAIN
 
 .reservation .slide-wrap .slick-list {margin-left:-20px;}
 .reservation .tab-contents > div {position:relative;display:none;overflow:hidden;}
-.reservation .reserve-area {position:relative;width:248px;height:380px;margin-left:20px;padding-top:22px;background:#fff;border:1px solid #cbc6c5;}
+.reservation .reserve-area {position:relative;width:248px;height:380px;margin-left:20px;padding-top:18px;background:#fff;border:1px solid #cbc6c5;}
 .reservation .reserve-inner {padding:0 12px;}
-.reservation .slide-wrap .tit {overflow:hidden;margin-bottom:8px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;color:#383838;font-weight: bold;font-size:18px;}
-.reservation .slide-wrap .txt {display:block;margin-bottom:8px;font-size:15px;color:#868686;}
-.reservation .slide-wrap .img-area {margin-bottom:12px;}
+.reservation .slide-wrap .tit {overflow:hidden;margin-bottom:6px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;color:#383838;font-weight: bold;font-size:18px;}
+.reservation .slide-wrap .txt {display:block;margin-bottom:6px;font-size:15px;color:#868686;}
+.reservation .slide-wrap .img-area {margin-bottom:10px;}
 .reservation .slide-wrap .img-area img {width:220px;height:136px;border:1px solid #d6d5d5;}
 .reservation .reserve-wrap .info-list {margin:0 0 10px 3px;}
 .reservation .reserve-wrap .info-list li {position:relative;padding-left:10px;font-size:14px;color:#383838;letter-spacing:-1px;}
-.reservation .reserve-wrap .info-list li + li {margin-top:10px;}
+.reservation .reserve-wrap .info-list li + li {margin-top:8px;}
 .reservation .reserve-wrap .info-list li:before {position:absolute;left:0;top:2px;font-size:10px;content:'▶';}
 .reservation .reserve-wrap .info-list em {font-weight: bold;color:#1667c1;}
 .reservation .reserve-wrap .btn-reserve,
@@ -166,10 +167,10 @@ MAIN
 .reservation .section-combine {padding:25px 0;}
 .reservation .combine-inner {max-width:1320px;margin:0 auto;}
 .reservation .combine-inner:after {display:block;clear:both;content:'';}
-.reservation .combine-inner h3 {float:left;width:130px;padding:20px 0 32px;background:url(../images/reservation/main/bg_combine_arrow.png) no-repeat bottom left;font-size:23px;line-height:30px;font-weight: bold;color:#2b2b2b;}
+.reservation .combine-inner h3 {float:left;width:130px;padding:20px 0 32px;background:url(../images/reservation/main/bg_combine_arrow.png) no-repeat bottom left;font-size:22px;line-height:30px;font-weight: bold;color:#2b2b2b;}
 .reservation .combine-inner .combine-list {float:right;width:90%;}
 .reservation .combine-inner .combine-list div[class*="combine"] {float:left;width:12.5%}
-.reservation .combine-inner .combine-list a {display:block;padding-top:103px;font-size:17px;color:#555;text-align:center;}
+.reservation .combine-inner .combine-list a {display:block;padding-top:103px;font-size:16px;color:#555;text-align:center;}
 
 /* 자주찾는 통합예약강좌 ico */
 .reservation .combine-inner .combine-list .combine01 a {background:url(../images/reservation/main/ico_combine01_off.png) no-repeat center top;}

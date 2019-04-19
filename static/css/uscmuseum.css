@@ -69,7 +69,7 @@ MAIN
 #wrap.uscmuseum #container.main .inner:after { display: block; clear: both; content: ""; }
 #wrap.uscmuseum #container.main .main-board-zone { overflow: hidden; height: 80px; background: url("../../static/images/uscmuseum/main/bg_board1.png") no-repeat 0 0, url("../../static/images/uscmuseum/main/bg_board2.png") no-repeat 50% 0; background-size: 50% 100%, 100% 100%; }
 #wrap.uscmuseum #container.main .main-board-zone div[class^=board-] { float: left; width: 50%; position: relative; }
-#wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .tit { float: left; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; line-height: 80px; }
+#wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .tit { float: left; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; line-height: 78px; font-size: 20px; }
 #wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .cont { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; line-height: 80px; }
 #wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .cont .flag { display: inline-block; margin-right: 3px; vertical-align: top; }
 #wrap.uscmuseum #container.main .main-board-zone div[class^=board-] .cont .txt { display: inline-block; overflow: hidden; max-width: 70%; text-overflow: ellipsis; white-space: nowrap; }
@@ -140,22 +140,22 @@ MAIN
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information { margin-top: 55px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] { float: left; width: 50%; height: 120px; box-sizing: border-box; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] + div { border-left: 1px solid #fff; }
-#wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] .tit { float: left; font-size: 30px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; }
+#wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] .tit { float: left; font-size: 28px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information div[class^=l-] .tit .small { font-size: 16px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: normal; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .tit { padding-top: 22px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .tit .small { margin-left: 5px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .information-lst { padding-left: 190px; padding-top: 13px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .information-lst li { position: relative; padding-left: 14px; font-size: 16px; line-height: 24px; color: #fff; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .information-lst li:before { display: block; position: absolute; left: 0; top: 0; content: "-"; }
-#wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .information-lst .sm { font-size: 14px; }
+#wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .information-lst .sm { font-size: 12px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-left .information-lst .lp { letter-spacing: 4px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .tit { padding-left: 25px; margin-top: 15px; }
-#wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .tit .small { display: inline-block; margin-bottom: 10px; }
+#wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .tit .small { display: inline-block; margin-bottom: 8px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu { padding-left: 260px; padding-top: 6px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu:after { display: block; clear: both; content: ""; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu li { float: left; margin-left: 12px; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu li:first-child { margin-left: 0; }
-#wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu a { display: table; width: 105px; height: 105px; border-radius: 100px; border: 1px solid #fff; box-sizing: border-box; color: #fff; font-size: 16px; line-height: 24px; text-align: center; box-sizing: border-box; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; }
+#wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu a { display: table; width: 105px; height: 105px; border-radius: 100px; border: 1px solid #fff; box-sizing: border-box; color: #fff; font-size: 15px; line-height: 24px; text-align: center; box-sizing: border-box; -ms-transition: 0.3s ease; -webkit-transition: 0.3s ease; -moz-transition: 0.3s ease; transition: 0.3s ease; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu a span { display: table-cell; vertical-align: middle; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-information .l-right .reservation-menu a:hover { background: #b47e35; border-color: #b47e35; }
 #wrap.uscmuseum #container.main .main-visual-zone .museum-menu { margin-top: 30px; }

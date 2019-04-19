@@ -35,6 +35,7 @@ LAYOUT
 						&:before {display: block; position: absolute; bottom:0px; left:0; width: 100%; content: ""; background:#d94343; height: 6px; z-index: 1000}
 						&:after {display: block; position: absolute; bottom:-10px; left:50%; width:21px; height: 21px; margin-left: -10.5px; content: ""; border:6px solid #d94343; box-sizing: border-box; border-radius: 100px; background:#fff; z-index: 1000}
 					}
+					span {position: relative; top:-2px;}
 				}
 			}
 			.depth2menu {display:none; position: absolute; top:100%; left:0; padding-top: 37px; background: #fff; }

@@ -53,14 +53,14 @@ MAIN
 #wrap.farmingtech #container.main .main-middle-zone .board-zone ul[role=tablist] a[aria-selected=true] { border-bottom: 3px solid #ff712c; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] { display: none; padding-top: 25px; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl { position: relative; padding-left: 100px; min-height: 92px; }
-#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl dt { font-size: 20px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; padding-top: 3px; }
-#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl dt .date { position: absolute; left: 0; top: 0; display: block; width: 90px; height: 92px; padding-top: 21px; border: 1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color: #666; text-align: center; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl dt { font-size: 20px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl dt .date { position: absolute; left: 0; top: 0; display: block; width: 90px; height: 92px; padding-top: 16px; border: 1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color: #666; text-align: center; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl dt .date strong { display: block; margin-top: 1px; color: #ff712c; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 28px; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] dl dd { display: -webkit-box; overflow: hidden; max-height: 52px; margin-top: 11px; font-size: 16px; color: #666; line-height: 26px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst { padding: 20px 0 0 6px; border-top: 1px solid #e2e2e2; margin-top: 15px; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst li + li { margin-top: 15px; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst a:before { display: inline-block; content: ""; vertical-align: middle; width: 3px; height: 3px; background: #000; margin-right: 7px; }
-#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst a .cont { display: inline-block; overflow: hidden; max-width: 80%; color: #222; font-size: 16px; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; }
+#wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst a .cont { display: inline-block; overflow: hidden; max-width: 80%; color: #222; font-size: 16px; text-overflow: ellipsis; white-space: nowrap; vertical-align: top; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst a .date { float: right; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .btn-more { position: absolute; right: 20px; top: 24px; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .btn-more a { display: block; width: 30px; height: 30px; border: 1px solid #ccc; background: url("../../static/images/farmingtech/btn_more.jpg") no-repeat 50% 50%; text-indent: -999em; }

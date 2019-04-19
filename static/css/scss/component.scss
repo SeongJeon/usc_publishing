@@ -426,7 +426,7 @@
 			.depth3menu {background: #f4f4f4; margin-left: -15px; padding:4px 0 7px 25px; margin-top: 5px;}
 			.depth3menu > li {line-height: 22px}
 			h2 {display: inline-block; vertical-align: top; }
-			h2 a {display: block; position: relative; font-size: 19px; color:#343434; text-align: center; }
+			h2 a {display: block; position: relative; font-size: 17px; color:#343434; text-align: center; }
 			h2 a span {position: relative; top:-4px;}
 			p a {display: block; width:100%; font-size: 17px; color:#2d2d2d; text-align: center; line-height: 35px; background: #d6eef0}
 			p a span {position:relative; top:-2px;}
@@ -595,7 +595,7 @@ br.m {display:none}
 	&[class*=_type1] {display: inline-block; width: 190px; height: 50px; line-height: 50px; vertical-align: middle; text-align: center;  font-size: 18px; font-family: $font2; font-weight: bold; box-sizing: border-box;}
 	&[class*=_type2] {display: inline-block; width: 100px; height: 35px; line-height: 33px; vertical-align: middle; text-align: center;  font-size: 15px; border:1px solid #d9d6d5; color:#787878; box-sizing: border-box;}
 	&[class*=_type3] {display: inline-block; min-width: 120px; height: 42px; line-height: 40px; vertical-align: middle; text-align: center;  font-size: 15px; border-width:1px; border-style:solid; box-sizing: border-box;}
-	&[class*=_type4] {display: inline-block; height: 45px; padding:0 25px; line-height: 43px; vertical-align: middle; text-align: center;  font-size: 16px; border-width:1px; border-style:solid; box-sizing: border-box;}
+	&[class*=_type4] {display: inline-block; height: 45px; padding:0 20px; line-height: 43px; vertical-align: middle; text-align: center;  font-size: 16px; border-width:1px; border-style:solid; box-sizing: border-box;}
 	&[class*=_round] {border-radius: 4px}
 	
 	
@@ -693,7 +693,7 @@ br.m {display:none}
 	}
 	&[class*=-h4] {
 		position: relative; padding-left: 18px; font-size: 18px;font-family: $font2; font-weight: bold;color:#111; margin-left: 30px;
-		&:before {display: inline-block; position: absolute; left:0; top:0; content: ""; width: 12px; height: 19px;  @include background("common/bul_h4.png",no-repeat 50% 50%); }
+		&:before {display: inline-block; position: absolute; left:0; top:3px; content: ""; width: 12px; height: 19px;  @include background("common/bul_h4.png",no-repeat 50% 50%); }
 	}
 
 	&[class*=_tab] {
@@ -1682,14 +1682,14 @@ div[class^=comp-public-area] {
 		position:relative; height:398px; background:url(../../static/images/usc/subpage/bg_tit_login_zone.png); border-bottom:4px solid #ff9c00; text-align:center;
 		.inner {position: relative; width:1220px; height: 400px; margin:0 auto; padding:45px 0 0;}
 		.title {
-			font-family:'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:36px; color:#000;
+			font-weight: bold; font-size:36px; color:#000;
 			&:before {display:block; content:""; width:192px; height:89px; margin:0 auto 20px auto; background:url(../images/usc/subpage/img_usclogo.png) no-repeat;}
 			.point {color:#f27405;}
 		}
 		.txt {margin:28px 0 22px; line-height:30px; font-size:24px; color:#303030;}
 		.tail {line-height:28px; font-size:18px; color:#303030;}
 		.subtit { 
-			position:absolute; bottom:-42px; left:0; width: 100%; height:90px; line-height:90px; background:#ff9c00; border-radius:40px; font-family:'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size:30px; color:#fff;
+			position:absolute; bottom:-42px; left:0; width: 100%; height:90px; line-height:90px; background:#ff9c00; border-radius:40px; font-weight: bold; font-size:30px; color:#fff;
 			&:before,
 			& span:before {position:absolute; top:50%; display:block; content:""; width:20px; height:20px; margin-top:-10px; background:#fff; border-radius:100%;}
 			&:after,
@@ -1705,7 +1705,7 @@ div[class^=comp-public-area] {
 	.info-zone {
 		line-height:30px; margin:50px 0 0; font-size:18px; color:#303030; text-align:center;
 		p.txt {
-			position:relative; display:inline-block; padding:0 0 0 37px;
+			position:relative; display:inline-block; padding:0 0 0 37px; font-size: 16px;
 			&:before {position:absolute; left:0; top:0; display:block; content:"!"; width:30px; height:30px; line-height:30px; background:#ee3106; border-radius:100%; font-family:$font2;font-weight: bold; color:#fff; text-align:center;}
 			.point {
 				display:block;
@@ -1733,7 +1733,7 @@ div[class^=comp-public-area] {
 			li {float: left; width: 33%; border-left: 1px solid #ff9c00; box-sizing:border-box;}
 			li:nth-child(2) {width: 34%}
 			li:first-child {border-left: 0;}
-			a {display: block; width: 100%; font-size: 30px; color:#1e1e1e; text-align: center; line-height: 84px; background:#fff;font-family: $font2;font-weight: bold;}
+			a {display: block; width: 100%; height:84px; font-size: 30px; color:#1e1e1e; text-align: center; line-height: 80px; background:#fff;font-family: $font2;font-weight: bold;}
 			a[aria-selected="true"] {background:#ff9c00; color:#fff;}
 		}
 	}
@@ -1858,13 +1858,13 @@ div[class^=comp-public-area] {
 				.tit {font-size: 22px; color:#f27405; font-family: $font2;font-weight: bold;}
 				.txt {margin-top: 8px; font-size: 16px;}
 				ul[class^=comp-lst][class*=_hyphen] {
-					margin-top: 30px; text-align: left;
-					li {color:#343434; font-size: 16px; line-height: 24px}
+					margin-top: 28px; text-align: left;
+					li {color:#343434; font-size: 15px; line-height: 24px}
 				}
-				.btn-zone {margin-top: 50px}
+				.btn-zone {margin-top: 45px}
 			}
 		}
-	}
+	} 
 
 	// 공통 로그인 
 	.contents-zone .wrap-login-zone {

@@ -16,6 +16,7 @@ LAYOUT
   body.pc .lifeedu #header #gnb .gnb h2.over a, body.pc .lifeedu #header #gnb .gnb h2 a:hover { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
   body.pc .lifeedu #header #gnb .gnb h2.over a:before, body.pc .lifeedu #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: -1px; left: 0; width: 100%; content: ""; background: #ff7a39; height: 6px; z-index: 1000; }
   body.pc .lifeedu #header #gnb .gnb h2.over a:after, body.pc .lifeedu #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -10px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #ff7a39; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
+  body.pc .lifeedu #header #gnb .gnb h2 span { position: relative; top: -3px; }
   body.pc .lifeedu #header #gnb .depth2menu { display: none; position: absolute; top: 100%; width: 250px; height: 200px; padding-top: 17px; }
   body.pc .lifeedu #header #gnb h2 { display: inline-block; vertical-align: top; }
   body.pc .lifeedu #header #gnb h2 a { display: block; position: relative; font-size: 18px; color: #343434; text-align: center; }
@@ -155,7 +156,7 @@ SUB PAGE
 /* 강좌 상세 */
 .class-simple-infor { padding: 15px 20px 28px; position: relative; border: 1px solid #d1d1d1; border-top: 2px solid #014099; }
 .class-simple-infor .class-name .name { display: block; margin-top: 14px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 19px; padding-right: 85px; }
-.class-simple-infor .booking-state { position: absolute; right: -1px; top: -2px; width: 90px; height: 90px; padding-top: 18px; box-sizing: border-box; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; text-align: center; background: #014099; font-size: 17px; }
+.class-simple-infor .booking-state { position: absolute; right: -1px; top: -2px; width: 90px; height: 90px; padding-top: 16px; box-sizing: border-box; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; text-align: center; background: #014099; font-size: 17px; }
 .class-simple-infor .booking-state .sm { color: #fff475; font-size: 14px; display: block; padding-top: 23px; background: url("../../static/images/lifeedu/subpage/bg_txt.png") no-repeat 50% 9px; }
 .class-simple-infor .booking-state.not { background: #797979; }
 .class-simple-infor .class-lst { overflow: hidden; margin-top: 26px; }
@@ -294,12 +295,12 @@ SUB PAGE
 .application_process_lst { margin-top: 20px; border: 1px solid #d6d5d5; padding: 30px 0 28px; border-radius: 5px; text-align: center; }
 .application_process_lst ol { display: inline-block; }
 .application_process_lst ol:after { display: block; clear: both; content: ""; }
-.application_process_lst li { float: left; position: relative; width: 220px; padding-left: 62px; border: 2px solid #7c9ddb; border-radius: 100px; line-height: 46px; color: #111; font-size: 17px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; letter-spacing: -1px; text-align: left; box-sizing: border-box; }
+.application_process_lst li { float: left; position: relative; width: 220px; padding-bottom: 2px; padding-left: 62px; border: 2px solid #7c9ddb; border-radius: 100px; line-height: 44px; color: #111; font-size: 15px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; letter-spacing: -1px; text-align: left; box-sizing: border-box; }
 .application_process_lst li + li { margin-left: 30px; }
 .application_process_lst li:nth-child(even) { border-color: #2e56bd; }
 .application_process_lst li:nth-child(even) .step { background: #2e56bd; }
 .application_process_lst li + li:before { display: inline-block; position: absolute; left: -20px; top: 50%; width: 9px; height: 14px; background: url("../../static/images/lifeedu/subpage/icon_arrow2.png") no-repeat 50% 50%; margin-top: -7px; content: ""; }
-.application_process_lst .step { display: inline-block; position: absolute; left: -2px; top: -2px; width: 50px; height: 50px; padding-top: 13px; font-size: 11px; text-align: center; border-radius: 100px; background: #7c9ddb; line-height: 1; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; box-sizing: border-box; }
+.application_process_lst .step { display: inline-block; position: absolute; left: -2px; top: -2px; width: 50px; height: 50px; padding-top: 11px; font-size: 11px; text-align: center; border-radius: 100px; background: #7c9ddb; line-height: 1; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; box-sizing: border-box; }
 .application_process_lst .step em { display: block; font-size: 17px; }
 
 .tbl-lifeedu { padding: 10px 3px 10px; margin: 4px 0; min-height: 230px; border: 1px solid #d9d6d5; }
@@ -308,14 +309,14 @@ SUB PAGE
 .tbl-lifeedu td { padding: 3px 3px 2px; }
 .tbl-lifeedu .w_form input { width: 180px; }
 .tbl-lifeedu .w_form *[class^=comm-btn] { width: auto; padding: 0 10px; }
-.tbl-lifeedu .w_activity input { width: 127px; }
+.tbl-lifeedu .w_activity input { width: 125px; }
 .tbl-lifeedu .w_activity .txt { color: #787878; }
 .tbl-lifeedu .add-btn-position { text-align: right; margin-top: 5px; }
 .tbl-lifeedu .add-btn-position *[class^=comm-btn] { width: 150px; }
 
 /* 평생네트워크 */
 .institute .map-institute { position: relative; overflow: hidden; padding: 35px 0 50px; background: #f4f4f4; border: 1px solid #d1d1d1; border-top: 2px solid #014099; border-bottom: 1px solid #014099; }
-.institute .map-institute .tit { float: left; width: 32%; padding-left: 47px; font-size: 26px; box-sizing: border-box; }
+.institute .map-institute .tit { float: left; width: 32%; padding-left: 47px; font-size: 24px; box-sizing: border-box; }
 .institute .map-institute .tit span { color: #2e56bd; }
 .institute .map-institute .comp-lst_important { position: absolute; bottom: 70px; left: 50px; color: #3e3e3e; }
 .institute .map-wrap { float: left; position: relative; width: 69%; margin-left: -40px; background: url(../images/lifeedu/subpage/img_map.png) no-repeat left top; z-index: 1; }
@@ -347,7 +348,7 @@ SUB PAGE
 .vision .vision-wrap .tit:after { position: absolute; bottom: 0; left: 79px; display: inline-block; width: 1px; height: 32px; background: #c7c1bf; content: ''; }
 .vision .vision-list > li { overflow: hidden; padding: 34px 0; border-top: 1px dotted #a19e9f; }
 .vision .vision-list > li:first-child { padding-top: 0; border-top: 0; }
-.vision .vision-list .keyword { position: relative; display: inline-block; width: 156px; height: 56px; line-height: 56px; font-family: 'NanumSquareEB'; color: #fff; vertical-align: top; text-align: center; font-size: 24px; }
+.vision .vision-list .keyword { position: relative; display: inline-block; width: 156px; height: 56px; line-height: 54px; font-family: 'NanumSquareEB'; color: #fff; vertical-align: top; text-align: center; font-size: 24px; }
 .vision .vision-list .keyword:before { position: absolute; left: 7px; top: -3px; display: inline-block; width: 1px; height: 22px; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); content: ''; }
 .vision .vision-list .list01 .keyword { border: 2px solid #fdc107; background: #ecdb60; color: #363636; }
 .vision .vision-list .list02 .keyword { border: 2px solid #00a388; background: #a1cd73; }
@@ -368,7 +369,7 @@ SUB PAGE
 .vision .vision-list .vision-detail .num-list li { overflow: hidden; margin-top: 12px; }
 .vision .vision-list .vision-detail .num-list li:first-child { margin-top: 0; }
 .vision .vision-list .vision-detail .num-list li .num { display: inline-block; width: 32px; height: 32px; text-align: center; line-height: 32px; border-radius: 50%; font-size: 16px; color: #fff; }
-.vision .vision-list .vision-detail .num-list li .txt { display: inline-block; width: -webkit-calc(100% - 36px); width: -moz-calc(100% - 36px); width: -o-calc(100% - 36px); width: calc(100% - 36px); padding-left: 10px; font-size: 18px; box-sizing: border-box; }
+.vision .vision-list .vision-detail .num-list li .txt { display: inline-block; width: -webkit-calc(100% - 40px); width: -moz-calc(100% - 40px); width: -o-calc(100% - 40px); width: calc(100% - 40px); padding-left: 10px; font-size: 18px; box-sizing: border-box; }
 .vision .vision-list .list02 .vision-detail { text-align: center; }
 .vision .vision-list .list02 .vision-detail .txt-box { margin-bottom: 25px; vertical-align: middle; line-height: 52px; }
 .vision .vision-list .list02 .vision-detail .txt { display: inline-block; font-size: 20px; vertical-align: 4px; }

@@ -790,7 +790,7 @@ SUB PAGE
 		}
 	}
 	.receipt-area {
-		position:absolute;top:-2px;right:0;width:90px;height:90px;padding-top:20px;text-align:center;background:#155764;
+		position:absolute;top:-2px;right:0;width:90px;height:90px;padding-top:16px;text-align:center;background:#155764;
 		&.not {background:#797979;}
 		em {position:relative;display:block;padding-bottom:23px;font-size:17px;color:#fff;}
 		em:after {position:absolute;bottom:10px;left:50%;display:block;width:18px;height:6px;margin-left:-9px;background:url(../images/usclib/subpage/bg_receipt.png) no-repeat left top;content:'';}

@@ -30,7 +30,7 @@ LAYOUT
 		.header-bottom .sitemap {background: #2952b9}
 		&.header-type2 #gnb {
 			margin-left: 325px;
-			h2 a {width: 130px}
+			h2 a {width: 128px}
 			p a {background:#dbf0f5;}	
 			.depth2menu {width: 191px; height: 370px; padding-left:17px; padding-top: 22px;}
 
@@ -86,7 +86,7 @@ COMMON
 	table[class^=comp-tbl][class*=_datatype] {border-top-color: #2a3b65}
 
 	.heading-zone {
-		.comm-btn_type2 {width:auto; padding:0 15px; margin-left: 10px;border-color:#2952b9; color:#2952b9;}
+		.comm-btn_type2 {width:auto; padding:0 15px; margin-left: 10px;border-color:#2952b9; color:#2952b9; vertical-align: top;}
 	}
 }
 /* ------------------------------------------------------
@@ -113,7 +113,7 @@ MAIN
 					display: block; content: ""; position: relative; width: 90px; height: 90px; overflow: hidden; border-radius: 100px; margin:0 auto; background-color: #fff !important;
 					-ms-transition:0.3s ease; -webkit-transition:0.3s ease; -moz-transition:0.3s ease; transition:0.3s ease;
 				}
-				.name {display: block; font-size: 17px; text-align: center; color:#555; margin-top: 12px;}
+				.name {display: block; font-size: 15px; text-align: center; color:#555; margin-top: 12px;}
 			}
 			a.f1:before {@include background("sewagebusiness/main/icon_favorit1.png",no-repeat 50% 50%);}
 			a.f2:before {@include background("sewagebusiness/main/icon_favorit2.png",no-repeat 50% 50%);}
@@ -161,10 +161,10 @@ MAIN
 			dl {
 				position: relative; padding-left: 100px; min-height: 92px;
 				dt {
-					font-size: 20px; color:#222; font-family: $font2;font-weight: bold;  padding-top: 3px;
+					font-size: 20px; color:#222; font-family: $font2;font-weight: bold;  
 					.date {
 						position: absolute; left:0; top:0;
-						display: block; width:90px; height: 92px; padding-top: 21px; border:1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color:#666; text-align: center;
+						display: block; width:90px; height: 92px; padding-top: 17px; border:1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color:#666; text-align: center;
 						strong {display:block; margin-top: 1px; color:#2952b9; font-family: $font2;font-weight: bold; font-size: 28px; }
 					}
 				}
@@ -172,10 +172,10 @@ MAIN
 			}
 			.lst {
 				padding:20px 0 0 6px; border-top: 1px solid #e2e2e2; margin-top: 15px;
-				li + li {margin-top: 15px;}
+				li + li {margin-top: 13px;}
 				a {
 					&:before{display: inline-block; content: ""; vertical-align: middle; width:3px; height: 3px; background:#000; margin-right: 7px;}
-					.cont {display: inline-block; overflow:hidden; max-width:80%;  color:#222; font-size: 16px; text-overflow:ellipsis; white-space: nowrap; vertical-align: middle;}
+					.cont {display: inline-block; position: relative; overflow:hidden; max-width:80%;  color:#222; font-size: 16px; text-overflow:ellipsis; white-space: nowrap; vertical-align: middle; top:-2px;}
 					.date {float: right;}
 				}
 			}
@@ -193,13 +193,13 @@ MAIN
 		.infor-complaint {
 			float: right;width:315px; height:330px; padding:22px 20px 0; background:#4561a8; color:#fff;
 			.call {
-				margin-top: 11px; font-size: 24px; line-height: 30px; font-family: $font2; font-weight: bold; padding:5px 0 8px 72px;
+				margin-top: 11px; font-size: 24px; line-height: 30px; font-family: $font2; font-weight: bold; padding:3px 0 8px 72px;
 				@include background("sewagebusiness/main/icon_call.png",no-repeat 0% 0%);
 			}
 			.call-lst {
 				font-size: 16px; line-height: 34px; margin-top: 1px;
 				li {border-bottom: 1px solid rgba(256,256,256,0.3); padding:0 10px; font-family: $font2; font-weight: bold;}
-				li:before{display: inline-block; content: "·"; margin-right: 5px; vertical-align: middle;}
+				li:before{display: inline-block; content: "·"; margin-right: 5px; vertical-align: top;}
 				.num {float: right;}
 			}
 		}
@@ -291,7 +291,7 @@ SUB PAGE
 .calculation-ex-zone {
 	margin-left: 30px; margin-top: 15px; padding:25px; background:#f4f4f4; border:1px solid #cdcdcd;
 	.extit {margin-bottom: 15px; font-family: $font2;font-weight: bold; color:#111; font-size: 18px;}
-	.extit strong  {color:#2952b9;}
+	.extit strong  {color:#2952b9; font-weight: bold;}
 
 	table[class^=comp-tbl][class*=_datatype] {
 		margin-top: 10px; margin-bottom: 15px; border-top-color: #2a3b65; border-bottom-color: #2a3b65;

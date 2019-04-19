@@ -27,7 +27,7 @@ LAYOUT
 	body.pc .openleader #header .header-middle .title a {width: 224px; height: 52px; background:url("../../static/images/openleader/img_logo.png") no-repeat 50% 50%;}
 	body.pc .openleader #header .header-bottom .sitemap {background: #1058a8}
 	
-	body.pc .openleader #gnb {margin-left: 345px;}
+	body.pc .openleader #gnb {margin-left: 339px;}
 	body.pc .openleader #gnb h2 a {width: 180px}
 	body.pc .openleader #gnb .depth2menu {width: 272px; height: 269px; padding-left: 40px;}
 
@@ -88,7 +88,7 @@ MAIN
 	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li {position:relative;  overflow:hidden; margin-top:14px; padding:0 0 0 15px; box-sizing: border-box;}
 	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:first-child {margin-top:0;}
 	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li:before {position:absolute; left:0; top:11px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
-	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .ico {display:inline-block; height:26px; line-height:26px; padding:0 13px; vertical-align:top; border:1px solid; border-radius:15px; font-size:16px; -webkit-box-sizing:border-box; box-sizing:border-box;}
+	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .ico {display:inline-block; height:26px; line-height:24px; padding:0 13px; vertical-align:top; border:1px solid; border-radius:15px; font-size:16px; -webkit-box-sizing:border-box; box-sizing:border-box;}
 	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color1 {border-color:#1058a8;}
 	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color2 {border-color:#348899;}
 	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .color3 {border-color:#962d3e;}
@@ -138,7 +138,7 @@ MAIN
 	.openleader .main-visual .section-02 .inner .list-banner .list ul > li:first-child a {border-top:none;}
 	.openleader .main-visual .section-02 .inner .list-banner .list ul > li.on:after {position:absolute; left:0; top:0; display:block; content:""; width:100%; height:100%; border:4px solid #3f4972; box-sizing:border-box;}
 	.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject {position:relative; overflow:hidden; display:block; width:260px; margin:0 0 12px; padding:0 0 0 17px; font-size:17px; color:#525252; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal;}
-	.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject:before {position:absolute; left:0; top:5px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
+	.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .subject:before {position:absolute; left:0; top:10px; display:block; content:""; width:5px; height:5px; background:#a4a4a4;}
 	.openleader .main-visual .section-02 .inner .list-banner .list ul > li a .date {display:block; margin:0 0 0 14px; padding:0 0 0 25px; background:url(../images/openleader/main/ico_date.png) no-repeat left center; font-size:16px;} 
 
 	.openleader .main-visual .section-02 .inner .list-banner .banner {float:left;}
@@ -172,10 +172,10 @@ MAIN
 	.openleader .main-visual .section-02 .inner .petition .write .inner .btn:focus:after {border-top:1px solid #272727; border-right:1px solid #272727;}
 
 	.openleader .main-visual .section-02 .inner .petition .link {}
-	.openleader .main-visual .section-02 .inner .petition .link a {position:relative; display:block; height:90px; padding:16px 0 0 98px; background:#2c2c43 url(../images/openleader/main/bg_petition_link.png) no-repeat 25px center; font-size:22px; font-weight:bold; color:#fff; box-sizing:border-box;}
+	.openleader .main-visual .section-02 .inner .petition .link a {position:relative; display:block; height:90px; padding:16px 0 0 96px; background:#2c2c43 url(../images/openleader/main/bg_petition_link.png) no-repeat 25px center; font-size:20px; font-weight:bold; color:#fff; box-sizing:border-box;}
 	.openleader .main-visual .section-02 .inner .petition .link a:hover,
 	.openleader .main-visual .section-02 .inner .petition .link a:focus {background-color:#962d3e;}
-	.openleader .main-visual .section-02 .inner .petition .link a .tail {display:block; margin-top:11px; font-size:17px; color:rgba(255,255,255,0.7);}
+	.openleader .main-visual .section-02 .inner .petition .link a .tail {display:block; margin-top:7px; font-size:16px; color:rgba(255,255,255,0.7);}
 	.openleader .main-visual .section-02 .inner .petition .link a .tail em {font-style:italic;}
 	.openleader .main-visual .section-02 .inner .petition .link a:before {position:absolute; left:255px; top:62px; display:block; content:""; width:38px; height:1px; background:#d0d0d0;}
 	.openleader .main-visual .section-02 .inner .petition .link a:after {position:absolute; left:286px; top:59px; display:block; content:""; width:6px; height:6px; border-top:1px solid #d0d0d0; border-right:1px solid #d0d0d0; -webkit-transform:rotate(180deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
@@ -298,12 +298,12 @@ SUB PAGE
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li:first-child {border-left:none;}
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li .num {padding-left:18px;}
 .openleader .practice *[class^=heading-table] *[class^=num-case][class*=_type1] > li {color:#962d3e;}
-.openleader .practice .charge-info {margin-top:85px; background:#f4f4f4; border:1px solid #d1d1d1; text-align:center;}
-.openleader .practice .charge-info .list {display:inline-block; vertical-align:top;}
-.openleader .practice .charge-info .list > li {display:table; float:left; margin-left:30px; padding:15px 0 15px; font-size:15px;}
-.openleader .practice .charge-info .list > li:first-child {margin-left:0;}
-.openleader .practice .charge-info .list > li .box {display:table-cell; height:26px; padding:0 15px; background:#ededed; border:1px solid #d7d7d7; border-radius:2px; line-height:26px; color:#949494; vertical-align:middle;}
-.openleader .practice .charge-info .list > li .txt {display:table-cell; padding-left:13px; font-weight: bold; color:#545454;  vertical-align:middle;}
+.openleader .charge-info {margin-top:85px; background:#f4f4f4; border:1px solid #d1d1d1; text-align:center;}
+.openleader .charge-info .list {display:inline-block; vertical-align:top;}
+.openleader .charge-info .list > li {display:table; float:left; margin-left:30px; padding:15px 0 15px; font-size:15px;}
+.openleader .charge-info .list > li:first-child {margin-left:0;}
+.openleader .charge-info .list > li .box {display:table-cell; height:26px; padding:0 15px; background:#ededed; border:1px solid #d7d7d7; border-radius:2px; line-height:26px; color:#949494; vertical-align:middle;}
+.openleader .charge-info .list > li .txt {display:table-cell; padding-left:13px; font-weight: bold; color:#545454;  vertical-align:middle;}
 @keyframes graph_motion{ 
 	0% {margin-left:-100%;}
 	100% {margin-left:0;}

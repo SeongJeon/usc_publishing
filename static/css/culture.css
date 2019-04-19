@@ -18,6 +18,7 @@ LAYOUT
   body.pc .culture #header #gnb .gnb h2.over a, body.pc .culture #header #gnb .gnb h2 a:hover { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
   body.pc .culture #header #gnb .gnb h2.over a:before, body.pc .culture #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: 0px; left: 0; width: 100%; content: ""; background: #d94343; height: 6px; z-index: 1000; }
   body.pc .culture #header #gnb .gnb h2.over a:after, body.pc .culture #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -10px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #d94343; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
+  body.pc .culture #header #gnb .gnb h2 span { position: relative; top: -2px; }
   body.pc .culture #header #gnb .depth2menu { display: none; position: absolute; top: 100%; left: 0; padding-top: 37px; background: #fff; }
   body.pc .culture #header #gnb .menu { overflow: hidden; width: 1320px; height: 374px; }
   body.pc .culture #header #gnb .menugroup { float: left; width: 333px; padding-left: 12px; }

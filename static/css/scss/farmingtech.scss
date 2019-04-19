@@ -94,10 +94,10 @@ MAIN
 				dl {
 					position: relative; padding-left: 100px; min-height: 92px;
 					dt {
-						font-size: 20px; color:#222; font-family: $font2; font-weight: bold;  padding-top: 3px;
+						font-size: 20px; color:#222; font-family: $font2; font-weight: bold; 
 						.date {
 							position: absolute; left:0; top:0;
-							display: block; width:90px; height: 92px; padding-top: 21px; border:1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color:#666; text-align: center;
+							display: block; width:90px; height: 92px; padding-top: 16px; border:1px solid #bcbcbc; box-sizing: border-box; font-size: 17px; color:#666; text-align: center;
 							strong {display:block; margin-top: 1px; color:#ff712c; font-family: $font2; font-weight: bold; font-size: 28px; }
 						}
 					}
@@ -108,7 +108,7 @@ MAIN
 					li + li {margin-top: 15px;}
 					a {
 						&:before{display: inline-block; content: ""; vertical-align: middle; width:3px; height: 3px; background:#000; margin-right: 7px;}
-						.cont {display: inline-block; overflow:hidden; max-width:80%;  color:#222; font-size: 16px; text-overflow:ellipsis; white-space: nowrap; vertical-align: middle;}
+						.cont {display: inline-block; overflow:hidden; max-width:80%;  color:#222; font-size: 16px; text-overflow:ellipsis; white-space: nowrap; vertical-align: top;}
 						.date {float: right;}
 					}
 				}

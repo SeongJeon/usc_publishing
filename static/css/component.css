@@ -240,7 +240,7 @@
   body.pc #header.header-type2 #gnb .depth3menu { background: #f4f4f4; margin-left: -15px; padding: 4px 0 7px 25px; margin-top: 5px; }
   body.pc #header.header-type2 #gnb .depth3menu > li { line-height: 22px; }
   body.pc #header.header-type2 #gnb h2 { display: inline-block; vertical-align: top; }
-  body.pc #header.header-type2 #gnb h2 a { display: block; position: relative; font-size: 19px; color: #343434; text-align: center; }
+  body.pc #header.header-type2 #gnb h2 a { display: block; position: relative; font-size: 17px; color: #343434; text-align: center; }
   body.pc #header.header-type2 #gnb h2 a span { position: relative; top: -4px; }
   body.pc #header.header-type2 #gnb p a { display: block; width: 100%; font-size: 17px; color: #2d2d2d; text-align: center; line-height: 35px; background: #d6eef0; }
   body.pc #header.header-type2 #gnb p a span { position: relative; top: -2px; }
@@ -394,7 +394,7 @@ br.t, br.m { display: none; }
 *[class^=comm-btn][class*=_type1] { display: inline-block; width: 190px; height: 50px; line-height: 50px; vertical-align: middle; text-align: center; font-size: 18px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; box-sizing: border-box; }
 *[class^=comm-btn][class*=_type2] { display: inline-block; width: 100px; height: 35px; line-height: 33px; vertical-align: middle; text-align: center; font-size: 15px; border: 1px solid #d9d6d5; color: #787878; box-sizing: border-box; }
 *[class^=comm-btn][class*=_type3] { display: inline-block; min-width: 120px; height: 42px; line-height: 40px; vertical-align: middle; text-align: center; font-size: 15px; border-width: 1px; border-style: solid; box-sizing: border-box; }
-*[class^=comm-btn][class*=_type4] { display: inline-block; height: 45px; padding: 0 25px; line-height: 43px; vertical-align: middle; text-align: center; font-size: 16px; border-width: 1px; border-style: solid; box-sizing: border-box; }
+*[class^=comm-btn][class*=_type4] { display: inline-block; height: 45px; padding: 0 20px; line-height: 43px; vertical-align: middle; text-align: center; font-size: 16px; border-width: 1px; border-style: solid; box-sizing: border-box; }
 *[class^=comm-btn][class*=_round] { border-radius: 4px; }
 *[class^=comm-btn][class*=_gray] { background: #99a1a1; color: #fff; border-color: #99a1a1; }
 *[class^=comm-btn][class*=_lgrey] { background: #d7d7d7; color: #3e3e3e; border-color: #d7d7d7; }
@@ -449,7 +449,7 @@ br.t, br.m { display: none; }
 *[class^=heading][class*=-h3] { font-size: 24px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #111; }
 *[class^=heading][class*=-h3]:before { display: inline-block; position: relative; top: -1px; content: ""; width: 24px; height: 26px; margin-right: 10px; background: url("../../static/images/common/bul_h3.png") no-repeat 50% 50%; vertical-align: middle; }
 *[class^=heading][class*=-h4] { position: relative; padding-left: 18px; font-size: 18px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #111; margin-left: 30px; }
-*[class^=heading][class*=-h4]:before { display: inline-block; position: absolute; left: 0; top: 0; content: ""; width: 12px; height: 19px; background: url("../../static/images/common/bul_h4.png") no-repeat 50% 50%; }
+*[class^=heading][class*=-h4]:before { display: inline-block; position: absolute; left: 0; top: 3px; content: ""; width: 12px; height: 19px; background: url("../../static/images/common/bul_h4.png") no-repeat 50% 50%; }
 *[class^=heading][class*=_tab] { margin-bottom: 30px; font-size: 20px; color: #336ac0; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; text-align: left; line-height: 60px; border-bottom: 1px solid #000; }
 *[class^=heading][class*=_tab] span { display: inline-block; width: 240px; margin-bottom: -1px; background: #fff; border: 1px solid #000; border-bottom-color: #fff; text-align: center; }
 *[class^=heading] + *[class^=comp-tbl_] { margin-top: 15px; }
@@ -1017,12 +1017,12 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-total-login .contents-zone { padding-top: 0 !important; padding-bottom: 70px; }
 .tp-total-login .tit-login-zone { position: relative; height: 398px; background: url(../../static/images/usc/subpage/bg_tit_login_zone.png); border-bottom: 4px solid #ff9c00; text-align: center; }
 .tp-total-login .tit-login-zone .inner { position: relative; width: 1220px; height: 400px; margin: 0 auto; padding: 45px 0 0; }
-.tp-total-login .tit-login-zone .title { font-family: 'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 36px; color: #000; }
+.tp-total-login .tit-login-zone .title { font-weight: bold; font-size: 36px; color: #000; }
 .tp-total-login .tit-login-zone .title:before { display: block; content: ""; width: 192px; height: 89px; margin: 0 auto 20px auto; background: url(../images/usc/subpage/img_usclogo.png) no-repeat; }
 .tp-total-login .tit-login-zone .title .point { color: #f27405; }
 .tp-total-login .tit-login-zone .txt { margin: 28px 0 22px; line-height: 30px; font-size: 24px; color: #303030; }
 .tp-total-login .tit-login-zone .tail { line-height: 28px; font-size: 18px; color: #303030; }
-.tp-total-login .tit-login-zone .subtit { position: absolute; bottom: -42px; left: 0; width: 100%; height: 90px; line-height: 90px; background: #ff9c00; border-radius: 40px; font-family: 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; font-size: 30px; color: #fff; }
+.tp-total-login .tit-login-zone .subtit { position: absolute; bottom: -42px; left: 0; width: 100%; height: 90px; line-height: 90px; background: #ff9c00; border-radius: 40px; font-weight: bold; font-size: 30px; color: #fff; }
 .tp-total-login .tit-login-zone .subtit:before, .tp-total-login .tit-login-zone .subtit span:before { position: absolute; top: 50%; display: block; content: ""; width: 20px; height: 20px; margin-top: -10px; background: #fff; border-radius: 100%; }
 .tp-total-login .tit-login-zone .subtit:after, .tp-total-login .tit-login-zone .subtit span:after { position: absolute; top: 50%; display: block; content: ""; width: 12px; height: 12px; margin-top: -6px; background: #ffc61a; border-radius: 100%; }
 .tp-total-login .tit-login-zone .subtit:before { left: -10px; }
@@ -1030,7 +1030,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-total-login .tit-login-zone .subtit span:before { right: -10px; }
 .tp-total-login .tit-login-zone .subtit span:after { right: -6px; }
 .tp-total-login .info-zone { line-height: 30px; margin: 50px 0 0; font-size: 18px; color: #303030; text-align: center; }
-.tp-total-login .info-zone p.txt { position: relative; display: inline-block; padding: 0 0 0 37px; }
+.tp-total-login .info-zone p.txt { position: relative; display: inline-block; padding: 0 0 0 37px; font-size: 16px; }
 .tp-total-login .info-zone p.txt:before { position: absolute; left: 0; top: 0; display: block; content: "!"; width: 30px; height: 30px; line-height: 30px; background: #ee3106; border-radius: 100%; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; color: #fff; text-align: center; }
 .tp-total-login .info-zone p.txt .point { display: block; }
 .tp-total-login .info-zone p.txt .point em { display: inline-block; padding-left: 20px; background: #fcecbd; text-indent: -20px; }
@@ -1047,7 +1047,7 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-total-login .login-service-tab ul[role=tablist] li { float: left; width: 33%; border-left: 1px solid #ff9c00; box-sizing: border-box; }
 .tp-total-login .login-service-tab ul[role=tablist] li:nth-child(2) { width: 34%; }
 .tp-total-login .login-service-tab ul[role=tablist] li:first-child { border-left: 0; }
-.tp-total-login .login-service-tab ul[role=tablist] a { display: block; width: 100%; font-size: 30px; color: #1e1e1e; text-align: center; line-height: 84px; background: #fff; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
+.tp-total-login .login-service-tab ul[role=tablist] a { display: block; width: 100%; height: 84px; font-size: 30px; color: #1e1e1e; text-align: center; line-height: 80px; background: #fff; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 .tp-total-login .login-service-tab ul[role=tablist] a[aria-selected="true"] { background: #ff9c00; color: #fff; }
 .tp-total-login #loginTabcontent { width: 1220px; margin: 0 auto; position: relative; }
 .tp-total-login #loginTabcontent .tab-conts { border: 3px solid #d6d5d5; border-radius: 15px; }
@@ -1116,9 +1116,9 @@ div[class^=comp-public-area] p { display: inline-block; margin-top: 17px; font-s
 .tp-total-login #loginTabcontent .join-service-zone.step3 .complete-box { height: 378px; padding: 60px 100px 0; background: #f7f7f7; border: 1px solid #eee; border-top: 2px solid #f27405; text-align: center; }
 .tp-total-login #loginTabcontent .join-service-zone.step3 .tit { font-size: 22px; color: #f27405; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 .tp-total-login #loginTabcontent .join-service-zone.step3 .txt { margin-top: 8px; font-size: 16px; }
-.tp-total-login #loginTabcontent .join-service-zone.step3 ul[class^=comp-lst][class*=_hyphen] { margin-top: 30px; text-align: left; }
-.tp-total-login #loginTabcontent .join-service-zone.step3 ul[class^=comp-lst][class*=_hyphen] li { color: #343434; font-size: 16px; line-height: 24px; }
-.tp-total-login #loginTabcontent .join-service-zone.step3 .btn-zone { margin-top: 50px; }
+.tp-total-login #loginTabcontent .join-service-zone.step3 ul[class^=comp-lst][class*=_hyphen] { margin-top: 28px; text-align: left; }
+.tp-total-login #loginTabcontent .join-service-zone.step3 ul[class^=comp-lst][class*=_hyphen] li { color: #343434; font-size: 15px; line-height: 24px; }
+.tp-total-login #loginTabcontent .join-service-zone.step3 .btn-zone { margin-top: 45px; }
 .tp-total-login .contents-zone .wrap-login-zone { width: 1220px; margin: 85px auto 0 auto; }
 .tp-total-login .contents-zone .wrap-login-zone .certified-zone { overflow: hidden; padding: 31px 0 28px; border: 3px solid #d6d5d5; border-radius: 17px; }
 .tp-total-login .contents-zone .wrap-login-zone .certified-zone > div { position: relative; float: left; width: 33.33%; padding: 0 25px 97px; border-left: 1px solid #d6d5d5; box-sizing: border-box; }

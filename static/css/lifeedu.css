@@ -152,6 +152,18 @@ SUB PAGE
 ------------------------------------------------------ */
 .lifeedu-class-search .flag { padding: 0 20px; color: #417ff2; font-size: 16px; display: inline-block; border: 2px solid #417ff2; line-height: 30px; border-radius: 100px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
 .lifeedu-class-search .flag:before { display: inline-block; vertical-align: middle; width: 26px; height: 17px; background: #417ff2 url("../../static/images/lifeedu/subpage/icon_class.png") no-repeat 50% 50%; margin-right: 7px; content: ""; }
+.lifeedu-class-search .lnk_tbl { padding: 0 !important; }
+.lifeedu-class-search .lnk_tbl a { display: table; width: 100%; overflow: hidden; table-layout: fixed; }
+.lifeedu-class-search .lnk_tbl a:hover div { font-weight: bold; text-decoration: underline; }
+.lifeedu-class-search .lnk_tbl div { display: table-cell; height: 50px; padding: 10px 10px 8px; box-sizing: border-box; vertical-align: middle; text-align: center; }
+.lifeedu-class-search .lnk_tbl div:nth-child(1) { text-align: left; }
+.lifeedu-class-search .lnk_tbl div:nth-child(2) { width: 115px; }
+.lifeedu-class-search .lnk_tbl div:nth-child(3) { width: 80px; }
+.lifeedu-class-search .lnk_tbl div:nth-child(4) { width: 100px; }
+.lifeedu-class-search .lnk_tbl div:nth-child(6) { width: 90px; }
+.lifeedu-class-search .lnk_tbl div:nth-child(7) { width: 70px; }
+.lifeedu-class-search .lnk_tbl div:nth-child(8) { width: 80px; }
+.lifeedu-class-search .lnk_tbl div + div { border-left: 1px solid #d9d6d5; }
 
 /* 강좌 상세 */
 .class-simple-infor { padding: 15px 20px 28px; position: relative; border: 1px solid #d1d1d1; border-top: 2px solid #014099; }
@@ -180,7 +192,7 @@ SUB PAGE
 .lifeedu .search-box-detail .ebooksys-search-form li.pl:last-of-type .tit { width: 150px; }
 .lifeedu .search-box-detail .ebooksys-search-form li.pl:last-of-type .form { padding-left: 150px; }
 .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(1) .tit, .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(4) .tit, .lifeedu .search-box-detail .ebooksys-search-form li:nth-child(6) .tit { color: #014099; }
-.lifeedu .search-box-detail .ebooksys-search-form .tit { float: left; width: 95px; color: #111; font-size: 18px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; line-height: 35px; }
+.lifeedu .search-box-detail .ebooksys-search-form .tit { float: left; width: 95px; color: #111; font-size: 16px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; line-height: 35px; }
 .lifeedu .search-box-detail .ebooksys-search-form .form { padding-left: 95px; }
 .lifeedu .search-box-detail .ebooksys-search-form .block + .block { margin-top: 12px; }
 .lifeedu .search-box-detail .ebooksys-search-form .term input { width: 151px; }
@@ -204,7 +216,7 @@ SUB PAGE
 .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover { border: 3px solid #014099; padding: 13px 18px 26px; }
 .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover .booking-state { top: -3px; right: -3px; }
 .lifeedu *[class^=class-lst][class*=_listtype] { margin-top: 30px; }
-.lifeedu *[class^=class-lst][class*=_listtype] .classflag { font-size: 15px; display: inline-block; vertical-align: middle; color: #fff; text-align: center; width: 22px; height: 22px; border-radius: 100px; line-height: 22px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu *[class^=class-lst][class*=_listtype] .classflag { font-size: 15px; display: inline-block; vertical-align: middle; color: #fff; text-align: center; width: 22px; height: 22px; border-radius: 100px; line-height: 22px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: normal; }
 .lifeedu *[class^=class-lst][class*=_listtype] .classflag.recruit { background: #f0102a; }
 .lifeedu *[class^=class-lst][class*=_listtype] .classflag.term { background: #fd9807; }
 .lifeedu *[class^=class-lst][class*=_listtype] .classflag.online { background: #00a388; }
@@ -216,7 +228,7 @@ SUB PAGE
 .lifeedu *[class^=class-lst][class*=_listtype] .flag-lst .classflag { margin-right: 6px; }
 .lifeedu *[class^=class-lst][class*=_listtype] td { letter-spacing: -1px; }
 .lifeedu *[class^=class-lst][class*=_listtype] td .name { display: block; margin-top: 6px; }
-.lifeedu *[class^=class-lst][class*=_listtype] td *.btn-submit { display: inline-block; width: 56px; height: 56px; padding: 8px 12px 0; color: #fff; text-align: center; line-height: 20px; box-sizing: border-box; background: #417ff2; border-radius: 5px; letter-spacing: 0px; }
+.lifeedu *[class^=class-lst][class*=_listtype] td *.btn-submit { display: inline-block; width: 56px; height: 56px; padding: 8px 12px 0; color: #fff; text-align: center; line-height: 20px; box-sizing: border-box; background: #417ff2; border-radius: 5px; letter-spacing: 0px; font-weight: normal; }
 .lifeedu *[class^=class-lst][class*=_listtype] td *.btn-submit.not { background: #9c9c9c; }
 .lifeedu *[class^=class-lst][class*=_listtype] td p { line-height: 22px; }
 .lifeedu *[class^=class-lst][class*=_listtype] td p + p { margin-top: 5px; }
@@ -387,6 +399,17 @@ SUB PAGE
 .vision .vision-list .list02 .slogan li:last-child .pen { background: #feecb4; }
 .vision .vision-list .list03 .vision-detail .num { background: #00a388; }
 .vision .vision-list .list04 .vision-detail .num { background: #016dae; }
+
+.club .lnk_tbl { padding: 0 !important; }
+.club .lnk_tbl a { display: table; width: 100%; overflow: hidden; table-layout: fixed; }
+.club .lnk_tbl a:hover div { font-weight: bold; text-decoration: underline; }
+.club .lnk_tbl div { display: table-cell; height: 50px; box-sizing: border-box; vertical-align: middle; }
+.club .lnk_tbl div:nth-child(1) { width: 6%; }
+.club .lnk_tbl div:nth-child(3) { width: 15%; }
+.club .lnk_tbl div:nth-child(4) { width: 15%; }
+.club .lnk_tbl div:nth-child(5) { width: 15%; }
+.club .lnk_tbl div + div { border-left: 1px solid #d9d6d5; }
+.club .lnk_tbl .tit { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* ------------------------------------------------------
 MEDIA QUERY
@@ -600,7 +623,8 @@ MEDIA QUERY
   .vision .vision-list .vision-detail .num-list { margin: .8rem 0 0 0; }
   .vision .vision-list .vision-detail .num-list li { overflow: hidden; margin-top: .6rem; }
   .vision .vision-list .vision-detail .num-list li .num { width: 2rem; height: 2rem; line-height: 2rem; font-size: 1.2rem; vertical-align: top; }
-  .vision .vision-list .vision-detail .num-list li .txt { width: -webkit-calc(100% - 2.5rem); width: -moz-calc(100% - 2.5rem); width: -o-calc(100% - 2.5rem); width: calc(100% - 2.5rem); padding-left: .5rem; font-size: 1.4rem; line-height: 1.2; } }
+  .vision .vision-list .vision-detail .num-list li .txt { width: -webkit-calc(100% - 2.5rem); width: -moz-calc(100% - 2.5rem); width: -o-calc(100% - 2.5rem); width: calc(100% - 2.5rem); padding-left: .5rem; font-size: 1.4rem; line-height: 1.2; }
+  .club .lnk_tbl div { height: 3.3rem; line-height: 1.8rem; } }
 @media (max-width: 320px) { /* 평생학습관소개 - 비전 및 목표 */
   .vision .vision-wrap .tit:after { left: 4.5rem; }
   .vision .vision-list .vision-detail .tit-txt p { padding: 1rem 1rem 0; font-size: 1.2rem; }

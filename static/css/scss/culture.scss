@@ -608,7 +608,7 @@ LAYOUT
 	.header-middle {
 		.btn-search-open button {background-color:#ff877d;}
 		.btn-menu-open button {background-color: #d94343}
-		.title a {width:20rem; @include background("culture/img_logo.png",no-repeat 50% 50%); background-size: 100% auto;}
+		.title a {width:16rem; @include background("culture/img_logo.png",no-repeat 50% 50%); background-size: 100% auto;}
 		.comp-search .form .btn button {background:#ff877d;}
 		.comp-search .form input {border-color:#ff9d94;}
 	}

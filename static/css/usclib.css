@@ -445,7 +445,7 @@ MEDIA QUERY
   #wrap.usclib #header .header-bottom .header-utilegroup { background: #d6eef0; }
   #wrap.usclib #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #73cdc3; }
   #wrap.usclib #header .header-middle .btn-menu-open button { background-color: #3f9a82; }
-  #wrap.usclib #header .header-middle .title a { width: 23.3rem; background: url("../../static/images/usclib/img_logo.png") no-repeat 50% 50%; }
+  #wrap.usclib #header .header-middle .title a { width: 18rem; background: url("../../static/images/usclib/img_logo.png") no-repeat 50% 50%; }
   #wrap.usclib #gnb .category { display: none; }
   #wrap.usclib #gnb .gnb .clicked, #wrap.usclib #gnb .gnb .current, #wrap.usclib #gnb .gnb .clicked h3 a, #wrap.usclib #gnb .gnb h2 a:hover, #wrap.usclib #gnb .gnb h3 a:hover, #wrap.usclib #gnb .gnb h4 a:hover { color: #016dae; }
   #wrap.usclib #gnb .gnb h4 a:hover:before { background: #016dae; }

@@ -333,11 +333,11 @@ LAYOUT
 #wrap.foreign #header .header-bottom .header-utilegroup { background: #d6eef0; }
 #wrap.foreign #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #73cdc3; }
 #wrap.foreign #header .header-middle .btn-menu-open button { background-color: #f27405; }
-#wrap.foreign #header .header-middle .title a { width: 17rem; background: url("../../static/images/foreign/img_logo_m.png") no-repeat 50% 50%; }
+#wrap.foreign #header .header-middle .title a { width: 13rem; background: url("../../static/images/foreign/img_logo_m.png") no-repeat 50% 50%; }
 #wrap.foreign #header.header-type2 #gnb .gnb > li:first-child .depth2menu { height: calc(100vh - 6rem); }
 #wrap.foreign #footer .footer-logo { width: 13.3rem; height: 3.3rem; background-size: 100% auto; }
 #wrap.foreign #footer .footer-utilegroup { padding-left: 2rem; margin-top: 2.5rem; }
-
+#wrap.foreign #container {padding-top: 0}
 
 
 /* ------------------------------------------------------

@@ -346,7 +346,7 @@ LAYOUT
 #wrap.reservation #header .header-bottom .header-utilegroup .icon-login:before { background: url("../../static/images/reservation/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
 #wrap.reservation #header .header-bottom .header-utilegroup .icon-join:before { background: url("../../static/images/reservation/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
 #wrap.reservation #header .header-middle .btn-menu-open button { background-color: #1058a8; }
-#wrap.reservation #header .header-middle .title a { width: 23rem; background: url("../../static/images/reservation/img_logo_m.png") no-repeat 50% 50%; background-size: auto 50%; }
+#wrap.reservation #header .header-middle .title a { width: 17rem; background: url("../../static/images/reservation/img_logo_m.png") no-repeat 50% 50%; background-size: 100% auto }
 #wrap.reservation #header .header-middle .btn-search-open button { background-color: #1667c1; }
 #wrap.reservation #header .header-middle .comp-search .form input { border-color: #1667c1; }
 #wrap.reservation #header .header-middle .comp-search .form .btn button { background-color: #1667c1; }
@@ -355,7 +355,7 @@ LAYOUT
 #wrap.reservation #header #gnb .gnb h2 a { display: table; }
 #wrap.reservation #header #gnb .gnb h2 a span { display: table-cell; vertical-align: middle; padding: 0 0.5rem; line-height: 1.8rem; word-break: keep-all; }
 #gnb .gnb .clicked, #gnb .gnb .current, #gnb .gnb .clicked h3 a, #gnb .gnb h2 a:hover, #gnb .gnb h3 a:hover, #gnb .gnb h4 a:hover, #gnb .gnb h5 a:hover { color: #168039; }
-
+#wrap.reservation #container {padding-top: 0}
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */	
@@ -370,12 +370,12 @@ MAIN
 	.reservation .notice-wrap {top:auto;right:0;bottom:1rem;width:-webkit-calc(100% - 3.2rem);width:-moz-calc(100% - 3.2rem);width:-o-calc(100% - 3.2rem);width:calc(100% - 3.2rem);height:16.6rem;margin:0 1.6rem;}
 	.reservation .notice-wrap h2 {height: 4rem; padding:0 0 0 2rem; line-height:4rem; font-size:1.5rem; box-sizing: border-box}
 	.reservation .notice-wrap .btn-detail {width:4rem;height:4rem;background:url(../images/reservation/main/btn_plus_m.png) no-repeat center center;background-size:1.6rem 1.6rem}
-	.reservation .notice-wrap .date {width:10.1rem;height:12.6rem;padding-top:3.2rem;font-size:1.3rem;}
+	.reservation .notice-wrap .date {width:10.1rem;height:12.6rem;padding-top:2.6rem;font-size:1.3rem;}
 	.reservation .notice-wrap .date .day {font-size:4.7rem;}
 	.reservation .notice-wrap .js-scroll {height:12.6rem;}
 	.reservation .notice-wrap .comp-lst_dotted {width:100%;padding:1.4rem 0 1.4rem .8rem;}
 	.reservation .notice-wrap .comp-lst_dotted li {margin-top:.7rem;}
-	.reservation .notice-wrap .comp-lst_dotted .txt {width:-webkit-calc(100% - 8.2rem);width:-moz-calc(100% - 8.2rem);width:-o-calc(100% - 8.2rem);width:calc(100% - 8.2rem);}
+	.reservation .notice-wrap .comp-lst_dotted .txt {width:-webkit-calc(100% - 8.2rem);width:-moz-calc(100% - 8.2rem);width:-o-calc(100% - 8.2rem);width:calc(100% - 8.2rem); vertical-align: top}
 	.reservation .notice-wrap .comp-lst_dotted time {width:7rem;margin-right:1.2rem;font-size:1.2rem;}
 	.reservation .tab-wrap .scroll-wrap {overflow-x:scroll;}
 	.reservation .tab-wrap .scroll-wrap .tab-tit {width:-webkit-calc(12.7rem * 7);width:-moz-calc(12.7rem * 7);width:-o-calc(12.7rem * 7);width:calc(12.7rem * 7);}
@@ -384,11 +384,11 @@ MAIN
 	.reservation .section-edu {height:auto;padding:1rem 0 3.5rem;background-image:url(../images/reservation/main/bg_main_edu_m.png);}
 	.reservation .section-edu h3 {margin:0 1.2rem 1.2rem 1.8rem;padding:0;}
 	.reservation .slide-wrap {max-width:inherit;}
-	.reservation .slide-wrap .tit {font-size:1.5rem;}
-	.reservation .slide-wrap .txt {font-size:1.2rem;}
+	.reservation .slide-wrap .tit {font-size:1.2rem;}
+	.reservation .slide-wrap .txt {font-size:1rem;}
 	.reservation .section-edu .tab-wrap:after {display:none;}
-	.reservation .section-edu .tab-tit li {width:12.5rem;}
-	.reservation .section-edu .tab-tit a {height:3.7rem;line-height:3.7rem;font-size:1.5rem;}
+	.reservation .section-edu .tab-tit li {width:12rem;}
+	.reservation .section-edu .tab-tit a {height:3.7rem;line-height:3.7rem;font-size:1.2rem;}
 	.reservation .slide-wrap .slick-list {margin-left:0;}
 	.reservation .reserve-area {width:100%;height:auto;margin:0;padding-top:1.5rem;}
 	.reservation .reserve-inner {padding:0 .9rem;}
@@ -397,15 +397,15 @@ MAIN
 	.reservation .reserve-wrap .btn-reserve,
 	.reservation .reserve-wrap .deadline {position:static;padding:.7rem 0;}
 	.reservation .reserve-wrap .btn-reserve span,
-	.reservation .reserve-wrap .deadline span {padding:.3rem 0 .3rem 2rem;font-size:1.2rem;}
+	.reservation .reserve-wrap .deadline span {padding:.3rem 0 .3rem 2rem;font-size:1.1rem;}
 	.reservation .util-area,
 	.reservation .slide-wrap .slick-arrow {display:none !important;}
 	.reservation .section-combine {padding:2rem .9rem 2rem;}
 	.reservation .combine-inner {max-width:inherit;}
-	.reservation .combine-inner h3 {width:9rem;padding:1.2rem 0 2rem;font-size:1.6rem;background:url(../images/reservation/main/bg_combine_arrow_m.png) no-repeat left bottom;background-size:8.4rem;line-height:2rem;}
+	.reservation .combine-inner h3 {width:9rem;padding:1.2rem 0 2rem;font-size:1.5rem;background:url(../images/reservation/main/bg_combine_arrow_m.png) no-repeat left bottom;background-size:7.1rem;line-height:2rem;}
 	.reservation .combine-inner .combine-list {width:-webkit-calc(100% - 9rem);width:-moz-calc(100% - 9rem);width:-o-calc(100% - 9rem);width:calc(100% - 9rem);}
 	.reservation .combine-inner .combine-list .slick-list {width:100%;}
-	.reservation .combine-inner .combine-list a {padding-top:6rem;font-size:1.2rem;background-size:5.5rem !important;}
+	.reservation .combine-inner .combine-list a {padding-top:6rem;font-size:1.1rem;background-size:5.5rem !important;}
 	.reservation .section-rental {padding:3.8rem 0;background-image:url(../images/reservation/main/bg_main_rental_m.png);}
 	.reservation .section-rental:after {display:none;}
 	.reservation .section-rental h3 {margin:0 2.7rem 3rem 2.4rem;}

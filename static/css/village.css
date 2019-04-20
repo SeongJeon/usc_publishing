@@ -363,7 +363,7 @@ MEDIA QUERY
 - LAYOUT
 ------------------------------------------------------ */
 .village #header {}
-	.village #header .header-middle .title a {width: 14.4rem; margin:0 auto; background: url("../../static/images/village/img_logo.png") no-repeat 50% 50%; -webkit-background-size: 100% auto; background-size: 100% auto;}
+	.village #header .header-middle .title a {width: 12rem; margin:0 auto; background: url("../../static/images/village/img_logo.png") no-repeat 50% 50%; -webkit-background-size: 100% auto; background-size: 100% auto;}
 	.village #header .header-middle .btn-search-open button {background-color: #45bf55}
 	.village #header .header-middle .btn-menu-open button {background-color: #28744f}
 	.village #header .header-bottom .gnb-mo-title {background-color: #45bf55}

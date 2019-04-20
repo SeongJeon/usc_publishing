@@ -250,7 +250,7 @@ MEDIA QUERY
   #wrap.culture #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #ffcbc7; }
   #wrap.culture #header .header-middle .btn-search-open button { background-color: #ff877d; }
   #wrap.culture #header .header-middle .btn-menu-open button { background-color: #d94343; }
-  #wrap.culture #header .header-middle .title a { width: 20rem; background: url("../../static/images/culture/img_logo.png") no-repeat 50% 50%; background-size: 100% auto; }
+  #wrap.culture #header .header-middle .title a { width: 16rem; background: url("../../static/images/culture/img_logo.png") no-repeat 50% 50%; background-size: 100% auto; }
   #wrap.culture #header .header-middle .comp-search .form .btn button { background: #ff877d; }
   #wrap.culture #header .header-middle .comp-search .form input { border-color: #ff9d94; }
   #wrap.culture #header #gnb .gnb h2 a { display: table; }

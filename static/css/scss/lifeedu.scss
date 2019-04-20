@@ -909,7 +909,7 @@ LAYOUT
 	.header-middle {
 		.btn-search-open button {background-color:#2e56bd;}
 		.btn-menu-open button {background-color: #417ff2}
-		.title a {width:17rem; @include background("lifeedu/img_logo.png",no-repeat 50% 50%); background-size: 100% auto;}
+		.title a {width:14rem; @include background("lifeedu/img_logo.png",no-repeat 50% 50%); background-size: 100% auto;}
 		.comp-search .form .btn button {background:#2e56bd;}
 		.comp-search .form input {border-color:#2e56bd;}
 	}

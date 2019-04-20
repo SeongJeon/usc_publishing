@@ -634,7 +634,7 @@ LAYOUT
 	.openleader #header .header-bottom .header-utilegroup .header-utile a.icon-login:before {background: url("../../static/images/openleader/icon_gnb_login.png") no-repeat 50% 50%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
 	.openleader #header .header-bottom .header-utilegroup .header-utile a.icon-join:before {background: url("../../static/images/openleader/icon_gnb_join.png") no-repeat 50% 50%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
 	.openleader #header .header-middle .btn-menu-open button {background-color: #1058a8}
-	.openleader #header .header-middle .title a {margin:0 auto 0 1.4rem; width: 16.8rem; background: url("../../static/images/openleader/img_logo_m.png") no-repeat 50% 50%; -webkit-background-size: 100% auto; background-size: 100% auto; }
+	.openleader #header .header-middle .title a {margin:0 auto 0 1.4rem; width: 14rem; background: url("../../static/images/openleader/img_logo_m.png") no-repeat 50% 50%; -webkit-background-size: 100% auto; background-size: 100% auto; }
 	.openleader #gnb .gnb > li:first-child .depth2menu {height: calc(100vh - 4.3rem)}
 	.openleader #gnb .gnb .clicked, 
 	.openleader #gnb .gnb .current, 

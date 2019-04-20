@@ -192,7 +192,7 @@ MEDIA QUERY
   #wrap.sewagebusiness #header .header-bottom .header-utilegroup { background: #eff9fe; }
   #wrap.sewagebusiness #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #bad8e6; }
   #wrap.sewagebusiness #header .header-middle .btn-menu-open button { background-color: #2952b9; }
-  #wrap.sewagebusiness #header .header-middle .title a { width: 23.3rem; background: url("../../static/images/sewagebusiness/img_logo_m.png") no-repeat 50% 50%; }
+  #wrap.sewagebusiness #header .header-middle .title a { width: 18rem; background: url("../../static/images/sewagebusiness/img_logo_m.png") no-repeat 50% 50%; }
   #wrap.sewagebusiness #gnb .category { display: none; }
   #wrap.sewagebusiness #gnb .gnb .clicked, #wrap.sewagebusiness #gnb .gnb .current, #wrap.sewagebusiness #gnb .gnb .clicked h3 a, #wrap.sewagebusiness #gnb .gnb h2 a:hover, #wrap.sewagebusiness #gnb .gnb h3 a:hover, #wrap.sewagebusiness #gnb .gnb h4 a:hover { color: #2952b9; }
   #wrap.sewagebusiness #gnb .gnb h4 a:hover:before { background: #2952b9; }

@@ -367,7 +367,7 @@ MEDIA QUERY
   #wrap.uscmuseum #header .header-bottom .header-utilegroup { background: #f5f3df; }
   #wrap.uscmuseum #header .header-bottom .header-utilegroup .header-utile li + li { border-color: #d8cf6c; }
   #wrap.uscmuseum #header .header-middle .btn-menu-open button { background-color: #c3893a; }
-  #wrap.uscmuseum #header .header-middle .title a { width: 20.8rem; background: url("../../static/images/uscmuseum/img_logo_m.png") no-repeat 50% 50%; }
+  #wrap.uscmuseum #header .header-middle .title a { width: 15rem; background: url("../../static/images/uscmuseum/img_logo_m.png") no-repeat 50% 50%; }
   #wrap.uscmuseum #gnb .category { display: none; }
   #wrap.uscmuseum #gnb .gnb .clicked, #wrap.uscmuseum #gnb .gnb .current, #wrap.uscmuseum #gnb .gnb .clicked h3 a, #wrap.uscmuseum #gnb .gnb h2 a:hover, #wrap.uscmuseum #gnb .gnb h3 a:hover, #wrap.uscmuseum #gnb .gnb h4 a:hover { color: #c3893a; }
   #wrap.uscmuseum #gnb .gnb h4 a:hover:before { background: #c3893a; }

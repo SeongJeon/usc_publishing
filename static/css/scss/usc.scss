@@ -953,6 +953,45 @@ SUB PAGE
 	.list ul > li .num {display:inline-block; width:30px; height:30px; line-height:30px; margin-right:10px; background:#4b4b4b; border-radius:30px; text-align:center; color:#fff;}
 	.list ul > li .tel {display:inline-block; margin-left:2px; padding:2px; background:#f1e300;}
 }
+// 민원 1회 방문처리
+.civil_process {
+	width:595px; margin-top: 27px; margin-left: 23px;
+	.cont {display: block; padding-left: 70px; font-size: 13px; background:#f4f7f9; color:#4b4b4b; line-height: 31px; padding-bottom: 2px; border-width:1px; border-style: solid; border-radius: 100px;}	 
+	.num {display:block; position: absolute; left:0; top:-10px; width:56px; height: 56px; text-indent: -999em; z-index: 1;}
+	li {position: relative;}
+	li+li {margin-top: 50px;}
+	li:after {display: block; content: ""; position: absolute; left:25px; top:100%; width:6px; height: 50px;}
+	li:nth-child(1) {
+		&:after{background:#ff81a6;}
+		.cont {border-color: #ff9ab9}
+		.num {@include background("usc/subpage/img_part01_06_1.png",no-repeat 50% 50%);}
+	}
+	li:nth-child(2) {
+		&:after{background:#f88642;}
+		.cont {border-color: #fa9e6a}
+		.num {@include background("usc/subpage/img_part01_06_2.png",no-repeat 50% 50%);}
+	}
+	li:nth-child(3) {
+		&:after{background:#f6b73d;}
+		.cont {border-color: #f8c667}
+		.num {@include background("usc/subpage/img_part01_06_3.png",no-repeat 50% 50%);}
+	}
+	li:nth-child(4) {
+		&:after{background:#41aea9;}
+		.cont {border-color: #71bdb9}
+		.num {@include background("usc/subpage/img_part01_06_4.png",no-repeat 50% 50%);}
+	}
+	li:nth-child(5) {
+		&:after{background:#53b5e9;}
+		.cont {border-color: #7cc4ed}
+		.num {@include background("usc/subpage/img_part01_06_5.png",no-repeat 50% 50%);}
+	}
+	li:nth-child(6) {
+		&:after{display: none}
+		.cont {border-color: #c391c8}
+		.num {@include background("usc/subpage/img_part01_06_6.png",no-repeat 50% 50%);}
+	}
+}
 
 /* 정보공개 ------------------------------------------- */
 // 의성의 오늘
@@ -1001,7 +1040,7 @@ div[class^=oftoday_] {
 	dd {
 		.label {
 			display:block; font-family: $font2; font-weight: bold; color:#1c1c1c; font-size: 18px; margin-bottom: 10px;
-			.sm {color:#ff4000; font-size: 15px; font-family: $font1; font-weight: normal;}
+			.sm {color:#ff4000; font-size: 13px; font-family: $font1; font-weight: normal;}
 			.sm:before {display: inline-block; content: "*"; margin-right: 3px;}
 		}
 	}
@@ -1028,7 +1067,12 @@ div[class^=oftoday_] {
 		.txt {margin:0 3px; color:#c5c5c5; line-height: 42px;}
 		input {width: 180px;}
 		select {width: 250px;}
-		*[class^=comm-btn] {margin-top: 125px}
+		*[class^=comm-btn] {margin-top: 132px}
+	}
+	&.inforopen-search4 {
+		.block {display: inline-block; vertical-align: bottom; margin-right: 15px;}
+		input {width: 105px;}
+		select {width: 130px;}
 	}
 }
 // 공공데이터정보
@@ -1039,7 +1083,12 @@ div[class^=oftoday_] {
 	.comp-lst_dotted {margin-top:7px;}
 	.comp-txt_box {margin-top:15px;}
 }
-
+// 개별주택가격열람
+.usc_part02_07 {
+	.comp-btn-zone {
+		.comm-btn_outlink {width:260px;}
+	}
+}
 /* 분야별정보 ------------------------------------------- */
 // 안전문화운동
 .safe {
@@ -2518,6 +2567,14 @@ MEDIA QUERY
 	.list ul:first-child {padding-left:0px;}
 	.list ul > li .num {width:2rem; height:2rem; line-height:2rem; border-radius:2rem;}
 }
+// 민원 1회 방문처리
+.civil_process {
+	width:100%; margin-top:2rem; margin-left:0;
+	.cont {padding:0.5rem 1rem; margin-left: 4rem; margin-top: 0.3rem; font-size:1.1rem; line-height:1.6rem;  } 
+	.num {top:-0.3rem; width:3.5rem; height:3.5rem; background-size: 100% 100% !important;}
+	li+li {margin-top: 2rem;}
+	li:after {width:3px; left:1.7rem; top:3.2rem; height: 4.5rem;}
+}
 /* 정보공개 ------------------------------------------- */
 // 의성의 오늘
 div[class^=oftoday_] {
@@ -3351,6 +3408,12 @@ div[class^=oftoday_] {
 		input {width: 48%;}
 		select {width: 100%;}
 		.txt {display:inline-block; width: 2%; line-height: 3.3rem; text-align: center; margin:0;}
+	}
+	&.inforopen-search4 {
+		.block {display:block;margin-right: 0; margin-bottom: 1rem;}
+		.txt {width:2%;}
+		input {width: 48%;}
+		select {width: 100%;}
 	}
 }
 

@@ -301,28 +301,44 @@
 					</div>
 					<!--// 선고공약 -->
 					<!-- 소통하는 의성군수 -->
-					<div class="sns-area view-pc">
-						<h3 class="tit">소통하는 의성군수<span class="tail">군민과 함께 소통하고 만들어나가는 의성<em>!</em></span></h3>
+					<div class="sns-area js-sns">
+						<h3 class="tit"><em class="color">페이스북</em>으로 소통하는 의성군수</h3>
+						<p class="desc">군민과 함께 소통하고 만들어나가는 의성!</p>
 						<div class="inner">
-							<div class="sns-api twitter">
-								<h4 class="tit"><span>트위터</span></h4>
-								<!-- 트위터 api 영역 -->
-								<div class="api-area">
-									
+							<div class="facebookslider">
+								<div class="slide" data-idx="1">
+									<a href="#">
+										test1
+									</a>
 								</div>
-								<!-- // 트위터 api 영역 -->
+								<div class="slide" data-idx="2">
+									<a href="#">
+										test2
+									</a>
+								</div>
+								<div class="slide" data-idx="3">
+									<a href="#">
+										test3
+									</a>
+								</div>
+								<div class="slide" data-idx="4">
+									<a href="#">
+										test4
+									</a>
+								</div>
+								<div class="slide" data-idx="5">
+									<a href="#">
+										test5
+									</a>
+								</div>
+								<div class="slide" data-idx="6">
+									<a href="#">
+										test6
+									</a>
+								</div>
 							</div>
-							<div class="sns-api facebook">
-								<h4 class="tit"><span>페이스북</span></h4>
-								<!-- 페이스북 api 영역 -->
-								<div class="api-area"></div>
-								<!-- // 페이스북 api 영역 -->
-							</div>
-							<div class="sns-api blog">
-								<h4 class="tit"><span>네이버블로그</span></h4>
-								<!-- 네이버블로그 api 영역 -->
-								<div class="api-area"></div>
-								<!-- // 네이버블로그 api 영역 -->
+							<div id="slider">
+								<!-- <div id="custom-handle" class="ui-slider-handle"></div> -->
 							</div>
 						</div>
 					</div>
@@ -427,6 +443,42 @@
 			var index = $(this).parent().index();
 			$('.js-banner .list-img').find('li').removeClass('on')
 			$(this).closest('.js-list-banner').find('.js-banner').find('li').eq(index).addClass('on');
+		});
+
+
+		// sns -  20190420 
+		var size = $('.facebookslider .slide').size()-1, per = 1320 / size;
+		$('.js-sns .facebookslider').slick({
+			dots:true,
+			centerMode: true,
+			centerPadding: '300px',
+			arrows:false,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			swipe:false,
+			customPaging :  function(slick,index) {
+				var i = index + 1;	
+				if(i < 10) i = "0"+i;
+	         return i;
+	      }
+		}).on("afterChange", function(slick, currentSlide){
+			var idd = $(this).find(".slick-current .slide").attr("data-idx");
+			console.log(idd);
+		});
+		$(function() {
+			$( "#slider" ).slider({
+				value:0,
+				min: 0,
+				max: size,
+				step: 1,
+				slide: function( event, ui ) {
+					$( "#amount" ).val( "$" + ui.value );
+					var idx = ui.value;
+					$('.js-sns .facebookslider').slick('slickGoTo', idx);
+				}
+			});
+			$( "#amount" ).val( "$" + $( "#slider" ).slider( "value" ) );
+			$(".js_sns .ui-slider-handle").css("width", per+"px");
 		});
 	});
 

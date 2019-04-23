@@ -58,12 +58,13 @@ LAYOUT
 .culture #container { padding-top: 190px; }
 .culture #container:before { top: 375px; }
 
-.culture #container.main { padding-top: 130px; }
+.culture #container.main { padding-top: 0; position: static;}
 
 /* ------------------------------------------------------
 MAIN
 ------------------------------------------------------ */
-.culture .main { overflow: hidden; position: relative; min-height: 830px; height: 100vh; /* SECTION 1 */ /* SECTION 2 */ /* SECTION 3 */ /* 스크롤 아이콘 */ }
+.culture .main-scroll-zone {overflow: hidden; position: relative; height: 100vh; padding-top: 130px; min-height: 830px;}
+.culture .main { overflow: hidden; position: relative; /* SECTION 1 */ /* SECTION 2 */ /* SECTION 3 */ /* 스크롤 아이콘 */ }
 .culture .main:before { display: none !important; }
 .culture .main .inner { width: 1320px; margin: 0 auto; }
 .culture .main .section { position: relative; min-width: 1320px; min-height: 830px; height: calc(100vh - 130px); }

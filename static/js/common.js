@@ -11,7 +11,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 var usc = {
 	// GNB
 	gnbEvent: function(num, vv){
-		var spd = 200,  pc=0, mo=0, ifval,
+		var spd = 100,  pc=0, mo=0, ifval,
 		 	header = $("#header"), gnb = $("#gnb"), _idx, 
 		 	ary = num.split(",");
 		 	dim = "<span class='dimd'></span>";
@@ -54,14 +54,14 @@ var usc = {
 				header.stop().animate({"padding-bottom": ary[_idx]+'px'}, spd, 'swing', function(){
 					$("#wrap .dimd").stop().animate({"opacity": 1}, spd);
 
-					if(ifval==true) $this.closest("h2").next(".depth2menu").stop().fadeIn(100);
-					else $('.depth2menu').stop().fadeIn(100);
+					if(ifval==true) $this.closest("h2").next(".depth2menu").stop().fadeIn(0);
+					else $('.depth2menu').stop().fadeIn(0);
 				}).addClass("open");
 			})
 
 			gnb.on("mouseleave", function(){
 				$("h2.over", gnb).removeClass("over");
-				$(".depth2menu").fadeOut(50);
+				$(".depth2menu").fadeOut(0);
 			
 				header.stop().animate({'padding-bottom': 0}, spd, 'swing', function(){
 					$("#wrap .dimd").fadeOut(100, function(){

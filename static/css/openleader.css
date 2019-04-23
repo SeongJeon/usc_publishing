@@ -217,7 +217,22 @@ MAIN
 	.openleader .inner .list-pledge .inner .btn:hover span:before,
 	.openleader .inner .list-pledge .inner .btn:focus span:before {position:absolute; left:-1px; top:-1px; display:block; content:""; width:200px; height:50px; border:3px solid #1058a8; box-sizing:border-box;}
 
-	.openleader .inner .sns-area {position:relative; width:1320px; margin:0 auto 69px auto; text-align:center;}
+	.openleader .sns-area {position: relative; margin-top: 45px; padding-bottom: 50px}
+	.openleader .sns-area .tit {font-weight: bold; font-size: 29px; color:#212121; text-align: center;}
+	.openleader .sns-area .tit:before {display: inline-block; vertical-align: middle; content: ""; background: url("../../static/images/openleader/main/icon_facebook.png") no-repeat 50% 50%; -webkit-background-size: 100% 100%; background-size: 100% 100%; width:37px; height: 37px; margin-right: 9px}
+	.openleader .sns-area .tit .color {color:#3b589e;}
+	.openleader .sns-area .desc {text-align: center; font-size: 16px; color:#212121; margin-top: 12px}
+	.openleader .sns-area .facebookslider {position: relative; margin-top: 45px; padding-bottom: 95px}
+	.openleader .sns-area .facebookslider .slide {}
+	.openleader .sns-area .facebookslider .slide a {display:block; width:300px; height: 395px; margin:0 auto; position: relative; border:3px solid #dddbdb; box-sizing: border-box;	}
+	.openleader .sns-area .facebookslider .slide a:hover {border-color:#1058a8;}
+	.openleader .sns-area .facebookslider .slide a:hover:after {display: block; content: ""; position: absolute; left:0px; top:0px; width:100%; height: 100%; border:2px solid #1058a8; box-sizing: border-box}
+	.openleader .sns-area .slick-dots {position: absolute; bottom: 0; left: 50%; width:1320px; text-align: right; margin-left:-660px }
+	.openleader .sns-area .slick-dots li {display: inline-block; color:#808080; font-size: 20px; font-weight:400; margin-left: 22px; cursor: pointer;}
+	.openleader .sns-area .slick-dots li.slick-active {color:#1058a8; font-weight: bold;}
+	.openleader .sns-area #slider {position: absolute; bottom:95px; left:50%; width:1320px; margin-left: -660px; height: 2px;border:0; background: #e4e2e2}
+	.openleader .sns-area .ui-slider-handle {width:100px; border-radius: 100px; background: #1058a8; height: 8px; text-indent: -999em; top:-3px; border:0;}
+/*	.openleader .inner .sns-area {position:relative; width:1320px; margin:0 auto 69px auto; text-align:center;}
 	.openleader .inner .sns-area > .tit {padding:53px 0 36px; text-align:center; font-size:30px; color:#212121; font-weight:bold;}
 	.openleader .inner .sns-area > .tit .tail {display:block; margin-top:15px; font-size:17px; font-weight:normal;}
 	.openleader .inner .sns-area > .tit .tail em {font-style: italic;}
@@ -739,7 +754,7 @@ MAIN
 	.openleader .inner .list-pledge .inner .list > li.ico-03 {background-size:100%;}
 	.openleader .inner .list-pledge .inner .list > li.ico-04 {background-size:100%;}
 	.openleader .inner .list-pledge .inner .list > li.ico-05 {background-size:100%;}
-	.openleader .inner .list-pledge .inner .list > li strong {font-size:1.5rem; margin-top: 0.3rem;}
+	.openleader .inner .list-pledge .inner .list > li strong {font-size:1.4rem; margin-top: 0.3rem;}
 	.openleader .inner .list-pledge .inner .btn {left:50%; right:auto; top:auto; bottom:4rem; width:13rem; height:2.8rem; line-height:2.8rem; margin-left:-6.5rem; font-size:1rem;}
 	.openleader .inner .list-pledge .inner .btn:before {width:25px; left:auto; right:1.1rem; top:50%;}
 	.openleader .inner .list-pledge .inner .btn:after {left:auto; right:1.1rem; top:50%; margin-top:-3px;}

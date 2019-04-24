@@ -1702,7 +1702,7 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   .top-search-zone .form3 .radio-lst li:first-child { margin-left: 0; }
   .top-search-zone .form3 .group { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
   .top-search-zone .form3 .group select { -webkit-flex: 1; flex: 1; margin-left: 0; }
-  .top-search-zone .form4 { margin-top: 1rem; }
+  .top-search-zone .form4 {float: none; margin-top: 1rem; }
   .top-search-zone .form4 input { width: 80%; margin-left: 0; }
   .top-search-zone .form4 select { width: 33%; margin-bottom: 0.5rem; }
   .top-search-zone .form4 select + select { margin-left: 0.5%; }

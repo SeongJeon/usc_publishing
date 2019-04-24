@@ -329,6 +329,8 @@ SUB PAGE
 .openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody tr:first-child *[rowspan] {border-top:1px solid #7a7a7a;}
 .openleader .practice table[class^=comp-tbl][class*=_datatype] tbody *[rowspan],
 .openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody *[rowspan] {border-top:1px solid #d9d6d5; border-bottom:none;}
+.openleader .pledge table[class^=comp-tbl][class*=_datatype] tbody th[rowspan] {border-right:1px solid #d9d6d5; }
+.openleader .practice table[class^=comp-tbl][class*=_datatype] tbody th[rowspan] {border-right:1px solid #d9d6d5; }
 .openleader .practice table[class^=comp-tbl][class*=_datatype] tbody .btn-download {display:block; width:85px; height:85px; margin:0 auto; background:url(../../static/images/openleader/subpage/btn_download.png) no-repeat; text-indent:-9999em;}
 
 /* 공약사항 추진목록 */
@@ -570,12 +572,12 @@ MEDIA QUERY
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li {height:auto; padding:0.5rem 0; line-height:1.6rem; font-size:1.1rem;}
 .openleader .practice *[class^=heading-table] *[class^=num-case] > li .num {display:block; padding-left:0;}
 /*.openleader .practice table[class^=comp-tbl][class*=_datatype] tbody .btn-download {width:8rem; height:8rem; background-size:100%;}*/
-.openleader .practice .charge-info {margin-top:4rem; padding:1rem;}
-.openleader .practice .charge-info .list {display:block;}
-.openleader .practice .charge-info .list > li {overflow:hidden; float:none; margin:1rem 0 0; padding:0; font-size:1.2rem;}
-.openleader .practice .charge-info .list > li:first-child {margin-top:0;}
-.openleader .practice .charge-info .list > li .box {}
-.openleader .practice .charge-info .list > li .txt {padding:0 0 0 1rem;}
+.openleader .charge-info {margin-top:4rem; padding:1rem;}
+.openleader .charge-info .list {display:block;}
+.openleader .charge-info .list > li {overflow:hidden; float:none; margin:0.5rem 0 0; padding:0; font-size:1.2rem;}
+.openleader .charge-info .list > li:first-child {margin-top:0;}
+.openleader .charge-info .list > li .box {}
+.openleader .charge-info .list > li .txt {padding:0 0 0 1rem;}
 /* 공약사항 추진목록 */
 
 .openleader .pledge .list-propulsion .list > li[class^=ball] {width:100%; height:3rem;}
@@ -596,10 +598,6 @@ MEDIA QUERY
 .openleader .planner .tbl-top-utile *[class^=heading] + .l-right {top:0.1rem;}
 .openleader .planner *[class^=heading-table] *[class^=heading][class*=-h4]:before {margin-top:-0.7rem;}
 .openleader .plannertbl {margin-left:0}
-
-
-
-
 
 
 
@@ -687,7 +685,7 @@ MAIN
 	.openleader .main-visual .section-01 .inner .name {left:36px; top:24rem; bottom:auto; width:7rem;}
 
 	.openleader .main-visual .section-01 .inner .calendar .slick-arrow, 
-	.openleader .main-visual .section-01 .inner .calendar .btn-more {right:7.4rem; top:-2px; width:3.7rem; height:3.7rem; background-size:23%; background-position:center 1.2rem;}
+	.openleader .main-visual .section-01 .inner .calendar .btn-more {right:7.4rem; top:0; width:3.7rem; height:3.7rem; background-size:23%; background-position:center 1.2rem;}
 	.openleader .main-visual .section-01 .inner .calendar .btn-more {background-size:37%;}
 	.openleader .main-visual .section-01 .inner .calendar .slick-prev {right:3.7rem; top:-3.7rem; background-position:center 1.3rem;}
 	.openleader .main-visual .section-01 .inner .calendar .slick-next {right:0; top:-3.7rem; background-position:center 1.3rem;}

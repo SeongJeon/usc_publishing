@@ -499,8 +499,8 @@
 	// 메인 비주얼
 	var mainSlider = (function(){
 		$(".js-main-visual-zone .slide").each(function(){
-			$(this).find(".pcbg").css({"background":"url("+$(this).find(".pcbg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
-			$(this).find(".mobg").css({"background":"url("+$(this).find(".mobg img").attr("src")+") no-repeat 50% 50%", "background-size": "cover"});
+			$(this).find(".pcbg").css({"background":"url("+$(this).find(".pcbg img").attr("src")+") no-repeat 50% 0%", "background-size": "cover"}); // 20190424 수정
+			$(this).find(".mobg").css({"background":"url("+$(this).find(".mobg img").attr("src")+") no-repeat 50% 0%", "background-size": "cover"}); //  20190424 수정
 		})
 
 		$('.js-main-visual-zone > .slider').slick({

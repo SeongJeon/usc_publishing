@@ -82,8 +82,8 @@ MAIN
 #wrap.usclib #container.main .main-visual-zone .search .form { position: relative; width: 538px; background: #fff; border-radius: 100px; }
 #wrap.usclib #container.main .main-visual-zone .search .form:after { display: block; clear: both; content: ""; }
 #wrap.usclib #container.main .main-visual-zone .search .form dt { float: left; width: 108px; padding-right: 7px; box-sizing: border-box; position: relative; }
-#wrap.usclib #container.main .main-visual-zone .search .form dt:after { display: inline-block; vertical-align: middle; content: "/"; position: absolute; right: 0; top: 0; line-height: 55px; }
-#wrap.usclib #container.main .main-visual-zone .search .form dt label { display: inline-block; width: 100px; color: #343434; font-size: 17px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; line-height: 55px; text-align: center; }
+#wrap.usclib #container.main .main-visual-zone .search .form dt:after { display:block; content: ""; position: absolute; right: 0; top: 0; height: 55px; width: 15px; background: url("../../static/images/usclib/main/bg_bar.png") no-repeat 50% 50%;}
+#wrap.usclib #container.main .main-visual-zone .search .form dt label { display: inline-block; width: 100px; color: #343434; font-size: 17px; font-weight: bold; line-height: 55px; text-align: center; vertical-align: top}
 #wrap.usclib #container.main .main-visual-zone .search .form dd { float: left; width: 430px; position: relative; }
 #wrap.usclib #container.main .main-visual-zone .search .form dd input { width: 100%; height: 55px; font-size: 16px; padding: 0 40px 0 15px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; border-top-right-radius: 100px; border-bottom-right-radius: 100px; box-sizing: border-box; }
 #wrap.usclib #container.main .main-visual-zone .search .form dd button { position: absolute; right: -35px; top: -8px; width: 70px; height: 70px; background: #3f9a82 url("../../static/images/usclib/main/icon_search.png") no-repeat 50% 50%; text-indent: -999em; border-radius: 100px; }
@@ -473,7 +473,7 @@ MEDIA QUERY
   #wrap.usclib #container.main .main-visual-zone .search .form { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; width: 100%; background: 0; overflow: hidden; padding: 0.6rem 0; }
   #wrap.usclib #container.main .main-visual-zone .search .form dt { background: #fff; border-top-left-radius: 100px; border-bottom-left-radius: 100px; width: 8rem; }
   #wrap.usclib #container.main .main-visual-zone .search .form dt label { font-size: 1.4rem; line-height: 4.6rem; width: 7.4rem; }
-  #wrap.usclib #container.main .main-visual-zone .search .form dt:after { line-height: 4.6rem; font-size: 1.4rem; }
+  #wrap.usclib #container.main .main-visual-zone .search .form dt:after {height: 4.6rem; -webkit-background-size: auto 100%; background-size: auto 100%;}
   #wrap.usclib #container.main .main-visual-zone .search .form dd { -webkit-flex: 1; flex: 1; padding-right: 3rem; }
   #wrap.usclib #container.main .main-visual-zone .search .form dd input { height: 4.6rem; background: #fff; font-size: 1.3rem; padding-left: 1rem; }
   #wrap.usclib #container.main .main-visual-zone .search .form dd button { width: 5.8rem; height: 5.8rem; background-size: 50% 50%; right: 0; }
@@ -564,8 +564,11 @@ MEDIA QUERY
   #wrap.usclib #container.main .main-etc-zone .books-zone .slick-dots { margin-top: 1rem; }
   #wrap.usclib #container.main .main-etc-zone .books-zone .slick-dots li + li { margin-left: 0.5rem; }
   #wrap.usclib #container.main .main-etc-zone .books-zone .slick-dots button { width: 1rem; height: 1rem; }
-  #wrap.usclib #container.main .main-etc-zone .books-zone .indicator, #wrap.usclib #container.main .main-etc-zone .popup-zone .indicator { height: auto; right: 1rem; top: 1.1rem; height: 2.3rem; box-sizing: content-box; }
-  #wrap.usclib #container.main .main-etc-zone .books-zone .indicator p[class^=btn-] *, #wrap.usclib #container.main .main-etc-zone .popup-zone .indicator p[class^=btn-] * { width: 2.3rem; height: 2.3rem; background-size: 40% 40% !important; }
+  #wrap.usclib #container.main .main-etc-zone .books-zone .indicator, 
+  #wrap.usclib #container.main .main-etc-zone .popup-zone .indicator { height: auto; right: 1rem; top: 1.1rem; height: 2.3rem; box-sizing: content-box; }
+  #wrap.usclib #container.main .main-etc-zone .books-zone .indicator p[class^=btn-] *, 
+  #wrap.usclib #container.main .main-etc-zone .popup-zone .indicator p[class^=btn-] * { width: 2.3rem; height: 2.3rem; background-size: 40% 40% !important; }
+  #wrap.usclib #container.main .main-etc-zone .books-zone .tab-contents .name {font-size: 1rem; height: 4.8rem; max-height: 4.8rem; line-height: 1.6rem}
   #wrap.usclib #container.main .main-etc-zone .calendar-zone { padding: 4.3rem 1rem 1rem; height: auto; }
   #wrap.usclib #container.main .main-etc-zone .calendar-zone .tit { font-size: 1.5rem; left: 1.7rem; top: 1.4rem; line-height: 1.5rem; }
   #wrap.usclib #container.main .main-etc-zone .calendar-zone .btn-more { right: 1rem; top: 1.1rem; }
@@ -651,8 +654,8 @@ MEDIA QUERY
   .usclib .books-infor-zone .tbl-book-infor td:last-child { padding-left: 0; }
   .usclib .books-infor-zone .tbl-book-infor .tit { display: block; float: left; width: 30%; padding: 1rem; background: #f4f7f9; line-height: 3rem; }
   .usclib .books-infor-zone .tbl-book-infor .cont { float: left; width: 70%; padding: 1rem 0.5rem 1rem 1rem; line-height: 3rem; }
-  .usclib .books-infor-zone .tbl-book-infor *[class^=state-] { width: 9rem; line-height: 3rem; }
-  .usclib .books-infor-zone .tbl-book-infor .btn-put { width: 9rem; margin-left: 0.5rem; line-height: 3rem; }
+  .usclib .books-infor-zone .tbl-book-infor *[class^=state-] { width: 9rem; line-height: 3rem; font-size: 1.1rem}
+  .usclib .books-infor-zone .tbl-book-infor .btn-put { width: 9rem; margin-left: 0.5rem; line-height: 3rem; font-size: 1.1rem; }
   .usclib .books-infor-zone .tbl-book-infor .btn-put:before { width: 1.5rem; height: 1.3rem; background-size: 100% 100%; }
   .usclib .books-detail-contents { padding: 0 0.5rem; }
   /* 열린마당 */
@@ -665,8 +668,8 @@ MEDIA QUERY
   .seminar-guide .calander_tbl td { height: 5rem; padding: 0.5rem; font-size: 1.4rem; }
   .seminar-guide .calander_tbl td .txt { width: auto; height: auto; padding: 0.2rem 0; line-height: 1.4rem; border-radius: 0.4rem; font-size: 1.2rem; }
   /* 문화마당 */
-  .course .comp-tbl_boardtype .btn-check { height: auto; margin-top: .5rem; padding: .5rem 0; line-height: 1.2rem; border-radius: 0.4rem; font-size: 1.2rem; }
-  .course table[class^=comp-tbl] *[class*='comm-btn'] { padding-top: .7rem; }
+  .course .comp-tbl_boardtype .btn-check { height: auto; margin-top: .5rem; padding: .4rem 0 .6rem; line-height: 1.2rem; border-radius: 0.4rem; font-size: 1.1rem; }
+  .course table[class^=comp-tbl] *[class*='comm-btn'] { padding: .5rem 0 .7rem; height: auto }
   .course .culture-wrap { padding: 1.5rem 1.3rem; }
   .course .culture-wrap .tit { margin-bottom: 1.6rem; font-size: 1.4rem; }
   .course .culture-wrap .culture-info li + li { margin-top: .8rem; }
@@ -675,9 +678,9 @@ MEDIA QUERY
   .course .culture-wrap .culture-info li .txt { display: block; margin-top: .5rem; padding-left: 1rem; font-size: 1.2rem; }
   .course .culture-wrap .culture-info li .txt:before { display: none; }
   .course .receipt-area { width: 6rem; height: 6rem; padding-top: 1rem; }
-  .course .receipt-area em { padding-bottom: 1.1rem; font-size: 1.3rem; }
+  .course .receipt-area em { padding-bottom: 1.1rem; font-size: 1.2rem; }
   .course .receipt-area em:after { bottom: .3rem; }
-  .course .receipt-area span { font-size: 1.2rem; }
+  .course .receipt-area span { font-size: 1.1rem; }
   .course .comp-btn-zone *[class*="comm-btn_type4"] { width: auto; }
   .course table[class^=comp-tbl] .comm-btn_check_lightgray2 { padding: 0; font-size: 1.2rem; }
   .course table[class^=comp-tbl][class*=_blue] .txt-notice { display: block; margin: 0.5rem 0 0 0; font-size: 1.2rem; }

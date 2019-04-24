@@ -498,7 +498,7 @@ MEDIA QUERY
   .ebooksys .main .main-tab .tab { margin: 0 0 1rem; padding: 0 0 0; }
   .ebooksys .main .main-tab .tab > li:after { top: 0.8rem; }
   .ebooksys .main .main-tab .tab > li a { height: 4rem; line-height: 4rem; font-size: 1.5rem; }
-  .ebooksys .main .main-tab .tab-contents .book-list { width: 100%; max-width: 45rem; margin: 1rem auto 0; padding: 0 0.5rem; }
+  .ebooksys .main .main-tab .tab-contents .book-list { width: 100%; /*max-width: 45rem;*/ margin: 1rem auto 0; padding: 0 0.5rem; }
   .ebooksys .main .main-tab .tab-contents .book-list .slick-list { margin-left: 0rem; }
   .ebooksys .main .main-tab .tab-contents .book-list > ul { width: 100%; }
   .ebooksys .main .main-tab .tab-contents .book-list > ul .slick-slide { padding: 0 0.6rem; }

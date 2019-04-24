@@ -112,7 +112,8 @@ MAIN
 .lifeedu .main .main-gotolink-zone .quick-zone .menu a:hover:after { display: block; position: absolute; left: 0; top: 0; border: 8px solid #154984; box-sizing: border-box; width: 100%; height: 100%; content: ""; }
 .lifeedu .main .main-gotolink-zone .quick-zone .menu .icon { display: block; text-align: center; padding-top: 25px; }
 .lifeedu .main .main-gotolink-zone .quick-zone .menu .name { display: block; margin-top: 24px; color: #fff; font-size: 18px; text-align: center; line-height: 24px; }
-.lifeedu .main .main-gotolink-zone .wearea-zone { float: left; position: relative; width: 650px; height: 300px; background: url("../../static/images/lifeedu/main/bg_wearea.png") repeat 0 0, url("../../static/images/lifeedu/main/bg_map.png") no-repeat 0 0; }
+.lifeedu .main .main-gotolink-zone .wearea-zone { float: left; position: relative; width: 650px; height: 300px; background: url("../../static/images/lifeedu/main/bg_wearea.png") repeat 0 0;}
+.lifeedu .main .main-gotolink-zone .wearea-zone .inbox {background: url("../../static/images/lifeedu/main/bg_map.png") no-repeat 0 0; }
 .lifeedu .main .main-gotolink-zone .wearea-zone .tit { overflow: hidden; position: absolute; right: 7px; top: 17px; padding: 0 20px; font-size: 22px; color: #fff; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; text-align: center; line-height: 50px; background: #ff7a39; border-radius: 100px; }
 .lifeedu .main .main-gotolink-zone .wearea-zone .desc { position: absolute; right: 24px; top: 84px; text-align: right; color: #fff; font-size: 15px; line-height: 24px; }
 .lifeedu .main .main-gotolink-zone .wearea-zone .map { padding: 15px 0 0 30px; position: relative; z-index: 1; background: url("../../static/images/lifeedu/main/bg_map.png") no-repeat 0 0; }

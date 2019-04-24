@@ -439,77 +439,7 @@
 											</a>
 										</li>
 										
-										<li>
-											<a href="#">
-												<div class="before">
-													<span class="tit">연애의행방11</span>
-													<span class="img"><img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" ></span>	
-												</div>
-												<div class="after">
-													<ul>
-														<li>저자 : 김유남</li>
-														<li>출판사 : denstory</li>
-														<li>발행년도 : 2018.02.23</li>
-														<li>듣기기능 : TTS지원</li>
-													</ul>
-													<span class="btn">책 상세보기</span>
-												</div>
-											</a>
-										</li>
 										
-										<li>
-											<a href="#">
-												<div class="before">
-													<span class="tit">연애의행방11</span>
-													<span class="img"><img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" ></span>	
-												</div>
-												<div class="after">
-													<ul>
-														<li>저자 : 김유남</li>
-														<li>출판사 : denstory</li>
-														<li>발행년도 : 2018.02.23</li>
-														<li>듣기기능 : TTS지원</li>
-													</ul>
-													<span class="btn">책 상세보기</span>
-												</div>
-											</a>
-										</li>
-										
-										<li>
-											<a href="#">
-												<div class="before">
-													<span class="tit">연애의행방11</span>
-													<span class="img"><img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" ></span>	
-												</div>
-												<div class="after">
-													<ul>
-														<li>저자 : 김유남</li>
-														<li>출판사 : denstory</li>
-														<li>발행년도 : 2018.02.23</li>
-														<li>듣기기능 : TTS지원</li>
-													</ul>
-													<span class="btn">책 상세보기</span>
-												</div>
-											</a>
-										</li>
-										
-										<li>
-											<a href="#">
-												<div class="before">
-													<span class="tit">연애의행방11</span>
-													<span class="img"><img src="../../static/images/ebooksys/temp/main_book01.jpg" alt="연애의행방 표지" ></span>	
-												</div>
-												<div class="after">
-													<ul>
-														<li>저자 : 김유남</li>
-														<li>출판사 : denstory</li>
-														<li>발행년도 : 2018.02.23</li>
-														<li>듣기기능 : TTS지원</li>
-													</ul>
-													<span class="btn">책 상세보기</span>
-												</div>
-											</a>
-										</li>
 									</ul>
 								</div>
 							</div>
@@ -1396,9 +1326,16 @@
 			customPaging: function(slider, i) {
 				return '<em>' + (i + 1) + '</em>/' + Math.ceil(slider.slideCount/7);
 			},
-			responsive: [
+			responsive: [ //  20190424 수정 및 추가
 				 {
 					breakpoint: 1024,
+					settings: {
+						slidesToShow: 5,
+						slidesToScroll: 5
+					}
+				},
+				{
+					breakpoint: 768,
 					settings: {
 						slidesToShow: 3,
 						slidesToScroll: 3

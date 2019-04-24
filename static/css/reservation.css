@@ -86,19 +86,20 @@ MAIN
 .reservation .view-m {display:none !important;}
 .reservation .slide-wrap .view-pc {display:inline-block !important;}
 
-.reservation .section-visual {position:relative;height:485px;}
-.reservation .section-visual .banner-wrap .view-pc {height:100%;}
-.reservation .section-visual button[class*='btn-main-'] {position:absolute;left:213px;display:inline-block;width:70px;height:71px;text-indent:-999em;z-index:1;}
+.reservation .section-visual {position:relative;height:485px; min-width: 1320px}
+.reservation .section-visual div[class^=view-] img {display: none}
+.reservation .section-visual .view-pc {height: 485px}
+.reservation .section-visual button[class*='btn-main-'] {position:absolute;left:50%;display:inline-block;width:70px;height:71px;text-indent:-999em;z-index:1; margin-left: -750px}
 .reservation .section-visual .btn-main-prev {top:169px;background:url(../images/reservation/main/btn_main_prev.png) no-repeat left top;}
 .reservation .section-visual .btn-main-next {top:246px;background:url(../images/reservation/main/btn_main_next.png) no-repeat left top;}
-.reservation .section-visual .custom-paging {position:absolute;bottom:142px;left:235px;}
+.reservation .section-visual .custom-paging {position:absolute;bottom:142px;left:50%; width:70px;	 margin-left: -750px; text-align: center;}
 .reservation .section-visual .custom-paging > li {display:none;font-weight: normal;font-size:15px;color:#fff;}
 .reservation .section-visual .custom-paging > li em {font-size:18px;font-weight: bold;}
 .reservation .section-visual .custom-paging > li.slick-active {display:block;}
-.reservation .notice-wrap {position:absolute;top:178px;right:300px;overflow:hidden;width:592px;height:250px;}
-.reservation .notice-wrap h2 {padding:20px 0 14px 29px;font-size:22px;font-weight: bold;color:#fff;background:#0841b5;border-bottom:1px solid #dbdbdb;}
+.reservation .notice-wrap {position:absolute;top:178px;left:50%; overflow:hidden;width:592px;height:250px; margin-left: 68px}
+.reservation .notice-wrap h2 {height:60px; padding:13px 0 0 29px;font-size:22px;font-weight: bold;color:#fff;background:#0841b5;border-bottom:1px solid #dbdbdb; box-sizing: border-box}
 .reservation .notice-wrap .btn-detail {position:absolute;top:0;right:0;display:inline-block;width:60px;height:60px;background:url(../images/reservation/main/btn_plus.png) no-repeat center center;border-left:1px solid rgba(219,219,219,0.3);text-indent:-999em;}
-.reservation .notice-wrap .date {float:left;width:151px;height:100%;padding-top:52px;background:#eff0f1;font-size:19px;color:#b4b4b4;font-weight:bold;text-align:center;vertical-align:middle;}
+.reservation .notice-wrap .date {float:left;width:151px;height:190px;padding-top:40px;background:#eff0f1;font-size:19px;color:#b4b4b4;font-weight:bold;text-align:center;vertical-align:middle; box-sizing: border-box;}
 .reservation .notice-wrap .date .day {display:block;font-weight: bold;font-size:70px;color:#000;}
 .reservation .notice-wrap .js-scroll {position:relative;overflow:hidden;height:190px;}
 .reservation .notice-wrap .comp-lst_dotted {float:left;width:440px;padding:15px 0 15px 12px;background:#fff;box-sizing:border-box;}
@@ -108,6 +109,7 @@ MAIN
 .reservation .notice-wrap .comp-lst_dotted .txt {overflow:hidden;display:inline-block;width:70%;vertical-align:middle;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
 .reservation .notice-wrap .comp-lst_dotted time {float:right;margin-right:23px;vertical-align:middle;color:#a2a2a2;font-size:14px;}
 .reservation .section-edu {position:relative;height:690px;margin-top:-4px;padding:14px 0 50px;background:url(../images/reservation/main/bg_main_edu.png) no-repeat left top;background-size:cover;}
+.reservation .section-edu .slick-track {margin-right: auto; margin-left: 0}
 .reservation .section-edu .guide-wrap {position:absolute;top:23px;left:50%;margin-left:708px;z-index:100;}
 .reservation .section-edu .guide-wrap .guide-tit {position:relative;width:128px;height:128px;font-size:18px;text-align:center;font-weight: bold;color:#595959;background:#fff;border:15px solid #2e5aba;border-radius:50%;}
 .reservation .section-edu .guide-wrap .guide-tit:before {position:absolute;left:-15px;top:-15px;display:block;width:128px;height:128px;border-top:15px solid transparent;border-right:15px solid #962d3e;border-bottom:15px solid #962d3e;border-left:15px solid transparent;border-radius:50%;box-sizing:border-box;content:'';}
@@ -163,6 +165,7 @@ MAIN
 .reservation .section-rental {position:relative;padding:58px 0;background:url(../images/reservation/main/bg_main_rental.png) no-repeat left top;background-size:cover;}
 .reservation .section-rental:after {position:absolute;bottom:-24px;left:0;width:299px;height:337px;background:url(../images/reservation/main/bg_main_stat.png) no-repeat left top;z-index:100;content:'';}
 .reservation .section-rental .js-slide-rental {z-index:1000;}
+.reservation .section-rental .slick-track {margin-right: auto; margin-left: 0}
 .reservation .section-rental .reserve-wrap.on:hover .reserve-area:after {position:absolute;top:0;left:0;display:block;width:98.9%;height:99%;border:2px solid #2790c7;content:'';}
 .reservation .section-rental .reserve-wrap.on:hover .btn-reserve {background:#2790c7;color:#fff;}
 
@@ -337,7 +340,12 @@ BROWSER HACK
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width:1024px){
+@media (max-width:1660px){
+	.reservation .section-edu .guide-wrap{display: none}
+}@media (max-width:1495px){
+	.reservation .section-visual button[class*='btn-main-'] {left: 0; margin-left: 0}
+	.reservation .section-visual .custom-paging {left: 0; margin-left: 0}
+}@media (max-width:1024px){
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
@@ -366,19 +374,20 @@ MAIN
 	.reservation .slide-wrap .view-m {display:inline-block !important;}
 	.reservation .slide-wrap .view-pc {display:none !important;}
 
-	.reservation .section-visual {height:auto;}
+	.reservation .section-visual {height:32.3rem; min-width: auto;}
+	.reservation .section-visual .view-m {height:32.3rem; -webkit-background-size: cover !important; background-size: cover !important;}
 	.reservation .banner-wrap *[class*="btn-main"],
 	.reservation .banner-wrap .custom-paging {display:none !important;}
-	.reservation .notice-wrap {top:auto;right:0;bottom:1rem;width:-webkit-calc(100% - 3.2rem);width:-moz-calc(100% - 3.2rem);width:-o-calc(100% - 3.2rem);width:calc(100% - 3.2rem);height:16.6rem;margin:0 1.6rem;}
+	.reservation .notice-wrap {left:1rem; top:inherit; bottom:3.8rem; width:-webkit-calc(100% - 2rem);width:-moz-calc(100% - 2rem);width:-o-calc(100% - 2rem);width:calc(100% - 2rem); height:16.6rem; margin-left: 0}
 	.reservation .notice-wrap h2 {height: 4rem; padding:0 0 0 2rem; line-height:4rem; font-size:1.5rem; box-sizing: border-box}
 	.reservation .notice-wrap .btn-detail {width:4rem;height:4rem;background:url(../images/reservation/main/btn_plus_m.png) no-repeat center center;background-size:1.6rem 1.6rem}
 	.reservation .notice-wrap .date {width:10.1rem;height:12.6rem;padding-top:2.6rem;font-size:1.3rem;}
 	.reservation .notice-wrap .date .day {font-size:4.7rem;}
 	.reservation .notice-wrap .js-scroll {height:12.6rem;}
 	.reservation .notice-wrap .comp-lst_dotted {width:100%;padding:1.4rem 0 1.4rem .8rem;}
-	.reservation .notice-wrap .comp-lst_dotted li {margin-top:.7rem;}
+	.reservation .notice-wrap .comp-lst_dotted li {margin-top:.7rem; font-size: 1.05rem}
 	.reservation .notice-wrap .comp-lst_dotted .txt {width:-webkit-calc(100% - 8.2rem);width:-moz-calc(100% - 8.2rem);width:-o-calc(100% - 8.2rem);width:calc(100% - 8.2rem); vertical-align: top}
-	.reservation .notice-wrap .comp-lst_dotted time {width:7rem;margin-right:1.2rem;font-size:1.2rem;}
+	.reservation .notice-wrap .comp-lst_dotted time {width:6rem;margin-right:1.2rem;font-size:1.2rem; text-align: right;}
 	.reservation .tab-wrap .scroll-wrap {overflow-x:scroll;}
 	.reservation .tab-wrap .scroll-wrap .tab-tit {width:-webkit-calc(12.7rem * 7);width:-moz-calc(12.7rem * 7);width:-o-calc(12.7rem * 7);width:calc(12.7rem * 7);}
 	.reservation .tab-contents > div {padding:0 1rem;}

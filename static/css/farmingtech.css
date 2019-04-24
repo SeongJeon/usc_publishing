@@ -218,14 +218,14 @@ SUB PAGE
 .summary .usc .tp-organization .chartimg { width: 635px; height: 322px; }
 .summary .usc .tp-organization .chartimg:before { height: 134px; }
 .summary .usc .tp-organization .chartimg:after { width: 404px; margin-left: -203px; }
-.summary .usc .tp-organization .chartimg p[class^=lnk].lnk1 { font-family: "NanumSquareEB","Malgun Gothic","굴림",Gulim,"돋움",Dotum,Sans-serif; line-height: 148px; border: 0; font-size: 18px; border-radius: 50%; background: url("../../static/images/farmingtech/subpage/bg_round.png") no-repeat 50% 50%; background-size: 100% 100%; }
-.summary .usc .tp-organization .chartimg p[class^=lnk].lnk2 { top: 195px; width: 238px; margin-left: -119px; background: #dea12f; line-height: 50px; font-family: "NanumSquareEB","Malgun Gothic","굴림",Gulim,"돋움",Dotum,Sans-serif; border: 0; font-size: 18px; border-radius: 30px; }
+.summary .usc .tp-organization .chartimg p[class^=lnk].lnk1 {font-weight: bold; line-height: 148px; border: 0; font-size: 18px; border-radius: 50%; background: url("../../static/images/farmingtech/subpage/bg_round.png") no-repeat 50% 50%; background-size: 100% 100%; }
+.summary .usc .tp-organization .chartimg p[class^=lnk].lnk2 { top: 195px; width: 238px; margin-left: -119px; background: #dea12f; line-height: 50px;font-weight: bold; border: 0; font-size: 18px; border-radius: 30px; }
 .summary .usc .tp-organization .partgroup { width: 635px; margin: 0 auto; }
 .summary .usc .tp-organization .partgroup .part-area { float: left; }
 .summary .usc .tp-organization .partgroup .part-area + .part-area { float: right; }
-.summary .usc .tp-organization .part { width: 230px; height: 40px; min-height: 40px; font-size: 17px; line-height: 38px; text-align: center; background: #fe970e; font-family: "NanumSquareB", "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; border: 0; }
+.summary .usc .tp-organization .part { width: 230px; height: 40px; min-height: 40px; font-size: 17px; line-height: 38px; text-align: center; background: #fe970e; font-weight: bold;border: 0; }
 .summary .usc .tp-organization .part:before { background: #fe970e; }
-.summary .usc .tp-organization .part-area li { position: relative; height: 40px; margin-top: 20px; line-height: 38px; background: #cbcaca; font-size: 16px; font-family: 'NanumSquareR'; }
+.summary .usc .tp-organization .part-area li { position: relative; height: 40px; margin-top: 20px; line-height: 38px; background: #cbcaca; font-size: 16px; font-weight: normal;}
 .summary .usc .tp-organization .part-area li:before { position: absolute; top: -20px; left: 50%; display: inline-block; width: 1px; height: 11px; background: #cbcaca; content: ''; }
 .summary .usc .tp-organization .part-area li:after { position: absolute; top: -8px; left: 50%; display: inline-block; width: 10px; height: 10px; margin-left: -6px; background: #cbcaca; border: 2px solid #fff; border-radius: 50%; z-index: 10; content: ''; }
 .summary .comp-lst_important.point { color: #f4620a; }
@@ -249,16 +249,16 @@ SUB PAGE
 .cooking .cooking-wrap .cooking-info { float: left; width: 61%; }
 .cooking .cooking-wrap .cooking-info > li { display: table; width: 100%; min-height: 183px; border: 1px solid #dddbdb; }
 .cooking .cooking-wrap .cooking-info > li + li { margin-top: -1px; }
-.cooking .cooking-wrap .cooking-info > li .tit { display: table-cell; width: 99px; background: #f1f3f4; vertical-align: middle; text-align: center; font-size: 17px; font-family: 'NanumSquareB'; color: #1c1c1c; }
+.cooking .cooking-wrap .cooking-info > li .tit { display: table-cell; width: 99px; background: #f1f3f4; vertical-align: middle; text-align: center; font-size: 17px; font-weight: bold; color: #1c1c1c; }
 .cooking .cooking-wrap .cooking-info > li ol { display: table-cell; padding: 10px 10px 10px 18px; vertical-align: middle; }
 .cooking .cooking-wrap .cooking-info > li ul { display: table-cell; padding: 10px 10px 10px 18px; vertical-align: middle; }
-.cooking .cooking-wrap .cooking-info > li .num-list li { margin-top: 8px; padding-left: 18px; text-indent: -18px; font-size: 15px; line-height: 1.2; color: #4b4b4b; font-family: 'NanumSquareB'; }
+.cooking .cooking-wrap .cooking-info > li .num-list li { margin-top: 8px; padding-left: 18px; text-indent: -18px; font-size: 15px; line-height: 1.2; color: #4b4b4b; font-weight: bold; }
 .cooking .cooking-wrap .cooking-info > li .comp-lst_dotted li { font-size: 15px; }
 .cooking .cooking-wrap .cooking-info > li .num-list li:first-child { margin-top: 0; }
 .cooking .cooking-banner { margin: 40px 0; }
 .cooking .cooking-banner .img-area { display: inline-block; width: 100px; height: 100px; }
 .cooking .cooking-banner .img-area button { position: relative; }
-.cooking .cooking-banner .layer { display: none; position: absolute; top: 0; left: 0; width: 100px; height: 100px; background: rgba(0, 0, 0, 0.6); border-radius: 100%; font-family: 'NanumSquareB'; color: #fff; text-align: center; border: 5px solid #f27405; box-sizing: border-box; }
+.cooking .cooking-banner .layer { display: none; position: absolute; top: 0; left: 0; width: 100px; height: 100px; background: rgba(0, 0, 0, 0.6); border-radius: 100%; font-weight: bold; color: #fff; text-align: center; border: 5px solid #f27405; box-sizing: border-box; }
 .cooking .cooking-banner .layer span { display: block; position: absolute; top: 50%; left: 50%; width: 100%; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .cooking .cooking-banner .img-area:hover .layer, .cooking .cooking-banner .slick-current .layer { display: block; }
 .cooking .cooking-banner .slick-list { max-width: 87.2%; margin: 0 auto; }
@@ -270,7 +270,7 @@ SUB PAGE
 .techniques .heading-h3 + .img-area { position: relative; margin: 18px 0; }
 .techniques .heading-h3 + .img-area .btn-pdf { position: absolute; bottom: 126px; right: 172px; width: 227px; height: 48px; text-align: center; line-height: 48px; border: 1px solid #fff; background: rgba(255, 255, 255, 0.2); color: #fff; border-radius: 30px; }
 .techniques .pdf-txt { height: 46px; margin-bottom: 16px; line-height: 46px; border: 2px solid #dddbdb; text-align: center; }
-.techniques .pdf-txt .comp-lst_important { display: inline-block; color: #4b4b4b; font-family: 'NanumSquareB'; }
+.techniques .pdf-txt .comp-lst_important { display: inline-block; color: #4b4b4b; font-weight: bold; }
 .techniques .btn-wrap { overflow: hidden; margin: -7px 0 0 -7px; }
 .techniques .btn-wrap li { float: left; display: inline-block; width: 24%; margin: 7px 0 0 7px; }
 .techniques .btn-wrap .btn-pdf { position: relative; display: block; height: 50px; padding-left: 23px; line-height: 50px; background: #fff3e9; color: #4a4a4a; box-sizing: border-box; }
@@ -393,7 +393,7 @@ MEDIA QUERY
   #wrap.farmingtech #container.main .farming-zone .menu { margin-top: 1.1rem; }
   #wrap.farmingtech #container.main .farming-zone .menu li { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; padding: 0.4rem 0.5rem 0.4rem 0.7rem; height: auto; }
   #wrap.farmingtech #container.main .farming-zone .menu li + li { margin-top: 0.7rem; }
-  #wrap.farmingtech #container.main .farming-zone .menu strong { width: 9rem; font-size: 1rem; line-height: 2.5rem; }
+  #wrap.farmingtech #container.main .farming-zone .menu strong { width: 10rem; font-size: 1rem; line-height: 2.5rem; }
   #wrap.farmingtech #container.main .farming-zone .menu select { -webkit-flex: 1; flex: 1; width: 100%; height: 2.5rem; padding: 0 1.6rem 0 0.8rem; font-size: 1rem; line-height: 2.3rem; }
   #wrap.farmingtech #container.main .weather-zone { width: 100%; padding: 1.5rem 1.5rem 1rem; }
   #wrap.farmingtech #container.main .weather-zone:after { display: block; clear: both; content: ""; }
@@ -432,7 +432,7 @@ MEDIA QUERY
   .summary .usc .tp-organization .chartimg:after { width: calc(100% - 15rem); margin-left: calc(-50% + 7.5rem); }
   .summary .usc .tp-organization .partgroup { display: block; width: 100%; }
   .summary .usc .tp-organization .part:before { width: 6px; height: 6px; margin: -4px; }
-  .summary .usc .tp-organization .part-area li { width: 15rem; height: 3rem; font-size: 1.2rem; line-height: 3rem; }
+  .summary .usc .tp-organization .part-area li { width: 15rem; height: 3rem; font-size: 1rem; line-height: 3rem; }
   .summary .usc .tp-organization .part-area li:after { width: 6px; height: 6px; margin-left: -4px; }
   .summary .tp-organization .organization-chart .part { width: 15rem; height: 3rem; min-height: auto; font-size: 1.2rem; line-height: 3rem; }
   /* 의성농업현황 */
@@ -466,7 +466,7 @@ MEDIA QUERY
   .techniques .heading-h3 + .img-area { margin: .9rem 0; }
   .techniques .heading-h3 + .img-area .btn-pdf { bottom: auto; left: 50%; top: 50%; right: auto; margin: 9vw 0 0 10vw; width: 10rem; height: 3rem; line-height: 3rem; }
   .techniques .pdf-txt { height: inherit; margin-bottom: .8rem; padding: .7rem; line-height: inherit; }
-  .techniques .btn-wrap li { width: -webkit-calc((100% / 3) - 9px); width: -moz-webkit-calc((100% / 3) - 9px); width: -o-webkit-calc((100% / 3) - 9px); width: -webkit-calc((100% / 3) - 9px); }
+  .techniques .btn-wrap li { width: -webkit-calc((100% / 3) - 9px); width: -moz-webkit-calc((100% / 3) - 9px); width: -o-webkit-calc((100% / 3) - 9px);  width:calc((100% / 3) - 9px); }
   .techniques .btn-wrap .btn-pdf { height: 3rem; padding-left: 1rem; line-height: 3rem; }
   .techniques .btn-wrap .comm-btn_download2:after { width: 3rem; height: 3rem; }
   .techniques .btn-wrap .btn-pdf:hover:before { width: -webkit-calc(100% - 4px); width: -moz-webkit-calc(100% - 4px); width: -o-webkit-calc(100% - 4px); width: -webkit-calc(100% - 4px); height: -webkit-calc(100% - 4px); height: -moz-webkit-calc(100% - 4px); height: -o-webkit-calc(100% - 4px); height: -webkit-calc(100% - 4px); } }

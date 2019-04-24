@@ -241,7 +241,8 @@ MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width: 1520px) { .culture .main .sec-course .slick-arrow { display: none !important; }
   .culture .main .sec-course .slick-dots { display: none !important; } }
-@media (max-width: 1024px) { /* ------------------------------------------------------ LAYOUT ------------------------------------------------------ */
+@media (max-width: 1024px) { 
+  /* ------------------------------------------------------ LAYOUT ------------------------------------------------------ */
   #wrap.culture #header .header-bottom .header-utilegroup { height: 4.3rem; }
   #wrap.culture #header .header-bottom .header-utilegroup .header-utile { border-bottom: 0; }
   #wrap.culture #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/culture/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
@@ -262,6 +263,7 @@ MEDIA QUERY
   #wrap.culture #gnb .gnb h4 a:hover:before { background: #d94343; }
   #wrap.culture #container { padding-top: 0; }
   /* ------------------------------------------------------ MAIN ------------------------------------------------------ */
+  .culture .main-scroll-zone {padding-top: 0; height: auto; }
   .culture .main { height: auto; /* SECTION 3 */ /* SECTION 2 */ /* SECTION 1 */ }
   .culture .main .inner { width: 100%; }
   .culture .main .icon-scroll { display: none; }

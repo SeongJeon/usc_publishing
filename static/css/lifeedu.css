@@ -272,7 +272,7 @@ SUB PAGE
 .teacher_detail_infor .lst { margin-top: 25px; }
 .teacher_detail_infor .lst:after { display: block; clear: both; content: ""; }
 .teacher_detail_infor .lst li { float: left; width: 50%; color: #939393; font-size: 16px; line-height: 30px; }
-.teacher_detail_infor .lst .tit { display: inline-block; margin-right: 18px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; vertical-align: middle; width: 80px; }
+.teacher_detail_infor .lst .tit { display: inline-block; margin-right: 18px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; vertical-align: top; width: 90px; }
 .teacher_detail_infor .lst .tit:before { display: inline-block; content: ""; width: 4px; height: 4px; background: #797979; margin-right: 10px; vertical-align: middle; }
 .teacher_detail_infor .lst .tit:after { display: inline-block; content: "/"; float: right; color: #939393; font-size: 10px; }
 
@@ -324,7 +324,7 @@ SUB PAGE
 .tbl-lifeedu th { height: 30px; text-align: center; color: #787878; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; font-size: 16px; }
 .tbl-lifeedu th:nth-child(2) { text-align: left; padding-left: 66px; }
 .tbl-lifeedu td { padding: 3px 3px 2px; }
-.tbl-lifeedu .w_form input { width: 180px; }
+.tbl-lifeedu .w_form input { width: 178px; }
 .tbl-lifeedu .w_form *[class^=comm-btn] { width: auto; padding: 0 10px; }
 .tbl-lifeedu .w_activity input { width: 125px; }
 .tbl-lifeedu .w_activity .txt { color: #787878; }
@@ -512,22 +512,22 @@ MEDIA QUERY
   .lifeedu .search-box-detail .comp-btn-zone *[class^=comm-btn] { min-width: auto; }
   .lifeedu .search-box-detail .comp-btn-zone .p-right { position: static; }
   .lifeedu *[class^=class-lst][class*=_simpletype] { margin-top: 2rem; }
-  .lifeedu *[class^=class-lst][class*=_simpletype] > li { width: 49%; min-height: 33rem; height: auto; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li { width: 49%; min-height: 33rem; height: 38rem; }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(even) { margin-left: 2%; }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(1) ~ li { margin-top: 0; }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li:nth-child(2) ~ li { margin-top: 1rem; }
-  .lifeedu *[class^=class-lst][class*=_simpletype] > li a { padding: 4rem 1rem 1.5rem; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li a { padding: 40px 10px 15px }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-name .name { overflow: hidden; width: 100%; margin-top: 1rem; font-size: 1.4rem; padding-right: 0; white-space: nowrap; text-overflow: ellipsis; }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state { position: absolute; right: inherit; left: -1px; top: -1px; width: 100%; height: 3rem; padding: 0 1px; font-size: 1.2rem; box-sizing: content-box; line-height: 3rem; }
-  .lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state .sm { display: inline-block; vertical-align: middle; font-size: 1.2rem; padding-left: 2.7rem; padding-top: 0; margin-left: 1rem; background: url("../../static/images/lifeedu/subpage/bg_txt.png") no-repeat 0 50%; background-size: auto 20%; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li .booking-state .sm { display: inline-block; vertical-align: top; font-size: 1.2rem; padding-left: 2.7rem; padding-top: 0; margin-left: 1rem; background: url("../../static/images/lifeedu/subpage/bg_txt.png") no-repeat 0 50%; background-size: auto 20%; }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst { margin-top: 1rem; }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li { padding-left: 1rem; font-size: 1.1rem; }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:before { top: 0.4rem; width: 2px; height: 2px; }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst li:nth-child(1) ~ li { margin-top: 0.5rem; }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst .tit { float: none; width: 100%; }
   .lifeedu *[class^=class-lst][class*=_simpletype] > li .class-lst .cont { padding-left: 0; padding-top: 0.3rem; }
-  .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover { border: 2px solid #014099; padding: 4.1rem 1.1rem 1.6rem; }
-  .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover .booking-state { top: -2px; right: inherit; left: -2px; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover { border: 2px solid #014099; padding:39px 9px 14px; }
+  .lifeedu *[class^=class-lst][class*=_simpletype] > li a:hover .booking-state { top: -2px; right: inherit; left: -2px; padding:0 2px;}
   .lifeedu *[class^=class-lst][class*=_listtype] { margin-top: 2rem; }
   .lifeedu *[class^=class-lst][class*=_listtype] .classflag { font-size: 1rem; width: 2rem; height: 2rem; line-height: 2rem; }
   .lifeedu *[class^=class-lst][class*=_listtype] .flag { padding: 0 1rem; line-height: 2rem; font-size: 1rem; }
@@ -563,7 +563,7 @@ MEDIA QUERY
   .teacher_detail_infor .name { font-size: 1.5rem; padding: 0 0 0 1rem; }
   .teacher_detail_infor .lst { margin-top: 1rem; padding-left: 1rem; }
   .teacher_detail_infor .lst li { float: none; width: 100%; font-size: 1.2rem; line-height: 2rem; }
-  .teacher_detail_infor .lst .tit { margin-right: 1rem; width: 5.5rem; }
+  .teacher_detail_infor .lst .tit { margin-right: 1rem; width: 7rem; }
   .teacher_detail_infor .lst .tit:before { width: 2px; height: 2px; margin-right: 0.5rem; }
   .teacher_detail_infor .lst .tit:after { font-size: 1rem; }
   .ui-certification-zone { padding: 0 1rem; margin-top: 2rem; border: 2px solid #d6d5d5; }

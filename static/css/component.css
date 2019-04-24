@@ -105,7 +105,7 @@
 #footer .footer-selectgroup:after { display: block; clear: both; content: ""; }
 #footer .footer-selectgroup .footer-comp-select { float: left; position: relative; }
 #footer .footer-selectgroup .footer-comp-select dt button { width: 250px; height: 40px; padding: 0 45px 0 15px; border: 1px solid #cbcaca; font-size: 15px; color: #666; background: #fff url("../../static/images/common/form_select1.png") no-repeat 100% 50%; text-align: left; }
-#footer .footer-selectgroup .footer-comp-select dd { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: -1px; background: #fff; border: 1px solid #cbcaca; }
+#footer .footer-selectgroup .footer-comp-select dd { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: -1px; background: #fff; border: 1px solid #cbcaca; z-index: 3;}
 #footer .footer-selectgroup .footer-comp-select dd ul { padding: 11px 0 8px; }
 #footer .footer-selectgroup .footer-comp-select dd ul:after { display: block; clear: both; content: ""; }
 #footer .footer-selectgroup .footer-comp-select dd li { float: left; width: 50%; padding-left: 18px; box-sizing: border-box; text-align: left; line-height: 26px; }
@@ -656,6 +656,7 @@ select.w_select { width: 155px; }
 .w_radio2 { overflow: hidden; display: inline-block; vertical-align: middle; }
 .w_radio2 li { position: relative; float: left; }
 .w_radio2 li + li { margin-left: 5px; }
+.w_radio2 li input {width: 1px; height: 1px; position: absolute; left:2px; top: 50%; opacity: 0;}
 .w_radio2 label { display: inline-block; min-width: 63px; padding: 0 5px; line-height: 33px; border: 1px solid #d9d6d5; text-align: center; font-size: 15px; color: #787878; cursor: pointer; background: #f4f7f9; }
 .w_radio2 input:checked + label { background: #2e56bd; color: #fff; }
 
@@ -1483,10 +1484,11 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   table[class^=comp-tbl][class*=_boardtype] thead th { height: 3.3rem; font-size: 1.2rem; }
   table[class^=comp-tbl][class*=_boardtype] tbody td { height: 3.3rem; font-size: 1.2rem; line-height: 1.6rem; padding: 0.5rem; }
   table[class^=comp-tbl][class*=_boardtype] .pc + * { border-left: 0; }
-  table[class^=comp-tbl][class*=_formtype] > tbody > tr > th { position: relative; height: 4.3rem; padding: 1.2rem 1rem 0.5rem 0.7rem; width: 27%; word-break: keep-all; font-size: 1.2rem; line-height: 1.8rem; }
+  table[class^=comp-tbl][class*=_formtype] > tbody > tr > th {height: 4.3rem; padding: 1.2rem 0.5rem 0.5rem 0.7rem; width: 27%; word-break: keep-all; font-size: 1.2rem; line-height: 1.8rem; }
   table[class^=comp-tbl][class*=_formtype] > tbody > tr > td { height: 4.3rem; padding: 0.5rem 0.7rem; font-size: 1.2rem; }
   table[class^=comp-tbl][class*=_formtype] .txt { line-height: 3.3rem; }
-  table[class^=comp-tbl][class*=_formtype] .important { position: absolute; right: 0.5rem; line-height: 4.3rem; top: 0; }
+  /*table[class^=comp-tbl][class*=_formtype] .important { position: absolute; right: 0.5rem; line-height: 4.3rem; top: 0; }*/
+  table[class^=comp-tbl][class*=_formtype] .important {float: right;}
   table[class^=comp-tbl] .pc { display: none; }
   table[class^=comp-tbl] .m { display: inherit; }
   /* TEXT */
@@ -1561,10 +1563,12 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   .w_addr2 .zipcode { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
   .w_addr2 .zipcode input { -webkit-flex: 1; flex: 1; width: 100%; }
   .w_addr2 .zipcode *[class^=comm-btn] { width: 9rem; }
+  .w_phone {display: block;}
   .w_phone .txt { margin: 0; width: 10%; text-align: center; margin-bottom: 0.5rem; }
   .w_phone input:nth-of-type(1) { width: 90%; margin-bottom: 0.5rem; }
   .w_phone input:nth-of-type(2) { width: 100%; }
   .w_phone select { width: 90%; margin-bottom: 0.5rem; }
+  .w_email {display: block}
   .w_email .txt { margin: 0; width: 10%; text-align: center; }
   .w_email input:nth-of-type(1) { width: 90%; }
   .w_email input:nth-of-type(2) { width: 100%; margin-top: 0.5rem; }

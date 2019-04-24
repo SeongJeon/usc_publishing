@@ -342,7 +342,7 @@ SUB PAGE
 .notion .tree-area .tit span { display: block; color: #fe970e; font-weight: bold; font-size: 24px; }
 .notion .tree-area .txt { line-height: 1.6; color: #fff; font-weight: bold; font-size: 15px; }
 .notion .plan-list { margin-left: 30px; border-top: 2px solid #7a7a7a; border-bottom: 2px solid #7a7a7a; }
-.notion .plan-list > li { display: table; width: 100%; border-top: 1px solid #d9d6d5; }
+.notion .plan-list > li { display: table; width: 100%; border-top: 1px solid #d9d6d5; table-layout: fixed;}
 .notion .plan-list > li:first-child { border-top: 0; }
 .notion .plan-list > li:first-child .comp-lst_dotted li:last-child { padding-left: 95px; text-indent: -80px; }
 .notion .plan-list > li:nth-child(2) li:first-child, .notion .plan-list > li:last-child li:last-child { padding-left: 65px; text-indent: -52px; }

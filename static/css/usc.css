@@ -10,10 +10,11 @@ LAYOUT
   body.pc #wrap.usc #header #gnb .gnb h2.over a, body.pc #wrap.usc #header #gnb .gnb h2 a:hover { font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
   body.pc #wrap.usc #header #gnb .gnb h2.over a:before, body.pc #wrap.usc #header #gnb .gnb h2 a:hover:before { display: block; position: absolute; bottom: 0; left: 0; width: 100%; content: ""; background: #f0412c; height: 6px; z-index: 1000; }
   body.pc #wrap.usc #header #gnb .gnb h2.over a:after, body.pc #wrap.usc #header #gnb .gnb h2 a:hover:after { display: block; position: absolute; bottom: -9px; left: 50%; width: 21px; height: 21px; margin-left: -10.5px; content: ""; border: 6px solid #f0412c; box-sizing: border-box; border-radius: 100px; background: #fff; z-index: 1000; }
-  body.pc #wrap.usc #header #gnb .category .btn { position: absolute; right: 0; top: 5px; }
-  body.pc #wrap.usc #header #gnb .category .btn a { display: block; overflow: hidden; position: relative; width: 260px; height: 39px; padding-right: 38px; font-size: 20px; color: #fff; line-height: 40px; text-align: center; box-sizing: border-box; background: #785719; }
-  body.pc #wrap.usc #header #gnb .category .btn a:before { display: block; position: absolute; right: 0; top: 0; width: 38px; height: 39px; background: url("../../static/images/usc/sp_main.png") no-repeat -300px -250px; content: ""; }
-  body.pc #wrap.usc #header #gnb .category .btn a:after { display: block; position: absolute; right: 75px; top: 50%; margin-top: -5px; width: 14px; height: 10px; background: url("../../static/images/usc/sp_main.png") no-repeat -200px -200px; content: ""; }
+  body.pc #wrap.usc #header #gnb .category .btn { position: absolute; right: 38px; top: 5px; }
+  body.pc #wrap.usc #header #gnb .category .btn a { display: block; overflow: hidden; position: relative; width: 260px; height: 39px; font-size: 20px; color: #fff; line-height: 40px; text-align: center; box-sizing: border-box; background: #785719; }
+  body.pc #wrap.usc #header #gnb .sitemap { position: absolute; right: 0; top: 5px;}
+  body.pc #wrap.usc #header #gnb .sitemap a { display: block; width: 38px; height: 39px; background: url("../../static/images/usc/sp_main.png") no-repeat -300px -250px;}
+  body.pc #wrap.usc #header #gnb .category .btn a:after { display: block; position: absolute; right: 37px; top: 50%; margin-top: -5px; width: 14px; height: 10px; background: url("../../static/images/usc/sp_main.png") no-repeat -200px -200px; content: ""; }
   body.pc #wrap.usc #header #gnb .category .btn span { position: relative; top: -2px; }
   body.pc #wrap.usc #header #gnb .category .depth2menu { margin-top: -6px; padding-top: 6px; background: transparent; }
   body.pc #wrap.usc #header .depth2menu { display: none; overflow: hidden; position: absolute; top: 100%; left: 0; background: #fff; z-index: 100; }

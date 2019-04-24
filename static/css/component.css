@@ -1217,6 +1217,7 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
 
 @-moz-document url-prefix() {}
 @media (max-width: 1024px) { /* LAYOUT */
+	.dimd {opacity: 1}
   #header, #footer, #container { min-width: inherit; }
   #header { position: static; height: auto; }
   #header .inner { width: auto; }

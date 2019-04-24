@@ -55,8 +55,12 @@ LAYOUT
 
 .lifeedu #lnb { border-top-color: #d6d5d5; }
 .lifeedu #lnb .title-depth h2 { background: #014099; }
-.lifeedu #lnb .menu h2 a.open, .lifeedu #lnb .menu h2 a:hover { background: #dce8f6; color: #000; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
-.lifeedu #lnb .menu h2 a.open:after, .lifeedu #lnb .menu h2 a:hover:after { background-color: #417ff2; }
+.lifeedu #lnb .menu h2 a.current, 
+.lifeedu #lnb .menu h2 a.open, 
+.lifeedu #lnb .menu h2 a:hover { background: #dce8f6; color: #000; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; }
+.lifeedu #lnb .menu h2 a.current:after, 
+.lifeedu #lnb .menu h2 a.open:after, 
+.lifeedu #lnb .menu h2 a:hover:after { background-color: #417ff2; }
 .lifeedu #lnb .menu .smallmenu ul { background: #f1f6fc; }
 .lifeedu #lnb .menu .smallmenu ul a[aria-current=page]:before, .lifeedu #lnb .menu .smallmenu ul a:hover:before { border-color: #014099; }
 

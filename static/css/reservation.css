@@ -67,8 +67,10 @@ LAYOUT
 	#wrap.reservation #container:before {top:375px;}
 .reservation #lnb { }
 	.reservation #lnb .title-depth h2 { background: #014099; }
+	.reservation #lnb .menu h2 a.current, 
 	.reservation #lnb .menu h2 a.open, 
 	.reservation #lnb .menu h2 a:hover { background: #dce8f6; color: #000; font-weight: normal; }
+	.reservation #lnb .menu h2 a.current:after, 
 	.reservation #lnb .menu h2 a.open:after, 
 	.reservation #lnb .menu h2 a:hover:after { background-color: #417ff2; }
 	.reservation #lnb .menu .smallmenu ul { background: #f1f6fc; }

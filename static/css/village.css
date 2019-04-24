@@ -63,8 +63,10 @@ LAYOUT
 	body.pc #wrap.village #container .top-visual-zone p {background:url("../../static/images/commonbg/img_villagetxt.png") no-repeat 50% 50%;}
 }
 .village #lnb .title-depth h2 {background: #45bf55}
+	.village #lnb .menu h2 a.current, 
 	.village #lnb .menu h2 a.open, 
 	.village #lnb .menu h2 a:hover {background-color: #5f9c74}
+	.village #lnb .menu h2 a.current:after, 
 	.village #lnb .menu h2 a.open:after, 
 	.village #lnb .menu h2 a:hover:after {background-color: #1d4027}
 	.village #lnb .menu .smallmenu ul {background: #f8fbf2}

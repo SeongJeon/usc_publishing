@@ -36,8 +36,12 @@ LAYOUT
 #wrap.usclib #container .top-visual-zone p { width: 1320px; height: 185px; margin: 0 auto; background: url("../../static/images/commonbg/img_usclibtxt.png") no-repeat 0 50%; }
 
 #wrap.usclib #lnb .title-depth h2 { background: #336ac0; }
-#wrap.usclib #lnb .menu h2 a.open, #wrap.usclib #lnb .menu h2 a:hover { background: #3f889a; }
-#wrap.usclib #lnb .menu h2 a.open:after, #wrap.usclib #lnb .menu h2 a:hover:after { background-color: #155764; }
+#wrap.usclib #lnb .menu h2 a.current, 
+#wrap.usclib #lnb .menu h2 a.open, 
+#wrap.usclib #lnb .menu h2 a:hover { background: #3f889a; }
+#wrap.usclib #lnb .menu h2 a.current:after, 
+#wrap.usclib #lnb .menu h2 a.open:after, 
+#wrap.usclib #lnb .menu h2 a:hover:after { background-color: #155764; }
 #wrap.usclib #lnb .menu .smallmenu ul { background: #eff9fe; }
 #wrap.usclib #lnb .menu .smallmenu a[aria-current=page]:before, #wrap.usclib #lnb .menu .smallmenu a:hover:before { border-color: #155764; }
 

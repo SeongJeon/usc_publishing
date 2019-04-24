@@ -35,8 +35,12 @@ LAYOUT
   body.pc .sewagebusiness #header.header-type2.open .header-middle { border-bottom: 0; }
   body.pc .sewagebusiness #header.header-type2.open .header-bottom { border-bottom-color: #2ba1d8; } }
 #wrap.sewagebusiness #lnb .title-depth h2 { background: #2952b9; }
-#wrap.sewagebusiness #lnb .menu h2 a.open, #wrap.sewagebusiness #lnb .menu h2 a:hover { background: #2f9abd; }
-#wrap.sewagebusiness #lnb .menu h2 a.open:after, #wrap.sewagebusiness #lnb .menu h2 a:hover:after { background-color: #2a3b65; }
+#wrap.sewagebusiness #lnb .menu h2 a.current, 
+#wrap.sewagebusiness #lnb .menu h2 a.open, 
+#wrap.sewagebusiness #lnb .menu h2 a:hover { background: #2f9abd; }
+#wrap.sewagebusiness #lnb .menu h2 a.current:after, 
+#wrap.sewagebusiness #lnb .menu h2 a.open:after, 
+#wrap.sewagebusiness #lnb .menu h2 a:hover:after { background-color: #2a3b65; }
 #wrap.sewagebusiness #lnb .menu .smallmenu ul { background: #f2f9fa; }
 #wrap.sewagebusiness #lnb .menu .smallmenu ul a[aria-current=page]:before, #wrap.sewagebusiness #lnb .menu .smallmenu ul a:hover:before { border-color: #2f9abd; }
 

@@ -218,7 +218,7 @@ var usc = {
 	// GOTO THE TOP 
 	gototopEvent : function(el){
 		$this = $(el);
-		$('html').animate({'scrollTop': 0}, 300, 'swing', function(){
+		$('body,html').animate({'scrollTop': 0}, 300, 'swing', function(){
 			$('html').find($this.attr('href')).focus();
 		});
 		return false;

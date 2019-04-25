@@ -1274,9 +1274,9 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   #header .header-middle .comp-search { display: none; width: 100%; position: absolute; top: 0; left: -100%; height: 6rem; }
   #header .header-middle .comp-search .form { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; border-radius: 0; border: 0; }
   #header .header-middle .comp-search .form select { display: none; }
-  #header .header-middle .comp-search .form input { -webkit-flex: 1; flex: 1; height: 6rem; border: 2px solid #ffb00d; font-size: 1.4rem; }
+  #header .header-middle .comp-search .form input { -webkit-flex: 1; flex: 1; height: 6rem; border: 2px solid #ffb00d; font-size: 1.4rem; width: 100%}
   #header .header-middle .comp-search .form .btn { display: block; width: 6rem; }
-  #header .header-middle .comp-search .form .btn button { position: relative; width: 100%; height: 100%; background: #ffb00d; text-indent: -999em; }
+  #header .header-middle .comp-search .form .btn button { position: relative; width:6rem; height: 100%; background: #ffb00d; text-indent: -999em; }
   #header .header-middle .comp-search .form .btn button:before { display: block; content: ""; position: absolute; top: 3rem; left: 1rem; width: 4rem; height: 2px; background: #fff; -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
   #header .header-middle .comp-search .form .btn button:after { display: block; content: ""; position: absolute; top: 3rem; left: 1rem; width: 4rem; height: 2px; background: #fff; -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
   #header .header-middle .comp-search .form .btn button span { display: inline-block; text-indent: -999em; }
@@ -1609,7 +1609,7 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   input[class^=comp-input][class*=_h42] { height: 3.3rem; }
   input[class^=comp-input][class*=_h50] { height: 4rem; line-height: 3.8rem; }
   *[class^=comp-radio] label { font-size: 1.2rem; }
-  *[class^=comp-radio] label:before { width: 1rem; height: 1rem; margin-right: 0.5rem; background-size: 100% 100%; }
+  *[class^=comp-radio] label:before { width: 1.3rem; height: 1.3rem; margin-right: 0.5rem; background-size: 100% 100%; }
   *[class^=comp-radio] input:checked ~ label:before { background-size: 100% 100%; }
   *[class^=comp-radio][class*=_big] label { font-size: 1.5rem; }
   *[class^=comp-radio][class*=_big] label .sm { font-size: 1.2rem; }
@@ -1720,6 +1720,7 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   .customer-zone .customer-bottom .agreebox .radio-lst li:first-child { margin-left: 0; }
   .customer-zone .customer-bottom .agreebox .radio-lst label { display: inline-block; font-size: 1.1rem; padding-left: 1.4rem; }
   .customer-zone .customer-bottom .agreebox .radio-lst label:before { width: 1.1rem; height: 1.1rem; background-size: 100% 100%; }
+  .mobile .customer-zone .customer-bottom .agreebox .radio-lst label:before { top:0;}
   .customer-zone .customer-bottom .agreebox .radio-lst input:checked + label:before { background-size: 100% 100%; }
   .customer-zone .customer-bottom .form { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; padding: 2rem 1rem; }
   .customer-zone .customer-bottom .form input { -webkit-flex: 1; flex: 1; width: auto; padding: 0 1rem; height: 2.5rem; font-size: 1rem; }

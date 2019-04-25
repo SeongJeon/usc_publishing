@@ -16,7 +16,7 @@ LAYOUT
 ------------------------------------------------------ */
 @media (min-width: 1025px) { body.pc .ebooksys #header.header-type2 .header-middle .title a { width: 281px; height: 51px; background: url("../../static/images/ebooksys/img_logo.png") no-repeat 50% 50%; }
   body.pc .ebooksys #header.header-type2 .header-bottom .sitemap { background: #f27405; }
-  body.pc .ebooksys #header.header-type2 #gnb { margin-left: 370px; }
+  body.pc .ebooksys #header.header-type2 #gnb { margin-left: 365px; }
   body.pc .ebooksys #header.header-type2 #gnb h2 a { width: 220px; }
   body.pc .ebooksys #header.header-type2 #gnb .depth2menu { display: none; position: absolute; left: 0; top: 100%; padding-left: 40px; padding-top: 2px; width: 100%; }
   body.pc .ebooksys #header.header-type2 #gnb .depth2menu .menu { padding: 33px 30px 24px; }

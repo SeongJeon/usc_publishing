@@ -232,25 +232,24 @@ MAIN
 	.openleader .sns-area .slick-dots {position: absolute; bottom: 0; left: 50%; width:1320px; text-align: right; margin-left:-660px }
 	.openleader .sns-area .slick-dots li {display: inline-block; color:#808080; font-size: 20px; font-weight:400; margin-left: 22px; cursor: pointer;}
 	.openleader .sns-area .slick-dots li.slick-active {color:#1058a8; font-weight: bold;}
-	.openleader .sns-area #slider {position: absolute; bottom:95px; left:50%; width:1320px; margin-left: -660px; height: 2px;border:0; background: #e4e2e2}
-	.openleader .sns-area .ui-slider-handle {width:100px; border-radius: 100px; background: #1058a8; height: 8px; text-indent: -999em; top:-3px; border:0;}
-/*	.openleader .inner .sns-area {position:relative; width:1320px; margin:0 auto 69px auto; text-align:center;}
-	.openleader .inner .sns-area > .tit {padding:53px 0 36px; text-align:center; font-size:30px; color:#212121; font-weight:bold;}
-	.openleader .inner .sns-area > .tit .tail {display:block; margin-top:15px; font-size:17px; font-weight:normal;}
-	.openleader .inner .sns-area > .tit .tail em {font-style: italic;}
-	.openleader .inner .sns-area .inner {overflow:hidden; width:1230px; margin:0 auto;}
-	.openleader .inner .sns-area .sns-api {float:left; width:380px; margin-left:45px;}
-	.openleader .inner .sns-area .sns-api.twitter {margin-left:0;}
-	.openleader .inner .sns-area .sns-api .tit {height:50px; line-height:50px; font-size:18px; font-weight:bold; color:#fff;}
-	.openleader .inner .sns-area .sns-api .tit span {display:inline-block; height:33px; line-height:33px; padding-left:33px;}
-	.openleader .inner .sns-area .sns-api.twitter .tit{background:#33bdfd;}
+	.openleader .sns-area #slider {position: absolute; overflow: hidden; bottom:95px; left:50%; width:1320px; margin-left: -660px; height:8px; border:0; background: none;}
+	.openleader .sns-area #slider:before {position: absolute; top:50%; left:0; width:100%; margin-top: -1px; height:2px;  background: #e4e2e2; content: ""; display: block;}
+	.openleader .sns-area .ui-slider-handle {width:100px; border-radius: 100px; background: #1058a8; height: 8px; text-indent: -999em; top:0px; border:0; margin-left: 0;}
 
-	.openleader .inner .sns-area .sns-api.facebook .tit{background:#3b589e;}
-	.openleader .inner .sns-area .sns-api.blog .tit{background:#36ac37;}
-	.openleader .inner .sns-area .sns-api.twitter .tit span {background:url(../images/openleader/main/bg_twitter.png) no-repeat}
-	.openleader .inner .sns-area .sns-api.facebook .tit span {background:url(../images/openleader/main/bg_facebook.png) no-repeat}
-	.openleader .inner .sns-area .sns-api.blog .tit span {background:url(../images/openleader/main/bg_blog.png) no-repeat}
-	.openleader .inner .sns-area .sns-api .api-area {height:450px; border:1px solid #d6d5d5;}
+
+	.openleader .sns-area .img {width: 100%; height: 216px;}
+	.openleader .sns-area .facebook-infor {position: relative; padding:24px 14px 20px;}
+	.openleader .sns-area .facebook-infor .user-img {display:block; float: left; width:44px; height: 44px; border-radius: 100px; overflow: hidden; background: #b2b2b2; }
+	.openleader .sns-area .facebook-infor .user-img img {width: 100%;}
+	.openleader .sns-area .facebook-infor .infors {padding-left: 55px;}
+	.openleader .sns-area .facebook-infor .name {display: block; color:#333; font-weight: bold; font-size: 15px; text-align: left;}
+	.openleader .sns-area .facebook-infor .date {display: block; font-size: 14px; color:#888888; text-align: left;}
+	.openleader .sns-area .cont { display: -webkit-box; overflow: hidden; max-height: 66px; padding:0 14px; font-size: 12px; color:#454545; text-align: left; line-height: 22px; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+	.openleader .sns-area .btn-like-position {position: absolute; right: 14px; top:238px;}
+	.openleader .sns-area .btn-like {width:85px; height: 30px; box-sizing:border-box;border:1px solid #d6d5d5; text-align: center; color:#8b8b8b; font-size: 12px; border-radius: 100px; padding-bottom: 2px }
+	.openleader .sns-area .btn-like:before {display: inline-block; vertical-align: middle; width: 15px; height:28px; content: ""; margin-right: 5px; background: url("../../static/images/openleader/main/icon_facebook2.png") no-repeat 50% 48%;}
+
+
 /* ------------------------------------------------------
 SUB PAGE
 ------------------------------------------------------ */
@@ -762,16 +761,33 @@ MAIN
 	.openleader .inner .list-pledge .inner .btn:hover span:before,
 	.openleader .inner .list-pledge .inner .btn:focus span:before {position:absolute; left:-1px; top:-1px; display:block; content:""; width:11rem; height:2.8rem; border:3px solid #1058a8; box-sizing:border-box;}
 
-
-
+	.openleader .sns-area {padding-bottom: 2.8rem; margin-top: 2.9rem}
+	.openleader .sns-area .tit {font-size: 2rem;}
+	.openleader .sns-area .tit:before {width: 2.4rem; height: 2.4rem; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+	.openleader .sns-area .desc {font-size: 1.1rem; margin-right: 1rem;}
+	.openleader .sns-area .img {height: auto;}
+	.openleader .sns-area .img img {width:100%}
+	.openleader .sns-area .facebookslider {padding-bottom: 0; margin-top:3rem }
+	.openleader .sns-area .facebook-infor .user-img {width: 2.9rem; height: 2.9rem; }
+	.openleader .sns-area .facebook-infor .user-img img {width: 100%}
+	.openleader .sns-area .facebook-infor {padding:1.5rem 1rem}
+	.openleader .sns-area .facebook-infor .infors {padding-left: 3.7rem;}
+	.openleader .sns-area .facebook-infor .name {font-size: 1rem;}
+	.openleader .sns-area .facebook-infor .date {font-size: 1rem;}
+	.openleader .sns-area .cont {max-height: 4.2rem; padding:0 1rem; margin-bottom: 1.6rem; font-size: 1rem; line-height: 1.4rem;}
+	.openleader .sns-area .facebookslider .slide {padding:1rem;}
+	.openleader .sns-area .facebookslider .slide a {width: 100%; height: auto; max-width: 494px;}
+	.openleader .sns-area .btn-like-position {top:inherit; bottom:8rem;}
+	.openleader .sns-area .btn-like {font-size: 1rem; height: 2rem; line-height: 1.8rem; width: 5.6rem;}
+	.openleader .sns-area .btn-like:before {width: 1rem; height: 1rem; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+	.openleader .sns-area #slider {display: none !important}
 
 
 }
 @media (max-width:768px){
 	.openleader .main-visual .section-01 .inner .calendar .tit {width:20%;}
 	.openleader .inner .list-pledge .inner .list {margin:0 10%}
-}
-@media (max-width:600px){
+}@media (max-width:600px){
 	.openleader .main-visual .section-01 .inner > .tit {padding-top: 31rem;}
 	.openleader .inner .list-pledge .inner .list {margin:0 -2rem}
 }
@@ -787,6 +803,10 @@ MAIN
 }
 @media (max-width:360px){
 	.openleader .main-visual .section-01 .inner .calendar .inner .list ul > li .subject {width:70%;}
+	.openleader .sns-area .btn-like-position { bottom:8rem; right: 0.5rem}
+	.openleader .sns-area .facebook-infor {padding:1.5rem 0.5rem;}
+	.openleader .sns-area .cont {padding:0 0.5rem;}
+
 }
 @media (max-width:321px){
 	.openleader .main-visual .section-02 .inner .list-banner .banner .list-img > li .txt-area .tit {width:60%;}

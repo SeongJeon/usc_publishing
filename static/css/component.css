@@ -24,6 +24,8 @@
 'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font3
 
 
+주석 :  20190523 
+
 ------------------------------------------------------ */
 /* LAYOUT */
 #wrap { position: relative; min-width: 320px; }
@@ -86,7 +88,7 @@
 #footer .inner:after { display: block; clear: both; content: ""; }
 #footer .btn-gototop { position: absolute; right: 0; top: 0; z-index: 4; }
 #footer .btn-gototop a { display: block; width: 120px; height: 59px; line-height: 59px; color: #fff; font-size: 18px; text-align: center; color: #fff; background: #37424c; }
-#footer .btn-gototop a:after { display: inline-block; content: "^"; vertical-align: middle; margin-left: 10px; opacity: 0.5; position: relative; top: 4px; }
+#footer .btn-gototop a:after { display: inline-block; content: "^"; vertical-align: middle; margin-left: 10px; opacity: 0.5; position: relative; top:0; }/* 20190520 수정*/
 #footer .footer-banner { height: 60px; border-bottom: 1px solid #e1e1e1; }
 #footer .footer-banner .tit { position: absolute; left: 0; top: 0; font-size: 18px; color: #000; line-height: 59px; }
 #footer .footer-banner .indicator { position: absolute; overflow: hidden; left: 79px; top: 19px; width: 85px; }
@@ -728,6 +730,7 @@ select.w_select { width: 155px; }
 *[class^=comp-tab] li { float: left; width: 20%; box-sizing: border-box; border-top: 1px solid #d1d1d1; }
 *[class^=comp-tab] a { display: block; position: relative; text-align: center; line-height: 50px; font-size: 17px; color: #111; background: #f4f4f4; border-right: 1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1; }
 *[class^=comp-tab] a span { position: relative; top: -2px; }
+.mobile *[class^=comp-tab] a span { position: relative; top:0; }/*20190523 추가*/
 *[class^=comp-tab] a[aria-selected=true] {background: none}
 *[class^=comp-tab] a[aria-selected=true]:after { display: block; position: absolute; left: -1px; top: -1px; width: 100%; height: 100%; background: #f27405; content: ""; padding: 1px;z-index: 1;}
 *[class^=comp-tab] a[aria-selected=true] span { position: relative; z-index: 2; color: #fff; font-weight: bold; }
@@ -1357,7 +1360,7 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   #container .breadcrumb-zone .breadcrumb { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
   #container .breadcrumb-zone .breadcrumb > li:first-child a { width: 3.3rem; font-size: 1.2rem; background: none; }
   #container .breadcrumb-zone .breadcrumb > li:first-child ~ li { -webkit-flex: 1; flex: 1; }
-  #container .breadcrumb-zone .breadcrumb > li > a { width: 100%; font-size: 1rem; line-height: 3.3rem; padding: 0 2rem 0 0.7rem; background: url("../../static/images/common/bg_bread.png") no-repeat 100% 50%; background-size: auto 100%; }
+  #container .breadcrumb-zone .breadcrumb > li > a {overflow:hidden; width: 100%; font-size: 1rem; height:3.3rem; line-height: 3.3rem; padding: 0 2.5rem 0 0.7rem; background: url("../../static/images/common/bg_bread.png") no-repeat 100% 50%; background-size: auto 100%; }/* 20190523 수정*/
   #container .breadcrumb-zone .breadcrumb > li > a:after { display: none; }
   #container .breadcrumb-zone .breadcrumb .menu li { padding: 0 0.5rem; margin-top: 0.2rem; }
   #container .breadcrumb-zone .breadcrumb .menu li:first-child { margin-top: 0; }
@@ -1538,8 +1541,8 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   *[class^=comp-lst].ml5 { margin-left: 1rem; }
   *[class^=comp-lst].ml6 { margin-left: 2rem; }
   /* TABLE */
-  .scrollzone { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .scrollzone .scrollzoneinner { width: 900px; }
+  .scrollzone { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-left: 0 !important}/* 20190523 추가*/
+  .scrollzone .scrollzoneinner { width: 900px; margin:0 auto;}/* 20190527 */
   .tbl-top-utile { margin-bottom: 0.6rem; }
   .tbl-top-utile *[class^=heading] + .l-right { top: 0.7rem; }
   .tbl-top-utile .l-right { font-size: 1rem; }

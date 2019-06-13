@@ -326,6 +326,12 @@ $(document).ready(function(){
 		if($("#lnb").length < 1) return false;
 		
 		var lnb = $("#lnb .menu h2 a"), spd=300;
+
+		// default  20190527 추가
+		if(lnb.hasClass("open")) {
+			$("#lnb .menu h2 a.open").closest("li").find(".smallmenu").show();
+		}
+
 		 
 		lnb.on("click", function(){
 			var $this = $(this), 

@@ -118,25 +118,32 @@
 									<p class="btn-more"><a href="#"><span>자유게시판 더보기</span></a></p>
 								</div>
 							</div>
-							<!-- 바로메뉴 -->
+							<!--// 게시판 -->
+
+							<!-- 바로메뉴  20190613 전체수정 -->
 							<div class="goto-zone">
-								<ul class='quick-menu'>
-									<li><a href="#"><span class="name">영농재배기술</span></a></li>
-									<li><a href="#"><span class="name">주간농사정보</span></a></li>
-									<li><a href="#"><span class="name">월간농사정보</span></a></li>
-									<li><a href="#"><span class="name">센터월간동향</span></a></li>
-									<li><a href="#"><span class="name">의성농업대학</span></a></li>
-									<li><a href="#"><span class="name">유용미생물배양실</span></a></li>
-									<li><a href="#"><span class="name">종합분석실</span></a></li>
-									<li><a href="#"><span class="name">농산물종합가공센터</span></a></li>
+								<!-- 알림존 -->
+								<div class="popup-zone  js-popup-slider">
+									<h2 class="tit">알림존</h2>
+									<div class="slider">
+										<div class="slide"><a href="#"><img src="../../static/images/farmingtech/temp/@popup.png" alt="슬라이드명"></a></div>
+										<div class="slide"><a href="#"><img src="../../static/images/farmingtech/temp/@popup.png" alt="슬라이드명"></a></div>
+										<div class="slide"><a href="#"><img src="../../static/images/farmingtech/temp/@popup.png" alt="슬라이드명"></a></div>
+										<div class="slide"><a href="#"><img src="../../static/images/farmingtech/temp/@popup.png" alt="슬라이드명"></a></div>
+									</div>
+									<ul class="indicator">
+										<li><button type="button" class="btn-prev"><span>알림존 이전 슬라이드로 이동</span></button></li>
+										<li><button type="button" class="btn-next"><span>알림존 다음 슬라이드로 이동</span></button></li>
+										<li><button type="button" class="btn-pause" onclick="usc.slickPause('.js-popup-slider','.slider', this)" ><span>슬라이드 일시정지 및 재생</span></button></li>
+									</ul>
+								</div>
+								<!-- 바로가기 -->
+								<ul class="edu-goto">
+									<li> <a href="#"> <span>교육이수증 발급</span> </a> </vli>
+									<li> <a href="#"> <span>농기계임대신청</span> </a> </li>
 								</ul>
-								<p class="edu-goto">
-									<a href="#">
-										<strong class="tit">교육이수증 발급</strong>
-										<span class="desc"> 농업기술센터에서 <br class="pc">수강한 영농기술교육 <br>이수증을 <br class="pc">발급해 드립니다. </span>
-									</a>
-								</p>
 							</div>
+							<!--// 바로메뉴  20190613 전체수정 -->
 						</div>
 						<!--// 게시판 및 바로메뉴 -->
 									
@@ -227,50 +234,429 @@
 								</div>
 								<p class="goto"><a href="#" target="_blank" title="새창으로 열림"><span>의성군 <br class="m">농업기상정보 <br class="m">바로가기</span></a></p>
 							</div>
-							<!-- 알림존 -->
-							<div class="popup-zone  js-popup-slider">
-								<h2 class="tit">알림존</h2>
-								<div class="slider">
-									<div class="slide"><a href="#"><img src="../../static/images/farmingtech/temp/@popup.png" alt="슬라이드명"></a></div>
-									<div class="slide"><a href="#"><img src="../../static/images/farmingtech/temp/@popup.png" alt="슬라이드명"></a></div>
-									<div class="slide"><a href="#"><img src="../../static/images/farmingtech/temp/@popup.png" alt="슬라이드명"></a></div>
-									<div class="slide"><a href="#"><img src="../../static/images/farmingtech/temp/@popup.png" alt="슬라이드명"></a></div>
-								</div>
-								<ul class="indicator">
-									<li><button type="button" class="btn-prev"><span>알림존 이전 슬라이드로 이동</span></button></li>
-									<li><button type="button" class="btn-next"><span>알림존 다음 슬라이드로 이동</span></button></li>
-									<li><button type="button" class="btn-pause" onclick="usc.slickPause('.js-popup-slider','.slider', this)" ><span>슬라이드 일시정지 및 재생</span></button></li>
-								</ul>
-							</div>
-							<!-- 농업 -->
+							<!-- 농업  20190613 전체수정 -->
 							<div class="farming-zone">
-								<h2 class="tit">농업 바로가기</h2>
-								<ul class="menu">
-									<li>
-										<strong>기상청자료</strong>
-										<select name="" id="" title="기상청자료 바로가기">
-											<option value="">기상청자료</option>
-										</select>
-									</li>
-									<li>
-										<strong>농산물 가격정보</strong>
-										<select name="" id="" title="농산물 가격정보 바로가기">
-											<option value="">농산물 가격정보</option>
-										</select>
-									</li>
-									<li>
-										<strong>농업관련잡지 및 신문</strong>
-										<select name="" id="" title="농업관련잡지 및 신문 바로가기">
-											<option value="">농업관련잡지 및 신문</option>
-										</select>
-									</li>
-									<li>
-										<strong>농업관련정보</strong>
-										<select name="" id="" title="농업관련정보 바로가기">
-											<option value="">농업관련정보</option>
-										</select>
-									</li>
-								</ul>
+								<h2 class="tit">농산물시세 [”<date>20190611</date>”] 기준</h2>
+								<div class="marketprice-zone">
+									<ul class="big-category">
+										<li> <button type="button" aria-selected="true"><span>소매</span></button> </li><!--  D: 선택시 aria-selected=true 추가 -->
+										<li> <button type="button"><span>도매</span></button> </li>
+									</ul>
+									<ul role="tablist" aria-label="농산물시세 선택 메뉴" class="small-category">
+										<li role="presentation"><a href="#tabId1" role="tab" aria-controls="tabId1" aria-selected="true"><span>식량작물</span></a></li>
+										<li role="presentation"><a href="#tabId2" role="tab" aria-controls="tabId2"><span>채소류</span></a></li>
+										<li role="presentation"><a href="#tabId3" role="tab" aria-controls="tabId3"><span>특용작물</span></a></li>
+										<li role="presentation"><a href="#tabId4" role="tab" aria-controls="tabId4"><span>과일류</span></a></li>
+										<li role="presentation"><a href="#tabId5" role="tab" aria-controls="tabId5"><span>특산물</span></a></li>
+										<li role="presentation"><a href="#tabId6" role="tab" aria-controls="tabId6"><span>수산물</span></a></li>
+									</ul>
+
+									<div class="tabConts">
+										<div id="tabId1" role="tabpanel" style="display: block">
+											<h3 class="hidden">식량작물 시세</h3>
+											<div class="tbl-price">
+												<table>
+													<caption>식량작물 시세 - 상품/종류, 단위, 당일, 1개월전</caption>
+													<colgroup>
+														<col style="width:30%">
+														<col style="width:16%">
+														<col style="width:16%">
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">상품/종류</th>
+															<th scope="col">단위</th>
+															<th scope="col">당일</th>
+															<th scope="col">1개월전</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td colspan="4">
+																<div class="scroll">
+																	<table>
+																		<caption>식량작물 시세</caption>
+																		<colgroup>
+																			<col style="width:30%">
+																			<col style="width:17%">
+																			<col style="width:17%">
+																			<col>
+																		</colgroup>
+																		<tbody>
+																			<tr>
+																				<td>쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>찹쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>콩/백태(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>팥/적두(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>콩/백태(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>팥/적두(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div id="tabId2" role="tabpanel">
+											<h3 class="hidden">채소류 시세</h3>
+											<div class="tbl-price">
+												<table>
+													<caption>채소류 시세 - 상품/종류, 단위, 당일, 1개월전</caption>
+													<colgroup>
+														<col style="width:30%">
+														<col style="width:16%">
+														<col style="width:16%">
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">상품/종류</th>
+															<th scope="col">단위</th>
+															<th scope="col">당일</th>
+															<th scope="col">1개월전</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td colspan="4">
+																<div class="scroll">
+																	<table>
+																		<caption>채소류 시세</caption>
+																		<colgroup>
+																			<col style="width:30%">
+																			<col style="width:17%">
+																			<col style="width:17%">
+																			<col>
+																		</colgroup>
+																		<tbody>
+																			<tr>
+																				<td>쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>찹쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>콩/백태(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>팥/적두(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div id="tabId3" role="tabpanel">
+											<h3 class="hidden">특용작물 시세</h3>
+											<div class="tbl-price">
+												<table>
+													<caption>특용작물 시세 - 상품/종류, 단위, 당일, 1개월전</caption>
+													<colgroup>
+														<col style="width:30%">
+														<col style="width:16%">
+														<col style="width:16%">
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">상품/종류</th>
+															<th scope="col">단위</th>
+															<th scope="col">당일</th>
+															<th scope="col">1개월전</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td colspan="4">
+																<div class="scroll">
+																	<table>
+																		<caption>특용작물 시세</caption>
+																		<colgroup>
+																			<col style="width:30%">
+																			<col style="width:17%">
+																			<col style="width:17%">
+																			<col>
+																		</colgroup>
+																		<tbody>
+																			<tr>
+																				<td>쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>찹쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>콩/백태(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>팥/적두(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div id="tabId4" role="tabpanel">
+											<h3 class="hidden">과일류 시세</h3>
+											<div class="tbl-price">
+												<table>
+													<caption>과일류 시세 - 상품/종류, 단위, 당일, 1개월전</caption>
+													<colgroup>
+														<col style="width:30%">
+														<col style="width:16%">
+														<col style="width:16%">
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">상품/종류</th>
+															<th scope="col">단위</th>
+															<th scope="col">당일</th>
+															<th scope="col">1개월전</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td colspan="4">
+																<div class="scroll">
+																	<table>
+																		<caption>과일류 시세</caption>
+																		<colgroup>
+																			<col style="width:30%">
+																			<col style="width:17%">
+																			<col style="width:17%">
+																			<col>
+																		</colgroup>
+																		<tbody>
+																			<tr>
+																				<td>쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>찹쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>콩/백태(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>팥/적두(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div id="tabId5" role="tabpanel">
+											<h3 class="hidden">특산물 시세</h3>
+											<div class="tbl-price">
+												<table>
+													<caption>특산물 시세 - 상품/종류, 단위, 당일, 1개월전</caption>
+													<colgroup>
+														<col style="width:30%">
+														<col style="width:16%">
+														<col style="width:16%">
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">상품/종류</th>
+															<th scope="col">단위</th>
+															<th scope="col">당일</th>
+															<th scope="col">1개월전</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td colspan="4">
+																<div class="scroll">
+																	<table>
+																		<caption>특산물 시세</caption>
+																		<colgroup>
+																			<col style="width:30%">
+																			<col style="width:17%">
+																			<col style="width:17%">
+																			<col>
+																		</colgroup>
+																		<tbody>
+																			<tr>
+																				<td>쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>찹쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>콩/백태(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>팥/적두(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div id="tabId6" role="tabpanel">
+											<h3 class="hidden">수산물 시세</h3>
+											<div class="tbl-price">
+												<table>
+													<caption>수산물 시세 - 상품/종류, 단위, 당일, 1개월전</caption>
+													<colgroup>
+														<col style="width:30%">
+														<col style="width:16%">
+														<col style="width:16%">
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">상품/종류</th>
+															<th scope="col">단위</th>
+															<th scope="col">당일</th>
+															<th scope="col">1개월전</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td colspan="4">
+																<div class="scroll">
+																	<table>
+																		<caption>수산물 시세</caption>
+																		<colgroup>
+																			<col style="width:30%">
+																			<col style="width:17%">
+																			<col style="width:17%">
+																			<col>
+																		</colgroup>
+																		<tbody>
+																			<tr>
+																				<td>쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>찹쌀/일반계</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>콩/백태(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																			<tr>
+																				<td>팥/적두(국산)</td>
+																				<td>20kg</td>
+																				<td>46,949</td>
+																				<td>-</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+								</div>
 							</div>
 						</div>
 						<!--// 하단 날씨, 알림존, 농업 바로가기 -->

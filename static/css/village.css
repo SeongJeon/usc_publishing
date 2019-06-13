@@ -10,6 +10,9 @@
 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font1
 'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font2
 'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font3
+
+
+주석 :  20190613 
 ------------------------------------------------------ */
 
 /* ------------------------------------------------------
@@ -134,13 +137,26 @@ MAIN
 	.village .section-info {position:relative;margin-bottom:20px;}
 	.village .section-info:after {display:block;clear:both;content:'';}
 	.village .section-info .time-wrap {position: relative;}
-	.village .section-info .time-inner {overflow:hidden;position:absolute; left:0; top:0; width: 100%;  background:#044d29; z-index: 1;}
+	.village .section-info .time-inner {overflow:hidden;position:absolute; left:0; top:0; width: 100%;  background:#044d29; z-index: 3;}/* 20190613 */
 	.village .section-info .time-inner .phone-wrap {overflow: hidden; position: relative; width: 1320px; margin:0 auto;}
 
-	.village .phone-ballon {position:absolute;left:50%;top:0;margin-left:-775px;background:#45bf55;width:80px;height:120px;padding-top:17px;font-size:17px;color:#fff;text-align:center;line-height:1.5;border-radius:0 0 50px 50px;box-sizing:border-box;z-index:10;}
+	.village .phone-ballon {position:absolute;left:50%;top:0;margin-left:695px;background:#45bf55;width:80px;height:120px;padding-top:17px;font-size:17px;color:#fff;text-align:center;line-height:1.5;border-radius:0 0 50px 50px;box-sizing:border-box;z-index:2;}/* 20190613 */
 	.village .phone-ballon.animation {-webkit-animation:ballon 1s alternate infinite linear;-moz-animation:ballon 1s alternate infinite linear;-o-animation:ballon 1s alternate infinite linear;animation:ballon 1s alternate infinite linear;}
 	.village .phone-ballon a {display:block;padding-bottom:39px;background:url(../images/village/main/bg_phone_arrow_off.png) no-repeat center bottom;}
 	.village .phone-ballon.on a {position:absolute;bottom:14px;left:10px;background:url(../images/village/main/bg_phone_arrow_on.png) no-repeat center bottom;}
+	.village .phone-ballon.on {z-index: 10;}/* 20190613 */
+
+	/* S : 20190613 추가*/
+	.village .section-info .zone-wrap {position: relative;}
+	.village .section-info .zone-inner {overflow:hidden;position:absolute; left:0; top:0; width: 100%;  background:#1d2b41; z-index: 3; color:#fff;}
+	.village .section-info .zone-inner .phone-wrap {overflow: hidden; position: relative; width: 1320px; margin:0 auto;}
+
+	.village .zone-wrap .phone-ballon {position:absolute;left:50%;top:0;margin-left:-776px;background:#1a56ba;width:80px;height:120px;padding-top:17px;font-size:17px;color:#fff;text-align:center;line-height:1.5;border-radius:0 0 50px 50px;box-sizing:border-box;z-index:2;}
+	.village .zone-wrap .phone-ballon.animation {-webkit-animation:ballon 1s alternate infinite linear;-moz-animation:ballon 1s alternate infinite linear;-o-animation:ballon 1s alternate infinite linear;animation:ballon 1s alternate infinite linear;}
+	.village .zone-wrap .phone-ballon a {display:block;padding-bottom:39px;background:url(../images/village/main/bg_phone_arrow_off.png) no-repeat center bottom;}
+	.village .zone-wrap .phone-ballon.on a {position:absolute;bottom:14px;left:10px;background:url(../images/village/main/bg_phone_arrow_on.png) no-repeat center bottom;}
+	.village .zone-wrap .phone-ballon.on { z-index: 10;}
+	/* E : 20190613 추가*/
 
 	@-webkit-keyframes ballon {
 		from {height:120px;}
@@ -158,6 +174,7 @@ MAIN
 		from {height:120px;}
 		to {height:150px;padding-top:50px;}
 	}
+	
 
 	.village .phone-wrap {display: none}
 	.village .phone-inner {position:relative;margin:0 auto;padding:20px 0;box-sizing:border-box;}
@@ -176,6 +193,40 @@ MAIN
 	.village .phone-inner .number-area li {font-size:15px;color:#fff;}
 	.village .phone-inner .number-area li + li {margin-top:10px;}
 	.village .phone-inner .number-area em {display:inline-block;margin-right:18px;color:#ecf3c1;font-size:16px;font-weight: bold;}
+
+	/* S: 20190613 추가 */
+	.village .zone-inner .phone-wrap {display: none}
+	.village .zone-inner .phone-inner {position:relative; overflow: hidden; margin:0 auto;padding:20px 0;box-sizing:border-box;}
+	.village .zone-inner .phone-inner .l-zone {float: left; padding-left: 20px; width:385px;}
+	.village .zone-inner .phone-inner h3 {margin-bottom:7px;font-weight: bold;font-size:22px; color:#fff;}
+	.village .zone-inner .phone-inner .desc {font-size: 16px; font-weight: bold; color:#bbe2f3;}
+	.village .zone-inner .area-btn-group {margin-top: 25px}
+	.village .zone-inner .area-btn-group:after {display:block; clear:both; content:""}
+	.village .zone-inner .area-btn-group li {float: left; margin:0 20px 15px 0;}
+	.village .zone-inner .area-btn-group li:nth-child(3n+1) {clear:both;}
+	.village .zone-inner .area-btn-group a {display: inline-block; height: 33px; width: 98px; line-height: 30px; font-size: 16px;  color:#ecf3c1; font-weight: bold; border:1px solid #b5be9f; border-radius: 100px; text-align: center;}
+	.village .zone-inner .area-btn-group a:hover {background: #1a56ba; }
+
+	.village .zone-inner .map-wrap {float: left; position: relative; margin-left: 35px; background: url(../images/village/main/img_map.png) no-repeat left top; z-index: 1; }
+	.village .zone-inner .map-wrap[data-map=map1] > div { background: url(../images/village/main/img_sub_map01.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map2] > div { background: url(../images/village/main/img_sub_map02.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map3] > div { background: url(../images/village/main/img_sub_map03.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map4] > div { background: url(../images/village/main/img_sub_map04.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map5] > div { background: url(../images/village/main/img_sub_map05.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map6] > div { background: url(../images/village/main/img_sub_map06.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map7] > div { background: url(../images/village/main/img_sub_map07.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map8] > div { background: url(../images/village/main/img_sub_map08.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map9] > div { background: url(../images/village/main/img_sub_map09.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map10] > div { background: url(../images/village/main/img_sub_map10.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map11] > div { background: url(../images/village/main/img_sub_map11.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map12] > div { background: url(../images/village/main/img_sub_map12.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map13] > div { background: url(../images/village/main/img_sub_map13.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map14] > div { background: url(../images/village/main/img_sub_map14.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map15] > div { background: url(../images/village/main/img_sub_map15.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map16] > div { background: url(../images/village/main/img_sub_map16.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map17] > div { background: url(../images/village/main/img_sub_map17.png) no-repeat 0 0; }
+	.village .zone-inner .map-wrap[data-map=map18] > div { background: url(../images/village/main/img_sub_map18.png) no-repeat 0 0; }
+	 /* E: 20190613 추가 */
 
 	.village .news-wrap {max-width:1320px;margin:0 auto;padding-top:22px;}
 	.village .news-wrap .notice-wrap {position:relative;float:left;width:648px;height:328px;padding:28px;border:1px solid #d6d5d5;background:url(../images/village/main/bg_notice.png) no-repeat left top;background-size:cover;box-sizing:border-box;}
@@ -356,9 +407,14 @@ MEDIA QUERY
 ------------------------------------------------------ */
 @media (max-width:1554px) {
 	.village .phone-inner h3 {text-align:center;}
-	.village .phone-ballon {left:0;margin-left:0;}
+	.village .phone-ballon {left:inherit; right: 0; margin-left:0;}/*  20190613  */
 	.village .phone-inner .time-area {display:block;margin:0 auto 50px;}
 	.village .phone-inner .number-area.view-pc {display:block !important;margin-left:0;text-align:center;}
+
+	/* 20190613 추가*/
+	.village .zone-wrap .phone-ballon {left:0; right:inherit; margin-left:0;}
+	.village .zone-inner .phone-inner {padding-left: 80px;}
+	/*// 20190613 추가*/
 }
 @media (max-width:1024px){
 /* ------------------------------------------------------
@@ -423,10 +479,16 @@ COMMON
 	.village .month-list .tit {display:inline-block;vertical-align:-.4rem;}
 
 	.village .section-info {margin-bottom:1.9rem;}
-	.village .section-info .time-wrap {overflow:inherit;position:absolute;width:100%;z-index:100;}
+	.village .section-info .time-wrap {overflow:inherit;position:absolute;width:100%;}/* 20190613 */
+	.village .section-info .time-wrap .phone-wrap {width: 100%}/* 20190613 */
 	.village .phone-ballon {width:6rem;padding-top:.1rem;font-size:1.3rem;}
 	.village .phone-ballon a {padding-bottom:2rem;background-size:1.1rem !important}
 	.village .phone-ballon.on a {left:.6rem;}
+	/* 20190613 추가*/
+	.village .zone-wrap .phone-ballon {width:6rem;padding-top:.1rem;font-size:1.3rem;}
+	.village .zone-wrap .phone-ballon a {padding-bottom:2rem;background-size:1.1rem !important}
+	.village .zone-wrap .phone-ballon.on a {left:.6rem;}
+	/* //20190613 추가*/
 	@-webkit-keyframes ballon {
 		from {height:6rem;}
 		to {height:8rem;padding-top:1rem;}
@@ -443,12 +505,13 @@ COMMON
 		from {height:6rem;}
 		to {height:8rem;padding-top:1rem;}
 	}
-	.village .phone-inner h3 {margin-bottom:.9rem;font-size:1.5rem; padding-left: 9rem; text-align: left;}
+	.village .phone-inner {padding-right: 6rem}/* 20190613 */
+	.village .phone-inner h3 {margin-bottom:.9rem;font-size:1.5rem; }/* 20190613 */
 	.village .phone-inner h3 span {font-size:1.1rem;}
-	.village .phone-inner .time-area {width:24rem;height:8.4rem;margin-bottom:1.9rem;padding:2rem .9rem 0 6.8rem;background-size:5.9rem !important; margin-left: 9rem;}
+	.village .phone-inner .time-area {width:24rem;height:8.4rem;margin:0 auto 1.9rem; padding:2rem .9rem 0 6.8rem; background-size:5.9rem !important; }/* 20190613 */
 	.village .phone-inner .time-area .time {margin-bottom:.9rem;font-size:1.5rem;}
 	.village .phone-inner .time-area .rest {height:2.4rem;line-height:2.4rem;}
-	.village .phone-inner .number-area {margin:0; text-align:left; padding-left: 7rem;}
+	.village .phone-inner .number-area {margin:0; text-align:center;}/* 20190613 */
 	.village .phone-inner .number-area.view-pc {display:none !important;}
 	.village .phone-inner .number-area.view-m {display:block !important;}
 	.village .phone-inner .number-area ul {margin-right:1.5rem;padding-right:2rem;}
@@ -456,6 +519,18 @@ COMMON
 	.village .phone-inner .number-area ul:last-child:after {display:none;}
 	.village .phone-inner .number-area li {font-size:1.2rem;}
 	.village .phone-inner .number-area em {margin-right:1.4rem;font-size:1.3rem;}
+
+	/* S: 20190613 추가 */
+	.village .section-info .zone-inner .phone-wrap {width: 100%}
+	.village .zone-inner .phone-inner {padding-left: 6rem}
+	.village .zone-inner .phone-inner .l-zone {float: none; padding-left: 2rem; width:100%; text-align: center;}
+	.village .zone-inner .phone-inner h3 {font-size: 1.5rem;}
+	.village .zone-inner .phone-inner .desc {font-size: 1.1rem; text-align: center;}
+	.village .zone-inner .area-btn-group {display:inline-block; margin: 2rem auto 0}
+	.village .zone-inner .area-btn-group li {margin:0 1rem 1rem 0;}
+	.village .zone-inner .area-btn-group a {height:3rem; width:6.5rem; line-height:3rem; font-size:1.2rem; }
+	.village .zone-inner .map-wrap {display: none}
+	 /* E: 20190613 추가 */
 
 	.village .news-wrap {max-width:inherit;margin:0 .7rem;padding-top:6rem;}
 	.village .news-wrap .notice-wrap {float:none;width:auto;height:auto;padding:1.7rem 1.4rem;margin-bottom:1.7rem;background:url(../images/village/main/bg_notice_m.png) no-repeat left top;background-size:100% 100%;}
@@ -517,7 +592,7 @@ COMMON
 } @media (max-width:420px) {
 	.village .phone-inner .number-area li {font-size: 1.1rem;}
 } @media (max-width:321px){
-	.village .phone-inner .time-area {margin-left: 7rem;}
+	/*.village .phone-inner .time-area {margin-left: 7rem;} 20190613 삭제 */
 	.village .phone-inner .number-area ul {padding-right: 1.5rem;}
 	.village .phone-inner .number-area ul:last-child {padding-right: 0;}
 	.village .phone-inner .number-area li {font-size: 1rem;}

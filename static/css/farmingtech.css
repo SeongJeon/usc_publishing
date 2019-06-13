@@ -1,4 +1,20 @@
 @charset "UTF-8";
+
+
+/* ------------------------------------------------------
+[ FONT WEIGHT ]
+기본 공통 폰트 - 'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif;
+
+나눔스퀘어 
+'NanumSquareL','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font0
+'NanumSquareR','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font1
+'NanumSquareB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font2
+'NanumSquareEB','Malgun Gothic','굴림',Gulim,'돋움',Dotum,Sans-serif; // sass $font3
+
+
+주석 :  20190613 
+------------------------------------------------------ */
+
 /* ------------------------------------------------------
 LAYOUT
 ------------------------------------------------------ */
@@ -64,7 +80,9 @@ MAIN
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .lst a .date { float: right; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .btn-more { position: absolute; right: 20px; top: 24px; }
 #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .btn-more a { display: block; width: 30px; height: 30px; border: 1px solid #ccc; background: url("../../static/images/farmingtech/btn_more.jpg") no-repeat 50% 50%; text-indent: -999em; }
+
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone { float: left; overflow: hidden; width: 50%; }
+/*  20190613 삭제
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu { float: left; overflow: hidden; width: 510px; height: 330px; padding: 35px 20px 0; background: #cdc090; box-sizing: border-box; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu li { float: left; position: relative; width: 25%; text-align: center; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu a { display: inline-block; color: #222; font-size: 15px; }
@@ -86,14 +104,34 @@ MAIN
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu li:nth-child(7) a:hover:before { background: url("../../static/images/farmingtech/main/icon_quick7_on.png") no-repeat 50% 50%; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu li:nth-child(8) a:hover:before { background: url("../../static/images/farmingtech/main/icon_quick8_on.png") no-repeat 50% 50%; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu li:nth-child(8) a .name { width: 120%; position: relative; left: -10px; }
-#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto { float: left; }
-#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto .desc { display: block; line-height: 22px; margin-top: 50px; position: relative; }
-#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto .desc:before { display: block; position: absolute; left: 50%; top: -32px; content: ""; width: 44px; height: 3px; margin-left: -22px; background: #362501; }
-#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto .tit { display: block; font-size: 18px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
-#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto .tit:before { display: block; content: ""; height: 64px; width: 100%; margin-bottom: 18px; background: url("../../static/images/farmingtech/main/icon_edu.png") no-repeat 58% 50%; }
-#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto a { display: block; position: relative; height: 330px; width: 150px; padding-top: 50px; background: #c89664 url("../../static/images/farmingtech/main/bg_edu.jpg") no-repeat 100% 0; color: #fff; font-size: 14px; text-align: center; box-sizing: border-box; }
+*/
+
+/* 20190613 추가 */
+#wrap.farmingtech #container.main .popup-zone {float: left; position: relative; width: 492px; height:330px; padding: 65px 30px 0; background: #cdc090; }
+#wrap.farmingtech #container.main .popup-zone .tit {position: absolute; left:30px; top:20px; color:#222; font-size: 22px; font-weight: bold;}
+#wrap.farmingtech #container.main .popup-zone .slide { overflow: hidden; width: 100%; height: 245px; }
+#wrap.farmingtech #container.main .popup-zone .slide img { width: 100%; height: 100%; }
+#wrap.farmingtech #container.main .popup-zone .indicator { overflow: hidden; position: absolute; right: 22px; top: 25px; border: 1px solid #fff; }
+#wrap.farmingtech #container.main .popup-zone .indicator li { float: left; }
+#wrap.farmingtech #container.main .popup-zone .indicator li + li { border-left: 1px solid #fff; }
+#wrap.farmingtech #container.main .popup-zone .indicator button { width: 29px; height: 29px; text-indent: -999em; }
+#wrap.farmingtech #container.main .popup-zone .indicator .btn-prev { background: url("../../static/images/farmingtech/btn_prev.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .popup-zone .indicator .btn-next { background: url("../../static/images/farmingtech/btn_next.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .popup-zone .indicator .btn-pause { background: url("../../static/images/farmingtech/btn_pause.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .popup-zone .indicator .btn-pause.play { background: url("../../static/images/farmingtech/btn_play.png") no-repeat 50% 50%; }
+/* //20190613 추가 */
+
+/* 20190613 전체수정 */
+#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto { float: left; width:168px;}
+#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto span { display: block; font-size: 16px; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; }
+#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto li:nth-child(1) span:before { display: block; content: ""; height: 52px; width: 100%; margin-bottom: 18px; background: url("../../static/images/farmingtech/main/icon_edu.png") no-repeat 58% 50%; }
+#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto li:nth-child(2) span:before { display: block; content: ""; height: 49px; width: 100%; margin-bottom: 22px; background: url("../../static/images/farmingtech/main/icon_edu2.png") no-repeat 58% 50%; }
+#wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto a { display: block; position: relative; height: 165px; padding-top: 50px; background: #ca9865 url("../../static/images/farmingtech/main/bg_edu.jpg") no-repeat 100% 0; color: #fff; font-size: 14px; text-align: center; box-sizing: border-box; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto a:after { display: block; content: ""; width: 100%; height: 100%; position: absolute; left: 0; top: 0; border-width: 7px; border-style: solid; border-color: transparent; -webkit-transition: 0.2s ease; -ms-transition: 0.2s ease; -moz-transition: 0.2s ease; transition: 0.2s ease; box-sizing: border-box; }
 #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto a:hover:after { border-color: #362501; }
+/*// 20190613 전체수정 */
+
+
 #wrap.farmingtech #container.main .main-visual-zone { overflow: hidden; min-width: 1320px; height: 600px; position: relative; background: url("../../static/images/farmingtech/main/bg_top.jpg") no-repeat 50% 50%; background-size: cover; }
 #wrap.farmingtech #container.main .main-visual-zone .inner { text-align: center; padding-top: 100px; }
 #wrap.farmingtech #container.main .main-visual-zone .txt { display: inline-block; font-size: 17px; color: #fff; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; line-height: 24px; text-align: left; padding: 33px 0 10px 107px; background: url("../../static/images/farmingtech/main/img_top.png") no-repeat 0 0; }
@@ -150,6 +188,7 @@ MAIN
 #wrap.farmingtech #container.main .main-bottom-zone { margin-top: 15px; overflow: hidden; }
 #wrap.farmingtech #container.main .main-bottom-zone .tit { font-size: 22px; color: #222; font-family: "Malgun Gothic", "굴림", Gulim, "돋움", Dotum, Sans-serif; font-weight: bold; text-align: left; }
 #wrap.farmingtech #container.main .main-bottom-zone > div { float: left; height: 350px; }
+/*  20190613 삭제
 #wrap.farmingtech #container.main .popup-zone { position: relative; width: 476px; padding: 29px 20px 0; background: #fff; }
 #wrap.farmingtech #container.main .popup-zone .slider { margin-top: 12px; }
 #wrap.farmingtech #container.main .popup-zone .slide { overflow: hidden; width: 100%; height: 258px; }
@@ -162,12 +201,30 @@ MAIN
 #wrap.farmingtech #container.main .popup-zone .indicator .btn-next { background: url("../../static/images/farmingtech/btn_next.png") no-repeat 50% 50%; }
 #wrap.farmingtech #container.main .popup-zone .indicator .btn-pause { background: url("../../static/images/farmingtech/btn_pause.png") no-repeat 50% 50%; }
 #wrap.farmingtech #container.main .popup-zone .indicator .btn-pause.play { background: url("../../static/images/farmingtech/btn_play.png") no-repeat 50% 50%; }
-#wrap.farmingtech #container.main .farming-zone { width: 422px; padding: 29px 22px 0; background: #d4c5b4; }
-#wrap.farmingtech #container.main .farming-zone .menu { margin-top: 13px; }
-#wrap.farmingtech #container.main .farming-zone .menu li { padding: 7px 8px 8px 10px; height: 40px; background: #fff; border-radius: 3px; }
-#wrap.farmingtech #container.main .farming-zone .menu li + li { margin-top: 12px; }
-#wrap.farmingtech #container.main .farming-zone .menu strong { color: #373737; font-size: 14px; line-height: 40px; }
-#wrap.farmingtech #container.main .farming-zone .menu select { float: right; width: 220px; height: 40px; padding: 0 24px 0 9px; border: 1px solid #d4c5b4; color: #868686; font-size: 14px; line-height: 38px; background: url("../../static/images/farmingtech/main/form_select.png") no-repeat 100% 50%; background-size: auto 100%; }
+*/
+
+/* 20190613 전체수정 */
+#wrap.farmingtech #container.main .farming-zone { width: 898px; padding: 29px 22px 0; background: #fff; }
+#wrap.farmingtech #container.main .marketprice-zone {height:258px; overflow: hidden; margin-top: 18px; background: #f2eee9; border-radius: 10px;}
+#wrap.farmingtech #container.main .big-category {width:95px; float: left;}
+#wrap.farmingtech #container.main .big-category button {height:129px; width:100%; font-size: 16px; color:#494949; background:#f2eee9}
+#wrap.farmingtech #container.main .big-category button:after {display: inline-block; vertical-align: middle; content: ""; width: 10px; height: 7px; margin-left: 10px; background: url("../../static/images/farmingtech/main/img_arrow.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .big-category button[aria-selected=true] {background: #bb9162; color:#fff;}
+#wrap.farmingtech #container.main .big-category button[aria-selected=true]:after {background: url("../../static/images/farmingtech/main/img_arrow_on.png") no-repeat 50% 50%; }
+#wrap.farmingtech #container.main .small-category {float: left; width:130px; border:1px solid #d4c5b4; border-left:1px solid #d4c5b4; box-sizing: border-box;}
+#wrap.farmingtech #container.main .small-category li + li {border-top: 1px solid #d4c5b4;}
+#wrap.farmingtech #container.main .small-category li:last-child a {height: 41px}
+#wrap.farmingtech #container.main .small-category a {display: block; text-align: center; height: 42px; line-height: 38px; font-size: 14px;}
+#wrap.farmingtech #container.main .small-category a[aria-selected=true] {margin:-1px; padding:1px; background: #d4c5b4; color:#fff;font-weight: bold;}
+#wrap.farmingtech #container.main .marketprice-zone .tabConts {padding-left: 225px; height:258px; text-align: center;}
+#wrap.farmingtech #container.main .marketprice-zone .tabConts div[role=tabpanel] {display: none; overflow: hidden; padding:15px 15px 0;}
+#wrap.farmingtech #container.main .marketprice-zone .tabConts .tbl-price {height:226px; background: #fff; padding:3px;}
+#wrap.farmingtech #container.main .marketprice-zone .tbl-price > table {table-layout:  fixed; width: 100%; }
+#wrap.farmingtech #container.main .marketprice-zone .tbl-price > table th {font-size: 13px; color:#3f3f3f; text-align: center; background: #f4ebe1; height: 40px;}
+#wrap.farmingtech #container.main .marketprice-zone .tbl-price > table table td {font-size: 13px; color:#828282; text-align: center; height: 40px; border-bottom:1px solid #f4ebe1;}
+#wrap.farmingtech #container.main .marketprice-zone .tbl-price .scroll {overflow-y:scroll; height: 180px}
+/*// 20190613 전체수정 */
+
 #wrap.farmingtech #container.main .weather-zone { position: relative; width: 422px; padding: 29px 28px 0; background: #ffca59; }
 #wrap.farmingtech #container.main .weather-zone .curr-time { color: #fff; font-size: 16px; position: absolute; right: 30px; top: 30px; }
 #wrap.farmingtech #container.main .weather-zone .goto { margin-top: 10px; }
@@ -285,7 +342,8 @@ BROWSER HACK
 /* ------------------------------------------------------
 MEDIA QUERY
 ------------------------------------------------------ */
-@media (max-width: 1024px) { /* ------------------------------------------------------ - LAYOUT ------------------------------------------------------ */
+@media (max-width: 1024px) { 
+  /* ------------------------------------------------------ - LAYOUT ------------------------------------------------------ */
   #wrap.farmingtech #header .header-bottom .header-utilegroup .header-utile .icon-login:before { background: url("../../static/images/farmingtech/icon_gnb_login.png") no-repeat 50% 50%; background-size: auto 100%; }
   #wrap.farmingtech #header .header-bottom .header-utilegroup .header-utile .icon-join:before { background: url("../../static/images/farmingtech/icon_gnb_join.png") no-repeat 50% 50%; background-size: auto 100%; }
   #wrap.farmingtech #header .header-bottom .gnb-mo-title { background: #ff6600; }
@@ -320,6 +378,7 @@ MEDIA QUERY
   #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .btn-more { right: 1.3rem; top: 1.4rem; }
   #wrap.farmingtech #container.main .main-middle-zone .board-zone div[role=tabpanel] .btn-more a { width: 1.7rem; height: 1.7rem; background-size: 50% 50%; }
   #wrap.farmingtech #container.main .main-middle-zone .goto-zone { float: none; width: 100%; }
+  /*  20190613 삭제
   #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu { float: none; width: 100%; height: auto; padding: 1.6rem 1.5rem 1.8rem; }
   #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu a { font-size: 1rem; }
   #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu a:before { width: 5.1rem; height: 5.1rem; border-width: 2px; }
@@ -334,13 +393,15 @@ MEDIA QUERY
   #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu li:nth-child(7) a:before { background-size: 100% 100% !important; }
   #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu li:nth-child(8) a:before { background-size: 100% 100% !important; }
   #wrap.farmingtech #container.main .main-middle-zone .goto-zone .quick-menu li:nth-child(8) a .name { width: 120%; position: relative; left: -1rem; }
-  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto { float: none; }
-  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto .desc { display: inline-block; line-height: 1.2rem; margin-top: 0; margin-left: 3rem; vertical-align: middle; text-align: left; }
-  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto .desc:before { left: 0; top: 50%; width: 2px; height: 2.5rem; margin: -1.25rem 0 0 -1.6rem; }
-  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto .tit { display: inline-block; font-size: 1.2rem; line-height: 3rem; }
-  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto .tit:before { display: inline-block; height: 3rem; width: 3.3rem; margin: 0 0.4rem 0 0; background-size: 100% auto; vertical-align: middle; }
-  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto a { height: auto; width: 100%; padding: 1.8rem 0; font-size: 1rem; background-size: auto 25%; }
-  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto a:after { border-width: 2px; }
+  */
+  /* 20190613 전체수정 */
+  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto {overflow: hidden; float: none; width:100% }
+  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto li {float: left; width:50%; }
+  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto span { display: inline-block; font-size: 1.2rem; line-height: 3rem; }
+  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto span:before {height: 3rem !important;  margin: 0 0.4rem 0.5rem 0 !important; background-size: auto 100% !important; }
+  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto a { height: auto; width: 100%; padding: 1.5rem 0 1rem; font-size: 1rem; background-size: auto 20%; }
+  #wrap.farmingtech #container.main .main-middle-zone .goto-zone .edu-goto a:after {border-width: 3px; }
+  /* //20190613 전체수정 */
   #wrap.farmingtech #container.main .main-visual-zone { height: 46.1rem; min-width: auto; background: url("../../static/images/farmingtech/main/bg_top_m.jpg") no-repeat 50% 50%; background-size: cover; }
   #wrap.farmingtech #container.main .main-visual-zone .inner { padding-top: 2.6rem; }
   #wrap.farmingtech #container.main .main-visual-zone .txt { font-size: 1rem; line-height: 1.5rem; padding: 2.2rem 0 1rem 7.1rem; background-size: auto 100%; }
@@ -380,7 +441,8 @@ MEDIA QUERY
   #wrap.farmingtech #container.main .main-bottom-zone { margin-top: 1.3rem; }
   #wrap.farmingtech #container.main .main-bottom-zone .tit { font-size: 1.2rem; }
   #wrap.farmingtech #container.main .main-bottom-zone > div { float: none; height: auto; }
-  #wrap.farmingtech #container.main .popup-zone { width: 100%; padding: 1.8rem 1.5rem 1.4rem; }
+  #wrap.farmingtech #container.main .popup-zone { width: 100%; height:auto; padding: 3.5rem 1.5rem 1.4rem; }/* 20190613 */
+  #wrap.farmingtech #container.main .popup-zone .tit {f1ont-size: 1.2rem; top:1.5rem; left:1.5rem;}/* 20190613 */
   #wrap.farmingtech #container.main .popup-zone .slider { margin-top: 1.1rem; }
   #wrap.farmingtech #container.main .popup-zone .slide { height: 18rem; }
   #wrap.farmingtech #container.main .popup-zone .indicator { right: 1.5rem; top: 1.4rem; }
@@ -390,11 +452,33 @@ MEDIA QUERY
   #wrap.farmingtech #container.main .popup-zone .indicator .btn-pause { background-size: 30% auto; }
   #wrap.farmingtech #container.main .popup-zone .indicator .btn-pause.play { background-size: 30% auto; }
   #wrap.farmingtech #container.main .farming-zone { width: 100%; padding: 1.8rem 1.5rem 1.4rem; }
+  /*  20190613 삭제
   #wrap.farmingtech #container.main .farming-zone .menu { margin-top: 1.1rem; }
   #wrap.farmingtech #container.main .farming-zone .menu li { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; padding: 0.4rem 0.5rem 0.4rem 0.7rem; height: auto; }
   #wrap.farmingtech #container.main .farming-zone .menu li + li { margin-top: 0.7rem; }
   #wrap.farmingtech #container.main .farming-zone .menu strong { width: 10rem; font-size: 1rem; line-height: 2.5rem; }
   #wrap.farmingtech #container.main .farming-zone .menu select { -webkit-flex: 1; flex: 1; width: 100%; height: 2.5rem; padding: 0 1.6rem 0 0.8rem; font-size: 1rem; line-height: 2.3rem; }
+  */
+  /* 20190613 추가*/
+  #wrap.farmingtech #container.main .marketprice-zone {height:auto; padding-bottom: 1rem}
+  #wrap.farmingtech #container.main .big-category {float: none; width:100%; overflow: hidden;}
+  #wrap.farmingtech #container.main .big-category li {float: left; width:50%;}
+  #wrap.farmingtech #container.main .big-category button {height:4rem; font-size: 1.2rem;}
+  #wrap.farmingtech #container.main .big-category button[aria-selected=true] {}
+  #wrap.farmingtech #container.main .small-category {float: none; width: 100%; border-right:0; border-left: 0;}
+  #wrap.farmingtech #container.main .small-category:after{display:block; clear:both; content:""}
+  #wrap.farmingtech #container.main .small-category li {float: left; width:33.3%; border-left: 1px solid #d4c5b4; box-sizing:border-box;}
+  #wrap.farmingtech #container.main .small-category li + li {border-top: 0;}
+  #wrap.farmingtech #container.main .small-category li:nth-child(3n) ~li {border-top: 1px solid #d4c5b4;}
+  #wrap.farmingtech #container.main .small-category li:nth-child(3n+1) {border-left: 0;}
+  #wrap.farmingtech #container.main .small-category a {font-size: 1rem; height:3rem !important; line-height: 2.5rem;}
+  #wrap.farmingtech #container.main .marketprice-zone .tabConts {padding-left: 0; height: 22rem;}
+  #wrap.farmingtech #container.main .marketprice-zone .tabConts div[role=tabpanel] {padding:1rem 1rem 0;}
+  #wrap.farmingtech #container.main .marketprice-zone .tabConts .tbl-price {height: 20rem}
+  #wrap.farmingtech #container.main .marketprice-zone .tbl-price > table th {font-size: 1rem; height: 3.5rem}
+  #wrap.farmingtech #container.main .marketprice-zone .tbl-price > table table td {font-size: 1rem; height: 3.5rem}
+  #wrap.farmingtech #container.main .marketprice-zone .tbl-price .scroll {height: 15rem}
+  /* //20190613 추가*/
   #wrap.farmingtech #container.main .weather-zone { width: 100%; padding: 1.5rem 1.5rem 1rem; }
   #wrap.farmingtech #container.main .weather-zone:after { display: block; clear: both; content: ""; }
   #wrap.farmingtech #container.main .weather-zone .curr-time { font-size: 1rem; right: 1.5rem; top: 1.6rem; }

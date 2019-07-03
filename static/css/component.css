@@ -138,10 +138,11 @@
 #footer .footer-logo { position: absolute; left: 0; top: 54px; text-indent: -999em; }
 
 #container { position: relative; min-width: 1320px; border-bottom: 1px solid #d1d1d1; padding-top: 180px; }
-#container > .inner { width: 1320px; margin: 0 auto; }
+#container > .inner { width: 1320px; margin: 0 auto; padding-bottom: 100px}/* 20190703 add */
+#container > .inner:after {display:block; clear:both; content:""}/* 20190703 add */
 #container:before { display: block; height: 50px; width: 50%; position: absolute; top: 365px; left: 50%; content: ""; background: #383b3b; }
 #container #lnb { position: relative; width: 270px; float: left; margin-top: -50px; }
-#container #contents { position: relative; padding-left: 310px; padding-bottom: 50px; }
+#container #contents { position: relative; /*padding-left: 310px;*/ padding-bottom: 50px; float: right; }/* 20190703 edit*/
 #container .top-visual-zone { height: 185px; background: #fff; }
 #container .top-visual-zone p { width: 577px; height: 185px; margin: 0 auto; background: url("../../static/images/commonbg/img_usctxt.png") no-repeat 50% 50%; text-indent: -999em; }
 #container .top-visual-zone .bgimg { display: none; }
@@ -1353,9 +1354,10 @@ div[class^=tp-survey] .comp-input_wrap .txt { position: absolute; left: 0; top: 
   #footer .footer-logo { position: static; text-align: center; margin: 1.6rem auto 0; }
   #container { padding-top: 0; }
   #container:before { display: none; }
-  #container > .inner { width: auto; }
+  #container > .inner { width: auto; padding-bottom: 0 }/* 20190703 add*/ 
+  #container > .inner:after {display: none;}/* 20190703 add*/ 
   #container .top-visual-zone, #container #lnb { display: none; }
-  #container #contents { padding: 0 1.5rem 5rem; }
+  #container #contents {float: none; padding: 0 1.5rem 5rem; }/* 20190703 add */
   #container .breadcrumb-zone { height: auto; padding-left: 0; border-bottom: 1px solid #bdbebe; border-top: 1px solid #7a7c7c; }
   #container .breadcrumb-zone .breadcrumb { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
   #container .breadcrumb-zone .breadcrumb > li:first-child a { width: 3.3rem; font-size: 1.2rem; background: none; }

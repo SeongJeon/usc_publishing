@@ -43,9 +43,14 @@ LAYOUT
   body.pc #wrap.usc #header .depth2menu .menu .menugroup .group { float: left; width: 20%; padding-left: 10px; box-sizing: border-box; }
   body.pc #wrap.usc #header .depth2menu .menu .menugroup + .menugroup { margin-top: 10px; }
   body.pc #wrap.usc #header .depth2menu .menu .menugroup.other { margin-top: -200px; }
-  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup { float: left; width: 80%; }
-  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup .group { width: 25%; }
-  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup:nth-of-type(2) { width: 20%; float: right; margin-top: 0; padding-left: 10px; box-sizing: border-box; }
+  /* 20190705 수정 및 추가*/
+  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup {width: 100%; }
+  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup .group { width: 20%;}
+  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup:nth-of-type(1) {height: 444px}
+  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup:nth-of-type(1) .group:nth-of-type(4) {width:40%;}
+  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup:nth-of-type(1) .group:nth-of-type(4) .depth3menu:after {display:block; clear:both; content:""}
+  body.pc #wrap.usc #header .depth2menu .menu.other .menugroup:nth-of-type(1) .group:nth-of-type(4) .depth3menu li {float: left; width:50%;}
+  /*  //20190705 수정 및 추가 */
   body.pc #wrap.usc #header .depth2menu .category-menu { float: left; width: 1015px; padding: 42px 50px 48px; border-left: 1px solid #e2e1e1; }
   body.pc #wrap.usc #header .depth2menu .category-menu ul:after { display: block; clear: both; content: ""; }
   body.pc #wrap.usc #header .depth2menu .category-menu li { float: left; width: 14%; text-align: center; }

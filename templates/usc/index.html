@@ -56,11 +56,11 @@
 									</dd>
 								</dl>
 							</div>
-							<!-- 탭 메뉴 -->
+							<!-- 탭 메뉴 20191001 h2 -> button 교체 -->
 							<ul class="tab-zone" aria-label="의성군청 메인 컨텐츠 분류">
-								<li class="li current"><h2 class="bigtabcont1"><span>소 식</span></h2></li>
-								<li class="li"><h2 class="bigtabcont2"><span>민 원</span></h2></li>
-								<li class="li"><h2 class="bigtabcont3"><span>관 광</span></h2></li>
+								<li class="li current"><button type="button" class="bigtabcont1"><span>소 식</span></button></li>
+								<li class="li"><button type="button" class="bigtabcont2"><span>민 원</span></button></li>
+								<li class="li"><button type="button" class="bigtabcont3"><span>관 광</span></button></li>
 							</ul>
 						</div>
 						<!-- //우측 날씨 및 탭 메뉴 -->
@@ -69,7 +69,7 @@
 				<!--// 상단 텍스트 및 탭 메뉴 -->
 
 				<!-- 탭 컨텐츠 -->
-				<div class="main-tabcontent">
+				<div class="main-tabcontent" data-tab="tab1"><!-- 20191001 data-tab 속성추가 -->
 					<!-- 소식 탭  -->
 					<div id="bigtabcont1" class="tab-news">
 						<h2 class="hidden">소식관련 메인 내용</h2>
@@ -853,8 +853,8 @@
 		ltr: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: true,
-		// autoplay: false,
+		// autoplay: true,
+		autoplay: false,
 		swipe:false,
 		autoplaySpeed: 3000,
 		customPaging :  function(slick,index) {
@@ -870,8 +870,8 @@
 		ltr: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: true,
-		// autoplay: false,
+		// autoplay: true,
+		autoplay: false,
 		swipe:false,
 		autoplaySpeed: 3000,
 		nextArrow : $('.js-news-popupzone .btn-next'),
@@ -890,8 +890,8 @@
 		vertical: true,
 		slidesToShow: 8,
 		slidesToScroll: 1,
-		autoplay: true,
-		// autoplay: false,
+		// autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 1000,
 		nextArrow : $('.js-news-favoritmenu .btn-up'),
 		prevArrow : $('.js-news-favoritmenu .btn-down') ,
@@ -926,8 +926,8 @@
 		ltr: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// arrows: true,
-		autoplay: true,
+		arrows: true,
+		// autoplay: false,
 		autoplaySpeed: 3000,
 		arrows:false
 	});
@@ -935,7 +935,7 @@
 	var gotoEvent = (function(){
 		var curidx = $('.gotolnk li.on').index(), 
 			 $this = $('.gotolnk li');
-		var interval = setInterval(gotolnkEvent, 2000); 
+		// var interval = setInterval(gotolnkEvent, 2000); 삭제
 		function gotolnkEvent(){
 			curidx++;		
 			if(curidx == 8) curidx = 0;
@@ -943,12 +943,12 @@
 		};
 
 		$("a", $this).on("mouseenter", function(){
-			clearInterval(interval);
+			// clearInterval(interval); 삭제
 			$(this).closest("li").addClass("on").siblings().removeClass("on");
 			curidx = $(this).closest("li").index();
 		});
 		$(".gotolnk").on("mouseleave", function(){
-			interval = setInterval(gotolnkEvent, 2000); 
+			// interval = setInterval(gotolnkEvent, 2000); 삭제
 		})
 	})();
 
@@ -957,9 +957,9 @@
 
 
 	var sightseeingSlider2 = (function(){ 
-		var idx;
-		// 메인 탭 (소식/민원/관공)
-		$('.main-tabcontent').slick({
+		var idx, ml, tabs = $(".main-tabcontent"), bigtab = $(".main-top-zone .tab-zone button");
+		// 메인 탭 (소식/민원/관공) 20191001 기존소스 삭제 및 추가
+		/* $('.main-tabcontent').slick({
 			speed: 400,
 			ltr: true,
 			slidesToShow: 1,
@@ -977,7 +977,19 @@
 			curr.addClass("current").siblings("li").removeClass("current");
 			$(".main-tabcontent").slick('slickGoTo', idx);
 			return false;
-		});
+		}); */
+
+		bigtab.on("click", function(){
+			idx = $(this).closest("li").index()+1;
+
+			var curr = $(this).closest("li");  
+			if(curr.hasClass("current")) return false; 
+			curr.addClass("current").siblings("li").removeClass("current");
+
+
+			tabs.attr("data-tab", "tab"+idx);
+			return false;
+		}); 
 	})();
 
 
@@ -989,7 +1001,7 @@
 			ltr: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			autoplay: true,
+			autoplay: false,
 			autoplaySpeed: 3000,
 			swipe: false
 		});
@@ -998,7 +1010,6 @@
 			var curr = $(this).closest("li");  
 
 			if(curr.hasClass("current")) return false; 
-			// console.log(idx);
 
 			curr.addClass("current").siblings("li").removeClass("current");
 			$(".sightseeing-slider .js-bigslider").slick('slickGoTo', idx);
